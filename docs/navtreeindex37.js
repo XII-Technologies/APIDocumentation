@@ -1,5 +1,6 @@
 var NAVTREEINDEX37 =
 {
+"db/d1a/classxii_variant.html#a8b7abe5179377755e203ce7348dd8500":[3,0,2543,4],
 "db/d1a/classxii_variant.html#a8c9a4cee67f959308efbf1794619b060":[3,0,2543,1],
 "db/d1a/classxii_variant.html#a8fd4bbe799fc5093b0e09fb633ab9f12":[3,0,2543,3],
 "db/d1a/classxii_variant.html#a93c093ba139081519439d50fecb42be2":[3,0,2543,21],
@@ -248,6 +249,5 @@ var NAVTREEINDEX37 =
 "db/d60/classxii_component.html#afb3f2116efcbbbd7667c15694509ace0":[3,0,376,26],
 "db/d60/structxii_g_a_l_texture_view_type.html":[3,0,1034],
 "db/d60/structxii_g_a_l_texture_view_type.html#ad4f8ca273dab45d482b39716b7c25272":[3,0,1034,0],
-"db/d60/structxii_g_a_l_texture_view_type.html#ad4f8ca273dab45d482b39716b7c25272a2a2f9e7844a6be23592818e55d64686b":[3,0,1034,0,5],
-"db/d60/structxii_g_a_l_texture_view_type.html#ad4f8ca273dab45d482b39716b7c25272a56711e5d21b9e400ceb98ce111927692":[3,0,1034,0,8]
+"db/d60/structxii_g_a_l_texture_view_type.html#ad4f8ca273dab45d482b39716b7c25272a2a2f9e7844a6be23592818e55d64686b":[3,0,1034,0,5]
 };

@@ -319,102 +319,104 @@ $(function(){initNavTree('d9/dde/_editor_app_8moc_8h_source.html','../../'); ini
 <div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span> </div>
 <div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span><span class="keyword">private</span> Q_SLOTS:</div>
 <div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>  <span class="keywordtype">void</span> SlotTimedUpdate();</div>
-<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>  <span class="keywordtype">void</span> SlotQueuedCloseProject();</div>
-<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>  <span class="keywordtype">void</span> SlotQueuedOpenProject(QString sProject);</div>
-<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>  <span class="keywordtype">void</span> SlotQueuedOpenDocument(QString sProject, <span class="keywordtype">void</span>* pOpenContext);</div>
-<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>  <span class="keywordtype">void</span> SlotQueuedGuiOpenDashboard();</div>
-<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>  <span class="keywordtype">void</span> SlotQueuedGuiOpenDocsAndCommunity();</div>
-<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>  <span class="keywordtype">void</span> SlotQueuedGuiCreateOrOpenProject(<span class="keywordtype">bool</span> bCreate);</div>
-<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>  <span class="keywordtype">void</span> SlotSaveSettings();</div>
-<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>  <span class="keywordtype">void</span> SlotVersionCheckCompleted(<span class="keywordtype">bool</span> bNewVersionReleased, <span class="keywordtype">bool</span> bForced);</div>
-<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span> </div>
-<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>  <span class="keywordtype">void</span> UpdateGlobalStatusBarMessage();</div>
-<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span> </div>
-<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>  <span class="keywordtype">void</span> DocumentManagerRequestHandler(xiiDocumentManager::Request&amp; r);</div>
-<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>  <span class="keywordtype">void</span> DocumentManagerEventHandler(<span class="keyword">const</span> xiiDocumentManager::Event&amp; r);</div>
-<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>  <span class="keywordtype">void</span> DocumentEventHandler(<span class="keyword">const</span> xiiDocumentEvent&amp; e);</div>
-<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>  <span class="keywordtype">void</span> ProjectRequestHandler(xiiToolsProjectRequest&amp; r);</div>
-<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>  <span class="keywordtype">void</span> ProjectEventHandler(<span class="keyword">const</span> xiiToolsProjectEvent&amp; r);</div>
-<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>  <span class="keywordtype">void</span> EngineProcessMsgHandler(<span class="keyword">const</span> xiiEditorEngineProcessConnection::Event&amp; e);</div>
-<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>  <span class="keywordtype">void</span> UiServicesEvents(<span class="keyword">const</span> xiiQtUiServices::Event&amp; e);</div>
-<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span> </div>
-<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>  <span class="keywordtype">void</span> SetupNewProject();</div>
-<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>  <span class="keywordtype">void</span> LoadEditorPreferences();</div>
-<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>  <span class="keywordtype">void</span> LoadProjectPreferences();</div>
-<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>  <span class="keywordtype">void</span> StoreEnginePluginModificationTimes();</div>
-<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>  <span class="keywordtype">bool</span> CheckForEnginePluginModifications();</div>
-<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>  <span class="keywordtype">void</span> SaveAllOpenDocuments();</div>
-<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span> </div>
-<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>  <span class="keywordtype">void</span> ReadTagRegistry();</div>
-<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span> </div>
-<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>  <span class="keywordtype">void</span> SetupDataDirectories();</div>
-<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>  <span class="keywordtype">void</span> CreatePanels();</div>
-<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span> </div>
-<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>  <span class="keywordtype">void</span> SetupAndShowSplashScreen();</div>
-<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>  <span class="keywordtype">void</span> CloseSplashScreen();</div>
-<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span> </div>
-<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>  <span class="keywordtype">void</span> OpenDemoDocument();</div>
-<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span> </div>
-<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>  xiiResult AddBundlesInOrder(xiiDynamicArray&lt;xiiApplicationPluginConfig::PluginConfig&gt;&amp; order, <span class="keyword">const</span> xiiPluginBundleSet&amp; bundles, <span class="keyword">const</span> xiiString&amp; start, <span class="keywordtype">bool</span> bEditor, <span class="keywordtype">bool</span> bEditorEngine, <span class="keywordtype">bool</span> bRuntime) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span> </div>
-<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>  <span class="keywordtype">bool</span> m_bSavePreferencesAfterOpenProject;</div>
-<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>  <span class="keywordtype">bool</span> m_bLoadingProjectInProgress = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>  <span class="keywordtype">bool</span> m_bAnyProjectOpened         = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>  <span class="keywordtype">bool</span> m_bWroteCrashIndicatorFile  = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>  <span class="keywordtype">bool</span> m_bIsRunning                = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span> </div>
-<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>  xiiBitflags&lt;StartupFlags&gt;  m_StartupFlags;</div>
-<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>  xiiDynamicArray&lt;xiiString&gt; m_DocumentsToOpen;</div>
-<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span> </div>
-<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>  xiiSet&lt;xiiString&gt; m_RestartRequiredReasons;</div>
-<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>  xiiSet&lt;xiiString&gt; m_ReloadProjectRequiredReasons;</div>
-<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span> </div>
-<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>  xiiPluginBundleSet m_PluginBundles;</div>
-<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span> </div>
-<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>  <span class="keywordtype">void</span> SaveRecentFiles();</div>
-<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>  <span class="keywordtype">void</span> LoadRecentFiles();</div>
-<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span> </div>
-<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>  xiiRecentFilesList m_RecentProjects;</div>
-<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>  xiiRecentFilesList m_RecentDocuments;</div>
-<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span> </div>
-<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>  xiiInt32                          m_iArgc          = 0;</div>
-<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>  QApplication*                     m_pQtApplication = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>  xiiLongOpControllerManager        m_LongOpControllerManager;</div>
-<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>  xiiEditorEngineProcessConnection* m_pEngineViewProcess;</div>
-<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>  QTimer*                           m_pTimer = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span> </div>
-<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span>  QSplashScreen* m_pSplashScreen = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span> </div>
-<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>  xiiLogWriter::HTML m_LogHTML;</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>  <span class="keywordtype">void</span> SlotAutoSave();</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>  <span class="keywordtype">void</span> SlotQueuedCloseProject();</div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>  <span class="keywordtype">void</span> SlotQueuedOpenProject(QString sProject);</div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>  <span class="keywordtype">void</span> SlotQueuedOpenDocument(QString sProject, <span class="keywordtype">void</span>* pOpenContext);</div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>  <span class="keywordtype">void</span> SlotQueuedGuiOpenDashboard();</div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>  <span class="keywordtype">void</span> SlotQueuedGuiOpenDocsAndCommunity();</div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>  <span class="keywordtype">void</span> SlotQueuedGuiCreateOrOpenProject(<span class="keywordtype">bool</span> bCreate);</div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>  <span class="keywordtype">void</span> SlotSaveSettings();</div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>  <span class="keywordtype">void</span> SlotVersionCheckCompleted(<span class="keywordtype">bool</span> bNewVersionReleased, <span class="keywordtype">bool</span> bForced);</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span> </div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>  <span class="keywordtype">void</span> UpdateGlobalStatusBarMessage();</div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span> </div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>  <span class="keywordtype">void</span> DocumentManagerRequestHandler(xiiDocumentManager::Request&amp; r);</div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>  <span class="keywordtype">void</span> DocumentManagerEventHandler(<span class="keyword">const</span> xiiDocumentManager::Event&amp; r);</div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>  <span class="keywordtype">void</span> DocumentEventHandler(<span class="keyword">const</span> xiiDocumentEvent&amp; e);</div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>  <span class="keywordtype">void</span> ProjectRequestHandler(xiiToolsProjectRequest&amp; r);</div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>  <span class="keywordtype">void</span> ProjectEventHandler(<span class="keyword">const</span> xiiToolsProjectEvent&amp; r);</div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>  <span class="keywordtype">void</span> EngineProcessMsgHandler(<span class="keyword">const</span> xiiEditorEngineProcessConnection::Event&amp; e);</div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>  <span class="keywordtype">void</span> UiServicesEvents(<span class="keyword">const</span> xiiQtUiServices::Event&amp; e);</div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span> </div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>  <span class="keywordtype">void</span> SetupNewProject();</div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>  <span class="keywordtype">void</span> LoadEditorPreferences();</div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>  <span class="keywordtype">void</span> LoadProjectPreferences();</div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>  <span class="keywordtype">void</span> StoreEnginePluginModificationTimes();</div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>  <span class="keywordtype">bool</span> CheckForEnginePluginModifications();</div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>  <span class="keywordtype">void</span> SaveAllOpenDocuments();</div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span> </div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>  <span class="keywordtype">void</span> ReadTagRegistry();</div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span> </div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>  <span class="keywordtype">void</span> SetupDataDirectories();</div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>  <span class="keywordtype">void</span> CreatePanels();</div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span> </div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>  <span class="keywordtype">void</span> SetupAndShowSplashScreen();</div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>  <span class="keywordtype">void</span> CloseSplashScreen();</div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span> </div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>  <span class="keywordtype">void</span> OpenDemoDocument();</div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span> </div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>  xiiResult AddBundlesInOrder(xiiDynamicArray&lt;xiiApplicationPluginConfig::PluginConfig&gt;&amp; order, <span class="keyword">const</span> xiiPluginBundleSet&amp; bundles, <span class="keyword">const</span> xiiString&amp; start, <span class="keywordtype">bool</span> bEditor, <span class="keywordtype">bool</span> bEditorEngine, <span class="keywordtype">bool</span> bRuntime) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span> </div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>  <span class="keywordtype">bool</span> m_bSavePreferencesAfterOpenProject;</div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>  <span class="keywordtype">bool</span> m_bLoadingProjectInProgress = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>  <span class="keywordtype">bool</span> m_bAnyProjectOpened         = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>  <span class="keywordtype">bool</span> m_bWroteCrashIndicatorFile  = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>  <span class="keywordtype">bool</span> m_bIsRunning                = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span> </div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>  xiiBitflags&lt;StartupFlags&gt;  m_StartupFlags;</div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>  xiiDynamicArray&lt;xiiString&gt; m_DocumentsToOpen;</div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span> </div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>  xiiSet&lt;xiiString&gt; m_RestartRequiredReasons;</div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>  xiiSet&lt;xiiString&gt; m_ReloadProjectRequiredReasons;</div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span> </div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>  xiiPluginBundleSet m_PluginBundles;</div>
+<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span> </div>
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>  <span class="keywordtype">void</span> SaveRecentFiles();</div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>  <span class="keywordtype">void</span> LoadRecentFiles();</div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span> </div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>  xiiRecentFilesList m_RecentProjects;</div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>  xiiRecentFilesList m_RecentDocuments;</div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span> </div>
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>  xiiInt32                          m_iArgc          = 0;</div>
+<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>  QApplication*                     m_pQtApplication = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span>  xiiLongOpControllerManager        m_LongOpControllerManager;</div>
+<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>  xiiEditorEngineProcessConnection* m_pEngineViewProcess;</div>
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>  QTimer*                           m_pTimer = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span> </div>
+<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>  QSplashScreen* m_pSplashScreen = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>  QTimer*        m_pAutoSaveTimer;</div>
 <div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span> </div>
-<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>  xiiTime                        m_LastPluginModificationCheck;</div>
-<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>  xiiApplicationFileSystemConfig m_FileSystemConfig;</div>
-<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span> </div>
-<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>  <span class="comment">// *** Recent Paths ***</span></div>
-<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>  xiiString m_sLastDocumentFolder;</div>
-<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>  xiiString m_sLastProjectFolder;</div>
-<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span> </div>
-<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>  <span class="comment">// *** Progress Bar ***</span></div>
-<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>  <span class="keywordtype">bool</span> IsProgressBarProcessingEvents() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span> </div>
-<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>  xiiProgress*      m_pProgressbar   = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>  xiiQtProgressbar* m_pQtProgressbar = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span> </div>
-<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>  <span class="comment">// *** Localization ***</span></div>
-<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>  xiiTranslatorFromFiles* m_pTranslatorFromFiles = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span> </div>
-<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>  <span class="comment">// *** Dynamic Enum Strings ***</span></div>
-<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>  xiiSet&lt;xiiString&gt; m_DynamicEnumStringsToClear;</div>
-<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>  <span class="keywordtype">void</span>              OnDemandDynamicStringEnumLoad(xiiStringView sEnumName, xiiDynamicStringEnum&amp; e);</div>
-<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span> </div>
-<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>  xiiUniquePtr&lt;xiiQtVersionChecker&gt; m_pVersionChecker;</div>
-<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>};</div>
+<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>  xiiLogWriter::HTML m_LogHTML;</div>
+<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span> </div>
+<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>  xiiTime                        m_LastPluginModificationCheck;</div>
+<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>  xiiApplicationFileSystemConfig m_FileSystemConfig;</div>
+<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span> </div>
+<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>  <span class="comment">// *** Recent Paths ***</span></div>
+<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>  xiiString m_sLastDocumentFolder;</div>
+<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>  xiiString m_sLastProjectFolder;</div>
+<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span> </div>
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>  <span class="comment">// *** Progress Bar ***</span></div>
+<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>  <span class="keywordtype">bool</span> IsProgressBarProcessingEvents() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span> </div>
+<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>  xiiProgress*      m_pProgressbar   = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>  xiiQtProgressbar* m_pQtProgressbar = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span> </div>
+<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>  <span class="comment">// *** Localization ***</span></div>
+<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>  xiiTranslatorFromFiles* m_pTranslatorFromFiles = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span> </div>
+<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>  <span class="comment">// *** Dynamic Enum Strings ***</span></div>
+<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>  xiiSet&lt;xiiString&gt; m_DynamicEnumStringsToClear;</div>
+<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>  <span class="keywordtype">void</span>              OnDemandDynamicStringEnumLoad(xiiStringView sEnumName, xiiDynamicStringEnum&amp; e);</div>
+<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span> </div>
+<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>  xiiUniquePtr&lt;xiiQtVersionChecker&gt; m_pVersionChecker;</div>
+<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>};</div>
 </div>
-<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span> </div>
-<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>XII_DECLARE_FLAGS_OPERATORS(<a class="code hl_struct" href="../../de/de9/structxii_qt_editor_app_1_1_startup_flags.html">xiiQtEditorApp::StartupFlags</a>);</div>
+<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span> </div>
+<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>XII_DECLARE_FLAGS_OPERATORS(<a class="code hl_struct" href="../../de/de9/structxii_qt_editor_app_1_1_startup_flags.html">xiiQtEditorApp::StartupFlags</a>);</div>
 <div class="ttc" id="aclass_q_list_html"><div class="ttname"><a href="../../db/daa/class_q_list.html">QList</a></div><div class="ttdef"><b>Definition</b> EditorApp.moc.h:29</div></div>
 <div class="ttc" id="aclassxii_dynamic_string_enum_html"><div class="ttname"><a href="../../d7/d13/classxii_dynamic_string_enum.html">xiiDynamicStringEnum</a></div><div class="ttdoc">Stores the valid values and names for &#39;dynamic&#39; enums.</div><div class="ttdef"><b>Definition</b> DynamicStringEnum.h:15</div></div>
 <div class="ttc" id="aclassxii_event_html"><div class="ttname"><a href="../../dc/d22/classxii_event.html">xiiEvent</a></div><div class="ttdef"><b>Definition</b> Event.h:177</div></div>
@@ -458,7 +460,7 @@ $(function(){initNavTree('d9/dde/_editor_app_8moc_8h_source.html','../../'); ini
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.html">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.html">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.html">Source</a></li><li class="navelem"><a class="el" href="../../dir_6b4bf1df3614588897d8c8b2dbbde39b.html">Editor</a></li><li class="navelem"><a class="el" href="../../dir_85cc0ddb74daab9d3d596e3c0704d4e4.html">EditorFramework</a></li><li class="navelem"><a class="el" href="../../dir_803d78ee8f6d2921c29b8ce13e8bc537.html">EditorApp</a></li><li class="navelem"><b>EditorApp.moc.h</b></li>
-    <li class="footer">Generated on Tue Dec 30 2025 18:27:58 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Thu Jan 1 2026 17:52:25 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

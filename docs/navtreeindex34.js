@@ -1,5 +1,6 @@
 var NAVTREEINDEX34 =
 {
+"da/d2e/classxii_format_string.html#ae63aa35acd04fb3b0a5b22426db216e4":[3,0,739,0],
 "da/d2e/classxii_format_string.html#aef58e6225a598f3dde75719310ea457f":[3,0,739,1],
 "da/d2e/classxii_qt_property_editor_double_quaternion_widget.html":[3,0,1831],
 "da/d2e/classxii_qt_property_editor_double_quaternion_widget.html#a06be590024167f40ed290959746159ad":[3,0,1831,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX34 =
 "da/d67/classxii_game_application_base.html#ae380efb2d22f6c0faf520024e6f8356a":[3,0,1056,17],
 "da/d67/classxii_game_application_base.html#af5be99caab4ed39b6a9d7bc3060e3706":[3,0,1056,22],
 "da/d6a/classxii_preferences.html":[3,0,1602],
-"da/d6a/classxii_preferences.html#a1193fc34658cdac4e4bd0dc9c3c0ea30":[3,0,1602,3],
-"da/d6a/classxii_preferences.html#a1cd0b5bc110c1423a392261e239cc8c9":[3,0,1602,1]
+"da/d6a/classxii_preferences.html#a1193fc34658cdac4e4bd0dc9c3c0ea30":[3,0,1602,3]
 };

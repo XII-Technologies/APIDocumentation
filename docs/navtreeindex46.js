@@ -1,5 +1,6 @@
 var NAVTREEINDEX46 =
 {
+"dd/dd6/classxii_creature_crawl_component.html#a04c978b318065c384bea155f221a900b":[3,0,454,2],
 "dd/dd6/classxii_creature_crawl_component.html#a20b851e4cc178555fd6eac036af13e75":[3,0,454,0],
 "dd/dd6/classxii_creature_crawl_component.html#af4a2aaba49049f214e85e51615623d33":[3,0,454,1],
 "dd/dd6/structxii_is_enum.html":[3,0,1254],
@@ -248,6 +249,5 @@ var NAVTREEINDEX46 =
 "de/d10/structxii_g_a_l_resource_format.html#a85df1b2fc240485387136c2211fcebf6a5a72bdfa580412aff431c5e438a5b05a":[3,0,946,0,92],
 "de/d10/structxii_g_a_l_resource_format.html#a85df1b2fc240485387136c2211fcebf6a5c1d57b9a78b0fa4c0731e0c4ff46dde":[3,0,946,0,60],
 "de/d10/structxii_g_a_l_resource_format.html#a85df1b2fc240485387136c2211fcebf6a5c60dc774d7ed300aa4834819868eaf7":[3,0,946,0,52],
-"de/d10/structxii_g_a_l_resource_format.html#a85df1b2fc240485387136c2211fcebf6a5ecd43e914744400e5a108b7907cb6a6":[3,0,946,0,58],
-"de/d10/structxii_g_a_l_resource_format.html#a85df1b2fc240485387136c2211fcebf6a65022011f2a1adb0f81eb10c0e7943b8":[3,0,946,0,85]
+"de/d10/structxii_g_a_l_resource_format.html#a85df1b2fc240485387136c2211fcebf6a5ecd43e914744400e5a108b7907cb6a6":[3,0,946,0,58]
 };

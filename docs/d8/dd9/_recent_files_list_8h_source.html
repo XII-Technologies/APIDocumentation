@@ -101,52 +101,58 @@ $(function(){initNavTree('d8/dd9/_recent_files_list_8h_source.html','../../'); i
   <div class="headertitle"><div class="title">RecentFilesList.h</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &lt;Foundation/Containers/Deque.h&gt;</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &lt;Foundation/Strings/String.h&gt;</span></div>
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;ToolsFoundation/ToolsFoundationDLL.h&gt;</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span></div>
-<div class="foldopen" id="foldopen00006" data-start="{" data-end="};">
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="../../dc/d4a/classxii_recent_files_list.html">    6</a></span><span class="keyword">class </span>XII_TOOLSFOUNDATION_DLL xiiRecentFilesList</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>{</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>  xiiRecentFilesList(xiiUInt32 uiMaxElements) { m_uiMaxElements = uiMaxElements; }</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span></div>
-<div class="foldopen" id="foldopen00012" data-start="{" data-end="};">
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="../../d6/d57/structxii_recent_files_list_1_1_recent_file.html">   12</a></span>  <span class="keyword">struct </span>RecentFile</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>  {</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    RecentFile() :</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>      m_iContainerWindow(0)</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    {</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    }</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    RecentFile(<a class="code hl_class" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sFile, xiiInt32 iContainerWindow) :</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>      m_File(sFile), m_iContainerWindow(iContainerWindow)</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    {</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    }</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    xiiString m_File;</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    xiiInt32  m_iContainerWindow;</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>  };</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;Foundation/Containers/Deque.h&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;Foundation/Strings/String.h&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span></div>
+<div class="foldopen" id="foldopen00009" data-start="{" data-end="};">
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="../../dc/d4a/classxii_recent_files_list.html">    9</a></span><span class="keyword">class </span>XII_TOOLSFOUNDATION_DLL xiiRecentFilesList</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>{</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>  xiiRecentFilesList(xiiUInt32 uiMaxElements) :</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    m_uiMaxElements(uiMaxElements)</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>  {</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>  }</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span></div>
+<div class="foldopen" id="foldopen00018" data-start="{" data-end="};">
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="../../d6/d57/structxii_recent_files_list_1_1_recent_file.html">   18</a></span>  <span class="keyword">struct </span>RecentFile</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>  {</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    RecentFile() :</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>      m_iContainerWindow(0)</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    {</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    }</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    RecentFile(<a class="code hl_class" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sFile, xiiInt32 iContainerWindow) :</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>      m_File(sFile), m_iContainerWindow(iContainerWindow)</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    {</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    }</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    xiiString m_File;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    xiiInt32  m_iContainerWindow;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>  };</div>
 </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span></div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="../../dc/d4a/classxii_recent_files_list.html#a507a721894bad82753ddb9e339f3f9ba">Insert</a>(<a class="code hl_class" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sFile, xiiInt32 iContainerWindow);</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span></div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="../../dc/d4a/classxii_recent_files_list.html#a595be0dace867c13500f8832e994fdbd">   30</a></span>  <span class="keyword">const</span> <a class="code hl_class" href="../../d8/df8/classxii_deque.html">xiiDeque&lt;RecentFile&gt;</a>&amp; <a class="code hl_function" href="../../dc/d4a/classxii_recent_files_list.html#a595be0dace867c13500f8832e994fdbd">GetFileList</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_Files; }</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span></div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="../../dc/d4a/classxii_recent_files_list.html#af9055a4926ec0568541f352f93129a4d">   33</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="../../dc/d4a/classxii_recent_files_list.html#af9055a4926ec0568541f352f93129a4d">Clear</a>() { m_Files.Clear(); }</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span></div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  <span class="keywordtype">void</span> Save(<a class="code hl_class" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sFile);</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span></div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  <span class="keywordtype">void</span> Load(<a class="code hl_class" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sFile);</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>  xiiUInt32            m_uiMaxElements;</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  <a class="code hl_class" href="../../d8/df8/classxii_deque.html">xiiDeque&lt;RecentFile&gt;</a> m_Files;</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>};</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="../../dc/d4a/classxii_recent_files_list.html#a507a721894bad82753ddb9e339f3f9ba">Insert</a>(<a class="code hl_class" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sFile, xiiInt32 iContainerWindow);</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="../../dc/d4a/classxii_recent_files_list.html#a595be0dace867c13500f8832e994fdbd">   37</a></span>  <span class="keyword">const</span> <a class="code hl_class" href="../../d8/df8/classxii_deque.html">xiiDeque&lt;RecentFile&gt;</a>&amp; <a class="code hl_function" href="../../dc/d4a/classxii_recent_files_list.html#a595be0dace867c13500f8832e994fdbd">GetFileList</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_Files; }</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="../../dc/d4a/classxii_recent_files_list.html#af9055a4926ec0568541f352f93129a4d">   40</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="../../dc/d4a/classxii_recent_files_list.html#af9055a4926ec0568541f352f93129a4d">Clear</a>() { m_Files.Clear(); }</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  <span class="keywordtype">void</span> Save(<a class="code hl_class" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sFile);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>  <span class="keywordtype">void</span> Load(<a class="code hl_class" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sFile);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  xiiUInt32            m_uiMaxElements;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  <a class="code hl_class" href="../../d8/df8/classxii_deque.html">xiiDeque&lt;RecentFile&gt;</a> m_Files;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>};</div>
 </div>
 <div class="ttc" id="aclassxii_deque_html"><div class="ttname"><a href="../../d8/df8/classxii_deque.html">xiiDeque</a></div><div class="ttdef"><b>Definition</b> Deque.h:267</div></div>
 <div class="ttc" id="aclassxii_recent_files_list_html_a507a721894bad82753ddb9e339f3f9ba"><div class="ttname"><a href="../../dc/d4a/classxii_recent_files_list.html#a507a721894bad82753ddb9e339f3f9ba">xiiRecentFilesList::Insert</a></div><div class="ttdeci">void Insert(xiiStringView sFile, xiiInt32 iContainerWindow)</div><div class="ttdoc">Moves the inserted file to the front with the given container ID.</div><div class="ttdef"><b>Definition</b> RecentFilesList.cpp:11</div></div>
-<div class="ttc" id="aclassxii_recent_files_list_html_a595be0dace867c13500f8832e994fdbd"><div class="ttname"><a href="../../dc/d4a/classxii_recent_files_list.html#a595be0dace867c13500f8832e994fdbd">xiiRecentFilesList::GetFileList</a></div><div class="ttdeci">const xiiDeque&lt; RecentFile &gt; &amp; GetFileList() const</div><div class="ttdoc">Returns all files in the list.</div><div class="ttdef"><b>Definition</b> RecentFilesList.h:30</div></div>
-<div class="ttc" id="aclassxii_recent_files_list_html_af9055a4926ec0568541f352f93129a4d"><div class="ttname"><a href="../../dc/d4a/classxii_recent_files_list.html#af9055a4926ec0568541f352f93129a4d">xiiRecentFilesList::Clear</a></div><div class="ttdeci">void Clear()</div><div class="ttdoc">Clears the list.</div><div class="ttdef"><b>Definition</b> RecentFilesList.h:33</div></div>
+<div class="ttc" id="aclassxii_recent_files_list_html_a595be0dace867c13500f8832e994fdbd"><div class="ttname"><a href="../../dc/d4a/classxii_recent_files_list.html#a595be0dace867c13500f8832e994fdbd">xiiRecentFilesList::GetFileList</a></div><div class="ttdeci">const xiiDeque&lt; RecentFile &gt; &amp; GetFileList() const</div><div class="ttdoc">Returns all files in the list.</div><div class="ttdef"><b>Definition</b> RecentFilesList.h:37</div></div>
+<div class="ttc" id="aclassxii_recent_files_list_html_af9055a4926ec0568541f352f93129a4d"><div class="ttname"><a href="../../dc/d4a/classxii_recent_files_list.html#af9055a4926ec0568541f352f93129a4d">xiiRecentFilesList::Clear</a></div><div class="ttdeci">void Clear()</div><div class="ttdoc">Clears the list.</div><div class="ttdef"><b>Definition</b> RecentFilesList.h:40</div></div>
 <div class="ttc" id="aclassxii_string_view_html"><div class="ttname"><a href="../../d4/d85/classxii_string_view.html">xiiStringView</a></div><div class="ttdoc">xiiStringView represent a read-only sub-string of a larger string, as it can store a dedicated string...</div><div class="ttdef"><b>Definition</b> StringView.h:34</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -154,7 +160,7 @@ $(function(){initNavTree('d8/dd9/_recent_files_list_8h_source.html','../../'); i
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.html">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.html">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.html">Source</a></li><li class="navelem"><a class="el" href="../../dir_64f53f8da7bf780a58c32bb848e7873b.html">Tools</a></li><li class="navelem"><a class="el" href="../../dir_4b5bc41f7c4cbfc8ca80bdea56300f1d.html">Libs</a></li><li class="navelem"><a class="el" href="../../dir_ba58a103e79106e89914cc52b64849d5.html">ToolsFoundation</a></li><li class="navelem"><a class="el" href="../../dir_ac0adbc37a4992c356298d1140ad63dd.html">Utilities</a></li><li class="navelem"><b>RecentFilesList.h</b></li>
-    <li class="footer">Generated on Tue Dec 30 2025 18:28:03 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Thu Jan 1 2026 17:52:31 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

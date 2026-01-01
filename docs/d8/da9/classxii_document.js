@@ -21,6 +21,7 @@ var classxii_document =
     [ "GetEditorInputContextOverride", "d8/da9/classxii_document.html#a146594e98bbe297ef39f9a15f942ca34", null ],
     [ "GetMainDocument", "d8/da9/classxii_document.html#a486b908fb1304318104140ea4c234cef", null ],
     [ "GetManipulatorSearchStrategy", "d8/da9/classxii_document.html#a49604b82f55246ad90e9202c2a9d7331", null ],
+    [ "GetModifiedTime", "d8/da9/classxii_document.html#a8a9d0d6853f643ee61c720dfc8b0c27f", null ],
     [ "GetSupportedMimeTypesForPasting", "d8/da9/classxii_document.html#a640a57656f8fbe459ef752ede24fdd98", null ],
     [ "GetUnknownObjectTypeInstances", "d8/da9/classxii_document.html#a9c8c79390c3a3548dda9031f53b5459a", null ],
     [ "GetUnknownObjectTypes", "d8/da9/classxii_document.html#a998d5de5b355ba21796da6dd47d51343", null ],

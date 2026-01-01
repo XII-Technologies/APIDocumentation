@@ -1,5 +1,6 @@
 var NAVTREEINDEX51 =
 {
+"df/d60/classxii_ipc_channel.html#a9e58d40283a1df1bd72612421139d52c":[3,0,1246,11],
 "df/d60/classxii_ipc_channel.html#aa14be1cd0a271504239cc40975307da4":[3,0,1246,3],
 "df/d60/classxii_ipc_channel.html#aa48f7ccb090abd7b742fbe61de63646b":[3,0,1246,4],
 "df/d60/classxii_ipc_channel.html#ab3a7aca48b5c6086824e23326f7e0227":[3,0,1246,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX51 =
 "df/ddc/classxii_typed_member_property.html":[3,0,2513],
 "df/ddc/classxii_typed_member_property.html#a60e5109f39c0a7991b8db979e3e932e5":[3,0,2513,1],
 "df/ddc/classxii_typed_member_property.html#a60e5109f39c0a7991b8db979e3e932e5":[3,0,2514,1],
-"df/ddc/classxii_typed_member_property.html#a77b27110d8d11a0b81eb82bb3eac7ef4":[3,0,2513,0],
-"df/ddc/classxii_typed_member_property.html#a77b27110d8d11a0b81eb82bb3eac7ef4":[3,0,2514,0]
+"df/ddc/classxii_typed_member_property.html#a77b27110d8d11a0b81eb82bb3eac7ef4":[3,0,2513,0]
 };

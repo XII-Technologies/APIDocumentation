@@ -1,5 +1,6 @@
 var NAVTREEINDEX32 =
 {
+"d9/da4/structxii_g_a_l_shading_rate_axis.html#accf1fa3cf171c749378e92293601ec08a30dbf00c405b0dc3086d95f0892ccf93":[3,0,992,0,1],
 "d9/da4/structxii_g_a_l_shading_rate_axis.html#accf1fa3cf171c749378e92293601ec08a35e5d8be3e37e40d0000a83983902f19":[3,0,992,0,0],
 "d9/da4/structxii_g_a_l_shading_rate_axis.html#accf1fa3cf171c749378e92293601ec08a847c7fc2f5b631bdb55da96d8e6fc0c6":[3,0,992,0,3],
 "d9/da4/structxii_g_a_l_shading_rate_axis.html#accf1fa3cf171c749378e92293601ec08adf3a1bcf43031dcca8c848bf41773e15":[3,0,992,0,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX32 =
 "d9/de1/classxii_resource.html#ad3386f288d8a8ab633fba003a6187ed9a817d39136a23588febde1f65edc02643":[3,0,2044,1,0],
 "d9/de1/classxii_resource.html#ad3386f288d8a8ab633fba003a6187ed9aa8748188c286904944ef4d9ee11b8577":[3,0,2044,1,1],
 "d9/de1/classxii_resource.html#ae7c6f2fcc105e876c0165d6ca5edfedf":[3,0,2044,3],
-"d9/de1/classxii_resource.html#aeac4e895d6de172e94a1b444ccb7e132":[3,0,2044,5],
-"d9/de1/classxii_resource.html#aec592e9010ff171261e3554aedc1f465":[3,0,2044,30]
+"d9/de1/classxii_resource.html#aeac4e895d6de172e94a1b444ccb7e132":[3,0,2044,5]
 };

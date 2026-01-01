@@ -1,5 +1,6 @@
 var NAVTREEINDEX52 =
 {
+"df/ddc/classxii_typed_member_property.html#a77b27110d8d11a0b81eb82bb3eac7ef4":[3,0,2514,0],
 "df/ddc/classxii_typed_member_property.html#a823f9fc5d10cf6d8e30ab2c0dd91dc5d":[3,0,2513,2],
 "df/ddc/classxii_typed_member_property.html#a823f9fc5d10cf6d8e30ab2c0dd91dc5d":[3,0,2514,3],
 "df/ddc/classxii_typed_member_property.html#a910865072bf4d99b3ca6e2c7733128ff":[3,0,2513,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX52 =
 "namespacemembers_func_r.html":[2,1,13],
 "namespacemembers_func_s.html":[2,1,14],
 "namespacemembers_func_t.html":[2,1,15],
-"namespacemembers_func_u.html":[2,1,16],
-"namespacemembers_func_w.html":[2,1,17]
+"namespacemembers_func_u.html":[2,1,16]
 };

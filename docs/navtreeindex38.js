@@ -1,5 +1,6 @@
 var NAVTREEINDEX38 =
 {
+"db/d60/structxii_g_a_l_texture_view_type.html#ad4f8ca273dab45d482b39716b7c25272a56711e5d21b9e400ceb98ce111927692":[3,0,1034,0,8],
 "db/d60/structxii_g_a_l_texture_view_type.html#ad4f8ca273dab45d482b39716b7c25272a92b05ac48b7db22ad9153f2b5afb9f06":[3,0,1034,0,4],
 "db/d60/structxii_g_a_l_texture_view_type.html#ad4f8ca273dab45d482b39716b7c25272a930c07a32f6221f5b3853f8e8e4e4a2e":[3,0,1034,0,1],
 "db/d60/structxii_g_a_l_texture_view_type.html#ad4f8ca273dab45d482b39716b7c25272aa36318e2fe168726dc7ae076c6c2fa79":[3,0,1034,0,6],
@@ -248,6 +249,5 @@ var NAVTREEINDEX38 =
 "db/db7/structxii_input_slot_flags.html#a3e9e6761413c16a3ca9109bb9d421bb0a4722eb9f4d01ecd7b398b9426e9a8fc1":[3,0,1230,1,14],
 "db/db7/structxii_input_slot_flags.html#a3e9e6761413c16a3ca9109bb9d421bb0a4cadc2ec0d2ba8d55e21c5b3822a18bc":[3,0,1230,1,15],
 "db/db7/structxii_input_slot_flags.html#a3e9e6761413c16a3ca9109bb9d421bb0a565afb2b3071ce32da333ca04fb14c10":[3,0,1230,1,3],
-"db/db7/structxii_input_slot_flags.html#a3e9e6761413c16a3ca9109bb9d421bb0a683898db2b790c80371e034571bce4d3":[3,0,1230,1,20],
-"db/db7/structxii_input_slot_flags.html#a3e9e6761413c16a3ca9109bb9d421bb0a7d6128830caf7f3438921775ac83c08f":[3,0,1230,1,4]
+"db/db7/structxii_input_slot_flags.html#a3e9e6761413c16a3ca9109bb9d421bb0a683898db2b790c80371e034571bce4d3":[3,0,1230,1,20]
 };

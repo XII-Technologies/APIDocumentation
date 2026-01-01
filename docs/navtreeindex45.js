@@ -1,5 +1,6 @@
 var NAVTREEINDEX45 =
 {
+"dd/d97/structxii_g_a_l_draw_mesh_indirect_description.html#a13dc77281d2ad442bab39def4e2feff0":[3,0,847,7],
 "dd/d97/structxii_g_a_l_draw_mesh_indirect_description.html#a4467f58b56f62c14d5fe33da689d8d6c":[3,0,847,3],
 "dd/d97/structxii_g_a_l_draw_mesh_indirect_description.html#a85f178c3dfe6aa4a41bb89d4641dd7e2":[3,0,847,1],
 "dd/d97/structxii_g_a_l_draw_mesh_indirect_description.html#aabca090569de0fba3cfe0516b3068e63":[3,0,847,5],
@@ -248,6 +249,5 @@ var NAVTREEINDEX45 =
 "dd/dd0/classxii_path_component.html#af0e20253ce4f80ac8dc2711acd7d5b3f":[3,0,1540,6],
 "dd/dd0/classxii_path_component.html#af8756f5ce8e510afddf15950696f9659":[3,0,1540,11],
 "dd/dd0/classxii_path_component.html#af8c1c62f1c3e7a66d55928dfeef362b1":[3,0,1540,8],
-"dd/dd6/classxii_creature_crawl_component.html":[3,0,454],
-"dd/dd6/classxii_creature_crawl_component.html#a04c978b318065c384bea155f221a900b":[3,0,454,2]
+"dd/dd6/classxii_creature_crawl_component.html":[3,0,454]
 };

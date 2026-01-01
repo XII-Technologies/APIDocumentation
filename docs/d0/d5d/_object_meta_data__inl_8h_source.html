@@ -150,9 +150,9 @@ $(function(){initNavTree('d0/d5d/_object_meta_data__inl_8h_source.html','../../'
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>}</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> KEY, <span class="keyword">typename</span> VALUE&gt;</div>
-<div class="foldopen" id="foldopen00048" data-start="{" data-end="}">
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="../../d6/d03/classxii_object_meta_data.html#a79816f44c6b0e14f96fb3df2da93e2c6">   48</a></span><span class="keywordtype">bool</span> xiiObjectMetaData&lt;KEY, VALUE&gt;::HasMetaData(<span class="keyword">const</span> KEY objectKey)<span class="keyword"> const</span></div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="keyword"></span>{</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="keywordtype">bool</span> xiiObjectMetaData&lt;KEY, VALUE&gt;::HasMetaData(<span class="keyword">const</span> KEY objectKey)<span class="keyword"> const</span></div>
+<div class="foldopen" id="foldopen00049" data-start="{" data-end="}">
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="../../d6/d03/classxii_object_meta_data.html#a79816f44c6b0e14f96fb3df2da93e2c6">   49</a></span><span class="keyword"></span>{</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  XII_LOCK(m_pMetaStorage-&gt;m_Mutex);</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  <span class="keyword">const</span> VALUE* pValue = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  <span class="keywordflow">return</span> m_pMetaStorage-&gt;m_MetaData.TryGetValue(objectKey, pValue);</div>
@@ -164,13 +164,13 @@ $(function(){initNavTree('d0/d5d/_object_meta_data__inl_8h_source.html','../../'
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  m_pMetaStorage-&gt;m_Mutex.Lock();</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  XII_ASSERT_DEV(m_pMetaStorage-&gt;m_AccessMode == Storage::AccessMode::Nothing, <span class="stringliteral">&quot;Already accessing some data&quot;</span>);</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  m_pMetaStorage-&gt;m_AccessMode  = Storage::AccessMode::Write;</div>
-<div class="foldopen" id="foldopen00061" data-start="{" data-end="}">
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="../../d6/d03/classxii_object_meta_data.html#a4efbf430f41d1477ee0a273e46277047">   61</a></span>  m_pMetaStorage-&gt;m_AcessingKey = objectKey;</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  m_pMetaStorage-&gt;m_AcessingKey = objectKey;</div>
+<div class="foldopen" id="foldopen00062" data-start="{" data-end="}">
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="../../d6/d03/classxii_object_meta_data.html#a4efbf430f41d1477ee0a273e46277047">   62</a></span> </div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  <span class="keywordflow">return</span> &amp;m_pMetaStorage-&gt;m_MetaData[objectKey];</div>
-<div class="foldopen" id="foldopen00064" data-start="{" data-end="}">
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="../../d6/d03/classxii_object_meta_data.html#a8d0e0ae0daf87b04f30d3510a11aad1c">   64</a></span>}</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>}</div>
+<div class="foldopen" id="foldopen00065" data-start="{" data-end="}">
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="../../d6/d03/classxii_object_meta_data.html#a8d0e0ae0daf87b04f30d3510a11aad1c">   65</a></span> </div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> KEY, <span class="keyword">typename</span> VALUE&gt;</div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="keywordtype">void</span> xiiObjectMetaData&lt;KEY, VALUE&gt;::EndReadMetaData()<span class="keyword"> const</span></div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="keyword"></span>{</div>
@@ -319,7 +319,7 @@ $(function(){initNavTree('d0/d5d/_object_meta_data__inl_8h_source.html','../../'
 <div class="ttc" id="aclassxii_hash_table_base_html_a8bde237754738cb0f4581a62b10c1f61"><div class="ttname"><a href="../../d0/da6/classxii_hash_table_base.html#a8bde237754738cb0f4581a62b10c1f61">xiiHashTableBase::Reserve</a></div><div class="ttdeci">void Reserve(xiiUInt32 uiCapacity)</div><div class="ttdoc">Expands the hashtable by over-allocating the internal storage so that the load factor is lower or equ...</div><div class="ttdef"><b>Definition</b> HashTable_inl.h:301</div></div>
 <div class="ttc" id="aclassxii_hash_table_html"><div class="ttname"><a href="../../d8/dc2/classxii_hash_table.html">xiiHashTable</a></div><div class="ttdef"><b>Definition</b> HashTable.h:329</div></div>
 <div class="ttc" id="aclassxii_hybrid_array_html"><div class="ttname"><a href="../../dc/da9/classxii_hybrid_array.html">xiiHybridArray</a></div><div class="ttdoc">A hybrid array uses in-place storage to handle the first few elements without any allocation....</div><div class="ttdef"><b>Definition</b> HybridArray.h:12</div></div>
-<div class="ttc" id="aclassxii_object_meta_data_1_1_storage_html"><div class="ttname"><a href="../../dd/d42/classxii_object_meta_data_1_1_storage.html">xiiObjectMetaData::Storage</a></div><div class="ttdef"><b>Definition</b> ObjectMetaData.h:29</div></div>
+<div class="ttc" id="aclassxii_object_meta_data_1_1_storage_html"><div class="ttname"><a href="../../dd/d42/classxii_object_meta_data_1_1_storage.html">xiiObjectMetaData::Storage</a></div><div class="ttdef"><b>Definition</b> ObjectMetaData.h:30</div></div>
 <div class="ttc" id="aclassxii_object_meta_data_html_a4efbf430f41d1477ee0a273e46277047"><div class="ttname"><a href="../../d6/d03/classxii_object_meta_data.html#a4efbf430f41d1477ee0a273e46277047">xiiObjectMetaData::AttachMetaDataToAbstractGraph</a></div><div class="ttdeci">void AttachMetaDataToAbstractGraph(xiiAbstractObjectGraph &amp;inout_graph) const</div><div class="ttdoc">Uses reflection information from VALUE to store all properties that differ from the default value as ...</div><div class="ttdef"><b>Definition</b> ObjectMetaData_inl.h:97</div></div>
 <div class="ttc" id="aclassxii_object_meta_data_html_a79816f44c6b0e14f96fb3df2da93e2c6"><div class="ttname"><a href="../../d6/d03/classxii_object_meta_data.html#a79816f44c6b0e14f96fb3df2da93e2c6">xiiObjectMetaData::BeginReadMetaData</a></div><div class="ttdeci">const VALUE * BeginReadMetaData(const KEY objectKey) const</div><div class="ttdoc">Will always return a non-null result. May be a default object.</div><div class="ttdef"><b>Definition</b> ObjectMetaData_inl.h:15</div></div>
 <div class="ttc" id="aclassxii_object_meta_data_html_a8d0e0ae0daf87b04f30d3510a11aad1c"><div class="ttname"><a href="../../d6/d03/classxii_object_meta_data.html#a8d0e0ae0daf87b04f30d3510a11aad1c">xiiObjectMetaData::RestoreMetaDataFromAbstractGraph</a></div><div class="ttdeci">void RestoreMetaDataFromAbstractGraph(const xiiAbstractObjectGraph &amp;graph)</div><div class="ttdoc">Uses reflection information from VALUE to restore all meta data properties from the graph.</div><div class="ttdef"><b>Definition</b> ObjectMetaData_inl.h:149</div></div>
@@ -334,7 +334,7 @@ $(function(){initNavTree('d0/d5d/_object_meta_data__inl_8h_source.html','../../'
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_43e0a1f539e00dcfa1a6bc4d4fee4fc2.html">home</a></li><li class="navelem"><a class="el" href="../../dir_1036706e55c22cab35bc1c58ee689f1d.html">runner</a></li><li class="navelem"><a class="el" href="../../dir_629f8151d55d307162ff2d619fb1783d.html">work</a></li><li class="navelem"><a class="el" href="../../dir_1ddc44fe1263a8c7935fa6130b7d9499.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_2c1b6808f12952f4c36e05ba7068379a.html">XII</a></li><li class="navelem"><a class="el" href="../../dir_b5a1c4ecfca018ad24b729e213296d41.html">Source</a></li><li class="navelem"><a class="el" href="../../dir_64f53f8da7bf780a58c32bb848e7873b.html">Tools</a></li><li class="navelem"><a class="el" href="../../dir_4b5bc41f7c4cbfc8ca80bdea56300f1d.html">Libs</a></li><li class="navelem"><a class="el" href="../../dir_ba58a103e79106e89914cc52b64849d5.html">ToolsFoundation</a></li><li class="navelem"><a class="el" href="../../dir_9f10d7a0aae6d76d36f3c2468706a4c8.html">Object</a></li><li class="navelem"><a class="el" href="../../dir_a3985125986fa81db6f79b0d735f3f8c.html">Implementation</a></li><li class="navelem"><b>ObjectMetaData_inl.h</b></li>
-    <li class="footer">Generated on Tue Dec 30 2025 18:28:03 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Thu Jan 1 2026 17:52:31 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

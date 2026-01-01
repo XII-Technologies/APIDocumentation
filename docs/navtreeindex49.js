@@ -1,5 +1,6 @@
 var NAVTREEINDEX49 =
 {
+"de/d99/classxii_world_module_factory.html#a260fef2ed3044b820853a709394d9d2a":[3,0,2684,0],
 "de/d99/classxii_world_module_factory.html#a843120a5916ad6621f8ad2a221b4717e":[3,0,2684,2],
 "de/d99/classxii_world_module_factory.html#a9e829dcdbf50a33c7648541d75990bb9":[3,0,2684,1],
 "de/d9b/structxii_tex_conv_compression_mode.html":[3,0,2412],
@@ -248,6 +249,5 @@ var NAVTREEINDEX49 =
 "de/de1/classxii_deduplication_write_context.html#a94211e40855ac7efbac0c60358796592":[3,0,521,1],
 "de/de1/classxii_deduplication_write_context.html#ab4ea8519042164bbcbcab7e454723d9a":[3,0,521,2],
 "de/de1/classxii_deduplication_write_context.html#abefe9bbde788c4c50333e1b99b5359d9":[3,0,521,5],
-"de/de2/classxii_component_init_batch_handle.html":[3,0,381],
-"de/de6/classxii_render_data_batch.html":[3,0,1975]
+"de/de2/classxii_component_init_batch_handle.html":[3,0,381]
 };

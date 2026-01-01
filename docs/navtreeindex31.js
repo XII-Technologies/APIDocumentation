@@ -1,5 +1,6 @@
 var NAVTREEINDEX31 =
 {
+"d9/d73/structxii_g_a_l_resource_format_description.html#ab2a0bc26115dc085bcb507bf0c214a2d":[3,0,948,4],
 "d9/d73/structxii_g_a_l_resource_format_description.html#ab304816f5a71d3da8cebba17a0869aff":[3,0,948,6],
 "d9/d73/structxii_g_a_l_resource_format_description.html#aeb031fcb51f05c207e292ab2050da652":[3,0,948,7],
 "d9/d74/structxii_property_meta_state_event.html":[3,0,1658],
@@ -248,6 +249,5 @@ var NAVTREEINDEX31 =
 "d9/da1/unionxii_delegate_base_1_1_instance_ptr.html":[3,0,536,0],
 "d9/da4/structxii_g_a_l_shading_rate_axis.html":[3,0,992],
 "d9/da4/structxii_g_a_l_shading_rate_axis.html#accf1fa3cf171c749378e92293601ec08":[3,0,992,0],
-"d9/da4/structxii_g_a_l_shading_rate_axis.html#accf1fa3cf171c749378e92293601ec08a01d6b0e82c6e7c5f05eb0b16256bfa33":[3,0,992,0,4],
-"d9/da4/structxii_g_a_l_shading_rate_axis.html#accf1fa3cf171c749378e92293601ec08a30dbf00c405b0dc3086d95f0892ccf93":[3,0,992,0,1]
+"d9/da4/structxii_g_a_l_shading_rate_axis.html#accf1fa3cf171c749378e92293601ec08a01d6b0e82c6e7c5f05eb0b16256bfa33":[3,0,992,0,4]
 };
