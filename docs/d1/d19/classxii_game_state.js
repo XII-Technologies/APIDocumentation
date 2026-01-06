@@ -16,7 +16,7 @@ var classxii_game_state =
     [ "GetMainCamera", "d1/d19/classxii_game_state.html#a987f617af63a2a74a68f242bcd06f87b", null ],
     [ "GetMainView", "d1/d19/classxii_game_state.html#a100d941baa23fe1990edbac0bf93ebf2", null ],
     [ "GetMainWorld", "d1/d19/classxii_game_state.html#a956252d626851b0bdef50c1569eadcfa", null ],
-    [ "GetStartupSceneFile", "d1/d19/classxii_game_state.html#a82578b3a0e78c226d775d26fb8254a7f", null ],
+    [ "GetStartupOptions", "d1/d19/classxii_game_state.html#a15acf2e10f85c757f1226d0f003645d4", null ],
     [ "IsInLoadingScreen", "d1/d19/classxii_game_state.html#a8c6fbb7987c7f1e2bfa72dbe968f0c37", null ],
     [ "IsLoadingSceneInBackground", "d1/d19/classxii_game_state.html#a1438f37ee88ce06bbe911cd97ac4c2da", null ],
     [ "LoadScene", "d1/d19/classxii_game_state.html#a7b31ba83682b9e9887f3e1a7e25c751b", null ],
