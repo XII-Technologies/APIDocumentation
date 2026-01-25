@@ -23,5 +23,6 @@ var searchData=
   ['exclude_20',['Exclude',['../d0/dc2/classxii_archive_builder.html#a79ed6bf54149bed426fcdc8ede30739ca843f2812f595e7ec7c5036e89fde02d6',1,'xiiArchiveBuilder']]],
   ['excludeabstract_21',['ExcludeAbstract',['../d3/d09/structxii_r_t_t_i_1_1_for_each_options.html#ae52a706ccc417fe50af7cf69b6e75a13afb67f2789d3d58934c07e176e978ec3f',1,'xiiRTTI::ForEachOptions']]],
   ['excludenonallocatable_22',['ExcludeNonAllocatable',['../d3/d09/structxii_r_t_t_i_1_1_for_each_options.html#ae52a706ccc417fe50af7cf69b6e75a13a5d203dfb813ed80fcc45cf9eaf40d49e',1,'xiiRTTI::ForEachOptions']]],
-  ['exclusive_23',['Exclusive',['../dc/df4/structxii_file_share_mode.html#a853af051a2b930d18b9d14f78c09e5e1a0f9092044a6e5fe07f86fd976cc0183f',1,'xiiFileShareMode']]]
+  ['exclusive_23',['Exclusive',['../dc/df4/structxii_file_share_mode.html#a853af051a2b930d18b9d14f78c09e5e1a0f9092044a6e5fe07f86fd976cc0183f',1,'xiiFileShareMode']]],
+  ['exportable_24',['Exportable',['../df/d32/structxii_g_a_l_external_memory_kind.html#a3cfaa55b616176df8f513927e2be45cfa967f4ed436263b4b3e10530a0b9efaa0',1,'xiiGALExternalMemoryKind']]]
 ];

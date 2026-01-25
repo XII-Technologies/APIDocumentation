@@ -44,5 +44,6 @@ var classxii_render_context =
     [ "SetDepthStencilState", "da/d27/classxii_render_context.html#aa7f426f44c7f48ec609b4960892c23d6", null ],
     [ "SetRasterizerState", "da/d27/classxii_render_context.html#ac4a9726da3f2b7f943ae715fd281c153", null ],
     [ "SetShaderPermutationVariable", "da/d27/classxii_render_context.html#a74fd290d2d5049da4c2fd2aeedfd912c", null ],
-    [ "SetShaderPermutationVariable", "da/d27/classxii_render_context.html#a32b9b42d5b07118710afe772a5b28989", null ]
+    [ "SetShaderPermutationVariable", "da/d27/classxii_render_context.html#a32b9b42d5b07118710afe772a5b28989", null ],
+    [ "SetShadingRate", "da/d27/classxii_render_context.html#ad8090933177caafaeb8ab01a4f161b84", null ]
 ];

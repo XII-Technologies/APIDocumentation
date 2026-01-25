@@ -149,10 +149,10 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsConnected</b> () co
 <a class="el" href="../../de/dfd/structxii_enum.html">xiiEnum</a>&lt; <a class="el" href="../../d6/d48/structxii_ipc_channel_1_1_connection_state.html">ConnectionState</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetConnectionState</b> () const</td></tr>
 <tr class="memdesc:a697b69c26fa83c9a10a6f4e47e9259ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current state of the connection. <br /></td></tr>
 <tr class="separator:a697b69c26fa83c9a10a6f4e47e9259ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5870df18aab875da68f82a22f6505ecf" id="r_a5870df18aab875da68f82a22f6505ecf"><td class="memItemLeft" align="right" valign="top"><a id="a5870df18aab875da68f82a22f6505ecf" name="a5870df18aab875da68f82a22f6505ecf"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>Send</b> (<a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; const xiiUInt8 &gt; data)</td></tr>
-<tr class="memdesc:a5870df18aab875da68f82a22f6505ecf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a message. pMsg can be destroyed after the call. <br /></td></tr>
-<tr class="separator:a5870df18aab875da68f82a22f6505ecf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09b241434e4d1c81850c5498e303a746" id="r_a09b241434e4d1c81850c5498e303a746"><td class="memItemLeft" align="right" valign="top"><a id="a09b241434e4d1c81850c5498e303a746" name="a09b241434e4d1c81850c5498e303a746"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>Send</b> (<a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; const xiiUInt8 &gt; pData)</td></tr>
+<tr class="memdesc:a09b241434e4d1c81850c5498e303a746"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a message. pMsg can be destroyed after the call. <br /></td></tr>
+<tr class="separator:a09b241434e4d1c81850c5498e303a746"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e49ac406894de61a1ab119a711fe44e" id="r_a7e49ac406894de61a1ab119a711fe44e"><td class="memItemLeft" align="right" valign="top"><a id="a7e49ac406894de61a1ab119a711fe44e" name="a7e49ac406894de61a1ab119a711fe44e"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetReceiveCallback</b> (<a class="el" href="../../dc/d84/structxii_delegate.html">ReceiveCallback</a> callback)</td></tr>
 <tr class="separator:a7e49ac406894de61a1ab119a711fe44e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -217,10 +217,10 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>NeedWakeup</b
 <tr class="memitem:a16660b3a4dd48c15a3d3fa7a9f8abcc0" id="r_a16660b3a4dd48c15a3d3fa7a9f8abcc0"><td class="memItemLeft" align="right" valign="top"><a id="a16660b3a4dd48c15a3d3fa7a9f8abcc0" name="a16660b3a4dd48c15a3d3fa7a9f8abcc0"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetConnectionState</b> (<a class="el" href="../../de/dfd/structxii_enum.html">xiiEnum</a>&lt; <a class="el" href="../../d6/d48/structxii_ipc_channel_1_1_connection_state.html">ConnectionState</a> &gt; state)</td></tr>
 <tr class="separator:a16660b3a4dd48c15a3d3fa7a9f8abcc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e58d40283a1df1bd72612421139d52c" id="r_a9e58d40283a1df1bd72612421139d52c"><td class="memItemLeft" align="right" valign="top"><a id="a9e58d40283a1df1bd72612421139d52c" name="a9e58d40283a1df1bd72612421139d52c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ReceiveData</b> (<a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; const xiiUInt8 &gt; data)</td></tr>
-<tr class="memdesc:a9e58d40283a1df1bd72612421139d52c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation needs to call this when new data has been received. data can be invalidated after the function. <br /></td></tr>
-<tr class="separator:a9e58d40283a1df1bd72612421139d52c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27d93207a04697c09c25f8d1f9349c9d" id="r_a27d93207a04697c09c25f8d1f9349c9d"><td class="memItemLeft" align="right" valign="top"><a id="a27d93207a04697c09c25f8d1f9349c9d" name="a27d93207a04697c09c25f8d1f9349c9d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ReceiveData</b> (<a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; const xiiUInt8 &gt; pData)</td></tr>
+<tr class="memdesc:a27d93207a04697c09c25f8d1f9349c9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementation needs to call this when new data has been received. data can be invalidated after the function. <br /></td></tr>
+<tr class="separator:a27d93207a04697c09c25f8d1f9349c9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e9c4e9d472fc988eb41b137253bae11" id="r_a5e9c4e9d472fc988eb41b137253bae11"><td class="memItemLeft" align="right" valign="top"><a id="a5e9c4e9d472fc988eb41b137253bae11" name="a5e9c4e9d472fc988eb41b137253bae11"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>FlushPendingOperations</b> ()</td></tr>
 <tr class="separator:a5e9c4e9d472fc988eb41b137253bae11"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -352,7 +352,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>xiiMessageLoop</b></
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../df/d60/classxii_ipc_channel.html">xiiIpcChannel</a></li>
-    <li class="footer">Generated on Sun Jan 11 2026 20:01:23 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Jan 25 2026 01:25:22 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

@@ -146,7 +146,7 @@ Public Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A protocol wrapper around <a class="el" href="../../df/d60/classxii_ipc_channel.html" title="Base class for a communication channel between processes.">xiiIpcChannel</a> to send and receive reflected messages instead of raw byte arrays. </p>
 <p>This class hooks into an existing <a class="el" href="../../df/d60/classxii_ipc_channel.html" title="Base class for a communication channel between processes.">xiiIpcChannel</a> instance to provide a high-level messaging protocol using reflected messages derived from <a class="el" href="../../d4/d06/classxii_process_message.html" title="Base class for IPC messages transmitted by xiiIpcChannel.">xiiProcessMessage</a>. The underlying <a class="el" href="../../df/d60/classxii_ipc_channel.html" title="Base class for a communication channel between processes.">xiiIpcChannel</a> remains responsible for all connection logic, while this protocol focuses solely on message serialization, deserialization, and dispatch.</p>
-<dl class="section note"><dt>Note</dt><dd>When using this protocol, do not call <a class="el" href="../../df/d60/classxii_ipc_channel.html#a5870df18aab875da68f82a22f6505ecf" title="Sends a message. pMsg can be destroyed after the call.">xiiIpcChannel::Send</a> directly. Instead, use <a class="el" href="#aa69dc71501813814927641b0a8baccf9" title="Sends a reflected process message over the IPC channel.">xiiIpcProcessMessageProtocol::Send</a> to ensure proper message formatting and handling.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>When using this protocol, do not call <a class="el" href="../../df/d60/classxii_ipc_channel.html#a09b241434e4d1c81850c5498e303a746" title="Sends a message. pMsg can be destroyed after the call.">xiiIpcChannel::Send</a> directly. Instead, use <a class="el" href="#aa69dc71501813814927641b0a8baccf9" title="Sends a reflected process message over the IPC channel.">xiiIpcProcessMessageProtocol::Send</a> to ensure proper message formatting and handling.</dd></dl>
 <p>Received messages are stored in an internal queue and must be processed explicitly by calling <a class="el" href="#a62ef3411c7ae4c0f1b356efb3ca6c4d5" title="Processes all pending incoming messages.">ProcessMessages()</a> or <a class="el" href="#a70c5c723bc86c631c764f3447a04fc96" title="Waits for new messages to arrive and processes them.">WaitForMessages()</a>. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a4aaa160e30e9ea067f71fbbdcd42565f" name="a4aaa160e30e9ea067f71fbbdcd42565f"></a>
@@ -277,7 +277,7 @@ Public Attributes</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dd/da6/classxii_ipc_process_message_protocol.html">xiiIpcProcessMessageProtocol</a></li>
-    <li class="footer">Generated on Sun Jan 11 2026 20:01:23 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Jan 25 2026 01:25:22 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

@@ -124,6 +124,14 @@ Public Member Functions</h2></td></tr>
 XII_ALWAYS_INLINE const <a class="el" href="../../de/dd4/structxii_g_a_l_texture_creation_description.html">xiiGALTextureCreationDescription</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetDescription</b> () const</td></tr>
 <tr class="memdesc:ab11f10b3bb5db37105293b76c296f198"><td class="mdescLeft">&#160;</td><td class="mdescRight">This returns the creation description for this object. <br /></td></tr>
 <tr class="separator:ab11f10b3bb5db37105293b76c296f198"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab459a3203ba6c4907056560beedd63dc" id="r_ab459a3203ba6c4907056560beedd63dc"><td class="memItemLeft" align="right" valign="top"><a id="ab459a3203ba6c4907056560beedd63dc" name="ab459a3203ba6c4907056560beedd63dc"></a>
+XII_ALWAYS_INLINE <a class="el" href="../../d7/d55/structxii_bitflags.html">xiiBitflags</a>&lt; <a class="el" href="../../df/d32/structxii_g_a_l_external_memory_kind.html">xiiGALExternalMemoryKind</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetExternalMemoryKind</b> () const</td></tr>
+<tr class="memdesc:ab459a3203ba6c4907056560beedd63dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the external memory kind flags for this texture. <br /></td></tr>
+<tr class="separator:ab459a3203ba6c4907056560beedd63dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a272406a9e930fd4b08d0d5ca128f7d9f" id="r_a272406a9e930fd4b08d0d5ca128f7d9f"><td class="memItemLeft" align="right" valign="top"><a id="a272406a9e930fd4b08d0d5ca128f7d9f" name="a272406a9e930fd4b08d0d5ca128f7d9f"></a>
+XII_ALWAYS_INLINE const <a class="el" href="../../d7/d7e/structxii_g_a_l_external_memory_description.html">xiiGALExternalMemoryDescription</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetExternalMemoryDescription</b> () const</td></tr>
+<tr class="memdesc:a272406a9e930fd4b08d0d5ca128f7d9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the external memory description for this texture. <br /></td></tr>
+<tr class="separator:a272406a9e930fd4b08d0d5ca128f7d9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1210f25a7ec3a3a3409f3869abd46c07" id="r_a1210f25a7ec3a3a3409f3869abd46c07"><td class="memItemLeft" align="right" valign="top"><a id="a1210f25a7ec3a3a3409f3869abd46c07" name="a1210f25a7ec3a3a3409f3869abd46c07"></a>
 virtual xiiUInt64&#160;</td><td class="memItemRight" valign="bottom"><b>GetMemoryConsumption</b> () const</td></tr>
 <tr class="memdesc:a1210f25a7ec3a3a3409f3869abd46c07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the calculated memory consumption for texture. <br /></td></tr>
@@ -221,9 +229,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a368fdb06cbdfeb2e234e088ed216eabd" id="r_a368fdb06cbdfeb2e234e088ed216eabd"><td class="memItemLeft" align="right" valign="top"><a id="a368fdb06cbdfeb2e234e088ed216eabd" name="a368fdb06cbdfeb2e234e088ed216eabd"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>xiiGALTexture</b> (<a class="el" href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr</a>&lt; <a class="el" href="../../d5/d19/classxii_g_a_l_device.html">xiiGALDevice</a> &gt; pDevice, const <a class="el" href="../../de/dd4/structxii_g_a_l_texture_creation_description.html">xiiGALTextureCreationDescription</a> &amp;creationDescription)</td></tr>
 <tr class="separator:a368fdb06cbdfeb2e234e088ed216eabd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e772d4baefe14387fbbaff831a13ca7" id="r_a4e772d4baefe14387fbbaff831a13ca7"><td class="memItemLeft" align="right" valign="top"><a id="a4e772d4baefe14387fbbaff831a13ca7" name="a4e772d4baefe14387fbbaff831a13ca7"></a>
-virtual <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>InitPlatform</b> (const <a class="el" href="../../dc/de1/structxii_g_a_l_texture_data.html">xiiGALTextureData</a> *pInitialData)=0</td></tr>
-<tr class="separator:a4e772d4baefe14387fbbaff831a13ca7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76003cf33ef5c7a63fd4488375e4f2d8" id="r_a76003cf33ef5c7a63fd4488375e4f2d8"><td class="memItemLeft" align="right" valign="top"><a id="a76003cf33ef5c7a63fd4488375e4f2d8" name="a76003cf33ef5c7a63fd4488375e4f2d8"></a>
+virtual <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>InitPlatform</b> (const <a class="el" href="../../dc/de1/structxii_g_a_l_texture_data.html">xiiGALTextureData</a> *pInitialData, <a class="el" href="../../d7/d55/structxii_bitflags.html">xiiBitflags</a>&lt; <a class="el" href="../../df/d32/structxii_g_a_l_external_memory_kind.html">xiiGALExternalMemoryKind</a> &gt; externalMemoryKind)=0</td></tr>
+<tr class="separator:a76003cf33ef5c7a63fd4488375e4f2d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c87fba893da22c4929097493f12aea8" id="r_a7c87fba893da22c4929097493f12aea8"><td class="memItemLeft" align="right" valign="top"><a id="a7c87fba893da22c4929097493f12aea8" name="a7c87fba893da22c4929097493f12aea8"></a>
 virtual <a class="el" href="../../de/d3c/structxii_internal_1_1_new_instance.html">xiiInternal::NewInstance</a>&lt; <a class="el" href="../../da/d75/classxii_g_a_l_texture_view.html">xiiGALTextureView</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>CreateViewPlatform</b> (const <a class="el" href="../../d8/de2/structxii_g_a_l_texture_view_creation_description.html">xiiGALTextureViewCreationDescription</a> &amp;description)=0</td></tr>
 <tr class="separator:a7c87fba893da22c4929097493f12aea8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -245,6 +253,9 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:af99650871c45cdbbededf378938d7ea9" id="r_af99650871c45cdbbededf378938d7ea9"><td class="memItemLeft" align="right" valign="top"><a id="af99650871c45cdbbededf378938d7ea9" name="af99650871c45cdbbededf378938d7ea9"></a>
 <a class="el" href="../../de/dd4/structxii_g_a_l_texture_creation_description.html">xiiGALTextureCreationDescription</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_Description</b></td></tr>
 <tr class="separator:af99650871c45cdbbededf378938d7ea9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8faa65a8add4ab9c249e9182782829dc" id="r_a8faa65a8add4ab9c249e9182782829dc"><td class="memItemLeft" align="right" valign="top"><a id="a8faa65a8add4ab9c249e9182782829dc" name="a8faa65a8add4ab9c249e9182782829dc"></a>
+<a class="el" href="../../d7/d7e/structxii_g_a_l_external_memory_description.html">xiiGALExternalMemoryDescription</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_ExternalMemoryDescription</b></td></tr>
+<tr class="separator:a8faa65a8add4ab9c249e9182782829dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf8a637058e165c7c72d9dfe7b3a8a2e" id="r_aaf8a637058e165c7c72d9dfe7b3a8a2e"><td class="memItemLeft" align="right" valign="top"><a id="aaf8a637058e165c7c72d9dfe7b3a8a2e" name="aaf8a637058e165c7c72d9dfe7b3a8a2e"></a>
 <a class="el" href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr</a>&lt; <a class="el" href="../../da/d75/classxii_g_a_l_texture_view.html">xiiGALTextureView</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_DefaultTextureViews</b> [xiiGALTextureViewType::ENUM_COUNT]</td></tr>
 <tr class="separator:aaf8a637058e165c7c72d9dfe7b3a8a2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -391,7 +402,7 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d3/d9a/classxii_g_a_l_texture.html">xiiGALTexture</a></li>
-    <li class="footer">Generated on Sun Jan 11 2026 20:01:23 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Jan 25 2026 01:25:21 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

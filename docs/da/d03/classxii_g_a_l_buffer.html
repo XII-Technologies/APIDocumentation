@@ -124,6 +124,10 @@ Public Member Functions</h2></td></tr>
 XII_ALWAYS_INLINE const <a class="el" href="../../d7/d69/structxii_g_a_l_buffer_creation_description.html">xiiGALBufferCreationDescription</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetDescription</b> () const</td></tr>
 <tr class="memdesc:aa02c8dede5b3c8f85ed0b15143b1b6fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">This returns the creation description for this object. <br /></td></tr>
 <tr class="separator:aa02c8dede5b3c8f85ed0b15143b1b6fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0dffe1ed3f82788b51357e5c5147601f" id="r_a0dffe1ed3f82788b51357e5c5147601f"><td class="memItemLeft" align="right" valign="top"><a id="a0dffe1ed3f82788b51357e5c5147601f" name="a0dffe1ed3f82788b51357e5c5147601f"></a>
+XII_ALWAYS_INLINE <a class="el" href="../../d7/d55/structxii_bitflags.html">xiiBitflags</a>&lt; <a class="el" href="../../df/d32/structxii_g_a_l_external_memory_kind.html">xiiGALExternalMemoryKind</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetExternalMemoryKind</b> () const</td></tr>
+<tr class="memdesc:a0dffe1ed3f82788b51357e5c5147601f"><td class="mdescLeft">&#160;</td><td class="mdescRight">This returns the external memory kind flags for this buffer. <br /></td></tr>
+<tr class="separator:a0dffe1ed3f82788b51357e5c5147601f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea39378c4d85e65590793e988aad8e1e" id="r_aea39378c4d85e65590793e988aad8e1e"><td class="memItemLeft" align="right" valign="top"><a id="aea39378c4d85e65590793e988aad8e1e" name="aea39378c4d85e65590793e988aad8e1e"></a>
 XII_ALWAYS_INLINE xiiUInt64&#160;</td><td class="memItemRight" valign="bottom"><b>GetSize</b> () const</td></tr>
 <tr class="memdesc:aea39378c4d85e65590793e988aad8e1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">This returns the buffer size. <br /></td></tr>
@@ -234,9 +238,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a6ae5a89104b4fa2a973b0fa4a3cc6b07" id="r_a6ae5a89104b4fa2a973b0fa4a3cc6b07"><td class="memItemLeft" align="right" valign="top"><a id="a6ae5a89104b4fa2a973b0fa4a3cc6b07" name="a6ae5a89104b4fa2a973b0fa4a3cc6b07"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>xiiGALBuffer</b> (<a class="el" href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr</a>&lt; <a class="el" href="../../d5/d19/classxii_g_a_l_device.html">xiiGALDevice</a> &gt; pDevice, const <a class="el" href="../../d7/d69/structxii_g_a_l_buffer_creation_description.html">xiiGALBufferCreationDescription</a> &amp;creationDescription)</td></tr>
 <tr class="separator:a6ae5a89104b4fa2a973b0fa4a3cc6b07"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23288ef81fd287d15a07366b82c2d8d1" id="r_a23288ef81fd287d15a07366b82c2d8d1"><td class="memItemLeft" align="right" valign="top"><a id="a23288ef81fd287d15a07366b82c2d8d1" name="a23288ef81fd287d15a07366b82c2d8d1"></a>
-virtual <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>InitPlatform</b> (const <a class="el" href="../../da/dce/structxii_g_a_l_buffer_data.html">xiiGALBufferData</a> *pInitialData)=0</td></tr>
-<tr class="separator:a23288ef81fd287d15a07366b82c2d8d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34178c56d4257432edd526263a6d3c1c" id="r_a34178c56d4257432edd526263a6d3c1c"><td class="memItemLeft" align="right" valign="top"><a id="a34178c56d4257432edd526263a6d3c1c" name="a34178c56d4257432edd526263a6d3c1c"></a>
+virtual <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>InitPlatform</b> (const <a class="el" href="../../da/dce/structxii_g_a_l_buffer_data.html">xiiGALBufferData</a> *pInitialData, <a class="el" href="../../d7/d55/structxii_bitflags.html">xiiBitflags</a>&lt; <a class="el" href="../../df/d32/structxii_g_a_l_external_memory_kind.html">xiiGALExternalMemoryKind</a> &gt; externalMemoryKind)=0</td></tr>
+<tr class="separator:a34178c56d4257432edd526263a6d3c1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac73e7cd54997b250f05e8ec9bcea2f78" id="r_ac73e7cd54997b250f05e8ec9bcea2f78"><td class="memItemLeft" align="right" valign="top"><a id="ac73e7cd54997b250f05e8ec9bcea2f78" name="ac73e7cd54997b250f05e8ec9bcea2f78"></a>
 virtual <a class="el" href="../../de/d3c/structxii_internal_1_1_new_instance.html">xiiInternal::NewInstance</a>&lt; <a class="el" href="../../d8/dcf/classxii_g_a_l_buffer_view.html">xiiGALBufferView</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>CreateViewPlatform</b> (const <a class="el" href="../../d3/d47/structxii_g_a_l_buffer_view_creation_description.html">xiiGALBufferViewCreationDescription</a> &amp;description)=0</td></tr>
 <tr class="separator:ac73e7cd54997b250f05e8ec9bcea2f78"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -264,6 +268,9 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:ab18f48b53cba14cf9dc4ce0585d36d18" id="r_ab18f48b53cba14cf9dc4ce0585d36d18"><td class="memItemLeft" align="right" valign="top"><a id="ab18f48b53cba14cf9dc4ce0585d36d18" name="ab18f48b53cba14cf9dc4ce0585d36d18"></a>
 <a class="el" href="../../d7/d69/structxii_g_a_l_buffer_creation_description.html">xiiGALBufferCreationDescription</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_Description</b></td></tr>
 <tr class="separator:ab18f48b53cba14cf9dc4ce0585d36d18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfb143efc09ec6152f5b6867bc94a384" id="r_abfb143efc09ec6152f5b6867bc94a384"><td class="memItemLeft" align="right" valign="top"><a id="abfb143efc09ec6152f5b6867bc94a384" name="abfb143efc09ec6152f5b6867bc94a384"></a>
+<a class="el" href="../../d7/d55/structxii_bitflags.html">xiiBitflags</a>&lt; <a class="el" href="../../df/d32/structxii_g_a_l_external_memory_kind.html">xiiGALExternalMemoryKind</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_ExternalMemoryKind</b></td></tr>
+<tr class="separator:abfb143efc09ec6152f5b6867bc94a384"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac95fbf09d24b0221708621a9c3abc471" id="r_ac95fbf09d24b0221708621a9c3abc471"><td class="memItemLeft" align="right" valign="top"><a id="ac95fbf09d24b0221708621a9c3abc471" name="ac95fbf09d24b0221708621a9c3abc471"></a>
 <a class="el" href="../../d7/d55/structxii_bitflags.html">xiiBitflags</a>&lt; <a class="el" href="../../d7/dbf/structxii_g_a_l_memory_property_flags.html">xiiGALMemoryPropertyFlags</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_MemoryPropertyFlags</b></td></tr>
 <tr class="separator:ac95fbf09d24b0221708621a9c3abc471"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -520,7 +527,7 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../da/d03/classxii_g_a_l_buffer.html">xiiGALBuffer</a></li>
-    <li class="footer">Generated on Sun Jan 11 2026 20:01:22 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+    <li class="footer">Generated on Sun Jan 25 2026 01:25:21 for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
   </ul>
 </div>
 </body>

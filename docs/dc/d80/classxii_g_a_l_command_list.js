@@ -64,6 +64,7 @@ var classxii_g_a_l_command_list =
     [ "SetScissorRects", "dc/d80/classxii_g_a_l_command_list.html#a5e86bda450cd77d213e1b11f36d76b29", null ],
     [ "SetShaderResourceBufferView", "dc/d80/classxii_g_a_l_command_list.html#a9f7d736d306556b6e415c02e816f46c5", null ],
     [ "SetShaderResourceTextureView", "dc/d80/classxii_g_a_l_command_list.html#a9f97cedbc207c1ee70ad39bd1a1eed3b", null ],
+    [ "SetShadingRate", "dc/d80/classxii_g_a_l_command_list.html#af492eb56a3aca3510e0be591b2991fd1", null ],
     [ "SetStencilRef", "dc/d80/classxii_g_a_l_command_list.html#a786d9633bb9c400e51948967053394ad", null ],
     [ "SetUnorderedAccessBufferView", "dc/d80/classxii_g_a_l_command_list.html#a1c777d910c550da2265b95c6f6cd7ce7", null ],
     [ "SetUnorderedAccessTextureView", "dc/d80/classxii_g_a_l_command_list.html#a0c3659f0926971ddede760a62caf0cae", null ],
