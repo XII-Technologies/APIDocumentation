@@ -4837,9 +4837,6 @@ var hierarchy =
     [ "xiiGALMemoryPropertyFlags", "d7/dbf/structxii_g_a_l_memory_property_flags.html", null ],
     [ "xiiGALMiscBufferFlags", "d4/da8/structxii_g_a_l_misc_buffer_flags.html", null ],
     [ "xiiGALMiscTextureFlags", "d6/dd3/structxii_g_a_l_misc_texture_flags.html", null ],
-    [ "xiiGALMSAASampleCount", "d3/d28/structxii_g_a_l_m_s_a_a_sample_count.html", [
-      [ "xiiEnum< xiiGALMSAASampleCount >", "de/dfd/structxii_enum.html", null ]
-    ] ],
     [ "xiiGALMultiDrawDescription", "d9/d05/structxii_g_a_l_multi_draw_description.html", null ],
     [ "xiiGALMultiDrawIndexedDescription", "db/de2/structxii_g_a_l_multi_draw_indexed_description.html", null ],
     [ "xiiGALMultiDrawIndexedItem", "dd/d0c/structxii_g_a_l_multi_draw_indexed_item.html", null ],
@@ -6893,7 +6890,6 @@ var hierarchy =
             [ "xiiComputePipelinePass", "d3/d4e/classxii_compute_pipeline_pass.html", null ],
             [ "xiiCopyPipelinePass", "d8/d35/classxii_copy_pipeline_pass.html", null ],
             [ "xiiGraphicsPipelinePass", "de/d84/classxii_graphics_pipeline_pass.html", [
-              [ "xiiAntialiasingPass", "da/de9/classxii_antialiasing_pass.html", null ],
               [ "xiiBlurPass", "dc/d83/classxii_blur_pass.html", null ],
               [ "xiiDepthOnlyPass", "d9/dbf/classxii_depth_only_pass.html", null ],
               [ "xiiForwardRenderPass", "da/d8f/classxii_forward_render_pass.html", [
@@ -6901,8 +6897,6 @@ var hierarchy =
                 [ "xiiSkyRenderPass", "d8/dc0/classxii_sky_render_pass.html", null ],
                 [ "xiiTransparentForwardRenderPass", "d8/d86/classxii_transparent_forward_render_pass.html", null ]
               ] ],
-              [ "xiiMSAAResolvePass", "d4/de4/classxii_m_s_a_a_resolve_pass.html", null ],
-              [ "xiiMSAAUpscalePass", "da/da0/classxii_m_s_a_a_upscale_pass.html", null ],
               [ "xiiPickingRenderPass", "db/d83/classxii_picking_render_pass.html", null ],
               [ "xiiSelectionHighlightPass", "d9/d58/classxii_selection_highlight_pass.html", null ],
               [ "xiiSimpleRenderPass", "d8/d79/classxii_simple_render_pass.html", null ]

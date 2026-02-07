@@ -4,7 +4,7 @@ var searchData=
   ['earlynextframe_1',['EarlyNextFrame',['../d9/d69/structxii_task_priority.html#a2aa9f9ee2f9b337039c13a946945d93da1a3e454dd21936b631c95b136293173b',1,'xiiTaskPriority']]],
   ['earlythisframe_2',['EarlyThisFrame',['../d9/d69/structxii_task_priority.html#a2aa9f9ee2f9b337039c13a946945d93daa8b4c35b5ab0cf3076f03f8a213a40fd',1,'xiiTaskPriority']]],
   ['editorstarted_3',['EditorStarted',['../d1/d43/structxii_editor_app_event.html#a52d5939c76b385d2b42ff25708f5820ea58caaa4e36e7d167cfcc3cfa1ee295d1',1,'xiiEditorAppEvent']]],
-  ['eightsamples_4',['EightSamples',['../d3/d01/structxii_g_a_l_sample_count.html#a9882b9a04c908ada09066d29eee92e7cae2bd6c1bb4964731c38744056a574217',1,'xiiGALSampleCount::EightSamples'],['../d3/d28/structxii_g_a_l_m_s_a_a_sample_count.html#a4d174563bcfff207aa4b781b51a206b5af0c75846cedbdd34bc42f7e9f87c7f5d',1,'xiiGALMSAASampleCount::EightSamples']]],
+  ['eightsamples_4',['EightSamples',['../d3/d01/structxii_g_a_l_sample_count.html#a9882b9a04c908ada09066d29eee92e7cae2bd6c1bb4964731c38744056a574217',1,'xiiGALSampleCount']]],
   ['emptydocument_5',['EmptyDocument',['../df/dc8/structxii_document_flags.html#acfa2d5b155a47d31c5d46002da3811e3ac074f231f8d32faece6f81a029309ef1',1,'xiiDocumentFlags']]],
   ['enabled_6',['Enabled',['../d0/d1e/structxii_g_a_l_device_feature_state.html#a3353b07dddb3003f313f52f2e311d161a5f0d8d167cf6d0b24f9856c4d10c553b',1,'xiiGALDeviceFeatureState']]],
   ['end_7',['End',['../d4/d87/structxii_g_a_l_state_transition_type.html#a22e8955d4d67337488709201f3e0ede9a6602c3eee7609d6cd62c4808c3578203',1,'xiiGALStateTransitionType::End'],['../de/d1d/classxii_memory_mapped_file.html#a87467459914609e33ca1514fd0351388a87557f11575c0ad78e4e28abedc13b6e',1,'xiiMemoryMappedFile::End']]],

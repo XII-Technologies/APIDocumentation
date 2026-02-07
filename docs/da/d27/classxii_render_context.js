@@ -37,7 +37,6 @@ var classxii_render_context =
     [ "GetAllowAsyncShaderLoading", "da/d27/classxii_render_context.html#a365d8165651188f892ea5074fdca48c8", null ],
     [ "GetCommandList", "da/d27/classxii_render_context.html#a39dd63e7c2e4b560c444b8627212c785", null ],
     [ "GetGlobalConstants", "da/d27/classxii_render_context.html#a52e5e993c82511a7f8b0d011677d256f", null ],
-    [ "GetPassConstants", "da/d27/classxii_render_context.html#a21ee0cf1a1fec8949b60379a1a0be46f", null ],
     [ "GetRenderContextScope", "da/d27/classxii_render_context.html#a2f46a49b8b4124f8f2439fa4fd4616da", null ],
     [ "SetAllowAsyncShaderLoading", "da/d27/classxii_render_context.html#a39bfd949786ccdff948cb0d2e8faf0c3", null ],
     [ "SetBlendState", "da/d27/classxii_render_context.html#a56ea822e37d5a95a300e988f9492bff3", null ],

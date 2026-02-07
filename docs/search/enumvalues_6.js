@@ -42,7 +42,7 @@ var searchData=
   ['forcetransform_39',['ForceTransform',['../d8/d36/structxii_transform_flags.html#ae22d41ae23344d4d6dedebb04a6ef21ea36fc6db97df30d78ef1d117b430d4fce',1,'xiiTransformFlags']]],
   ['formatted_40',['Formatted',['../de/dad/structxii_g_a_l_buffer_mode.html#af83ed81cfe23fce52430344d972a5103a73ba86e9daed1260f41c1608c9934137',1,'xiiGALBufferMode']]],
   ['formattedbuffer_41',['Formattedbuffer',['../da/d8c/structxii_g_a_l_pipeline_resource_flags.html#a149c0308106286ee271be0c308b08828a746bc90510f80b2cb40e3598f8a545e9',1,'xiiGALPipelineResourceFlags']]],
-  ['foursamples_42',['FourSamples',['../d3/d01/structxii_g_a_l_sample_count.html#a9882b9a04c908ada09066d29eee92e7ca734bf98e6540e3eff470c5204c58dd59',1,'xiiGALSampleCount::FourSamples'],['../d3/d28/structxii_g_a_l_m_s_a_a_sample_count.html#a4d174563bcfff207aa4b781b51a206b5a3cd250339eaa5337719eea7d8c44918b',1,'xiiGALMSAASampleCount::FourSamples']]],
+  ['foursamples_42',['FourSamples',['../d3/d01/structxii_g_a_l_sample_count.html#a9882b9a04c908ada09066d29eee92e7ca734bf98e6540e3eff470c5204c58dd59',1,'xiiGALSampleCount']]],
   ['fragmentdensitymapread_43',['FragmentDensityMapRead',['../d7/d8d/structxii_g_a_l_access_flags.html#a4c4d72bc05e2a6cd4819337ffa7f6b9aa8e98131aa506684b40792e21bef0a043',1,'xiiGALAccessFlags']]],
   ['fragmentdensityprocess_44',['FragmentDensityProcess',['../dc/d29/structxii_g_a_l_pipeline_stage_flags.html#ab114e9a33a63968b73bdf79069b73282ab95f26e2797cee31685a0f9853a5d737',1,'xiiGALPipelineStageFlags']]],
   ['frequentchanges_45',['FrequentChanges',['../d9/dfa/structxii_spatial_data_1_1_flags.html#af5862f12e465dfd0c2a8341763eb45b2a3f7e6e565d34314f4b1ea9d293068dd3',1,'xiiSpatialData::Flags']]],

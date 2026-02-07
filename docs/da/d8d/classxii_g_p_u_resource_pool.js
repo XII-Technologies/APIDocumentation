@@ -8,7 +8,7 @@ var classxii_g_p_u_resource_pool =
     [ "CheckAndPotentiallyReleaseStaleResources", "da/d8d/classxii_g_p_u_resource_pool.html#ae2df601419f14b1b349edc9e30dbb61f", null ],
     [ "GALDeviceEventHandler", "da/d8d/classxii_g_p_u_resource_pool.html#a57232a42c17893d1c881f6f70556c486", null ],
     [ "GetBuffer", "da/d8d/classxii_g_p_u_resource_pool.html#abf003543f8d7f2f2c30344da06739e5c", null ],
-    [ "GetRenderTarget", "da/d8d/classxii_g_p_u_resource_pool.html#a649d7f9b2b537f0394632a090de7ebf6", null ],
+    [ "GetRenderTarget", "da/d8d/classxii_g_p_u_resource_pool.html#a854abe0625a1d1b43030f3a40864ea19", null ],
     [ "GetSampler", "da/d8d/classxii_g_p_u_resource_pool.html#aa15dd3f85ea51aa92db0a3bfcd7da211", null ],
     [ "GetTexture", "da/d8d/classxii_g_p_u_resource_pool.html#a5b06726071fae2da9334c4172bb2a640", null ],
     [ "ReleaseStaleResources", "da/d8d/classxii_g_p_u_resource_pool.html#ae0d66f94e30c714bdea9340593ed3f40", null ],

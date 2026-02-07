@@ -1,6 +1,6 @@
 var classxii_dummy_x_r =
 [
-    [ "CreateActor", "d4/d73/classxii_dummy_x_r.html#a220fa5b96e55f07789b2ecb95b17e4de", null ],
+    [ "CreateActor", "d4/d73/classxii_dummy_x_r.html#a96388e141375594f1e49f4027a3bd276", null ],
     [ "Deinitialize", "d4/d73/classxii_dummy_x_r.html#ad4fbc7445508b9ed0d5036525b161623", null ],
     [ "GetCurrentTexture", "d4/d73/classxii_dummy_x_r.html#abf1abfb82dca0f0d6432ce6e60885079", null ],
     [ "GetHmdInfo", "d4/d73/classxii_dummy_x_r.html#a316225a3fd267d9dd251451c4770b1dc", null ],

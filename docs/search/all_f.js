@@ -53,7 +53,7 @@ var searchData=
   ['onenterarea_50',['OnEnterArea',['../d0/db4/structxii_input_action_config.html#a8850d43986047decd114352fc791c829',1,'xiiInputActionConfig']]],
   ['onentryevent_51',['OnEntryEvent',['../d7/d47/classxii_blackboard.html#a473ec358fbd665adae81c643e0246ee7',1,'xiiBlackboard']]],
   ['onequalitylevel_52',['OneQualityLevel',['../d9/de1/classxii_resource.html#abc81062ebb13c5e532e0323ccdcb468aa12f14b5bb792151374f61de1621209a4',1,'xiiResource']]],
-  ['onesample_53',['OneSample',['../d3/d01/structxii_g_a_l_sample_count.html#a9882b9a04c908ada09066d29eee92e7ca68cf0d727ddfe93e8ff646b391b3be88',1,'xiiGALSampleCount::OneSample'],['../d3/d28/structxii_g_a_l_m_s_a_a_sample_count.html#a4d174563bcfff207aa4b781b51a206b5a9b851c99c8fbc4326f36a78a115f4864',1,'xiiGALMSAASampleCount::OneSample']]],
+  ['onesample_53',['OneSample',['../d3/d01/structxii_g_a_l_sample_count.html#a9882b9a04c908ada09066d29eee92e7ca68cf0d727ddfe93e8ff646b391b3be88',1,'xiiGALSampleCount']]],
   ['oneshotsound_54',['OneShotSound',['../d8/d5a/classxii_sound_interface.html#ab57d045927c1a66dad557d09ae4ea44e',1,'xiiSoundInterface']]],
   ['onfocus_55',['OnFocus',['../d2/d13/classxii_window.html#a8d0fcb10ac3fd4ab68af552196068acf',1,'xiiWindow']]],
   ['ongpu_56',['OnGPU',['../d8/d7c/structxii_g_a_l_shading_rate_texture_access.html#a477026c5bda01d7e9edf072e14560ba1a7f03b69f6c91fb771311cda2b15057f8',1,'xiiGALShadingRateTextureAccess']]],

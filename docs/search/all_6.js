@@ -153,7 +153,7 @@ var searchData=
   ['forestgreen_150',['ForestGreen',['../d3/de6/classxii_color.html#a355a6ccb5c0d0514af8f379bedcf0bb4',1,'xiiColor']]],
   ['formatted_151',['Formatted',['../de/dad/structxii_g_a_l_buffer_mode.html#af83ed81cfe23fce52430344d972a5103a73ba86e9daed1260f41c1608c9934137',1,'xiiGALBufferMode']]],
   ['formattedbuffer_152',['Formattedbuffer',['../da/d8c/structxii_g_a_l_pipeline_resource_flags.html#a149c0308106286ee271be0c308b08828a746bc90510f80b2cb40e3598f8a545e9',1,'xiiGALPipelineResourceFlags']]],
-  ['foursamples_153',['FourSamples',['../d3/d01/structxii_g_a_l_sample_count.html#a9882b9a04c908ada09066d29eee92e7ca734bf98e6540e3eff470c5204c58dd59',1,'xiiGALSampleCount::FourSamples'],['../d3/d28/structxii_g_a_l_m_s_a_a_sample_count.html#a4d174563bcfff207aa4b781b51a206b5a3cd250339eaa5337719eea7d8c44918b',1,'xiiGALMSAASampleCount::FourSamples']]],
+  ['foursamples_153',['FourSamples',['../d3/d01/structxii_g_a_l_sample_count.html#a9882b9a04c908ada09066d29eee92e7ca734bf98e6540e3eff470c5204c58dd59',1,'xiiGALSampleCount']]],
   ['fraction_154',['Fraction',['../d1/d37/namespacexii_math.html#aa61976adbc40a0c6c6c08a5471bfaa27',1,'xiiMath::Fraction(Type f)'],['../d1/d37/namespacexii_math.html#a7561d38d2b6c372843eb7b1dcc30e75f',1,'xiiMath::Fraction(Type f)']]],
   ['fragmentdensitymapread_155',['FragmentDensityMapRead',['../d7/d8d/structxii_g_a_l_access_flags.html#a4c4d72bc05e2a6cd4819337ffa7f6b9aa8e98131aa506684b40792e21bef0a043',1,'xiiGALAccessFlags']]],
   ['fragmentdensityprocess_156',['FragmentDensityProcess',['../dc/d29/structxii_g_a_l_pipeline_stage_flags.html#ab114e9a33a63968b73bdf79069b73282ab95f26e2797cee31685a0f9853a5d737',1,'xiiGALPipelineStageFlags']]],
