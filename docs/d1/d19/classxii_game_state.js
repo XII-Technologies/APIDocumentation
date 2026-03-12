@@ -12,7 +12,6 @@ var classxii_game_state =
     [ "CreateMainOutputTarget", "d1/d19/classxii_game_state.html#a79f314ccb301c6449d9ec9c216d2386f", null ],
     [ "CreateMainView", "d1/d19/classxii_game_state.html#a345587fa373bee57561a832f7b0f90a6", null ],
     [ "CreateMainWindow", "d1/d19/classxii_game_state.html#a3007143bc2a87f32ca2310f9081cb7fd", null ],
-    [ "CreateXRActor", "d1/d19/classxii_game_state.html#a349767789a617c550b6f253eb4f51074", null ],
     [ "GetMainCamera", "d1/d19/classxii_game_state.html#a987f617af63a2a74a68f242bcd06f87b", null ],
     [ "GetMainView", "d1/d19/classxii_game_state.html#a100d941baa23fe1990edbac0bf93ebf2", null ],
     [ "GetMainWorld", "d1/d19/classxii_game_state.html#a956252d626851b0bdef50c1569eadcfa", null ],

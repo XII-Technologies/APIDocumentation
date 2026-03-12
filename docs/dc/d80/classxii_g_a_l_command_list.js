@@ -47,6 +47,7 @@ var classxii_g_a_l_command_list =
     [ "MultiDraw", "dc/d80/classxii_g_a_l_command_list.html#a052fd130117f6b44804e9cbd8b64b365", null ],
     [ "MultiDrawIndexed", "dc/d80/classxii_g_a_l_command_list.html#a3b62695057abb11674e21e3f0e9d5e9a", null ],
     [ "NextSubpass", "dc/d80/classxii_g_a_l_command_list.html#ae550b06b7f0cf83a7b5ea64ba4425c76", null ],
+    [ "PushConstants", "dc/d80/classxii_g_a_l_command_list.html#a2a49a82b6df047c963128d0046b89a8e", null ],
     [ "Reset", "dc/d80/classxii_g_a_l_command_list.html#aabe345fe21dc3c37d7d261d273a7c7b9", null ],
     [ "ResolveAndSetConstantBuffer", "dc/d80/classxii_g_a_l_command_list.html#a4baffdfbb60c69e738c9e425cf8bbfda", null ],
     [ "ResolveAndSetSampler", "dc/d80/classxii_g_a_l_command_list.html#aee303cf066d2434048d82745ca67edc6", null ],

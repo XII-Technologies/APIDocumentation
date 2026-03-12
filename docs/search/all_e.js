@@ -61,11 +61,10 @@ var searchData=
   ['notequal_58',['NotEqual',['../d2/d6d/structxii_g_a_l_comparison_function.html#a379b1dc5f2a81ba2b9a7f934fe9b9df3a3546bbd3fa810e872a4e84690b3571b5',1,'xiiGALComparisonFunction']]],
   ['notifyofassetchange_59',['NotifyOfAssetChange',['../d8/dbd/classxii_asset_curator.html#a108d2eb48a97965cef3b1d0674471aea',1,'xiiAssetCurator']]],
   ['notifyoffilechange_60',['NotifyOfFileChange',['../d8/dbd/classxii_asset_curator.html#a2360ec42953bb36d6f579dc241032556',1,'xiiAssetCurator']]],
-  ['notsupported_61',['NotSupported',['../d8/da9/classxii_x_r_hand_tracking_interface.html#a33cc9e2909e26bb1a9d9af81d2091477a9ed2d871602556951e39f3cebd08d6cb',1,'xiiXRHandTrackingInterface']]],
-  ['now_62',['Now',['../d7/dc1/structxii_time.html#a62c41574df46e952d657c3b678f3705b',1,'xiiTime']]],
-  ['null_63',['Null',['../d1/dde/structxii_g_a_l_graphics_device_type.html#a4d3301594c1735e73ba0bbfe64122c68af35943b4df25bd1746dc53e9daf1c6d8',1,'xiiGALGraphicsDeviceType']]],
-  ['number_64',['Number',['../df/d34/structxii_property_anim_target.html#a2ed704817d01e0321479309d16876e8fa6e6ed47fd8a38094d981d793c13700ad',1,'xiiPropertyAnimTarget']]],
-  ['numbits_65',['NumBits',['../d1/d37/namespacexii_math.html#a796a1efcabdf18bcbf94f43c344b7337',1,'xiiMath']]],
-  ['numeric_66',['Numeric',['../d4/dc6/classxii_log.html#a9756be3754e6faf059dee9e11e461002a87322391cc6e8948ce9fd5d6cb84fced',1,'xiiLog']]],
-  ['nvidia_67',['Nvidia',['../d4/d31/structxii_g_a_l_graphics_adapter_vendor.html#acb0977587f7d17323a6efb5d12004508af51c4115f4eee748ce220e9aee6a119c',1,'xiiGALGraphicsAdapterVendor']]]
+  ['now_61',['Now',['../d7/dc1/structxii_time.html#a62c41574df46e952d657c3b678f3705b',1,'xiiTime']]],
+  ['null_62',['Null',['../d1/dde/structxii_g_a_l_graphics_device_type.html#a4d3301594c1735e73ba0bbfe64122c68af35943b4df25bd1746dc53e9daf1c6d8',1,'xiiGALGraphicsDeviceType']]],
+  ['number_63',['Number',['../df/d34/structxii_property_anim_target.html#a2ed704817d01e0321479309d16876e8fa6e6ed47fd8a38094d981d793c13700ad',1,'xiiPropertyAnimTarget']]],
+  ['numbits_64',['NumBits',['../d1/d37/namespacexii_math.html#a796a1efcabdf18bcbf94f43c344b7337',1,'xiiMath']]],
+  ['numeric_65',['Numeric',['../d4/dc6/classxii_log.html#a9756be3754e6faf059dee9e11e461002a87322391cc6e8948ce9fd5d6cb84fced',1,'xiiLog']]],
+  ['nvidia_66',['Nvidia',['../d4/d31/structxii_g_a_l_graphics_adapter_vendor.html#acb0977587f7d17323a6efb5d12004508af51c4115f4eee748ce220e9aee6a119c',1,'xiiGALGraphicsAdapterVendor']]]
 ];
