@@ -1,8 +1,9 @@
 var classxii_color_gradient =
 [
-    [ "AlphaCP", "de/d3b/structxii_color_gradient_1_1_alpha_c_p.html", "de/d3b/structxii_color_gradient_1_1_alpha_c_p" ],
     [ "ColorCP", "dd/d50/structxii_color_gradient_1_1_color_c_p.html", "dd/d50/structxii_color_gradient_1_1_color_c_p" ],
+    [ "AlphaCP", "de/d3b/structxii_color_gradient_1_1_alpha_c_p.html", "de/d3b/structxii_color_gradient_1_1_alpha_c_p" ],
     [ "IntensityCP", "db/d3a/structxii_color_gradient_1_1_intensity_c_p.html", "db/d3a/structxii_color_gradient_1_1_intensity_c_p" ],
+    [ "xiiColorGradient", "de/d86/classxii_color_gradient.html#a3e9f39607da611adc18403a83e4cfc99", null ],
     [ "AddAlphaControlPoint", "de/d86/classxii_color_gradient.html#a49af9daf9d6b3362c52cead4cebc1f45", null ],
     [ "AddColorControlPoint", "de/d86/classxii_color_gradient.html#a6feb28a245676dd0dd53da57414911dc", null ],
     [ "AddIntensityControlPoint", "de/d86/classxii_color_gradient.html#a9aeab1ef9f7b7b17b886243481f9bb5b", null ],

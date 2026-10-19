@@ -8,6 +8,7 @@ var structxii_input_action_config =
       [ "LoseFocus", "d0/db4/structxii_input_action_config.html#a98ec8d63a11a646389b276dc78980ce4adbec3b5a8e1d1852f69e8817ae6134bc", null ],
       [ "KeepFocus", "d0/db4/structxii_input_action_config.html#a98ec8d63a11a646389b276dc78980ce4ab6f7f7c03b2130cc3bcc201da78a9886", null ]
     ] ],
+    [ "xiiInputActionConfig", "d0/db4/structxii_input_action_config.html#a359f420680edd914fc167dbcc214a0cd", null ],
     [ "m_bApplyTimeScaling", "d0/db4/structxii_input_action_config.html#a7656bbfd678eaf2787e165de9393326c", null ],
     [ "m_fFilteredPriority", "d0/db4/structxii_input_action_config.html#a710ebb866b4903099d175f97f6407747", null ],
     [ "m_fFilterXMaxValue", "d0/db4/structxii_input_action_config.html#a4f720654b027b123b76f24771169127e", null ],

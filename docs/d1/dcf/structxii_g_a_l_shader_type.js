@@ -18,11 +18,9 @@ var structxii_g_a_l_shader_type =
       [ "RayIntersection", "d1/dcf/structxii_g_a_l_shader_type.html#aa40e7f7b336f75b920cf5ab9d7f14763abcb9b6613e91314c46f60e68951dade8", null ],
       [ "Callable", "d1/dcf/structxii_g_a_l_shader_type.html#aa40e7f7b336f75b920cf5ab9d7f14763ad0254cd8d42dd37e7d3926037b3d9995", null ],
       [ "Tile", "d1/dcf/structxii_g_a_l_shader_type.html#aa40e7f7b336f75b920cf5ab9d7f14763a13d0e27589ebc04f7a64494ef5e5e6b0", null ],
-      [ "ENUM_COUNT", "d1/dcf/structxii_g_a_l_shader_type.html#aa40e7f7b336f75b920cf5ab9d7f14763ae18f2dc78b3aaeed3f040c99e8d8c927", null ],
       [ "AllGraphics", "d1/dcf/structxii_g_a_l_shader_type.html#aa40e7f7b336f75b920cf5ab9d7f14763af11a77a80ff2e75c1cbba7d509ee6f27", null ],
       [ "AllMesh", "d1/dcf/structxii_g_a_l_shader_type.html#aa40e7f7b336f75b920cf5ab9d7f14763a4a6098bc8f14a141c1efbb0f9cf3a8e0", null ],
       [ "AllRayTracing", "d1/dcf/structxii_g_a_l_shader_type.html#aa40e7f7b336f75b920cf5ab9d7f14763a1c1a292003e375b15d5d76970f9f491b", null ],
-      [ "All", "d1/dcf/structxii_g_a_l_shader_type.html#aa40e7f7b336f75b920cf5ab9d7f14763a348c0af903532f642e2ec6537c678fb2", null ],
-      [ "Default", "d1/dcf/structxii_g_a_l_shader_type.html#aa40e7f7b336f75b920cf5ab9d7f14763abe526b1a3ae9ea9e70a476b8bafcd152", null ]
+      [ "All", "d1/dcf/structxii_g_a_l_shader_type.html#aa40e7f7b336f75b920cf5ab9d7f14763a348c0af903532f642e2ec6537c678fb2", null ]
     ] ]
 ];

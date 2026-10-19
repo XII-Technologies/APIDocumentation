@@ -1,5 +1,6 @@
 var classxii_object_selection =
 [
+    [ "xiiObjectSelection", "d5/d5b/classxii_object_selection.html#a3f58710f46554e24c4b29fbab319d77b", null ],
     [ "AddObject", "d5/d5b/classxii_object_selection.html#a01741d4f09a4057be72dae6818f656c8", null ],
     [ "Clear", "d5/d5b/classxii_object_selection.html#a9733dea5697056e2ef0e68dd07e8e1ad", null ],
     [ "GetCount", "d5/d5b/classxii_object_selection.html#a2a321e4485332a1cd712ff822a5c4dfb", null ],

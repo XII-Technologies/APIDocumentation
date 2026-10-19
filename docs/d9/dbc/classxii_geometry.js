@@ -1,9 +1,9 @@
 var classxii_geometry =
 [
-    [ "GeoOptions", "d7/d44/structxii_geometry_1_1_geo_options.html", "d7/d44/structxii_geometry_1_1_geo_options" ],
-    [ "Line", "d8/d15/structxii_geometry_1_1_line.html", null ],
-    [ "Polygon", "d4/d74/structxii_geometry_1_1_polygon.html", null ],
     [ "Vertex", "d9/d4b/structxii_geometry_1_1_vertex.html", null ],
+    [ "Polygon", "d4/d74/structxii_geometry_1_1_polygon.html", null ],
+    [ "Line", "d8/d15/structxii_geometry_1_1_line.html", null ],
+    [ "GeoOptions", "d7/d44/structxii_geometry_1_1_geo_options.html", "d7/d44/structxii_geometry_1_1_geo_options" ],
     [ "AddArch", "d9/dbc/classxii_geometry.html#a8c27472742de4df35fd8ee4cc998add1", null ],
     [ "AddBox", "d9/dbc/classxii_geometry.html#a27318ad645809cd82b0dd0d5a5cf2ee2", null ],
     [ "AddCapsule", "d9/dbc/classxii_geometry.html#a2a3a11baf29df06b54682856d961629c", null ],

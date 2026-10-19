@@ -5,6 +5,7 @@ var classxii_asset_document =
       [ "Unsupported", "d7/dd5/classxii_asset_document.html#ac655b2681b42cffadffe31310467a8fcab4080bdf74febf04d578ff105cce9d3f", null ],
       [ "Disconnected", "d7/dd5/classxii_asset_document.html#ac655b2681b42cffadffe31310467a8fcaef70e46fd3bbc21e3e1f0b6815e750c0", null ],
       [ "Initializing", "d7/dd5/classxii_asset_document.html#ac655b2681b42cffadffe31310467a8fca32b169f72b293ef80d35435e9894f8e2", null ],
+      [ "Failed", "d7/dd5/classxii_asset_document.html#ac655b2681b42cffadffe31310467a8fcad7c8c85bf79bbe1b7188497c32c3b0ca", null ],
       [ "Loaded", "d7/dd5/classxii_asset_document.html#ac655b2681b42cffadffe31310467a8fca7381d487d18845b379422325c0a768d6", null ]
     ] ],
     [ "AddPrefabDependencies", "d7/dd5/classxii_asset_document.html#a36907103dc911c79972475b67c4f3833", null ],
@@ -41,6 +42,6 @@ var classxii_asset_document =
     [ "SyncObjectsToEngine", "d7/dd5/classxii_asset_document.html#adc51b5bf57d6b9108913c54536a77b31", null ],
     [ "TransformAsset", "d7/dd5/classxii_asset_document.html#a6ddf6b427c32286e8d0e6677501bef40", null ],
     [ "UpdateAssetDocumentInfo", "d7/dd5/classxii_asset_document.html#aa4ab7ab567cb104cf3138228ac514b31", null ],
-    [ "WaitForEngineStatusLoaded", "d7/dd5/classxii_asset_document.html#a7b0d17c20b84f641dbb2d47102640c4c", null ],
+    [ "WaitForEngineStatusLoaded", "d7/dd5/classxii_asset_document.html#ab74898e50e3cee58cab9d048b6d3e2a4", null ],
     [ "m_CommonAssetUiChangeEvent", "d7/dd5/classxii_asset_document.html#abee7e1d1f1c6d4c33f7ae7e572755ae2", null ]
 ];

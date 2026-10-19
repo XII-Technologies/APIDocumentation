@@ -1,5 +1,6 @@
 var classxii_asset_curator =
 [
+    [ "ApplyAssetProfiles", "d8/dbd/classxii_asset_curator.html#a4d29edf26f4872bd22a82a1505982241", null ],
     [ "CheckFileSystem", "d8/dbd/classxii_asset_curator.html#a3864bb51070c1f3efdbbf6964ef16f17", null ],
     [ "ClearAssetCaches", "d8/dbd/classxii_asset_curator.html#a8a4ac71d036ba9e97fd4f2cebd3094af", null ],
     [ "CreateAssetProfile", "d8/dbd/classxii_asset_curator.html#a9965f00086181ec3e593385b932be393", null ],
@@ -10,7 +11,7 @@ var classxii_asset_curator =
     [ "FindBestMatchForFile", "d8/dbd/classxii_asset_curator.html#aca0682be36738185d2caeb54ff11cec9", null ],
     [ "FindDataDirectoryForAsset", "d8/dbd/classxii_asset_curator.html#aeac871b5bc5d6b09528a2bec8545ae7f", null ],
     [ "FindSubAsset", "d8/dbd/classxii_asset_curator.html#a5e406d680727e567916cf6c7ce96d9a1", null ],
-    [ "GenerateInverseTransitiveHull", "d8/dbd/classxii_asset_curator.html#adcc0f37dc76c605da0a1c7aa038f5f91", null ],
+    [ "GenerateInverseTransitiveHull", "d8/dbd/classxii_asset_curator.html#ab273b91c498e33a18e121a410be10f60", null ],
     [ "GenerateTransitiveHull", "d8/dbd/classxii_asset_curator.html#af8d172af27c47e7f09efdd2276725c3e", null ],
     [ "GetActiveAssetProfile", "d8/dbd/classxii_asset_curator.html#a6455429669f6bda0c2aa7720b1d8bd65", null ],
     [ "GetActiveAssetProfileIndex", "d8/dbd/classxii_asset_curator.html#a9dff152197160199a20d10d480e1b748", null ],
@@ -18,20 +19,25 @@ var classxii_asset_curator =
     [ "GetAssetProfile", "d8/dbd/classxii_asset_curator.html#a96b1d3ddb31d7c74dc2a90d6c90a28d7", null ],
     [ "GetAssetProfile", "d8/dbd/classxii_asset_curator.html#af03ccda5d9168816e25cc38b52723f1c", null ],
     [ "GetAssetReferenceHash", "d8/dbd/classxii_asset_curator.html#a999cf3c9312705c3b52e1f258a38fc7e", null ],
+    [ "GetAssetResaveOrder", "d8/dbd/classxii_asset_curator.html#ae603680c7865cd4adc2c570b1a241929", null ],
     [ "GetAssetTransformStats", "d8/dbd/classxii_asset_curator.html#af89313c18632a6978fe680ca2f041b43", null ],
     [ "GetDevelopmentAssetProfile", "d8/dbd/classxii_asset_curator.html#ac36126dd2bf7143524b979420a0a922c", null ],
     [ "GetKnownAssets", "d8/dbd/classxii_asset_curator.html#a1c7f3519b322b2239e7616ea2fd4226c", null ],
     [ "GetKnownSubAssets", "d8/dbd/classxii_asset_curator.html#a84f055e6a7017d27c61db6f969ef485c", null ],
     [ "GetSubAsset", "d8/dbd/classxii_asset_curator.html#ae81c09c4e8c79174d1530bc676efcf3a", null ],
+    [ "IsAssetUpToDate", "d8/dbd/classxii_asset_curator.html#a3b707362a07bb78a195c6b2802461771", null ],
     [ "IsReferenced", "d8/dbd/classxii_asset_curator.html#a13c3d06528b713bf5c8fab1ea235053d", null ],
     [ "NotifyOfAssetChange", "d8/dbd/classxii_asset_curator.html#a108d2eb48a97965cef3b1d0674471aea", null ],
     [ "NotifyOfFileChange", "d8/dbd/classxii_asset_curator.html#a2360ec42953bb36d6f579dc241032556", null ],
+    [ "ReloadAssetProfiles", "d8/dbd/classxii_asset_curator.html#a885017a8a2e602b8eda5877ead89fe03", null ],
+    [ "ResaveAllAssets", "d8/dbd/classxii_asset_curator.html#ac7aa96c71c325c1d53330ad239e18597", null ],
     [ "SaveAssetProfiles", "d8/dbd/classxii_asset_curator.html#a1524f17af9e297902257df5cf3ecc02d", null ],
+    [ "SaveRuntimeProfiles", "d8/dbd/classxii_asset_curator.html#a6f49a7065e439d8ad53bc73923f015b8", null ],
     [ "SetActiveAssetProfileByIndex", "d8/dbd/classxii_asset_curator.html#a586846cb93b7b2c1c789ad700c177ec2", null ],
     [ "StartInitialize", "d8/dbd/classxii_asset_curator.html#a18a4ee5566c6a8ff9bf4fe687d206204", null ],
     [ "TransformAllAssets", "d8/dbd/classxii_asset_curator.html#addd4052f60196314311e11f607b05530", null ],
     [ "TransformAssetsForSceneExport", "d8/dbd/classxii_asset_curator.html#a894cdd7a5057698b7aad6851d0c8ea06", null ],
     [ "WaitForInitialize", "d8/dbd/classxii_asset_curator.html#a6671f5fb4ae8fca9609e17840cf1d21f", null ],
     [ "WriteAssetTables", "d8/dbd/classxii_asset_curator.html#adff6dba6321cca3dee01405faa4ae39a", null ],
-    [ "WriteDependencyDGML", "d8/dbd/classxii_asset_curator.html#a2da7752018934c36de06e3ed9520bd9d", null ]
+    [ "WriteDependencyDGML", "d8/dbd/classxii_asset_curator.html#a9e7c1cf95de3f5cbef71898f6f3399e4", null ]
 ];

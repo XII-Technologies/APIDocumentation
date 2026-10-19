@@ -11,8 +11,6 @@ var structxii_g_a_l_shader_resource_type =
       [ "InputAttachment", "d7/d8f/structxii_g_a_l_shader_resource_type.html#a364ee1582d0f94bbc4c8ba4c2f1eec41abb961e7e61846eb01d4ee55416d232fc", null ],
       [ "AccelerationStructure", "d7/d8f/structxii_g_a_l_shader_resource_type.html#a364ee1582d0f94bbc4c8ba4c2f1eec41a3c8ee733d3e6cbe1ec29b46c712349dd", null ],
       [ "TextureAndSampler", "d7/d8f/structxii_g_a_l_shader_resource_type.html#a364ee1582d0f94bbc4c8ba4c2f1eec41acbc89d20bb3bd337726493f03da77c66", null ],
-      [ "PushConstants", "d7/d8f/structxii_g_a_l_shader_resource_type.html#a364ee1582d0f94bbc4c8ba4c2f1eec41ae1cfe919f838740776042f572001fa37", null ],
-      [ "ENUM_COUNT", "d7/d8f/structxii_g_a_l_shader_resource_type.html#a364ee1582d0f94bbc4c8ba4c2f1eec41af83c307c999a27e883e19934f52b3eac", null ],
-      [ "Default", "d7/d8f/structxii_g_a_l_shader_resource_type.html#a364ee1582d0f94bbc4c8ba4c2f1eec41a060e79848fd8634bfb7a8868c4ca3eeb", null ]
+      [ "PushConstants", "d7/d8f/structxii_g_a_l_shader_resource_type.html#a364ee1582d0f94bbc4c8ba4c2f1eec41ae1cfe919f838740776042f572001fa37", null ]
     ] ]
 ];

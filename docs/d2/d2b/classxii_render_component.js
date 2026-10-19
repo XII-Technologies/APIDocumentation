@@ -3,6 +3,7 @@ var classxii_render_component =
     [ "Deinitialize", "d2/d2b/classxii_render_component.html#a17e1c00343ea467781e5731aec3e6c54", null ],
     [ "GetLocalBounds", "d2/d2b/classxii_render_component.html#a0f5d34be8b9128832c091515803021db", null ],
     [ "GetUniqueIdForRendering", "d2/d2b/classxii_render_component.html#a1414af167f00e6d46ad3856c4aa2d91b", null ],
+    [ "IsRenderDataViewIndependent", "d2/d2b/classxii_render_component.html#a72fdabd47d402337b943b7921da3e794", null ],
     [ "OnActivated", "d2/d2b/classxii_render_component.html#a24ee65142db3931eec69db13742d933f", null ],
     [ "OnDeactivated", "d2/d2b/classxii_render_component.html#a55ac0d5b52ac4a4546cf88bf55fc3083", null ],
     [ "TriggerLocalBoundsUpdate", "d2/d2b/classxii_render_component.html#aef6ea583734b160124970a20eabb4deb", null ]

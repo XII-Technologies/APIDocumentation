@@ -1,4 +1,5 @@
 var classxii_surface_asset_document_manager =
 [
-    [ "GetAssetTypeOutputReliability", "dd/d25/classxii_surface_asset_document_manager.html#ace40a1667d0c9c57b328fe3dde638867", null ]
+    [ "GetAssetTypeOutputReliability", "dd/d25/classxii_surface_asset_document_manager.html#ace40a1667d0c9c57b328fe3dde638867", null ],
+    [ "InternalCreateDocument", "dd/d25/classxii_surface_asset_document_manager.html#a2837eefb7a5697becb016f99bad1f948", null ]
 ];

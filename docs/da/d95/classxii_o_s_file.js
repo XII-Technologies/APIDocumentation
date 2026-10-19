@@ -1,7 +1,7 @@
 var classxii_o_s_file =
 [
-    [ "EventData", "db/db7/structxii_o_s_file_1_1_event_data.html", "db/db7/structxii_o_s_file_1_1_event_data" ],
     [ "EventType", "df/d5a/structxii_o_s_file_1_1_event_type.html", "df/d5a/structxii_o_s_file_1_1_event_type" ],
+    [ "EventData", "db/db7/structxii_o_s_file_1_1_event_data.html", "db/db7/structxii_o_s_file_1_1_event_data" ],
     [ "Close", "da/d95/classxii_o_s_file.html#aa11016f3baf00ca21b4090a3f254bd1b", null ],
     [ "GetFileData", "da/d95/classxii_o_s_file.html#abad1a5bd27428fc4576cf1960a44a4bb", null ],
     [ "GetFilePosition", "da/d95/classxii_o_s_file.html#a9c2f4e5ef26b77d66a8dd184e44337b2", null ],

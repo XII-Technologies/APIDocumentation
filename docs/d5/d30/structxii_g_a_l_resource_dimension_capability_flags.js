@@ -10,7 +10,6 @@ var structxii_g_a_l_resource_dimension_capability_flags =
       [ "Texture2DArray", "d5/d30/structxii_g_a_l_resource_dimension_capability_flags.html#a3c967880af6da3646f4056f7efa738aeaa85941c6c65fa44721dfae3a1254f56d", null ],
       [ "Texture3D", "d5/d30/structxii_g_a_l_resource_dimension_capability_flags.html#a3c967880af6da3646f4056f7efa738aea3d1318da106ebf123260b53933c267ec", null ],
       [ "TextureCube", "d5/d30/structxii_g_a_l_resource_dimension_capability_flags.html#a3c967880af6da3646f4056f7efa738aeacd946c661bcf9b2fba3f296f54fd7d7b", null ],
-      [ "TextureCubeArray", "d5/d30/structxii_g_a_l_resource_dimension_capability_flags.html#a3c967880af6da3646f4056f7efa738aea41cc8c5c0c704e2166672ff9bd8cb1d6", null ],
-      [ "Default", "d5/d30/structxii_g_a_l_resource_dimension_capability_flags.html#a3c967880af6da3646f4056f7efa738aea3ae0565965571786b45ab20010affe9a", null ]
+      [ "TextureCubeArray", "d5/d30/structxii_g_a_l_resource_dimension_capability_flags.html#a3c967880af6da3646f4056f7efa738aea41cc8c5c0c704e2166672ff9bd8cb1d6", null ]
     ] ]
 ];

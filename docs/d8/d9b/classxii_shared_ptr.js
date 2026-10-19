@@ -2,7 +2,7 @@ var classxii_shared_ptr =
 [
     [ "xiiSharedPtr", "d8/d9b/classxii_shared_ptr.html#a4a83ab0f3ae15cab960ddd67b3d3baca", null ],
     [ "xiiSharedPtr", "d8/d9b/classxii_shared_ptr.html#af93d496203d7b46f8c12a21f3a09756d", null ],
-    [ "xiiSharedPtr", "d8/d9b/classxii_shared_ptr.html#afe865f2aa622dd636b2044ba108ebcda", null ],
+    [ "xiiSharedPtr", "d8/d9b/classxii_shared_ptr.html#a550b5bea2d0232eb7849253415b8eaca", null ],
     [ "xiiSharedPtr", "d8/d9b/classxii_shared_ptr.html#a60b31bfcfc4c22e7ed46ddd44b025f48", null ],
     [ "xiiSharedPtr", "d8/d9b/classxii_shared_ptr.html#ab49954c9680ebc7f4b7e8473d81df132", null ],
     [ "xiiSharedPtr", "d8/d9b/classxii_shared_ptr.html#ad38902a6797745b7501bcfaae246223a", null ],

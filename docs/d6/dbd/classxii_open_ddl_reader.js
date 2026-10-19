@@ -1,5 +1,6 @@
 var classxii_open_ddl_reader =
 [
+    [ "xiiOpenDdlReader", "d6/dbd/classxii_open_ddl_reader.html#a5f517cfcd1f068e173bd96d1d1a94a45", null ],
     [ "FindElement", "d6/dbd/classxii_open_ddl_reader.html#a9c0a46f8224378f103e61eafa7aa4afa", null ],
     [ "GetRootElement", "d6/dbd/classxii_open_ddl_reader.html#a6894e388e108789cf74044aea72c4aa6", null ],
     [ "OnBeginObject", "d6/dbd/classxii_open_ddl_reader.html#aeaf9ef32ff73098582c74b79d64bac8b", null ],

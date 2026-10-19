@@ -1,5 +1,6 @@
 var classxii_open_ddl_parser =
 [
+    [ "xiiOpenDdlParser", "d5/df7/classxii_open_ddl_parser.html#a59f5e0856589e6c32ea114e6ac32ed1f", null ],
     [ "ContinueParsing", "d5/df7/classxii_open_ddl_parser.html#ae3dcbc8d4f2d59c6180d342d25a5301f", null ],
     [ "HadFatalParsingError", "d5/df7/classxii_open_ddl_parser.html#ad52bf2e9c30b24e2ce7a5abbc3a4542b", null ],
     [ "OnBeginObject", "d5/df7/classxii_open_ddl_parser.html#a844a6db7d21225ad4fd11540473932c8", null ],

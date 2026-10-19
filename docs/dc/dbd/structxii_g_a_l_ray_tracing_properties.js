@@ -12,6 +12,7 @@ var structxii_g_a_l_ray_tracing_properties =
     [ "m_uiMaxShaderRecordStride", "dc/dbd/structxii_g_a_l_ray_tracing_properties.html#a14d56b214696283eded6b3b9b753594e", null ],
     [ "m_uiScratchBufferAlignment", "dc/dbd/structxii_g_a_l_ray_tracing_properties.html#a5301ca1b1a26fbed241d270a207589df", null ],
     [ "m_uiShaderGroupBaseAlignment", "dc/dbd/structxii_g_a_l_ray_tracing_properties.html#a418af2217001c435154399caacb72787", null ],
+    [ "m_uiShaderGroupHandleAlignment", "dc/dbd/structxii_g_a_l_ray_tracing_properties.html#a6821fb2071d8920fde3e852d7424079d", null ],
     [ "m_uiShaderGroupHandleSize", "dc/dbd/structxii_g_a_l_ray_tracing_properties.html#afaf6c61126f97ef0de7ea7607c6ea60b", null ],
     [ "m_uiTransformBufferAlignment", "dc/dbd/structxii_g_a_l_ray_tracing_properties.html#a588939fb386294dee28d4ffedfb7fa73", null ],
     [ "m_uiVertexBufferAlignment", "dc/dbd/structxii_g_a_l_ray_tracing_properties.html#acb40ae77d80abc76676cd6bee7c76c9b", null ]

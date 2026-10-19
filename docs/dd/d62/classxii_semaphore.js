@@ -1,5 +1,6 @@
 var classxii_semaphore =
 [
+    [ "xiiSemaphore", "dd/d62/classxii_semaphore.html#aa84eaf7ce5e066ffc6ee0f673fb1dbd5", null ],
     [ "AcquireToken", "dd/d62/classxii_semaphore.html#a2c277587405dfedbd735a9a5070b6cc4", null ],
     [ "Create", "dd/d62/classxii_semaphore.html#ac90d308f09cca8b2783a937c458f3e43", null ],
     [ "Open", "dd/d62/classxii_semaphore.html#aa9570edd0fed8598832dd0a6c0482884", null ],

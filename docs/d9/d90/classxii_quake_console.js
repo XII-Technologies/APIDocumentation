@@ -19,6 +19,7 @@ var classxii_quake_console =
     [ "LoadState", "d9/d90/classxii_quake_console.html#aeb7e4c561e4b361a317a35dfce96246a", null ],
     [ "LogHandler", "d9/d90/classxii_quake_console.html#a44cf0e8185edc0b03ee67f3c7b317ba0", null ],
     [ "MoveCaret", "d9/d90/classxii_quake_console.html#ac17e201e36133ae775f23a04f527875e", null ],
+    [ "ProcessInputCharacter", "d9/d90/classxii_quake_console.html#a5004df7f6760e640b351c13bb8ac0028", null ],
     [ "RemoveCharacter", "d9/d90/classxii_quake_console.html#a0b43179806759053edc89a55d15b9bf5", null ],
     [ "SaveState", "d9/d90/classxii_quake_console.html#a194fe9209fd4e30aa8f532e30c46c7e4", null ],
     [ "Scroll", "d9/d90/classxii_quake_console.html#ae9aefbe8e0f0fcd0d39880c99d29e161", null ],

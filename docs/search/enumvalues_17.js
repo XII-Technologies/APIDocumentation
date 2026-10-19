@@ -2,16 +2,20 @@ var searchData=
 [
   ['warning_0',['Warning',['../da/ddd/structxii_preprocessor_1_1_processing_event.html#a802fe292e88c1d6864e3e14e68f89856ad3afdc96912a0d9c6cfbc3c9580be7f4',1,'xiiPreprocessor::ProcessingEvent']]],
   ['warningmsg_1',['WarningMsg',['../d4/de6/structxii_log_msg_type.html#a7b991cbae5d585576d8269d959abbc49af93eec7f65253cc180394ea1e2282a5e',1,'xiiLogMsgType']]],
-  ['white_2',['White',['../d3/d91/structxii_tex_conv_channel_value.html#ac092b07d9284c9f99d5dd6bf86240310a7a378e01332a383afad3fb44e0716721',1,'xiiTexConvChannelValue']]],
+  ['white_2',['White',['../db/d1e/structxii_texture_converter_channel_value.html#a917bca283acf40e448e5a720ca846176abcd18a26692e1c21721071b1d344fef0',1,'xiiTextureConverterChannelValue']]],
   ['whitespace_3',['Whitespace',['../d7/de7/structxii_token_type.html#afab41d2a9ab700f2bde9fafefdfaf846a48219051d83873c1db489768f3c03f98',1,'xiiTokenType']]],
   ['windowclosed_4',['WindowClosed',['../de/dfe/structxii_qt_document_window_event.html#ae2b8ed3464684a36b04d058cc9914475a4274d468871fc1d045e8d6bd5e19c689',1,'xiiQtDocumentWindowEvent']]],
   ['windowclosing_5',['WindowClosing',['../de/dfe/structxii_qt_document_window_event.html#ae2b8ed3464684a36b04d058cc9914475ac8273f965d4ecea735f9710bd22b74be',1,'xiiQtDocumentWindowEvent']]],
   ['windowdecorationchanged_6',['WindowDecorationChanged',['../de/dfe/structxii_qt_document_window_event.html#ae2b8ed3464684a36b04d058cc9914475abf2c376ce79466e9363532af9d45483d',1,'xiiQtDocumentWindowEvent']]],
-  ['windowfixedresolution_7',['WindowFixedResolution',['../d4/d40/structxii_window_mode.html#aced6b6446fc8e62f3a850a3d8d4e23a6a33e301fb73b0d227640bf2cf84f045b3',1,'xiiWindowMode']]],
-  ['windowresizable_8',['WindowResizable',['../d4/d40/structxii_window_mode.html#aced6b6446fc8e62f3a850a3d8d4e23a6a267d8ec33bdf68fa657f3c763f5e3b21',1,'xiiWindowMode']]],
-  ['wireframe_9',['Wireframe',['../d0/d2b/structxii_g_a_l_fill_mode.html#a17e42864c3445d591bfd03d96f727cd7a8afc1335e836cfb85472b10f1675cf68',1,'xiiGALFillMode']]],
-  ['wrap_10',['Wrap',['../dd/dcf/structxii_g_a_l_texture_address_mode.html#abcf94f93eb06b8bebcee7b6474cc148fa45184a23cf0da3360d6ecbfb6469218f',1,'xiiGALTextureAddressMode']]],
-  ['wrapatscreenborders_11',['WrapAtScreenBorders',['../d0/d47/classxii_editor_input_context.html#aed953d853f8fffd5fb4c4c5a02f10d20a9ce50711168c4d6494eb1fcf0a032f92',1,'xiiEditorInputContext']]],
-  ['write_12',['Write',['../d0/dec/structxii_file_open_mode.html#aad81097e9a792e7a5fd53df5ccd00a6fac6d986d04f77a14ba8a00e89401a40a8',1,'xiiFileOpenMode::Write'],['../db/dca/structxii_g_a_l_c_p_u_access_flag.html#a2d7b392faf2b73fe981386307093fe7ba3e853979d858a6114040705fee01fa40',1,'xiiGALCPUAccessFlag::Write'],['../da/d43/structxii_g_a_l_map_type.html#a65164e2efa0e8d2c4959973f94ed54cfa613d35c7a95809c63259dbb812e6c5bb',1,'xiiGALMapType::Write'],['../d8/d7e/structxii_g_a_l_unordered_access_view_flags.html#ad0cb4f2fc4459cdf108d4c23a7d765cfa59c0027a40f17c9171f59bd193229a5c',1,'xiiGALUnorderedAccessViewFlags::Write']]],
-  ['writeonly_13',['WriteOnly',['../db/ddb/structxii_g_a_l_external_memory_flags.html#addc0feca3370263172d15d2822002698ae5b59e23159a2edf0bd2bf79076462d1',1,'xiiGALExternalMemoryFlags']]]
+  ['windowdestruction_7',['WindowDestruction',['../d0/d9a/structxii_window_event.html#aae3d05b3e7025a29211509877f9fd77da33ebefdd7effb8e0842e3d0d8ff25773',1,'xiiWindowEvent']]],
+  ['windowfixedresolution_8',['WindowFixedResolution',['../d4/d40/structxii_window_mode.html#aced6b6446fc8e62f3a850a3d8d4e23a6a33e301fb73b0d227640bf2cf84f045b3',1,'xiiWindowMode']]],
+  ['windowresizable_9',['WindowResizable',['../d4/d40/structxii_window_mode.html#aced6b6446fc8e62f3a850a3d8d4e23a6a267d8ec33bdf68fa657f3c763f5e3b21',1,'xiiWindowMode']]],
+  ['wireframe_10',['Wireframe',['../d0/d2b/structxii_g_a_l_fill_mode.html#a17e42864c3445d591bfd03d96f727cd7a8afc1335e836cfb85472b10f1675cf68',1,'xiiGALFillMode']]],
+  ['withinbudget_11',['WithinBudget',['../d0/db9/structxii_d3_d12_allocation_flags.html#ae01cd54d30ad5003562c67e386e6b004a19dcac28f7a5770dcdf340e0c6fbb0da',1,'xiiD3D12AllocationFlags']]],
+  ['world_12',['World',['../d1/d27/structxii_particle_simulation_space.html#a169f8aadc2406565409143cab37ea1c3aeaa4251d6643e7f87492d413e71e224a',1,'xiiParticleSimulationSpace']]],
+  ['wrap_13',['Wrap',['../dd/dcf/structxii_g_a_l_texture_address_mode.html#abcf94f93eb06b8bebcee7b6474cc148fa45184a23cf0da3360d6ecbfb6469218f',1,'xiiGALTextureAddressMode']]],
+  ['wrapatscreenborders_14',['WrapAtScreenBorders',['../d0/d47/classxii_editor_input_context.html#aed953d853f8fffd5fb4c4c5a02f10d20a9ce50711168c4d6494eb1fcf0a032f92',1,'xiiEditorInputContext']]],
+  ['write_15',['Write',['../d0/dec/structxii_file_open_mode.html#aad81097e9a792e7a5fd53df5ccd00a6fac6d986d04f77a14ba8a00e89401a40a8',1,'xiiFileOpenMode::Write'],['../db/dca/structxii_g_a_l_c_p_u_access_flag.html#a2d7b392faf2b73fe981386307093fe7ba3e853979d858a6114040705fee01fa40',1,'xiiGALCPUAccessFlag::Write'],['../da/d43/structxii_g_a_l_map_type.html#a65164e2efa0e8d2c4959973f94ed54cfa613d35c7a95809c63259dbb812e6c5bb',1,'xiiGALMapType::Write'],['../d8/d7e/structxii_g_a_l_unordered_access_view_flags.html#ad0cb4f2fc4459cdf108d4c23a7d765cfa59c0027a40f17c9171f59bd193229a5c',1,'xiiGALUnorderedAccessViewFlags::Write']]],
+  ['writeonly_16',['WriteOnly',['../db/ddb/structxii_g_a_l_external_memory_flags.html#addc0feca3370263172d15d2822002698ae5b59e23159a2edf0bd2bf79076462d1',1,'xiiGALExternalMemoryFlags']]],
+  ['writesneighborgrid_17',['WritesNeighborGrid',['../db/dc5/structxii_particle_graph_node_flags.html#a77787ee3151324be93718f43b8d19c6eadabbb1f374acdf9841591cd827522b98',1,'xiiParticleGraphNodeFlags']]]
 ];

@@ -1,15 +1,15 @@
 var classxii_set_base =
 [
     [ "IteratorBase", "d2/d7f/structxii_set_base_1_1_iterator_base.html", "d2/d7f/structxii_set_base_1_1_iterator_base" ],
-    [ "xiiSetBase", "d6/daa/classxii_set_base.html#af3c54e2d35affe8f0e9582bccbda0350", null ],
-    [ "xiiSetBase", "d6/daa/classxii_set_base.html#a74fbc816194690bd16c93597b271c80f", null ],
+    [ "xiiSetBase", "d6/daa/classxii_set_base.html#a27e17a42eb70cea7aff6bf64b2e0a208", null ],
+    [ "xiiSetBase", "d6/daa/classxii_set_base.html#a0965dbd478d65552e1fa58f82bfdc00b", null ],
     [ "~xiiSetBase", "d6/daa/classxii_set_base.html#abcb763cd04848b5d61818421b60de4e8", null ],
     [ "Clear", "d6/daa/classxii_set_base.html#a0d39b63f88f77dfff248b0586c9f9c24", null ],
     [ "Contains", "d6/daa/classxii_set_base.html#a8f118b4eae296d75dbbb6b8636bee278", null ],
     [ "ContainsSet", "d6/daa/classxii_set_base.html#a4d24016c241584f27553d730d435b9b0", null ],
     [ "Difference", "d6/daa/classxii_set_base.html#a5b05f30fd73f5b58ed6fa05ee29f18e9", null ],
     [ "Find", "d6/daa/classxii_set_base.html#a45edcd7f67a240a03dcf35f4b6b9ca8c", null ],
-    [ "GetAllocator", "d6/daa/classxii_set_base.html#aa44b1a49f38ea974c20feaddcf97dca5", null ],
+    [ "GetAllocator", "d6/daa/classxii_set_base.html#a5e25342b803710f1b438b6d519ecf3b7", null ],
     [ "GetCount", "d6/daa/classxii_set_base.html#a612883c7cb7fab407d11aa6f2889b130", null ],
     [ "GetHeapMemoryUsage", "d6/daa/classxii_set_base.html#ad442d03eea8de7d9c91c3e0c1f6cdc35", null ],
     [ "GetIterator", "d6/daa/classxii_set_base.html#ae94d47ef967975a5a4b2f2a0fb953dd7", null ],

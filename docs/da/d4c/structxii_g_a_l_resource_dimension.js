@@ -9,8 +9,6 @@ var structxii_g_a_l_resource_dimension =
       [ "Texture2DArray", "da/d4c/structxii_g_a_l_resource_dimension.html#acd80592b28aafb8becd9a7b79238830dab8cca946b07d784e9682c4d354cf57ba", null ],
       [ "Texture3D", "da/d4c/structxii_g_a_l_resource_dimension.html#acd80592b28aafb8becd9a7b79238830dabffe771cc440b75d0ed63f14f2526624", null ],
       [ "TextureCube", "da/d4c/structxii_g_a_l_resource_dimension.html#acd80592b28aafb8becd9a7b79238830dacddb0a6d91fdba781ef3ce4139061b4f", null ],
-      [ "TextureCubeArray", "da/d4c/structxii_g_a_l_resource_dimension.html#acd80592b28aafb8becd9a7b79238830dabcd9df191027935444240e328b162ade", null ],
-      [ "ENUM_COUNT", "da/d4c/structxii_g_a_l_resource_dimension.html#acd80592b28aafb8becd9a7b79238830da3639c8b0bd90b750d0aeca5cf2bb6110", null ],
-      [ "Default", "da/d4c/structxii_g_a_l_resource_dimension.html#acd80592b28aafb8becd9a7b79238830da8c4516450a3bff3d49b2ed0a9a729960", null ]
+      [ "TextureCubeArray", "da/d4c/structxii_g_a_l_resource_dimension.html#acd80592b28aafb8becd9a7b79238830dabcd9df191027935444240e328b162ade", null ]
     ] ]
 ];

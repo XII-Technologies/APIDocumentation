@@ -1,7 +1,6 @@
 var structxii_o_s_file_1_1_event_type =
 [
     [ "Enum", "df/d5a/structxii_o_s_file_1_1_event_type.html#a52172654446c2626c5ba78e1d7685d38", [
-      [ "None", "df/d5a/structxii_o_s_file_1_1_event_type.html#a52172654446c2626c5ba78e1d7685d38a5d7b92d168e0d38fac2bf88c62bb289c", null ],
       [ "FileOpen", "df/d5a/structxii_o_s_file_1_1_event_type.html#a52172654446c2626c5ba78e1d7685d38aeea6b8a8e4ac44df13b1831c6c02b824", null ],
       [ "FileClose", "df/d5a/structxii_o_s_file_1_1_event_type.html#a52172654446c2626c5ba78e1d7685d38a42f48dfa61051aa82d907baccd183051", null ],
       [ "FileExists", "df/d5a/structxii_o_s_file_1_1_event_type.html#a52172654446c2626c5ba78e1d7685d38a882a85dd31fad735d77545731fda88ed", null ],

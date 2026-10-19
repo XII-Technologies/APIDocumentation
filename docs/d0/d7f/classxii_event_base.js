@@ -2,7 +2,7 @@ var classxii_event_base =
 [
     [ "Unsubscriber", "db/de3/classxii_event_base_1_1_unsubscriber.html", "db/de3/classxii_event_base_1_1_unsubscriber" ],
     [ "Handler", "d0/d7f/classxii_event_base.html#ada90d4faae8102fb84947a77720e2f70", null ],
-    [ "xiiEventBase", "d0/d7f/classxii_event_base.html#a82c447f89fbe6bfe74b0ecfed7476762", null ],
+    [ "xiiEventBase", "d0/d7f/classxii_event_base.html#af42755355dcfa5992187bc6bc85b5bba", null ],
     [ "AddEventHandler", "d0/d7f/classxii_event_base.html#ae7539570090c1f7b00c7a91005b45f50", null ],
     [ "AddEventHandler", "d0/d7f/classxii_event_base.html#aeba7db2bfa882561fa4c23f3a01320f4", null ],
     [ "Broadcast", "d0/d7f/classxii_event_base.html#ae8ad85497f5d04bf7320cee2f74ab41f", null ],

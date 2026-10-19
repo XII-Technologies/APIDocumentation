@@ -1,10 +1,7 @@
 var classxii_document_object_meta_data =
 [
     [ "ModifiedFlags", "d4/d38/classxii_document_object_meta_data.html#a47d674363a00dbfd840c357f44979749", [
-      [ "HiddenFlag", "d4/d38/classxii_document_object_meta_data.html#a47d674363a00dbfd840c357f44979749a0fb97f2336e4c799f59fec3530527a6d", null ],
-      [ "PrefabFlag", "d4/d38/classxii_document_object_meta_data.html#a47d674363a00dbfd840c357f44979749a9b586e3fa8d503b598c88499143af4e2", null ],
-      [ "ActiveParentFlag", "d4/d38/classxii_document_object_meta_data.html#a47d674363a00dbfd840c357f44979749abf504e1616b8772548dfe00c7705e301", null ],
-      [ "AllFlags", "d4/d38/classxii_document_object_meta_data.html#a47d674363a00dbfd840c357f44979749ab16490c0bbcbc099bc8f2caad070f490", null ]
+      [ "ActiveParentFlag", "d4/d38/classxii_document_object_meta_data.html#a47d674363a00dbfd840c357f44979749abf504e1616b8772548dfe00c7705e301", null ]
     ] ],
     [ "m_bHidden", "d4/d38/classxii_document_object_meta_data.html#a750938810d34998fe4f55b2ddf674e4f", null ],
     [ "m_CreateFromPrefab", "d4/d38/classxii_document_object_meta_data.html#a0171b11cddc0516e23b9fdbc4ca22f16", null ],

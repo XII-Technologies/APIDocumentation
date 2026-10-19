@@ -1,5 +1,6 @@
 var classxii_task =
 [
+    [ "xiiTask", "d3/d9b/classxii_task.html#a992f3b53e7285b7aacae52c1cb9287fb", null ],
     [ "ConfigureTask", "d3/d9b/classxii_task.html#ae03e7f23e33858f7ab2e687d3d4ee265", null ],
     [ "Execute", "d3/d9b/classxii_task.html#ae86de0539cc6ab496ecef3917a0b7565", null ],
     [ "ExecuteWithMultiplicity", "d3/d9b/classxii_task.html#af1516532d9cffd0e5124411663e775e4", null ],

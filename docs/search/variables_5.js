@@ -1,11 +1,8 @@
 var searchData=
 [
-  ['gainsboro_0',['Gainsboro',['../d3/de6/classxii_color.html#a1c7612a84c2024fd81db924ef27e10ff',1,'xiiColor']]],
-  ['ghostwhite_1',['GhostWhite',['../d3/de6/classxii_color.html#aab85d7833d8c4eb57b52c382e7f942a3',1,'xiiColor']]],
-  ['gold_2',['Gold',['../d3/de6/classxii_color.html#a72481210bd09e3074e2f3c4c7de644e0',1,'xiiColor']]],
-  ['goldenrod_3',['GoldenRod',['../d3/de6/classxii_color.html#a028463036ed7b6312dc09ad5c04913ad',1,'xiiColor']]],
-  ['gray_4',['Gray',['../d3/de6/classxii_color.html#a9a45587ec13d7505a5b3bfd2362196a3',1,'xiiColor']]],
-  ['green_5',['Green',['../d3/de6/classxii_color.html#ade47b71aacc4f010f1378077c7b5c2cb',1,'xiiColor']]],
-  ['greenyellow_6',['GreenYellow',['../d3/de6/classxii_color.html#a703f2dfe8aecfe2842db7544f969e6ac',1,'xiiColor']]],
-  ['grey_7',['Grey',['../d3/de6/classxii_color.html#add8bc4b3a01982716cffe96da990ba4f',1,'xiiColor']]]
+  ['firebrick_0',['FireBrick',['../d3/de6/classxii_color.html#afb33debed612c93a793b5bcf583f759d',1,'xiiColor']]],
+  ['floralwhite_1',['FloralWhite',['../d3/de6/classxii_color.html#a225e0f17c741d7c3bd4e9c324552c63f',1,'xiiColor']]],
+  ['focus_2',['focus',['../d9/de3/unionxii_window_event_1_1_payload.html#a82a347462d7be88d3bac9bfb25a83eae',1,'xiiWindowEvent::Payload']]],
+  ['forestgreen_3',['ForestGreen',['../d3/de6/classxii_color.html#a355a6ccb5c0d0514af8f379bedcf0bb4',1,'xiiColor']]],
+  ['fuchsia_4',['Fuchsia',['../d3/de6/classxii_color.html#ae257669aef13a942fa8dc9fbcb3038b4',1,'xiiColor']]]
 ];

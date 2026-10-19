@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['wheat_0',['Wheat',['../d3/de6/classxii_color.html#a3c86e950af93d508eae3f24861e064b2',1,'xiiColor']]],
-  ['white_1',['White',['../d3/de6/classxii_color.html#aa0b01806b94057aecb9945229acb7807',1,'xiiColor']]],
-  ['whitesmoke_2',['WhiteSmoke',['../d3/de6/classxii_color.html#a75418d52ba56bccbff438b14ad57c064',1,'xiiColor']]]
+  ['violet_0',['Violet',['../d3/de6/classxii_color.html#ae0052e4284108807305eca16e26b98b5',1,'xiiColor']]],
+  ['visibility_1',['visibility',['../d9/de3/unionxii_window_event_1_1_payload.html#aedc60f2002e8d33a22e46820c7f3775a',1,'xiiWindowEvent::Payload']]]
 ];

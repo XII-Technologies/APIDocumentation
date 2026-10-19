@@ -4,6 +4,5 @@ var searchData=
   ['quaternion_1',['Quaternion',['../dd/dba/structxii_variant_type.html#a38d867476ba7137c38a09976ece9ee6ba054efb0d381798145ec3ed37a1dbfcc0',1,'xiiVariantType']]],
   ['quaterniond_2',['Quaterniond',['../dd/dba/structxii_variant_type.html#a38d867476ba7137c38a09976ece9ee6bab919acbbaaf48d8c629e950c070639ea',1,'xiiVariantType']]],
   ['querying_3',['Querying',['../d8/db3/classxii_g_a_l_query.html#a13b9c295483ae4a42123735b261b1cd5a2e519ed9893546d4624a255418b46860',1,'xiiGALQuery']]],
-  ['queued_4',['Queued',['../d6/d35/classxii_actor_manager.html#a36654917f2a3afb90a589df82faaac8aa7b2f31b90fe1c2cc33a52233c1925df3',1,'xiiActorManager']]],
-  ['quit_5',['Quit',['../dd/d2b/classxii_application.html#a15434b0054b5c87809df19e488693370a0d82790b0612935992bd564a17ce37d6',1,'xiiApplication']]]
+  ['quit_4',['Quit',['../dd/d2b/classxii_application.html#a359a9ca7be863c9823cf5053c0f344d1a0d82790b0612935992bd564a17ce37d6',1,'xiiApplication']]]
 ];

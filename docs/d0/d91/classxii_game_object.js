@@ -1,7 +1,7 @@
 var classxii_game_object =
 [
-    [ "ChildIterator", "d2/dfe/classxii_game_object_1_1_child_iterator.html", null ],
     [ "ConstChildIterator", "d9/d28/classxii_game_object_1_1_const_child_iterator.html", "d9/d28/classxii_game_object_1_1_const_child_iterator" ],
+    [ "ChildIterator", "d2/dfe/classxii_game_object_1_1_child_iterator.html", null ],
     [ "UpdateBehaviorIfStatic", "d0/d91/classxii_game_object.html#a05ca9a629994b6e8be20ba6c74f46f45", [
       [ "None", "d0/d91/classxii_game_object.html#a05ca9a629994b6e8be20ba6c74f46f45a6adf97f83acf6453d4a6a4b1070f3754", null ],
       [ "UpdateImmediately", "d0/d91/classxii_game_object.html#a05ca9a629994b6e8be20ba6c74f46f45a28495bc4bd0366e01fb565853b6bfcd2", null ]
@@ -50,7 +50,7 @@ var classxii_game_object =
     [ "RemoveTag", "d0/d91/classxii_game_object.html#a5bcaf0d9eaedbe21ae63b5bc290a47f0", null ],
     [ "SearchForChildByNameSequence", "d0/d91/classxii_game_object.html#a54f2f7e334ab1e5eb78a22ba01dffc9c", null ],
     [ "SearchForChildByNameSequence", "d0/d91/classxii_game_object.html#add401bf5e442f61ff7ee2365e0b1abcd", null ],
-    [ "SearchForChildrenByNameSequence", "d0/d91/classxii_game_object.html#adefff6a2000189a33bff703c7829f391", null ],
+    [ "SearchForChildrenByNameSequence", "d0/d91/classxii_game_object.html#a3073009de8310eec6d18a09dec802db3", null ],
     [ "SendEventMessage", "d0/d91/classxii_game_object.html#a5277e7a01893eb707efb836f9093bf02", null ],
     [ "SendEventMessage", "d0/d91/classxii_game_object.html#a6e8467d7caf9196bf5fde1a3ec3700ac", null ],
     [ "SendMessage", "d0/d91/classxii_game_object.html#a9acebff434fab9c9802e4b98d3c9d5b4", null ],

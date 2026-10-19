@@ -6,7 +6,6 @@ var structxii_set_color_mode =
       [ "SetAlpha", "dc/d8d/structxii_set_color_mode.html#a5ae6dbcbc9375444a865aece17db9a52a52765dc5e1ecd632f1860797eb71de09", null ],
       [ "AlphaBlend", "dc/d8d/structxii_set_color_mode.html#a5ae6dbcbc9375444a865aece17db9a52a572c540b4e21fa0a1cc41ed0618ba5be", null ],
       [ "Additive", "dc/d8d/structxii_set_color_mode.html#a5ae6dbcbc9375444a865aece17db9a52a00f5665c66b415f27942ef17c8f9a6e8", null ],
-      [ "Modulate", "dc/d8d/structxii_set_color_mode.html#a5ae6dbcbc9375444a865aece17db9a52a7430810451eebe993196993b11406dc3", null ],
-      [ "Default", "dc/d8d/structxii_set_color_mode.html#a5ae6dbcbc9375444a865aece17db9a52a21c834094dc9d030195ada01c380ea4c", null ]
+      [ "Modulate", "dc/d8d/structxii_set_color_mode.html#a5ae6dbcbc9375444a865aece17db9a52a7430810451eebe993196993b11406dc3", null ]
     ] ]
 ];

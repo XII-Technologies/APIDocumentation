@@ -1,8 +1,25 @@
 var classxii_mesh_buffer_resource =
 [
     [ "GetBounds", "da/d98/classxii_mesh_buffer_resource.html#a3914b5b42890aa560dd3672c61526edf", null ],
-    [ "GetInputLayout", "da/d98/classxii_mesh_buffer_resource.html#a4ea786a72f0b90206aaf8b0f796e4834", null ],
-    [ "UnloadData", "da/d98/classxii_mesh_buffer_resource.html#a70fec469294825fc30b647eda9c50549", null ],
-    [ "UpdateContent", "da/d98/classxii_mesh_buffer_resource.html#a4b0b2df65a7ea39d42651764425143ae", null ],
+    [ "GetDescriptor", "da/d98/classxii_mesh_buffer_resource.html#a022301f1d68c2d47b9cfd36a15c1aa40", null ],
+    [ "GetDrawCommandBuffer", "da/d98/classxii_mesh_buffer_resource.html#accb72f444db823b3fa9d2b85a43d78e1", null ],
+    [ "GetIndexBuffer", "da/d98/classxii_mesh_buffer_resource.html#aa6310f6ffeac967f0b0cf75d71a50701", null ],
+    [ "GetIndexCount", "da/d98/classxii_mesh_buffer_resource.html#a2c8acd706d1417c9e28746291b7d9a6c", null ],
+    [ "GetIndexType", "da/d98/classxii_mesh_buffer_resource.html#af8541331907f0f2f5d0a364d2921635e", null ],
+    [ "GetMeshletBuffer", "da/d98/classxii_mesh_buffer_resource.html#a66593c8ee67be2f6109202c90f70a12a", null ],
+    [ "GetMeshletCount", "da/d98/classxii_mesh_buffer_resource.html#a1e09c547126873ca33fbdf7c70646977", null ],
+    [ "GetMeshletPrimitiveIndexBuffer", "da/d98/classxii_mesh_buffer_resource.html#a0478d3003ffa71234c49b349823c585e", null ],
+    [ "GetMeshletPrimitiveIndices", "da/d98/classxii_mesh_buffer_resource.html#a84f98b4762fde3601e65ea2a400c4b0f", null ],
+    [ "GetMeshlets", "da/d98/classxii_mesh_buffer_resource.html#a1567c05ff9f5fd5fda2b8e53646d4971", null ],
+    [ "GetMeshletVertexRemap", "da/d98/classxii_mesh_buffer_resource.html#a0c7f8921a6789b497e03e389d967f302", null ],
+    [ "GetMeshletVertexRemapBuffer", "da/d98/classxii_mesh_buffer_resource.html#a0f694548c796b700e60b4c552800ec4e", null ],
+    [ "GetPrimitiveCount", "da/d98/classxii_mesh_buffer_resource.html#afcee8674be7aa423fb29aa477e6dca16", null ],
+    [ "GetTopology", "da/d98/classxii_mesh_buffer_resource.html#aa3a6bf2c31ef5dcab925b0c2e583e6a6", null ],
+    [ "GetVertexBuffer", "da/d98/classxii_mesh_buffer_resource.html#ae42797615d1e9fb8f5e275cb313c766b", null ],
+    [ "GetVertexCount", "da/d98/classxii_mesh_buffer_resource.html#a415a21b2575a7c2a0fbc82c1a9a8a3d3", null ],
+    [ "GetVertexStreams", "da/d98/classxii_mesh_buffer_resource.html#acb542b874c7ded1982cb38633ce86534", null ],
+    [ "GetVertexStride", "da/d98/classxii_mesh_buffer_resource.html#ad56e52241f5a99b0c4e6c98c48e24429", null ],
+    [ "UnloadData", "da/d98/classxii_mesh_buffer_resource.html#a0d673f13b00b37b464987ac2b568ec88", null ],
+    [ "UpdateContent", "da/d98/classxii_mesh_buffer_resource.html#a48d63bf88a54d18309eb817fbba350c6", null ],
     [ "UpdateMemoryUsage", "da/d98/classxii_mesh_buffer_resource.html#ac73844e2ce2b952dc4100be9bc78f9e2", null ]
 ];

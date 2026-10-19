@@ -6,6 +6,8 @@ var classxii_bitfield =
     [ "ClearAllBits", "d9/d8d/classxii_bitfield.html#a0baa4b7ad887af67b8347346f874d4ac", null ],
     [ "ClearBit", "d9/d8d/classxii_bitfield.html#a95603758703fdbe17becb1bbb58ad064", null ],
     [ "ClearBitRange", "d9/d8d/classxii_bitfield.html#a68a80b4a141a4d1aa78aa49195537259", null ],
+    [ "FlipBit", "d9/d8d/classxii_bitfield.html#a49b14f9b9f2241bf6629708f7d3ea056", null ],
+    [ "FlipBitRange", "d9/d8d/classxii_bitfield.html#a9cb3eb67db337aa77602e225667d62da", null ],
     [ "GetCount", "d9/d8d/classxii_bitfield.html#adcdf30c8f58cdbbf3e77d8d209857e2e", null ],
     [ "GetEndIterator", "d9/d8d/classxii_bitfield.html#a0ecd99731cc8f4ff57d9b0c57291cadb", null ],
     [ "GetIterator", "d9/d8d/classxii_bitfield.html#a2fb987d8026ff8c8044599e411eeaf59", null ],

@@ -6,6 +6,7 @@ var classxii_rect_template =
     [ "xiiRectTemplate", "d2/d1d/classxii_rect_template.html#a9489e0635e3c4b2887162d2c12cc6c24", null ],
     [ "Bottom", "d2/d1d/classxii_rect_template.html#a12b5988fa1f1929f72e967c3e1c6d93b", null ],
     [ "Clip", "d2/d1d/classxii_rect_template.html#a1920bbf409e461eb00fb58e0aed0fd3e", null ],
+    [ "Contains", "d2/d1d/classxii_rect_template.html#a51a0527ed48cdab17828d7ba485e4853", null ],
     [ "Contains", "d2/d1d/classxii_rect_template.html#a39b74918c1bec1c63327ec4ffc663d5b", null ],
     [ "ExpandToInclude", "d2/d1d/classxii_rect_template.html#a1d21a40703e16a8a078831a0ac0d29a0", null ],
     [ "ExpandToInclude", "d2/d1d/classxii_rect_template.html#a23b2cb8df679c15c13503797b2061a07", null ],

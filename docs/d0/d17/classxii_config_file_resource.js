@@ -10,7 +10,7 @@ var classxii_config_file_resource =
     [ "GetInt", "d0/d17/classxii_config_file_resource.html#a02bb27c2d92ed298fb5574d0bae0a6f9", null ],
     [ "GetString", "d0/d17/classxii_config_file_resource.html#abaf0005026883000b270dcb1bf885f87", null ],
     [ "GetString", "d0/d17/classxii_config_file_resource.html#a9127f634489c0a52c524a39adb9f78e9", null ],
-    [ "UnloadData", "d0/d17/classxii_config_file_resource.html#afb7ac674883aebfdc145cfd68b8151d2", null ],
-    [ "UpdateContent", "d0/d17/classxii_config_file_resource.html#abf7046f7741aa9abd7639bfa1271b293", null ],
+    [ "UnloadData", "d0/d17/classxii_config_file_resource.html#a70fd2c8c2bcf388ee26c424a114b3bbd", null ],
+    [ "UpdateContent", "d0/d17/classxii_config_file_resource.html#a86f6a6b0cbfeac74c0dd4ef258cab449", null ],
     [ "UpdateMemoryUsage", "d0/d17/classxii_config_file_resource.html#a49a095e5bbe67cc97f88b7be3e03fa12", null ]
 ];

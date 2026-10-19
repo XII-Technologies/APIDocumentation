@@ -9,8 +9,6 @@ var structxii_g_a_l_comparison_function =
       [ "Greater", "d2/d6d/structxii_g_a_l_comparison_function.html#a379b1dc5f2a81ba2b9a7f934fe9b9df3a2f812c9f3481826157b98b5e7caf596e", null ],
       [ "NotEqual", "d2/d6d/structxii_g_a_l_comparison_function.html#a379b1dc5f2a81ba2b9a7f934fe9b9df3a3546bbd3fa810e872a4e84690b3571b5", null ],
       [ "GreaterEqual", "d2/d6d/structxii_g_a_l_comparison_function.html#a379b1dc5f2a81ba2b9a7f934fe9b9df3aa2663b3991da47435a1aee8cfe32088b", null ],
-      [ "Always", "d2/d6d/structxii_g_a_l_comparison_function.html#a379b1dc5f2a81ba2b9a7f934fe9b9df3ac5d63c648c5bbf816ef757e85c8d875d", null ],
-      [ "ENUM_COUNT", "d2/d6d/structxii_g_a_l_comparison_function.html#a379b1dc5f2a81ba2b9a7f934fe9b9df3af61d6035710f01306a7acaf632c65fca", null ],
-      [ "Default", "d2/d6d/structxii_g_a_l_comparison_function.html#a379b1dc5f2a81ba2b9a7f934fe9b9df3a2bd95b6d8060cb884758e7be441d7ab8", null ]
+      [ "Always", "d2/d6d/structxii_g_a_l_comparison_function.html#a379b1dc5f2a81ba2b9a7f934fe9b9df3ac5d63c648c5bbf816ef757e85c8d875d", null ]
     ] ]
 ];

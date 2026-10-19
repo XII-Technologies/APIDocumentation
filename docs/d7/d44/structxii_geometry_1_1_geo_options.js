@@ -1,5 +1,6 @@
 var structxii_geometry_1_1_geo_options =
 [
+    [ "IsFlipWindingNecessary", "d7/d44/structxii_geometry_1_1_geo_options.html#a730ca1cf75c8547b59a05bcf34b839df", null ],
     [ "m_Color", "d7/d44/structxii_geometry_1_1_geo_options.html#a71d0be4c0a5f214fe72f8cd78065285b", null ],
     [ "m_MainAxis", "d7/d44/structxii_geometry_1_1_geo_options.html#a31a956ee83229f675d6bec424a98b55f", null ],
     [ "m_Transform", "d7/d44/structxii_geometry_1_1_geo_options.html#ae4995445a00f4464e5cf9f29510d2a60", null ],

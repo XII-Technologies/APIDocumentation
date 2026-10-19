@@ -15,7 +15,6 @@ var structxii_g_a_l_shading_rate_capability_flags =
       [ "ShadingRateShaderInput", "dc/d5c/structxii_g_a_l_shading_rate_capability_flags.html#ae18051ba3e2592a63b1df04552e3f560af4a68c91c6f72d411d8e1e85e1a360ff", null ],
       [ "AdditionalInvocations", "dc/d5c/structxii_g_a_l_shading_rate_capability_flags.html#ae18051ba3e2592a63b1df04552e3f560a54efab59a2b602c109c6670c5d468b88", null ],
       [ "NonSubSampledRenderTarget", "dc/d5c/structxii_g_a_l_shading_rate_capability_flags.html#ae18051ba3e2592a63b1df04552e3f560addfd5d79649c678c9cba293e7027470f", null ],
-      [ "SubSampledRenderTarget", "dc/d5c/structxii_g_a_l_shading_rate_capability_flags.html#ae18051ba3e2592a63b1df04552e3f560a90db1a8cfd065f352e3d0ae3d8d2c939", null ],
-      [ "Default", "dc/d5c/structxii_g_a_l_shading_rate_capability_flags.html#ae18051ba3e2592a63b1df04552e3f560aa243fd868222bfc6b684b787401ecd66", null ]
+      [ "SubSampledRenderTarget", "dc/d5c/structxii_g_a_l_shading_rate_capability_flags.html#ae18051ba3e2592a63b1df04552e3f560a90db1a8cfd065f352e3d0ae3d8d2c939", null ]
     ] ]
 ];

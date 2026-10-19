@@ -6,8 +6,6 @@ var structxii_g_a_l_shader_variable_class_type =
       [ "Array", "d1/dec/structxii_g_a_l_shader_variable_class_type.html#a104bca7015bd08b6421ec60ced3f945cad5e91e4224950f2b62feeca8d867a4f3", null ],
       [ "MatrixRows", "d1/dec/structxii_g_a_l_shader_variable_class_type.html#a104bca7015bd08b6421ec60ced3f945cac28a53b21ea638b3a90db6d523ff220d", null ],
       [ "MatrixColumns", "d1/dec/structxii_g_a_l_shader_variable_class_type.html#a104bca7015bd08b6421ec60ced3f945ca50b42af78346ec06177dcfe883f95136", null ],
-      [ "Struct", "d1/dec/structxii_g_a_l_shader_variable_class_type.html#a104bca7015bd08b6421ec60ced3f945ca3c5a1d329fe1ddab382c10f48edc65f7", null ],
-      [ "ENUM_COUNT", "d1/dec/structxii_g_a_l_shader_variable_class_type.html#a104bca7015bd08b6421ec60ced3f945ca58ffda14daa9e09c0062c8a2addbed09", null ],
-      [ "Default", "d1/dec/structxii_g_a_l_shader_variable_class_type.html#a104bca7015bd08b6421ec60ced3f945ca65b778382c5548522b6e9edf0903dcb3", null ]
+      [ "Struct", "d1/dec/structxii_g_a_l_shader_variable_class_type.html#a104bca7015bd08b6421ec60ced3f945ca3c5a1d329fe1ddab382c10f48edc65f7", null ]
     ] ]
 ];

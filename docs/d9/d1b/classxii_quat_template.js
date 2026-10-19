@@ -1,5 +1,6 @@
 var classxii_quat_template =
 [
+    [ "xiiQuatTemplate", "d9/d1b/classxii_quat_template.html#a9f374db5aad9f6b3cd0cdb252228d1f6", null ],
     [ "xiiQuatTemplate", "d9/d1b/classxii_quat_template.html#a220ecd9cecaa3d6942fecbbae7d2500e", null ],
     [ "Dot", "d9/d1b/classxii_quat_template.html#a6e0a54212fcfe9b1926789427db98aac", null ],
     [ "GetAsEulerAngles", "d9/d1b/classxii_quat_template.html#a8d26c87261cce8521c28c4b3a1b12f99", null ],

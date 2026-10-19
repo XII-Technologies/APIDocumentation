@@ -101,7 +101,12 @@ var structxii_g_a_l_resource_format =
       [ "BC7Typeless", "de/d10/structxii_g_a_l_resource_format.html#a85df1b2fc240485387136c2211fcebf6a348fdc782f662697fbf12e3d47bae5f5", null ],
       [ "BC7UNormalized", "de/d10/structxii_g_a_l_resource_format.html#a85df1b2fc240485387136c2211fcebf6af6a015664d2ff69a634e34a9428746a3", null ],
       [ "BC7UNormalizedSRGB", "de/d10/structxii_g_a_l_resource_format.html#a85df1b2fc240485387136c2211fcebf6aaaaf2fb01e4a601a2afbeb5545978a16", null ],
-      [ "ENUM_COUNT", "de/d10/structxii_g_a_l_resource_format.html#a85df1b2fc240485387136c2211fcebf6aed14f25b81466eec2099695e43b0c5f8", null ],
-      [ "Default", "de/d10/structxii_g_a_l_resource_format.html#a85df1b2fc240485387136c2211fcebf6a995a8fa8ad431da64a462e4462facb47", null ]
+      [ "NV12", "de/d10/structxii_g_a_l_resource_format.html#a85df1b2fc240485387136c2211fcebf6af74c6199a8d31d6549e64d6dacc778cf", null ],
+      [ "P010", "de/d10/structxii_g_a_l_resource_format.html#a85df1b2fc240485387136c2211fcebf6a7293d7d09616abd57582dda06a4f71bd", null ],
+      [ "P016", "de/d10/structxii_g_a_l_resource_format.html#a85df1b2fc240485387136c2211fcebf6ad711c6af9af16ddcceced3a0314d19f3", null ],
+      [ "YUY2", "de/d10/structxii_g_a_l_resource_format.html#a85df1b2fc240485387136c2211fcebf6a1fc02b67725607b861877ad36c3f5c49", null ],
+      [ "AYUV", "de/d10/structxii_g_a_l_resource_format.html#a85df1b2fc240485387136c2211fcebf6a29ee64dff693c42200ef012353ac4163", null ],
+      [ "P216", "de/d10/structxii_g_a_l_resource_format.html#a85df1b2fc240485387136c2211fcebf6a83165571b0e160595cb2bd62ebe95c30", null ],
+      [ "P416", "de/d10/structxii_g_a_l_resource_format.html#a85df1b2fc240485387136c2211fcebf6a24b2d3ff0f4ea9fec0f85f0240f6e278", null ]
     ] ]
 ];

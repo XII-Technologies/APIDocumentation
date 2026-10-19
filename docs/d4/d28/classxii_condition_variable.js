@@ -1,5 +1,6 @@
 var classxii_condition_variable =
 [
+    [ "xiiConditionVariable", "d4/d28/classxii_condition_variable.html#acbdb7d5da13fb2f39c3bf82a48288fa4", null ],
     [ "Lock", "d4/d28/classxii_condition_variable.html#aec4267c827acfee015fb2ea77ae7c4d8", null ],
     [ "SignalAll", "d4/d28/classxii_condition_variable.html#a05c8449d15088c69f526b910788c05e9", null ],
     [ "SignalOne", "d4/d28/classxii_condition_variable.html#abdd0b48c92e5dba0aee52250613d8c89", null ],

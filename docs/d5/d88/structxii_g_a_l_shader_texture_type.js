@@ -10,8 +10,6 @@ var structxii_g_a_l_shader_texture_type =
       [ "Texture2DMSArray", "d5/d88/structxii_g_a_l_shader_texture_type.html#ab91fdd1dd528231b9445a987b1fcb2d0a76c821ede560c62960a4d7b049f0fe6c", null ],
       [ "Texture3D", "d5/d88/structxii_g_a_l_shader_texture_type.html#ab91fdd1dd528231b9445a987b1fcb2d0a439398a719a821d2cd4848bcc6d83061", null ],
       [ "TextureCube", "d5/d88/structxii_g_a_l_shader_texture_type.html#ab91fdd1dd528231b9445a987b1fcb2d0acf67b9ad16de09f7946e4f5e36ed179d", null ],
-      [ "TextureCubeArray", "d5/d88/structxii_g_a_l_shader_texture_type.html#ab91fdd1dd528231b9445a987b1fcb2d0a74a42f54ffbb1353b62a9d7e487e23cc", null ],
-      [ "ENUM_COUNT", "d5/d88/structxii_g_a_l_shader_texture_type.html#ab91fdd1dd528231b9445a987b1fcb2d0a34cf9eb13880f037d82680d399dc3f3e", null ],
-      [ "Default", "d5/d88/structxii_g_a_l_shader_texture_type.html#ab91fdd1dd528231b9445a987b1fcb2d0a64762b46f74cc9778013e27ba61ef104", null ]
+      [ "TextureCubeArray", "d5/d88/structxii_g_a_l_shader_texture_type.html#ab91fdd1dd528231b9445a987b1fcb2d0a74a42f54ffbb1353b62a9d7e487e23cc", null ]
     ] ]
 ];

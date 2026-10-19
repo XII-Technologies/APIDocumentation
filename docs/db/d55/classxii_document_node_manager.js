@@ -10,5 +10,7 @@ var classxii_document_node_manager =
     ] ],
     [ "CanReachNode", "db/d55/classxii_document_node_manager.html#a20fb9e26a07d3943c350a171f658d4b9", null ],
     [ "GetNodeCreationTemplates", "db/d55/classxii_document_node_manager.html#ab0c1496f69da6fc60d6d89b0f95dd3f8", null ],
+    [ "GetPinPropertyObject", "db/d55/classxii_document_node_manager.html#af1bab2ab76b3fe953e73af14c48afb84", null ],
+    [ "InternalCanConnectToSelf", "db/d55/classxii_document_node_manager.html#afa3b62ecd4d46d568b6d8b8e5807e22a", null ],
     [ "WouldConnectionCreateCircle", "db/d55/classxii_document_node_manager.html#a7e24190f3218161ef7db8267152a83d9", null ]
 ];

@@ -1,7 +1,7 @@
 var searchData=
 [
   ['nan_0',['NaN',['../d1/d37/namespacexii_math.html#a794f0339ad168c57748133cd2687fe4d',1,'xiiMath']]],
-  ['nearestsample_1',['NearestSample',['../da/d38/classxii_image_utils.html#a8fb17b3494da60a823129e12722087b3',1,'xiiImageUtils::NearestSample(const xiiImageView &amp;image, xiiImageAddressMode::Enum addressMode, xiiVec2 vUv)'],['../da/d38/classxii_image_utils.html#a4616c15e999fecbd83f5ce160c456125',1,'xiiImageUtils::NearestSample(const xiiColor *pPixelPointer, xiiUInt32 uiWidth, xiiUInt32 uiHeight, xiiImageAddressMode::Enum addressMode, xiiVec2 vUv)']]],
+  ['nearestsample_1',['NearestSample',['../da/d38/classxii_image_utils.html#a4516cb81231da7ad355a0d4e74039a07',1,'xiiImageUtils::NearestSample(const xiiImageView &amp;image, xiiGALTextureAddressMode::Enum addressMode, xiiVec2 vUv)'],['../da/d38/classxii_image_utils.html#a60bd4573072a0d2d7c2a61e110b322e8',1,'xiiImageUtils::NearestSample(const xiiColor *pPixelPointer, xiiUInt32 uiWidth, xiiUInt32 uiHeight, xiiGALTextureAddressMode::Enum addressMode, xiiVec2 vUv)']]],
   ['needsreloadresource_2',['NeedsReloadResource',['../d1/dda/classxii_asset_table_writer.html#a99a14823e7df5676bb2a0194ec0421d4',1,'xiiAssetTableWriter']]],
   ['needwakeup_3',['NeedWakeup',['../df/d60/classxii_ipc_channel.html#a4da1173b6b095f43cb6795c8f51cbeb3',1,'xiiIpcChannel']]],
   ['newfolder_4',['NewFolder',['../d4/dcf/classeq_qt_asset_browser_folder_view.html#ab4c9ac3553307729cdc831603eccf522',1,'eqQtAssetBrowserFolderView']]],

@@ -13,8 +13,6 @@ var structxii_log_msg_type =
       [ "InfoMsg", "d4/de6/structxii_log_msg_type.html#a7b991cbae5d585576d8269d959abbc49a61c61610c49919514dcc873920e78c2b", null ],
       [ "DevMsg", "d4/de6/structxii_log_msg_type.html#a7b991cbae5d585576d8269d959abbc49a38170a6bdd4bd764b71a28600e576358", null ],
       [ "DebugMsg", "d4/de6/structxii_log_msg_type.html#a7b991cbae5d585576d8269d959abbc49af10dbb6a734e870c7c2baf0f9a1eca15", null ],
-      [ "All", "d4/de6/structxii_log_msg_type.html#a7b991cbae5d585576d8269d959abbc49adcf7b71e1e1016b0e04726f107142e30", null ],
-      [ "ENUM_COUNT", "d4/de6/structxii_log_msg_type.html#a7b991cbae5d585576d8269d959abbc49a637e9c8e2d95bcb5bb67a5cf48c83ce0", null ],
-      [ "Default", "d4/de6/structxii_log_msg_type.html#a7b991cbae5d585576d8269d959abbc49a7ac6497c4a20e46b863ffc11939483f4", null ]
+      [ "All", "d4/de6/structxii_log_msg_type.html#a7b991cbae5d585576d8269d959abbc49adcf7b71e1e1016b0e04726f107142e30", null ]
     ] ]
 ];

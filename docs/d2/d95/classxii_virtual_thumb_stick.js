@@ -1,9 +1,9 @@
 var classxii_virtual_thumb_stick =
 [
-    [ "CenterMode", "d0/d83/structxii_virtual_thumb_stick_1_1_center_mode.html", "d0/d83/structxii_virtual_thumb_stick_1_1_center_mode" ],
-    [ "Flags", "de/dd1/structxii_virtual_thumb_stick_1_1_flags.html", "de/dd1/structxii_virtual_thumb_stick_1_1_flags" ],
     [ "Input", "df/de8/structxii_virtual_thumb_stick_1_1_input.html", "df/de8/structxii_virtual_thumb_stick_1_1_input" ],
     [ "Output", "d6/dce/structxii_virtual_thumb_stick_1_1_output.html", "d6/dce/structxii_virtual_thumb_stick_1_1_output" ],
+    [ "CenterMode", "d0/d83/structxii_virtual_thumb_stick_1_1_center_mode.html", "d0/d83/structxii_virtual_thumb_stick_1_1_center_mode" ],
+    [ "Flags", "de/dd1/structxii_virtual_thumb_stick_1_1_flags.html", "de/dd1/structxii_virtual_thumb_stick_1_1_flags" ],
     [ "xiiVirtualThumbStick", "d2/d95/classxii_virtual_thumb_stick.html#a42e43741f2a1c676124aa311e894ab1c", null ],
     [ "~xiiVirtualThumbStick", "d2/d95/classxii_virtual_thumb_stick.html#adf653f1d42aaafbbddaef5131ac0910f", null ],
     [ "GetCurrentCenter", "d2/d95/classxii_virtual_thumb_stick.html#a330e9fe53308e7bef1aeb036438944d9", null ],

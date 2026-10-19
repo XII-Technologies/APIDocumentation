@@ -24,8 +24,6 @@ var structxii_g_a_l_resource_state_flags =
       [ "BuildASWrite", "d6/dec/structxii_g_a_l_resource_state_flags.html#a4863cdfd85d00744a4db3689c58b5e84a522662d22e93c0003a030f39ee963eec", null ],
       [ "RayTracing", "d6/dec/structxii_g_a_l_resource_state_flags.html#a4863cdfd85d00744a4db3689c58b5e84ab7d17eae0a03245abc1d5b7089f1f6f4", null ],
       [ "Common", "d6/dec/structxii_g_a_l_resource_state_flags.html#a4863cdfd85d00744a4db3689c58b5e84a764a73dc41be671ccdac831c35a4d1d6", null ],
-      [ "ShadingRate", "d6/dec/structxii_g_a_l_resource_state_flags.html#a4863cdfd85d00744a4db3689c58b5e84af732039981825a369a7f2058c96d57bd", null ],
-      [ "GenericRead", "d6/dec/structxii_g_a_l_resource_state_flags.html#a4863cdfd85d00744a4db3689c58b5e84af31972a5cfb1e5d0e983bef90ba3c3e9", null ],
-      [ "Default", "d6/dec/structxii_g_a_l_resource_state_flags.html#a4863cdfd85d00744a4db3689c58b5e84ab8bc452cf81513e611f4e678ee4b6d94", null ]
+      [ "ShadingRate", "d6/dec/structxii_g_a_l_resource_state_flags.html#a4863cdfd85d00744a4db3689c58b5e84af732039981825a369a7f2058c96d57bd", null ]
     ] ]
 ];

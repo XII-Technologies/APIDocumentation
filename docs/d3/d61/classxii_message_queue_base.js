@@ -1,8 +1,8 @@
 var classxii_message_queue_base =
 [
     [ "Entry", "df/d59/structxii_message_queue_base_1_1_entry.html", null ],
-    [ "xiiMessageQueueBase", "d3/d61/classxii_message_queue_base.html#a89887052032094bec310a4477c010faa", null ],
-    [ "xiiMessageQueueBase", "d3/d61/classxii_message_queue_base.html#a942bb70bb02ee1c6d9c1530f5567d65f", null ],
+    [ "xiiMessageQueueBase", "d3/d61/classxii_message_queue_base.html#af377867555e59e080eacb46b4eec76d4", null ],
+    [ "xiiMessageQueueBase", "d3/d61/classxii_message_queue_base.html#a82e72442ed0a1b0c69d48a795940fa83", null ],
     [ "~xiiMessageQueueBase", "d3/d61/classxii_message_queue_base.html#aa14e778a309c9ba144ffafee874be42d", null ],
     [ "Clear", "d3/d61/classxii_message_queue_base.html#aa7309bcf2ad19826fef654bcb4436fb5", null ],
     [ "Compact", "d3/d61/classxii_message_queue_base.html#a3c5e732d7da95a1971dd8025a3a4422f", null ],

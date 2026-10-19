@@ -22,6 +22,7 @@ var classxii_g_a_l_device =
     [ "CreateTilePipelineState", "d5/d19/classxii_g_a_l_device.html#a9800e0e4533649b9ff8af35a210ba8a6", null ],
     [ "CreateTopLevelAS", "d5/d19/classxii_g_a_l_device.html#a4df55d3c9dabcbf1731cea0da07ec780", null ],
     [ "EndFrame", "d5/d19/classxii_g_a_l_device.html#a0cf5758c2b1ef8fb65823a53238f1a7a", null ],
+    [ "GetAllocator", "d5/d19/classxii_g_a_l_device.html#a3864a6596beb7a76d1407c4d5c7c6625", null ],
     [ "GetCommandQueue", "d5/d19/classxii_g_a_l_device.html#abf53c569c6323282d80cc2e84c5abfcd", null ],
     [ "GetDescription", "d5/d19/classxii_g_a_l_device.html#a6f65c258973f8d479bfd1aa346446fcd", null ],
     [ "GetFeatures", "d5/d19/classxii_g_a_l_device.html#ac356d7a5b9dda8b2c2ad5e86916a752f", null ],

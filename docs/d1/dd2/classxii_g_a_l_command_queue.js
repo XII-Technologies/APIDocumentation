@@ -4,6 +4,7 @@ var classxii_g_a_l_command_queue =
     [ "GetDescription", "d1/dd2/classxii_g_a_l_command_queue.html#ab5a6347c79bae9eece5802f9a0e17ccb", null ],
     [ "GetDevice", "d1/dd2/classxii_g_a_l_command_queue.html#a2adb05ac9c06b109bde8055ee2a303f9", null ],
     [ "GetNextFenceValue", "d1/dd2/classxii_g_a_l_command_queue.html#af2c972fd5a3127eeaf2744e2049dec43", null ],
-    [ "Submit", "d1/dd2/classxii_g_a_l_command_queue.html#a810a310bfcf71854214af46b2f59b346", null ],
+    [ "Submit", "d1/dd2/classxii_g_a_l_command_queue.html#a9288a75f9afc9fe37761375891cb946a", null ],
+    [ "WaitForFenceValue", "d1/dd2/classxii_g_a_l_command_queue.html#a9f220c1cee61baef43abf3c0f88b222c", null ],
     [ "WaitForIdle", "d1/dd2/classxii_g_a_l_command_queue.html#a97866a364978a8d92272350bfdee3cc4", null ]
 ];

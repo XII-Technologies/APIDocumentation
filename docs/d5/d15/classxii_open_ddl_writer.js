@@ -16,6 +16,7 @@ var classxii_open_ddl_writer =
     [ "EndObject", "d5/d15/classxii_open_ddl_writer.html#af6082222d2f67b9d9663f071e5e145d5", null ],
     [ "EndPrimitiveList", "d5/d15/classxii_open_ddl_writer.html#aeec298a5ac8d267a9bfb9688c81f8148", null ],
     [ "GetFloatPrecisionMode", "d5/d15/classxii_open_ddl_writer.html#a8dc3ad1803e0634640e55b90db0b916a", null ],
+    [ "OutputEscapedString", "d5/d15/classxii_open_ddl_writer.html#a3403ced4e409bd37e262c46c01e4596b", null ],
     [ "OutputObjectName", "d5/d15/classxii_open_ddl_writer.html#a5cfbf6e8690222aba865cd01b06ec7e3", null ],
     [ "SetCompactMode", "d5/d15/classxii_open_ddl_writer.html#a32cac839b7d33b96cf704d3f57f1b0bf", null ],
     [ "SetFloatPrecisionMode", "d5/d15/classxii_open_ddl_writer.html#a31938bc7d10de5f8f547b84af8704ec6", null ],

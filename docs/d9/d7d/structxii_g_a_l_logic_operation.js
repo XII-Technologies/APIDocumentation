@@ -16,8 +16,6 @@ var structxii_g_a_l_logic_operation =
       [ "AndReversed", "d9/d7d/structxii_g_a_l_logic_operation.html#af8e2a0da0b43dfcff3ca28a2a3fca263a3b3c83f3dfe70926ab96ce1311013bab", null ],
       [ "AndInverted", "d9/d7d/structxii_g_a_l_logic_operation.html#af8e2a0da0b43dfcff3ca28a2a3fca263a77efb1d89dc26157538695347c8eae93", null ],
       [ "OrReversed", "d9/d7d/structxii_g_a_l_logic_operation.html#af8e2a0da0b43dfcff3ca28a2a3fca263a1537c0cd03ce7c4fbbb37cb1921801a7", null ],
-      [ "OrInverted", "d9/d7d/structxii_g_a_l_logic_operation.html#af8e2a0da0b43dfcff3ca28a2a3fca263a479fc544ed63b7b9cf274019093115f4", null ],
-      [ "ENUM_COUNT", "d9/d7d/structxii_g_a_l_logic_operation.html#af8e2a0da0b43dfcff3ca28a2a3fca263a0094b16a343bcc804aabf664aa518d4e", null ],
-      [ "Default", "d9/d7d/structxii_g_a_l_logic_operation.html#af8e2a0da0b43dfcff3ca28a2a3fca263aa41d9c1feb7e65668fb0aa83d5827d0e", null ]
+      [ "OrInverted", "d9/d7d/structxii_g_a_l_logic_operation.html#af8e2a0da0b43dfcff3ca28a2a3fca263a479fc544ed63b7b9cf274019093115f4", null ]
     ] ]
 ];

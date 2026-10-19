@@ -2,7 +2,7 @@ var classxii_unique_ptr =
 [
     [ "xiiUniquePtr", "d9/d4a/classxii_unique_ptr.html#a5f7f1bdd3bce18cee76c41e24cc2b26c", null ],
     [ "xiiUniquePtr", "d9/d4a/classxii_unique_ptr.html#aadcb6218eec2ee79946d711956c0cc53", null ],
-    [ "xiiUniquePtr", "d9/d4a/classxii_unique_ptr.html#ac079f6f08ee8f20237a9909eff69d4fd", null ],
+    [ "xiiUniquePtr", "d9/d4a/classxii_unique_ptr.html#a26af44ab7537367c71e35634e15f16f0", null ],
     [ "xiiUniquePtr", "d9/d4a/classxii_unique_ptr.html#a7e45948afc33429ac70e647d8591bd81", null ],
     [ "xiiUniquePtr", "d9/d4a/classxii_unique_ptr.html#a71774846fc16d7646fda292dabffd2bc", null ],
     [ "~xiiUniquePtr", "d9/d4a/classxii_unique_ptr.html#a4b2ad18b78ae37387f0176fb09ceef63", null ],
@@ -19,5 +19,5 @@ var classxii_unique_ptr =
     [ "operator==", "d9/d4a/classxii_unique_ptr.html#a34db940bf6c6ff732cd24e257a18b90e", null ],
     [ "operator==", "d9/d4a/classxii_unique_ptr.html#a71c056cd5ba6422016ad2e881dd6f3a5", null ],
     [ "Release", "d9/d4a/classxii_unique_ptr.html#a9cfcda4fba6d9b0180063474f92c9b6e", null ],
-    [ "Release", "d9/d4a/classxii_unique_ptr.html#a3d56881c638a152e643b94b6efe040fa", null ]
+    [ "Release", "d9/d4a/classxii_unique_ptr.html#afe097a271d722c761f0de65cbed91f07", null ]
 ];

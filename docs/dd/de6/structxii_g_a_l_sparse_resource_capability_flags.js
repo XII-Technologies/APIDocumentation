@@ -20,7 +20,6 @@ var structxii_g_a_l_sparse_resource_capability_flags =
       [ "Texture2DArrayMipTail", "dd/de6/structxii_g_a_l_sparse_resource_capability_flags.html#afc7e83e9dd1f9d15babb136af5e90689a5e6ccccff6cf3f2367459322171843c0", null ],
       [ "BufferStandardBlock", "dd/de6/structxii_g_a_l_sparse_resource_capability_flags.html#afc7e83e9dd1f9d15babb136af5e90689a6d82b13466e36bcfe54202d900f31468", null ],
       [ "NonResidentSafe", "dd/de6/structxii_g_a_l_sparse_resource_capability_flags.html#afc7e83e9dd1f9d15babb136af5e90689acd4dc1f9b23b20835cdc58a69bfcd2c9", null ],
-      [ "MixedResourceTypeSupport", "dd/de6/structxii_g_a_l_sparse_resource_capability_flags.html#afc7e83e9dd1f9d15babb136af5e90689aeeb23e8844c12db6578bc9d2afb280f7", null ],
-      [ "Default", "dd/de6/structxii_g_a_l_sparse_resource_capability_flags.html#afc7e83e9dd1f9d15babb136af5e90689a22bc9ca8c4532603019b956541defca3", null ]
+      [ "MixedResourceTypeSupport", "dd/de6/structxii_g_a_l_sparse_resource_capability_flags.html#afc7e83e9dd1f9d15babb136af5e90689aeeb23e8844c12db6578bc9d2afb280f7", null ]
     ] ]
 ];

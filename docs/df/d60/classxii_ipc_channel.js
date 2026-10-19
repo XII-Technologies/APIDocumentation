@@ -1,12 +1,13 @@
 var classxii_ipc_channel =
 [
-    [ "ConnectionState", "d6/d48/structxii_ipc_channel_1_1_connection_state.html", "d6/d48/structxii_ipc_channel_1_1_connection_state" ],
     [ "Mode", "d0/d57/structxii_ipc_channel_1_1_mode.html", null ],
+    [ "ConnectionState", "d6/d48/structxii_ipc_channel_1_1_connection_state.html", "d6/d48/structxii_ipc_channel_1_1_connection_state" ],
     [ "Constants", "df/d60/classxii_ipc_channel.html#ab3a7aca48b5c6086824e23326f7e0227", [
       [ "HEADER_SIZE", "df/d60/classxii_ipc_channel.html#ab3a7aca48b5c6086824e23326f7e0227aea053f2b63c5c69011e11b4d2748f12a", null ],
       [ "MAGIC_VALUE", "df/d60/classxii_ipc_channel.html#ab3a7aca48b5c6086824e23326f7e0227a87cef66a0d16371a191191e984cab381", null ],
       [ "MAX_MESSAGE_SIZE", "df/d60/classxii_ipc_channel.html#ab3a7aca48b5c6086824e23326f7e0227af6593a588bddb8125072f9ae1d77a0d8", null ]
     ] ],
+    [ "xiiIpcChannel", "df/d60/classxii_ipc_channel.html#abe59b4c682f0ced6828b4e39db19b9cc", null ],
     [ "Connect", "df/d60/classxii_ipc_channel.html#aa14be1cd0a271504239cc40975307da4", null ],
     [ "Disconnect", "df/d60/classxii_ipc_channel.html#aa48f7ccb090abd7b742fbe61de63646b", null ],
     [ "GetConnectionState", "df/d60/classxii_ipc_channel.html#a697b69c26fa83c9a10a6f4e47e9259ad", null ],

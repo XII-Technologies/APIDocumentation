@@ -1,5 +1,6 @@
 var classxii_simd_quatd =
 [
+    [ "xiiSimdQuatd", "d4/d20/classxii_simd_quatd.html#aaf09f58a624f2bae568736b16ddbb2af", null ],
     [ "GetAsMat4", "d4/d20/classxii_simd_quatd.html#a0d51fb03fd47f878bbb368c9da7e7932", null ],
     [ "GetRotationAxisAndAngle", "d4/d20/classxii_simd_quatd.html#afcbc4ed4c18e4b1cd6789ff00487544d", null ],
     [ "IsEqualRotation", "d4/d20/classxii_simd_quatd.html#a6e9a2e7d49ea7696581f2b8fd3d088d6", null ],

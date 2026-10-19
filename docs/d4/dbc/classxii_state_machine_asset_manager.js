@@ -1,4 +1,5 @@
 var classxii_state_machine_asset_manager =
 [
-    [ "GetAssetTypeOutputReliability", "d4/dbc/classxii_state_machine_asset_manager.html#a00b3a0ed652990cc85c9523d4931573a", null ]
+    [ "GetAssetTypeOutputReliability", "d4/dbc/classxii_state_machine_asset_manager.html#a00b3a0ed652990cc85c9523d4931573a", null ],
+    [ "InternalCreateDocument", "d4/dbc/classxii_state_machine_asset_manager.html#aee9d602345e96a74eabbf06218cef972", null ]
 ];

@@ -1,6 +1,7 @@
 var classxii_g_a_l_image_capture =
 [
     [ "CaptureDescription", "dd/d8a/structxii_g_a_l_image_capture_1_1_capture_description.html", null ],
+    [ "xiiGALImageCapture", "d2/dd0/classxii_g_a_l_image_capture.html#a185830cf4d1580c23cb7c38bf500b3b6", null ],
     [ "Capture", "d2/dd0/classxii_g_a_l_image_capture.html#a775f89869b5e3cb67a50d2c31657d33c", null ],
     [ "GetCapture", "d2/dd0/classxii_g_a_l_image_capture.html#ae86f892c8e056c9f85668f6a0410cb5c", null ],
     [ "GetDevice", "d2/dd0/classxii_g_a_l_image_capture.html#aeaf7fce26c5d21190ccf27017643458c", null ],

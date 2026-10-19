@@ -1,6 +1,7 @@
 var classxii_convex_hull_generator =
 [
     [ "Face", "d0/dec/structxii_convex_hull_generator_1_1_face.html", null ],
+    [ "xiiConvexHullGenerator", "d6/d63/classxii_convex_hull_generator.html#ab6a0d647c2d1e37b1eb8c5cf2d022759", null ],
     [ "Build", "d6/d63/classxii_convex_hull_generator.html#a6536a11d2640103d8cdb007e40033da7", null ],
     [ "Retrieve", "d6/d63/classxii_convex_hull_generator.html#ad9fddf3c2e736bc727dc325a470d8a76", null ],
     [ "RetrieveVertices", "d6/d63/classxii_convex_hull_generator.html#a9cecab74f603555d8218b656220dd811", null ],

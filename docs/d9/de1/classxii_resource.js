@@ -35,7 +35,7 @@ var classxii_resource =
     [ "SetIsReloadable", "d9/de1/classxii_resource.html#a35962e4b0448f41a840ad47405f386bf", null ],
     [ "SetPriority", "d9/de1/classxii_resource.html#a95a473e75a4278e92a32704f36df7b5e", null ],
     [ "SetResourceDescription", "d9/de1/classxii_resource.html#a5457d7842f48c77f380861a7f9080db3", null ],
-    [ "UnloadData", "d9/de1/classxii_resource.html#a02b8e6565d09c03e0e7038eb05bf311c", null ],
-    [ "UpdateContent", "d9/de1/classxii_resource.html#aec592e9010ff171261e3554aedc1f465", null ],
+    [ "UnloadData", "d9/de1/classxii_resource.html#acd2b4f6b1d09a6a79bd2bdd7f26b2e0e", null ],
+    [ "UpdateContent", "d9/de1/classxii_resource.html#a16c9ef910912afa1931e694d61e17af7", null ],
     [ "UpdateMemoryUsage", "d9/de1/classxii_resource.html#ac9c3e409747cbd0ca5cdfe2a2a83aef1", null ]
 ];

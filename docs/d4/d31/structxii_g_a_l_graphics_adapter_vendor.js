@@ -11,8 +11,6 @@ var structxii_g_a_l_graphics_adapter_vendor =
       [ "Microsoft", "d4/d31/structxii_g_a_l_graphics_adapter_vendor.html#acb0977587f7d17323a6efb5d12004508a855861e147be637ca25e51c2db654002", null ],
       [ "Apple", "d4/d31/structxii_g_a_l_graphics_adapter_vendor.html#acb0977587f7d17323a6efb5d12004508abf75b1a84eded5dc9b4445550e271ca1", null ],
       [ "Mesa", "d4/d31/structxii_g_a_l_graphics_adapter_vendor.html#acb0977587f7d17323a6efb5d12004508a927c44efe92cda66e7a9c475ebfeb734", null ],
-      [ "Broadcom", "d4/d31/structxii_g_a_l_graphics_adapter_vendor.html#acb0977587f7d17323a6efb5d12004508ada09aa896c0420787d83deeca51ce987", null ],
-      [ "ENUM_COUNT", "d4/d31/structxii_g_a_l_graphics_adapter_vendor.html#acb0977587f7d17323a6efb5d12004508adf369c0acc20ecb310b311537f303f85", null ],
-      [ "Default", "d4/d31/structxii_g_a_l_graphics_adapter_vendor.html#acb0977587f7d17323a6efb5d12004508aa4b29fa2b99018370aa511dd2def5d12", null ]
+      [ "Broadcom", "d4/d31/structxii_g_a_l_graphics_adapter_vendor.html#acb0977587f7d17323a6efb5d12004508ada09aa896c0420787d83deeca51ce987", null ]
     ] ]
 ];

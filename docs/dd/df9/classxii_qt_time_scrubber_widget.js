@@ -1,5 +1,6 @@
 var classxii_qt_time_scrubber_widget =
 [
+    [ "xiiQtTimeScrubberWidget", "dd/df9/classxii_qt_time_scrubber_widget.html#af05c156e4a0a28ba13b260f8cba2fa6b", null ],
     [ "SetDuration", "dd/df9/classxii_qt_time_scrubber_widget.html#a8b0a5d4b8b8268697ab5e860034d64a3", null ],
     [ "SetDuration", "dd/df9/classxii_qt_time_scrubber_widget.html#a35073ca7d1ae00447cb7068e281fcbae", null ],
     [ "SetScrubberPosition", "dd/df9/classxii_qt_time_scrubber_widget.html#a29ec1e7e907098e4f46419b0374ec3b8", null ],

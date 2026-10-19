@@ -1,5 +1,6 @@
 var classxii_simd_mat4d =
 [
+    [ "xiiSimdMat4d", "dc/dae/classxii_simd_mat4d.html#a97fcdf7761ff0e7b0cfe6348f9608195", null ],
     [ "GetInverse", "dc/dae/classxii_simd_mat4d.html#aad9cc1819b7093182559f939a0f91c0e", null ],
     [ "GetTranspose", "dc/dae/classxii_simd_mat4d.html#a71bbe2a7e379b0b5cff4a525f1fd28ab", null ],
     [ "Invert", "dc/dae/classxii_simd_mat4d.html#a18af4791050fe9943dd983c9cc2d3779", null ],

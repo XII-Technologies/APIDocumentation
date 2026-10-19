@@ -5,7 +5,7 @@ var classxii_world_module =
     [ "UpdateFunction", "d9/dfe/classxii_world_module.html#a37328ef7216b181772ed63453973897c", null ],
     [ "Deinitialize", "d9/dfe/classxii_world_module.html#a1536af5f9f223828a3afdf41894d91b6", null ],
     [ "DeregisterUpdateFunction", "d9/dfe/classxii_world_module.html#ab474f028f74dcbd154638d5962b6e99f", null ],
-    [ "GetAllocator", "d9/dfe/classxii_world_module.html#a8e131108bae5dec9977f4b84a329b8c3", null ],
+    [ "GetAllocator", "d9/dfe/classxii_world_module.html#a8914f144588c4fd3c678b6bd5c595c54", null ],
     [ "GetBlockAllocator", "d9/dfe/classxii_world_module.html#a16d173b58d687b947798145fcaf8d165", null ],
     [ "GetWorld", "d9/dfe/classxii_world_module.html#afe90be4129058e6d68cf6f8711398285", null ],
     [ "GetWorld", "d9/dfe/classxii_world_module.html#a8742d2dda78286fb5e4b1a37c356ed8a", null ],

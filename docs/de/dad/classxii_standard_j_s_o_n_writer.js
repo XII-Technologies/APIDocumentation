@@ -1,7 +1,7 @@
 var classxii_standard_j_s_o_n_writer =
 [
+    [ "JSONState", "da/d0c/structxii_standard_j_s_o_n_writer_1_1_j_s_o_n_state.html", "da/d0c/structxii_standard_j_s_o_n_writer_1_1_j_s_o_n_state" ],
     [ "CommaWriter", "dd/d42/structxii_standard_j_s_o_n_writer_1_1_comma_writer.html", null ],
-    [ "JSONState", "da/d0c/structxii_standard_j_s_o_n_writer_1_1_j_s_o_n_state.html", null ],
     [ "xiiStandardJSONWriter", "de/dad/classxii_standard_j_s_o_n_writer.html#a83a6ca5cb363df0a6bb2d87826d36369", null ],
     [ "~xiiStandardJSONWriter", "de/dad/classxii_standard_j_s_o_n_writer.html#afa745d2efc2e6e008517541161610119", null ],
     [ "BeginArray", "de/dad/classxii_standard_j_s_o_n_writer.html#a9c9f173b8a499b2a03d04e0e5cc5a1cd", null ],

@@ -1,5 +1,6 @@
 var classxii_qt_search_widget =
 [
+    [ "xiiQtSearchWidget", "df/d50/classxii_qt_search_widget.html#a2fc41b559ece3496701de660ca906641", null ],
     [ "enterPressed", "df/d50/classxii_qt_search_widget.html#a0e9ba5a6755b2cc9545868fa0ac83165", null ],
     [ "selectAll", "df/d50/classxii_qt_search_widget.html#a077e423074c80195e045815f159f227e", null ],
     [ "setPlaceholderText", "df/d50/classxii_qt_search_widget.html#a7427b2a48b301678d78a18ef5b532b0a", null ],

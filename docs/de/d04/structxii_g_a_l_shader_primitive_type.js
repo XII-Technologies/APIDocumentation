@@ -21,8 +21,6 @@ var structxii_g_a_l_shader_primitive_type =
       [ "Min12Int", "de/d04/structxii_g_a_l_shader_primitive_type.html#a1610874798251f36546edc21e7db770ca72be976f79730cfc8e501427c632037c", null ],
       [ "Min16Int", "de/d04/structxii_g_a_l_shader_primitive_type.html#a1610874798251f36546edc21e7db770ca38c3a458481af17fe5df4d717ab65627", null ],
       [ "Min16UInt", "de/d04/structxii_g_a_l_shader_primitive_type.html#a1610874798251f36546edc21e7db770ca980e56857c3fc3da188b22c33e0bfee3", null ],
-      [ "String", "de/d04/structxii_g_a_l_shader_primitive_type.html#a1610874798251f36546edc21e7db770cab98d1a7e905bb1fa51cae04867967309", null ],
-      [ "ENUM_COUNT", "de/d04/structxii_g_a_l_shader_primitive_type.html#a1610874798251f36546edc21e7db770ca5b13a2d1110f6b5d3c593b7b587d9173", null ],
-      [ "Default", "de/d04/structxii_g_a_l_shader_primitive_type.html#a1610874798251f36546edc21e7db770ca004a42d1e7ce5920ae8d5d9ea215ad90", null ]
+      [ "String", "de/d04/structxii_g_a_l_shader_primitive_type.html#a1610874798251f36546edc21e7db770cab98d1a7e905bb1fa51cae04867967309", null ]
     ] ]
 ];

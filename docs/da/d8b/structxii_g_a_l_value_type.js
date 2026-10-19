@@ -10,8 +10,6 @@ var structxii_g_a_l_value_type =
       [ "UInt32", "da/d8b/structxii_g_a_l_value_type.html#ad3bab4214e06888cc9c6cdb1f95c4355acd1853235f722c66720a09a5cd238c9b", null ],
       [ "Float16", "da/d8b/structxii_g_a_l_value_type.html#ad3bab4214e06888cc9c6cdb1f95c4355a22f80ce587b3f1aaed3b6e0bec012f62", null ],
       [ "Float32", "da/d8b/structxii_g_a_l_value_type.html#ad3bab4214e06888cc9c6cdb1f95c4355a3c16de222d0aa00a973f3026dd39ff75", null ],
-      [ "Float64", "da/d8b/structxii_g_a_l_value_type.html#ad3bab4214e06888cc9c6cdb1f95c4355abcabc4a293a652469cf65fdb3b4f59ca", null ],
-      [ "ENUM_COUNT", "da/d8b/structxii_g_a_l_value_type.html#ad3bab4214e06888cc9c6cdb1f95c4355a7242b1ea452d30c604371aec7150024e", null ],
-      [ "Default", "da/d8b/structxii_g_a_l_value_type.html#ad3bab4214e06888cc9c6cdb1f95c4355a5603a8f1a0ae608297d8d405ea736ddf", null ]
+      [ "Float64", "da/d8b/structxii_g_a_l_value_type.html#ad3bab4214e06888cc9c6cdb1f95c4355abcabc4a293a652469cf65fdb3b4f59ca", null ]
     ] ]
 ];

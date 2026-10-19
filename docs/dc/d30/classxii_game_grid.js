@@ -5,6 +5,7 @@ var classxii_game_grid =
       [ "InPlaneXZ", "dc/d30/classxii_game_grid.html#a0259a8eed6ec1405402e187f15ed9984a94558a771e5c96d89bcd0afcb3491085", null ],
       [ "InPlaneXminusZ", "dc/d30/classxii_game_grid.html#a0259a8eed6ec1405402e187f15ed9984affd7a1aaeec7926e0acaab4918fa9148", null ]
     ] ],
+    [ "xiiGameGrid", "dc/d30/classxii_game_grid.html#a03c72546d67fb2e56326aa9aeed04da4", null ],
     [ "ConvertCellCoordinateToIndex", "dc/d30/classxii_game_grid.html#a616cc427a4bf81aaed8eded4870c026f", null ],
     [ "ConvertCellIndexToCoordinate", "dc/d30/classxii_game_grid.html#abd3d60b9db2afd41f376ee5da260a8e8", null ],
     [ "CreateGrid", "dc/d30/classxii_game_grid.html#a27c03dc47e231198ef7e4d09676da697", null ],

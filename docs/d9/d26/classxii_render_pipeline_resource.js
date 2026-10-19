@@ -1,6 +1,7 @@
 var classxii_render_pipeline_resource =
 [
-    [ "UnloadData", "d9/d26/classxii_render_pipeline_resource.html#acca9382014eaabca3024249772f659bf", null ],
-    [ "UpdateContent", "d9/d26/classxii_render_pipeline_resource.html#a11528292b9b1ae4cc313f37397da45d7", null ],
-    [ "UpdateMemoryUsage", "d9/d26/classxii_render_pipeline_resource.html#ac225b1f0d3998086790274f90a000649", null ]
+    [ "DefinitionDependency", "d9/d16/structxii_render_pipeline_resource_1_1_definition_dependency.html", null ],
+    [ "UnloadData", "d9/d26/classxii_render_pipeline_resource.html#a35f393f163b6f122075fcd20e21bf4de", null ],
+    [ "UpdateContent", "d9/d26/classxii_render_pipeline_resource.html#a1e572b89dc59ca89d2d794f467cf5569", null ],
+    [ "UpdateMemoryUsage", "d9/d26/classxii_render_pipeline_resource.html#ad5139629be8d004a25ff47e1031a1914", null ]
 ];

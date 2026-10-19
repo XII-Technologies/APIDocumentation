@@ -1,7 +1,7 @@
 var classxii_grid_navmesh =
 [
-    [ "AreaEdge", "d9/d5d/structxii_grid_navmesh_1_1_area_edge.html", "d9/d5d/structxii_grid_navmesh_1_1_area_edge" ],
     [ "ConvexArea", "da/d1b/structxii_grid_navmesh_1_1_convex_area.html", "da/d1b/structxii_grid_navmesh_1_1_convex_area" ],
+    [ "AreaEdge", "d9/d5d/structxii_grid_navmesh_1_1_area_edge.html", "d9/d5d/structxii_grid_navmesh_1_1_area_edge" ],
     [ "CellBlocked", "df/d99/classxii_grid_navmesh.html#a92fb5f09af0c23fc3f3d6b69ba68b686", null ],
     [ "CellComparator", "df/d99/classxii_grid_navmesh.html#af26c5cb8f31e33fae5bc8844a107b968", null ],
     [ "CreateFromGrid", "df/d99/classxii_grid_navmesh.html#a8a19582f8be3eff733b0155e01ebc067", null ],

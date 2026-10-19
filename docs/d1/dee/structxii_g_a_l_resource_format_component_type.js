@@ -11,8 +11,6 @@ var structxii_g_a_l_resource_format_component_type =
       [ "Depth", "d1/dee/structxii_g_a_l_resource_format_component_type.html#a75e120bb7b89b4fe7fe274cf6d12a6cda4e11e5afe2a1cda49f7a09fa22be8124", null ],
       [ "DepthStencil", "d1/dee/structxii_g_a_l_resource_format_component_type.html#a75e120bb7b89b4fe7fe274cf6d12a6cda73ff0e2f20e08845d5db5b906fb00952", null ],
       [ "Compound", "d1/dee/structxii_g_a_l_resource_format_component_type.html#a75e120bb7b89b4fe7fe274cf6d12a6cda6e098e8f2e0d4a70786f2d333eee9dbc", null ],
-      [ "Compressed", "d1/dee/structxii_g_a_l_resource_format_component_type.html#a75e120bb7b89b4fe7fe274cf6d12a6cda6c548d8e4904f87553f589091a7d7f5b", null ],
-      [ "ENUM_COUNT", "d1/dee/structxii_g_a_l_resource_format_component_type.html#a75e120bb7b89b4fe7fe274cf6d12a6cdad0f3ecba7910203075411b6ed67bfc9c", null ],
-      [ "Default", "d1/dee/structxii_g_a_l_resource_format_component_type.html#a75e120bb7b89b4fe7fe274cf6d12a6cdaff5d75600c9a6088e1936930bed46f08", null ]
+      [ "Compressed", "d1/dee/structxii_g_a_l_resource_format_component_type.html#a75e120bb7b89b4fe7fe274cf6d12a6cda6c548d8e4904f87553f589091a7d7f5b", null ]
     ] ]
 ];

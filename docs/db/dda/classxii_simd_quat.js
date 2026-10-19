@@ -1,5 +1,6 @@
 var classxii_simd_quat =
 [
+    [ "xiiSimdQuat", "db/dda/classxii_simd_quat.html#a8cb9847bf6e7d7e6861c96af4e01a707", null ],
     [ "GetAsMat4", "db/dda/classxii_simd_quat.html#a0ea87662d83ed3ae4ec5bfc732d1391d", null ],
     [ "GetRotationAxisAndAngle", "db/dda/classxii_simd_quat.html#a4f23cd522e0a3efac63b57e810baa215", null ],
     [ "IsEqualRotation", "db/dda/classxii_simd_quat.html#a31b655bab69cff6ac12286038391f4bb", null ],

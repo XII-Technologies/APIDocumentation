@@ -1,6 +1,7 @@
 var classxii_abstract_property =
 [
     [ "xiiAbstractProperty", "da/d25/classxii_abstract_property.html#a84b927e254d587c57b4dd956eb93d4a1", null ],
+    [ "~xiiAbstractProperty", "da/d25/classxii_abstract_property.html#acf741d55bcce04b069a193ad8e45dde3", null ],
     [ "AddAttributes", "da/d25/classxii_abstract_property.html#af1306cba889c57221656d894af811b4f", null ],
     [ "AddFlags", "da/d25/classxii_abstract_property.html#af4aa513d987be8a86f89827bd64a1b1e", null ],
     [ "GetAttributeByType", "da/d25/classxii_abstract_property.html#aad4ec48408db2eba3b0056700af83a3b", null ],

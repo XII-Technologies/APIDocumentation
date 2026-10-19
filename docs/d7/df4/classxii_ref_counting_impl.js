@@ -4,5 +4,6 @@ var classxii_ref_counting_impl =
     [ "AddRef", "d7/df4/classxii_ref_counting_impl.html#af87016b6ca63179b3bfa907d7fa1322d", null ],
     [ "GetRefCount", "d7/df4/classxii_ref_counting_impl.html#ab635556f309ab33e77d52fc85cd48c37", null ],
     [ "IsReferenced", "d7/df4/classxii_ref_counting_impl.html#a1ae4990ae83e124ddc5e1fa69261f88f", null ],
-    [ "ReleaseRef", "d7/df4/classxii_ref_counting_impl.html#a134e2cf5e34230d57b5e9f16bc448fa2", null ]
+    [ "ReleaseRef", "d7/df4/classxii_ref_counting_impl.html#a134e2cf5e34230d57b5e9f16bc448fa2", null ],
+    [ "TryAddRef", "d7/df4/classxii_ref_counting_impl.html#a33c4b8e4598e7ec255a74bc9cdfb11ee", null ]
 ];

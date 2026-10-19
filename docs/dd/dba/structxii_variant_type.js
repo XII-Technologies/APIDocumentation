@@ -51,14 +51,12 @@ var structxii_variant_type =
       [ "Time", "dd/dba/structxii_variant_type.html#a38d867476ba7137c38a09976ece9ee6ba40e3d70b6d04b754918ddff3de8a06da", null ],
       [ "Uuid", "dd/dba/structxii_variant_type.html#a38d867476ba7137c38a09976ece9ee6ba6e346a06313406f6befb99e786d0a38d", null ],
       [ "ColorGamma", "dd/dba/structxii_variant_type.html#a38d867476ba7137c38a09976ece9ee6ba821e5ad1a679a77328f2353dd6a1f9c8", null ],
-      [ "LastStandardType", "dd/dba/structxii_variant_type.html#a38d867476ba7137c38a09976ece9ee6ba4096e57ba25f62c58a671056283616d1", null ],
       [ "FirstExtendedType", "dd/dba/structxii_variant_type.html#a38d867476ba7137c38a09976ece9ee6ba7851255697bdad1590d0280041fa3f81", null ],
       [ "VariantArray", "dd/dba/structxii_variant_type.html#a38d867476ba7137c38a09976ece9ee6bacf5e38ac100b71d28a809c15e0480881", null ],
       [ "VariantDictionary", "dd/dba/structxii_variant_type.html#a38d867476ba7137c38a09976ece9ee6bae293ccf0b245bf852d3fc228b531f5e6", null ],
       [ "TypedPointer", "dd/dba/structxii_variant_type.html#a38d867476ba7137c38a09976ece9ee6baa11a3d6923f73b22de869a2fd6921913", null ],
       [ "TypedObject", "dd/dba/structxii_variant_type.html#a38d867476ba7137c38a09976ece9ee6ba43f41acdb77f27ddf59975457ab79032", null ],
       [ "LastExtendedType", "dd/dba/structxii_variant_type.html#a38d867476ba7137c38a09976ece9ee6ba1db244853a75919da5dbb3a11b0aee92", null ],
-      [ "MAX_ENUM_VALUE", "dd/dba/structxii_variant_type.html#a38d867476ba7137c38a09976ece9ee6ba7f2a365ffe45425c12c6d5bb4ce4d8ff", null ],
       [ "Default", "dd/dba/structxii_variant_type.html#a38d867476ba7137c38a09976ece9ee6ba52a42ec14c18bc9ac04b41cb035d9def", null ]
     ] ]
 ];

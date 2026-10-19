@@ -10,5 +10,5 @@ var classxii_world_reader =
     [ "InstantiateWorld", "df/df8/classxii_world_reader.html#a4efe656b51aa75eeb1f83296ffd6ee72", null ],
     [ "ReadComponentHandle", "df/df8/classxii_world_reader.html#a6fc5b21a361bcdb9ceaa3ba9b7fe748c", null ],
     [ "ReadGameObjectHandle", "df/df8/classxii_world_reader.html#ad853278811d50bc38605fff4e990c648", null ],
-    [ "ReadWorldDescription", "df/df8/classxii_world_reader.html#aafb3934503159a4281850b23351e8d31", null ]
+    [ "ReadWorldDescription", "df/df8/classxii_world_reader.html#a57c2fa8867bbda914dac825a938a44f0", null ]
 ];

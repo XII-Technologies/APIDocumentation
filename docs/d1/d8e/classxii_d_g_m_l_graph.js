@@ -1,10 +1,10 @@
 var classxii_d_g_m_l_graph =
 [
-    [ "Connection", "d0/d5f/structxii_d_g_m_l_graph_1_1_connection.html", null ],
-    [ "Node", "da/df8/structxii_d_g_m_l_graph_1_1_node.html", null ],
     [ "NodeDesc", "da/d71/structxii_d_g_m_l_graph_1_1_node_desc.html", null ],
+    [ "Connection", "d0/d5f/structxii_d_g_m_l_graph_1_1_connection.html", null ],
     [ "PropertyType", "dd/df2/structxii_d_g_m_l_graph_1_1_property_type.html", null ],
     [ "PropertyValue", "d8/d4e/structxii_d_g_m_l_graph_1_1_property_value.html", null ],
+    [ "Node", "da/df8/structxii_d_g_m_l_graph_1_1_node.html", null ],
     [ "xiiDGMLGraph", "d1/d8e/classxii_d_g_m_l_graph.html#a5902c13f39b81fceb8c658fb4e73d756", null ],
     [ "AddConnection", "d1/d8e/classxii_d_g_m_l_graph.html#ae1ec80ef54e0e637969a8f53f410b95e", null ],
     [ "AddGroup", "d1/d8e/classxii_d_g_m_l_graph.html#abb006c0f4d9a6051addf60c129aa9fcb", null ],

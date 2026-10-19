@@ -7,11 +7,9 @@ var structxii_resource_flags =
       [ "ResourceHasFallback", "df/dd1/structxii_resource_flags.html#acfc5ba8b7268df0179a0e6c7192bd33aaa2f877284605239b4ee9534769af5b16", null ],
       [ "ResourceHasTypeFallback", "df/dd1/structxii_resource_flags.html#acfc5ba8b7268df0179a0e6c7192bd33aaf2bce1bd29b68a8f3d5230dc1c6ea49d", null ],
       [ "IsReloadable", "df/dd1/structxii_resource_flags.html#acfc5ba8b7268df0179a0e6c7192bd33aa7afc466874982ec93dc839b5554cecff", null ],
-      [ "IsQueuedForLoading", "df/dd1/structxii_resource_flags.html#acfc5ba8b7268df0179a0e6c7192bd33aa67bf652d84349d327dfc98eee7fa76de", null ],
       [ "HasCustomDataLoader", "df/dd1/structxii_resource_flags.html#acfc5ba8b7268df0179a0e6c7192bd33aac7a80367102c81201eee4bfab7e9a0d9", null ],
       [ "PreventFileReload", "df/dd1/structxii_resource_flags.html#acfc5ba8b7268df0179a0e6c7192bd33aa60f762741236aadbd9827491224c8b9b", null ],
       [ "HasLowResData", "df/dd1/structxii_resource_flags.html#acfc5ba8b7268df0179a0e6c7192bd33aa39fa7573b93bc5512274620c7bb55284", null ],
-      [ "IsCreatedResource", "df/dd1/structxii_resource_flags.html#acfc5ba8b7268df0179a0e6c7192bd33aa2bd7bf47bccd7bd7487f88affe692706", null ],
-      [ "Default", "df/dd1/structxii_resource_flags.html#acfc5ba8b7268df0179a0e6c7192bd33aa4675b15c89d03d3c9ce4cf98b3e3f4fa", null ]
+      [ "IsCreatedResource", "df/dd1/structxii_resource_flags.html#acfc5ba8b7268df0179a0e6c7192bd33aa2bd7bf47bccd7bd7487f88affe692706", null ]
     ] ]
 ];

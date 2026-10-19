@@ -6,6 +6,7 @@ var classxii_j_s_o_n_reader =
       [ "Dictionary", "d8/d05/classxii_j_s_o_n_reader.html#aa769526b019a1de5ebd04ac9104abd48a3beb75d1563ebc22253341be4ce57f44", null ],
       [ "Array", "d8/d05/classxii_j_s_o_n_reader.html#aa769526b019a1de5ebd04ac9104abd48a4410ec34d9e6c1a68100ca0ce033fb17", null ]
     ] ],
+    [ "xiiJSONReader", "d8/d05/classxii_j_s_o_n_reader.html#a1110d560721d23c749fcb7d79a73858f", null ],
     [ "GetTopLevelArray", "d8/d05/classxii_j_s_o_n_reader.html#a9410d0ae72890028f604b0d43dcd5a76", null ],
     [ "GetTopLevelElementType", "d8/d05/classxii_j_s_o_n_reader.html#a032d93b94caf2ac2e85cb7f383572be3", null ],
     [ "GetTopLevelObject", "d8/d05/classxii_j_s_o_n_reader.html#a75ba25057b4d975388131b0053a2fc54", null ],

@@ -1,5 +1,6 @@
 var classxii_visual_script_function_property =
 [
+    [ "xiiVisualScriptFunctionProperty", "dd/d02/classxii_visual_script_function_property.html#a663fdba940cf2d0de5c4c28772f6c2bb", null ],
     [ "Execute", "dd/d02/classxii_visual_script_function_property.html#a56203267b888e82da2409207c9c55e2b", null ],
     [ "GetArgumentCount", "dd/d02/classxii_visual_script_function_property.html#aa15789cf1974d7014ce0b0db697c36ab", null ],
     [ "GetArgumentFlags", "dd/d02/classxii_visual_script_function_property.html#ac0bd2352f8306d7d235fad5e399e3167", null ],

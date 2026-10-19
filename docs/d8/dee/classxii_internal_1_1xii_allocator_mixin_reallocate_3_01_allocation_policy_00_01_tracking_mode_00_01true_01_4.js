@@ -1,0 +1,4 @@
+var classxii_internal_1_1xii_allocator_mixin_reallocate_3_01_allocation_policy_00_01_tracking_mode_00_01true_01_4 =
+[
+    [ "Reallocate", "d8/dee/classxii_internal_1_1xii_allocator_mixin_reallocate_3_01_allocation_policy_00_01_tracking_mode_00_01true_01_4.html#a94deb30aef41e4fe3fca850865afdf18", null ]
+];

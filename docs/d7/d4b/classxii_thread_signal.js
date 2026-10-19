@@ -4,6 +4,7 @@ var classxii_thread_signal =
       [ "AutoReset", "d7/d4b/classxii_thread_signal.html#a3371ecdc4f421d3f4c135f46b05ce0a3ae62847175f89146b052c1a1890d888e0", null ],
       [ "ManualReset", "d7/d4b/classxii_thread_signal.html#a3371ecdc4f421d3f4c135f46b05ce0a3a0fa01dd84568187cf7f6fa99f0c10eea", null ]
     ] ],
+    [ "xiiThreadSignal", "d7/d4b/classxii_thread_signal.html#a67ed9a7e13a5dc2ab2ed17d42db6ea73", null ],
     [ "ClearSignal", "d7/d4b/classxii_thread_signal.html#ab3c6a36fe4211bc48c46ed05b3c0dedc", null ],
     [ "RaiseSignal", "d7/d4b/classxii_thread_signal.html#a0a0a0de61224b7ecc8d02d4bb4af6470", null ],
     [ "WaitForSignal", "d7/d4b/classxii_thread_signal.html#a540308d88fb16319bda5c3a1f81e585c", null ],

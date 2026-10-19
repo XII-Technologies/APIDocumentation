@@ -18,8 +18,6 @@ var structxii_g_a_l_blend_factor =
       [ "SourceOneColor", "d0/d09/structxii_g_a_l_blend_factor.html#ab2a636fd90c3d9b80f46fb24074d25f8a88d8939415d2c72e93479d2691f7d78d", null ],
       [ "InverseSourceOneColor", "d0/d09/structxii_g_a_l_blend_factor.html#ab2a636fd90c3d9b80f46fb24074d25f8a02684e66ea480dff05a2459f5681565b", null ],
       [ "SourceOneAlpha", "d0/d09/structxii_g_a_l_blend_factor.html#ab2a636fd90c3d9b80f46fb24074d25f8a205dfb528942ba1ad5155247f77fee49", null ],
-      [ "InverseSourceOneAlpha", "d0/d09/structxii_g_a_l_blend_factor.html#ab2a636fd90c3d9b80f46fb24074d25f8aa65e3d1aeb225753bba4fe43a927dcc9", null ],
-      [ "ENUM_COUNT", "d0/d09/structxii_g_a_l_blend_factor.html#ab2a636fd90c3d9b80f46fb24074d25f8af0540d6cb470ff4a96f4a41c10741561", null ],
-      [ "Default", "d0/d09/structxii_g_a_l_blend_factor.html#ab2a636fd90c3d9b80f46fb24074d25f8acf8d4c489d37ea8a18108aa5484b81da", null ]
+      [ "InverseSourceOneAlpha", "d0/d09/structxii_g_a_l_blend_factor.html#ab2a636fd90c3d9b80f46fb24074d25f8aa65e3d1aeb225753bba4fe43a927dcc9", null ]
     ] ]
 ];

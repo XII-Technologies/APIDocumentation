@@ -7,7 +7,6 @@ var structxii_g_a_l_pipeline_resource_flags =
       [ "CombinedSampler", "da/d8c/structxii_g_a_l_pipeline_resource_flags.html#a149c0308106286ee271be0c308b08828a61ff875f47959bae8b367e124b31d838", null ],
       [ "Formattedbuffer", "da/d8c/structxii_g_a_l_pipeline_resource_flags.html#a149c0308106286ee271be0c308b08828a746bc90510f80b2cb40e3598f8a545e9", null ],
       [ "RuntimeArray", "da/d8c/structxii_g_a_l_pipeline_resource_flags.html#a149c0308106286ee271be0c308b08828a28d65e50a702e4fd02212da9eb57331e", null ],
-      [ "GeneralInputAttachment", "da/d8c/structxii_g_a_l_pipeline_resource_flags.html#a149c0308106286ee271be0c308b08828ad2d0c6d8becb46dfbdfaef20f72c9cf3", null ],
-      [ "Default", "da/d8c/structxii_g_a_l_pipeline_resource_flags.html#a149c0308106286ee271be0c308b08828a9bda680506d5f4bcee51f0bca064ae55", null ]
+      [ "GeneralInputAttachment", "da/d8c/structxii_g_a_l_pipeline_resource_flags.html#a149c0308106286ee271be0c308b08828ad2d0c6d8becb46dfbdfaef20f72c9cf3", null ]
     ] ]
 ];

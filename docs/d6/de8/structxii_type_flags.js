@@ -8,7 +8,6 @@ var structxii_type_flags =
       [ "Class", "d6/de8/structxii_type_flags.html#a91f9df8f69a1a163305414f423ec98c0a0f5308082073f07ab0397d5a53b89f00", null ],
       [ "Abstract", "d6/de8/structxii_type_flags.html#a91f9df8f69a1a163305414f423ec98c0a214ed8d5527a3b577a4ba4862e8d514d", null ],
       [ "Phantom", "d6/de8/structxii_type_flags.html#a91f9df8f69a1a163305414f423ec98c0abe7f628ab8c0f563c1ffda92fdd29e4b", null ],
-      [ "Minimal", "d6/de8/structxii_type_flags.html#a91f9df8f69a1a163305414f423ec98c0a746d985ea0f8f07dbcfe610c48909367", null ],
-      [ "Default", "d6/de8/structxii_type_flags.html#a91f9df8f69a1a163305414f423ec98c0ac68f39f1971240f777a522b070028f8e", null ]
+      [ "Minimal", "d6/de8/structxii_type_flags.html#a91f9df8f69a1a163305414f423ec98c0a746d985ea0f8f07dbcfe610c48909367", null ]
     ] ]
 ];

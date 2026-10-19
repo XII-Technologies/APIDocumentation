@@ -42,8 +42,6 @@ var structxii_g_a_l_primitive_topology =
       [ "ControlPointPatchList29", "db/d19/structxii_g_a_l_primitive_topology.html#a7b7c5b79846d73ceaf06670334c7388eaa8979c99fe53b0cb36efa04e4d78a177", null ],
       [ "ControlPointPatchList30", "db/d19/structxii_g_a_l_primitive_topology.html#a7b7c5b79846d73ceaf06670334c7388eacb7e6573e82e54919595d595d8174b20", null ],
       [ "ControlPointPatchList31", "db/d19/structxii_g_a_l_primitive_topology.html#a7b7c5b79846d73ceaf06670334c7388ea1b32a38792eba6788d9c92dec818ccb4", null ],
-      [ "ControlPointPatchList32", "db/d19/structxii_g_a_l_primitive_topology.html#a7b7c5b79846d73ceaf06670334c7388eae6f38b4b14054b44f30347c3908713a7", null ],
-      [ "ENUM_COUNT", "db/d19/structxii_g_a_l_primitive_topology.html#a7b7c5b79846d73ceaf06670334c7388ea44f800dc4d3c279ed09a5bce1cd92e28", null ],
-      [ "Default", "db/d19/structxii_g_a_l_primitive_topology.html#a7b7c5b79846d73ceaf06670334c7388ea14c2291bb12ab44b78047132ccd8af4b", null ]
+      [ "ControlPointPatchList32", "db/d19/structxii_g_a_l_primitive_topology.html#a7b7c5b79846d73ceaf06670334c7388eae6f38b4b14054b44f30347c3908713a7", null ]
     ] ]
 ];

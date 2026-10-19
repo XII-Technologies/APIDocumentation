@@ -10,7 +10,6 @@ var structxii_g_a_l_shading_rate_flags =
       [ "_2X4", "d9/d35/structxii_g_a_l_shading_rate_flags.html#a7c74ca5da593dcb91c527a97d4c21a36a0d4a2dc1715d9c345ad3f703d0de9d4d", null ],
       [ "_4X1", "d9/d35/structxii_g_a_l_shading_rate_flags.html#a7c74ca5da593dcb91c527a97d4c21a36aa3ca2966e03c1966d9a312412f7276bc", null ],
       [ "_4X2", "d9/d35/structxii_g_a_l_shading_rate_flags.html#a7c74ca5da593dcb91c527a97d4c21a36a7459c85656410dceb74a7cadfc733afb", null ],
-      [ "_4X4", "d9/d35/structxii_g_a_l_shading_rate_flags.html#a7c74ca5da593dcb91c527a97d4c21a36a9558ac540aeb09863d45eb8148c0d9d7", null ],
-      [ "Default", "d9/d35/structxii_g_a_l_shading_rate_flags.html#a7c74ca5da593dcb91c527a97d4c21a36aaac5f54e9b46f12d3f9c59000e65c802", null ]
+      [ "_4X4", "d9/d35/structxii_g_a_l_shading_rate_flags.html#a7c74ca5da593dcb91c527a97d4c21a36a9558ac540aeb09863d45eb8148c0d9d7", null ]
     ] ]
 ];

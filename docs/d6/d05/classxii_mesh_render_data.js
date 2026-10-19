@@ -1,4 +1,25 @@
 var classxii_mesh_render_data =
 [
-    [ "CanBatch", "d6/d05/classxii_mesh_render_data.html#a72a64d291840b29659460e374343b84d", null ]
+    [ "RangeMode", "d6/d05/classxii_mesh_render_data.html#ad8e05499c9b7c3383060fe3025f8f767", null ],
+    [ "m_Flags", "d6/d05/classxii_mesh_render_data.html#ab99e7b443edd64dde092139780683231", null ],
+    [ "m_fLodBias", "d6/d05/classxii_mesh_render_data.html#aa5f621b3944f3aefddd45deef27e3c93", null ],
+    [ "m_hMaterials", "d6/d05/classxii_mesh_render_data.html#a0ad915332fc6fdf90102d8e6da66ba1b", null ],
+    [ "m_hMesh", "d6/d05/classxii_mesh_render_data.html#a1555cb7aa00a13403d1adb83e1267956", null ],
+    [ "m_hMeshBuffer", "d6/d05/classxii_mesh_render_data.html#ac9d97531fc228c75bcc1baeb2238b415", null ],
+    [ "m_InstanceTransforms", "d6/d05/classxii_mesh_render_data.html#a121d8f1f6a2bafb1e5405f2bcdda7aca", null ],
+    [ "m_MorphWeights", "d6/d05/classxii_mesh_render_data.html#a92951f6d9b7d79767ea99eb62bea0878", null ],
+    [ "m_pDrawCommandBuffer", "d6/d05/classxii_mesh_render_data.html#a8eb9d614a7568159b095f22cd7a9aacb", null ],
+    [ "m_pInstanceDataBuffer", "d6/d05/classxii_mesh_render_data.html#a1d8a881455b00eb45d36151369056601", null ],
+    [ "m_pMorphWeightsBuffer", "d6/d05/classxii_mesh_render_data.html#afdc40912a2f21fe2b16f274307d0521c", null ],
+    [ "m_pSkinningMatricesBuffer", "d6/d05/classxii_mesh_render_data.html#a341ceef1d56397467bc218f054fa3188", null ],
+    [ "m_SkinningMatrices", "d6/d05/classxii_mesh_render_data.html#a9444026d8acf67bdc94b392bdf2cb022", null ],
+    [ "m_uiFirstMeshlet", "d6/d05/classxii_mesh_render_data.html#a859f8e8862a5915bb5f1f13c3412df7a", null ],
+    [ "m_uiFirstPrimitive", "d6/d05/classxii_mesh_render_data.html#a527c9382b8746008368ad12b3e08e3e1", null ],
+    [ "m_uiInstanceCount", "d6/d05/classxii_mesh_render_data.html#a5d7aca42041df6c5f5f116522764abfa", null ],
+    [ "m_uiInstanceTopologyRevision", "d6/d05/classxii_mesh_render_data.html#a9913732b4ee1c5a833197ac70469f497", null ],
+    [ "m_uiLODIndex", "d6/d05/classxii_mesh_render_data.html#a5aaeba2e1ddfa4a8c3ec22442b52de0a", null ],
+    [ "m_uiMeshletCount", "d6/d05/classxii_mesh_render_data.html#ad93defeb73b549a80251a3c52a31bb01", null ],
+    [ "m_uiPrimitiveCount", "d6/d05/classxii_mesh_render_data.html#a3ac96f57654adc417272fe1762473c42", null ],
+    [ "m_uiSectionIndex", "d6/d05/classxii_mesh_render_data.html#a954d55c104c50b49701912034720b132", null ],
+    [ "m_uiUniqueID", "d6/d05/classxii_mesh_render_data.html#a0e542bd7e1c6ac0d66d1faa143838f87", null ]
 ];

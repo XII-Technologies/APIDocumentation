@@ -1,5 +1,6 @@
 var classxii_remote_interface =
 [
+    [ "~xiiRemoteInterface", "d4/d68/classxii_remote_interface.html#abe7dc6606001591d5ab7b5a5c9213eb5", null ],
     [ "ConnectToServer", "d4/d68/classxii_remote_interface.html#acb9d0b30ff55097679a3303b9d7e3e82", null ],
     [ "DetermineTargetAddress", "d4/d68/classxii_remote_interface.html#a4a880892aec38c83528536b33b5e06c7", null ],
     [ "ExecuteAllMessageHandlers", "d4/d68/classxii_remote_interface.html#ad88768817bac348d9d1cc4b56e016225", null ],

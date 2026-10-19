@@ -1,8 +1,8 @@
 var classxii_array_map_base =
 [
     [ "Pair", "db/d16/structxii_array_map_base_1_1_pair.html", null ],
-    [ "xiiArrayMapBase", "dd/d41/classxii_array_map_base.html#aea72b66f9dedca864c36801af73abcff", null ],
-    [ "xiiArrayMapBase", "dd/d41/classxii_array_map_base.html#aa2a6eda28da10dc85daea9a409a954ae", null ],
+    [ "xiiArrayMapBase", "dd/d41/classxii_array_map_base.html#af021588e041a67245b6f637c80dfc163", null ],
+    [ "xiiArrayMapBase", "dd/d41/classxii_array_map_base.html#a3faa39a0a8ef330c77d70a19a71ab3e6", null ],
     [ "Clear", "dd/d41/classxii_array_map_base.html#aa02187ade06dcd5a8a5270afa904fdd2", null ],
     [ "Compact", "dd/d41/classxii_array_map_base.html#a1553632e03c71fd276d8d1ad029aab2c", null ],
     [ "Contains", "dd/d41/classxii_array_map_base.html#a3de951fad8043f5b52cacf8b4f700d9b", null ],

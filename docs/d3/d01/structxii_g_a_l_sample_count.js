@@ -10,7 +10,6 @@ var structxii_g_a_l_sample_count =
       [ "SixteenSamples", "d3/d01/structxii_g_a_l_sample_count.html#a9882b9a04c908ada09066d29eee92e7caae6d9b5279ccf7c43fc8c8f9d690e06c", null ],
       [ "ThirtyTwoSamples", "d3/d01/structxii_g_a_l_sample_count.html#a9882b9a04c908ada09066d29eee92e7ca40ba540d5171f603d29c659a1dd746d3", null ],
       [ "SixtyFourSamples", "d3/d01/structxii_g_a_l_sample_count.html#a9882b9a04c908ada09066d29eee92e7ca2700500098cb7e6240eb673aa7cde393", null ],
-      [ "AllSamples", "d3/d01/structxii_g_a_l_sample_count.html#a9882b9a04c908ada09066d29eee92e7cac3e2a57aa839cd9a58a612166258d14a", null ],
-      [ "Default", "d3/d01/structxii_g_a_l_sample_count.html#a9882b9a04c908ada09066d29eee92e7ca44ecb5266f59db3d5dcae8f923550094", null ]
+      [ "AllSamples", "d3/d01/structxii_g_a_l_sample_count.html#a9882b9a04c908ada09066d29eee92e7cac3e2a57aa839cd9a58a612166258d14a", null ]
     ] ]
 ];

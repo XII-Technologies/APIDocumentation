@@ -1,5 +1,10 @@
 var structxii_g_a_l_texture_creation_description =
 [
+    [ "Is1D", "de/dd4/structxii_g_a_l_texture_creation_description.html#a4a569da3f380e00443a5961474d90192", null ],
+    [ "Is2D", "de/dd4/structxii_g_a_l_texture_creation_description.html#a925b0b47632f02e612d5590dcc90d098", null ],
+    [ "Is3D", "de/dd4/structxii_g_a_l_texture_creation_description.html#a638ffc9d565641e23bd4620ba76c4350", null ],
+    [ "IsArray", "de/dd4/structxii_g_a_l_texture_creation_description.html#aa6110ae16382515a5e707fec8469d664", null ],
+    [ "IsCube", "de/dd4/structxii_g_a_l_texture_creation_description.html#aa727848075e083a59522653f1d681cd5", null ],
     [ "m_BindFlags", "de/dd4/structxii_g_a_l_texture_creation_description.html#a44d74d8f8567e5406f6cbb0b0bf28555", null ],
     [ "m_ClearValue", "de/dd4/structxii_g_a_l_texture_creation_description.html#add6a7cedf9f8c3b3ab625d34b29b7989", null ],
     [ "m_CPUAccessFlags", "de/dd4/structxii_g_a_l_texture_creation_description.html#a40e488c943da7938257dfdfa4a212ceb", null ],

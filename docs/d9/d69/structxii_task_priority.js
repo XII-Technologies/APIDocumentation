@@ -20,7 +20,6 @@ var structxii_task_priority =
       [ "FileAccessHighPriority", "d9/d69/structxii_task_priority.html#a2aa9f9ee2f9b337039c13a946945d93da92996af30a8148d5236b2cc03ca3218f", null ],
       [ "FileAccess", "d9/d69/structxii_task_priority.html#a2aa9f9ee2f9b337039c13a946945d93da8b2b67e194d630ae25f901d0134a707c", null ],
       [ "ThisFrameMainThread", "d9/d69/structxii_task_priority.html#a2aa9f9ee2f9b337039c13a946945d93da7bf6a6503768123dea1b780bfb5e4add", null ],
-      [ "SomeFrameMainThread", "d9/d69/structxii_task_priority.html#a2aa9f9ee2f9b337039c13a946945d93daa6221de2fd3d6a95f19734deb2994085", null ],
-      [ "ENUM_COUNT", "d9/d69/structxii_task_priority.html#a2aa9f9ee2f9b337039c13a946945d93da77824834e245dbdc02b45223deb6b347", null ]
+      [ "SomeFrameMainThread", "d9/d69/structxii_task_priority.html#a2aa9f9ee2f9b337039c13a946945d93daa6221de2fd3d6a95f19734deb2994085", null ]
     ] ]
 ];
