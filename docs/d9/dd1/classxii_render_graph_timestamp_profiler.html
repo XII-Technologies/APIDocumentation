@@ -103,17 +103,13 @@ Inheritance diagram for xiiRenderGraphTimestampProfiler:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a7b89d4d7d883539a0a3dff4e34395399" id="r_a7b89d4d7d883539a0a3dff4e34395399"><td class="memItemLeft" align="right" valign="top"><a id="a7b89d4d7d883539a0a3dff4e34395399" name="a7b89d4d7d883539a0a3dff4e34395399"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>xiiRenderGraphTimestampProfiler</b> ()</td></tr>
-<tr class="memdesc:a7b89d4d7d883539a0a3dff4e34395399"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copyright (c) Theophilus Eriata. All Rights Reserved. <br /></td></tr>
+<tr class="memitem:a025b048b8e163086736a025b33255c9a" id="r_a025b048b8e163086736a025b33255c9a"><td class="memItemLeft" align="right" valign="top"><a id="a025b048b8e163086736a025b33255c9a" name="a025b048b8e163086736a025b33255c9a"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>xiiRenderGraphTimestampProfiler</b> (<a class="el" href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr</a>&lt; <a class="el" href="../../d5/d19/classxii_g_a_l_device.html">xiiGALDevice</a> &gt; pDevice)</td></tr>
+<tr class="memdesc:a025b048b8e163086736a025b33255c9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copyright (c) Theophilus Eriata. All Rights Reserved. <br /></td></tr>
+<tr class="memitem:a2daf2f16613c93a648a1cf532214fb5e" id="r_a2daf2f16613c93a648a1cf532214fb5e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2daf2f16613c93a648a1cf532214fb5e">OnFrameBegin</a> (xiiUInt64 uiFrameIndex) override</td></tr>
+<tr class="memdesc:a2daf2f16613c93a648a1cf532214fb5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Selects the GPU frame before recording a graph. Several graphs may share one frame.  <br /></td></tr>
 <tr class="memitem:ac07d4f4a58ca0fd04bb13528d43a486b" id="r_ac07d4f4a58ca0fd04bb13528d43a486b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac07d4f4a58ca0fd04bb13528d43a486b">SetGraphInstance</a> (xiiUInt64 uiInstanceId) override</td></tr>
 <tr class="memdesc:ac07d4f4a58ca0fd04bb13528d43a486b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called before recording a graph; isolates instances which share a stable graph name.  <br /></td></tr>
-<tr class="memitem:a97cf09e561d3b7d0d2937c9dbf204ab8" id="r_a97cf09e561d3b7d0d2937c9dbf204ab8"><td class="memItemLeft" align="right" valign="top"><a id="a97cf09e561d3b7d0d2937c9dbf204ab8" name="a97cf09e561d3b7d0d2937c9dbf204ab8"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Initialize</b> (<a class="el" href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr</a>&lt; <a class="el" href="../../d5/d19/classxii_g_a_l_device.html">xiiGALDevice</a> &gt; pDevice)</td></tr>
-<tr class="memdesc:a97cf09e561d3b7d0d2937c9dbf204ab8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the profiler with the device that will be used to create queries. <br /></td></tr>
-<tr class="memitem:aae7df49a1067b23a2c5730ce32786c04" id="r_aae7df49a1067b23a2c5730ce32786c04"><td class="memItemLeft" align="right" valign="top"><a id="aae7df49a1067b23a2c5730ce32786c04" name="aae7df49a1067b23a2c5730ce32786c04"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Shutdown</b> ()</td></tr>
-<tr class="memdesc:aae7df49a1067b23a2c5730ce32786c04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Releases all GPU queries. <br /></td></tr>
 <tr class="memitem:a767d84f2555fa8ba80e7d40a19d33a3b" id="r_a767d84f2555fa8ba80e7d40a19d33a3b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a767d84f2555fa8ba80e7d40a19d33a3b">OnGraphBegin</a> (<a class="el" href="../../dc/d80/classxii_g_a_l_command_list.html">xiiGALCommandList</a> &amp;commandList, xiiUInt64 uiGraphId, xiiUInt32 uiSubmissionIndex, xiiUInt32 uiQueueIndex) override</td></tr>
 <tr class="memdesc:a767d84f2555fa8ba80e7d40a19d33a3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called at the start of a submission command list.  <br /></td></tr>
 <tr class="memitem:a1751e15c1909e09cf1d648923c03ba01" id="r_a1751e15c1909e09cf1d648923c03ba01"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1751e15c1909e09cf1d648923c03ba01">OnGraphEnd</a> (<a class="el" href="../../dc/d80/classxii_g_a_l_command_list.html">xiiGALCommandList</a> &amp;commandList, xiiUInt64 uiGraphId, xiiUInt32 uiSubmissionIndex, xiiUInt32 uiQueueIndex) override</td></tr>
@@ -251,6 +247,35 @@ static constexpr xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b
 <p>Called instead of OnFrameEnd when recording fails, after closing any active query scope. Discard this frame's measurements while retaining in-flight query resources safely. </p>
 
 <p>Implements <a class="el" href="../../d5/d9e/classxii_render_graph_profiler.html#ae91e20b679d3878da2a46e311bfaae59">xiiRenderGraphProfiler</a>.</p>
+
+</div>
+</div>
+<a id="a2daf2f16613c93a648a1cf532214fb5e" name="a2daf2f16613c93a648a1cf532214fb5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2daf2f16613c93a648a1cf532214fb5e">&#9670;&#160;</a></span>OnFrameBegin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiRenderGraphTimestampProfiler::OnFrameBegin </td>
+          <td>(</td>
+          <td class="paramtype">xiiUInt64</td>          <td class="paramname"><span class="paramname"><em>uiFrameIndex</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Selects the GPU frame before recording a graph. Several graphs may share one frame. </p>
+
+<p>Reimplemented from <a class="el" href="../../d5/d9e/classxii_render_graph_profiler.html#a4457a6c5854b23cfb7ad53ccdf991e37">xiiRenderGraphProfiler</a>.</p>
 
 </div>
 </div>
@@ -462,7 +487,7 @@ static constexpr xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

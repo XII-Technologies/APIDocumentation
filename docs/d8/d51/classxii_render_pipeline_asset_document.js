@@ -8,5 +8,6 @@ var classxii_render_pipeline_asset_document =
     [ "InternalGetMetaDataHash", "d8/d51/classxii_render_pipeline_asset_document.html#a503806c90bbf661c1acdd12c28eaf474", null ],
     [ "InternalTransformAsset", "d8/d51/classxii_render_pipeline_asset_document.html#a8b1ad10847abd8aeb5f0a28aa208a1fd", null ],
     [ "InternalTransformAsset", "d8/d51/classxii_render_pipeline_asset_document.html#a55e31bac9183ac334897f88ffdb98f30", null ],
-    [ "Paste", "d8/d51/classxii_render_pipeline_asset_document.html#ac1dc83e72d34744f44d477608ff4967d", null ]
+    [ "Paste", "d8/d51/classxii_render_pipeline_asset_document.html#ac1dc83e72d34744f44d477608ff4967d", null ],
+    [ "UpdateAssetDocumentInfo", "d8/d51/classxii_render_pipeline_asset_document.html#a8f6a9a7e7f583e15a791897cd251092f", null ]
 ];

@@ -215,69 +215,73 @@ $(function(){initNavTree('d5/d3e/_cpp_project_8h_source.html','../../',''); });
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>  <span class="keyword">static</span> xiiString GetPluginSourceDir(<span class="keyword">const</span> xiiCppSettings&amp; cfg, xiiStringView sProjectDirectory = {});</div>
 <div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
 <div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>  <span class="keyword">static</span> xiiString GetBuildDir(<span class="keyword">const</span> xiiCppSettings&amp; cfg);</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>  <span class="keyword">static</span> xiiString GetSolutionPath(<span class="keyword">const</span> xiiCppSettings&amp; cfg);</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>  <span class="keyword">static</span> xiiStatus OpenSolution(<span class="keyword">const</span> xiiCppSettings&amp; cfg);</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span></div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>  <span class="keyword">static</span> xiiStatus OpenInCodeEditor(<span class="keyword">const</span> xiiStringView&amp; sFileName, xiiInt32 iLineNumber);</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>  <span class="keyword">static</span> xiiStringView CompilerToString(xiiCompiler::Enum compiler);</div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span> </div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>  <span class="keyword">static</span> xiiCompiler::Enum GetSdkCompiler();</div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>  <span class="keyword">static</span> xiiString GetSdkCompilerMajorVersion();</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span></div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>  <span class="keyword">static</span> xiiString GetPluginOutputDir(xiiStringView sProjectDirectory = {});</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span></div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>  <span class="keyword">static</span> xiiString GetPluginBinaryDirectory(xiiStringView sPluginName);</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>  <span class="keyword">static</span> xiiString GetSolutionPath(<span class="keyword">const</span> xiiCppSettings&amp; cfg);</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span> </div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>  <span class="keyword">static</span> xiiStatus OpenSolution(<span class="keyword">const</span> xiiCppSettings&amp; cfg);</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span></div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>  <span class="keyword">static</span> xiiStatus OpenInCodeEditor(<span class="keyword">const</span> xiiStringView&amp; sFileName, xiiInt32 iLineNumber);</div>
 <div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>  <span class="keyword">static</span> xiiStatus TestCompiler();</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>  <span class="keyword">static</span> xiiStringView CompilerToString(xiiCompiler::Enum compiler);</div>
 <div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>  <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* GetCMakePath();</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>  <span class="keyword">static</span> xiiCompiler::Enum GetSdkCompiler();</div>
 <div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span> </div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>  <span class="keyword">static</span> xiiResult CheckCMakeCache(<span class="keyword">const</span> xiiCppSettings&amp; cfg);</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>  <span class="keyword">static</span> xiiString GetSdkCompilerMajorVersion();</div>
 <div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span> </div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>  <span class="keyword">static</span> ModifyResult CheckCMakeUserPresets(<span class="keyword">const</span> xiiCppSettings&amp; cfg, <span class="keywordtype">bool</span> bWriteResult);</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>  <span class="keyword">static</span> xiiStatus TestCompiler();</div>
 <div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span> </div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>  <span class="keyword">static</span> <span class="keywordtype">bool</span> ExistsSolution(<span class="keyword">const</span> xiiCppSettings&amp; cfg);</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>  <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* GetCMakePath();</div>
 <div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span> </div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>  <span class="keyword">static</span> <span class="keywordtype">bool</span> ExistsProjectCMakeListsTxt();</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>  <span class="keyword">static</span> xiiResult CheckCMakeCache(<span class="keyword">const</span> xiiCppSettings&amp; cfg);</div>
 <div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span> </div>
-<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>  <span class="keyword">static</span> xiiResult PopulateWithDefaultSources(<span class="keyword">const</span> xiiCppSettings&amp; cfg);</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>  <span class="keyword">static</span> ModifyResult CheckCMakeUserPresets(<span class="keyword">const</span> xiiCppSettings&amp; cfg, <span class="keywordtype">bool</span> bWriteResult);</div>
 <div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span> </div>
-<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>  <span class="keyword">static</span> xiiResult CleanBuildDir(<span class="keyword">const</span> xiiCppSettings&amp; cfg);</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>  <span class="keyword">static</span> <span class="keywordtype">bool</span> ExistsSolution(<span class="keyword">const</span> xiiCppSettings&amp; cfg);</div>
 <div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span> </div>
-<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>  <span class="keyword">static</span> xiiResult RunCMake(<span class="keyword">const</span> xiiCppSettings&amp; cfg);</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>  <span class="keyword">static</span> <span class="keywordtype">bool</span> ExistsProjectCMakeListsTxt();</div>
 <div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span> </div>
-<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>  <span class="keyword">static</span> xiiResult RunCMakeIfNecessary(<span class="keyword">const</span> xiiCppSettings&amp; cfg);</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>  <span class="keyword">static</span> xiiResult PopulateWithDefaultSources(<span class="keyword">const</span> xiiCppSettings&amp; cfg);</div>
 <div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span> </div>
-<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>  <span class="keyword">static</span> xiiResult CompileSolution(<span class="keyword">const</span> xiiCppSettings&amp; cfg);</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>  <span class="keyword">static</span> xiiResult CleanBuildDir(<span class="keyword">const</span> xiiCppSettings&amp; cfg);</div>
 <div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span> </div>
-<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>  <span class="keyword">static</span> xiiResult BuildCodeIfNecessary(<span class="keyword">const</span> xiiCppSettings&amp; cfg);</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>  <span class="keyword">static</span> xiiResult RunCMake(<span class="keyword">const</span> xiiCppSettings&amp; cfg);</div>
 <div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span> </div>
-<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>  <span class="keyword">static</span> xiiVariantDictionary CreateEmptyCMakeUserPresetsJson(<span class="keyword">const</span> xiiCppSettings&amp; cfg);</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>  <span class="keyword">static</span> xiiResult RunCMakeIfNecessary(<span class="keyword">const</span> xiiCppSettings&amp; cfg);</div>
 <div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span> </div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>  <span class="keyword">static</span> ModifyResult ModifyCMakeUserPresetsJson(<span class="keyword">const</span> xiiCppSettings&amp; cfg, xiiVariantDictionary&amp; inout_json);</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>  <span class="keyword">static</span> xiiResult CompileSolution(<span class="keyword">const</span> xiiCppSettings&amp; cfg);</div>
 <div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span> </div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>  <span class="keyword">static</span> <span class="keywordtype">void</span> UpdatePluginConfig(<span class="keyword">const</span> xiiCppSettings&amp; cfg);</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>  <span class="keyword">static</span> xiiResult BuildCodeIfNecessary(<span class="keyword">const</span> xiiCppSettings&amp; cfg);</div>
 <div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span> </div>
-<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>  <span class="keyword">static</span> xiiResult EnsureCppPluginReady();</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>  <span class="keyword">static</span> xiiVariantDictionary CreateEmptyCMakeUserPresetsJson(<span class="keyword">const</span> xiiCppSettings&amp; cfg);</div>
 <div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span> </div>
-<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>  <span class="keyword">static</span> <span class="keywordtype">bool</span> IsBuildRequired();</div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span></div>
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno"><a class="line" href="../../d4/d9f/structxii_cpp_project.html#ab8954551ced4ffbf6211cb254bb4aa33">  161</a></span>  <span class="keyword">static</span> <a class="code hl_class" href="../../dc/d22/classxii_event.html">xiiEvent&lt;const xiiCppSettings&amp;&gt;</a> <a class="code hl_variable" href="../../d4/d9f/structxii_cpp_project.html#ab8954551ced4ffbf6211cb254bb4aa33">s_ChangeEvents</a>;</div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span> </div>
-<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>  <span class="keyword">static</span> <span class="keywordtype">void</span> LoadPreferences();</div>
-<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span> </div>
-<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>  <span class="keyword">static</span> <a class="code hl_class" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr&lt;const MachineSpecificCompilerPaths&gt;</a> GetMachineSpecificCompilers() { <span class="keywordflow">return</span> s_MachineSpecificCompilers.GetArrayPtr(); }</div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span> </div>
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>  <span class="comment">// Change the current preferences to point to a SDK compatible compiler</span></div>
-<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>  <span class="keyword">static</span> <a class="code hl_struct" href="../../dd/dad/structxii_result.html">xiiResult</a> ForceSdkCompatibleCompiler();</div>
-<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span> </div>
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>  <a class="code hl_struct" href="../../de/dfd/structxii_enum.html">xiiEnum&lt;xiiIDE&gt;</a>          m_Ide;</div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>  <a class="code hl_struct" href="../../df/d91/structxii_compiler_preferences.html">xiiCompilerPreferences</a>   m_CompilerPreferences;</div>
-<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>  <a class="code hl_struct" href="../../db/d8e/structxii_code_editor_preferences.html">xiiCodeEditorPreferences</a> m_CodeEditorPreferences;</div>
-<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span> </div>
-<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>  <span class="keyword">static</span> <a class="code hl_class" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray&lt;MachineSpecificCompilerPaths&gt;</a> s_MachineSpecificCompilers;</div>
-<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>};</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>  <span class="keyword">static</span> ModifyResult ModifyCMakeUserPresetsJson(<span class="keyword">const</span> xiiCppSettings&amp; cfg, xiiVariantDictionary&amp; inout_json);</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span> </div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>  <span class="keyword">static</span> <span class="keywordtype">void</span> UpdatePluginConfig(<span class="keyword">const</span> xiiCppSettings&amp; cfg);</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span> </div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>  <span class="keyword">static</span> xiiResult EnsureCppPluginReady();</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span> </div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>  <span class="keyword">static</span> <span class="keywordtype">bool</span> IsBuildRequired();</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span></div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno"><a class="line" href="../../d4/d9f/structxii_cpp_project.html#ab8954551ced4ffbf6211cb254bb4aa33">  167</a></span>  <span class="keyword">static</span> <a class="code hl_class" href="../../dc/d22/classxii_event.html">xiiEvent&lt;const xiiCppSettings&amp;&gt;</a> <a class="code hl_variable" href="../../d4/d9f/structxii_cpp_project.html#ab8954551ced4ffbf6211cb254bb4aa33">s_ChangeEvents</a>;</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span> </div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>  <span class="keyword">static</span> <span class="keywordtype">void</span> LoadPreferences();</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span> </div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>  <span class="keyword">static</span> <a class="code hl_class" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr&lt;const MachineSpecificCompilerPaths&gt;</a> GetMachineSpecificCompilers() { <span class="keywordflow">return</span> s_MachineSpecificCompilers.GetArrayPtr(); }</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span> </div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>  <span class="comment">// Change the current preferences to point to a SDK compatible compiler</span></div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>  <span class="keyword">static</span> <a class="code hl_struct" href="../../dd/dad/structxii_result.html">xiiResult</a> ForceSdkCompatibleCompiler();</div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span> </div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>  <a class="code hl_struct" href="../../de/dfd/structxii_enum.html">xiiEnum&lt;xiiIDE&gt;</a>          m_Ide;</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>  <a class="code hl_struct" href="../../df/d91/structxii_compiler_preferences.html">xiiCompilerPreferences</a>   m_CompilerPreferences;</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>  <a class="code hl_struct" href="../../db/d8e/structxii_code_editor_preferences.html">xiiCodeEditorPreferences</a> m_CodeEditorPreferences;</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span> </div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>  <span class="keyword">static</span> <a class="code hl_class" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray&lt;MachineSpecificCompilerPaths&gt;</a> s_MachineSpecificCompilers;</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>};</div>
 </div>
 <div class="ttc" id="aclassxii_array_ptr_html"><div class="ttname"><a href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a></div><div class="ttdef"><b>Definition</b> ArrayPtr.h:43</div></div>
 <div class="ttc" id="aclassxii_dynamic_array_html"><div class="ttname"><a href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray</a></div><div class="ttdef"><b>Definition</b> DynamicArray.h:84</div></div>
@@ -288,7 +292,7 @@ $(function(){initNavTree('d5/d3e/_cpp_project_8h_source.html','../../',''); });
 <div class="ttc" id="astructxii_compiler_preferences_html"><div class="ttname"><a href="../../df/d91/structxii_compiler_preferences.html">xiiCompilerPreferences</a></div><div class="ttdef"><b>Definition</b> CppProject.h:61</div></div>
 <div class="ttc" id="astructxii_cpp_project_1_1_machine_specific_compiler_paths_html"><div class="ttname"><a href="../../d1/df1/structxii_cpp_project_1_1_machine_specific_compiler_paths.html">xiiCppProject::MachineSpecificCompilerPaths</a></div><div class="ttdef"><b>Definition</b> CppProject.h:85</div></div>
 <div class="ttc" id="astructxii_cpp_project_html"><div class="ttname"><a href="../../d4/d9f/structxii_cpp_project.html">xiiCppProject</a></div><div class="ttdef"><b>Definition</b> CppProject.h:81</div></div>
-<div class="ttc" id="astructxii_cpp_project_html_ab8954551ced4ffbf6211cb254bb4aa33"><div class="ttname"><a href="../../d4/d9f/structxii_cpp_project.html#ab8954551ced4ffbf6211cb254bb4aa33">xiiCppProject::s_ChangeEvents</a></div><div class="ttdeci">static xiiEvent&lt; const xiiCppSettings &amp; &gt; s_ChangeEvents</div><div class="ttdoc">Fired when a notable change has been made.</div><div class="ttdef"><b>Definition</b> CppProject.h:161</div></div>
+<div class="ttc" id="astructxii_cpp_project_html_ab8954551ced4ffbf6211cb254bb4aa33"><div class="ttname"><a href="../../d4/d9f/structxii_cpp_project.html#ab8954551ced4ffbf6211cb254bb4aa33">xiiCppProject::s_ChangeEvents</a></div><div class="ttdeci">static xiiEvent&lt; const xiiCppSettings &amp; &gt; s_ChangeEvents</div><div class="ttdoc">Fired when a notable change has been made.</div><div class="ttdef"><b>Definition</b> CppProject.h:167</div></div>
 <div class="ttc" id="astructxii_enum_html"><div class="ttname"><a href="../../de/dfd/structxii_enum.html">xiiEnum</a></div><div class="ttdef"><b>Definition</b> Enum.h:39</div></div>
 <div class="ttc" id="astructxii_i_d_e_html"><div class="ttname"><a href="../../d7/d95/structxii_i_d_e.html">xiiIDE</a></div><div class="ttdoc">Copyright (c) Theophilus Eriata. All Rights Reserved.</div><div class="ttdef"><b>Definition</b> CppProject.h:15</div></div>
 <div class="ttc" id="astructxii_result_html"><div class="ttname"><a href="../../dd/dad/structxii_result.html">xiiResult</a></div><div class="ttdef"><b>Definition</b> Types.h:65</div></div>

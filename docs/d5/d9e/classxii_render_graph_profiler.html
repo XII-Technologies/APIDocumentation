@@ -106,6 +106,8 @@ Inheritance diagram for xiiRenderGraphProfiler:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a4457a6c5854b23cfb7ad53ccdf991e37" id="r_a4457a6c5854b23cfb7ad53ccdf991e37"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4457a6c5854b23cfb7ad53ccdf991e37">OnFrameBegin</a> (xiiUInt64 uiFrameIndex)</td></tr>
+<tr class="memdesc:a4457a6c5854b23cfb7ad53ccdf991e37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Selects the GPU frame before recording a graph. Several graphs may share one frame.  <br /></td></tr>
 <tr class="memitem:a24aa39e29370611b0981533708b2d17f" id="r_a24aa39e29370611b0981533708b2d17f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a24aa39e29370611b0981533708b2d17f">OnGraphBegin</a> (<a class="el" href="../../dc/d80/classxii_g_a_l_command_list.html">xiiGALCommandList</a> &amp;commandList, xiiUInt64 uiGraphId, xiiUInt32 uiSubmissionIndex, xiiUInt32 uiQueueIndex)=0</td></tr>
 <tr class="memdesc:a24aa39e29370611b0981533708b2d17f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called at the start of a submission command list.  <br /></td></tr>
 <tr class="memitem:a161f86a17b917b93362a884b99985f94" id="r_a161f86a17b917b93362a884b99985f94"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a161f86a17b917b93362a884b99985f94">OnGraphEnd</a> (<a class="el" href="../../dc/d80/classxii_g_a_l_command_list.html">xiiGALCommandList</a> &amp;commandList, xiiUInt64 uiGraphId, xiiUInt32 uiSubmissionIndex, xiiUInt32 uiQueueIndex)=0</td></tr>
@@ -228,6 +230,35 @@ Public Member Functions</h2></td></tr>
 <p>Called instead of OnFrameEnd when recording fails, after closing any active query scope. Discard this frame's measurements while retaining in-flight query resources safely. </p>
 
 <p>Implemented in <a class="el" href="../../d9/dd1/classxii_render_graph_timestamp_profiler.html#a465bd23b8a1dd8762423743e8118f8e1">xiiRenderGraphTimestampProfiler</a>.</p>
+
+</div>
+</div>
+<a id="a4457a6c5854b23cfb7ad53ccdf991e37" name="a4457a6c5854b23cfb7ad53ccdf991e37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4457a6c5854b23cfb7ad53ccdf991e37">&#9670;&#160;</a></span>OnFrameBegin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void xiiRenderGraphProfiler::OnFrameBegin </td>
+          <td>(</td>
+          <td class="paramtype">xiiUInt64</td>          <td class="paramname"><span class="paramname"><em>uiFrameIndex</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Selects the GPU frame before recording a graph. Several graphs may share one frame. </p>
+
+<p>Reimplemented in <a class="el" href="../../d9/dd1/classxii_render_graph_timestamp_profiler.html#a2daf2f16613c93a648a1cf532214fb5e">xiiRenderGraphTimestampProfiler</a>.</p>
 
 </div>
 </div>

@@ -147,9 +147,9 @@ const <a class="el" href="../../dc/d5d/structxii_render_graph_statistics.html">x
 <tr class="memitem:a34b4cb7e4369354d87159d9f09fe4a7a" id="r_a34b4cb7e4369354d87159d9f09fe4a7a"><td class="memItemLeft" align="right" valign="top"><a id="a34b4cb7e4369354d87159d9f09fe4a7a" name="a34b4cb7e4369354d87159d9f09fe4a7a"></a>
 <a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; const <a class="el" href="../../d2/d8a/structxii_render_graph_queue_submission.html">xiiRenderGraphQueueSubmission</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetQueueSubmissions</b> () const</td></tr>
 <tr class="memdesc:a34b4cb7e4369354d87159d9f09fe4a7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the list of queue submissions synthesized by the compiler, in execution order. <br /></td></tr>
-<tr class="memitem:a1a624a20a672dc2fa703f4df345ff4bd" id="r_a1a624a20a672dc2fa703f4df345ff4bd"><td class="memItemLeft" align="right" valign="top"><a id="a1a624a20a672dc2fa703f4df345ff4bd" name="a1a624a20a672dc2fa703f4df345ff4bd"></a>
-xiiRenderGraphGraphId&#160;</td><td class="memItemRight" valign="bottom"><b>GetId</b> () const</td></tr>
-<tr class="memdesc:a1a624a20a672dc2fa703f4df345ff4bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stable ID and name of this graph instance. <br /></td></tr>
+<tr class="memitem:a86b36656bd55fd3dcbf1c4e91195b722" id="r_a86b36656bd55fd3dcbf1c4e91195b722"><td class="memItemLeft" align="right" valign="top"><a id="a86b36656bd55fd3dcbf1c4e91195b722" name="a86b36656bd55fd3dcbf1c4e91195b722"></a>
+xiiRenderGraphId&#160;</td><td class="memItemRight" valign="bottom"><b>GetId</b> () const</td></tr>
+<tr class="memdesc:a86b36656bd55fd3dcbf1c4e91195b722"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process-local ID and name of this graph instance. <br /></td></tr>
 <tr class="memitem:a085b1291eb511f463834e6a4ad68b4b6" id="r_a085b1291eb511f463834e6a4ad68b4b6"><td class="memItemLeft" align="right" valign="top"><a id="a085b1291eb511f463834e6a4ad68b4b6" name="a085b1291eb511f463834e6a4ad68b4b6"></a>
 xiiUInt64&#160;</td><td class="memItemRight" valign="bottom"><b>GetInstanceId</b> () const</td></tr>
 <tr class="memdesc:a085b1291eb511f463834e6a4ad68b4b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process-local identity, unique even when several views use the same stable graph name. <br /></td></tr>
@@ -160,8 +160,6 @@ xiiUInt64&#160;</td><td class="memItemRight" valign="bottom"><b>GetInstanceId</b
 <tr class="memdesc:ab2d3c3b351830236ec31f05a35aa203d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reflection/editor-friendly compiler records. <br /></td></tr>
 <tr class="memitem:aaff4a9760baeb821baa01c1700e18031" id="r_aaff4a9760baeb821baa01c1700e18031"><td class="memItemLeft" align="right" valign="top"><a id="aaff4a9760baeb821baa01c1700e18031" name="aaff4a9760baeb821baa01c1700e18031"></a>
 <a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; const <a class="el" href="../../d1/dd1/structxii_render_graph_resource_version_description.html">xiiRenderGraphResourceVersionDescription</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetResourceVersions</b> () const</td></tr>
-<tr class="memitem:a679d0e2c1bf84aa3bc4d0ec63b4413cb" id="r_a679d0e2c1bf84aa3bc4d0ec63b4413cb"><td class="memItemLeft" align="right" valign="top"><a id="a679d0e2c1bf84aa3bc4d0ec63b4413cb" name="a679d0e2c1bf84aa3bc4d0ec63b4413cb"></a>
-const <a class="el" href="../../d0/d10/classxii_render_graph_id_table.html">xiiRenderGraphIdTable</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetIdTable</b> () const</td></tr>
 <tr class="memitem:a5e5cc92f5081ebf72a69c6fc501a93f2" id="r_a5e5cc92f5081ebf72a69c6fc501a93f2"><td class="memItemLeft" align="right" valign="top"><a id="a5e5cc92f5081ebf72a69c6fc501a93f2" name="a5e5cc92f5081ebf72a69c6fc501a93f2"></a>
 <a class="el" href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr</a>&lt; <a class="el" href="../../d3/d9a/classxii_g_a_l_texture.html">xiiGALTexture</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetExportedTexture</b> (<a class="el" href="../../d7/deb/classxii_render_graph_texture_handle.html">xiiRenderGraphTextureHandle</a> hTexture) const</td></tr>
 <tr class="memdesc:a5e5cc92f5081ebf72a69c6fc501a93f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a strong reference to an exported graph-owned result after <a class="el" href="#a1e1d7087fead9450392559c6a1e723dc">Execute()</a>. <br /></td></tr>
@@ -204,7 +202,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>xiiRenderGraphBuilde
 <div class="line">{</div>
 <div class="line">  graph.Execute(pDevice, pView, pBlackboard, pCache, pProfiler);</div>
 <div class="line">}</div>
-<div class="ttc" id="aclassxii_render_graph_pass_context_html"><div class="ttname"><a href="../../de/dd6/classxii_render_graph_pass_context.html">xiiRenderGraphPassContext</a></div><div class="ttdef"><b>Definition</b> RenderGraph.h:296</div></div>
+<div class="ttc" id="aclassxii_render_graph_pass_context_html"><div class="ttname"><a href="../../de/dd6/classxii_render_graph_pass_context.html">xiiRenderGraphPassContext</a></div><div class="ttdef"><b>Definition</b> RenderGraph.h:284</div></div>
 <div class="ttc" id="astructxii_g_a_l_command_queue_flags_html_ab89533563cac26a42b13cdb1490ca97dae2bbc6d775ae4ae28ac30703b6389ef9"><div class="ttname"><a href="../../d2/d0b/structxii_g_a_l_command_queue_flags.html#ab89533563cac26a42b13cdb1490ca97dae2bbc6d775ae4ae28ac30703b6389ef9">xiiGALCommandQueueFlags::Graphics</a></div><div class="ttdeci">@ Graphics</div><div class="ttdoc">Command queue that supports graphics, compute, ray tracing and transfer commands.</div><div class="ttdef"><b>Definition</b> GraphicsTypes.h:1224</div></div>
 <div class="ttc" id="astructxii_g_a_l_resource_state_flags_html_a4863cdfd85d00744a4db3689c58b5e84a254757b625ce059bdc7cbb5516629573"><div class="ttname"><a href="../../d6/dec/structxii_g_a_l_resource_state_flags.html#a4863cdfd85d00744a4db3689c58b5e84a254757b625ce059bdc7cbb5516629573">xiiGALResourceStateFlags::DepthWrite</a></div><div class="ttdeci">@ DepthWrite</div><div class="ttdoc">The resource is used in a writable depth-stencil view or in clear operation.</div><div class="ttdef"><b>Definition</b> GraphicsTypes.h:1815</div></div>
 </div><!-- fragment --><h2>Threading</h2>
@@ -294,9 +292,6 @@ template&lt;typename TPassData&gt; </div>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a> xiiRenderGraph::Compile </td>
@@ -309,11 +304,6 @@ template&lt;typename TPassData&gt; </div>
           <td class="paramtype"><a class="el" href="../../d4/dbb/classxii_string_builder.html">xiiStringBuilder</a> *</td>          <td class="paramname"><span class="paramname"><em>out_pError</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span>&#160;)</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel nodiscard">nodiscard</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 <p>Compiles the render graph.</p>
 <p>Runs all 7 compiler phases: A. Resource versioning (already completed during AddPass setup callbacks). B. Topological sort + live-pass culling. C. Transient resource lifetime analysis. D. Advanced barrier synthesis (sub-resource, UAV, split barriers). E. Multi-queue scheduling -&gt; <a class="el" href="../../d2/d8a/structxii_render_graph_queue_submission.html">xiiRenderGraphQueueSubmission</a> list with fence handshakes. F. Render pass group merging -&gt; <a class="el" href="../../dd/d84/structxii_render_graph_merge_group.html">xiiRenderGraphMergeGroup</a> list. G. Signature hash + compile cache (skip if graph is unchanged).</p>
@@ -333,9 +323,6 @@ template&lt;typename TPassData&gt; </div>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a> xiiRenderGraph::Execute </td>
@@ -368,11 +355,6 @@ template&lt;typename TPassData&gt; </div>
           <td class="paramtype"><a class="el" href="../../d4/dbb/classxii_string_builder.html">xiiStringBuilder</a> *</td>          <td class="paramname"><span class="paramname"><em>out_pError</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span>&#160;)</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel nodiscard">nodiscard</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 <p>Executes the compiled render graph.</p>
 <p>For each <a class="el" href="../../d2/d8a/structxii_render_graph_queue_submission.html">xiiRenderGraphQueueSubmission</a>:</p><ol type="1">

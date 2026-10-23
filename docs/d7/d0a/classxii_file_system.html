@@ -297,7 +297,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>ReloadAllExter
 </div><div class="memdoc">
 <p>Searches for a directory to use as the "Sdk" special directory</p>
 <p>It does so by starting at the directory where the application binary is located and then goes up until it finds a folder that contains the given sub-folder. The sub-folder is usually where the engine loads the most basic data from, so it should exist.</p>
-<p>Additionally the 'redirection file' feature of <a class="el" href="#ae646f369d5e85f1c9304e0f618cf4223">xiiFileSystem::FindFolderWithSubPath()</a> is used to allow finding a relocated SDK folder. To do that, place a file called 'xiiSdkRoot.txt' in your top level folder. It should contain the relative path pointing to the SDK folder.</p>
+<p>Additionally the 'redirection file' feature of <a class="el" href="#ae646f369d5e85f1c9304e0f618cf4223">xiiFileSystem::FindFolderWithSubPath()</a> is used to allow finding a relocated SDK folder. To do that, place a file called 'xiiSdkRoot.txt' in your top level folder. It should contain an absolute or relative path pointing to the SDK folder.</p>
 <p>Upon success <a class="el" href="#a5379337feec025e28164fe34f96ce8c3">SetSdkRootDirectory()</a> is called with the resulting path.</p>
 <dl class="section note"><dt>Note</dt><dd>If the Sdk root directory has been set before, this function does nothing! It will not override a previously set value. If that is desired, call SetSdkRootDirectory("") first.</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="#ae646f369d5e85f1c9304e0f618cf4223">xiiFileSystem::FindFolderWithSubPath()</a> </dd></dl>

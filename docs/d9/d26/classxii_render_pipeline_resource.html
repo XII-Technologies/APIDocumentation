@@ -103,6 +103,15 @@ Inheritance diagram for xiiRenderPipelineResource:</div>
 Classes</h2></td></tr>
 <tr class="memitem:DefinitionDependency" id="r_DefinitionDependency"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d16/structxii_render_pipeline_resource_1_1_definition_dependency.html">DefinitionDependency</a></td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-types" class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:afd4a540f78e9d50e7a7b541d9fcad6fe" id="r_afd4a540f78e9d50e7a7b541d9fcad6fe"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afd4a540f78e9d50e7a7b541d9fcad6fe">ResourceResolver</a> = <a class="el" href="../../dc/d84/structxii_delegate.html">xiiDelegate</a>&lt;xiiString(<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a>)&gt;</td></tr>
+<tr class="inherit_header pub_types_classxii_resource"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_types_classxii_resource')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public Types inherited from <a class="el" href="../../d9/de1/classxii_resource.html">xiiResource</a></td></tr>
+<tr class="memitem:ad3386f288d8a8ab633fba003a6187ed9 inherit pub_types_classxii_resource" id="r_ad3386f288d8a8ab633fba003a6187ed9"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de1/classxii_resource.html#ad3386f288d8a8ab633fba003a6187ed9">DoUpdate</a> : xiiUInt8 { <a class="el" href="../../d9/de1/classxii_resource.html#ad3386f288d8a8ab633fba003a6187ed9a817d39136a23588febde1f65edc02643">OnMainThread</a> = 0U
+, <a class="el" href="../../d9/de1/classxii_resource.html#ad3386f288d8a8ab633fba003a6187ed9aa8748188c286904944ef4d9ee11b8577">OnAnyThread</a>
+ }</td></tr>
+<tr class="memdesc:ad3386f288d8a8ab633fba003a6187ed9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies the thread type on which update operations should be performed.  <a href="../../d9/de1/classxii_resource.html#ad3386f288d8a8ab633fba003a6187ed9">More...</a><br /></td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a8bb873b4a37c573d2d1ce5aabe730c76" id="r_a8bb873b4a37c573d2d1ce5aabe730c76"><td class="memItemLeft" align="right" valign="top"><a id="a8bb873b4a37c573d2d1ce5aabe730c76" name="a8bb873b4a37c573d2d1ce5aabe730c76"></a>
@@ -162,7 +171,8 @@ template&lt;typename T&gt; </td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a797c2d4af14864b700f8ecf8dc606f3a" id="r_a797c2d4af14864b700f8ecf8dc606f3a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a797c2d4af14864b700f8ecf8dc606f3a">ResolveDefinitions</a> (const <a class="el" href="../../d7/d73/structxii_render_pipeline_resource_descriptor.html">xiiRenderPipelineResourceDescriptor</a> &amp;descriptor, <a class="el" href="../../d7/d73/structxii_render_pipeline_resource_descriptor.html">xiiRenderPipelineResourceDescriptor</a> &amp;out_resolved, <a class="el" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray</a>&lt; <a class="el" href="../../d9/d16/structxii_render_pipeline_resource_1_1_definition_dependency.html">DefinitionDependency</a> &gt; *out_dependencies=nullptr, <a class="el" href="../../d4/dbb/classxii_string_builder.html">xiiStringBuilder</a> *out_error=nullptr)</td></tr>
+<tr class="memitem:ae5f0a028b1530826a3293861cfb54aa4" id="r_ae5f0a028b1530826a3293861cfb54aa4"><td class="memItemLeft" align="right" valign="top"><a id="ae5f0a028b1530826a3293861cfb54aa4" name="ae5f0a028b1530826a3293861cfb54aa4"></a>
+static <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ResolveDefinitions</b> (const <a class="el" href="../../d7/d73/structxii_render_pipeline_resource_descriptor.html">xiiRenderPipelineResourceDescriptor</a> &amp;descriptor, <a class="el" href="../../d7/d73/structxii_render_pipeline_resource_descriptor.html">xiiRenderPipelineResourceDescriptor</a> &amp;out_resolved, <a class="el" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray</a>&lt; <a class="el" href="../../d9/d16/structxii_render_pipeline_resource_1_1_definition_dependency.html">DefinitionDependency</a> &gt; *out_dependencies=nullptr, <a class="el" href="../../d4/dbb/classxii_string_builder.html">xiiStringBuilder</a> *out_error=nullptr, <a class="el" href="#afd4a540f78e9d50e7a7b541d9fcad6fe">ResourceResolver</a> resourceResolver={})</td></tr>
 <tr class="inherit_header pub_static_methods_classxii_no_base"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_static_methods_classxii_no_base')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Static Public Member Functions inherited from <a class="el" href="../../d2/d38/classxii_no_base.html">xiiNoBase</a></td></tr>
 <tr class="memitem:a4bde433b55ebd55edf63c57239799bba inherit pub_static_methods_classxii_no_base" id="r_a4bde433b55ebd55edf63c57239799bba"><td class="memItemLeft" align="right" valign="top">
 static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetStaticRTTI</b> ()</td></tr>
@@ -175,11 +185,6 @@ Private Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-inherited" class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pub_types_classxii_resource"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_types_classxii_resource')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public Types inherited from <a class="el" href="../../d9/de1/classxii_resource.html">xiiResource</a></td></tr>
-<tr class="memitem:ad3386f288d8a8ab633fba003a6187ed9 inherit pub_types_classxii_resource" id="r_ad3386f288d8a8ab633fba003a6187ed9"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de1/classxii_resource.html#ad3386f288d8a8ab633fba003a6187ed9">DoUpdate</a> : xiiUInt8 { <a class="el" href="../../d9/de1/classxii_resource.html#ad3386f288d8a8ab633fba003a6187ed9a817d39136a23588febde1f65edc02643">OnMainThread</a> = 0U
-, <a class="el" href="../../d9/de1/classxii_resource.html#ad3386f288d8a8ab633fba003a6187ed9aa8748188c286904944ef4d9ee11b8577">OnAnyThread</a>
- }</td></tr>
-<tr class="memdesc:ad3386f288d8a8ab633fba003a6187ed9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies the thread type on which update operations should be performed.  <a href="../../d9/de1/classxii_resource.html#ad3386f288d8a8ab633fba003a6187ed9">More...</a><br /></td></tr>
 <tr class="inherit_header pub_attribs_classxii_resource"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_attribs_classxii_resource')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public Attributes inherited from <a class="el" href="../../d9/de1/classxii_resource.html">xiiResource</a></td></tr>
 <tr class="memitem:a9208846df7ea88cb00063e6e4207066e inherit pub_attribs_classxii_resource" id="r_a9208846df7ea88cb00063e6e4207066e"><td class="memItemLeft" align="right" valign="top">
 <a class="el" href="../../dc/d22/classxii_event.html">xiiEvent</a>&lt; const <a class="el" href="../../df/de3/structxii_resource_event.html">xiiResourceEvent</a> &amp;, <a class="el" href="../../dd/d52/classxii_mutex.html">xiiMutex</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_ResourceEvents</b></td></tr>
@@ -202,47 +207,23 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~xiiResource</b> (
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetHasLoadingFallback</b> (bool bHasLoadingFallback)</td></tr>
 <tr class="memdesc:a07d5954f763eed4f411251733cc12ce5 inherit pro_methods_classxii_resource"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used internally by the code injection macros. <br /></td></tr>
 </table>
-<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
-<a id="a797c2d4af14864b700f8ecf8dc606f3a" name="a797c2d4af14864b700f8ecf8dc606f3a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a797c2d4af14864b700f8ecf8dc606f3a">&#9670;&#160;</a></span>ResolveDefinitions()</h2>
+<a name="doc-typedef-members" id="doc-typedef-members"></a><h2 id="header-doc-typedef-members" class="groupheader">Member Typedef Documentation</h2>
+<a id="afd4a540f78e9d50e7a7b541d9fcad6fe" name="afd4a540f78e9d50e7a7b541d9fcad6fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd4a540f78e9d50e7a7b541d9fcad6fe">&#9670;&#160;</a></span>ResourceResolver</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a> xiiRenderPipelineResource::ResolveDefinitions </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d7/d73/structxii_render_pipeline_resource_descriptor.html">xiiRenderPipelineResourceDescriptor</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>descriptor</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="../../d7/d73/structxii_render_pipeline_resource_descriptor.html">xiiRenderPipelineResourceDescriptor</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>out_resolved</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray</a>&lt; <a class="el" href="../../d9/d16/structxii_render_pipeline_resource_1_1_definition_dependency.html">DefinitionDependency</a> &gt; *</td>          <td class="paramname"><span class="paramname"><em>out_dependencies</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="../../d4/dbb/classxii_string_builder.html">xiiStringBuilder</a> *</td>          <td class="paramname"><span class="paramname"><em>out_error</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span>&#160;)</td>
+          <td class="memname">using <a class="el" href="#afd4a540f78e9d50e7a7b541d9fcad6fe">xiiRenderPipelineResource::ResourceResolver</a> = <a class="el" href="../../dc/d84/structxii_delegate.html">xiiDelegate</a>&lt;xiiString(<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a>)&gt;</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-<p>Resolve only definitions reachable from the root. Each independently authored resource is acquired once, before compilation, so definition recursion cannot deadlock resource loading. </p>
+<p>Resolve only definitions reachable from the root. Each independently authored resource is acquired once, before compilation, so definition recursion cannot deadlock resource loading. Optional editor-side resolution of asset identifiers to compiled resource paths. </p>
 
 </div>
 </div>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
 <a id="a35f393f163b6f122075fcd20e21bf4de" name="a35f393f163b6f122075fcd20e21bf4de"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a35f393f163b6f122075fcd20e21bf4de">&#9670;&#160;</a></span>UnloadData()</h2>
 

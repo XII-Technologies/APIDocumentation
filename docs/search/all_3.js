@@ -90,7 +90,7 @@ var searchData=
   ['addobject_87',['AddObject',['../d5/d5b/classxii_object_selection.html#a01741d4f09a4057be72dae6818f656c8',1,'xiiObjectSelection']]],
   ['addobjecttograph_88',['AddObjectToGraph',['../de/d49/classxii_rtti_converter_writer.html#a23fde4f421d2af4da5807145f6c022a9',1,'xiiRttiConverterWriter::AddObjectToGraph(xiiReflectedClass *pObject, xiiStringView sNodeName={})'],['../de/d49/classxii_rtti_converter_writer.html#a850a546c5cbeaf421d563c2964887afb',1,'xiiRttiConverterWriter::AddObjectToGraph(const xiiRTTI *pRtti, const void *pObject, xiiStringView sNodeName={})'],['../db/d17/classxii_document_object_converter_writer.html#a57563591164dde5204d63d626ec7d688',1,'xiiDocumentObjectConverterWriter::AddObjectToGraph()']]],
   ['addorremove_89',['AddOrRemove',['../d7/d55/structxii_bitflags.html#ad658467820facde2db8df6f63e56de98',1,'xiiBitflags']]],
-  ['addpass_90',['AddPass',['../d6/dfd/classxii_render_graph.html#ad6246594b2798df4033d63da548bafaf',1,'xiiRenderGraph']]],
+  ['addpass_90',['AddPass',['../d6/dfd/classxii_render_graph.html#ad6246594b2798df4033d63da548bafaf',1,'xiiRenderGraph::AddPass()'],['../d7/d73/structxii_render_pipeline_resource_descriptor.html#a5b33b9b777db9d298f6946774e875ae4',1,'xiiRenderPipelineResourceDescriptor::AddPass()']]],
   ['addpathnode_91',['AddPathNode',['../d0/d0b/classxii_path_search.html#afea721c68d83ce3b00cbccf8f4060a34',1,'xiiPathSearch']]],
   ['addpermutation_92',['AddPermutation',['../d6/dee/classxii_g_a_l_permutation_generator.html#a76e0d627a8e0f0530a53caf4fb5fdf16',1,'xiiGALPermutationGenerator']]],
   ['addpersistentcross_93',['AddPersistentCross',['../d7/dac/classxii_debug_renderer.html#aaf9963535d67579eeafa343052294e24',1,'xiiDebugRenderer']]],

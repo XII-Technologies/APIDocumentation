@@ -1,6 +1,7 @@
 var classxii_render_pipeline_pass =
 [
     [ "BuildTemporalHistory", "d5/d44/classxii_render_pipeline_pass.html#a5a053630866d039388375f369cc208ba", null ],
+    [ "GetConfiguredPins", "d5/d44/classxii_render_pipeline_pass.html#af803b6997d27c48bc4fdea739253cfe8", null ],
     [ "GetPins", "d5/d44/classxii_render_pipeline_pass.html#a45832e843435e31cc4a7c3e3a0fdae2b", null ],
     [ "GetProperties", "d5/d44/classxii_render_pipeline_pass.html#a1231f8e795f70c84678fd5763d815a32", null ],
     [ "InvalidateTemporalHistory", "d5/d44/classxii_render_pipeline_pass.html#a061e468ffa26ed1b266ed63576679535", null ],

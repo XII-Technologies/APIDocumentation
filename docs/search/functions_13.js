@@ -90,5 +90,6 @@ var searchData=
   ['trymultiply32_87',['TryMultiply32',['../d1/d37/namespacexii_math.html#a1dda2b2e4ce73373288c883eb009714d',1,'xiiMath']]],
   ['trymultiply64_88',['TryMultiply64',['../d1/d37/namespacexii_math.html#a939c8e828a412b69f09b157987347b7d',1,'xiiMath']]],
   ['trypeek_89',['TryPeek',['../d3/d61/classxii_message_queue_base.html#a416c2c5d2bbf1a532976d97a207962b4',1,'xiiMessageQueueBase']]],
-  ['typeid_90',['TypeId',['../d4/d5d/classxii_component_manager.html#ad1284791023af89e013fa9f73ae7ac08',1,'xiiComponentManager']]]
+  ['tryrecreatepins_90',['TryRecreatePins',['../db/d55/classxii_document_node_manager.html#a22c354ae9cca57ed7c379f7db3d790af',1,'xiiDocumentNodeManager']]],
+  ['typeid_91',['TypeId',['../d4/d5d/classxii_component_manager.html#ad1284791023af89e013fa9f73ae7ac08',1,'xiiComponentManager']]]
 ];

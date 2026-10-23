@@ -4233,7 +4233,8 @@ var hierarchy =
       [ "xiiDelegate< ValueType(const IteratorType &)>", "dc/d84/structxii_delegate.html", null ],
       [ "xiiDelegate< void(xiiSharedPtr< xiiGALSwapChain > pSwapChain, xiiSizeU32 vSize)>", "dc/d84/structxii_delegate.html", null ],
       [ "xiiDelegate< void(const xiiParticleGraphNodeDesc &, const xiiParticleSimulationPassData &, xiiRenderGraphPassContext &)>", "dc/d84/structxii_delegate.html", null ],
-      [ "xiiDelegate< void(xiiRenderGraph &, xiiRenderGraphBlackboard &)>", "dc/d84/structxii_delegate.html", null ],
+      [ "xiiDelegate< xiiResult(xiiRenderGraph &, xiiRenderGraphBlackboard &, const xiiView *)>", "dc/d84/structxii_delegate.html", null ],
+      [ "xiiDelegate< xiiString(xiiStringView)>", "dc/d84/structxii_delegate.html", null ],
       [ "xiiDelegate< void(xiiView &, xiiRenderGraph &, xiiRenderGraphBlackboard &)>", "dc/d84/structxii_delegate.html", null ],
       [ "xiiDelegate< xiiInternal::NewInstance< xiiGALDevice >(xiiAllocator *, const xiiGALDeviceCreationDescription &)>", "dc/d84/structxii_delegate.html", null ],
       [ "xiiDelegate< void(xiiStringView, xiiStringView, const xiiGALShaderResourceDescription &, xiiStringBuilder &)>", "dc/d84/structxii_delegate.html", null ],
@@ -5481,9 +5482,6 @@ var hierarchy =
     [ "xiiHashableStruct&lt; xiiRenderGraphCompileSettings &gt;", "d7/d9f/classxii_hashable_struct.html", [
       [ "xiiRenderGraphCompileSettings", "de/d66/structxii_render_graph_compile_settings.html", null ]
     ] ],
-    [ "xiiHashableStruct&lt; xiiRenderGraphId &gt;", "d7/d9f/classxii_hashable_struct.html", [
-      [ "xiiRenderGraphId", "dd/db6/structxii_render_graph_id.html", null ]
-    ] ],
     [ "xiiHashableStruct&lt; xiiRenderGraphPassHandle &gt;", "d7/d9f/classxii_hashable_struct.html", [
       [ "xiiRenderGraphPassHandle", "d4/d47/classxii_render_graph_pass_handle.html", null ]
     ] ],
@@ -5740,6 +5738,7 @@ var hierarchy =
     ] ],
     [ "xiiIdTableBase&lt; IdType, ValueType &gt;", "d3/df7/classxii_id_table_base.html", [
       [ "xiiIdTable< xiiAllocatorId, AllocatorData, TrackerDataAllocatorWrapper >", "d1/d8e/classxii_id_table.html", null ],
+      [ "xiiIdTable< xiiRenderGraphHandle::IdType, xiiUniquePtr< Entry > >", "d1/d8e/classxii_id_table.html", null ],
       [ "xiiIdTable< IdType, ValueType, AllocatorWrapper >", "d1/d8e/classxii_id_table.html", null ]
     ] ],
     [ "xiiIdTableBase&lt; xiiComponentId, xiiComponent * &gt;", "d3/df7/classxii_id_table_base.html", [
@@ -5771,9 +5770,6 @@ var hierarchy =
     ] ],
     [ "xiiIdTableBase&lt; xiiGenericId&lt; 24, 8 &gt;, xiiUInt32 &gt;", "d3/df7/classxii_id_table_base.html", [
       [ "xiiIdTable< xiiGenericId< 24, 8 >, xiiUInt32 >", "d1/d8e/classxii_id_table.html", null ]
-    ] ],
-    [ "xiiIdTableBase&lt; xiiGenericId&lt; 24, 8 &gt;, xiiUniquePtr&lt; Context &gt; &gt;", "d3/df7/classxii_id_table_base.html", [
-      [ "xiiIdTable< xiiGenericId< 24, 8 >, xiiUniquePtr< Context > >", "d1/d8e/classxii_id_table.html", null ]
     ] ],
     [ "xiiIdTableBase&lt; xiiGenericId&lt; 24, 8 &gt;, xiiUniquePtr&lt; InitBatch &gt; &gt;", "d3/df7/classxii_id_table_base.html", [
       [ "xiiIdTable< xiiGenericId< 24, 8 >, xiiUniquePtr< InitBatch >, xiiLocalAllocatorWrapper >", "d1/d8e/classxii_id_table.html", null ]
@@ -7089,6 +7085,7 @@ var hierarchy =
             [ "xiiFileBrowserAttribute", "d0/d66/classxii_file_browser_attribute.html", null ],
             [ "xiiGameObjectReferenceAttribute", "d8/d66/classxii_game_object_reference_attribute.html", null ],
             [ "xiiImageSliderUiAttribute", "d2/dfd/classxii_image_slider_ui_attribute.html", null ],
+            [ "xiiRenderPipelineTextureInputAttribute", "da/d52/classxii_render_pipeline_texture_input_attribute.html", null ],
             [ "xiiRttiTypeStringAttribute", "da/dc2/classxii_rtti_type_string_attribute.html", null ],
             [ "xiiVisualScriptVariableAttribute", "d0/d57/classxii_visual_script_variable_attribute.html", null ]
           ] ],
@@ -7125,6 +7122,7 @@ var hierarchy =
           [ "xiiSkyAtmosphereRenderData", "da/d77/classxii_sky_atmosphere_render_data.html", null ],
           [ "xiiVolumetricCloudRenderData", "dd/df4/classxii_volumetric_cloud_render_data.html", null ]
         ] ],
+        [ "xiiRenderPipelineAssetInterface", "d8/dc2/classxii_render_pipeline_asset_interface.html", null ],
         [ "xiiRenderPipelineFrameData", "d5/d22/classxii_render_pipeline_frame_data.html", [
           [ "xiiDDGIProbeFrameData", "d2/d30/classxii_d_d_g_i_probe_frame_data.html", null ],
           [ "xiiDirectionalLightFrameData", "dd/d90/classxii_directional_light_frame_data.html", null ],
@@ -7147,6 +7145,7 @@ var hierarchy =
           [ "xiiBufferExportPass", "d1/d95/classxii_buffer_export_pass.html", null ],
           [ "xiiBufferForwardPass", "d2/d5d/classxii_buffer_forward_pass.html", null ],
           [ "xiiBufferHistoryPass", "dc/d56/classxii_buffer_history_pass.html", null ],
+          [ "xiiClearColorPass", "db/ddf/classxii_clear_color_pass.html", null ],
           [ "xiiClearTexturePass", "d2/d92/classxii_clear_texture_pass.html", null ],
           [ "xiiClusterBoundsPass", "d5/d97/classxii_cluster_bounds_pass.html", null ],
           [ "xiiClusterLightAssignmentPass", "d1/d11/classxii_cluster_light_assignment_pass.html", null ],
@@ -7157,6 +7156,7 @@ var hierarchy =
           [ "xiiConfidenceBlendPass", "d0/d43/classxii_confidence_blend_pass.html", null ],
           [ "xiiConfidenceRadiancePass", "d1/d58/classxii_confidence_radiance_pass.html", null ],
           [ "xiiCounterResetPass", "da/d8e/classxii_counter_reset_pass.html", null ],
+          [ "xiiCreateTexturePass", "da/d8e/classxii_create_texture_pass.html", null ],
           [ "xiiDDGIAtlasPreparePass", "dc/dd8/classxii_d_d_g_i_atlas_prepare_pass.html", null ],
           [ "xiiDDGIEnvironmentSeedPass", "da/d41/classxii_d_d_g_i_environment_seed_pass.html", null ],
           [ "xiiDDGIProbeGatherPass", "d0/d89/classxii_d_d_g_i_probe_gather_pass.html", null ],
@@ -7198,7 +7198,9 @@ var hierarchy =
           [ "xiiRadianceAddPass", "df/d88/classxii_radiance_add_pass.html", null ],
           [ "xiiRadianceReplacePass", "df/d3e/classxii_radiance_replace_pass.html", null ],
           [ "xiiRayTracingScenePass", "d4/d06/classxii_ray_tracing_scene_pass.html", null ],
-          [ "xiiRenderPipelineInterfacePass", "d6/da5/classxii_render_pipeline_interface_pass.html", null ],
+          [ "xiiRenderPipelineInterfacePass", "d6/da5/classxii_render_pipeline_interface_pass.html", [
+            [ "xiiRenderPipelineInputDefaultPass", "dd/d62/classxii_render_pipeline_input_default_pass.html", null ]
+          ] ],
           [ "xiiRenderPipelineSubgraphPass", "db/d64/classxii_render_pipeline_subgraph_pass.html", null ],
           [ "xiiSceneInstanceSelectionPass", "d8/d09/classxii_scene_instance_selection_pass.html", null ],
           [ "xiiSceneMeshPickingPass", "da/d43/classxii_scene_mesh_picking_pass.html", null ],
@@ -7255,8 +7257,6 @@ var hierarchy =
           [ "xiiRenderPipelineBufferOutputPin", "d7/d4b/classxii_render_pipeline_buffer_output_pin.html", null ],
           [ "xiiRenderPipelineDataInputPin", "df/d6d/classxii_render_pipeline_data_input_pin.html", null ],
           [ "xiiRenderPipelineDataOutputPin", "d4/d31/classxii_render_pipeline_data_output_pin.html", null ],
-          [ "xiiRenderPipelineOrderInputPin", "d2/d0d/classxii_render_pipeline_order_input_pin.html", null ],
-          [ "xiiRenderPipelineOrderOutputPin", "dd/ddb/classxii_render_pipeline_order_output_pin.html", null ],
           [ "xiiRenderPipelineTextureInputPin", "de/d07/classxii_render_pipeline_texture_input_pin.html", null ],
           [ "xiiRenderPipelineTextureOutputPin", "d1/dae/classxii_render_pipeline_texture_output_pin.html", null ]
         ] ],
@@ -7673,18 +7673,10 @@ var hierarchy =
     [ "xiiRenderGraph", "d6/dfd/classxii_render_graph.html", null ],
     [ "xiiRenderGraphBlackboard", "d1/d41/classxii_render_graph_blackboard.html", null ],
     [ "xiiRenderGraphBuilder", "d6/d7a/classxii_render_graph_builder.html", null ],
-    [ "xiiRenderGraphCategory", "de/de8/structxii_render_graph_category.html", [
-      [ "xiiEnum< xiiRenderGraphCategory >", "de/dfd/structxii_enum.html", null ]
-    ] ],
     [ "xiiRenderGraphCompiledPass", "dd/d8a/structxii_render_graph_compiled_pass.html", null ],
-    [ "xiiRenderGraphContext", "d4/dac/classxii_render_graph_context.html", null ],
-    [ "xiiRenderGraphContextHandle", "d9/d49/classxii_render_graph_context_handle.html", null ],
     [ "xiiRenderGraphDebug", "dd/daa/classxii_render_graph_debug.html", null ],
     [ "xiiRenderGraphFrame", "d3/d61/classxii_render_graph_frame.html", null ],
-    [ "xiiRenderGraphFrequency", "d1/d4a/structxii_render_graph_frequency.html", [
-      [ "xiiEnum< xiiRenderGraphFrequency >", "de/dfd/structxii_enum.html", null ]
-    ] ],
-    [ "xiiRenderGraphIdTable", "d0/d10/classxii_render_graph_id_table.html", null ],
+    [ "xiiRenderGraphHandle", "da/dfa/classxii_render_graph_handle.html", null ],
     [ "xiiRenderGraphManager", "dd/dd5/classxii_render_graph_manager.html", null ],
     [ "xiiRenderGraphMergeGroup", "dd/d84/structxii_render_graph_merge_group.html", null ],
     [ "xiiRenderGraphPassContext", "de/dd6/classxii_render_graph_pass_context.html", null ],
@@ -7692,7 +7684,6 @@ var hierarchy =
       [ "xiiRenderGraphTimestampProfiler", "d9/dd1/classxii_render_graph_timestamp_profiler.html", null ]
     ] ],
     [ "xiiRenderGraphQueueSubmission", "d2/d8a/structxii_render_graph_queue_submission.html", null ],
-    [ "xiiRenderGraphRegistrationDescription", "db/db5/structxii_render_graph_registration_description.html", null ],
     [ "xiiRenderGraphResourceCache", "d7/d91/classxii_render_graph_resource_cache.html", null ],
     [ "xiiRenderGraphResourceDescription", "d3/d82/structxii_render_graph_resource_description.html", null ],
     [ "xiiRenderGraphResourceFlags", "d6/dfc/structxii_render_graph_resource_flags.html", null ],
@@ -7724,6 +7715,10 @@ var hierarchy =
       [ "xiiEnum< xiiRenderPipelinePinType >", "de/dfd/structxii_enum.html", null ]
     ] ],
     [ "xiiRenderPipelineResourceDescriptor", "d7/d73/structxii_render_pipeline_resource_descriptor.html", null ],
+    [ "xiiRenderPipelineTextureResolution", "d0/d9e/structxii_render_pipeline_texture_resolution.html", null ],
+    [ "xiiRenderPipelineTextureResolutionMode", "d4/d2b/structxii_render_pipeline_texture_resolution_mode.html", [
+      [ "xiiEnum< xiiRenderPipelineTextureResolutionMode >", "de/dfd/structxii_enum.html", null ]
+    ] ],
     [ "xiiRenderPipelineUsage", "d7/d92/structxii_render_pipeline_usage.html", null ],
     [ "xiiRenderTargetFormat", "d8/dd8/structxii_render_target_format.html", [
       [ "xiiEnum< xiiRenderTargetFormat >", "de/dfd/structxii_enum.html", null ]

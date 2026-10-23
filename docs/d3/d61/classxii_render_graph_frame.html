@@ -101,12 +101,16 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a64901e1ac3bc9ca80d19cfa3e46717f7" id="r_a64901e1ac3bc9ca80d19cfa3e46717f7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a64901e1ac3bc9ca80d19cfa3e46717f7">Begin</a> (xiiUInt32 uiFramesInFlight=3U)</td></tr>
 <tr class="memitem:a7025ed8198335f5ae9b4347d0b1314f9" id="r_a7025ed8198335f5ae9b4347d0b1314f9"><td class="memItemLeft" align="right" valign="top"><a id="a7025ed8198335f5ae9b4347d0b1314f9" name="a7025ed8198335f5ae9b4347d0b1314f9"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>End</b> ()</td></tr>
-<tr class="memitem:a4d6c8ac1d16278b15ab74779dc905a08" id="r_a4d6c8ac1d16278b15ab74779dc905a08"><td class="memItemLeft" align="right" valign="top"><a id="a4d6c8ac1d16278b15ab74779dc905a08" name="a4d6c8ac1d16278b15ab74779dc905a08"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsActive</b> () const</td></tr>
-<tr class="memitem:a0039664722db9f88cb82e7a2bb006ff9" id="r_a0039664722db9f88cb82e7a2bb006ff9"><td class="memItemLeft" align="right" valign="top"><a id="a0039664722db9f88cb82e7a2bb006ff9" name="a0039664722db9f88cb82e7a2bb006ff9"></a>
-xiiUInt64&#160;</td><td class="memItemRight" valign="bottom"><b>GetFrameIndex</b> () const</td></tr>
-<tr class="memitem:af774327ec6139da7df83d4f2c8536814" id="r_af774327ec6139da7df83d4f2c8536814"><td class="memItemLeft" align="right" valign="top"><a id="af774327ec6139da7df83d4f2c8536814" name="af774327ec6139da7df83d4f2c8536814"></a>
-xiiUInt64&#160;</td><td class="memItemRight" valign="bottom"><b>GetCompletedFrame</b> () const</td></tr>
+<tr class="memdesc:a7025ed8198335f5ae9b4347d0b1314f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ends the frame and releases the rendering lock. <br /></td></tr>
+<tr class="memitem:a514d31d168a56245f64fafb8115f575b" id="r_a514d31d168a56245f64fafb8115f575b"><td class="memItemLeft" align="right" valign="top"><a id="a514d31d168a56245f64fafb8115f575b" name="a514d31d168a56245f64fafb8115f575b"></a>
+XII_ALWAYS_INLINE bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsActive</b> () const</td></tr>
+<tr class="memdesc:a514d31d168a56245f64fafb8115f575b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true after <a class="el" href="#a64901e1ac3bc9ca80d19cfa3e46717f7">Begin()</a> and before <a class="el" href="#a7025ed8198335f5ae9b4347d0b1314f9" title="Ends the frame and releases the rendering lock.">End()</a>. <br /></td></tr>
+<tr class="memitem:a99a26c418d41775de2d1cfee2202dd7f" id="r_a99a26c418d41775de2d1cfee2202dd7f"><td class="memItemLeft" align="right" valign="top"><a id="a99a26c418d41775de2d1cfee2202dd7f" name="a99a26c418d41775de2d1cfee2202dd7f"></a>
+XII_ALWAYS_INLINE xiiUInt64&#160;</td><td class="memItemRight" valign="bottom"><b>GetFrameIndex</b> () const</td></tr>
+<tr class="memdesc:a99a26c418d41775de2d1cfee2202dd7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the device-wide frame index, or zero when inactive. <br /></td></tr>
+<tr class="memitem:a0941cc4b753d01f38937a76084307f44" id="r_a0941cc4b753d01f38937a76084307f44"><td class="memItemLeft" align="right" valign="top"><a id="a0941cc4b753d01f38937a76084307f44" name="a0941cc4b753d01f38937a76084307f44"></a>
+XII_ALWAYS_INLINE xiiUInt64&#160;</td><td class="memItemRight" valign="bottom"><b>GetCompletedFrame</b> () const</td></tr>
+<tr class="memdesc:a0941cc4b753d01f38937a76084307f44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the last completed GPU frame observed when this frame began. <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-friends" class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
@@ -114,7 +118,7 @@ Friends</h2></td></tr>
 class&#160;</td><td class="memItemRight" valign="bottom"><b>xiiRenderGraphManager</b></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Serializes device-wide frame preparation and submission across worlds and registered graphs. Begin acquires the rendering lock, waits for reusable frame slots, and advances the shared material/visibility/shadow/bindless timeline. End snapshots all queues, including failed or empty frames, then releases the lock. Destruction calls End. Use on one thread; nesting fails. </p>
+<div class="textblock"><p>Serializes device-wide frame preparation and submission across rendering workloads. Begin acquires the rendering lock, waits for reusable frame slots, and advances the shared material/visibility/shadow/bindless timeline. End captures all submitted queues, including failed or empty frames, and releases the lock. Destruction calls End. Use on one thread; nesting fails. </p>
 </div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
 <a id="a64901e1ac3bc9ca80d19cfa3e46717f7" name="a64901e1ac3bc9ca80d19cfa3e46717f7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a64901e1ac3bc9ca80d19cfa3e46717f7">&#9670;&#160;</a></span>Begin()</h2>

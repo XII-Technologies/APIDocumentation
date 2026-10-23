@@ -68,7 +68,7 @@ var searchData=
   ['loadmtl_65',['LoadMTL',['../d9/d9e/classxii_o_b_j_loader.html#a87b16a0a53b50b1e8597655e73c9d9ed',1,'xiiOBJLoader']]],
   ['loadobj_66',['LoadOBJ',['../d9/d9e/classxii_o_b_j_loader.html#aa26a2d8316ad8ea549b0e04a8ef09d86',1,'xiiOBJLoader']]],
   ['loadopendocumentslist_67',['LoadOpenDocumentsList',['../d1/d83/classxii_qt_editor_app.html#a37b99d6d58ac158e76328e5c573f1a6c',1,'xiiQtEditorApp']]],
-  ['loadplugin_68',['LoadPlugin',['../d2/d89/classxii_plugin.html#aa0eff5d5a60bda0b8e4a9e6476328d99',1,'xiiPlugin']]],
+  ['loadplugin_68',['LoadPlugin',['../d2/d89/classxii_plugin.html#ab887ba41f464adf9d01fb2c3f1b5c4be',1,'xiiPlugin']]],
   ['loadresource_69',['LoadResource',['../d4/d8e/classxii_resource_manager.html#aaf87c60a105c5b77125fc5954e776841',1,'xiiResourceManager::LoadResource(xiiStringView sResourceID)'],['../d4/d8e/classxii_resource_manager.html#a5aa7c47d141fcb9f88547dfccacc7fe1',1,'xiiResourceManager::LoadResource(xiiStringView sResourceID, xiiTypedResourceHandle&lt; ResourceType &gt; hLoadingFallback)']]],
   ['loadresourcebytype_70',['LoadResourceByType',['../d4/d8e/classxii_resource_manager.html#a9389b2e1425abc4d62231ca31b323349',1,'xiiResourceManager']]],
   ['loadscene_71',['LoadScene',['../d1/d19/classxii_game_state.html#a7b31ba83682b9e9887f3e1a7e25c751b',1,'xiiGameState']]],

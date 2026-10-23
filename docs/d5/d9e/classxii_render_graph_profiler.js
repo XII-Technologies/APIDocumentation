@@ -3,6 +3,7 @@ var classxii_render_graph_profiler =
     [ "GetPassDurationMs", "d5/d9e/classxii_render_graph_profiler.html#af53b4e9e9a2e5735a1e7c5c5669a2541", null ],
     [ "GetPassTiming", "d5/d9e/classxii_render_graph_profiler.html#ae135364f0fee6d030e8b856744b1b90a", null ],
     [ "OnFrameAbort", "d5/d9e/classxii_render_graph_profiler.html#ae91e20b679d3878da2a46e311bfaae59", null ],
+    [ "OnFrameBegin", "d5/d9e/classxii_render_graph_profiler.html#a4457a6c5854b23cfb7ad53ccdf991e37", null ],
     [ "OnFrameEnd", "d5/d9e/classxii_render_graph_profiler.html#a07bb0b50b126e1f675b52176e68a2263", null ],
     [ "OnGraphBegin", "d5/d9e/classxii_render_graph_profiler.html#a24aa39e29370611b0981533708b2d17f", null ],
     [ "OnGraphEnd", "d5/d9e/classxii_render_graph_profiler.html#a161f86a17b917b93362a884b99985f94", null ],

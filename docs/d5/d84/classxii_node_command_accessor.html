@@ -108,6 +108,11 @@ Inheritance diagram for xiiNodeCommandAccessor:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aa59b69e992d590180e06b5d5453c3c60" id="r_aa59b69e992d590180e06b5d5453c3c60"><td class="memItemLeft" align="right" valign="top"><a id="aa59b69e992d590180e06b5d5453c3c60" name="aa59b69e992d590180e06b5d5453c3c60"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>xiiNodeCommandAccessor</b> (<a class="el" href="../../d0/df0/classxii_command_history.html">xiiCommandHistory</a> *pHistory)</td></tr>
+<tr class="memitem:a9df42027c2cc6ca32116114d37ca0ae1" id="r_a9df42027c2cc6ca32116114d37ca0ae1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9df42027c2cc6ca32116114d37ca0ae1">BeginTemporaryCommands</a> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sDisplayString, bool bFireEventsWhenUndoingTempCommands=false) override</td></tr>
+<tr class="memdesc:a9df42027c2cc6ca32116114d37ca0ae1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Temporary pin edits must notify the node manager when restoring the previous schema.  <br /></td></tr>
+<tr class="memitem:a7af5b9e42511dc79451a58f2a64e5865" id="r_a7af5b9e42511dc79451a58f2a64e5865"><td class="memItemLeft" align="right" valign="top"><a id="a7af5b9e42511dc79451a58f2a64e5865" name="a7af5b9e42511dc79451a58f2a64e5865"></a>
+<a class="el" href="../../d0/d54/structxii_status.html">xiiStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><b>RefreshPins</b> (const <a class="el" href="../../da/dd8/classxii_document_object.html">xiiDocumentObject</a> *pObject)</td></tr>
+<tr class="memdesc:a7af5b9e42511dc79451a58f2a64e5865"><td class="mdescLeft">&#160;</td><td class="mdescRight">Refresh a dependency-derived schema in the caller's transaction, retaining compatible connections. <br /></td></tr>
 <tr class="memitem:abbabc270585f68cc615fd69fcad398a8" id="r_abbabc270585f68cc615fd69fcad398a8"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d0/d54/structxii_status.html">xiiStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abbabc270585f68cc615fd69fcad398a8">SetValue</a> (const <a class="el" href="../../da/dd8/classxii_document_object.html">xiiDocumentObject</a> *pObject, const <a class="el" href="../../da/d25/classxii_abstract_property.html">xiiAbstractProperty</a> *pProp, const <a class="el" href="../../db/d1a/classxii_variant.html">xiiVariant</a> &amp;newValue, <a class="el" href="../../db/d1a/classxii_variant.html">xiiVariant</a> index=<a class="el" href="../../db/d1a/classxii_variant.html">xiiVariant</a>()) override</td></tr>
 <tr class="memitem:a441485f8634ecf4fca6b3046f60b7c4a" id="r_a441485f8634ecf4fca6b3046f60b7c4a"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d0/d54/structxii_status.html">xiiStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a441485f8634ecf4fca6b3046f60b7c4a">InsertValue</a> (const <a class="el" href="../../da/dd8/classxii_document_object.html">xiiDocumentObject</a> *pObject, const <a class="el" href="../../da/d25/classxii_abstract_property.html">xiiAbstractProperty</a> *pProp, const <a class="el" href="../../db/d1a/classxii_variant.html">xiiVariant</a> &amp;newValue, <a class="el" href="../../db/d1a/classxii_variant.html">xiiVariant</a> index=<a class="el" href="../../db/d1a/classxii_variant.html">xiiVariant</a>()) override</td></tr>
 <tr class="memitem:a8e6ef356b73656dd379ea5dc5ef57cf3" id="r_a8e6ef356b73656dd379ea5dc5ef57cf3"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d0/d54/structxii_status.html">xiiStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8e6ef356b73656dd379ea5dc5ef57cf3">RemoveValue</a> (const <a class="el" href="../../da/dd8/classxii_document_object.html">xiiDocumentObject</a> *pObject, const <a class="el" href="../../da/d25/classxii_abstract_property.html">xiiAbstractProperty</a> *pProp, <a class="el" href="../../db/d1a/classxii_variant.html">xiiVariant</a> index=<a class="el" href="../../db/d1a/classxii_variant.html">xiiVariant</a>()) override</td></tr>
@@ -120,7 +125,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac7c53f7afe9a02b3ae2463bea21e872b inherit pub_methods_classxii_object_command_accessor" id="r_ac7c53f7afe9a02b3ae2463bea21e872b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d29/classxii_object_command_accessor.html#ac7c53f7afe9a02b3ae2463bea21e872b">StartTransaction</a> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sDisplayString) override</td></tr>
 <tr class="memitem:a3959357fc07309fbfcd0f3d7e5f3110b inherit pub_methods_classxii_object_command_accessor" id="r_a3959357fc07309fbfcd0f3d7e5f3110b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d29/classxii_object_command_accessor.html#a3959357fc07309fbfcd0f3d7e5f3110b">CancelTransaction</a> () override</td></tr>
 <tr class="memitem:ae3f791275976fbdfed6d2e7aabcc598f inherit pub_methods_classxii_object_command_accessor" id="r_ae3f791275976fbdfed6d2e7aabcc598f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d29/classxii_object_command_accessor.html#ae3f791275976fbdfed6d2e7aabcc598f">FinishTransaction</a> () override</td></tr>
-<tr class="memitem:a6e796809a983597958615e032c32b838 inherit pub_methods_classxii_object_command_accessor" id="r_a6e796809a983597958615e032c32b838"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d29/classxii_object_command_accessor.html#a6e796809a983597958615e032c32b838">BeginTemporaryCommands</a> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sDisplayString, bool bFireEventsWhenUndoingTempCommands=false) override</td></tr>
 <tr class="memitem:a13ecd2b61caf9dc8b75639682da204c8 inherit pub_methods_classxii_object_command_accessor" id="r_a13ecd2b61caf9dc8b75639682da204c8"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d29/classxii_object_command_accessor.html#a13ecd2b61caf9dc8b75639682da204c8">CancelTemporaryCommands</a> () override</td></tr>
 <tr class="memitem:ad3a12ba85b94984bb4b472513c892795 inherit pub_methods_classxii_object_command_accessor" id="r_ad3a12ba85b94984bb4b472513c892795"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d29/classxii_object_command_accessor.html#ad3a12ba85b94984bb4b472513c892795">FinishTemporaryCommands</a> () override</td></tr>
 <tr class="memitem:ae0a879e085fc6280e3e2b1ed41242bc7 inherit pub_methods_classxii_object_command_accessor" id="r_ae0a879e085fc6280e3e2b1ed41242bc7"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d0/d54/structxii_status.html">xiiStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d29/classxii_object_command_accessor.html#ae0a879e085fc6280e3e2b1ed41242bc7">MoveObject</a> (const <a class="el" href="../../da/dd8/classxii_document_object.html">xiiDocumentObject</a> *pObject, const <a class="el" href="../../da/dd8/classxii_document_object.html">xiiDocumentObject</a> *pNewParent, const <a class="el" href="../../da/d25/classxii_abstract_property.html">xiiAbstractProperty</a> *pParentProp, const <a class="el" href="../../db/d1a/classxii_variant.html">xiiVariant</a> &amp;index) override</td></tr>
@@ -248,6 +252,39 @@ const <a class="el" href="../../d2/d8c/classxii_document_object_manager.html">xi
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="../../d0/d29/classxii_object_command_accessor.html">xiiObjectCommandAccessor</a>.</p>
+
+</div>
+</div>
+<a id="a9df42027c2cc6ca32116114d37ca0ae1" name="a9df42027c2cc6ca32116114d37ca0ae1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9df42027c2cc6ca32116114d37ca0ae1">&#9670;&#160;</a></span>BeginTemporaryCommands()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiNodeCommandAccessor::BeginTemporaryCommands </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sDisplayString</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>bFireEventsWhenUndoingTempCommands</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Temporary pin edits must notify the node manager when restoring the previous schema. </p>
 
 <p>Reimplemented from <a class="el" href="../../d0/d29/classxii_object_command_accessor.html">xiiObjectCommandAccessor</a>.</p>
 

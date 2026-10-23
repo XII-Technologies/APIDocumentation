@@ -121,6 +121,10 @@ Protected Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>xiiRenderPipelinePinHandle</b> (xiiRenderPipelinePin::Type type, bool input, bool optional, <a class="el" href="../../de/d10/structxii_g_a_l_resource_format.html#a85df1b2fc240485387136c2211fcebf6">xiiGALResourceFormat::Enum</a> format, <a class="el" href="../../d7/d55/structxii_bitflags.html">xiiBitflags</a>&lt; <a class="el" href="../../d6/d24/structxii_g_a_l_bind_flags.html">xiiGALBindFlags</a> &gt; bindings, <a class="el" href="../../da/d4c/structxii_g_a_l_resource_dimension.html#acd80592b28aafb8becd9a7b79238830d">xiiGALResourceDimension::Enum</a> dimension, xiiUInt32 samples, xiiRenderPipelinePinAccess::Enum access, bool temporal)</td></tr>
 <tr class="memitem:ac786a2f7391e21b3df52795e852537cb" id="r_ac786a2f7391e21b3df52795e852537cb"><td class="memItemLeft" align="right" valign="top"><a id="ac786a2f7391e21b3df52795e852537cb" name="ac786a2f7391e21b3df52795e852537cb"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetDataType</b> (const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a> *type)</td></tr>
+<tr class="memitem:a09f1f82da23c173c80a5bf055b89d51e" id="r_a09f1f82da23c173c80a5bf055b89d51e"><td class="memItemLeft" align="right" valign="top"><a id="a09f1f82da23c173c80a5bf055b89d51e" name="a09f1f82da23c173c80a5bf055b89d51e"></a>
+<a class="el" href="../../dc/d17/structxii_render_pipeline_pin.html">xiiRenderPipelinePin</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetDeclaration</b> ()</td></tr>
+<tr class="memitem:a40358929ef98ea9e21fc73077a922683" id="r_a40358929ef98ea9e21fc73077a922683"><td class="memItemLeft" align="right" valign="top"><a id="a40358929ef98ea9e21fc73077a922683" name="a40358929ef98ea9e21fc73077a922683"></a>
+const <a class="el" href="../../dc/d17/structxii_render_pipeline_pin.html">xiiRenderPipelinePin</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetDeclaration</b> () const</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-friends" class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
@@ -134,7 +138,7 @@ Additional Inherited Members</h2></td></tr>
 static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetStaticRTTI</b> ()</td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A native pass member declared with XII_MEMBER_PROPERTY. Its type fixes the resource kind and direction. The compiler assigns an occurrence-local binding index; this is neither a graph handle nor a persistent document identity. Authored requirements remain in the document's persistent pin configurations. </p>
+<div class="textblock"><p>A native pass member declared with XII_MEMBER_PROPERTY. Its type fixes the resource kind and direction. The compiler assigns an occurrence-local binding index; this is neither a graph handle nor a persistent document identity. Editable output members own their authored schema; other pins use persistent pin configurations. </p>
 </div><hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/runner/work/XII/XII/Source/Engine/GraphicsCore/Pipeline/<a class="el" href="../../d4/d83/_render_pipeline_pin_8h_source.html">RenderPipelinePin.h</a></li>
 <li>/home/runner/work/XII/XII/Source/Engine/GraphicsCore/Pipeline/Implementation/<b>RenderPipelinePin.cpp</b></li>

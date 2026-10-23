@@ -98,8 +98,7 @@ $(function(){initNavTree('d7/d73/structxii_render_pipeline_resource_descriptor.h
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a6b6f4584142dd6f536d58fa952ca4f47" id="r_a6b6f4584142dd6f536d58fa952ca4f47"><td class="memItemLeft" align="right" valign="top"><a id="a6b6f4584142dd6f536d58fa952ca4f47" name="a6b6f4584142dd6f536d58fa952ca4f47"></a>
-xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b>AddPass</b> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> name, <a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> type, const xiiVariantDictionary &amp;properties={})</td></tr>
+<tr class="memitem:a5b33b9b777db9d298f6946774e875ae4" id="r_a5b33b9b777db9d298f6946774e875ae4"><td class="memItemLeft" align="right" valign="top">xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5b33b9b777db9d298f6946774e875ae4">AddPass</a> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> name, const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a> *pType, const xiiVariantDictionary &amp;properties={})</td></tr>
 <tr class="memitem:a122bcaf6c2499cda34289f06cd734778" id="r_a122bcaf6c2499cda34289f06cd734778"><td class="memItemLeft" align="right" valign="top"><a id="a122bcaf6c2499cda34289f06cd734778" name="a122bcaf6c2499cda34289f06cd734778"></a>
 xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b>AddSubgraph</b> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> name, const <a class="el" href="../../dc/d1d/classxii_uuid.html">xiiUuid</a> &amp;definition)</td></tr>
 <tr class="memitem:ae9cc97e036248f696fe5c662517e2d07" id="r_ae9cc97e036248f696fe5c662517e2d07"><td class="memItemLeft" align="right" valign="top"><a id="ae9cc97e036248f696fe5c662517e2d07" name="ae9cc97e036248f696fe5c662517e2d07"></a>
@@ -140,7 +139,35 @@ xiiVariantDictionary&#160;</td><td class="memItemRight" valign="bottom"><b>m_Par
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Portable resource definition. Indices are serialized identities within this definition. RemovePass updates indices and removes incident connections. Compilation validates the entire definition. </p>
-</div><hr/>The documentation for this struct was generated from the following files:<ul>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a id="a5b33b9b777db9d298f6946774e875ae4" name="a5b33b9b777db9d298f6946774e875ae4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b33b9b777db9d298f6946774e875ae4">&#9670;&#160;</a></span>AddPass()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">xiiUInt32 xiiRenderPipelineResourceDescriptor::AddPass </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a> *</td>          <td class="paramname"><span class="paramname"><em>pType</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const xiiVariantDictionary &amp;</td>          <td class="paramname"><span class="paramname"><em>properties</em></span><span class="paramdefsep"> = </span><span class="paramdefval">{}</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Stores borrowed pass RTTI. Use xiiGetStaticRTTI&lt;T&gt;() for a known type, or an existing pass's GetDynamicRTTI() to preserve its runtime type. </p>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following files:<ul>
 <li>/home/runner/work/XII/XII/Source/Engine/GraphicsCore/Pipeline/<a class="el" href="../../d8/d07/_render_pipeline_resource_8h_source.html">RenderPipelineResource.h</a></li>
 <li>/home/runner/work/XII/XII/Source/Engine/GraphicsCore/Pipeline/Implementation/<b>RenderPipelineDescriptor.cpp</b></li>
 <li>/home/runner/work/XII/XII/Source/Engine/GraphicsCore/Pipeline/Implementation/<b>RenderPipelineMemory.cpp</b></li>

@@ -100,7 +100,7 @@ $(function(){initNavTree('d2/d0c/_linear_allocator__inl_8h_source.html','../../'
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno"><a class="line" href="../../d8/d4e/classxii_linear_allocator.html#a2969c32ff9f62eab80cef03dd095070d">    4</a></span><a class="code hl_function" href="../../d8/d4e/classxii_linear_allocator.html#a2969c32ff9f62eab80cef03dd095070d">xiiLinearAllocator&lt;TrackingMode, OverwriteMemoryOnReset&gt;::xiiLinearAllocator</a>(<a class="code hl_class" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sName, <a class="code hl_class" href="../../df/dbd/classxii_allocator.html">xiiAllocator</a>* pParent, xiiUInt32 uiInitialSize) :</div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>  SUPER(sName, pParent), m_DestructData(pParent), m_PtrToDestructDataIndexTable(pParent)</div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>{</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>  this-&gt;m_allocator.SetNextBucketSize(uiInitialSize);</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>  this-&gt;m_Allocator.SetNextBucketSize(uiInitialSize);</div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>}</div>
 </div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
@@ -116,19 +116,19 @@ $(function(){initNavTree('d2/d0c/_linear_allocator__inl_8h_source.html','../../'
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>{</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>  XII_LOCK(m_Mutex);</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>  <span class="keywordtype">void</span>* ptr = <a class="code hl_function" href="../../df/dbd/classxii_allocator.html#aa246212400ef2bde96df8527c821763e">SUPER::Allocate</a>(uiSize, uiAlign, destructorFunc);</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>  <span class="keywordtype">void</span>* pPtr = <a class="code hl_function" href="../../df/dbd/classxii_allocator.html#aa246212400ef2bde96df8527c821763e">SUPER::Allocate</a>(uiSize, uiAlign, destructorFunc);</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>  <span class="keywordflow">if</span> (destructorFunc != <span class="keyword">nullptr</span>)</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>  {</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    xiiUInt32 uiIndex = m_DestructData.GetCount();</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    m_PtrToDestructDataIndexTable.Insert(ptr, uiIndex);</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    m_PtrToDestructDataIndexTable.Insert(pPtr, uiIndex);</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keyword">auto</span>&amp; data  = m_DestructData.ExpandAndGetRef();</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    data.m_Func = destructorFunc;</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    data.m_Ptr  = ptr;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    data.m_Ptr  = pPtr;</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>  }</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>  <span class="keywordflow">return</span> ptr;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>  <span class="keywordflow">return</span> pPtr;</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>}</div>
 </div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
@@ -178,7 +178,7 @@ $(function(){initNavTree('d2/d0c/_linear_allocator__inl_8h_source.html','../../'
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>  m_DestructData.Clear();</div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>  m_PtrToDestructDataIndexTable.Clear();</div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>  this-&gt;m_allocator.Reset();</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>  this-&gt;m_Allocator.Reset();</div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>  <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (TrackingMode &gt;= xiiAllocatorTrackingMode::AllocationStats)</div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>  {</div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    xiiMemoryTracker::RemoveAllAllocations(this-&gt;m_Id);</div>
@@ -186,7 +186,7 @@ $(function(){initNavTree('d2/d0c/_linear_allocator__inl_8h_source.html','../../'
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>  <span class="keywordflow">else</span> <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (TrackingMode &gt;= xiiAllocatorTrackingMode::Basics)</div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>  {</div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <a class="code hl_struct" href="../../dc/de1/structxii_allocator_1_1_stats.html">xiiAllocator::Stats</a> stats;</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    this-&gt;m_allocator.FillStats(stats);</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    this-&gt;m_Allocator.FillStats(stats);</div>
 <div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
 <div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    xiiMemoryTracker::SetAllocatorStats(this-&gt;m_Id, stats);</div>
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>  }</div>
