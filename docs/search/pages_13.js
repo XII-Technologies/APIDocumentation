@@ -1,0 +1,5 @@
+var searchData=
+[
+  ['xii_0',['XII',['../d0/dfc/md__2home_2runner_2work_2_x_i_i_2_x_i_i_2_documentation_2_building.html',1,'Building and testing XII'],['../index.html',1,'XII']]],
+  ['xii_20editor_20workspace_1',['XII Editor workspace',['../d9/def/md__2home_2runner_2work_2_x_i_i_2_x_i_i_2_documentation_2_editor_user_experience.html',1,'']]]
+];

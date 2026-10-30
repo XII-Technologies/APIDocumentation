@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['validate_0',['Validate',['../d1/d68/structxii_decal_atlas_resource_descriptor.html#a62867e5be561498db79e0b695909905b',1,'xiiDecalAtlasResourceDescriptor::Validate()'],['../d9/d59/structxii_decal_resource_descriptor.html#a5892aefab24cc83423a3d98308aa6cab',1,'xiiDecalResourceDescriptor::Validate()'],['../d2/dbe/structxii_particle_graph_resource_descriptor.html#a59109933d64dc82d85fa29256fb37529',1,'xiiParticleGraphResourceDescriptor::Validate()']]],
+  ['validate_0',['Validate',['../d9/d45/classxii_settings.html#a70882a43c0b7118abeff6d1b16f2a3bd',1,'xiiSettings::Validate()'],['../d1/d68/structxii_decal_atlas_resource_descriptor.html#a62867e5be561498db79e0b695909905b',1,'xiiDecalAtlasResourceDescriptor::Validate()'],['../d9/d59/structxii_decal_resource_descriptor.html#a5892aefab24cc83423a3d98308aa6cab',1,'xiiDecalResourceDescriptor::Validate()'],['../d2/dbe/structxii_particle_graph_resource_descriptor.html#a59109933d64dc82d85fa29256fb37529',1,'xiiParticleGraphResourceDescriptor::Validate()']]],
   ['validatedevice_1',['ValidateDevice',['../d3/d8d/classxii_render_pipeline_settings.html#a86cc12502335aded44bbe9a95d203faf',1,'xiiRenderPipelineSettings']]],
   ['validatedevicewaitforfence_2',['ValidateDeviceWaitForFence',['../d6/d79/classxii_g_a_l_fence.html#af403a72e94eb3c78549f9d87dd765283',1,'xiiGALFence']]],
   ['validatefencesignal_3',['ValidateFenceSignal',['../d6/d79/classxii_g_a_l_fence.html#a1d0c24d9ac44561a91899b4644a1a9c3',1,'xiiGALFence']]],

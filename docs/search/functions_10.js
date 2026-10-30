@@ -6,7 +6,9 @@ var searchData=
   ['querylocaltransform_3',['QueryLocalTransform',['../d1/dbf/classxii_game_object_document.html#a87b5c39e38b463d72a30f3de3a4c1c59',1,'xiiGameObjectDocument']]],
   ['querypixmap_4',['QueryPixmap',['../d1/d47/classxii_qt_image_cache.html#a9a2d065eccef5e5f557c41f6725bc9d3',1,'xiiQtImageCache']]],
   ['querypixmapfortype_5',['QueryPixmapForType',['../d1/d47/classxii_qt_image_cache.html#ae16fc033c195b0f1127769b27d76a882',1,'xiiQtImageCache']]],
-  ['querypreferences_6',['QueryPreferences',['../da/d6a/classxii_preferences.html#a05a44b32df9ffacb89f706831a9bc069',1,'xiiPreferences::QueryPreferences(const xiiDocument *pDocument=nullptr)'],['../da/d6a/classxii_preferences.html#a0a21091555115c75fccb41bcb4fcb9c4',1,'xiiPreferences::QueryPreferences(const xiiRTTI *pRtti, const xiiDocument *pDocument=nullptr)']]],
+  ['querysettings_6',['QuerySettings',['../d1/d39/classxii_editor_settings.html#a8669755488f2194bbd5725628296de0b',1,'xiiEditorSettings']]],
   ['querytypeimage_7',['QueryTypeImage',['../d1/d47/classxii_qt_image_cache.html#a9cd058e760b5b4ee73145af765c7df5b',1,'xiiQtImageCache']]],
-  ['quicksort_8',['QuickSort',['../da/d89/classxii_sorting.html#a3e6e0255ac3dc4d93eff8b3c18aedf4c',1,'xiiSorting::QuickSort(Container &amp;ref_container, const Comparer &amp;comparer=Comparer())'],['../da/d89/classxii_sorting.html#a457862f69854abf9f9bf931702281109',1,'xiiSorting::QuickSort(xiiArrayPtr&lt; T &gt; &amp;ref_pArray, const Comparer &amp;comparer=Comparer())']]]
+  ['queuecheckfilesystem_8',['QueueCheckFileSystem',['../d8/dbd/classxii_asset_curator.html#a9460df52371b73badecb0728e8b1c528',1,'xiiAssetCurator']]],
+  ['queuetransformassets_9',['QueueTransformAssets',['../d7/d75/classxii_asset_processor.html#ab6af8b4c29b8bb95afc68885ea4f4ccd',1,'xiiAssetProcessor']]],
+  ['quicksort_10',['QuickSort',['../da/d89/classxii_sorting.html#a3e6e0255ac3dc4d93eff8b3c18aedf4c',1,'xiiSorting::QuickSort(Container &amp;ref_container, const Comparer &amp;comparer=Comparer())'],['../da/d89/classxii_sorting.html#a457862f69854abf9f9bf931702281109',1,'xiiSorting::QuickSort(xiiArrayPtr&lt; T &gt; &amp;ref_pArray, const Comparer &amp;comparer=Comparer())']]]
 ];

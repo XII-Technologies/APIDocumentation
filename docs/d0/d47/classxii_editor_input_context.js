@@ -5,6 +5,7 @@ var classxii_editor_input_context =
       [ "WrapAtScreenBorders", "d0/d47/classxii_editor_input_context.html#aed953d853f8fffd5fb4c4c5a02f10d20a9ce50711168c4d6494eb1fcf0a032f92", null ],
       [ "HideAndWrapAtScreenBorders", "d0/d47/classxii_editor_input_context.html#aed953d853f8fffd5fb4c4c5a02f10d20a1baaa7d4c34ecedcca7593700a171f1a", null ]
     ] ],
+    [ "IsPickingGizmosAllowed", "d0/d47/classxii_editor_input_context.html#a03bcb5b7a63c88e33f8337baa5c86463", null ],
     [ "SetMouseMode", "d0/d47/classxii_editor_input_context.html#a721d6788faf3012cb2c1001f55b53f78", null ],
     [ "SetShortcutsDisabled", "d0/d47/classxii_editor_input_context.html#a04a663f2cf98ecd48244cff1ab058e50", null ],
     [ "UpdateMouseMode", "d0/d47/classxii_editor_input_context.html#af8ee0243a403620260af48a27fc62d58", null ]

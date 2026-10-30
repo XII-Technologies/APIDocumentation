@@ -127,6 +127,7 @@ xiiUInt64&#160;</td><td class="memItemRight" valign="bottom"><b>GetFrameIndex</b
 <tr class="memitem:a912d3c33a68b8ed38369b3ededea5ca7" id="r_a912d3c33a68b8ed38369b3ededea5ca7"><td class="memItemLeft" align="right" valign="top"><a id="a912d3c33a68b8ed38369b3ededea5ca7" name="a912d3c33a68b8ed38369b3ededea5ca7"></a>
 <a class="el" href="../../d6/d0c/classxii_hashed_string.html">xiiHashedString</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetPassName</b> () const</td></tr>
 <tr class="memdesc:a912d3c33a68b8ed38369b3ededea5ca7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the pass name for labeling / assertions. <br /></td></tr>
+<tr class="memitem:a4b1c576e188346d4d406a197f5bb85d0" id="r_a4b1c576e188346d4d406a197f5bb85d0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4b1c576e188346d4d406a197f5bb85d0">ReportFailure</a> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> reason) const</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-friends" class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
@@ -165,8 +166,27 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>xiiRenderGraph</b></
 
 </div>
 </div>
+<a id="a4b1c576e188346d4d406a197f5bb85d0" name="a4b1c576e188346d4d406a197f5bb85d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b1c576e188346d4d406a197f5bb85d0">&#9670;&#160;</a></span>ReportFailure()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiRenderGraphPassContext::ReportFailure </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>reason</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Fail this recording and stop dependent passes. The graph submits the valid command prefix so GAL's tracked states continue to describe real GPU work. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/runner/work/XII/XII/Source/Engine/GraphicsCore/Pipeline/<a class="el" href="../../d4/df0/_render_graph_8h_source.html">RenderGraph.h</a></li>
+<li>/home/runner/work/XII/XII/Source/Engine/GraphicsCore/Pipeline/Implementation/<b>RenderGraph.cpp</b></li>
 <li>/home/runner/work/XII/XII/Source/Engine/GraphicsCore/Pipeline/Implementation/<a class="el" href="../../de/d2a/_render_graph__inl_8h_source.html">RenderGraph_inl.h</a></li>
 </ul>
 </div><!-- contents -->

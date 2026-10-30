@@ -56,6 +56,7 @@ var searchData=
   ['trianglestripadjacent_53',['TriangleStripAdjacent',['../db/d19/structxii_g_a_l_primitive_topology.html#a7b7c5b79846d73ceaf06670334c7388eac103c867d71137d28812f9fcdb948bbb',1,'xiiGALPrimitiveTopology']]],
   ['triggeredmanually_54',['TriggeredManually',['../d8/d36/structxii_transform_flags.html#ae22d41ae23344d4d6dedebb04a6ef21ea1e74b95a0f9948f0c2f1242a529d7983',1,'xiiTransformFlags']]],
   ['twosamples_55',['TwoSamples',['../d3/d01/structxii_g_a_l_sample_count.html#a9882b9a04c908ada09066d29eee92e7cacf186d0a0579b639a7cb34cdf06438ae',1,'xiiGALSampleCount']]],
-  ['typedobject_56',['TypedObject',['../dd/dba/structxii_variant_type.html#a38d867476ba7137c38a09976ece9ee6ba43f41acdb77f27ddf59975457ab79032',1,'xiiVariantType::TypedObject'],['../d9/d79/structxii_variant_class.html#a7b8ed3bd3c47739ab97ebbe51ceef0c2aa73b4949946a8ab33d6e2591547730cf',1,'xiiVariantClass::TypedObject']]],
-  ['typedpointer_57',['TypedPointer',['../dd/dba/structxii_variant_type.html#a38d867476ba7137c38a09976ece9ee6baa11a3d6923f73b22de869a2fd6921913',1,'xiiVariantType']]]
+  ['twosided_56',['TwoSided',['../d2/d52/structxii_gpu_instance_flags.html#ad1a2ab4b7e82bfb5727bec74b5ba7ef8a7387b6e94f4934a10b4e8a02d95cd7a2',1,'xiiGpuInstanceFlags']]],
+  ['typedobject_57',['TypedObject',['../dd/dba/structxii_variant_type.html#a38d867476ba7137c38a09976ece9ee6ba43f41acdb77f27ddf59975457ab79032',1,'xiiVariantType::TypedObject'],['../d9/d79/structxii_variant_class.html#a7b8ed3bd3c47739ab97ebbe51ceef0c2aa73b4949946a8ab33d6e2591547730cf',1,'xiiVariantClass::TypedObject']]],
+  ['typedpointer_58',['TypedPointer',['../dd/dba/structxii_variant_type.html#a38d867476ba7137c38a09976ece9ee6baa11a3d6923f73b22de869a2fd6921913',1,'xiiVariantType']]]
 ];

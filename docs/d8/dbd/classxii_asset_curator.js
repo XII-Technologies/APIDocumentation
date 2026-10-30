@@ -29,6 +29,7 @@ var classxii_asset_curator =
     [ "IsReferenced", "d8/dbd/classxii_asset_curator.html#a13c3d06528b713bf5c8fab1ea235053d", null ],
     [ "NotifyOfAssetChange", "d8/dbd/classxii_asset_curator.html#a108d2eb48a97965cef3b1d0674471aea", null ],
     [ "NotifyOfFileChange", "d8/dbd/classxii_asset_curator.html#a2360ec42953bb36d6f579dc241032556", null ],
+    [ "QueueCheckFileSystem", "d8/dbd/classxii_asset_curator.html#a9460df52371b73badecb0728e8b1c528", null ],
     [ "ReloadAssetProfiles", "d8/dbd/classxii_asset_curator.html#a885017a8a2e602b8eda5877ead89fe03", null ],
     [ "ResaveAllAssets", "d8/dbd/classxii_asset_curator.html#ac7aa96c71c325c1d53330ad239e18597", null ],
     [ "SaveAssetProfiles", "d8/dbd/classxii_asset_curator.html#a1524f17af9e297902257df5cf3ecc02d", null ],

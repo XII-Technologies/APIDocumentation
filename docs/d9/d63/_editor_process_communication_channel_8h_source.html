@@ -111,38 +111,40 @@ $(function(){initNavTree('d9/d63/_editor_process_communication_channel_8h_source
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="../../d4/ddc/classxii_editor_process_communication_channel.html">   15</a></span><span class="keyword">class </span>XII_EDITORFRAMEWORK_DLL <a class="code hl_class" href="../../d4/ddc/classxii_editor_process_communication_channel.html">xiiEditorProcessCommunicationChannel</a> : <span class="keyword">public</span> <a class="code hl_function" href="../../d3/d6f/classxii_process_communication_channel.html#a7c9d719063ecda0036a312a795fcdc0c">xiiProcessCommunicationChannel</a></div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>{</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>  <a class="code hl_struct" href="../../dd/dad/structxii_result.html">xiiResult</a> <a class="code hl_function" href="../../d4/ddc/classxii_editor_process_communication_channel.html#a065f366691766c74ff9db0c27832fd75">StartClientProcess</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* szProcess, <span class="keyword">const</span> QStringList&amp; args, <span class="keywordtype">bool</span> bRemote, <span class="keyword">const</span> <a class="code hl_class" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>* pFirstAllowedMessageType = <span class="keyword">nullptr</span>, xiiUInt32 uiMemSize = 1024 * 1024 * 10);</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>  <a class="code hl_struct" href="../../dd/dad/structxii_result.html">xiiResult</a> StartClientProcess(<span class="keyword">const</span> <span class="keywordtype">char</span>* szProcess, <span class="keyword">const</span> QStringList&amp; args, <span class="keywordtype">bool</span> bRemote, <span class="keyword">const</span> <a class="code hl_class" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>* pFirstAllowedMessageType = <span class="keyword">nullptr</span>, xiiUInt32 uiMemSize = 1024 * 1024 * 10);</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>  <span class="keywordtype">bool</span> IsClientAlive() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>  <span class="keywordtype">void</span> CloseConnection();</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>  xiiString GetStdoutContents();</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>  <a class="code hl_struct" href="../../dd/dad/structxii_result.html">xiiResult</a> <a class="code hl_function" href="../../d4/ddc/classxii_editor_process_communication_channel.html#a7f578b0f741ccde12d7f57723077ec66">WaitForStartup</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>* pResponseType = <span class="keyword">nullptr</span>);</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>  QProcess* m_pClientProcess = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>};</div>
-</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>  <span class="keywordtype">void</span> CloseConnection();</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  xiiString GetStdoutContents();</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
-<div class="foldopen" id="foldopen00030" data-start="{" data-end="};">
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="../../d6/d58/classxii_editor_process_remote_communication_channel.html">   30</a></span><span class="keyword">class </span>XII_EDITORFRAMEWORK_DLL <a class="code hl_class" href="../../d6/d58/classxii_editor_process_remote_communication_channel.html">xiiEditorProcessRemoteCommunicationChannel</a> : <span class="keyword">public</span> <a class="code hl_function" href="../../d3/d6f/classxii_process_communication_channel.html#a7c9d719063ecda0036a312a795fcdc0c">xiiProcessCommunicationChannel</a></div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>{</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>  <a class="code hl_struct" href="../../dd/dad/structxii_result.html">xiiResult</a> ConnectToServer(<span class="keyword">const</span> <span class="keywordtype">char</span>* szAddress);</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>  <span class="keywordtype">bool</span> IsConnected() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  <span class="keywordtype">void</span> CloseConnection();</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  <span class="keywordtype">void</span> TryConnect();</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>};</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>  QProcess* m_pClientProcess = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>};</div>
 </div>
-<div class="ttc" id="aclass_q_list_html"><div class="ttname"><a href="../../db/daa/class_q_list.html">QList</a></div><div class="ttdoc">Copyright (c) Theophilus Eriata. All Rights Reserved.</div><div class="ttdef"><b>Definition</b> EditorApp.moc.h:31</div></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="foldopen" id="foldopen00034" data-start="{" data-end="};">
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="../../d6/d58/classxii_editor_process_remote_communication_channel.html">   34</a></span><span class="keyword">class </span>XII_EDITORFRAMEWORK_DLL <a class="code hl_class" href="../../d6/d58/classxii_editor_process_remote_communication_channel.html">xiiEditorProcessRemoteCommunicationChannel</a> : <span class="keyword">public</span> <a class="code hl_function" href="../../d3/d6f/classxii_process_communication_channel.html#a7c9d719063ecda0036a312a795fcdc0c">xiiProcessCommunicationChannel</a></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>{</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  <a class="code hl_struct" href="../../dd/dad/structxii_result.html">xiiResult</a> ConnectToServer(<span class="keyword">const</span> <span class="keywordtype">char</span>* szAddress);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  <span class="keywordtype">bool</span> IsConnected() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  <span class="keywordtype">void</span> CloseConnection();</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  <span class="keywordtype">void</span> TryConnect();</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>};</div>
+</div>
+<div class="ttc" id="aclass_q_list_html"><div class="ttname"><a href="../../db/daa/class_q_list.html">QList</a></div><div class="ttdoc">Copyright (c) Theophilus Eriata. All Rights Reserved.</div><div class="ttdef"><b>Definition</b> EditorApp.moc.h:33</div></div>
 <div class="ttc" id="aclassxii_editor_process_communication_channel_html"><div class="ttname"><a href="../../d4/ddc/classxii_editor_process_communication_channel.html">xiiEditorProcessCommunicationChannel</a></div><div class="ttdef"><b>Definition</b> EditorProcessCommunicationChannel.h:16</div></div>
-<div class="ttc" id="aclassxii_editor_process_communication_channel_html_a065f366691766c74ff9db0c27832fd75"><div class="ttname"><a href="../../d4/ddc/classxii_editor_process_communication_channel.html#a065f366691766c74ff9db0c27832fd75">xiiEditorProcessCommunicationChannel::StartClientProcess</a></div><div class="ttdeci">xiiResult StartClientProcess(const char *szProcess, const QStringList &amp;args, bool bRemote, const xiiRTTI *pFirstAllowedMessageType=nullptr, xiiUInt32 uiMemSize=1024 *1024 *10)</div><div class="ttdoc">Copyright (c) Theophilus Eriata. All Rights Reserved.</div><div class="ttdef"><b>Definition</b> EditorProcessCommunicationChannel.cpp:11</div></div>
-<div class="ttc" id="aclassxii_editor_process_remote_communication_channel_html"><div class="ttname"><a href="../../d6/d58/classxii_editor_process_remote_communication_channel.html">xiiEditorProcessRemoteCommunicationChannel</a></div><div class="ttdef"><b>Definition</b> EditorProcessCommunicationChannel.h:31</div></div>
+<div class="ttc" id="aclassxii_editor_process_communication_channel_html_a7f578b0f741ccde12d7f57723077ec66"><div class="ttname"><a href="../../d4/ddc/classxii_editor_process_communication_channel.html#a7f578b0f741ccde12d7f57723077ec66">xiiEditorProcessCommunicationChannel::WaitForStartup</a></div><div class="ttdeci">xiiResult WaitForStartup(const xiiRTTI *pResponseType=nullptr)</div><div class="ttdoc">Copyright (c) Theophilus Eriata. All Rights Reserved.</div><div class="ttdef"><b>Definition</b> EditorProcessCommunicationChannel.cpp:14</div></div>
+<div class="ttc" id="aclassxii_editor_process_remote_communication_channel_html"><div class="ttname"><a href="../../d6/d58/classxii_editor_process_remote_communication_channel.html">xiiEditorProcessRemoteCommunicationChannel</a></div><div class="ttdef"><b>Definition</b> EditorProcessCommunicationChannel.h:35</div></div>
 <div class="ttc" id="aclassxii_process_communication_channel_html_a7c9d719063ecda0036a312a795fcdc0c"><div class="ttname"><a href="../../d3/d6f/classxii_process_communication_channel.html#a7c9d719063ecda0036a312a795fcdc0c">xiiProcessCommunicationChannel::xiiProcessCommunicationChannel</a></div><div class="ttdeci">xiiProcessCommunicationChannel()</div><div class="ttdoc">Copyright (c) Theophilus Eriata. All Rights Reserved.</div></div>
 <div class="ttc" id="aclassxii_r_t_t_i_html"><div class="ttname"><a href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a></div><div class="ttdef"><b>Definition</b> RTTI.h:32</div></div>
 <div class="ttc" id="astructxii_result_html"><div class="ttname"><a href="../../dd/dad/structxii_result.html">xiiResult</a></div><div class="ttdef"><b>Definition</b> Types.h:65</div></div>

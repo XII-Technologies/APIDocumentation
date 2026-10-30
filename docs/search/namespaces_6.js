@@ -27,9 +27,10 @@ var searchData=
   ['xiiscreenspacepassutils_24',['xiiScreenSpacePassUtils',['../d7/de5/namespacexii_screen_space_pass_utils.html',1,'']]],
   ['xiisimdconversion_25',['xiiSimdConversion',['../df/d1d/namespacexii_simd_conversion.html',1,'']]],
   ['xiisparsevoxelpassutils_26',['xiiSparseVoxelPassUtils',['../d5/de7/namespacexii_sparse_voxel_pass_utils.html',1,'']]],
-  ['xiistacktracelogparser_27',['xiiStackTraceLogParser',['../d6/d18/namespacexii_stack_trace_log_parser.html',1,'']]],
-  ['xiistatemachineinternal_28',['xiiStateMachineInternal',['../dd/d71/namespacexii_state_machine_internal.html',1,'']]],
-  ['xiistreamutils_29',['xiiStreamUtils',['../de/da5/namespacexii_stream_utils.html',1,'']]],
-  ['xiisurfacelightingpassutils_30',['xiiSurfaceLightingPassUtils',['../d3/da7/namespacexii_surface_lighting_pass_utils.html',1,'']]],
-  ['xiitokenparseutils_31',['xiiTokenParseUtils',['../d8/d82/namespacexii_token_parse_utils.html',1,'']]]
+  ['xiispotshadowpassutils_27',['xiiSpotShadowPassUtils',['../d1/d7f/namespacexii_spot_shadow_pass_utils.html',1,'']]],
+  ['xiistacktracelogparser_28',['xiiStackTraceLogParser',['../d6/d18/namespacexii_stack_trace_log_parser.html',1,'']]],
+  ['xiistatemachineinternal_29',['xiiStateMachineInternal',['../dd/d71/namespacexii_state_machine_internal.html',1,'']]],
+  ['xiistreamutils_30',['xiiStreamUtils',['../de/da5/namespacexii_stream_utils.html',1,'']]],
+  ['xiisurfacelightingpassutils_31',['xiiSurfaceLightingPassUtils',['../d3/da7/namespacexii_surface_lighting_pass_utils.html',1,'']]],
+  ['xiitokenparseutils_32',['xiiTokenParseUtils',['../d8/d82/namespacexii_token_parse_utils.html',1,'']]]
 ];

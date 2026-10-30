@@ -189,6 +189,7 @@ xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b>GetRenderResolut
 const <a class="el" href="../../da/d3c/structxii_view_data.html">xiiViewData</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetData</b> () const</td></tr>
 <tr class="memitem:aea5e8c5fea73f3ae4c675ba32442c3ff" id="r_aea5e8c5fea73f3ae4c675ba32442c3ff"><td class="memItemLeft" align="right" valign="top"><a id="aea5e8c5fea73f3ae4c675ba32442c3ff" name="aea5e8c5fea73f3ae4c675ba32442c3ff"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsValid</b> () const</td></tr>
+<tr class="memitem:a073e62cbea7115b38862296669a31504" id="r_a073e62cbea7115b38862296669a31504"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a073e62cbea7115b38862296669a31504">GetLastRenderResult</a> () const</td></tr>
 <tr class="memitem:add2fb9c0dbdba052afbf1e04ffcbe9b0" id="r_add2fb9c0dbdba052afbf1e04ffcbe9b0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#add2fb9c0dbdba052afbf1e04ffcbe9b0">SetRenderEnabled</a> (bool bEnabled)</td></tr>
 <tr class="memitem:aac07f71288690df4e6a4542801e219a8" id="r_aac07f71288690df4e6a4542801e219a8"><td class="memItemLeft" align="right" valign="top"><a id="aac07f71288690df4e6a4542801e219a8" name="aac07f71288690df4e6a4542801e219a8"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsRenderEnabled</b> () const</td></tr>
@@ -362,6 +363,32 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>
 </div><div class="memdoc">
 <p>Calculates the normalized screen-space coordinate ([0; 1] range) that the given world-space point projects to.</p>
 <p>Returns XII_FAILURE, if the point could not be projected into screen-space. </p>
+
+</div>
+</div>
+<a id="a073e62cbea7115b38862296669a31504" name="a073e62cbea7115b38862296669a31504"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a073e62cbea7115b38862296669a31504">&#9670;&#160;</a></span>GetLastRenderResult()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a> xiiView::GetLastRenderResult </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Result of the world's last attempt to build and submit this view. Success does not imply GPU completion; inspect the instance acquire result for fallback use. </p>
 
 </div>
 </div>

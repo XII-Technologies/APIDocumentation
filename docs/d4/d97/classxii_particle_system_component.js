@@ -5,6 +5,8 @@ var classxii_particle_system_component =
     [ "GetLocalBounds", "d4/d97/classxii_particle_system_component.html#a81cb5e134c6afef1ca8120f827ec58dd", null ],
     [ "GetParticleGraph", "d4/d97/classxii_particle_system_component.html#a61cb894c182183a01a3be7bfe34a933d", null ],
     [ "GetRuntime", "d4/d97/classxii_particle_system_component.html#a9d89f063e1b69bcf34b65d588c17a64c", null ],
+    [ "IsRenderDataViewIndependent", "d4/d97/classxii_particle_system_component.html#a11d90ca3b8ff266e39ab872e98242e37", null ],
+    [ "OnActivated", "d4/d97/classxii_particle_system_component.html#a3d1dc4eed2e3507f8a9ffded9d246823", null ],
     [ "PrepareRuntimeResources", "d4/d97/classxii_particle_system_component.html#a3635015e5c96368d8d4d77646350f5a3", null ],
     [ "SerializeComponent", "d4/d97/classxii_particle_system_component.html#a6ae4736de7d95ce4be565657b300e082", null ],
     [ "SetDescriptor", "d4/d97/classxii_particle_system_component.html#a69dfb9b08f361be9d601cc1bd8458c69", null ],

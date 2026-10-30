@@ -115,8 +115,7 @@ Public Member Functions</h2></td></tr>
 <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>SetTexture2D</b> (<a class="el" href="../../d0/db0/structxii_material_parameter_id.html">xiiMaterialParameterId</a> id, const xiiTexture2DResourceHandle &amp;hTexture)</td></tr>
 <tr class="memitem:a589c9ec43a39672fbc40714e68bbafaa" id="r_a589c9ec43a39672fbc40714e68bbafaa"><td class="memItemLeft" align="right" valign="top"><a id="a589c9ec43a39672fbc40714e68bbafaa" name="a589c9ec43a39672fbc40714e68bbafaa"></a>
 <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>SetTextureCube</b> (<a class="el" href="../../d0/db0/structxii_material_parameter_id.html">xiiMaterialParameterId</a> id, const xiiTextureCubeResourceHandle &amp;hTexture)</td></tr>
-<tr class="memitem:a12946329d82de4f54672e846c1057f32" id="r_a12946329d82de4f54672e846c1057f32"><td class="memItemLeft" align="right" valign="top"><a id="a12946329d82de4f54672e846c1057f32" name="a12946329d82de4f54672e846c1057f32"></a>
-<a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>SetBindlessIndex</b> (<a class="el" href="../../d0/db0/structxii_material_parameter_id.html">xiiMaterialParameterId</a> id, xiiUInt32 uiBindlessIndex)</td></tr>
+<tr class="memitem:a3eeb9b2f28b7c298b5707d4a19a917e7" id="r_a3eeb9b2f28b7c298b5707d4a19a917e7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3eeb9b2f28b7c298b5707d4a19a917e7">SetBindlessIndex</a> (<a class="el" href="../../d0/db0/structxii_material_parameter_id.html">xiiMaterialParameterId</a> id, xiiUInt32 uiBindlessIndex, xiiUInt32 uiSamplerIndex=xiiInvalidIndex)</td></tr>
 <tr class="memitem:a1fc314778dae8333541e4b4df932231d" id="r_a1fc314778dae8333541e4b4df932231d"><td class="memItemLeft" align="right" valign="top"><a id="a1fc314778dae8333541e4b4df932231d" name="a1fc314778dae8333541e4b4df932231d"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetRuntimeState</b> (const <a class="el" href="../../d2/da2/structxii_material_runtime_state.html">xiiMaterialRuntimeState</a> &amp;runtimeState)</td></tr>
 <tr class="memitem:a5beff3bda228f5c97bdf9eb7cde20389" id="r_a5beff3bda228f5c97bdf9eb7cde20389"><td class="memItemLeft" align="right" valign="top"><a id="a5beff3bda228f5c97bdf9eb7cde20389" name="a5beff3bda228f5c97bdf9eb7cde20389"></a>
@@ -174,6 +173,33 @@ xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b>GetRefCount</b> 
       </table>
 </div><div class="memdoc">
 <p>Copies a coherent view and consumes the aggregate dirty flags. GPU storage uses per-frame revisions as the final authority, so consuming these flags never loses an upload. </p>
+
+</div>
+</div>
+<a id="a3eeb9b2f28b7c298b5707d4a19a917e7" name="a3eeb9b2f28b7c298b5707d4a19a917e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3eeb9b2f28b7c298b5707d4a19a917e7">&#9670;&#160;</a></span>SetBindlessIndex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a> xiiMaterialInstance::SetBindlessIndex </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d0/db0/structxii_material_parameter_id.html">xiiMaterialParameterId</a></td>          <td class="paramname"><span class="paramname"><em>id</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">xiiUInt32</td>          <td class="paramname"><span class="paramname"><em>uiBindlessIndex</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">xiiUInt32</td>          <td class="paramname"><span class="paramname"><em>uiSamplerIndex</em></span><span class="paramdefsep"> = </span><span class="paramdefval">xiiInvalidIndex</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Indices are renderer-owned and must remain live through the consuming frame. An invalid sampler index selects the shader's legacy fallback sampler. </p>
 
 </div>
 </div>

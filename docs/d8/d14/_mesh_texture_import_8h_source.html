@@ -97,20 +97,23 @@ $(function(){initNavTree('d8/d14/_mesh_texture_import_8h_source.html','../../','
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;Foundation/Strings/String.h&gt;</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;Foundation/Types/Status.h&gt;</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;Texture/Converter/TextureConverterEnums.h&gt;</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">struct </span><a class="code hl_struct" href="../../db/db1/structxii_model_material_texture.html">xiiModelMaterialTexture</a>;</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">struct </span><a class="code hl_struct" href="../../d4/df2/structxii_model_mesh_import.html">xiiModelMeshImport</a>;</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">namespace </span>xiiMeshImportUtils</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>{</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>  xiiStatus ImportTexture(<span class="keyword">const</span> xiiModelMaterialTexture&amp; texture, <span class="keyword">const</span> xiiModelMeshImport&amp; imported, xiiStringView sSourceDirectory, xiiStringView sTargetDirectory, <a class="code hl_enumeration" href="../../dd/de6/structxii_texture_converter_usage.html#ac62755d54b6443a29f4b06aa46a24242">xiiTextureConverterUsage::Enum</a> usage, <span class="keywordtype">bool</span> bAlpha, xiiString&amp; out_sAsset);</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>  xiiStatus ImportMetallicRoughnessTexture(<span class="keyword">const</span> xiiModelMaterialTexture* pRoughness, <span class="keyword">const</span> xiiModelMaterialTexture* pMetallic, <span class="keyword">const</span> xiiModelMeshImport&amp; imported, xiiStringView sSourceDirectory, xiiStringView sTargetDirectory, xiiString&amp; out_sAsset);</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>} <span class="comment">// namespace xiiMeshImportUtils</span></div>
-<div class="ttc" id="astructxii_model_material_texture_html"><div class="ttname"><a href="../../db/db1/structxii_model_material_texture.html">xiiModelMaterialTexture</a></div><div class="ttdef"><b>Definition</b> MeshImport.h:37</div></div>
-<div class="ttc" id="astructxii_model_mesh_import_html"><div class="ttname"><a href="../../d4/df2/structxii_model_mesh_import.html">xiiModelMeshImport</a></div><div class="ttdef"><b>Definition</b> MeshImport.h:113</div></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;EditorFramework/Assets/Declarations.h&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;Foundation/Strings/String.h&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;Foundation/Types/Status.h&gt;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;Texture/Converter/TextureConverterEnums.h&gt;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">struct </span><a class="code hl_struct" href="../../db/db1/structxii_model_material_texture.html">xiiModelMaterialTexture</a>;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">struct </span><a class="code hl_struct" href="../../d4/df2/structxii_model_mesh_import.html">xiiModelMeshImport</a>;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">namespace </span>xiiMeshImportUtils</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>{</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>  xiiTransformStatus PrepareEmbeddedTextures(<span class="keyword">const</span> xiiModelMeshImport&amp; imported, xiiStringView sDocumentPath, <span class="keywordtype">bool</span> bAllowImport);</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>  xiiStatus ResolveAssetReference(xiiStringView sAbsolutePath, xiiString&amp; out_sAsset);</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>  xiiStatus ImportTexture(<span class="keyword">const</span> xiiModelMaterialTexture&amp; texture, <span class="keyword">const</span> xiiModelMeshImport&amp; imported, xiiStringView sSourceDirectory, xiiStringView sTargetDirectory, <a class="code hl_enumeration" href="../../dd/de6/structxii_texture_converter_usage.html#ac62755d54b6443a29f4b06aa46a24242">xiiTextureConverterUsage::Enum</a> usage, <span class="keywordtype">bool</span> bAlpha, xiiString&amp; out_sAsset);</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>  xiiStatus ImportMetallicRoughnessTexture(<span class="keyword">const</span> xiiModelMaterialTexture* pRoughness, <span class="keyword">const</span> xiiModelMaterialTexture* pMetallic, <span class="keyword">const</span> xiiModelMeshImport&amp; imported, xiiStringView sSourceDirectory, xiiStringView sTargetDirectory, xiiString&amp; out_sAsset);</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>} <span class="comment">// namespace xiiMeshImportUtils</span></div>
+<div class="ttc" id="astructxii_model_material_texture_html"><div class="ttname"><a href="../../db/db1/structxii_model_material_texture.html">xiiModelMaterialTexture</a></div><div class="ttdef"><b>Definition</b> MeshImport.h:38</div></div>
+<div class="ttc" id="astructxii_model_mesh_import_html"><div class="ttname"><a href="../../d4/df2/structxii_model_mesh_import.html">xiiModelMeshImport</a></div><div class="ttdef"><b>Definition</b> MeshImport.h:123</div></div>
 <div class="ttc" id="astructxii_texture_converter_usage_html_ac62755d54b6443a29f4b06aa46a24242"><div class="ttname"><a href="../../dd/de6/structxii_texture_converter_usage.html#ac62755d54b6443a29f4b06aa46a24242">xiiTextureConverterUsage::Enum</a></div><div class="ttdeci">Enum</div><div class="ttdef"><b>Definition</b> TextureConverterEnums.h:73</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

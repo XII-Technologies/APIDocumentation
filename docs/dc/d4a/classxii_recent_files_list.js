@@ -5,5 +5,6 @@ var classxii_recent_files_list =
     [ "GetFileList", "dc/d4a/classxii_recent_files_list.html#a595be0dace867c13500f8832e994fdbd", null ],
     [ "Insert", "dc/d4a/classxii_recent_files_list.html#a507a721894bad82753ddb9e339f3f9ba", null ],
     [ "Load", "dc/d4a/classxii_recent_files_list.html#af83c65ff81ff8c1e549510525a9f6b2c", null ],
+    [ "Remove", "dc/d4a/classxii_recent_files_list.html#ac4809738ff49f29618b8151177ba25ec", null ],
     [ "Save", "dc/d4a/classxii_recent_files_list.html#aabc6d6d2f3ae6a10eb9c256eb1439133", null ]
 ];

@@ -5,6 +5,7 @@ var classxii_camera =
     [ "GetCenterDirRight", "dc/d68/classxii_camera.html#a43352fae2c899cf7045b52450c1ef0c1", null ],
     [ "GetCenterDirUp", "dc/d68/classxii_camera.html#af3f9ce650db14067056d4a1bdeeb2f1a", null ],
     [ "GetCenterPosition", "dc/d68/classxii_camera.html#a7bd5b333ba3bb76d4c99653d7c110d85", null ],
+    [ "GetCoordinateSystem", "dc/d68/classxii_camera.html#a9379d1138acff2d24aec3b7fb0d874ba", null ],
     [ "GetDimensionX", "dc/d68/classxii_camera.html#aee26a40f911382154e5ba778077746b4", null ],
     [ "GetDimensionY", "dc/d68/classxii_camera.html#a10a643d51f8bb85e38d818d46e55b595", null ],
     [ "GetDirForwards", "dc/d68/classxii_camera.html#a2fda08438f8959b1f94e2fdd9dcbf738", null ],

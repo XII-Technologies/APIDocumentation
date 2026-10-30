@@ -111,9 +111,11 @@ const xiiVec3&#160;</td><td class="memItemRight" valign="bottom"><b>GetTranslati
 <tr class="memitem:a7bf6eb51435df6254624b1351a7d1bd4" id="r_a7bf6eb51435df6254624b1351a7d1bd4"><td class="memItemLeft" align="right" valign="top"><a id="a7bf6eb51435df6254624b1351a7d1bd4" name="a7bf6eb51435df6254624b1351a7d1bd4"></a>
 const xiiQuat&#160;</td><td class="memItemRight" valign="bottom"><b>GetRotationResult</b> () const</td></tr>
 <tr class="memitem:a21ba0a5adf547bf08c56de4b1dfb261e" id="r_a21ba0a5adf547bf08c56de4b1dfb261e"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a21ba0a5adf547bf08c56de4b1dfb261e">IsPickingSelectedAllowed</a> () const override</td></tr>
+<tr class="memitem:a95b6b7b8136abeb85f15999ac769b7aa" id="r_a95b6b7b8136abeb85f15999ac769b7aa"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a95b6b7b8136abeb85f15999ac769b7aa">IsPickingGizmosAllowed</a> () const override</td></tr>
+<tr class="memdesc:a95b6b7b8136abeb85f15999ac769b7aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Surface placement tools must pick the scene beneath their visible handles.  <br /></td></tr>
 <tr class="memitem:a4d04b5475ca4f387a55ba08517d50f8d" id="r_a4d04b5475ca4f387a55ba08517d50f8d"><td class="memItemLeft" align="right" valign="top"><a id="a4d04b5475ca4f387a55ba08517d50f8d" name="a4d04b5475ca4f387a55ba08517d50f8d"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>ModifiesRotation</b> () const</td></tr>
-<tr class="memdesc:a4d04b5475ca4f387a55ba08517d50f8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if any of the 'align with' handles is selected, and thus the rotation of the dragged object should be modified as well. <br /></td></tr>
+<tr class="memdesc:a4d04b5475ca4f387a55ba08517d50f8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">True after an axis handle aligns to a mesh in this gesture. Later grid hits retain that orientation. <br /></td></tr>
 <tr class="memitem:aeeccb88a110be5de19973e1fa3cb3d14" id="r_aeeccb88a110be5de19973e1fa3cb3d14"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeeccb88a110be5de19973e1fa3cb3d14">UpdateStatusBarText</a> (<a class="el" href="../../d0/d97/classxii_qt_engine_document_window.html">xiiQtEngineDocumentWindow</a> *pWindow) override</td></tr>
 <tr class="inherit_header pub_methods_classxii_gizmo"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classxii_gizmo')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public Member Functions inherited from <a class="el" href="../../d7/dec/classxii_gizmo.html">xiiGizmo</a></td></tr>
 <tr class="memitem:ad93f7bf31a2633f6bec655bffd91cfac inherit pub_methods_classxii_gizmo" id="r_ad93f7bf31a2633f6bec655bffd91cfac"><td class="memItemLeft" align="right" valign="top">
@@ -206,17 +208,15 @@ Protected Attributes</h2></td></tr>
 <a class="el" href="../../da/d10/classxii_engine_gizmo_handle.html">xiiEngineGizmoHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_hAlignNZ</b></td></tr>
 <tr class="memitem:aa6b561d12bf3b265961f199f826522a2" id="r_aa6b561d12bf3b265961f199f826522a2"><td class="memItemLeft" align="right" valign="top"><a id="aa6b561d12bf3b265961f199f826522a2" name="aa6b561d12bf3b265961f199f826522a2"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bModifiesRotation</b></td></tr>
-<tr class="memitem:aac5e409ec2ee1da6c0c2c4f04353a370" id="r_aac5e409ec2ee1da6c0c2c4f04353a370"><td class="memItemLeft" align="right" valign="top"><a id="aac5e409ec2ee1da6c0c2c4f04353a370" name="aac5e409ec2ee1da6c0c2c4f04353a370"></a>
-<a class="el" href="../../d7/dc1/structxii_time.html">xiiTime</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_LastInteraction</b></td></tr>
 <tr class="memitem:a6c6ef763703c47d26198027b05f37d42" id="r_a6c6ef763703c47d26198027b05f37d42"><td class="memItemLeft" align="right" valign="top"><a id="a6c6ef763703c47d26198027b05f37d42" name="a6c6ef763703c47d26198027b05f37d42"></a>
 xiiVec3&#160;</td><td class="memItemRight" valign="bottom"><b>m_vStartPosition</b></td></tr>
 <tr class="memitem:a4e4407330961d08fcae35efefc1e3a1b" id="r_a4e4407330961d08fcae35efefc1e3a1b"><td class="memItemLeft" align="right" valign="top"><a id="a4e4407330961d08fcae35efefc1e3a1b" name="a4e4407330961d08fcae35efefc1e3a1b"></a>
 xiiQuat&#160;</td><td class="memItemRight" valign="bottom"><b>m_qStartOrientation</b></td></tr>
 <tr class="inherit_header pro_attribs_classxii_gizmo"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_attribs_classxii_gizmo')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Protected Attributes inherited from <a class="el" href="../../d7/dec/classxii_gizmo.html">xiiGizmo</a></td></tr>
 <tr class="memitem:a5d4e6e04c3c7cb2f3daf41b61aada931 inherit pro_attribs_classxii_gizmo" id="r_a5d4e6e04c3c7cb2f3daf41b61aada931"><td class="memItemLeft" align="right" valign="top">
-const <a class="el" href="../../dc/d68/classxii_camera.html">xiiCamera</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pCamera</b></td></tr>
+const <a class="el" href="../../dc/d68/classxii_camera.html">xiiCamera</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pCamera</b> = nullptr</td></tr>
 <tr class="memitem:aaa1cbf641d5c49047147dfce48f364eb inherit pro_attribs_classxii_gizmo" id="r_aaa1cbf641d5c49047147dfce48f364eb"><td class="memItemLeft" align="right" valign="top">
-<a class="el" href="../../d0/d6e/classxii_gizmo_handle.html">xiiGizmoHandle</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pInteractionGizmoHandle</b></td></tr>
+<a class="el" href="../../d0/d6e/classxii_gizmo_handle.html">xiiGizmoHandle</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pInteractionGizmoHandle</b> = nullptr</td></tr>
 <tr class="memitem:a42c7b924382b391468e9c763b123f391 inherit pro_attribs_classxii_gizmo" id="r_a42c7b924382b391468e9c763b123f391"><td class="memItemLeft" align="right" valign="top">
 xiiVec3&#160;</td><td class="memItemRight" valign="bottom"><b>m_vInteractionPivot</b></td></tr>
 <tr class="memitem:a612e786b445ffffd0e2e967a0f1c1c1d inherit pro_attribs_classxii_gizmo" id="r_a612e786b445ffffd0e2e967a0f1c1c1d"><td class="memItemLeft" align="right" valign="top">
@@ -354,6 +354,35 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>
 </div><div class="memdoc">
 
 <p>Reimplemented from <a class="el" href="../../d0/d47/classxii_editor_input_context.html">xiiEditorInputContext</a>.</p>
+
+</div>
+</div>
+<a id="a95b6b7b8136abeb85f15999ac769b7aa" name="a95b6b7b8136abeb85f15999ac769b7aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95b6b7b8136abeb85f15999ac769b7aa">&#9670;&#160;</a></span>IsPickingGizmosAllowed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool xiiDragToPositionGizmo::IsPickingGizmosAllowed </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Surface placement tools must pick the scene beneath their visible handles. </p>
+
+<p>Reimplemented from <a class="el" href="../../d0/d47/classxii_editor_input_context.html#a03bcb5b7a63c88e33f8337baa5c86463">xiiEditorInputContext</a>.</p>
 
 </div>
 </div>

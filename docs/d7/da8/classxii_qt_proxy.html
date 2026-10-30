@@ -116,6 +116,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetAction</b>
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a51f3da83b67e17eff652f6416b5a74c3" id="r_a51f3da83b67e17eff652f6416b5a74c3"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a51f3da83b67e17eff652f6416b5a74c3">TriggerDocumentAction</a> (<a class="el" href="../../d8/da9/classxii_document.html">xiiDocument</a> *pDocument, QKeyEvent *pEvent, bool bTestOnly)</td></tr>
+<tr class="memitem:ab8c4fc728b84baaaa4a33511b1884234" id="r_ab8c4fc728b84baaaa4a33511b1884234"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../db/daa/class_q_list.html">QList</a>&lt; QAction * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab8c4fc728b84baaaa4a33511b1884234">GetContextActions</a> (<a class="el" href="../../d8/da9/classxii_document.html">xiiDocument</a> *pDocument, QWidget *pWindow)</td></tr>
 <tr class="memitem:a961d642061a7953373f54ae67ed6465d" id="r_a961d642061a7953373f54ae67ed6465d"><td class="memItemLeft" align="right" valign="top"><a id="a961d642061a7953373f54ae67ed6465d" name="a961d642061a7953373f54ae67ed6465d"></a>
 static <a class="el" href="../../d5/da2/classxii_rtti_mapped_object_factory.html">xiiRttiMappedObjectFactory</a>&lt; <a class="el" href="../../d7/da8/classxii_qt_proxy.html">xiiQtProxy</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetFactory</b> ()</td></tr>
 <tr class="memitem:a6db94d3693b5644adcd40df25630d006" id="r_a6db94d3693b5644adcd40df25630d006"><td class="memItemLeft" align="right" valign="top"><a id="a6db94d3693b5644adcd40df25630d006" name="a6db94d3693b5644adcd40df25630d006"></a>
@@ -148,6 +149,36 @@ static QObject *&#160;</td><td class="memItemRight" valign="bottom"><b>s_pSignal
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Glue class that maps xiiActions to QActions. QActions are only created if the <a class="el" href="../../d8/d30/classxii_action.html">xiiAction</a> is actually mapped somewhere. Document and Global actions are manually executed and don't solely rely on Qt's ShortcutContext setting to prevent ambiguous action shortcuts. </p>
 </div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a id="ab8c4fc728b84baaaa4a33511b1884234" name="ab8c4fc728b84baaaa4a33511b1884234"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8c4fc728b84baaaa4a33511b1884234">&#9670;&#160;</a></span>GetContextActions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/daa/class_q_list.html">QList</a>&lt; QAction * &gt; xiiQtProxy::GetContextActions </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d8/da9/classxii_document.html">xiiDocument</a> *</td>          <td class="paramname"><span class="paramname"><em>pDocument</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QWidget *</td>          <td class="paramname"><span class="paramname"><em>pWindow</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Borrow the live global, document and ancestor-window actions for command discovery. Does not instantiate actions or extend their lifetime. Callers must guard retained pointers. </p>
+
+</div>
+</div>
 <a id="a51f3da83b67e17eff652f6416b5a74c3" name="a51f3da83b67e17eff652f6416b5a74c3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a51f3da83b67e17eff652f6416b5a74c3">&#9670;&#160;</a></span>TriggerDocumentAction()</h2>
 

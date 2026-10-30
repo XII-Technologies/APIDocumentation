@@ -130,6 +130,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setPlaceholderText</b
 <tr class="memitem:a077e423074c80195e045815f159f227e" id="r_a077e423074c80195e045815f159f227e"><td class="memItemLeft" align="right" valign="top"><a id="a077e423074c80195e045815f159f227e" name="a077e423074c80195e045815f159f227e"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>selectAll</b> ()</td></tr>
 <tr class="memdesc:a077e423074c80195e045815f159f227e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Passed through to the QLineEdit. <br /></td></tr>
+<tr class="memitem:a8a53f00682b756304451c635a2b332b0" id="r_a8a53f00682b756304451c635a2b332b0"><td class="memItemLeft" align="right" valign="top"><a id="a8a53f00682b756304451c635a2b332b0" name="a8a53f00682b756304451c635a2b332b0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetCaptureTabKey</b> (bool bCapture)</td></tr>
+<tr class="memdesc:a8a53f00682b756304451c635a2b332b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Popup menus and consoles capture Tab for completion. Panels can opt into normal focus traversal. <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pro-methods" class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -142,12 +145,12 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>showEvent</b>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:adcb12c82305be7cccd74ee85a4d9a3b3" id="r_adcb12c82305be7cccd74ee85a4d9a3b3"><td class="memItemLeft" align="right" valign="top"><a id="adcb12c82305be7cccd74ee85a4d9a3b3" name="adcb12c82305be7cccd74ee85a4d9a3b3"></a>
 QLineEdit *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pLineEdit</b></td></tr>
-<tr class="memitem:afd9690e01e4b1d2e9f02bbcf50dafb49" id="r_afd9690e01e4b1d2e9f02bbcf50dafb49"><td class="memItemLeft" align="right" valign="top"><a id="afd9690e01e4b1d2e9f02bbcf50dafb49" name="afd9690e01e4b1d2e9f02bbcf50dafb49"></a>
-QPushButton *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pClearButton</b></td></tr>
+<tr class="memitem:a7420777c9fff437b3fbd8d9cbbf98386" id="r_a7420777c9fff437b3fbd8d9cbbf98386"><td class="memItemLeft" align="right" valign="top"><a id="a7420777c9fff437b3fbd8d9cbbf98386" name="a7420777c9fff437b3fbd8d9cbbf98386"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bCaptureTabKey</b> = true</td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A widget that contains a line edit for a search text and a button to clear the search text.</p>
-<p>The clear button is only active when the line edit has text. The text can be cleared by pressing ESC while the line edit has focus. </p>
+<div class="textblock"><p>A search field with an inline clear button and keyboard navigation signals.</p>
+<p>The clear button is visible only when the line edit has text. The text can be cleared by pressing ESC while the line edit has focus. </p>
 </div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
 <a id="a5c7188f25466c8d1223a5577b3754faf" name="a5c7188f25466c8d1223a5577b3754faf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5c7188f25466c8d1223a5577b3754faf">&#9670;&#160;</a></span>specialKeyPressed</h2>

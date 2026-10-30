@@ -103,69 +103,8 @@ Inheritance diagram for xiiViewRenderMode:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-types" class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a8d8a65c5b0961519284e3ec76bc3f0ca" id="r_a8d8a65c5b0961519284e3ec76bc3f0ca"><td class="memItemLeft" align="right" valign="top"><a id="a8d8a65c5b0961519284e3ec76bc3f0ca" name="a8d8a65c5b0961519284e3ec76bc3f0ca"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>Enum</b> : StorageType { <br />
-&#160;&#160;<b>None</b> = 0U
-, <b>Wireframe</b>
-, <b>Overdraw</b>
-, <b>TriangleSize</b>
-, <br />
-&#160;&#160;<b>VertexNormals</b>
-, <b>VertexTangents</b>
-, <b>VertexBitangents</b>
-, <b>VertexColors</b>
-, <br />
-&#160;&#160;<b>UV0</b>
-, <b>UV1</b>
-, <b>UVDensity</b>
-, <b>LODLevel</b>
-, <br />
-&#160;&#160;<b>StaticVsDynamic</b>
-, <b>VisibilityBuffer</b>
-, <b>InstanceID</b>
-, <b>MeshletID</b>
-, <br />
-&#160;&#160;<b>ClusterID</b>
-, <b>CullingOutcome</b>
-, <b>OcclusionHeatmap</b>
-, <b>BaseColor</b>
-, <br />
-&#160;&#160;<b>Metallic</b>
-, <b>Roughness</b>
-, <b>Specular</b>
-, <b>Emissive</b>
-, <br />
-&#160;&#160;<b>AmbientOcclusion</b>
-, <b>NormalMap</b>
-, <b>DepthLinear</b>
-, <b>DepthNonLinear</b>
-, <br />
-&#160;&#160;<b>MotionVectors</b>
-, <b>ShadingModelID</b>
-, <b>LightingOnly</b>
-, <b>DiffuseOnly</b>
-, <br />
-&#160;&#160;<b>SpecularOnly</b>
-, <b>LightComplexity</b>
-, <b>ShadowCascadeIndex</b>
-, <b>ShadowMask</b>
-, <br />
-&#160;&#160;<b>IndirectLighting</b>
-, <b>ReflectionContribution</b>
-, <b>RayTracingRayCount</b>
-, <b>RayTracingBVHTraversal</b>
-, <br />
-&#160;&#160;<b>RayTracingHitDistance</b>
-, <b>RayTracingMissShaderID</b>
-, <b>RayTracingInstanceMask</b>
-, <b>Exposure</b>
-, <br />
-&#160;&#160;<b>Bloom</b>
-, <b>ToneMappingCurve</b>
-, <b>ColorGradingLUT</b>
-, <b>ENUM_COUNT</b>
-, <br />
-&#160;&#160;<b>Default</b> = None
-<br />
+<tr class="memitem:a8d8a65c5b0961519284e3ec76bc3f0ca" id="r_a8d8a65c5b0961519284e3ec76bc3f0ca"><td class="memItemLeft" align="right" valign="top"><a id="a8d8a65c5b0961519284e3ec76bc3f0ca" name="a8d8a65c5b0961519284e3ec76bc3f0ca"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>Enum</b> : StorageType { <b>ENUM_COUNT</b>
+, <b>Default</b> = None
  }</td></tr>
 <tr class="memitem:ab6726ae583c833fd1e107be3fa1531fe" id="r_ab6726ae583c833fd1e107be3fa1531fe"><td class="memItemLeft" align="right" valign="top"><a id="ab6726ae583c833fd1e107be3fa1531fe" name="ab6726ae583c833fd1e107be3fa1531fe"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>StorageType</b> = xiiUInt8</td></tr>
@@ -174,6 +113,12 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>StorageType</b> = xi
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a3938c226280bdf58a91c1228b1e71a07" id="r_a3938c226280bdf58a91c1228b1e71a07"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3938c226280bdf58a91c1228b1e71a07">IsSupportedVisualizationMode</a> (Enum mode)</td></tr>
 <tr class="memdesc:a3938c226280bdf58a91c1228b1e71a07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modes implemented by the reflected channel-visualization operation.  <br /></td></tr>
+<tr class="memitem:a69a4739847b989f9a07be808d08ffe81" id="r_a69a4739847b989f9a07be808d08ffe81"><td class="memItemLeft" align="right" valign="top"><a id="a69a4739847b989f9a07be808d08ffe81" name="a69a4739847b989f9a07be808d08ffe81"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsSurfaceVisualizationMode</b> (Enum mode)</td></tr>
+<tr class="memdesc:a69a4739847b989f9a07be808d08ffe81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modes rasterized from canonical GPU-scene geometry rather than material G-buffer channels. <br /></td></tr>
+<tr class="memitem:ad13cb331d50af37a457bda9cc227429e" id="r_ad13cb331d50af37a457bda9cc227429e"><td class="memItemLeft" align="right" valign="top"><a id="ad13cb331d50af37a457bda9cc227429e" name="ad13cb331d50af37a457bda9cc227429e"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsRayTracingVisualizationMode</b> (Enum mode)</td></tr>
+<tr class="memdesc:ad13cb331d50af37a457bda9cc227429e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modes that inspect an explicit hardware ray-tracing diagnostic workload. <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Selects a visualization or debug rendering mode for a view.</p>

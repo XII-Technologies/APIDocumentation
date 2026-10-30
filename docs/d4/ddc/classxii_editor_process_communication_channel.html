@@ -103,9 +103,10 @@ Inheritance diagram for xiiEditorProcessCommunicationChannel:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a065f366691766c74ff9db0c27832fd75" id="r_a065f366691766c74ff9db0c27832fd75"><td class="memItemLeft" align="right" valign="top"><a id="a065f366691766c74ff9db0c27832fd75" name="a065f366691766c74ff9db0c27832fd75"></a>
 <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>StartClientProcess</b> (const char *szProcess, const QStringList &amp;args, bool bRemote, const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a> *pFirstAllowedMessageType=nullptr, xiiUInt32 uiMemSize=1024 *1024 *10)</td></tr>
-<tr class="memdesc:a065f366691766c74ff9db0c27832fd75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copyright (c) Theophilus Eriata. All Rights Reserved. <br /></td></tr>
 <tr class="memitem:aece41c32229491e47334585523ec821c" id="r_aece41c32229491e47334585523ec821c"><td class="memItemLeft" align="right" valign="top"><a id="aece41c32229491e47334585523ec821c" name="aece41c32229491e47334585523ec821c"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsClientAlive</b> () const</td></tr>
+<tr class="memitem:a7f578b0f741ccde12d7f57723077ec66" id="r_a7f578b0f741ccde12d7f57723077ec66"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7f578b0f741ccde12d7f57723077ec66">WaitForStartup</a> (const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a> *pResponseType=nullptr)</td></tr>
+<tr class="memdesc:a7f578b0f741ccde12d7f57723077ec66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copyright (c) Theophilus Eriata. All Rights Reserved.  <br /></td></tr>
 <tr class="memitem:adbc7e4971069f04c187e6bf0e1be9916" id="r_adbc7e4971069f04c187e6bf0e1be9916"><td class="memItemLeft" align="right" valign="top"><a id="adbc7e4971069f04c187e6bf0e1be9916" name="adbc7e4971069f04c187e6bf0e1be9916"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>CloseConnection</b> ()</td></tr>
 <tr class="memitem:a86ca87bee4cea18d1e511f54ba87d14f" id="r_a86ca87bee4cea18d1e511f54ba87d14f"><td class="memItemLeft" align="right" valign="top"><a id="a86ca87bee4cea18d1e511f54ba87d14f" name="a86ca87bee4cea18d1e511f54ba87d14f"></a>
@@ -147,6 +148,27 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>WaitForMessageCallba
 <tr class="memitem:a151f08186b877c7a8dbbe5d44ab74296 inherit pro_attribs_classxii_process_communication_channel" id="r_a151f08186b877c7a8dbbe5d44ab74296"><td class="memItemLeft" align="right" valign="top">
 const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pFirstAllowedMessageType</b> = nullptr</td></tr>
 </table>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a id="a7f578b0f741ccde12d7f57723077ec66" name="a7f578b0f741ccde12d7f57723077ec66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f578b0f741ccde12d7f57723077ec66">&#9670;&#160;</a></span>WaitForStartup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a> xiiEditorProcessCommunicationChannel::WaitForStartup </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a> *</td>          <td class="paramname"><span class="paramname"><em>pResponseType</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Copyright (c) Theophilus Eriata. All Rights Reserved. </p>
+<p>Event-driven GUI-thread wait used only during interactive Editor startup. A null type waits for connection; otherwise dispatches IPC until the requested response or disconnection. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/runner/work/XII/XII/Source/Editor/EditorFramework/IPC/<a class="el" href="../../d9/d63/_editor_process_communication_channel_8h_source.html">EditorProcessCommunicationChannel.h</a></li>
 <li>/home/runner/work/XII/XII/Source/Editor/EditorFramework/IPC/Implementation/<b>EditorProcessCommunicationChannel.cpp</b></li>

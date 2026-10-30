@@ -9,5 +9,6 @@ var classxii_render_graph_pass_context =
     [ "GetResourceCache", "de/dd6/classxii_render_graph_pass_context.html#a0ff9d254d381fa99e4f5be7dcb8719ef", null ],
     [ "GetSubpassIndex", "de/dd6/classxii_render_graph_pass_context.html#a7ac2e434933a41d3ee0a0f0c4b733cdc", null ],
     [ "GetTexture", "de/dd6/classxii_render_graph_pass_context.html#a1e27a391544d485a6c1d66c97214bc73", null ],
-    [ "GetView", "de/dd6/classxii_render_graph_pass_context.html#a023cf22f344dc1463249f1c829703b3c", null ]
+    [ "GetView", "de/dd6/classxii_render_graph_pass_context.html#a023cf22f344dc1463249f1c829703b3c", null ],
+    [ "ReportFailure", "de/dd6/classxii_render_graph_pass_context.html#a4b1c576e188346d4d406a197f5bb85d0", null ]
 ];

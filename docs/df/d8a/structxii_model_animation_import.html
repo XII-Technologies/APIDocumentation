@@ -96,9 +96,7 @@ $(function(){initNavTree('df/d8a/structxii_model_animation_import.html','../../'
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ab131fc43430370fa302d5385fd9e8c60" id="r_ab131fc43430370fa302d5385fd9e8c60"><td class="memItemLeft" align="right" valign="top"><a id="ab131fc43430370fa302d5385fd9e8c60" name="ab131fc43430370fa302d5385fd9e8c60"></a>
-static <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ReadClipNames</b> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sSourceFile, <a class="el" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray</a>&lt; xiiString &gt; &amp;out_names, <a class="el" href="../../d4/dbb/classxii_string_builder.html">xiiStringBuilder</a> *out_pError=nullptr)</td></tr>
-<tr class="memdesc:ab131fc43430370fa302d5385fd9e8c60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Discover all source clip labels without baking any clip. Failure clears out_names. <br /></td></tr>
+<tr class="memitem:ab131fc43430370fa302d5385fd9e8c60" id="r_ab131fc43430370fa302d5385fd9e8c60"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab131fc43430370fa302d5385fd9e8c60">ReadClipNames</a> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sSourceFile, <a class="el" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray</a>&lt; xiiString &gt; &amp;out_names, <a class="el" href="../../d4/dbb/classxii_string_builder.html">xiiStringBuilder</a> *out_pError=nullptr)</td></tr>
 <tr class="memitem:ab06a85846b23cb9870ebec2322bf2a8c" id="r_ab06a85846b23cb9870ebec2322bf2a8c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab06a85846b23cb9870ebec2322bf2a8c">ReadFile</a> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sSourceFile, const <a class="el" href="../../d9/d57/structxii_model_animation_import_options.html">xiiModelAnimationImportOptions</a> &amp;options, <a class="el" href="../../df/d8a/structxii_model_animation_import.html">xiiModelAnimationImport</a> &amp;out_import, <a class="el" href="../../d4/dbb/classxii_string_builder.html">xiiStringBuilder</a> *out_pError=nullptr)</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
@@ -109,6 +107,41 @@ Public Attributes</h2></td></tr>
 <a class="el" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray</a>&lt; xiiString &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_AvailableClips</b></td></tr>
 </table>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a id="ab131fc43430370fa302d5385fd9e8c60" name="ab131fc43430370fa302d5385fd9e8c60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab131fc43430370fa302d5385fd9e8c60">&#9670;&#160;</a></span>ReadClipNames()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a> xiiModelAnimationImport::ReadClipNames </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sSourceFile</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray</a>&lt; xiiString &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>out_names</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d4/dbb/classxii_string_builder.html">xiiStringBuilder</a> *</td>          <td class="paramname"><span class="paramname"><em>out_pError</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Discover all source clip labels without baking any clip. An animation-free model returns an empty list. Duplicate labels receive stable source-index suffixes. Failure clears out_names. </p>
+
+</div>
+</div>
 <a id="ab06a85846b23cb9870ebec2322bf2a8c" name="ab06a85846b23cb9870ebec2322bf2a8c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab06a85846b23cb9870ebec2322bf2a8c">&#9670;&#160;</a></span>ReadFile()</h2>
 
@@ -145,7 +178,7 @@ Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Read named joint transform animation through the existing Assimp dependency. Native linear keys retain source key times and trim boundaries. STEP boundaries use consecutive representable float times; cubic Hermite curves are baked at the selected sample rate and retain authored key times. Rotations are normalized. DEFAULT boundaries use rest transforms except glTF, which clamps as required by its format. CONSTANT boundaries clamp; per-channel LINEAR extrapolation and REPEAT fail explicitly. Joint names resolve against the runtime skeleton; source-local joint indices are not persisted. Failure clears the clip. Discovered clip labels remain available on selection/conversion failure. Morph/vertex animation, ambiguous joint or clip names, invalid TRS/keys and excessive output (over one million samples per track or sixteen million keys per clip) fail explicitly. </p>
+<p>Read named joint transform animation through the existing Assimp dependency. Native linear keys retain source key times and trim boundaries. STEP boundaries use consecutive representable float times; cubic Hermite curves are baked at the selected sample rate and retain authored key times. Rotations are normalized. DEFAULT boundaries use rest transforms except glTF, which clamps as required by its format. CONSTANT boundaries clamp; per-channel LINEAR extrapolation and REPEAT fail explicitly. Joint names resolve against the runtime skeleton; source-local joint indices are not persisted. Failure clears the clip. Discovered clip labels remain available on selection/conversion failure. Morph/vertex animation, ambiguous joint names, invalid TRS/keys and excessive output (over one million samples per track or sixteen million keys per clip) fail explicitly. </p>
 
 </div>
 </div>

@@ -30,11 +30,12 @@ var searchData=
   ['hasplane_27',['HasPlane',['../d1/da1/structxii_g_a_l_multi_planar_format_description.html#ab5fdf104308dca937c78f1431c36f0bf',1,'xiiGALMultiPlanarFormatDescription']]],
   ['hasprimitives_28',['HasPrimitives',['../d1/d33/classxii_open_ddl_reader_element.html#a73cb7370c5ee5d8ef8d67bd4dcd278c1',1,'xiiOpenDdlReaderElement']]],
   ['hasreachedend_29',['HasReachedEnd',['../dd/dc8/classxii_processing_stream_iterator.html#a7d138009abcf789e00a9d30d049bd7f8',1,'xiiProcessingStreamIterator']]],
-  ['hastag_30',['HasTag',['../d0/d91/classxii_game_object.html#af8bf826aa5a89d6fe332015266ac312b',1,'xiiGameObject']]],
-  ['hastexturecoordinates_31',['HasTextureCoordinates',['../d9/d9e/classxii_o_b_j_loader.html#aa7a3ae8676b0cd0b57453bf5969f3303',1,'xiiOBJLoader']]],
-  ['hasvertexnormals_32',['HasVertexNormals',['../d9/d9e/classxii_o_b_j_loader.html#a909b4750869602226225e6f42ca86258',1,'xiiOBJLoader']]],
-  ['hexcharactertointvalue_33',['HexCharacterToIntValue',['../d9/d80/namespacexii_conversion_utils.html#a17994f85ffb1e3a99ff891c02e62c9b3',1,'xiiConversionUtils']]],
-  ['hideaction_34',['HideAction',['../db/db2/classxii_action_map.html#a90f2bc27546468e6628111d721e71e57',1,'xiiActionMap']]],
-  ['highvalue_35',['HighValue',['../d1/d37/namespacexii_math.html#aaef30261db876ade1c53d907aaa68828',1,'xiiMath']]],
-  ['hypot_36',['Hypot',['../d1/d37/namespacexii_math.html#a6e63ed2ebc617c166a6c427dce01a096',1,'xiiMath::Hypot(double x, double y)'],['../d1/d37/namespacexii_math.html#ab0c9b1ed4fce57cc1957e2a66ccf14b7',1,'xiiMath::Hypot(float x, float y)']]]
+  ['hassamevalues_30',['HasSameValues',['../d9/d45/classxii_settings.html#aea1d322775b4a3965b5d38a289d038e0',1,'xiiSettings']]],
+  ['hastag_31',['HasTag',['../d0/d91/classxii_game_object.html#af8bf826aa5a89d6fe332015266ac312b',1,'xiiGameObject']]],
+  ['hastexturecoordinates_32',['HasTextureCoordinates',['../d9/d9e/classxii_o_b_j_loader.html#aa7a3ae8676b0cd0b57453bf5969f3303',1,'xiiOBJLoader']]],
+  ['hasvertexnormals_33',['HasVertexNormals',['../d9/d9e/classxii_o_b_j_loader.html#a909b4750869602226225e6f42ca86258',1,'xiiOBJLoader']]],
+  ['hexcharactertointvalue_34',['HexCharacterToIntValue',['../d9/d80/namespacexii_conversion_utils.html#a17994f85ffb1e3a99ff891c02e62c9b3',1,'xiiConversionUtils']]],
+  ['hideaction_35',['HideAction',['../db/db2/classxii_action_map.html#a90f2bc27546468e6628111d721e71e57',1,'xiiActionMap']]],
+  ['highvalue_36',['HighValue',['../d1/d37/namespacexii_math.html#aaef30261db876ade1c53d907aaa68828',1,'xiiMath']]],
+  ['hypot_37',['Hypot',['../d1/d37/namespacexii_math.html#a6e63ed2ebc617c166a6c427dce01a096',1,'xiiMath::Hypot(double x, double y)'],['../d1/d37/namespacexii_math.html#ab0c9b1ed4fce57cc1957e2a66ccf14b7',1,'xiiMath::Hypot(float x, float y)']]]
 ];

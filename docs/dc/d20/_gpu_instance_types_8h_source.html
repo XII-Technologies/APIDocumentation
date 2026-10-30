@@ -107,7 +107,8 @@ $(function(){initNavTree('dc/d20/_gpu_instance_types_8h_source.html','../../',''
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>{</div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>  <span class="keyword">using </span>StorageType = xiiUInt16;</div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>  <span class="keyword">enum</span> Enum : StorageType</div>
+<div class="foldopen" id="foldopen00015" data-start="{" data-end="};">
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="../../d2/d52/structxii_gpu_instance_flags.html#ad1a2ab4b7e82bfb5727bec74b5ba7ef8">   15</a></span>  <span class="keyword">enum</span> <a class="code hl_enumeration" href="../../d2/d52/structxii_gpu_instance_flags.html#ad1a2ab4b7e82bfb5727bec74b5ba7ef8">Enum</a> : StorageType</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>  {</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    None              = 0,</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    Enabled           = XII_BIT(0),</div>
@@ -119,111 +120,116 @@ $(function(){initNavTree('dc/d20/_gpu_instance_types_8h_source.html','../../',''
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    Transparent       = XII_BIT(6),</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    SensorVisible     = XII_BIT(7),</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    RayTracingVisible = XII_BIT(8),</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    Default = Enabled | CastShadows | ReceiveShadows</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>  };</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
-<div class="foldopen" id="foldopen00031" data-start="{" data-end="};">
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="../../dc/d15/structxii_gpu_instance_flags_1_1_bits.html">   31</a></span>  <span class="keyword">struct </span><a class="code hl_struct" href="../../dc/d15/structxii_gpu_instance_flags_1_1_bits.html">Bits</a></div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>  {</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    StorageType Enabled : 1;</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    StorageType Static : 1;</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    StorageType CastShadows : 1;</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    StorageType ReceiveShadows : 1;</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    StorageType AlwaysVisible : 1;</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    StorageType Occluder : 1;</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    StorageType Transparent : 1;</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    StorageType SensorVisible : 1;</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    StorageType RayTracingVisible : 1;</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>  };</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="../../d2/d52/structxii_gpu_instance_flags.html#ad1a2ab4b7e82bfb5727bec74b5ba7ef8a7387b6e94f4934a10b4e8a02d95cd7a2">   27</a></span>    <a class="code hl_enumvalue" href="../../d2/d52/structxii_gpu_instance_flags.html#ad1a2ab4b7e82bfb5727bec74b5ba7ef8a7387b6e94f4934a10b4e8a02d95cd7a2">TwoSided</a>          = XII_BIT(9), </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    Default = Enabled | CastShadows | ReceiveShadows</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  };</div>
 </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>};</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="foldopen" id="foldopen00032" data-start="{" data-end="};">
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="../../dc/d15/structxii_gpu_instance_flags_1_1_bits.html">   32</a></span>  <span class="keyword">struct </span><a class="code hl_struct" href="../../dc/d15/structxii_gpu_instance_flags_1_1_bits.html">Bits</a></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>  {</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    StorageType Enabled : 1;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    StorageType Static : 1;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    StorageType CastShadows : 1;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    StorageType ReceiveShadows : 1;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    StorageType AlwaysVisible : 1;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    StorageType Occluder : 1;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    StorageType Transparent : 1;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    StorageType SensorVisible : 1;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    StorageType RayTracingVisible : 1;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    StorageType TwoSided : 1;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  };</div>
 </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>XII_DECLARE_FLAGS_OPERATORS(<a class="code hl_struct" href="../../d2/d52/structxii_gpu_instance_flags.html">xiiGpuInstanceFlags</a>);</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>XII_DECLARE_REFLECTABLE_TYPE(XII_GRAPHICSCORE_DLL, <a class="code hl_struct" href="../../d2/d52/structxii_gpu_instance_flags.html">xiiGpuInstanceFlags</a>);</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span></div>
-<div class="foldopen" id="foldopen00050" data-start="{" data-end="};">
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="../../d4/d8f/structxii_gpu_scene_instance.html">   50</a></span><span class="keyword">struct </span>XII_GRAPHICSCORE_DLL <a class="code hl_struct" href="../../d4/d8f/structxii_gpu_scene_instance.html">xiiGpuSceneInstance</a></div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>{</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  XII_DECLARE_POD_TYPE();</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  xiiMat4 m_GlobalTransform         = <a class="code hl_function" href="../../d1/dec/classxii_mat4_template.html#a04174f89643f5d5acc7e2427a82e2aa3">xiiMat4::MakeIdentity</a>();</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  xiiMat4 m_PreviousGlobalTransform = <a class="code hl_function" href="../../d1/dec/classxii_mat4_template.html#a04174f89643f5d5acc7e2427a82e2aa3">xiiMat4::MakeIdentity</a>();</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="../../d4/d8f/structxii_gpu_scene_instance.html#ad484eb7006bdf37ce910b61e2300a907">   58</a></span>  xiiVec4   <a class="code hl_variable" href="../../d4/d8f/structxii_gpu_scene_instance.html#ad484eb7006bdf37ce910b61e2300a907">m_NormalTransformRow0</a> = xiiVec4(1.0f, 0.0f, 0.0f, 0.0f);</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  xiiVec4   m_NormalTransformRow1 = xiiVec4(0.0f, 1.0f, 0.0f, 0.0f);</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  xiiVec4   m_NormalTransformRow2 = xiiVec4(0.0f, 0.0f, 1.0f, 0.0f);</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  xiiVec4   m_BoundsCenterRadius  = <a class="code hl_function" href="../../d1/d20/classxii_vec4_template.html#a3a26be38c45e068d3fbf27ef32c19e11">xiiVec4::MakeZero</a>();</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>  xiiVec4   m_BoundsExtents       = <a class="code hl_function" href="../../d1/d20/classxii_vec4_template.html#a3a26be38c45e068d3fbf27ef32c19e11">xiiVec4::MakeZero</a>();</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  xiiUInt32 m_uiGeometryIndex     = xiiInvalidIndex;</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>  xiiUInt32 m_uiMaterialIndex     = xiiInvalidIndex;</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="../../d4/d8f/structxii_gpu_scene_instance.html#a98899c9a2cdd41fe524317b649132fb7">   67</a></span>  xiiUInt32 <a class="code hl_variable" href="../../d4/d8f/structxii_gpu_scene_instance.html#a98899c9a2cdd41fe524317b649132fb7">m_uiObjectId</a>       = 0U;</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>  xiiUInt32 m_uiFlags          = 0U;</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>  xiiUInt32 m_uiVisibilityMask = 0xFFFFFFFFU;</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>  xiiUInt32 m_uiUserData       = 0U;</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>  xiiUInt32 m_uiFirstPrimitive = 0U;</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="../../d4/d8f/structxii_gpu_scene_instance.html#a2e56ba43ec34f5c504ee01a0338bebc8">   72</a></span>  xiiUInt32 <a class="code hl_variable" href="../../d4/d8f/structxii_gpu_scene_instance.html#a2e56ba43ec34f5c504ee01a0338bebc8">m_uiPrimitiveCount</a> = 0U; </div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>  xiiUInt32 m_uiForcedLod      = xiiInvalidIndex;</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>  <span class="keywordtype">float</span>     m_fLodBias         = 0.0f;</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>  xiiUInt32 m_uiDrawLod        = xiiInvalidIndex;</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="../../d4/d8f/structxii_gpu_scene_instance.html#acaf81ace90ac2185b7f27ed962747d5d">   77</a></span>  xiiUInt32 <a class="code hl_variable" href="../../d4/d8f/structxii_gpu_scene_instance.html#acaf81ace90ac2185b7f27ed962747d5d">m_uiLodSelectionIndex</a> = xiiInvalidIndex;</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="../../d4/d8f/structxii_gpu_scene_instance.html#aec17e15eb0c75fed07abaf0e4c08aba3">   79</a></span>  xiiUInt32 <a class="code hl_variable" href="../../d4/d8f/structxii_gpu_scene_instance.html#aec17e15eb0c75fed07abaf0e4c08aba3">m_uiSkinningOffset</a>         = 0U;</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>  xiiUInt32 m_uiSkinningCount          = 0U;</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>  xiiUInt32 m_uiPreviousSkinningOffset = 0U;</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>  xiiUInt32 m_uiPreviousSkinningCount  = 0U;</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>  xiiUInt32 m_uiBoneIndicesOffset      = 0U;</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>  xiiUInt32 m_uiBoneWeightsOffset      = 0U;</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>  xiiUInt32 m_uiSkinningVertexStride   = 0U;</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>  xiiUInt32 m_uiSkinningPadding        = 0U;</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>};</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>};</div>
 </div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="keyword">static_assert</span>(<span class="keyword">sizeof</span>(<a class="code hl_struct" href="../../d4/d8f/structxii_gpu_scene_instance.html">xiiGpuSceneInstance</a>) == 288U &amp;&amp; offsetof(<a class="code hl_struct" href="../../d4/d8f/structxii_gpu_scene_instance.html">xiiGpuSceneInstance</a>, m_uiSkinningOffset) == 256U, <span class="stringliteral">&quot;GPU scene records must match GpuSceneCommon.h.&quot;</span>);</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="keyword">static_assert</span>(offsetof(<a class="code hl_struct" href="../../d4/d8f/structxii_gpu_scene_instance.html">xiiGpuSceneInstance</a>, m_uiForcedLod) == 240U &amp;&amp; offsetof(<a class="code hl_struct" href="../../d4/d8f/structxii_gpu_scene_instance.html">xiiGpuSceneInstance</a>, m_fLodBias) == 244U &amp;&amp; offsetof(<a class="code hl_struct" href="../../d4/d8f/structxii_gpu_scene_instance.html">xiiGpuSceneInstance</a>, m_uiDrawLod) == 248U &amp;&amp; offsetof(<a class="code hl_struct" href="../../d4/d8f/structxii_gpu_scene_instance.html">xiiGpuSceneInstance</a>, m_uiLodSelectionIndex) == 252U,</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>              <span class="stringliteral">&quot;GPU LOD controls must preserve the structured-buffer layout.&quot;</span>);</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>XII_DECLARE_REFLECTABLE_TYPE(XII_GRAPHICSCORE_DLL, <a class="code hl_struct" href="../../d4/d8f/structxii_gpu_scene_instance.html">xiiGpuSceneInstance</a>);</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span></div>
-<div class="foldopen" id="foldopen00096" data-start="{" data-end="};">
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="../../de/d09/structxii_gpu_instance_upload_range.html">   96</a></span><span class="keyword">struct </span>XII_GRAPHICSCORE_DLL <a class="code hl_struct" href="../../de/d09/structxii_gpu_instance_upload_range.html">xiiGpuInstanceUploadRange</a></div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>{</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>  XII_DECLARE_POD_TYPE();</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>  xiiUInt32 m_uiFirstInstance = 0U;</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>  xiiUInt32 m_uiInstanceCount = 0U;</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>};</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>XII_DECLARE_FLAGS_OPERATORS(<a class="code hl_struct" href="../../d2/d52/structxii_gpu_instance_flags.html">xiiGpuInstanceFlags</a>);</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>XII_DECLARE_REFLECTABLE_TYPE(XII_GRAPHICSCORE_DLL, <a class="code hl_struct" href="../../d2/d52/structxii_gpu_instance_flags.html">xiiGpuInstanceFlags</a>);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span></div>
+<div class="foldopen" id="foldopen00052" data-start="{" data-end="};">
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="../../d4/d8f/structxii_gpu_scene_instance.html">   52</a></span><span class="keyword">struct </span>XII_GRAPHICSCORE_DLL <a class="code hl_struct" href="../../d4/d8f/structxii_gpu_scene_instance.html">xiiGpuSceneInstance</a></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>{</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  XII_DECLARE_POD_TYPE();</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  xiiMat4 m_GlobalTransform         = <a class="code hl_function" href="../../d1/dec/classxii_mat4_template.html#a04174f89643f5d5acc7e2427a82e2aa3">xiiMat4::MakeIdentity</a>();</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  xiiMat4 m_PreviousGlobalTransform = <a class="code hl_function" href="../../d1/dec/classxii_mat4_template.html#a04174f89643f5d5acc7e2427a82e2aa3">xiiMat4::MakeIdentity</a>();</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="../../d4/d8f/structxii_gpu_scene_instance.html#ad484eb7006bdf37ce910b61e2300a907">   60</a></span>  xiiVec4   <a class="code hl_variable" href="../../d4/d8f/structxii_gpu_scene_instance.html#ad484eb7006bdf37ce910b61e2300a907">m_NormalTransformRow0</a> = xiiVec4(1.0f, 0.0f, 0.0f, 0.0f);</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  xiiVec4   m_NormalTransformRow1 = xiiVec4(0.0f, 1.0f, 0.0f, 0.0f);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>  xiiVec4   m_NormalTransformRow2 = xiiVec4(0.0f, 0.0f, 1.0f, 0.0f);</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  xiiVec4   m_BoundsCenterRadius  = <a class="code hl_function" href="../../d1/d20/classxii_vec4_template.html#a3a26be38c45e068d3fbf27ef32c19e11">xiiVec4::MakeZero</a>();</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>  xiiVec4   m_BoundsExtents       = <a class="code hl_function" href="../../d1/d20/classxii_vec4_template.html#a3a26be38c45e068d3fbf27ef32c19e11">xiiVec4::MakeZero</a>();</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  xiiUInt32 m_uiGeometryIndex     = xiiInvalidIndex;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>  xiiUInt32 m_uiMaterialIndex     = xiiInvalidIndex;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="../../d4/d8f/structxii_gpu_scene_instance.html#a98899c9a2cdd41fe524317b649132fb7">   69</a></span>  xiiUInt32 <a class="code hl_variable" href="../../d4/d8f/structxii_gpu_scene_instance.html#a98899c9a2cdd41fe524317b649132fb7">m_uiObjectId</a>       = 0U;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>  xiiUInt32 m_uiFlags          = 0U;</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>  xiiUInt32 m_uiVisibilityMask = 0xFFFFFFFFU;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>  xiiUInt32 m_uiUserData       = 0U;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>  xiiUInt32 m_uiFirstPrimitive = 0U;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="../../d4/d8f/structxii_gpu_scene_instance.html#a2e56ba43ec34f5c504ee01a0338bebc8">   74</a></span>  xiiUInt32 <a class="code hl_variable" href="../../d4/d8f/structxii_gpu_scene_instance.html#a2e56ba43ec34f5c504ee01a0338bebc8">m_uiPrimitiveCount</a> = 0U; </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>  xiiUInt32 m_uiForcedLod      = xiiInvalidIndex;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>  <span class="keywordtype">float</span>     m_fLodBias         = 0.0f;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>  xiiUInt32 m_uiDrawLod        = xiiInvalidIndex;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="../../d4/d8f/structxii_gpu_scene_instance.html#acaf81ace90ac2185b7f27ed962747d5d">   79</a></span>  xiiUInt32 <a class="code hl_variable" href="../../d4/d8f/structxii_gpu_scene_instance.html#acaf81ace90ac2185b7f27ed962747d5d">m_uiLodSelectionIndex</a> = xiiInvalidIndex;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="../../d4/d8f/structxii_gpu_scene_instance.html#aec17e15eb0c75fed07abaf0e4c08aba3">   81</a></span>  xiiUInt32 <a class="code hl_variable" href="../../d4/d8f/structxii_gpu_scene_instance.html#aec17e15eb0c75fed07abaf0e4c08aba3">m_uiSkinningOffset</a>         = 0U;</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>  xiiUInt32 m_uiSkinningCount          = 0U;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>  xiiUInt32 m_uiPreviousSkinningOffset = 0U;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>  xiiUInt32 m_uiPreviousSkinningCount  = 0U;</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>  xiiUInt32 m_uiBoneIndicesOffset      = 0U;</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>  xiiUInt32 m_uiBoneWeightsOffset      = 0U;</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>  xiiUInt32 m_uiSkinningVertexStride   = 0U;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>  xiiUInt32 m_uiSkinningPadding        = 0U;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>};</div>
 </div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>XII_DECLARE_REFLECTABLE_TYPE(XII_GRAPHICSCORE_DLL, <a class="code hl_struct" href="../../de/d09/structxii_gpu_instance_upload_range.html">xiiGpuInstanceUploadRange</a>);</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="keyword">static_assert</span>(<span class="keyword">sizeof</span>(<a class="code hl_struct" href="../../d4/d8f/structxii_gpu_scene_instance.html">xiiGpuSceneInstance</a>) == 288U &amp;&amp; offsetof(<a class="code hl_struct" href="../../d4/d8f/structxii_gpu_scene_instance.html">xiiGpuSceneInstance</a>, m_uiSkinningOffset) == 256U, <span class="stringliteral">&quot;GPU scene records must match GpuSceneCommon.h.&quot;</span>);</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="keyword">static_assert</span>(offsetof(<a class="code hl_struct" href="../../d4/d8f/structxii_gpu_scene_instance.html">xiiGpuSceneInstance</a>, m_uiForcedLod) == 240U &amp;&amp; offsetof(<a class="code hl_struct" href="../../d4/d8f/structxii_gpu_scene_instance.html">xiiGpuSceneInstance</a>, m_fLodBias) == 244U &amp;&amp; offsetof(<a class="code hl_struct" href="../../d4/d8f/structxii_gpu_scene_instance.html">xiiGpuSceneInstance</a>, m_uiDrawLod) == 248U &amp;&amp; offsetof(<a class="code hl_struct" href="../../d4/d8f/structxii_gpu_scene_instance.html">xiiGpuSceneInstance</a>, m_uiLodSelectionIndex) == 252U,</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>              <span class="stringliteral">&quot;GPU LOD controls must preserve the structured-buffer layout.&quot;</span>);</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>XII_DECLARE_REFLECTABLE_TYPE(XII_GRAPHICSCORE_DLL, <a class="code hl_struct" href="../../d4/d8f/structxii_gpu_scene_instance.html">xiiGpuSceneInstance</a>);</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span></div>
+<div class="foldopen" id="foldopen00098" data-start="{" data-end="};">
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno"><a class="line" href="../../de/d09/structxii_gpu_instance_upload_range.html">   98</a></span><span class="keyword">struct </span>XII_GRAPHICSCORE_DLL <a class="code hl_struct" href="../../de/d09/structxii_gpu_instance_upload_range.html">xiiGpuInstanceUploadRange</a></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>{</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>  XII_DECLARE_POD_TYPE();</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>  xiiUInt32 m_uiFirstInstance = 0U;</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>  xiiUInt32 m_uiInstanceCount = 0U;</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>};</div>
+</div>
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span></div>
-<div class="foldopen" id="foldopen00108" data-start="{" data-end="};">
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno"><a class="line" href="../../d9/d6c/structxii_gpu_instance_source.html">  108</a></span><span class="keyword">struct </span>XII_GRAPHICSCORE_DLL <a class="code hl_struct" href="../../d9/d6c/structxii_gpu_instance_source.html">xiiGpuInstanceSource</a></div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>{</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>  <a class="code hl_struct" href="../../da/d2c/structxii_game_object_handle.html">xiiGameObjectHandle</a> m_hOwnerObject;</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>  <a class="code hl_struct" href="../../da/d8d/structxii_component_handle.html">xiiComponentHandle</a>  m_hOwnerComponent;</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>  xiiUInt32           m_uiLodIndex                 = xiiInvalidIndex;</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>  xiiUInt32           m_uiSectionIndex             = xiiInvalidIndex;</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>  xiiUInt32           m_uiMaterialIndex            = 0;</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>  xiiUInt32           m_uiRenderDataId             = 0;</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>  xiiUInt32           m_uiInstanceIndex            = xiiInvalidIndex;</div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>  xiiUInt64           m_uiInstanceTopologyRevision = 0;</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>};</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>XII_DECLARE_REFLECTABLE_TYPE(XII_GRAPHICSCORE_DLL, <a class="code hl_struct" href="../../de/d09/structxii_gpu_instance_upload_range.html">xiiGpuInstanceUploadRange</a>);</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span></div>
+<div class="foldopen" id="foldopen00110" data-start="{" data-end="};">
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno"><a class="line" href="../../d9/d6c/structxii_gpu_instance_source.html">  110</a></span><span class="keyword">struct </span>XII_GRAPHICSCORE_DLL <a class="code hl_struct" href="../../d9/d6c/structxii_gpu_instance_source.html">xiiGpuInstanceSource</a></div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>{</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>  <a class="code hl_struct" href="../../da/d2c/structxii_game_object_handle.html">xiiGameObjectHandle</a> m_hOwnerObject;</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>  <a class="code hl_struct" href="../../da/d8d/structxii_component_handle.html">xiiComponentHandle</a>  m_hOwnerComponent;</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>  xiiUInt32           m_uiLodIndex                 = xiiInvalidIndex;</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>  xiiUInt32           m_uiSectionIndex             = xiiInvalidIndex;</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>  xiiUInt32           m_uiMaterialIndex            = 0;</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>  xiiUInt32           m_uiRenderDataId             = 0;</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>  xiiUInt32           m_uiInstanceIndex            = xiiInvalidIndex;</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>  xiiUInt64           m_uiInstanceTopologyRevision = 0;</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>};</div>
 </div>
 <div class="ttc" id="aclassxii_mat4_template_html_a04174f89643f5d5acc7e2427a82e2aa3"><div class="ttname"><a href="../../d1/dec/classxii_mat4_template.html#a04174f89643f5d5acc7e2427a82e2aa3">xiiMat4Template&lt; float &gt;::MakeIdentity</a></div><div class="ttdeci">static xiiMat4Template&lt; float &gt; MakeIdentity()</div></div>
 <div class="ttc" id="aclassxii_vec4_template_html_a3a26be38c45e068d3fbf27ef32c19e11"><div class="ttname"><a href="../../d1/d20/classxii_vec4_template.html#a3a26be38c45e068d3fbf27ef32c19e11">xiiVec4Template&lt; float &gt;::MakeZero</a></div><div class="ttdeci">static constexpr xiiVec4Template&lt; float &gt; MakeZero()</div><div class="ttdef"><b>Definition</b> Vec4.h:41</div></div>
 <div class="ttc" id="astructxii_component_handle_html"><div class="ttname"><a href="../../da/d8d/structxii_component_handle.html">xiiComponentHandle</a></div><div class="ttdef"><b>Definition</b> Declarations.h:144</div></div>
 <div class="ttc" id="astructxii_game_object_handle_html"><div class="ttname"><a href="../../da/d2c/structxii_game_object_handle.html">xiiGameObjectHandle</a></div><div class="ttdef"><b>Definition</b> Declarations.h:78</div></div>
-<div class="ttc" id="astructxii_gpu_instance_flags_1_1_bits_html"><div class="ttname"><a href="../../dc/d15/structxii_gpu_instance_flags_1_1_bits.html">xiiGpuInstanceFlags::Bits</a></div><div class="ttdef"><b>Definition</b> GpuInstanceTypes.h:32</div></div>
+<div class="ttc" id="astructxii_gpu_instance_flags_1_1_bits_html"><div class="ttname"><a href="../../dc/d15/structxii_gpu_instance_flags_1_1_bits.html">xiiGpuInstanceFlags::Bits</a></div><div class="ttdef"><b>Definition</b> GpuInstanceTypes.h:33</div></div>
 <div class="ttc" id="astructxii_gpu_instance_flags_html"><div class="ttname"><a href="../../d2/d52/structxii_gpu_instance_flags.html">xiiGpuInstanceFlags</a></div><div class="ttdoc">Copyright (c) Theophilus Eriata. All Rights Reserved.</div><div class="ttdef"><b>Definition</b> GpuInstanceTypes.h:12</div></div>
-<div class="ttc" id="astructxii_gpu_instance_source_html"><div class="ttname"><a href="../../d9/d6c/structxii_gpu_instance_source.html">xiiGpuInstanceSource</a></div><div class="ttdoc">Non-owning provenance for a derived GPU draw candidate, never a renderer-owned object.</div><div class="ttdef"><b>Definition</b> GpuInstanceTypes.h:109</div></div>
-<div class="ttc" id="astructxii_gpu_instance_upload_range_html"><div class="ttname"><a href="../../de/d09/structxii_gpu_instance_upload_range.html">xiiGpuInstanceUploadRange</a></div><div class="ttdoc">Contiguous dirty interval used for partial GPU uploads.</div><div class="ttdef"><b>Definition</b> GpuInstanceTypes.h:97</div></div>
-<div class="ttc" id="astructxii_gpu_scene_instance_html"><div class="ttname"><a href="../../d4/d8f/structxii_gpu_scene_instance.html">xiiGpuSceneInstance</a></div><div class="ttdef"><b>Definition</b> GpuInstanceTypes.h:51</div></div>
-<div class="ttc" id="astructxii_gpu_scene_instance_html_a2e56ba43ec34f5c504ee01a0338bebc8"><div class="ttname"><a href="../../d4/d8f/structxii_gpu_scene_instance.html#a2e56ba43ec34f5c504ee01a0338bebc8">xiiGpuSceneInstance::m_uiPrimitiveCount</a></div><div class="ttdeci">xiiUInt32 m_uiPrimitiveCount</div><div class="ttdoc">Zero means the complete selected LOD.</div><div class="ttdef"><b>Definition</b> GpuInstanceTypes.h:72</div></div>
-<div class="ttc" id="astructxii_gpu_scene_instance_html_a98899c9a2cdd41fe524317b649132fb7"><div class="ttname"><a href="../../d4/d8f/structxii_gpu_scene_instance.html#a98899c9a2cdd41fe524317b649132fb7">xiiGpuSceneInstance::m_uiObjectId</a></div><div class="ttdeci">xiiUInt32 m_uiObjectId</div><div class="ttdef"><b>Definition</b> GpuInstanceTypes.h:67</div></div>
-<div class="ttc" id="astructxii_gpu_scene_instance_html_acaf81ace90ac2185b7f27ed962747d5d"><div class="ttname"><a href="../../d4/d8f/structxii_gpu_scene_instance.html#acaf81ace90ac2185b7f27ed962747d5d">xiiGpuSceneInstance::m_uiLodSelectionIndex</a></div><div class="ttdeci">xiiUInt32 m_uiLodSelectionIndex</div><div class="ttdoc">Dense index of the object supplying geometry-level LOD controls and history. Invalid means self.</div><div class="ttdef"><b>Definition</b> GpuInstanceTypes.h:77</div></div>
-<div class="ttc" id="astructxii_gpu_scene_instance_html_ad484eb7006bdf37ce910b61e2300a907"><div class="ttname"><a href="../../d4/d8f/structxii_gpu_scene_instance.html#ad484eb7006bdf37ce910b61e2300a907">xiiGpuSceneInstance::m_NormalTransformRow0</a></div><div class="ttdeci">xiiVec4 m_NormalTransformRow0</div><div class="ttdef"><b>Definition</b> GpuInstanceTypes.h:58</div></div>
-<div class="ttc" id="astructxii_gpu_scene_instance_html_aec17e15eb0c75fed07abaf0e4c08aba3"><div class="ttname"><a href="../../d4/d8f/structxii_gpu_scene_instance.html#aec17e15eb0c75fed07abaf0e4c08aba3">xiiGpuSceneInstance::m_uiSkinningOffset</a></div><div class="ttdeci">xiiUInt32 m_uiSkinningOffset</div><div class="ttdoc">Matrix indices in the scene&#39;s frame snapshot. Counts of zero select bind pose.</div><div class="ttdef"><b>Definition</b> GpuInstanceTypes.h:79</div></div>
+<div class="ttc" id="astructxii_gpu_instance_flags_html_ad1a2ab4b7e82bfb5727bec74b5ba7ef8"><div class="ttname"><a href="../../d2/d52/structxii_gpu_instance_flags.html#ad1a2ab4b7e82bfb5727bec74b5ba7ef8">xiiGpuInstanceFlags::Enum</a></div><div class="ttdeci">Enum</div><div class="ttdef"><b>Definition</b> GpuInstanceTypes.h:16</div></div>
+<div class="ttc" id="astructxii_gpu_instance_flags_html_ad1a2ab4b7e82bfb5727bec74b5ba7ef8a7387b6e94f4934a10b4e8a02d95cd7a2"><div class="ttname"><a href="../../d2/d52/structxii_gpu_instance_flags.html#ad1a2ab4b7e82bfb5727bec74b5ba7ef8a7387b6e94f4934a10b4e8a02d95cd7a2">xiiGpuInstanceFlags::TwoSided</a></div><div class="ttdeci">@ TwoSided</div><div class="ttdoc">Back faces may render; normal-cone rejection is invalid.</div><div class="ttdef"><b>Definition</b> GpuInstanceTypes.h:27</div></div>
+<div class="ttc" id="astructxii_gpu_instance_source_html"><div class="ttname"><a href="../../d9/d6c/structxii_gpu_instance_source.html">xiiGpuInstanceSource</a></div><div class="ttdoc">Non-owning provenance for a derived GPU draw candidate, never a renderer-owned object.</div><div class="ttdef"><b>Definition</b> GpuInstanceTypes.h:111</div></div>
+<div class="ttc" id="astructxii_gpu_instance_upload_range_html"><div class="ttname"><a href="../../de/d09/structxii_gpu_instance_upload_range.html">xiiGpuInstanceUploadRange</a></div><div class="ttdoc">Contiguous dirty interval used for partial GPU uploads.</div><div class="ttdef"><b>Definition</b> GpuInstanceTypes.h:99</div></div>
+<div class="ttc" id="astructxii_gpu_scene_instance_html"><div class="ttname"><a href="../../d4/d8f/structxii_gpu_scene_instance.html">xiiGpuSceneInstance</a></div><div class="ttdef"><b>Definition</b> GpuInstanceTypes.h:53</div></div>
+<div class="ttc" id="astructxii_gpu_scene_instance_html_a2e56ba43ec34f5c504ee01a0338bebc8"><div class="ttname"><a href="../../d4/d8f/structxii_gpu_scene_instance.html#a2e56ba43ec34f5c504ee01a0338bebc8">xiiGpuSceneInstance::m_uiPrimitiveCount</a></div><div class="ttdeci">xiiUInt32 m_uiPrimitiveCount</div><div class="ttdoc">Zero means the complete selected LOD.</div><div class="ttdef"><b>Definition</b> GpuInstanceTypes.h:74</div></div>
+<div class="ttc" id="astructxii_gpu_scene_instance_html_a98899c9a2cdd41fe524317b649132fb7"><div class="ttname"><a href="../../d4/d8f/structxii_gpu_scene_instance.html#a98899c9a2cdd41fe524317b649132fb7">xiiGpuSceneInstance::m_uiObjectId</a></div><div class="ttdeci">xiiUInt32 m_uiObjectId</div><div class="ttdef"><b>Definition</b> GpuInstanceTypes.h:69</div></div>
+<div class="ttc" id="astructxii_gpu_scene_instance_html_acaf81ace90ac2185b7f27ed962747d5d"><div class="ttname"><a href="../../d4/d8f/structxii_gpu_scene_instance.html#acaf81ace90ac2185b7f27ed962747d5d">xiiGpuSceneInstance::m_uiLodSelectionIndex</a></div><div class="ttdeci">xiiUInt32 m_uiLodSelectionIndex</div><div class="ttdoc">Dense index of the object supplying geometry-level LOD controls and history. Invalid means self.</div><div class="ttdef"><b>Definition</b> GpuInstanceTypes.h:79</div></div>
+<div class="ttc" id="astructxii_gpu_scene_instance_html_ad484eb7006bdf37ce910b61e2300a907"><div class="ttname"><a href="../../d4/d8f/structxii_gpu_scene_instance.html#ad484eb7006bdf37ce910b61e2300a907">xiiGpuSceneInstance::m_NormalTransformRow0</a></div><div class="ttdeci">xiiVec4 m_NormalTransformRow0</div><div class="ttdef"><b>Definition</b> GpuInstanceTypes.h:60</div></div>
+<div class="ttc" id="astructxii_gpu_scene_instance_html_aec17e15eb0c75fed07abaf0e4c08aba3"><div class="ttname"><a href="../../d4/d8f/structxii_gpu_scene_instance.html#aec17e15eb0c75fed07abaf0e4c08aba3">xiiGpuSceneInstance::m_uiSkinningOffset</a></div><div class="ttdeci">xiiUInt32 m_uiSkinningOffset</div><div class="ttdoc">Matrix indices in the scene&#39;s frame snapshot. Counts of zero select bind pose.</div><div class="ttdef"><b>Definition</b> GpuInstanceTypes.h:81</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->

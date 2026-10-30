@@ -116,6 +116,11 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>SUPER</b> = <a class
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:afdbf3bfc2d8a8c7eef4499210af1ddad" id="r_afdbf3bfc2d8a8c7eef4499210af1ddad"><td class="memItemLeft" align="right" valign="top"><a id="afdbf3bfc2d8a8c7eef4499210af1ddad" name="afdbf3bfc2d8a8c7eef4499210af1ddad"></a>
+const <a class="el" href="../../de/dc9/classxii_game_application_settings.html">xiiGameApplicationSettings</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetSettings</b> () const</td></tr>
+<tr class="memitem:aac541df189dc72dfce34d6b4593a6140" id="r_aac541df189dc72dfce34d6b4593a6140"><td class="memItemLeft" align="right" valign="top"><a id="aac541df189dc72dfce34d6b4593a6140" name="aac541df189dc72dfce34d6b4593a6140"></a>
+<a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ApplySettings</b> (const <a class="el" href="../../de/dc9/classxii_game_application_settings.html">xiiGameApplicationSettings</a> &amp;settings)</td></tr>
+<tr class="memdesc:aac541df189dc72dfce34d6b4593a6140"><td class="mdescLeft">&#160;</td><td class="mdescRight">Commits validated configuration and notifies output targets once. <br /></td></tr>
 <tr class="memitem:a4606ccdf0cfcdfca3a3aa03b9e20d4a9" id="r_a4606ccdf0cfcdfca3a3aa03b9e20d4a9"><td class="memItemLeft" align="right" valign="top"><a id="a4606ccdf0cfcdfca3a3aa03b9e20d4a9" name="a4606ccdf0cfcdfca3a3aa03b9e20d4a9"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>xiiGameApplication</b> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sAppName, <a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sProjectPath={})</td></tr>
 <tr class="memdesc:a4606ccdf0cfcdfca3a3aa03b9e20d4a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">sProjectPath may be empty, if <a class="el" href="#a6fb468add7c67454696a1506484f6666">FindProjectDirectory()</a> is overridden. <br /></td></tr>
@@ -222,6 +227,7 @@ static xiiCVarBool&#160;</td><td class="memItemRight" valign="bottom"><b>cvar_Ap
 <tr class="heading"><td colspan="2"><h2 id="header-pro-methods" class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:af913119415c41e6406807668f1d127b5" id="r_af913119415c41e6406807668f1d127b5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af913119415c41e6406807668f1d127b5">Init_ConfigureInput</a> () override</td></tr>
+<tr class="memitem:a0c10daa1e6409a7d8922f9ff92ad22de" id="r_a0c10daa1e6409a7d8922f9ff92ad22de"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0c10daa1e6409a7d8922f9ff92ad22de">Init_ConfigureCVars</a> () override</td></tr>
 <tr class="memitem:a104fad24666caa3a0838773e99249939" id="r_a104fad24666caa3a0838773e99249939"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a104fad24666caa3a0838773e99249939">Init_ConfigureAssetManagement</a> () override</td></tr>
 <tr class="memitem:a2c9270c0c7ec5f22fd2693aec488bcb7" id="r_a2c9270c0c7ec5f22fd2693aec488bcb7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2c9270c0c7ec5f22fd2693aec488bcb7">Init_LoadRequiredPlugins</a> () override</td></tr>
 <tr class="memitem:a559c7bc7ae52997ab21c1d6481844c34" id="r_a559c7bc7ae52997ab21c1d6481844c34"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a559c7bc7ae52997ab21c1d6481844c34">Init_SetupDefaultResources</a> () override</td></tr>
@@ -238,6 +244,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>RenderFps</b> ()</td>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>RenderConsole</b> ()</td></tr>
 <tr class="memitem:ad9fa314a1f1e50d9fe640bbc29535453" id="r_ad9fa314a1f1e50d9fe640bbc29535453"><td class="memItemLeft" align="right" valign="top"><a id="ad9fa314a1f1e50d9fe640bbc29535453" name="ad9fa314a1f1e50d9fe640bbc29535453"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>OnVSyncChanged</b> (const <a class="el" href="../../d0/df0/structxii_c_var_event.html">xiiCVarEvent</a> &amp;e)</td></tr>
+<tr class="memitem:a37183ce2cd61ded0c58e19e53ebdb82d" id="r_a37183ce2cd61ded0c58e19e53ebdb82d"><td class="memItemLeft" align="right" valign="top"><a id="a37183ce2cd61ded0c58e19e53ebdb82d" name="a37183ce2cd61ded0c58e19e53ebdb82d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnSettingsChanged</b> (<a class="el" href="../../d9/d45/classxii_settings.html">xiiSettings</a> *pSettings)</td></tr>
 <tr class="inherit_header pro_methods_classxii_game_application_base"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_methods_classxii_game_application_base')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Protected Member Functions inherited from <a class="el" href="../../da/d67/classxii_game_application_base.html">xiiGameApplicationBase</a></td></tr>
 <tr class="memitem:aa6457bc2b1ac81c19b6706b5603bd40e inherit pro_methods_classxii_game_application_base" id="r_aa6457bc2b1ac81c19b6706b5603bd40e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d67/classxii_game_application_base.html#aa6457bc2b1ac81c19b6706b5603bd40e">BeforeHighLevelSystemsShutdown</a> () override</td></tr>
 <tr class="memitem:a590f1fc733980724dfe2c9573a23b027 inherit pro_methods_classxii_game_application_base" id="r_a590f1fc733980724dfe2c9573a23b027"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d67/classxii_game_application_base.html#a590f1fc733980724dfe2c9573a23b027">BeforeCoreSystemsShutdown</a> () override</td></tr>
@@ -282,8 +290,6 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>Init_LoadProj
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>Init_PlatformProfile_LoadForRuntime</b> ()</td></tr>
 <tr class="memitem:a4a67f23a69b17b3555b054c59646d1c4 inherit pro_methods_classxii_game_application_base" id="r_a4a67f23a69b17b3555b054c59646d1c4"><td class="memItemLeft" align="right" valign="top">
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>Init_ConfigureTags</b> ()</td></tr>
-<tr class="memitem:a583e57d4a60da46ebaf33cc4be5c4b2b inherit pro_methods_classxii_game_application_base" id="r_a583e57d4a60da46ebaf33cc4be5c4b2b"><td class="memItemLeft" align="right" valign="top">
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>Init_ConfigureCVars</b> ()</td></tr>
 <tr class="memitem:aa0930fc621d100ebc091c9300b54594c inherit pro_methods_classxii_game_application_base" id="r_aa0930fc621d100ebc091c9300b54594c"><td class="memItemLeft" align="right" valign="top">
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>Run_InputUpdate</b> ()</td></tr>
 <tr class="memitem:a664d13450a6f042c1e6c107e3ac8ec7e inherit pro_methods_classxii_game_application_base" id="r_a664d13450a6f042c1e6c107e3ac8ec7e"><td class="memItemLeft" align="right" valign="top">
@@ -308,6 +314,14 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bShowConsole</b> = 
 <a class="el" href="../../d9/d4a/classxii_unique_ptr.html">xiiUniquePtr</a>&lt; <a class="el" href="../../d9/d90/classxii_quake_console.html">xiiQuakeConsole</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_pConsole</b></td></tr>
 <tr class="memitem:a76a3bf968efa5c5f81b61919bce30d3c" id="r_a76a3bf968efa5c5f81b61919bce30d3c"><td class="memItemLeft" align="right" valign="top"><a id="a76a3bf968efa5c5f81b61919bce30d3c" name="a76a3bf968efa5c5f81b61919bce30d3c"></a>
 xiiEventSubscriptionID&#160;</td><td class="memItemRight" valign="bottom"><b>m_CVarChangeSubscriptionID</b></td></tr>
+<tr class="memitem:ac90b6bdd11e7917b4340a143ebac85a6" id="r_ac90b6bdd11e7917b4340a143ebac85a6"><td class="memItemLeft" align="right" valign="top"><a id="ac90b6bdd11e7917b4340a143ebac85a6" name="ac90b6bdd11e7917b4340a143ebac85a6"></a>
+<a class="el" href="../../de/dc9/classxii_game_application_settings.html">xiiGameApplicationSettings</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_Settings</b></td></tr>
+<tr class="memitem:a39d5e290e6c8f0a2198f6781605a8448" id="r_a39d5e290e6c8f0a2198f6781605a8448"><td class="memItemLeft" align="right" valign="top"><a id="a39d5e290e6c8f0a2198f6781605a8448" name="a39d5e290e6c8f0a2198f6781605a8448"></a>
+<a class="el" href="../../dc/d22/classxii_event.html">xiiEvent</a>&lt; <a class="el" href="../../d9/d45/classxii_settings.html">xiiSettings</a> * &gt;::Unsubscriber&#160;</td><td class="memItemRight" valign="bottom"><b>m_SettingsSubscription</b></td></tr>
+<tr class="memitem:a44f59da57e9371dedaa75d3ea3c96d7b" id="r_a44f59da57e9371dedaa75d3ea3c96d7b"><td class="memItemLeft" align="right" valign="top"><a id="a44f59da57e9371dedaa75d3ea3c96d7b" name="a44f59da57e9371dedaa75d3ea3c96d7b"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bSettingsInitialized</b> = false</td></tr>
+<tr class="memitem:ab4647917d1bd62677ee438ef85757158" id="r_ab4647917d1bd62677ee438ef85757158"><td class="memItemLeft" align="right" valign="top"><a id="ab4647917d1bd62677ee438ef85757158" name="ab4647917d1bd62677ee438ef85757158"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bSettingsWritable</b> = true</td></tr>
 <tr class="memitem:afdb682204eb900ad95fffe0ffd1adb4f" id="r_afdb682204eb900ad95fffe0ffd1adb4f"><td class="memItemLeft" align="right" valign="top"><a id="afdb682204eb900ad95fffe0ffd1adb4f" name="afdb682204eb900ad95fffe0ffd1adb4f"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bTakeScreenshot</b> = false</td></tr>
 <tr class="memitem:a7d4467b6638e4ff02bd3b316a75c2d37" id="r_a7d4467b6638e4ff02bd3b316a75c2d37"><td class="memItemLeft" align="right" valign="top"><a id="a7d4467b6638e4ff02bd3b316a75c2d37" name="a7d4467b6638e4ff02bd3b316a75c2d37"></a>
@@ -431,6 +445,33 @@ xiiCopyOnBroadcastEvent&lt; const <a class="el" href="../../d7/de3/structxii_gam
       <table class="memname">
         <tr>
           <td class="memname">void xiiGameApplication::Init_ConfigureAssetManagement </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel protected">protected</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="../../da/d67/classxii_game_application_base.html">xiiGameApplicationBase</a>.</p>
+
+</div>
+</div>
+<a id="a0c10daa1e6409a7d8922f9ff92ad22de" name="a0c10daa1e6409a7d8922f9ff92ad22de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c10daa1e6409a7d8922f9ff92ad22de">&#9670;&#160;</a></span>Init_ConfigureCVars()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiGameApplication::Init_ConfigureCVars </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>

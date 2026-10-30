@@ -105,9 +105,10 @@ $(function(){initNavTree('da/d45/_directional_light_frame_data_8h_source.html','
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>  XII_ADD_DYNAMIC_REFLECTION(xiiDirectionalLightFrameData, xiiRenderPipelineFrameData);</div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>  xiiDirectionalLightFrameData(xiiUInt64 setup, xiiVec4 directionAndIlluminance, xiiVec4 colorAndRadius) : xiiRenderPipelineFrameData(setup), m_DirectionAndIlluminance(directionAndIlluminance), m_ColorAndAngularRadius(colorAndRadius) {}</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>  xiiDirectionalLightFrameData(xiiUInt64 setup, xiiVec4 directionAndIlluminance, xiiVec4 colorAndRadius, <span class="keywordtype">bool</span> castsShadows = <span class="keyword">false</span>) : xiiRenderPipelineFrameData(setup), m_DirectionAndIlluminance(directionAndIlluminance), m_ColorAndAngularRadius(colorAndRadius), m_bCastsShadows(castsShadows) {}</div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>  <span class="keyword">const</span> xiiVec4 m_DirectionAndIlluminance, m_ColorAndAngularRadius;</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>};</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>  <span class="keyword">const</span> <span class="keywordtype">bool</span>    m_bCastsShadows;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>};</div>
 </div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

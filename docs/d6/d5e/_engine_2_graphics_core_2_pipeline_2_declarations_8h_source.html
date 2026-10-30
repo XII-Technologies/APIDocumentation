@@ -196,85 +196,43 @@ $(function(){initNavTree('d6/d5e/_engine_2_graphics_core_2_pipeline_2_declaratio
 <div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>
 <div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>  <span class="keyword">enum</span> Enum : StorageType</div>
 <div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>  {</div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    None = 0U,</div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    Wireframe,</div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    Overdraw,</div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    TriangleSize,</div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    VertexNormals,</div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>    VertexTangents,</div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    VertexBitangents,</div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    VertexColors,</div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    UV0,</div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    UV1,</div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    UVDensity,</div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    LODLevel,</div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>    StaticVsDynamic,</div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>    VisibilityBuffer,</div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>    InstanceID,</div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>    MeshletID,</div>
-<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>    ClusterID,</div>
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>    CullingOutcome,</div>
-<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>    OcclusionHeatmap,</div>
-<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>    BaseColor,</div>
-<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>    Metallic,</div>
-<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>    Roughness,</div>
-<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>    Specular,</div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>    Emissive,</div>
-<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>    AmbientOcclusion,</div>
-<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>    NormalMap,</div>
-<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>    DepthLinear,</div>
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>    DepthNonLinear,</div>
-<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>    MotionVectors,</div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>    ShadingModelID,</div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>    LightingOnly,</div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>    DiffuseOnly,</div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>    SpecularOnly,</div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>    LightComplexity,</div>
-<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>    ShadowCascadeIndex,</div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>    ShadowMask,</div>
-<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>    IndirectLighting,</div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>    ReflectionContribution,</div>
-<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>    RayTracingRayCount,</div>
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>    RayTracingBVHTraversal,</div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>    RayTracingHitDistance,</div>
-<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>    RayTracingMissShaderID,</div>
-<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>    RayTracingInstanceMask,</div>
-<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>    Exposure,</div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>    Bloom,</div>
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>    ToneMappingCurve,</div>
-<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>    ColorGradingLUT,</div>
-<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span> </div>
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>    ENUM_COUNT,</div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span> </div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>    Default = None</div>
-<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>  };</div>
-<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>  <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d8/df3/structxii_view_render_mode.html#a3938c226280bdf58a91c1228b1e71a07">IsSupportedVisualizationMode</a>(Enum mode);</div>
-<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>};</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span><span class="preprocessor">#define XII_VIEW_RENDER_MODE(Name, Value) Name = Value,</span></div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span><span class="preprocessor">#include &lt;Shaders/Pipeline/ViewRenderModes.h&gt;</span></div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span><span class="preprocessor">#undef XII_VIEW_RENDER_MODE</span></div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    ENUM_COUNT,</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    Default = None</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>  };</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>  <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d8/df3/structxii_view_render_mode.html#a3938c226280bdf58a91c1228b1e71a07">IsSupportedVisualizationMode</a>(Enum mode);</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>  <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d8/df3/structxii_view_render_mode.html#a69a4739847b989f9a07be808d08ffe81">IsSurfaceVisualizationMode</a>(Enum mode);</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>  <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d8/df3/structxii_view_render_mode.html#ad13cb331d50af37a457bda9cc227429e">IsRayTracingVisualizationMode</a>(Enum mode);</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>};</div>
 </div>
-<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span> </div>
-<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>XII_DECLARE_REFLECTABLE_TYPE(XII_GRAPHICSCORE_DLL, <a class="code hl_struct" href="../../d8/df3/structxii_view_render_mode.html">xiiViewRenderMode</a>);</div>
-<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span> </div>
-<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span><span class="keyword">using </span>xiiViewId = <a class="code hl_struct" href="../../d0/dcc/structxii_generic_id.html">xiiGenericId&lt;24, 8&gt;</a>;</div>
-<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span> </div>
-<div class="foldopen" id="foldopen00182" data-start="{" data-end="};">
-<div class="line"><a id="l00182" name="l00182"></a><span class="lineno"><a class="line" href="../../d5/db8/classxii_view_handle.html">  182</a></span><span class="keyword">class </span><a class="code hl_class" href="../../d5/db8/classxii_view_handle.html">xiiViewHandle</a></div>
-<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>{</div>
-<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>  XII_DECLARE_HANDLE_TYPE(<a class="code hl_class" href="../../d5/db8/classxii_view_handle.html">xiiViewHandle</a>, xiiViewId);</div>
-<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span> </div>
-<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>  <span class="keyword">friend</span> <span class="keyword">class </span>xiiRenderWorldModule;</div>
-<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>};</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span> </div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>XII_DECLARE_REFLECTABLE_TYPE(XII_GRAPHICSCORE_DLL, <a class="code hl_struct" href="../../d8/df3/structxii_view_render_mode.html">xiiViewRenderMode</a>);</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span> </div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span><span class="keyword">using </span>xiiViewId = <a class="code hl_struct" href="../../d0/dcc/structxii_generic_id.html">xiiGenericId&lt;24, 8&gt;</a>;</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span> </div>
+<div class="foldopen" id="foldopen00142" data-start="{" data-end="};">
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno"><a class="line" href="../../d5/db8/classxii_view_handle.html">  142</a></span><span class="keyword">class </span><a class="code hl_class" href="../../d5/db8/classxii_view_handle.html">xiiViewHandle</a></div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>{</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>  XII_DECLARE_HANDLE_TYPE(<a class="code hl_class" href="../../d5/db8/classxii_view_handle.html">xiiViewHandle</a>, xiiViewId);</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span> </div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>  <span class="keyword">friend</span> <span class="keyword">class </span>xiiRenderWorldModule;</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>};</div>
 </div>
-<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span></div>
-<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span><span class="keyword">template</span> &lt;&gt;</div>
-<div class="foldopen" id="foldopen00191" data-start="{" data-end="};">
-<div class="line"><a id="l00191" name="l00191"></a><span class="lineno"><a class="line" href="../../dd/da7/structxii_hash_helper_3_01xii_view_handle_01_4.html">  191</a></span><span class="keyword">struct </span><a class="code hl_struct" href="../../d6/dcd/structxii_hash_helper.html">xiiHashHelper</a>&lt;<a class="code hl_class" href="../../d5/db8/classxii_view_handle.html">xiiViewHandle</a>&gt;</div>
-<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>{</div>
-<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>  XII_ALWAYS_INLINE <span class="keyword">static</span> xiiUInt32 Hash(<a class="code hl_class" href="../../d5/db8/classxii_view_handle.html">xiiViewHandle</a> value) { <span class="keywordflow">return</span> value.GetInternalID().m_Data * 2654435761U; }</div>
-<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span> </div>
-<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>  XII_ALWAYS_INLINE <span class="keyword">static</span> <span class="keywordtype">bool</span> Equal(<a class="code hl_class" href="../../d5/db8/classxii_view_handle.html">xiiViewHandle</a> a, <a class="code hl_class" href="../../d5/db8/classxii_view_handle.html">xiiViewHandle</a> b) { <span class="keywordflow">return</span> a == b; }</div>
-<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>};</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span></div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span><span class="keyword">template</span> &lt;&gt;</div>
+<div class="foldopen" id="foldopen00151" data-start="{" data-end="};">
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno"><a class="line" href="../../dd/da7/structxii_hash_helper_3_01xii_view_handle_01_4.html">  151</a></span><span class="keyword">struct </span><a class="code hl_struct" href="../../d6/dcd/structxii_hash_helper.html">xiiHashHelper</a>&lt;<a class="code hl_class" href="../../d5/db8/classxii_view_handle.html">xiiViewHandle</a>&gt;</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>{</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>  XII_ALWAYS_INLINE <span class="keyword">static</span> xiiUInt32 Hash(<a class="code hl_class" href="../../d5/db8/classxii_view_handle.html">xiiViewHandle</a> value) { <span class="keywordflow">return</span> value.GetInternalID().m_Data * 2654435761U; }</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span> </div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>  XII_ALWAYS_INLINE <span class="keyword">static</span> <span class="keywordtype">bool</span> Equal(<a class="code hl_class" href="../../d5/db8/classxii_view_handle.html">xiiViewHandle</a> a, <a class="code hl_class" href="../../d5/db8/classxii_view_handle.html">xiiViewHandle</a> b) { <span class="keywordflow">return</span> a == b; }</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>};</div>
 </div>
-<div class="ttc" id="aclassxii_view_handle_html"><div class="ttname"><a href="../../d5/db8/classxii_view_handle.html">xiiViewHandle</a></div><div class="ttdef"><b>Definition</b> Declarations.h:183</div></div>
+<div class="ttc" id="aclassxii_view_handle_html"><div class="ttname"><a href="../../d5/db8/classxii_view_handle.html">xiiViewHandle</a></div><div class="ttdef"><b>Definition</b> Declarations.h:143</div></div>
 <div class="ttc" id="astructxii_camera_usage_hint_html"><div class="ttname"><a href="../../de/d2b/structxii_camera_usage_hint.html">xiiCameraUsageHint</a></div><div class="ttdef"><b>Definition</b> Declarations.h:66</div></div>
 <div class="ttc" id="astructxii_generic_id_html"><div class="ttname"><a href="../../d0/dcc/structxii_generic_id.html">xiiGenericId</a></div><div class="ttdef"><b>Definition</b> Id.h:68</div></div>
 <div class="ttc" id="astructxii_hash_helper_html"><div class="ttname"><a href="../../d6/dcd/structxii_hash_helper.html">xiiHashHelper</a></div><div class="ttdef"><b>Definition</b> HashingUtils.h:79</div></div>
@@ -287,6 +245,8 @@ $(function(){initNavTree('d6/d5e/_engine_2_graphics_core_2_pipeline_2_declaratio
 <div class="ttc" id="astructxii_shading_quality_level_html_a473147b82c5bc8829bf87fc89c2ac55da5514b9610eeff2db9d076af0b42a3845"><div class="ttname"><a href="../../d7/df5/structxii_shading_quality_level.html#a473147b82c5bc8829bf87fc89c2ac55da5514b9610eeff2db9d076af0b42a3845">xiiShadingQualityLevel::Medium</a></div><div class="ttdeci">@ Medium</div><div class="ttdoc">Balanced shading quality; default setting.</div><div class="ttdef"><b>Definition</b> Declarations.h:26</div></div>
 <div class="ttc" id="astructxii_view_render_mode_html"><div class="ttname"><a href="../../d8/df3/structxii_view_render_mode.html">xiiViewRenderMode</a></div><div class="ttdef"><b>Definition</b> Declarations.h:117</div></div>
 <div class="ttc" id="astructxii_view_render_mode_html_a3938c226280bdf58a91c1228b1e71a07"><div class="ttname"><a href="../../d8/df3/structxii_view_render_mode.html#a3938c226280bdf58a91c1228b1e71a07">xiiViewRenderMode::IsSupportedVisualizationMode</a></div><div class="ttdeci">static bool IsSupportedVisualizationMode(Enum mode)</div><div class="ttdoc">Modes implemented by the reflected channel-visualization operation.</div><div class="ttdef"><b>Definition</b> Declarations.cpp:7</div></div>
+<div class="ttc" id="astructxii_view_render_mode_html_a69a4739847b989f9a07be808d08ffe81"><div class="ttname"><a href="../../d8/df3/structxii_view_render_mode.html#a69a4739847b989f9a07be808d08ffe81">xiiViewRenderMode::IsSurfaceVisualizationMode</a></div><div class="ttdeci">static bool IsSurfaceVisualizationMode(Enum mode)</div><div class="ttdoc">Modes rasterized from canonical GPU-scene geometry rather than material G-buffer channels.</div><div class="ttdef"><b>Definition</b> Declarations.cpp:48</div></div>
+<div class="ttc" id="astructxii_view_render_mode_html_ad13cb331d50af37a457bda9cc227429e"><div class="ttname"><a href="../../d8/df3/structxii_view_render_mode.html#ad13cb331d50af37a457bda9cc227429e">xiiViewRenderMode::IsRayTracingVisualizationMode</a></div><div class="ttdeci">static bool IsRayTracingVisualizationMode(Enum mode)</div><div class="ttdoc">Modes that inspect an explicit hardware ray-tracing diagnostic workload.</div><div class="ttdef"><b>Definition</b> Declarations.cpp:71</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->

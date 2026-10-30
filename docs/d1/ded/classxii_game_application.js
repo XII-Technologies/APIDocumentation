@@ -1,6 +1,7 @@
 var classxii_game_application =
 [
     [ "xiiGameApplication", "d1/ded/classxii_game_application.html#a4606ccdf0cfcdfca3a3aa03b9e20d4a9", null ],
+    [ "ApplySettings", "d1/ded/classxii_game_application.html#aac541df189dc72dfce34d6b4593a6140", null ],
     [ "FindProjectDirectory", "d1/ded/classxii_game_application.html#a6fb468add7c67454696a1506484f6666", null ],
     [ "GetAppProjectPath", "d1/ded/classxii_game_application.html#ab0ee0f904a0a1a7d17ae811a034bc4dc", null ],
     [ "Init_SetupDefaultResources", "d1/ded/classxii_game_application.html#a559c7bc7ae52997ab21c1d6481844c34", null ],

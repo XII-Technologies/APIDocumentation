@@ -97,135 +97,137 @@ $(function(){initNavTree('d3/ddc/_animation_clip_resource_8h_source.html','../..
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;Core/ResourceManager/Resource.h&gt;</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;Foundation/Math/Quat.h&gt;</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;Foundation/Time/Time.h&gt;</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;GraphicsCore/AnimationSystem/AnimationPose.h&gt;</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;GraphicsCore/GraphicsCoreDLL.h&gt;</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">using </span>xiiAnimationClipResourceHandle = <a class="code hl_class" href="../../d6/d16/classxii_typed_resource_handle.html">xiiTypedResourceHandle&lt;class xiiAnimationClipResource&gt;</a>;</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">namespace </span>ozz</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>{</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>  <span class="keyword">namespace </span>animation</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>  {</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keyword">class </span>Animation;</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>  }</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>} <span class="comment">// namespace ozz</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="foldopen" id="foldopen00021" data-start="{" data-end="};">
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="../../d5/d63/structxii_animation_key_vec3.html">   21</a></span><span class="keyword">struct </span>XII_GRAPHICSCORE_DLL <a class="code hl_struct" href="../../d5/d63/structxii_animation_key_vec3.html">xiiAnimationKeyVec3</a></div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>{</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>  <span class="keywordtype">float</span>   m_fTime = 0.0f;</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>  xiiVec3 m_Value = <a class="code hl_function" href="../../d9/d9a/classxii_vec3_template.html#abd25f22cbb27d41284c7cbb886138437">xiiVec3::MakeZero</a>();</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>  <a class="code hl_struct" href="../../dd/dad/structxii_result.html">xiiResult</a> Serialize(<a class="code hl_class" href="../../d0/d18/classxii_stream_writer.html">xiiStreamWriter</a>&amp; inout_stream) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>  <a class="code hl_struct" href="../../dd/dad/structxii_result.html">xiiResult</a> Deserialize(<a class="code hl_class" href="../../d4/d5e/classxii_stream_reader.html">xiiStreamReader</a>&amp; inout_stream);</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>};</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;GraphicsCore/GraphicsCoreDLL.h&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;Core/ResourceManager/Resource.h&gt;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;Foundation/Math/Quat.h&gt;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;Foundation/Time/Time.h&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;GraphicsCore/AnimationSystem/AnimationPose.h&gt;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">using </span>xiiAnimationClipResourceHandle = <a class="code hl_class" href="../../d6/d16/classxii_typed_resource_handle.html">xiiTypedResourceHandle&lt;class xiiAnimationClipResource&gt;</a>;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">namespace </span>ozz</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>{</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>  <span class="keyword">namespace </span>animation</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>  {</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keyword">class </span>Animation;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>  }</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>} <span class="comment">// namespace ozz</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="foldopen" id="foldopen00022" data-start="{" data-end="};">
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="../../d5/d63/structxii_animation_key_vec3.html">   22</a></span><span class="keyword">struct </span>XII_GRAPHICSCORE_DLL <a class="code hl_struct" href="../../d5/d63/structxii_animation_key_vec3.html">xiiAnimationKeyVec3</a></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>{</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>  <span class="keywordtype">float</span>   m_fTime = 0.0f;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>  xiiVec3 m_Value = <a class="code hl_function" href="../../d9/d9a/classxii_vec3_template.html#abd25f22cbb27d41284c7cbb886138437">xiiVec3::MakeZero</a>();</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>  <a class="code hl_struct" href="../../dd/dad/structxii_result.html">xiiResult</a> Serialize(<a class="code hl_class" href="../../d0/d18/classxii_stream_writer.html">xiiStreamWriter</a>&amp; inout_stream) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  <a class="code hl_struct" href="../../dd/dad/structxii_result.html">xiiResult</a> Deserialize(<a class="code hl_class" href="../../d4/d5e/classxii_stream_reader.html">xiiStreamReader</a>&amp; inout_stream);</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>};</div>
 </div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
-<div class="foldopen" id="foldopen00030" data-start="{" data-end="};">
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="../../dc/d0d/structxii_animation_key_quat.html">   30</a></span><span class="keyword">struct </span>XII_GRAPHICSCORE_DLL <a class="code hl_struct" href="../../dc/d0d/structxii_animation_key_quat.html">xiiAnimationKeyQuat</a></div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>{</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>  <span class="keywordtype">float</span>   m_fTime = 0.0f;</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>  xiiQuat m_Value = <a class="code hl_function" href="../../d9/d1b/classxii_quat_template.html#a45c67720a172302b4e216ad10f0869b5">xiiQuat::MakeIdentity</a>();</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>  <a class="code hl_struct" href="../../dd/dad/structxii_result.html">xiiResult</a> Serialize(<a class="code hl_class" href="../../d0/d18/classxii_stream_writer.html">xiiStreamWriter</a>&amp; inout_stream) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  <a class="code hl_struct" href="../../dd/dad/structxii_result.html">xiiResult</a> Deserialize(<a class="code hl_class" href="../../d4/d5e/classxii_stream_reader.html">xiiStreamReader</a>&amp; inout_stream);</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>};</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="foldopen" id="foldopen00031" data-start="{" data-end="};">
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="../../dc/d0d/structxii_animation_key_quat.html">   31</a></span><span class="keyword">struct </span>XII_GRAPHICSCORE_DLL <a class="code hl_struct" href="../../dc/d0d/structxii_animation_key_quat.html">xiiAnimationKeyQuat</a></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>{</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>  <span class="keywordtype">float</span>   m_fTime = 0.0f;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>  xiiQuat m_Value = <a class="code hl_function" href="../../d9/d1b/classxii_quat_template.html#a45c67720a172302b4e216ad10f0869b5">xiiQuat::MakeIdentity</a>();</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  <a class="code hl_struct" href="../../dd/dad/structxii_result.html">xiiResult</a> Serialize(<a class="code hl_class" href="../../d0/d18/classxii_stream_writer.html">xiiStreamWriter</a>&amp; inout_stream) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  <a class="code hl_struct" href="../../dd/dad/structxii_result.html">xiiResult</a> Deserialize(<a class="code hl_class" href="../../d4/d5e/classxii_stream_reader.html">xiiStreamReader</a>&amp; inout_stream);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>};</div>
 </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="foldopen" id="foldopen00039" data-start="{" data-end="};">
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="../../d5/d2f/structxii_animation_clip_joint_track.html">   39</a></span><span class="keyword">struct </span>XII_GRAPHICSCORE_DLL <a class="code hl_struct" href="../../d5/d2f/structxii_animation_clip_joint_track.html">xiiAnimationClipJointTrack</a></div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>{</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  <a class="code hl_class" href="../../d6/d0c/classxii_hashed_string.html">xiiHashedString</a> m_sJointName;</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>  xiiUInt16       m_uiJointIndex = <a class="code hl_function" href="../../d1/d37/namespacexii_math.html#a6bbce1588f70c91d6cad87e82a0238c1">xiiMath::MaxValue&lt;xiiUInt16&gt;</a>();</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  <a class="code hl_class" href="../../dc/da9/classxii_hybrid_array.html">xiiHybridArray&lt;xiiAnimationKeyVec3, 4&gt;</a> m_PositionKeys;</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>  <a class="code hl_class" href="../../dc/da9/classxii_hybrid_array.html">xiiHybridArray&lt;xiiAnimationKeyQuat, 4&gt;</a> m_RotationKeys;</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>  <a class="code hl_class" href="../../dc/da9/classxii_hybrid_array.html">xiiHybridArray&lt;xiiAnimationKeyVec3, 4&gt;</a> m_ScaleKeys;</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>  <a class="code hl_struct" href="../../dd/dad/structxii_result.html">xiiResult</a> Serialize(<a class="code hl_class" href="../../d0/d18/classxii_stream_writer.html">xiiStreamWriter</a>&amp; inout_stream) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  <a class="code hl_struct" href="../../dd/dad/structxii_result.html">xiiResult</a> Deserialize(<a class="code hl_class" href="../../d4/d5e/classxii_stream_reader.html">xiiStreamReader</a>&amp; inout_stream);</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>};</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="foldopen" id="foldopen00040" data-start="{" data-end="};">
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="../../d5/d2f/structxii_animation_clip_joint_track.html">   40</a></span><span class="keyword">struct </span>XII_GRAPHICSCORE_DLL <a class="code hl_struct" href="../../d5/d2f/structxii_animation_clip_joint_track.html">xiiAnimationClipJointTrack</a></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>{</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>  <a class="code hl_class" href="../../d6/d0c/classxii_hashed_string.html">xiiHashedString</a> m_sJointName;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  xiiUInt16       m_uiJointIndex = <a class="code hl_function" href="../../d1/d37/namespacexii_math.html#a6bbce1588f70c91d6cad87e82a0238c1">xiiMath::MaxValue&lt;xiiUInt16&gt;</a>();</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>  <a class="code hl_class" href="../../dc/da9/classxii_hybrid_array.html">xiiHybridArray&lt;xiiAnimationKeyVec3, 4&gt;</a> m_PositionKeys;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>  <a class="code hl_class" href="../../dc/da9/classxii_hybrid_array.html">xiiHybridArray&lt;xiiAnimationKeyQuat, 4&gt;</a> m_RotationKeys;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>  <a class="code hl_class" href="../../dc/da9/classxii_hybrid_array.html">xiiHybridArray&lt;xiiAnimationKeyVec3, 4&gt;</a> m_ScaleKeys;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  <a class="code hl_struct" href="../../dd/dad/structxii_result.html">xiiResult</a> Serialize(<a class="code hl_class" href="../../d0/d18/classxii_stream_writer.html">xiiStreamWriter</a>&amp; inout_stream) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  <a class="code hl_struct" href="../../dd/dad/structxii_result.html">xiiResult</a> Deserialize(<a class="code hl_class" href="../../d4/d5e/classxii_stream_reader.html">xiiStreamReader</a>&amp; inout_stream);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>};</div>
 </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
-<div class="foldopen" id="foldopen00052" data-start="{" data-end="};">
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="../../d4/d43/structxii_animation_clip_event.html">   52</a></span><span class="keyword">struct </span>XII_GRAPHICSCORE_DLL <a class="code hl_struct" href="../../d4/d43/structxii_animation_clip_event.html">xiiAnimationClipEvent</a></div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>{</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  <span class="keywordtype">float</span>           m_fTime = 0.0f;</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  <a class="code hl_class" href="../../d6/d0c/classxii_hashed_string.html">xiiHashedString</a> m_sEvent;</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  <a class="code hl_struct" href="../../dd/dad/structxii_result.html">xiiResult</a> Serialize(<a class="code hl_class" href="../../d0/d18/classxii_stream_writer.html">xiiStreamWriter</a>&amp; inout_stream) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  <a class="code hl_struct" href="../../dd/dad/structxii_result.html">xiiResult</a> Deserialize(<a class="code hl_class" href="../../d4/d5e/classxii_stream_reader.html">xiiStreamReader</a>&amp; inout_stream);</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>};</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="foldopen" id="foldopen00053" data-start="{" data-end="};">
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="../../d4/d43/structxii_animation_clip_event.html">   53</a></span><span class="keyword">struct </span>XII_GRAPHICSCORE_DLL <a class="code hl_struct" href="../../d4/d43/structxii_animation_clip_event.html">xiiAnimationClipEvent</a></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>{</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  <span class="keywordtype">float</span>           m_fTime = 0.0f;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  <a class="code hl_class" href="../../d6/d0c/classxii_hashed_string.html">xiiHashedString</a> m_sEvent;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  <a class="code hl_struct" href="../../dd/dad/structxii_result.html">xiiResult</a> Serialize(<a class="code hl_class" href="../../d0/d18/classxii_stream_writer.html">xiiStreamWriter</a>&amp; inout_stream) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  <a class="code hl_struct" href="../../dd/dad/structxii_result.html">xiiResult</a> Deserialize(<a class="code hl_class" href="../../d4/d5e/classxii_stream_reader.html">xiiStreamReader</a>&amp; inout_stream);</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>};</div>
 </div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
-<div class="foldopen" id="foldopen00061" data-start="{" data-end="};">
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="../../d6/d8d/structxii_animation_clip_resource_descriptor.html">   61</a></span><span class="keyword">struct </span>XII_GRAPHICSCORE_DLL <a class="code hl_struct" href="../../d6/d8d/structxii_animation_clip_resource_descriptor.html">xiiAnimationClipResourceDescriptor</a></div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>{</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  <span class="keywordtype">void</span> Clear();</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>  <span class="keywordtype">void</span> ComputeRuntimeHash();</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>  <a class="code hl_struct" href="../../d5/d2f/structxii_animation_clip_joint_track.html">xiiAnimationClipJointTrack</a>&amp; AddJointTrack(<a class="code hl_class" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sJointName, xiiUInt16 uiJointIndex = <a class="code hl_function" href="../../d1/d37/namespacexii_math.html#a6bbce1588f70c91d6cad87e82a0238c1">xiiMath::MaxValue&lt;xiiUInt16&gt;</a>());</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>  <a class="code hl_struct" href="../../dd/dad/structxii_result.html">xiiResult</a> Serialize(<a class="code hl_class" href="../../d0/d18/classxii_stream_writer.html">xiiStreamWriter</a>&amp; inout_stream) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>  <a class="code hl_struct" href="../../dd/dad/structxii_result.html">xiiResult</a> Deserialize(<a class="code hl_class" href="../../d4/d5e/classxii_stream_reader.html">xiiStreamReader</a>&amp; inout_stream);</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>  <a class="code hl_struct" href="../../d7/dc1/structxii_time.html">xiiTime</a>   m_Duration          = <a class="code hl_function" href="../../d7/dc1/structxii_time.html#af50981ed01769e51493ea3d573c007ae">xiiTime::MakeZero</a>();</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>  <span class="keywordtype">float</span>     m_fSampleRate       = 30.0f;</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>  <span class="keywordtype">bool</span>      m_bLooping          = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>  <span class="keywordtype">bool</span>      m_bAdditive         = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>  xiiUInt16 m_uiRootMotionJoint = <a class="code hl_function" href="../../d1/d37/namespacexii_math.html#a6bbce1588f70c91d6cad87e82a0238c1">xiiMath::MaxValue&lt;xiiUInt16&gt;</a>();</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>  <a class="code hl_class" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray&lt;xiiAnimationClipJointTrack&gt;</a> m_JointTracks;</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>  <a class="code hl_class" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray&lt;xiiAnimationClipEvent&gt;</a>      m_Events;</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>  <a class="code hl_class" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray&lt;xiiUInt8&gt;</a>                   m_OzzAnimationData;</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>  xiiUInt32                                   m_uiRuntimeHash = 0U;</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>};</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="foldopen" id="foldopen00062" data-start="{" data-end="};">
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="../../d6/d8d/structxii_animation_clip_resource_descriptor.html">   62</a></span><span class="keyword">struct </span>XII_GRAPHICSCORE_DLL <a class="code hl_struct" href="../../d6/d8d/structxii_animation_clip_resource_descriptor.html">xiiAnimationClipResourceDescriptor</a></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>{</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>  <span class="keywordtype">void</span> Clear();</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  <span class="keywordtype">void</span> ComputeRuntimeHash();</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>  <a class="code hl_struct" href="../../d5/d2f/structxii_animation_clip_joint_track.html">xiiAnimationClipJointTrack</a>&amp; AddJointTrack(<a class="code hl_class" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sJointName, xiiUInt16 uiJointIndex = <a class="code hl_function" href="../../d1/d37/namespacexii_math.html#a6bbce1588f70c91d6cad87e82a0238c1">xiiMath::MaxValue&lt;xiiUInt16&gt;</a>());</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>  <a class="code hl_struct" href="../../dd/dad/structxii_result.html">xiiResult</a> Serialize(<a class="code hl_class" href="../../d0/d18/classxii_stream_writer.html">xiiStreamWriter</a>&amp; inout_stream) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>  <a class="code hl_struct" href="../../dd/dad/structxii_result.html">xiiResult</a> Deserialize(<a class="code hl_class" href="../../d4/d5e/classxii_stream_reader.html">xiiStreamReader</a>&amp; inout_stream);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>  <a class="code hl_struct" href="../../d7/dc1/structxii_time.html">xiiTime</a>   m_Duration          = <a class="code hl_function" href="../../d7/dc1/structxii_time.html#af50981ed01769e51493ea3d573c007ae">xiiTime::MakeZero</a>();</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>  <span class="keywordtype">float</span>     m_fSampleRate       = 30.0f;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>  <span class="keywordtype">bool</span>      m_bLooping          = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>  <span class="keywordtype">bool</span>      m_bAdditive         = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>  xiiUInt16 m_uiRootMotionJoint = <a class="code hl_function" href="../../d1/d37/namespacexii_math.html#a6bbce1588f70c91d6cad87e82a0238c1">xiiMath::MaxValue&lt;xiiUInt16&gt;</a>();</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>  <a class="code hl_class" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray&lt;xiiAnimationClipJointTrack&gt;</a> m_JointTracks;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>  <a class="code hl_class" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray&lt;xiiAnimationClipEvent&gt;</a>      m_Events;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>  <a class="code hl_class" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray&lt;xiiUInt8&gt;</a>                   m_OzzAnimationData;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>  xiiUInt32                                   m_uiRuntimeHash = 0U;</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>};</div>
 </div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
-<div class="foldopen" id="foldopen00083" data-start="{" data-end="};">
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno"><a class="line" href="../../d9/dca/classxii_animation_clip_resource.html">   83</a></span><span class="keyword">class </span>XII_GRAPHICSCORE_DLL xiiAnimationClipResource final : <span class="keyword">public</span> <a class="code hl_function" href="../../d9/de1/classxii_resource.html#ae7c6f2fcc105e876c0165d6ca5edfedf">xiiResource</a></div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>{</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>  XII_ADD_DYNAMIC_REFLECTION(xiiAnimationClipResource, <a class="code hl_function" href="../../d9/de1/classxii_resource.html#ae7c6f2fcc105e876c0165d6ca5edfedf">xiiResource</a>);</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>  XII_RESOURCE_DECLARE_COMMON_CODE(xiiAnimationClipResource);</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>  XII_RESOURCE_DECLARE_CREATEABLE(xiiAnimationClipResource, <a class="code hl_struct" href="../../d6/d8d/structxii_animation_clip_resource_descriptor.html">xiiAnimationClipResourceDescriptor</a>);</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>  xiiAnimationClipResource();</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>  ~xiiAnimationClipResource();</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>  <a class="code hl_struct" href="../../d7/dc1/structxii_time.html">xiiTime</a>                                   GetDuration() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>  <span class="keywordtype">bool</span>                                      IsLooping() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>  <span class="keywordtype">bool</span>                                      IsAdditive() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>  xiiUInt32                                 GetRuntimeHash() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>  <span class="keyword">const</span> <a class="code hl_struct" href="../../d6/d8d/structxii_animation_clip_resource_descriptor.html">xiiAnimationClipResourceDescriptor</a>&amp; GetDescriptor() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>  <span class="keywordtype">void</span> SampleLocalPose(<span class="keyword">const</span> <a class="code hl_class" href="../../d6/da3/classxii_skeleton_resource.html">xiiSkeletonResource</a>&amp; skeleton, <a class="code hl_struct" href="../../d7/dc1/structxii_time.html">xiiTime</a> sampleTime, <a class="code hl_struct" href="../../d7/d4a/structxii_animation_pose.html">xiiAnimationPose</a>&amp; ref_pose) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="preprocessor">#if defined(BUILDSYSTEM_ENABLE_OZZ_SUPPORT)</span></div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>  <span class="keyword">const</span> ozz::animation::Animation* GetOzzAnimation() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>  <span class="keyword">virtual</span> <a class="code hl_struct" href="../../db/d4b/structxii_resource_load_description.html">xiiResourceLoadDescription</a> <a class="code hl_function" href="../../d9/dca/classxii_animation_clip_resource.html#a017f1879170ce8d75a6661f39b5028e8">UnloadData</a>(<a class="code hl_enumeration" href="../../d9/de1/classxii_resource.html#abc81062ebb13c5e532e0323ccdcb468a">Unload</a> whatToUnload) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>  <span class="keyword">virtual</span> <a class="code hl_struct" href="../../db/d4b/structxii_resource_load_description.html">xiiResourceLoadDescription</a> <a class="code hl_function" href="../../d9/dca/classxii_animation_clip_resource.html#ab454daff182d4ce1817e7ea0e6df6f0c">UpdateContent</a>(<a class="code hl_class" href="../../d4/d5e/classxii_stream_reader.html">xiiStreamReader</a>* pStream) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span>                       <a class="code hl_function" href="../../d9/dca/classxii_animation_clip_resource.html#ac8fedbe150015211809e58b5802f9054">UpdateMemoryUsage</a>(<a class="code hl_struct" href="../../da/da5/structxii_resource_1_1_memory_usage.html">MemoryUsage</a>&amp; out_NewMemoryUsage) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>  <span class="keywordtype">void</span> LoadOzzAnimation(<span class="keyword">const</span> <a class="code hl_class" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray&lt;xiiUInt8&gt;</a>&amp; ozzData);</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
+<div class="foldopen" id="foldopen00084" data-start="{" data-end="};">
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="../../d9/dca/classxii_animation_clip_resource.html">   84</a></span><span class="keyword">class </span>XII_GRAPHICSCORE_DLL xiiAnimationClipResource final : <span class="keyword">public</span> <a class="code hl_function" href="../../d9/de1/classxii_resource.html#ae7c6f2fcc105e876c0165d6ca5edfedf">xiiResource</a></div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>{</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>  XII_ADD_DYNAMIC_REFLECTION(xiiAnimationClipResource, <a class="code hl_function" href="../../d9/de1/classxii_resource.html#ae7c6f2fcc105e876c0165d6ca5edfedf">xiiResource</a>);</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>  XII_RESOURCE_DECLARE_COMMON_CODE(xiiAnimationClipResource);</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>  XII_RESOURCE_DECLARE_CREATEABLE(xiiAnimationClipResource, <a class="code hl_struct" href="../../d6/d8d/structxii_animation_clip_resource_descriptor.html">xiiAnimationClipResourceDescriptor</a>);</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>  xiiAnimationClipResource();</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>  ~xiiAnimationClipResource();</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>  <a class="code hl_struct" href="../../d7/dc1/structxii_time.html">xiiTime</a>                                   GetDuration() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>  <span class="keywordtype">bool</span>                                      IsLooping() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>  <span class="keywordtype">bool</span>                                      IsAdditive() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>  xiiUInt32                                 GetRuntimeHash() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>  <span class="keyword">const</span> <a class="code hl_struct" href="../../d6/d8d/structxii_animation_clip_resource_descriptor.html">xiiAnimationClipResourceDescriptor</a>&amp; GetDescriptor() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span></div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="../../d9/dca/classxii_animation_clip_resource.html#a2a7ef8746e4fa0cf23814262a5a4bbd0">SampleLocalPose</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d6/da3/classxii_skeleton_resource.html">xiiSkeletonResource</a>&amp; skeleton, <a class="code hl_struct" href="../../d7/dc1/structxii_time.html">xiiTime</a> sampleTime, <a class="code hl_struct" href="../../d7/d4a/structxii_animation_pose.html">xiiAnimationPose</a>&amp; ref_pose, <span class="keywordtype">bool</span> bApplyLooping = <span class="keyword">true</span>) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span><span class="preprocessor">#if defined(BUILDSYSTEM_ENABLE_OZZ_SUPPORT)</span></div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>  <span class="keyword">const</span> ozz::animation::Animation* GetOzzAnimation() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>  <span class="keyword">virtual</span> <a class="code hl_struct" href="../../db/d4b/structxii_resource_load_description.html">xiiResourceLoadDescription</a> <a class="code hl_function" href="../../d9/dca/classxii_animation_clip_resource.html#a017f1879170ce8d75a6661f39b5028e8">UnloadData</a>(<a class="code hl_enumeration" href="../../d9/de1/classxii_resource.html#abc81062ebb13c5e532e0323ccdcb468a">Unload</a> whatToUnload) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>  <span class="keyword">virtual</span> <a class="code hl_struct" href="../../db/d4b/structxii_resource_load_description.html">xiiResourceLoadDescription</a> <a class="code hl_function" href="../../d9/dca/classxii_animation_clip_resource.html#ab454daff182d4ce1817e7ea0e6df6f0c">UpdateContent</a>(<a class="code hl_class" href="../../d4/d5e/classxii_stream_reader.html">xiiStreamReader</a>* pStream) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span>                       <a class="code hl_function" href="../../d9/dca/classxii_animation_clip_resource.html#ac8fedbe150015211809e58b5802f9054">UpdateMemoryUsage</a>(<a class="code hl_struct" href="../../da/da5/structxii_resource_1_1_memory_usage.html">MemoryUsage</a>&amp; out_NewMemoryUsage) <span class="keyword">override</span>;</div>
 <div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>  <a class="code hl_struct" href="../../d6/d8d/structxii_animation_clip_resource_descriptor.html">xiiAnimationClipResourceDescriptor</a> m_Descriptor;</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span><span class="preprocessor">#if defined(BUILDSYSTEM_ENABLE_OZZ_SUPPORT)</span></div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>  <a class="code hl_class" href="../../d9/d4a/classxii_unique_ptr.html">xiiUniquePtr&lt;ozz::animation::Animation&gt;</a> m_pOzzAnimation;</div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>};</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>  <span class="keywordtype">void</span> LoadOzzAnimation(<span class="keyword">const</span> <a class="code hl_class" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray&lt;xiiUInt8&gt;</a>&amp; ozzData);</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>  <a class="code hl_struct" href="../../d6/d8d/structxii_animation_clip_resource_descriptor.html">xiiAnimationClipResourceDescriptor</a> m_Descriptor;</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span><span class="preprocessor">#if defined(BUILDSYSTEM_ENABLE_OZZ_SUPPORT)</span></div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>  <a class="code hl_class" href="../../d9/d4a/classxii_unique_ptr.html">xiiUniquePtr&lt;ozz::animation::Animation&gt;</a> m_pOzzAnimation;</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>};</div>
 </div>
-<div class="ttc" id="aclassxii_animation_clip_resource_html_a017f1879170ce8d75a6661f39b5028e8"><div class="ttname"><a href="../../d9/dca/classxii_animation_clip_resource.html#a017f1879170ce8d75a6661f39b5028e8">xiiAnimationClipResource::UnloadData</a></div><div class="ttdeci">virtual xiiResourceLoadDescription UnloadData(Unload whatToUnload) override</div><div class="ttdef"><b>Definition</b> AnimationClipResource.cpp:396</div></div>
-<div class="ttc" id="aclassxii_animation_clip_resource_html_ab454daff182d4ce1817e7ea0e6df6f0c"><div class="ttname"><a href="../../d9/dca/classxii_animation_clip_resource.html#ab454daff182d4ce1817e7ea0e6df6f0c">xiiAnimationClipResource::UpdateContent</a></div><div class="ttdeci">virtual xiiResourceLoadDescription UpdateContent(xiiStreamReader *pStream) override</div><div class="ttdef"><b>Definition</b> AnimationClipResource.cpp:412</div></div>
-<div class="ttc" id="aclassxii_animation_clip_resource_html_ac8fedbe150015211809e58b5802f9054"><div class="ttname"><a href="../../d9/dca/classxii_animation_clip_resource.html#ac8fedbe150015211809e58b5802f9054">xiiAnimationClipResource::UpdateMemoryUsage</a></div><div class="ttdeci">virtual void UpdateMemoryUsage(MemoryUsage &amp;out_NewMemoryUsage) override</div><div class="ttdef"><b>Definition</b> AnimationClipResource.cpp:436</div></div>
+<div class="ttc" id="aclassxii_animation_clip_resource_html_a017f1879170ce8d75a6661f39b5028e8"><div class="ttname"><a href="../../d9/dca/classxii_animation_clip_resource.html#a017f1879170ce8d75a6661f39b5028e8">xiiAnimationClipResource::UnloadData</a></div><div class="ttdeci">virtual xiiResourceLoadDescription UnloadData(Unload whatToUnload) override</div><div class="ttdef"><b>Definition</b> AnimationClipResource.cpp:398</div></div>
+<div class="ttc" id="aclassxii_animation_clip_resource_html_a2a7ef8746e4fa0cf23814262a5a4bbd0"><div class="ttname"><a href="../../d9/dca/classxii_animation_clip_resource.html#a2a7ef8746e4fa0cf23814262a5a4bbd0">xiiAnimationClipResource::SampleLocalPose</a></div><div class="ttdeci">void SampleLocalPose(const xiiSkeletonResource &amp;skeleton, xiiTime sampleTime, xiiAnimationPose &amp;ref_pose, bool bApplyLooping=true) const</div><div class="ttdoc">Set bApplyLooping to false for exact, clamped Editor timeline scrubbing.</div><div class="ttdef"><b>Definition</b> AnimationClipResource.cpp:307</div></div>
+<div class="ttc" id="aclassxii_animation_clip_resource_html_ab454daff182d4ce1817e7ea0e6df6f0c"><div class="ttname"><a href="../../d9/dca/classxii_animation_clip_resource.html#ab454daff182d4ce1817e7ea0e6df6f0c">xiiAnimationClipResource::UpdateContent</a></div><div class="ttdeci">virtual xiiResourceLoadDescription UpdateContent(xiiStreamReader *pStream) override</div><div class="ttdef"><b>Definition</b> AnimationClipResource.cpp:414</div></div>
+<div class="ttc" id="aclassxii_animation_clip_resource_html_ac8fedbe150015211809e58b5802f9054"><div class="ttname"><a href="../../d9/dca/classxii_animation_clip_resource.html#ac8fedbe150015211809e58b5802f9054">xiiAnimationClipResource::UpdateMemoryUsage</a></div><div class="ttdeci">virtual void UpdateMemoryUsage(MemoryUsage &amp;out_NewMemoryUsage) override</div><div class="ttdef"><b>Definition</b> AnimationClipResource.cpp:438</div></div>
 <div class="ttc" id="aclassxii_dynamic_array_html"><div class="ttname"><a href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray</a></div><div class="ttdef"><b>Definition</b> DynamicArray.h:84</div></div>
 <div class="ttc" id="aclassxii_hashed_string_html"><div class="ttname"><a href="../../d6/d0c/classxii_hashed_string.html">xiiHashedString</a></div><div class="ttdef"><b>Definition</b> HashedString.h:27</div></div>
 <div class="ttc" id="aclassxii_hybrid_array_html"><div class="ttname"><a href="../../dc/da9/classxii_hybrid_array.html">xiiHybridArray</a></div><div class="ttdoc">Copyright (c) Theophilus Eriata. All Rights Reserved.</div><div class="ttdef"><b>Definition</b> HybridArray.h:14</div></div>
@@ -240,11 +242,11 @@ $(function(){initNavTree('d3/ddc/_animation_clip_resource_8h_source.html','../..
 <div class="ttc" id="aclassxii_unique_ptr_html"><div class="ttname"><a href="../../d9/d4a/classxii_unique_ptr.html">xiiUniquePtr</a></div><div class="ttdoc">Copyright (c) Theophilus Eriata. All Rights Reserved.</div><div class="ttdef"><b>Definition</b> UniquePtr.h:11</div></div>
 <div class="ttc" id="aclassxii_vec3_template_html_abd25f22cbb27d41284c7cbb886138437"><div class="ttname"><a href="../../d9/d9a/classxii_vec3_template.html#abd25f22cbb27d41284c7cbb886138437">xiiVec3Template&lt; float &gt;::MakeZero</a></div><div class="ttdeci">static constexpr xiiVec3Template&lt; float &gt; MakeZero()</div><div class="ttdef"><b>Definition</b> Vec3.h:39</div></div>
 <div class="ttc" id="anamespacexii_math_html_a6bbce1588f70c91d6cad87e82a0238c1"><div class="ttname"><a href="../../d1/d37/namespacexii_math.html#a6bbce1588f70c91d6cad87e82a0238c1">xiiMath::MaxValue</a></div><div class="ttdeci">constexpr TYPE MaxValue()</div><div class="ttdoc">Returns the largest possible positive value (that is not infinity).</div></div>
-<div class="ttc" id="astructxii_animation_clip_event_html"><div class="ttname"><a href="../../d4/d43/structxii_animation_clip_event.html">xiiAnimationClipEvent</a></div><div class="ttdef"><b>Definition</b> AnimationClipResource.h:53</div></div>
-<div class="ttc" id="astructxii_animation_clip_joint_track_html"><div class="ttname"><a href="../../d5/d2f/structxii_animation_clip_joint_track.html">xiiAnimationClipJointTrack</a></div><div class="ttdef"><b>Definition</b> AnimationClipResource.h:40</div></div>
-<div class="ttc" id="astructxii_animation_clip_resource_descriptor_html"><div class="ttname"><a href="../../d6/d8d/structxii_animation_clip_resource_descriptor.html">xiiAnimationClipResourceDescriptor</a></div><div class="ttdef"><b>Definition</b> AnimationClipResource.h:62</div></div>
-<div class="ttc" id="astructxii_animation_key_quat_html"><div class="ttname"><a href="../../dc/d0d/structxii_animation_key_quat.html">xiiAnimationKeyQuat</a></div><div class="ttdef"><b>Definition</b> AnimationClipResource.h:31</div></div>
-<div class="ttc" id="astructxii_animation_key_vec3_html"><div class="ttname"><a href="../../d5/d63/structxii_animation_key_vec3.html">xiiAnimationKeyVec3</a></div><div class="ttdef"><b>Definition</b> AnimationClipResource.h:22</div></div>
+<div class="ttc" id="astructxii_animation_clip_event_html"><div class="ttname"><a href="../../d4/d43/structxii_animation_clip_event.html">xiiAnimationClipEvent</a></div><div class="ttdef"><b>Definition</b> AnimationClipResource.h:54</div></div>
+<div class="ttc" id="astructxii_animation_clip_joint_track_html"><div class="ttname"><a href="../../d5/d2f/structxii_animation_clip_joint_track.html">xiiAnimationClipJointTrack</a></div><div class="ttdef"><b>Definition</b> AnimationClipResource.h:41</div></div>
+<div class="ttc" id="astructxii_animation_clip_resource_descriptor_html"><div class="ttname"><a href="../../d6/d8d/structxii_animation_clip_resource_descriptor.html">xiiAnimationClipResourceDescriptor</a></div><div class="ttdef"><b>Definition</b> AnimationClipResource.h:63</div></div>
+<div class="ttc" id="astructxii_animation_key_quat_html"><div class="ttname"><a href="../../dc/d0d/structxii_animation_key_quat.html">xiiAnimationKeyQuat</a></div><div class="ttdef"><b>Definition</b> AnimationClipResource.h:32</div></div>
+<div class="ttc" id="astructxii_animation_key_vec3_html"><div class="ttname"><a href="../../d5/d63/structxii_animation_key_vec3.html">xiiAnimationKeyVec3</a></div><div class="ttdef"><b>Definition</b> AnimationClipResource.h:23</div></div>
 <div class="ttc" id="astructxii_animation_pose_html"><div class="ttname"><a href="../../d7/d4a/structxii_animation_pose.html">xiiAnimationPose</a></div><div class="ttdef"><b>Definition</b> AnimationPose.h:23</div></div>
 <div class="ttc" id="astructxii_resource_1_1_memory_usage_html"><div class="ttname"><a href="../../da/da5/structxii_resource_1_1_memory_usage.html">xiiResource::MemoryUsage</a></div><div class="ttdef"><b>Definition</b> Resource.h:41</div></div>
 <div class="ttc" id="astructxii_resource_load_description_html"><div class="ttname"><a href="../../db/d4b/structxii_resource_load_description.html">xiiResourceLoadDescription</a></div><div class="ttdoc">Describes in which loading state a resource currently is, and how many different quality levels there...</div><div class="ttdef"><b>Definition</b> Declarations.h:102</div></div>

@@ -5,6 +5,7 @@ var classxii_view =
     [ "ComputeWorldSpacePos", "dd/df1/classxii_view.html#a17e913195a5efac266ee68a0e022c02b", null ],
     [ "ConvertScreenNormalizedPosToPixelPos", "dd/df1/classxii_view.html#a5eb161f5c4eda78d64f4b5b7a9c4e7cf", null ],
     [ "ConvertScreenPixelPosToNormalizedPos", "dd/df1/classxii_view.html#a9cb3d973b8bcfd4a713ad27fa80679e3", null ],
+    [ "GetLastRenderResult", "dd/df1/classxii_view.html#a073e62cbea7115b38862296669a31504", null ],
     [ "GetProfiler", "dd/df1/classxii_view.html#acaefe83818bd07bc21bb83cb3ba91694", null ],
     [ "GetProjectionMatrix", "dd/df1/classxii_view.html#a2a1475d31768f1f30369a5ee3fdcaaf9", null ],
     [ "GetRenderPipelineInstance", "dd/df1/classxii_view.html#ad5088b4454ecb3ecec122c2bcf220e44", null ],

@@ -96,14 +96,55 @@ $(function(){initNavTree('db/d7d/structxii_asset_processor_event.html','../../',
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-types" class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a14d1d5c282e9d0e11ff1011c2d987a44" id="r_a14d1d5c282e9d0e11ff1011c2d987a44"><td class="memItemLeft" align="right" valign="top"><a id="a14d1d5c282e9d0e11ff1011c2d987a44" name="a14d1d5c282e9d0e11ff1011c2d987a44"></a>enum class &#160;</td><td class="memItemRight" valign="bottom"><b>Type</b> { <b>ProcessTaskStateChanged</b>
+<tr class="memitem:a14d1d5c282e9d0e11ff1011c2d987a44" id="r_a14d1d5c282e9d0e11ff1011c2d987a44"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a14d1d5c282e9d0e11ff1011c2d987a44">Type</a> { <b>ProcessTaskStateChanged</b>
+, <a class="el" href="#a14d1d5c282e9d0e11ff1011c2d987a44a6bf168cc32205c9308aa10804a0557e6">AssetProcessed</a>
+, <b>TransformProgress</b>
+, <b>TransformsFinished</b>
  }</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a9c3825c80a22fd3a1cc86294ee75de06" id="r_a9c3825c80a22fd3a1cc86294ee75de06"><td class="memItemLeft" align="right" valign="top"><a id="a9c3825c80a22fd3a1cc86294ee75de06" name="a9c3825c80a22fd3a1cc86294ee75de06"></a>
-Type&#160;</td><td class="memItemRight" valign="bottom"><b>m_Type</b></td></tr>
+<a class="el" href="#a14d1d5c282e9d0e11ff1011c2d987a44">Type</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_Type</b></td></tr>
+<tr class="memitem:a0a741a21fdc70dc48e7e0f769760adff" id="r_a0a741a21fdc70dc48e7e0f769760adff"><td class="memItemLeft" align="right" valign="top"><a id="a0a741a21fdc70dc48e7e0f769760adff" name="a0a741a21fdc70dc48e7e0f769760adff"></a>
+xiiTransformResult::Enum&#160;</td><td class="memItemRight" valign="bottom"><b>m_Result</b> = xiiTransformResult::Success</td></tr>
+<tr class="memitem:a81a90d84a1a8151e4e1168fd4b2ce307" id="r_a81a90d84a1a8151e4e1168fd4b2ce307"><td class="memItemLeft" align="right" valign="top"><a id="a81a90d84a1a8151e4e1168fd4b2ce307" name="a81a90d84a1a8151e4e1168fd4b2ce307"></a>
+xiiString&#160;</td><td class="memItemRight" valign="bottom"><b>m_sAssetPath</b></td></tr>
+<tr class="memdesc:a81a90d84a1a8151e4e1168fd4b2ce307"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copied by listeners before returning to the processing thread. <br /></td></tr>
+<tr class="memitem:a95db77044a3e6fc690cf8e00615d1e57" id="r_a95db77044a3e6fc690cf8e00615d1e57"><td class="memItemLeft" align="right" valign="top"><a id="a95db77044a3e6fc690cf8e00615d1e57" name="a95db77044a3e6fc690cf8e00615d1e57"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bRequested</b> = false</td></tr>
+<tr class="memitem:a948334b38bfaf16aa46c063caffa5b0f" id="r_a948334b38bfaf16aa46c063caffa5b0f"><td class="memItemLeft" align="right" valign="top"><a id="a948334b38bfaf16aa46c063caffa5b0f" name="a948334b38bfaf16aa46c063caffa5b0f"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bCanceled</b> = false</td></tr>
+<tr class="memitem:ac84764ab100dfc3bb5e75bf2f1c47aa5" id="r_ac84764ab100dfc3bb5e75bf2f1c47aa5"><td class="memItemLeft" align="right" valign="top"><a id="ac84764ab100dfc3bb5e75bf2f1c47aa5" name="ac84764ab100dfc3bb5e75bf2f1c47aa5"></a>
+<a class="el" href="../../dd/df4/structxii_asset_transform_progress.html">xiiAssetTransformProgress</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_Progress</b></td></tr>
 </table>
+<a name="doc-enum-members" id="doc-enum-members"></a><h2 id="header-doc-enum-members" class="groupheader">Member Enumeration Documentation</h2>
+<a id="a14d1d5c282e9d0e11ff1011c2d987a44" name="a14d1d5c282e9d0e11ff1011c2d987a44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14d1d5c282e9d0e11ff1011c2d987a44">&#9670;&#160;</a></span>Type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="#a14d1d5c282e9d0e11ff1011c2d987a44">xiiAssetProcessorEvent::Type</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel strong">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a14d1d5c282e9d0e11ff1011c2d987a44a6bf168cc32205c9308aa10804a0557e6" name="a14d1d5c282e9d0e11ff1011c2d987a44a6bf168cc32205c9308aa10804a0557e6"></a>AssetProcessed&#160;</td><td class="fielddoc"><p>A background request reached its final result; not an arbitrary log message. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>/home/runner/work/XII/XII/Source/Editor/EditorFramework/Assets/<a class="el" href="../../d5/d33/_asset_processor_8h_source.html">AssetProcessor.h</a></li>
 </ul>

@@ -107,6 +107,17 @@ Classes</h2></td></tr>
 Signals</h2></td></tr>
 <tr class="memitem:a57337b1c42e26f0a16b4a97c211a2bee" id="r_a57337b1c42e26f0a16b4a97c211a2bee"><td class="memItemLeft" align="right" valign="top"><a id="a57337b1c42e26f0a16b4a97c211a2bee" name="a57337b1c42e26f0a16b4a97c211a2bee"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>IdleEvent</b> ()</td></tr>
+<tr class="memitem:a2c9c0de34f833b66a9aeb29b5b6ccced" id="r_a2c9c0de34f833b66a9aeb29b5b6ccced"><td class="memItemLeft" align="right" valign="top"><a id="a2c9c0de34f833b66a9aeb29b5b6ccced" name="a2c9c0de34f833b66a9aeb29b5b6ccced"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>StartupQuitRequested</b> ()</td></tr>
+<tr class="memitem:a19d02dbbf64905af4692a1065745a900" id="r_a19d02dbbf64905af4692a1065745a900"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a19d02dbbf64905af4692a1065745a900">ToolExecutionStarted</a> (const QString &amp;sOperation={})</td></tr>
+<tr class="memitem:a83447cb02caa04cb771b39384387bc4c" id="r_a83447cb02caa04cb771b39384387bc4c"><td class="memItemLeft" align="right" valign="top"><a id="a83447cb02caa04cb771b39384387bc4c" name="a83447cb02caa04cb771b39384387bc4c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ToolExecutionFinished</b> (bool bSucceeded, const QString &amp;sOperation={})</td></tr>
+<tr class="memitem:ab39669a9d59d900ed0e0f38488567bcc" id="r_ab39669a9d59d900ed0e0f38488567bcc"><td class="memItemLeft" align="right" valign="top"><a id="ab39669a9d59d900ed0e0f38488567bcc" name="ab39669a9d59d900ed0e0f38488567bcc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AssetImportFinished</b> (xiiUInt32 uiSucceeded, xiiUInt32 uiFailed, double fSeconds)</td></tr>
+<tr class="memdesc:ab39669a9d59d900ed0e0f38488567bcc"><td class="mdescLeft">&#160;</td><td class="mdescRight">One result per explicit import batch, after all selected generators have returned. <br /></td></tr>
+<tr class="memitem:a4d7b8913d81b7d0bd14dcd7d8a1862b5" id="r_a4d7b8913d81b7d0bd14dcd7d8a1862b5"><td class="memItemLeft" align="right" valign="top"><a id="a4d7b8913d81b7d0bd14dcd7d8a1862b5" name="a4d7b8913d81b7d0bd14dcd7d8a1862b5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>RequiredActionsChanged</b> (bool bRestartRequired, bool bReloadProjectRequired)</td></tr>
+<tr class="memdesc:a4d7b8913d81b7d0bd14dcd7d8a1862b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reports actionable configuration changes, independently of log history and informational status text. <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -140,17 +151,24 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsInUnitTestMode</b> 
 <tr class="memitem:a47bb23072d19f13c1284e82a77a8f11f" id="r_a47bb23072d19f13c1284e82a77a8f11f"><td class="memItemLeft" align="right" valign="top"><a id="a47bb23072d19f13c1284e82a77a8f11f" name="a47bb23072d19f13c1284e82a77a8f11f"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsBackgroundMode</b> () const</td></tr>
 <tr class="memdesc:a47bb23072d19f13c1284e82a77a8f11f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the editor is started in run in background mode. <br /></td></tr>
+<tr class="memitem:a791de8d33769740131eb1f94c3e63f4b" id="r_a791de8d33769740131eb1f94c3e63f4b"><td class="memItemLeft" align="right" valign="top"><a id="a791de8d33769740131eb1f94c3e63f4b" name="a791de8d33769740131eb1f94c3e63f4b"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsStartingUp</b> () const</td></tr>
+<tr class="memdesc:a791de8d33769740131eb1f94c3e63f4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Startup remains on the GUI thread. Event-driven waits may service Qt without allowing editing. <br /></td></tr>
+<tr class="memitem:abb7a35e81edba26f6174804e6d8bfb4c" id="r_abb7a35e81edba26f6174804e6d8bfb4c"><td class="memItemLeft" align="right" valign="top"><a id="abb7a35e81edba26f6174804e6d8bfb4c" name="abb7a35e81edba26f6174804e6d8bfb4c"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>WasStartupQuitRequested</b> () const</td></tr>
+<tr class="memitem:a5adf9001ed43166ed2f3824983d97c58" id="r_a5adf9001ed43166ed2f3824983d97c58"><td class="memItemLeft" align="right" valign="top"><a id="a5adf9001ed43166ed2f3824983d97c58" name="a5adf9001ed43166ed2f3824983d97c58"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateStartupProgress</b> (const QString &amp;sStage, const QString &amp;sDetail={}, xiiUInt32 uiCompleted=0, xiiUInt32 uiTotal=0)</td></tr>
 <tr class="memitem:ae9861f398e859396cd719f7ecf3f3ab7" id="r_ae9861f398e859396cd719f7ecf3f3ab7"><td class="memItemLeft" align="right" valign="top"><a id="ae9861f398e859396cd719f7ecf3f3ab7" name="ae9861f398e859396cd719f7ecf3f3ab7"></a>
 const <a class="el" href="../../d4/d35/structxii_plugin_bundle_set.html">xiiPluginBundleSet</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetPluginBundles</b> () const</td></tr>
 <tr class="memitem:a23fbf6956ed4cea0d6c116fed1420a93" id="r_a23fbf6956ed4cea0d6c116fed1420a93"><td class="memItemLeft" align="right" valign="top"><a id="a23fbf6956ed4cea0d6c116fed1420a93" name="a23fbf6956ed4cea0d6c116fed1420a93"></a>
 <a class="el" href="../../d4/d35/structxii_plugin_bundle_set.html">xiiPluginBundleSet</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetPluginBundles</b> ()</td></tr>
-<tr class="memitem:a905fac6d0439349afb16849699757cf6" id="r_a905fac6d0439349afb16849699757cf6"><td class="memItemLeft" align="right" valign="top"><a id="a905fac6d0439349afb16849699757cf6" name="a905fac6d0439349afb16849699757cf6"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>AddRestartRequiredReason</b> (const char *szReason)</td></tr>
-<tr class="memdesc:a905fac6d0439349afb16849699757cf6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copyright (c) Theophilus Eriata. All Rights Reserved. <br /></td></tr>
+<tr class="memitem:a1456d1da2b6e45bde2c692f93a54e289" id="r_a1456d1da2b6e45bde2c692f93a54e289"><td class="memItemLeft" align="right" valign="top"><a id="a1456d1da2b6e45bde2c692f93a54e289" name="a1456d1da2b6e45bde2c692f93a54e289"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AddRestartRequiredReason</b> (const char *szReason, bool bPrompt=true)</td></tr>
+<tr class="memdesc:a1456d1da2b6e45bde2c692f93a54e289"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copyright (c) Theophilus Eriata. All Rights Reserved. <br /></td></tr>
 <tr class="memitem:acf8992bf0d689e3c253113ff394a8bb5" id="r_acf8992bf0d689e3c253113ff394a8bb5"><td class="memItemLeft" align="right" valign="top"><a id="acf8992bf0d689e3c253113ff394a8bb5" name="acf8992bf0d689e3c253113ff394a8bb5"></a>
 const <a class="el" href="../../d6/d31/classxii_set.html">xiiSet</a>&lt; xiiString &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetRestartRequiredReasons</b> ()</td></tr>
-<tr class="memitem:a29f564084ee4f5c50512997d33331798" id="r_a29f564084ee4f5c50512997d33331798"><td class="memItemLeft" align="right" valign="top"><a id="a29f564084ee4f5c50512997d33331798" name="a29f564084ee4f5c50512997d33331798"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>AddReloadProjectRequiredReason</b> (const char *szReason)</td></tr>
+<tr class="memitem:a69702e118df2cad81b7c0efccb809e69" id="r_a69702e118df2cad81b7c0efccb809e69"><td class="memItemLeft" align="right" valign="top"><a id="a69702e118df2cad81b7c0efccb809e69" name="a69702e118df2cad81b7c0efccb809e69"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AddReloadProjectRequiredReason</b> (const char *szReason, bool bPrompt=true)</td></tr>
 <tr class="memitem:aac8e596b4b325df8a01f1c2db69b0d3e" id="r_aac8e596b4b325df8a01f1c2db69b0d3e"><td class="memItemLeft" align="right" valign="top"><a id="aac8e596b4b325df8a01f1c2db69b0d3e" name="aac8e596b4b325df8a01f1c2db69b0d3e"></a>
 const <a class="el" href="../../d6/d31/classxii_set.html">xiiSet</a>&lt; xiiString &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetReloadProjectRequiredReason</b> ()</td></tr>
 <tr class="memitem:a494bb84a40f9807fc09c483da3528693" id="r_a494bb84a40f9807fc09c483da3528693"><td class="memItemLeft" align="right" valign="top"><a id="a494bb84a40f9807fc09c483da3528693" name="a494bb84a40f9807fc09c483da3528693"></a>
@@ -231,8 +249,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>LaunchEditor</b> (con
 const <a class="el" href="../../d0/d32/classxii_application_file_system_config.html">xiiApplicationFileSystemConfig</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetFileSystemConfig</b> () const</td></tr>
 <tr class="memitem:a1d31e40828f6d2b527ffef8ee17c203c" id="r_a1d31e40828f6d2b527ffef8ee17c203c"><td class="memItemLeft" align="right" valign="top"><a id="a1d31e40828f6d2b527ffef8ee17c203c" name="a1d31e40828f6d2b527ffef8ee17c203c"></a>
 const <a class="el" href="../../de/d14/classxii_application_plugin_config.html">xiiApplicationPluginConfig</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetRuntimePluginConfig</b> (bool bIncludeEditorPlugins) const</td></tr>
-<tr class="memitem:a0680738f9cf578c6a37a81003721db8c" id="r_a0680738f9cf578c6a37a81003721db8c"><td class="memItemLeft" align="right" valign="top"><a id="a0680738f9cf578c6a37a81003721db8c" name="a0680738f9cf578c6a37a81003721db8c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>SetFileSystemConfig</b> (const <a class="el" href="../../d0/d32/classxii_application_file_system_config.html">xiiApplicationFileSystemConfig</a> &amp;cfg)</td></tr>
+<tr class="memitem:a97bf5c9c05ed42cc1d8b0f14ded47bdb" id="r_a97bf5c9c05ed42cc1d8b0f14ded47bdb"><td class="memItemLeft" align="right" valign="top"><a id="a97bf5c9c05ed42cc1d8b0f14ded47bdb" name="a97bf5c9c05ed42cc1d8b0f14ded47bdb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetFileSystemConfig</b> (const <a class="el" href="../../d0/d32/classxii_application_file_system_config.html">xiiApplicationFileSystemConfig</a> &amp;cfg, bool bPromptForReload=true)</td></tr>
 <tr class="memitem:a6bafcb55b81b695d5884c4f6e586ba55" id="r_a6bafcb55b81b695d5884c4f6e586ba55"><td class="memItemLeft" align="right" valign="top"><a id="a6bafcb55b81b695d5884c4f6e586ba55" name="a6bafcb55b81b695d5884c4f6e586ba55"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>MakeDataDirectoryRelativePathAbsolute</b> (<a class="el" href="../../d4/dbb/classxii_string_builder.html">xiiStringBuilder</a> &amp;ref_sPath) const</td></tr>
 <tr class="memitem:a798be7a29de067d43add6078b60ccf3e" id="r_a798be7a29de067d43add6078b60ccf3e"><td class="memItemLeft" align="right" valign="top"><a id="a798be7a29de067d43add6078b60ccf3e" name="a798be7a29de067d43add6078b60ccf3e"></a>
@@ -261,10 +279,25 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetStyleSheet</b> ()<
 <tr class="memitem:ad42ecf7f28f5800e53c11fb8851f363c" id="r_ad42ecf7f28f5800e53c11fb8851f363c"><td class="memItemLeft" align="right" valign="top"><a id="ad42ecf7f28f5800e53c11fb8851f363c" name="ad42ecf7f28f5800e53c11fb8851f363c"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsProgressBarProcessingEvents</b> () const</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a3bbe255c8adf293e7ac7ad9b7e1c6c69" id="r_a3bbe255c8adf293e7ac7ad9b7e1c6c69"><td class="memItemLeft" align="right" valign="top"><a id="a3bbe255c8adf293e7ac7ad9b7e1c6c69" name="a3bbe255c8adf293e7ac7ad9b7e1c6c69"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>ShowEditorWindow</b> (QWidget *pWindow)</td></tr>
+<tr class="memdesc:a3bbe255c8adf293e7ac7ad9b7e1c6c69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Restores a borrowed editor window and activates its modal dialog if present. GUI thread only. <br /></td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-attribs" class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
 <tr class="memitem:abc513cf78a286ace96822da18d53536a" id="r_abc513cf78a286ace96822da18d53536a"><td class="memItemLeft" align="right" valign="top"><a id="abc513cf78a286ace96822da18d53536a" name="abc513cf78a286ace96822da18d53536a"></a>
 static <a class="el" href="../../dc/d22/classxii_event.html">xiiEvent</a>&lt; const <a class="el" href="../../d1/d43/structxii_editor_app_event.html">xiiEditorAppEvent</a> &amp; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_Events</b></td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-friends" class="groupheader"><a id="friends" name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:a6816684ca75726f708c338b35e15bae4" id="r_a6816684ca75726f708c338b35e15bae4"><td class="memItemLeft" align="right" valign="top"><a id="a6816684ca75726f708c338b35e15bae4" name="a6816684ca75726f708c338b35e15bae4"></a>
+struct&#160;</td><td class="memItemRight" valign="bottom"><b>xiiEditorSystemTrayTest</b></td></tr>
+<tr class="memitem:a9a530f4149200dc0903384e11ce6849c" id="r_a9a530f4149200dc0903384e11ce6849c"><td class="memItemLeft" align="right" valign="top"><a id="a9a530f4149200dc0903384e11ce6849c" name="a9a530f4149200dc0903384e11ce6849c"></a>
+struct&#160;</td><td class="memItemRight" valign="bottom"><b>xiiWindowsNotificationsTest</b></td></tr>
+<tr class="memitem:a94565d640fcca958304e14415960f10c" id="r_a94565d640fcca958304e14415960f10c"><td class="memItemLeft" align="right" valign="top"><a id="a94565d640fcca958304e14415960f10c" name="a94565d640fcca958304e14415960f10c"></a>
+struct&#160;</td><td class="memItemRight" valign="bottom"><b>xiiEditorSplashScreenTest</b></td></tr>
 </table>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
 <a id="a36c325d1ccf5dfe7a4a312d9754aeeb3" name="a36c325d1ccf5dfe7a4a312d9754aeeb3"></a>
@@ -400,6 +433,32 @@ static <a class="el" href="../../dc/d22/classxii_event.html">xiiEvent</a>&lt; co
 
 </div>
 </div>
+<a id="a19d02dbbf64905af4692a1065745a900" name="a19d02dbbf64905af4692a1065745a900"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19d02dbbf64905af4692a1065745a900">&#9670;&#160;</a></span>ToolExecutionStarted</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiQtEditorApp::ToolExecutionStarted </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;</td>          <td class="paramname"><span class="paramname"><em>sOperation</em></span><span class="paramdefsep"> = </span><span class="paramdefval">{}</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel signal">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>External tools and C++ builds have no reliable percentage. Each start has one matching finish, including failures, with the same copied display label. An empty label denotes an unspecified tool. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/runner/work/XII/XII/Source/Editor/EditorFramework/EditorApp/<a class="el" href="../../d9/dde/_editor_app_8moc_8h_source.html">EditorApp.moc.h</a></li>
 <li>/home/runner/work/XII/XII/Source/Editor/EditorFramework/EditorApp/Configuration/Implementation/<b>EditorPlugins.cpp</b></li>
@@ -416,9 +475,9 @@ static <a class="el" href="../../dc/d22/classxii_event.html">xiiEvent</a>&lt; co
 <li>/home/runner/work/XII/XII/Source/Editor/EditorFramework/EditorApp/Implementation/<b>Qt.cpp</b></li>
 <li>/home/runner/work/XII/XII/Source/Editor/EditorFramework/EditorApp/Implementation/<b>Startup.cpp</b></li>
 <li>/home/runner/work/XII/XII/Source/Editor/EditorFramework/EditorApp/Implementation/<b>UserMessaging.cpp</b></li>
-<li>/home/runner/work/XII/XII/Source/Editor/EditorFramework/Preferences/Implementation/<b>EditorPreferences.cpp</b></li>
-<li>/home/runner/work/XII/XII/Source/Editor/EditorFramework/Preferences/Implementation/<b>ProjectPreferences.cpp</b></li>
-<li>/home/runner/work/XII/XII/Source/Editor/EditorFramework/Settings/Implementation/<b>EditorSettings.cpp</b></li>
+<li>/home/runner/work/XII/XII/Source/Editor/EditorFramework/Settings/Implementation/<b>EditorAppSettings.cpp</b></li>
+<li>/home/runner/work/XII/XII/Source/Editor/EditorFramework/Settings/Implementation/<b>EditorPreferences.cpp</b></li>
+<li>/home/runner/work/XII/XII/Source/Editor/EditorFramework/Settings/Implementation/<b>ProjectPreferences.cpp</b></li>
 <li>/home/runner/work/XII/XII/Source/Editor/EditorFramework/Settings/Implementation/<b>SettingsTab.cpp</b></li>
 </ul>
 </div><!-- contents -->

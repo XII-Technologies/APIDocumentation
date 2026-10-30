@@ -104,6 +104,7 @@ Public Types</h2></td></tr>
 <tr class="memitem:add8eda099d5156b0418231d6aeaa6d4a" id="r_add8eda099d5156b0418231d6aeaa6d4a"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#add8eda099d5156b0418231d6aeaa6d4a">Type</a> { <a class="el" href="#add8eda099d5156b0418231d6aeaa6d4aaabca304e9d81a0e702b0015da9d88415">OpAdded</a>
 , <a class="el" href="#add8eda099d5156b0418231d6aeaa6d4aaecaf47134daa98298649007751b6d595">OpRemoved</a>
 , <a class="el" href="#add8eda099d5156b0418231d6aeaa6d4aa169759aac30cb59395a5d2bc8900ce6c">OpProgress</a>
+, <a class="el" href="#add8eda099d5156b0418231d6aeaa6d4aaf341e968116ebf62f05eae394f30680f">OpFinished</a>
  }</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
@@ -113,6 +114,12 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a0da6f0a6ee09fa9a4671e22e3551e2ef" id="r_a0da6f0a6ee09fa9a4671e22e3551e2ef"><td class="memItemLeft" align="right" valign="top"><a id="a0da6f0a6ee09fa9a4671e22e3551e2ef" name="a0da6f0a6ee09fa9a4671e22e3551e2ef"></a>
 <a class="el" href="../../dc/d1d/classxii_uuid.html">xiiUuid</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_OperationGuid</b></td></tr>
 <tr class="memdesc:a0da6f0a6ee09fa9a4671e22e3551e2ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use <a class="el" href="../../df/d2a/classxii_long_op_controller_manager.html#afeb96a7ad768f47b7e56d9376ff3d294" title="Returns a pointer to the given long op, or null if the GUID does not exist.">xiiLongOpControllerManager::GetOperation()</a> to resolve the GUID to the actual long op. <br /></td></tr>
+<tr class="memitem:ae783e75592b9c8cd1f2cb9a31f6b160b" id="r_ae783e75592b9c8cd1f2cb9a31f6b160b"><td class="memItemLeft" align="right" valign="top"><a id="ae783e75592b9c8cd1f2cb9a31f6b160b" name="ae783e75592b9c8cd1f2cb9a31f6b160b"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bSucceeded</b> = false</td></tr>
+<tr class="memdesc:ae783e75592b9c8cd1f2cb9a31f6b160b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Only meaningful for OpFinished. <br /></td></tr>
+<tr class="memitem:a9a32a2744697185f52c6d1f538faa087" id="r_a9a32a2744697185f52c6d1f538faa087"><td class="memItemLeft" align="right" valign="top"><a id="a9a32a2744697185f52c6d1f538faa087" name="a9a32a2744697185f52c6d1f538faa087"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bCanceled</b> = false</td></tr>
+<tr class="memdesc:a9a32a2744697185f52c6d1f538faa087"><td class="mdescLeft">&#160;</td><td class="mdescRight">Only meaningful for OpFinished. <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Events about all known long ops. Broadcast by <a class="el" href="../../df/d2a/classxii_long_op_controller_manager.html">xiiLongOpControllerManager</a>. </p>
@@ -142,6 +149,8 @@ Public Attributes</h2></td></tr>
 <tr><td class="fieldname"><a id="add8eda099d5156b0418231d6aeaa6d4aaecaf47134daa98298649007751b6d595" name="add8eda099d5156b0418231d6aeaa6d4aaecaf47134daa98298649007751b6d595"></a>OpRemoved&#160;</td><td class="fielddoc"><p>A long op has been deleted. The GUID is sent, but it cannot be resolved anymore. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="add8eda099d5156b0418231d6aeaa6d4aa169759aac30cb59395a5d2bc8900ce6c" name="add8eda099d5156b0418231d6aeaa6d4aa169759aac30cb59395a5d2bc8900ce6c"></a>OpProgress&#160;</td><td class="fielddoc"><p>The completion progress of a long op has changed. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="add8eda099d5156b0418231d6aeaa6d4aaf341e968116ebf62f05eae394f30680f" name="add8eda099d5156b0418231d6aeaa6d4aaf341e968116ebf62f05eae394f30680f"></a>OpFinished&#160;</td><td class="fielddoc"><p>A worker result was received. Cancellation is reported separately from failure. </p>
 </td></tr>
 </table>
 

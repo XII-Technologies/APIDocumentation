@@ -116,6 +116,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a85204dc353212ce5a78e33308756a46e inherit pub_methods_classxii_qt_game_object_view_widget"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copyright (c) Theophilus Eriata. All Rights Reserved. <br /></td></tr>
 <tr class="memitem:ae7d1c28d5fe12d3344a80b285fccfcb6 inherit pub_methods_classxii_qt_game_object_view_widget" id="r_ae7d1c28d5fe12d3344a80b285fccfcb6"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d9c/classxii_qt_game_object_view_widget.html#ae7d1c28d5fe12d3344a80b285fccfcb6">SyncToEngine</a> () override</td></tr>
 <tr class="memdesc:ae7d1c28d5fe12d3344a80b285fccfcb6 inherit pub_methods_classxii_qt_game_object_view_widget"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends the redraw message to the engine.  <br /></td></tr>
+<tr class="memitem:a4b82830015579846eb1654d69f54b824 inherit pub_methods_classxii_qt_game_object_view_widget" id="r_a4b82830015579846eb1654d69f54b824"><td class="memItemLeft" align="right" valign="top">xiiVec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d9c/classxii_qt_game_object_view_widget.html#a4b82830015579846eb1654d69f54b824">GetCameraOrbitPoint</a> () const override</td></tr>
+<tr class="memitem:a64ee25f17597e792bafe8b3f30086ada inherit pub_methods_classxii_qt_game_object_view_widget" id="r_a64ee25f17597e792bafe8b3f30086ada"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d9c/classxii_qt_game_object_view_widget.html#a64ee25f17597e792bafe8b3f30086ada">OrbitCamera</a> (const xiiVec2 &amp;vRadians) override</td></tr>
 <tr class="inherit_header pub_methods_classxii_qt_engine_view_widget"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classxii_qt_engine_view_widget')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public Member Functions inherited from <a class="el" href="../../d3/d93/classxii_qt_engine_view_widget.html">xiiQtEngineViewWidget</a></td></tr>
 <tr class="memitem:a46d86a1ae19c033316e27372650c5947 inherit pub_methods_classxii_qt_engine_view_widget" id="r_a46d86a1ae19c033316e27372650c5947"><td class="memItemLeft" align="right" valign="top">
 &#160;</td><td class="memItemRight" valign="bottom"><b>xiiQtEngineViewWidget</b> (QWidget *pParent, <a class="el" href="../../d0/d97/classxii_qt_engine_document_window.html">xiiQtEngineDocumentWindow</a> *pDocumentWindow, <a class="el" href="../../d1/d44/structxii_engine_view_config.html">xiiEngineViewConfig</a> *pViewConfig)</td></tr>
@@ -131,15 +133,26 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>GetCameraMatrices</b>
 <tr class="memitem:a41a5c474d02b314865f02fe59a4d4a70 inherit pub_methods_classxii_qt_engine_view_widget" id="r_a41a5c474d02b314865f02fe59a4d4a70"><td class="memItemLeft" align="right" valign="top">
 void&#160;</td><td class="memItemRight" valign="bottom"><b>InterpolateCameraTo</b> (const xiiVec3 &amp;vPosition, const xiiVec3 &amp;vDirection, float fFovOrDim, const xiiVec3 *pNewUpDirection=nullptr, bool bImmediate=false)</td></tr>
 <tr class="memdesc:a41a5c474d02b314865f02fe59a4d4a70 inherit pub_methods_classxii_qt_engine_view_widget"><td class="mdescLeft">&#160;</td><td class="mdescRight">The view's camera will be interpolated to the given coordinates. <br /></td></tr>
+<tr class="memitem:ad5adc4620e79e37caa8c46163bf0ee7a inherit pub_methods_classxii_qt_engine_view_widget" id="r_ad5adc4620e79e37caa8c46163bf0ee7a"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetNavigationGizmoEnabled</b> (bool bEnabled)</td></tr>
+<tr class="memdesc:ad5adc4620e79e37caa8c46163bf0ee7a inherit pub_methods_classxii_qt_engine_view_widget"><td class="mdescLeft">&#160;</td><td class="mdescRight">Navigation is available in scene views and orbit-camera asset previews. <br /></td></tr>
+<tr class="memitem:a04e7feabc5b606897708ac29a3bedc14 inherit pub_methods_classxii_qt_engine_view_widget" id="r_a04e7feabc5b606897708ac29a3bedc14"><td class="memItemLeft" align="right" valign="top">
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsNavigationGizmoEnabled</b> () const</td></tr>
+<tr class="memitem:ab7e1bc66e1246cfe651859ff6dc953ac inherit pub_methods_classxii_qt_engine_view_widget" id="r_ab7e1bc66e1246cfe651859ff6dc953ac"><td class="memItemLeft" align="right" valign="top">
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>HasNavigationGizmo</b> () const</td></tr>
+<tr class="memitem:aed3bfd15ac2ff85ba930447dc1c61e39 inherit pub_methods_classxii_qt_engine_view_widget" id="r_aed3bfd15ac2ff85ba930447dc1c61e39"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="../../df/dcd/structxii_viewport_navigation_gizmo.html">xiiViewportNavigationGizmo</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetNavigationGizmoGeometry</b> () const</td></tr>
+<tr class="memitem:ae93a173bdfcefe470f6968546249f5ef inherit pub_methods_classxii_qt_engine_view_widget" id="r_ae93a173bdfcefe470f6968546249f5ef"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>InterpolateCameraOrbitTo</b> (const xiiVec3 &amp;vDirection)</td></tr>
+<tr class="memitem:a6cb4bb876125697266d10499e4330869 inherit pub_methods_classxii_qt_engine_view_widget" id="r_a6cb4bb876125697266d10499e4330869"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>CancelCameraInterpolation</b> ()</td></tr>
 <tr class="memitem:a31a9ec06117c1aafb097dcbaedc54d0d inherit pub_methods_classxii_qt_engine_view_widget" id="r_a31a9ec06117c1aafb097dcbaedc54d0d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d93/classxii_qt_engine_view_widget.html#a31a9ec06117c1aafb097dcbaedc54d0d">SetEnablePicking</a> (bool bEnable)</td></tr>
 <tr class="memitem:a7c60090ded6ba5ba5279d64d17f4111b inherit pub_methods_classxii_qt_engine_view_widget" id="r_a7c60090ded6ba5ba5279d64d17f4111b"><td class="memItemLeft" align="right" valign="top">
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetPickTransparent</b> (bool bEnable)</td></tr>
 <tr class="memitem:a90a8573703a5a81fd722eeda2adcc5ad inherit pub_methods_classxii_qt_engine_view_widget" id="r_a90a8573703a5a81fd722eeda2adcc5ad"><td class="memItemLeft" align="right" valign="top">
 void&#160;</td><td class="memItemRight" valign="bottom"><b>OpenContextMenu</b> (QPoint globalPos)</td></tr>
 <tr class="memdesc:a90a8573703a5a81fd722eeda2adcc5ad inherit pub_methods_classxii_qt_engine_view_widget"><td class="mdescLeft">&#160;</td><td class="mdescRight">Supposed to open a context menu at the given position. Derived classes must implement OnOpenContextMenu and do the actual work there. <br /></td></tr>
-<tr class="memitem:a0f9dd1daed61244116cc444cee3c5c2c inherit pub_methods_classxii_qt_engine_view_widget" id="r_a0f9dd1daed61244116cc444cee3c5c2c"><td class="memItemLeft" align="right" valign="top">
-const <a class="el" href="../../d8/da8/structxii_object_picking_result.html">xiiObjectPickingResult</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>PickObject</b> (xiiUInt16 uiScreenPosX, xiiUInt16 uiScreenPosY) const</td></tr>
-<tr class="memdesc:a0f9dd1daed61244116cc444cee3c5c2c inherit pub_methods_classxii_qt_engine_view_widget"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts a picking operation for the given pixel position in this view. Returns the most recent picking information in the meantime. <br /></td></tr>
+<tr class="memitem:a4e9b344a2cad9d0609c341979a6bf814 inherit pub_methods_classxii_qt_engine_view_widget" id="r_a4e9b344a2cad9d0609c341979a6bf814"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../d8/da8/structxii_object_picking_result.html">xiiObjectPickingResult</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d93/classxii_qt_engine_view_widget.html#a4e9b344a2cad9d0609c341979a6bf814">PickObject</a> (xiiUInt16 uiScreenPosX, xiiUInt16 uiScreenPosY, bool bWaitForResult=false) const</td></tr>
 <tr class="memitem:a0304281942fe1d8675ae19ce42479ad0 inherit pub_methods_classxii_qt_engine_view_widget" id="r_a0304281942fe1d8675ae19ce42479ad0"><td class="memItemLeft" align="right" valign="top">
 <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>PickPlane</b> (xiiUInt16 uiScreenPosX, xiiUInt16 uiScreenPosY, const xiiPlane &amp;plane, xiiVec3 &amp;out_vPosition) const</td></tr>
 <tr class="memdesc:a0304281942fe1d8675ae19ce42479ad0 inherit pub_methods_classxii_qt_engine_view_widget"><td class="mdescLeft">&#160;</td><td class="mdescRight">Similar to PickObject, but computes the intersection with the given plane instead. <br /></td></tr>
@@ -178,12 +191,16 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>keyReleaseEve
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>mousePressEvent</b> (QMouseEvent *e) override</td></tr>
 <tr class="memitem:ab2c72182f28c12237f0dce5001840ea5 inherit pro_methods_classxii_qt_engine_view_widget" id="r_ab2c72182f28c12237f0dce5001840ea5"><td class="memItemLeft" align="right" valign="top">
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>mouseReleaseEvent</b> (QMouseEvent *e) override</td></tr>
+<tr class="memitem:ae9f06ead698985769b9ca462f7928699 inherit pro_methods_classxii_qt_engine_view_widget" id="r_ae9f06ead698985769b9ca462f7928699"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>mouseDoubleClickEvent</b> (QMouseEvent *e) override</td></tr>
 <tr class="memitem:a51d1ea89913cf119fb0d30f5661bc6b6 inherit pro_methods_classxii_qt_engine_view_widget" id="r_a51d1ea89913cf119fb0d30f5661bc6b6"><td class="memItemLeft" align="right" valign="top">
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>mouseMoveEvent</b> (QMouseEvent *e) override</td></tr>
 <tr class="memitem:affc659ed8ed5e6ddd69109b2ecc00071 inherit pro_methods_classxii_qt_engine_view_widget" id="r_affc659ed8ed5e6ddd69109b2ecc00071"><td class="memItemLeft" align="right" valign="top">
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>wheelEvent</b> (QWheelEvent *e) override</td></tr>
 <tr class="memitem:a721767d5102a80f905398dae863d1e97 inherit pro_methods_classxii_qt_engine_view_widget" id="r_a721767d5102a80f905398dae863d1e97"><td class="memItemLeft" align="right" valign="top">
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>focusOutEvent</b> (QFocusEvent *e) override</td></tr>
+<tr class="memitem:a7fe0721c8d2de6e3c1fb80f35bb38a69 inherit pro_methods_classxii_qt_engine_view_widget" id="r_a7fe0721c8d2de6e3c1fb80f35bb38a69"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>InitializeNavigationGizmo</b> ()</td></tr>
 <tr class="memitem:a33f8dce55cc9d7726d02a714ac3fa85e inherit pro_methods_classxii_qt_engine_view_widget" id="r_a33f8dce55cc9d7726d02a714ac3fa85e"><td class="memItemLeft" align="right" valign="top">
 void&#160;</td><td class="memItemRight" valign="bottom"><b>EngineViewProcessEventHandler</b> (const <a class="el" href="../../db/d4c/structxii_editor_engine_process_connection_1_1_event.html">xiiEditorEngineProcessConnection::Event</a> &amp;e)</td></tr>
 <tr class="memitem:a89182a582fc24aaebdbefc8618eac77c inherit pro_methods_classxii_qt_engine_view_widget" id="r_a89182a582fc24aaebdbefc8618eac77c"><td class="memItemLeft" align="right" valign="top">
@@ -213,6 +230,18 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bInDragAndDropOpera
 xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b>m_uiViewID</b></td></tr>
 <tr class="memitem:a84d9d322b0948c8d8c7eb7123ceb2a5e inherit pro_attribs_classxii_qt_engine_view_widget" id="r_a84d9d322b0948c8d8c7eb7123ceb2a5e"><td class="memItemLeft" align="right" valign="top">
 <a class="el" href="../../d0/d97/classxii_qt_engine_document_window.html">xiiQtEngineDocumentWindow</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pDocumentWindow</b> = nullptr</td></tr>
+<tr class="memitem:a13f47cb1ca8c6cfe3685e85b4d713c5f inherit pro_attribs_classxii_qt_engine_view_widget" id="r_a13f47cb1ca8c6cfe3685e85b4d713c5f"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="../../d3/d3c/classxii_editor_viewport_navigation_gizmo.html">xiiEditorViewportNavigationGizmo</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pNavigationGizmo</b> = nullptr</td></tr>
+<tr class="memitem:ae4233b46d18aeea3c72342e26889ac0f inherit pro_attribs_classxii_qt_engine_view_widget" id="r_ae4233b46d18aeea3c72342e26889ac0f"><td class="memItemLeft" align="right" valign="top">
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bOrbitInterpolation</b> = false</td></tr>
+<tr class="memitem:a0bc1627429afb9e83dbfd002c46f3870 inherit pro_attribs_classxii_qt_engine_view_widget" id="r_a0bc1627429afb9e83dbfd002c46f3870"><td class="memItemLeft" align="right" valign="top">
+xiiVec3&#160;</td><td class="memItemRight" valign="bottom"><b>m_vCameraOrbitPoint</b></td></tr>
+<tr class="memitem:a5991109e7407fe98cc825b9901173e49 inherit pro_attribs_classxii_qt_engine_view_widget" id="r_a5991109e7407fe98cc825b9901173e49"><td class="memItemLeft" align="right" valign="top">
+float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fCameraOrbitDistance</b> = 1.0f</td></tr>
+<tr class="memitem:a51679454416cdbc93021353fe9f4ee36 inherit pro_attribs_classxii_qt_engine_view_widget" id="r_a51679454416cdbc93021353fe9f4ee36"><td class="memItemLeft" align="right" valign="top">
+xiiQuat&#160;</td><td class="memItemRight" valign="bottom"><b>m_qCameraStartRotation</b></td></tr>
+<tr class="memitem:a9c5db409e1fb856a593005044f9922ca inherit pro_attribs_classxii_qt_engine_view_widget" id="r_a9c5db409e1fb856a593005044f9922ca"><td class="memItemLeft" align="right" valign="top">
+xiiQuat&#160;</td><td class="memItemRight" valign="bottom"><b>m_qCameraTargetRotation</b></td></tr>
 <tr class="memitem:a1c2b88af858d17c9a5b3680afa9c8824 inherit pro_attribs_classxii_qt_engine_view_widget" id="r_a1c2b88af858d17c9a5b3680afa9c8824"><td class="memItemLeft" align="right" valign="top">
 float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fCameraLerp</b></td></tr>
 <tr class="memitem:aa3e12a99292f053011692ba436284f7c inherit pro_attribs_classxii_qt_engine_view_widget" id="r_aa3e12a99292f053011692ba436284f7c"><td class="memItemLeft" align="right" valign="top">
@@ -239,6 +268,8 @@ QPushButton *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pRestartBu
 QWidget *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pViewportWidget</b> = nullptr</td></tr>
 <tr class="memitem:aa818692ebe6db690f2dd6d36429dfca9 inherit pro_attribs_classxii_qt_engine_view_widget" id="r_aa818692ebe6db690f2dd6d36429dfca9"><td class="memItemLeft" align="right" valign="top">
 <a class="el" href="../../d8/da8/structxii_object_picking_result.html">xiiObjectPickingResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_LastPickingResult</b></td></tr>
+<tr class="memitem:a4d0c043f932b8bdc5d3761b1fc5112be inherit pro_attribs_classxii_qt_engine_view_widget" id="r_a4d0c043f932b8bdc5d3761b1fc5112be"><td class="memItemLeft" align="right" valign="top">
+xiiUInt64&#160;</td><td class="memItemRight" valign="bottom"><b>m_uiPickingRequestID</b> = 0</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pro-static-attribs" class="groupheader"><a id="pro-static-attribs" name="pro-static-attribs"></a>
 Static Protected Attributes</h2></td></tr>

@@ -41,6 +41,7 @@ var classxii_asset_document =
     [ "SetCommonAssetUiState", "d7/dd5/classxii_asset_document.html#ada5db433f6cd863528bac14924149110", null ],
     [ "SyncObjectsToEngine", "d7/dd5/classxii_asset_document.html#adc51b5bf57d6b9108913c54536a77b31", null ],
     [ "TransformAsset", "d7/dd5/classxii_asset_document.html#a6ddf6b427c32286e8d0e6677501bef40", null ],
+    [ "TransformAssetForImport", "d7/dd5/classxii_asset_document.html#a77c865aca70b8a90a424e843a3044596", null ],
     [ "UpdateAssetDocumentInfo", "d7/dd5/classxii_asset_document.html#aa4ab7ab567cb104cf3138228ac514b31", null ],
     [ "WaitForEngineStatusLoaded", "d7/dd5/classxii_asset_document.html#ab74898e50e3cee58cab9d048b6d3e2a4", null ],
     [ "m_CommonAssetUiChangeEvent", "d7/dd5/classxii_asset_document.html#abee7e1d1f1c6d4c33f7ae7e572755ae2", null ]

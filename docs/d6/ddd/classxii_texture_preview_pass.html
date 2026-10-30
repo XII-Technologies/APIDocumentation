@@ -136,6 +136,15 @@ template&lt;typename T&gt; </td></tr>
 <tr class="memitem:ac0a423d0f813feb28b200d9a9756eab8 inherit pub_methods_classxii_reflected_class template"><td class="memItemLeft" align="right" valign="top">XII_ALWAYS_INLINE bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsInstanceOf</b> () const</td></tr>
 <tr class="memdesc:ac0a423d0f813feb28b200d9a9756eab8 inherit pub_methods_classxii_reflected_class"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether the type of this instance is of the given type or derived from it. <br /></td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a0dac97b8f2b17f7a23bc2b09ff20e3a1" id="r_a0dac97b8f2b17f7a23bc2b09ff20e3a1"><td class="memItemLeft" align="right" valign="top"><a id="a0dac97b8f2b17f7a23bc2b09ff20e3a1" name="a0dac97b8f2b17f7a23bc2b09ff20e3a1"></a>
+static xiiRenderPipelineResourceHandle&#160;</td><td class="memItemRight" valign="bottom"><b>GetPipelineResource</b> (bool cube)</td></tr>
+<tr class="memdesc:a0dac97b8f2b17f7a23bc2b09ff20e3a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fixed engine-owned previews use ordinary pipeline resources without SDK authoring assets. <br /></td></tr>
+<tr class="inherit_header pub_static_methods_classxii_no_base"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_static_methods_classxii_no_base')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Static Public Member Functions inherited from <a class="el" href="../../d2/d38/classxii_no_base.html">xiiNoBase</a></td></tr>
+<tr class="memitem:a4bde433b55ebd55edf63c57239799bba inherit pub_static_methods_classxii_no_base" id="r_a4bde433b55ebd55edf63c57239799bba"><td class="memItemLeft" align="right" valign="top">
+static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetStaticRTTI</b> ()</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a3146abf4c8e2e53f167e4d94e1f941e1" id="r_a3146abf4c8e2e53f167e4d94e1f941e1"><td class="memItemLeft" align="right" valign="top"><a id="a3146abf4c8e2e53f167e4d94e1f941e1" name="a3146abf4c8e2e53f167e4d94e1f941e1"></a>
@@ -147,12 +156,6 @@ xiiVariantDictionary&#160;</td><td class="memItemRight" valign="bottom"><b>m_Par
 <tr class="memitem:a95ac252e97959b0b919946b3af8efa3c inherit pub_attribs_classxii_render_pipeline_pass" id="r_a95ac252e97959b0b919946b3af8efa3c"><td class="memItemLeft" align="right" valign="top">
 <a class="el" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray</a>&lt; <a class="el" href="../../de/d95/classxii_render_pipeline_pin_configuration.html">xiiRenderPipelinePinConfiguration</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_PinConfigurations</b></td></tr>
 <tr class="memdesc:a95ac252e97959b0b919946b3af8efa3c inherit pub_attribs_classxii_render_pipeline_pass"><td class="mdescLeft">&#160;</td><td class="mdescRight">Authoring-only owned objects. Runtime pass instances consume compiled pins instead. <br /></td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 id="header-inherited" class="groupheader"><a id="inherited" name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pub_static_methods_classxii_no_base"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_static_methods_classxii_no_base')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Static Public Member Functions inherited from <a class="el" href="../../d2/d38/classxii_no_base.html">xiiNoBase</a></td></tr>
-<tr class="memitem:a4bde433b55ebd55edf63c57239799bba inherit pub_static_methods_classxii_no_base" id="r_a4bde433b55ebd55edf63c57239799bba"><td class="memItemLeft" align="right" valign="top">
-static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetStaticRTTI</b> ()</td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Resource-driven, unlit asset inspection. Each view owns a pass instance; geometry and compiled definitions are shared through ResourceManager. Source textures are acquired on each Build so reloads replace GPU bindings at frame boundaries. The render graph owns frame resources/bindings. View parameters: Texture (resource ID), Channel (0 RGBA, 1 RGB, 2 R, 3 G, 4 B, 5 A, 6 red coverage, 7 alpha coverage), Mip (-1 = automatic, 0..31 clamped to available levels), AlphaThreshold (0..1). Invalid settings return XII_FAILURE before emitting graph work. Supports ordinary 2D/cube textures and single-sample output; arrays/volumes require a slice UI. </p>

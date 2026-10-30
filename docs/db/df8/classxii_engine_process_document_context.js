@@ -6,7 +6,7 @@ var classxii_engine_process_document_context =
     [ "Deinitialize", "db/df8/classxii_engine_process_document_context.html#a6864c40d9ab513892b83e46dde07fa0f", null ],
     [ "DestroyThumbnailViewContext", "db/df8/classxii_engine_process_document_context.html#a3aee966b4f9d0f0262836e2b11e23755", null ],
     [ "DestroyViewContext", "db/df8/classxii_engine_process_document_context.html#acb4f16c39b43a61dc75bef43c22d9d91", null ],
-    [ "DrawGizmos", "db/df8/classxii_engine_process_document_context.html#a711aaada654893c1c2037a94f2245874", null ],
+    [ "DrawGizmos", "db/df8/classxii_engine_process_document_context.html#a6bbfaf2188e8bd07d3362feb51b8a33f", null ],
     [ "ExportDocument", "db/df8/classxii_engine_process_document_context.html#ac71430d6b5b1d9a42e3812bfbab6a01e", null ],
     [ "GetDocumentType", "db/df8/classxii_engine_process_document_context.html#a93b2a830cc5611a0352a3725506dea43", null ],
     [ "Initialize", "db/df8/classxii_engine_process_document_context.html#ab57fdd6878663bdf74f06e984b31ad19", null ],

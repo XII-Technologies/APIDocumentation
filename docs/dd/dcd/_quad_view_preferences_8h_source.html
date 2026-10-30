@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.15.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>XII: /home/runner/work/XII/XII/Source/Editor/EditorFramework/Preferences/QuadViewPreferences.h Source File</title>
+<title>XII: /home/runner/work/XII/XII/Source/Editor/EditorFramework/Settings/QuadViewPreferences.h Source File</title>
 <link rel="icon" href="../../XII-Logo.png" type="image/x-icon" />
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
@@ -97,57 +97,59 @@ $(function(){initNavTree('dd/dcd/_quad_view_preferences_8h_source.html','../../'
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;EditorEngineProcessFramework/EngineProcess/ViewRenderSettings.h&gt;</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;EditorFramework/Preferences/Preferences.h&gt;</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="foldopen" id="foldopen00008" data-start="{" data-end="};">
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="../../de/d02/structxii_engine_view_preferences.html">    8</a></span><span class="keyword">struct </span>XII_EDITORFRAMEWORK_DLL <a class="code hl_struct" href="../../de/d02/structxii_engine_view_preferences.html">xiiEngineViewPreferences</a></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>{</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>  xiiVec3                       m_vCamPos         = <a class="code hl_function" href="../../d9/d9a/classxii_vec3_template.html#abd25f22cbb27d41284c7cbb886138437">xiiVec3::MakeZero</a>();</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>  xiiVec3                       m_vCamDir         = <a class="code hl_function" href="../../d9/d9a/classxii_vec3_template.html#aeed12a37cbc2db6ab1fc63cc9024e7ae">xiiVec3::MakeAxisX</a>();</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>  xiiVec3                       m_vCamUp          = <a class="code hl_function" href="../../d9/d9a/classxii_vec3_template.html#a8ce0bfe88935f51db554709ed8b7c620">xiiVec3::MakeAxisZ</a>();</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>  xiiSceneViewPerspective::Enum m_PerspectiveMode = xiiSceneViewPerspective::Perspective;</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>  xiiViewRenderMode::Enum       m_RenderMode      = xiiViewRenderMode::Default;</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>  <span class="keywordtype">float</span>                         m_fFov            = 70.0f;</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>};</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;EditorFramework/EditorFrameworkDLL.h&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;EditorEngineProcessFramework/EngineProcess/ViewRenderSettings.h&gt;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;EditorFramework/Settings/EditorSettings.h&gt;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="foldopen" id="foldopen00010" data-start="{" data-end="};">
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="../../de/d02/structxii_engine_view_preferences.html">   10</a></span><span class="keyword">struct </span>XII_EDITORFRAMEWORK_DLL <a class="code hl_struct" href="../../de/d02/structxii_engine_view_preferences.html">xiiEngineViewPreferences</a></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>{</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>  xiiVec3                       m_vCamPos         = <a class="code hl_function" href="../../d9/d9a/classxii_vec3_template.html#abd25f22cbb27d41284c7cbb886138437">xiiVec3::MakeZero</a>();</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>  xiiVec3                       m_vCamDir         = <a class="code hl_function" href="../../d9/d9a/classxii_vec3_template.html#aeed12a37cbc2db6ab1fc63cc9024e7ae">xiiVec3::MakeAxisX</a>();</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>  xiiVec3                       m_vCamUp          = <a class="code hl_function" href="../../d9/d9a/classxii_vec3_template.html#a8ce0bfe88935f51db554709ed8b7c620">xiiVec3::MakeAxisZ</a>();</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>  xiiSceneViewPerspective::Enum m_PerspectiveMode = xiiSceneViewPerspective::Perspective;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>  xiiViewRenderMode::Enum       m_RenderMode      = xiiViewRenderMode::Default;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>  <span class="keywordtype">float</span>                         m_fFov            = 70.0f;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>};</div>
 </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>XII_DECLARE_REFLECTABLE_TYPE(XII_EDITORFRAMEWORK_DLL, <a class="code hl_struct" href="../../de/d02/structxii_engine_view_preferences.html">xiiEngineViewPreferences</a>);</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="foldopen" id="foldopen00019" data-start="{" data-end="};">
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="../../d5/d19/classxii_quad_view_preferences_user.html">   19</a></span><span class="keyword">class </span>XII_EDITORFRAMEWORK_DLL xiiQuadViewPreferencesUser : <span class="keyword">public</span> xiiPreferences</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>{</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>  XII_ADD_DYNAMIC_REFLECTION(xiiQuadViewPreferencesUser, xiiPreferences);</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>  xiiQuadViewPreferencesUser();</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>  <span class="keywordtype">bool</span>                     m_bQuadView;</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>  <a class="code hl_struct" href="../../de/d02/structxii_engine_view_preferences.html">xiiEngineViewPreferences</a> m_ViewSingle;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  <a class="code hl_struct" href="../../de/d02/structxii_engine_view_preferences.html">xiiEngineViewPreferences</a> m_ViewQuad0;</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>  <a class="code hl_struct" href="../../de/d02/structxii_engine_view_preferences.html">xiiEngineViewPreferences</a> m_ViewQuad1;</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  <a class="code hl_struct" href="../../de/d02/structxii_engine_view_preferences.html">xiiEngineViewPreferences</a> m_ViewQuad2;</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>  <a class="code hl_struct" href="../../de/d02/structxii_engine_view_preferences.html">xiiEngineViewPreferences</a> m_ViewQuad3;</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>  xiiUInt32                FavCams_GetCount()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> 10; }</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>  <a class="code hl_struct" href="../../de/d02/structxii_engine_view_preferences.html">xiiEngineViewPreferences</a> FavCams_GetCam(xiiUInt32 i)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_FavoriteCamera[i]; }</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>  <span class="keywordtype">void</span>                     FavCams_SetCam(xiiUInt32 i, <a class="code hl_struct" href="../../de/d02/structxii_engine_view_preferences.html">xiiEngineViewPreferences</a> cam) { m_FavoriteCamera[i] = cam; }</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  <span class="keywordtype">void</span>                     FavCams_Insert(xiiUInt32 uiIndex, <a class="code hl_struct" href="../../de/d02/structxii_engine_view_preferences.html">xiiEngineViewPreferences</a> cam) {}</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  <span class="keywordtype">void</span>                     FavCams_Remove(xiiUInt32 uiIndex) {}</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  <a class="code hl_struct" href="../../de/d02/structxii_engine_view_preferences.html">xiiEngineViewPreferences</a> m_FavoriteCamera[10];</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>};</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>XII_DECLARE_REFLECTABLE_TYPE(XII_EDITORFRAMEWORK_DLL, <a class="code hl_struct" href="../../de/d02/structxii_engine_view_preferences.html">xiiEngineViewPreferences</a>);</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="foldopen" id="foldopen00021" data-start="{" data-end="};">
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="../../d5/d19/classxii_quad_view_preferences_user.html">   21</a></span><span class="keyword">class </span>XII_EDITORFRAMEWORK_DLL xiiQuadViewPreferencesUser : <span class="keyword">public</span> xiiEditorSettings</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>{</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>  XII_ADD_DYNAMIC_REFLECTION(xiiQuadViewPreferencesUser, xiiEditorSettings);</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>  xiiQuadViewPreferencesUser();</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  <span class="keywordtype">bool</span>                     m_bQuadView;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>  <a class="code hl_struct" href="../../de/d02/structxii_engine_view_preferences.html">xiiEngineViewPreferences</a> m_ViewSingle;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  <a class="code hl_struct" href="../../de/d02/structxii_engine_view_preferences.html">xiiEngineViewPreferences</a> m_ViewQuad0;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>  <a class="code hl_struct" href="../../de/d02/structxii_engine_view_preferences.html">xiiEngineViewPreferences</a> m_ViewQuad1;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>  <a class="code hl_struct" href="../../de/d02/structxii_engine_view_preferences.html">xiiEngineViewPreferences</a> m_ViewQuad2;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>  <a class="code hl_struct" href="../../de/d02/structxii_engine_view_preferences.html">xiiEngineViewPreferences</a> m_ViewQuad3;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>  xiiUInt32                FavCams_GetCount()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> 10; }</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  <a class="code hl_struct" href="../../de/d02/structxii_engine_view_preferences.html">xiiEngineViewPreferences</a> FavCams_GetCam(xiiUInt32 i)<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_FavoriteCamera[i]; }</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  <span class="keywordtype">void</span>                     FavCams_SetCam(xiiUInt32 i, <a class="code hl_struct" href="../../de/d02/structxii_engine_view_preferences.html">xiiEngineViewPreferences</a> cam) { m_FavoriteCamera[i] = cam; }</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  <span class="keywordtype">void</span>                     FavCams_Insert(xiiUInt32 uiIndex, <a class="code hl_struct" href="../../de/d02/structxii_engine_view_preferences.html">xiiEngineViewPreferences</a> cam) {}</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  <span class="keywordtype">void</span>                     FavCams_Remove(xiiUInt32 uiIndex) {}</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  <a class="code hl_struct" href="../../de/d02/structxii_engine_view_preferences.html">xiiEngineViewPreferences</a> m_FavoriteCamera[10];</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>};</div>
 </div>
 <div class="ttc" id="aclassxii_vec3_template_html_a8ce0bfe88935f51db554709ed8b7c620"><div class="ttname"><a href="../../d9/d9a/classxii_vec3_template.html#a8ce0bfe88935f51db554709ed8b7c620">xiiVec3Template&lt; float &gt;::MakeAxisZ</a></div><div class="ttdeci">static constexpr xiiVec3Template&lt; float &gt; MakeAxisZ()</div><div class="ttdef"><b>Definition</b> Vec3.h:48</div></div>
 <div class="ttc" id="aclassxii_vec3_template_html_abd25f22cbb27d41284c7cbb886138437"><div class="ttname"><a href="../../d9/d9a/classxii_vec3_template.html#abd25f22cbb27d41284c7cbb886138437">xiiVec3Template&lt; float &gt;::MakeZero</a></div><div class="ttdeci">static constexpr xiiVec3Template&lt; float &gt; MakeZero()</div><div class="ttdef"><b>Definition</b> Vec3.h:39</div></div>
 <div class="ttc" id="aclassxii_vec3_template_html_aeed12a37cbc2db6ab1fc63cc9024e7ae"><div class="ttname"><a href="../../d9/d9a/classxii_vec3_template.html#aeed12a37cbc2db6ab1fc63cc9024e7ae">xiiVec3Template&lt; float &gt;::MakeAxisX</a></div><div class="ttdeci">static constexpr xiiVec3Template&lt; float &gt; MakeAxisX()</div><div class="ttdef"><b>Definition</b> Vec3.h:42</div></div>
-<div class="ttc" id="astructxii_engine_view_preferences_html"><div class="ttname"><a href="../../de/d02/structxii_engine_view_preferences.html">xiiEngineViewPreferences</a></div><div class="ttdoc">Copyright (c) Theophilus Eriata. All Rights Reserved.</div><div class="ttdef"><b>Definition</b> QuadViewPreferences.h:9</div></div>
+<div class="ttc" id="astructxii_engine_view_preferences_html"><div class="ttname"><a href="../../de/d02/structxii_engine_view_preferences.html">xiiEngineViewPreferences</a></div><div class="ttdoc">Copyright (c) Theophilus Eriata. All Rights Reserved.</div><div class="ttdef"><b>Definition</b> QuadViewPreferences.h:11</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><b>home</b></li><li class="navelem"><b>runner</b></li><li class="navelem"><b>work</b></li><li class="navelem"><b>XII</b></li><li class="navelem"><b>XII</b></li><li class="navelem"><b>Source</b></li><li class="navelem"><b>Editor</b></li><li class="navelem"><b>EditorFramework</b></li><li class="navelem"><b>Preferences</b></li><li class="navelem"><b>QuadViewPreferences.h</b></li>
+    <li class="navelem"><b>home</b></li><li class="navelem"><b>runner</b></li><li class="navelem"><b>work</b></li><li class="navelem"><b>XII</b></li><li class="navelem"><b>XII</b></li><li class="navelem"><b>Source</b></li><li class="navelem"><b>Editor</b></li><li class="navelem"><b>EditorFramework</b></li><li class="navelem"><b>Settings</b></li><li class="navelem"><b>QuadViewPreferences.h</b></li>
     <li class="footer">Generated on <span class="timestamp"></span> for XII by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.15.0 </li>
   </ul>
 </div>

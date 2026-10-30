@@ -14,8 +14,9 @@ var searchData=
   ['normalizetoldrrange_11',['NormalizeToLdrRange',['../d3/de6/classxii_color.html#a4d6ddbc5a309877775f5eb77b786df1d',1,'xiiColor']]],
   ['normalizetorange_12',['NormalizeToRange',['../d1/d37/namespacexii_math.html#aa0e687884e02074cf3aa665f0c9eb917',1,'xiiMath::NormalizeToRange(double value, double fMin, double fMax)'],['../d1/d37/namespacexii_math.html#aabbf9dcd776cbae82224f51a8d55c211',1,'xiiMath::NormalizeToRange(float value, float fMin, float fMax)']]],
   ['normalizevalue_13',['NormalizeValue',['../d1/d87/classxii_curve1_d.html#aa99d458c0861dc2c278e3417953330fd',1,'xiiCurve1D']]],
-  ['notifyofassetchange_14',['NotifyOfAssetChange',['../d8/dbd/classxii_asset_curator.html#a108d2eb48a97965cef3b1d0674471aea',1,'xiiAssetCurator']]],
-  ['notifyoffilechange_15',['NotifyOfFileChange',['../d8/dbd/classxii_asset_curator.html#a2360ec42953bb36d6f579dc241032556',1,'xiiAssetCurator']]],
-  ['now_16',['Now',['../d7/dc1/structxii_time.html#a62c41574df46e952d657c3b678f3705b',1,'xiiTime']]],
-  ['numbits_17',['NumBits',['../d1/d37/namespacexii_math.html#a796a1efcabdf18bcbf94f43c344b7337',1,'xiiMath']]]
+  ['notifychanged_14',['NotifyChanged',['../d9/d45/classxii_settings.html#a14ad551f3892abfe5c4425566d118fd3',1,'xiiSettings']]],
+  ['notifyofassetchange_15',['NotifyOfAssetChange',['../d8/dbd/classxii_asset_curator.html#a108d2eb48a97965cef3b1d0674471aea',1,'xiiAssetCurator']]],
+  ['notifyoffilechange_16',['NotifyOfFileChange',['../d8/dbd/classxii_asset_curator.html#a2360ec42953bb36d6f579dc241032556',1,'xiiAssetCurator']]],
+  ['now_17',['Now',['../d7/dc1/structxii_time.html#a62c41574df46e952d657c3b678f3705b',1,'xiiTime']]],
+  ['numbits_18',['NumBits',['../d1/d37/namespacexii_math.html#a796a1efcabdf18bcbf94f43c344b7337',1,'xiiMath']]]
 ];

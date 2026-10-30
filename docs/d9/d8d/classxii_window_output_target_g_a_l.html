@@ -149,7 +149,7 @@ xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b>m_uiCurrentFrame
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Copyright (c) Theophilus Eriata. All Rights Reserved. </p>
 <p>Creates a swapchain and keeps it up to date with the window.</p>
-<p>If the window is resized or xiiGameApplication::cvar_AppVSync changes and onSwapChainChanged is valid, the swapchain is destroyed and recreated. It is up the the application to respond to the OnSwapChainChanged callback and update any references to the swap-chain, e.g. uses in <a class="el" href="../../dd/df1/classxii_view.html">xiiView</a> or uses as render targets in xiiGALRenderTargetSetup.</p>
+<p>Resize notifies onSwapChainChanged so the application can update view and render-target references. Presentation settings are applied through SetVSyncEnabled, including at output creation.</p>
 <p>If onSwapChainChanged is not set, the swapchain will not be re-created and it is up to the application to manage the swapchain and react to window changes. </p>
 </div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
 <a id="af65d7c242b717b2da19302222e4d5e4d" name="af65d7c242b717b2da19302222e4d5e4d"></a>

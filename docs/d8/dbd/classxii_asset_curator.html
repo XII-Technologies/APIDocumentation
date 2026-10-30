@@ -117,6 +117,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>StoreFullTransformDat
 <tr class="memdesc:addd4052f60196314311e11f607b05530"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transforms all assets and writes the lookup tables. If the given platform is empty, the active platform is used. <br /></td></tr>
 <tr class="memitem:aa6202506cd9f65f245d0e11738f89e54" id="r_aa6202506cd9f65f245d0e11738f89e54"><td class="memItemLeft" align="right" valign="top"><a id="aa6202506cd9f65f245d0e11738f89e54" name="aa6202506cd9f65f245d0e11738f89e54"></a>
 <a class="el" href="../../d6/d57/structxii_transform_status.html">xiiTransformStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><b>TransformAsset</b> (const <a class="el" href="../../dc/d1d/classxii_uuid.html">xiiUuid</a> &amp;assetGuid, <a class="el" href="../../d7/d55/structxii_bitflags.html">xiiBitflags</a>&lt; <a class="el" href="../../d8/d36/structxii_transform_flags.html">xiiTransformFlags</a> &gt; transformFlags, const <a class="el" href="../../d6/db6/classxii_platform_profile.html">xiiPlatformProfile</a> *pAssetProfile=nullptr)</td></tr>
+<tr class="memitem:a576d8474f9d614f6cff2f0f251d55fa9" id="r_a576d8474f9d614f6cff2f0f251d55fa9"><td class="memItemLeft" align="right" valign="top"><a id="a576d8474f9d614f6cff2f0f251d55fa9" name="a576d8474f9d614f6cff2f0f251d55fa9"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsAssetBeingTransformed</b> (const <a class="el" href="../../dc/d1d/classxii_uuid.html">xiiUuid</a> &amp;assetGuid) const</td></tr>
 <tr class="memitem:ab66c4bc20ad520155916dcff87c00607" id="r_ab66c4bc20ad520155916dcff87c00607"><td class="memItemLeft" align="right" valign="top"><a id="ab66c4bc20ad520155916dcff87c00607" name="ab66c4bc20ad520155916dcff87c00607"></a>
 <a class="el" href="../../d6/d57/structxii_transform_status.html">xiiTransformStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CreateThumbnail</b> (const <a class="el" href="../../dc/d1d/classxii_uuid.html">xiiUuid</a> &amp;assetGuid)</td></tr>
 <tr class="memitem:ae603680c7865cd4adc2c570b1a241929" id="r_ae603680c7865cd4adc2c570b1a241929"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d54/structxii_status.html">xiiStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae603680c7865cd4adc2c570b1a241929">GetAssetResaveOrder</a> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sPrefixPath, <a class="el" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray</a>&lt; <a class="el" href="../../dc/d1d/classxii_uuid.html">xiiUuid</a> &gt; &amp;out_order) const</td></tr>
@@ -138,6 +140,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateAssetLastAccess
 <tr class="memitem:a3864bb51070c1f3efdbbf6964ef16f17" id="r_a3864bb51070c1f3efdbbf6964ef16f17"><td class="memItemLeft" align="right" valign="top"><a id="a3864bb51070c1f3efdbbf6964ef16f17" name="a3864bb51070c1f3efdbbf6964ef16f17"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>CheckFileSystem</b> ()</td></tr>
 <tr class="memdesc:a3864bb51070c1f3efdbbf6964ef16f17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks file system for any changes. Call in case the file system watcher does not pick up certain changes. <br /></td></tr>
+<tr class="memitem:a9460df52371b73badecb0728e8b1c528" id="r_a9460df52371b73badecb0728e8b1c528"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9460df52371b73badecb0728e8b1c528">QueueCheckFileSystem</a> ()</td></tr>
+<tr class="memitem:abdcd8decf5d4462c7c64e998eada658b" id="r_abdcd8decf5d4462c7c64e998eada658b"><td class="memItemLeft" align="right" valign="top"><a id="abdcd8decf5d4462c7c64e998eada658b" name="abdcd8decf5d4462c7c64e998eada658b"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsCheckingFileSystem</b> () const</td></tr>
 <tr class="memitem:ab9a1365d52468f232080bc4b7a8273a2" id="r_ab9a1365d52468f232080bc4b7a8273a2"><td class="memItemLeft" align="right" valign="top"><a id="ab9a1365d52468f232080bc4b7a8273a2" name="ab9a1365d52468f232080bc4b7a8273a2"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>NeedsReloadResources</b> (const <a class="el" href="../../dc/d1d/classxii_uuid.html">xiiUuid</a> &amp;assetGuid)</td></tr>
 <tr class="memitem:a78bf7935d3aab8bb41768b2500c48a8d" id="r_a78bf7935d3aab8bb41768b2500c48a8d"><td class="memItemLeft" align="right" valign="top"><a id="a78bf7935d3aab8bb41768b2500c48a8d" name="a78bf7935d3aab8bb41768b2500c48a8d"></a>
@@ -563,6 +568,24 @@ const <a class="el" href="../../d6/db6/classxii_platform_profile.html">xiiPlatfo
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True, if at least one asset references the given file. </dd></dl>
+
+</div>
+</div>
+<a id="a9460df52371b73badecb0728e8b1c528" name="a9460df52371b73badecb0728e8b1c528"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9460df52371b73badecb0728e8b1c528">&#9670;&#160;</a></span>QueueCheckFileSystem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiAssetCurator::QueueCheckFileSystem </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>GUI-thread request for an interactive rescan. Repeated requests coalesce. The existing file-access task pool scans; the GUI tick publishes completion. </p>
 
 </div>
 </div>

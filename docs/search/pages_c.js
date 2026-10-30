@@ -1,5 +1,8 @@
 var searchData=
 [
-  ['october_202026_0',['Rendering refactor handoff - 18 October 2026',['../d5/d53/md__2home_2runner_2work_2_x_i_i_2_x_i_i_2_documentation_2_rendering_2_remaining_work.html',1,'']]],
-  ['optimized_20world_20extraction_20and_20upload_20measurements_1',['Optimized world extraction and upload measurements',['../d9/dcc/md__2home_2runner_2work_2_x_i_i_2_x_i_i_2_documentation_2_rendering_2_render_extraction_performance.html',1,'']]]
+  ['pass_20rebuild_0',['Native rendering pass rebuild',['../d7/dfa/md__2home_2runner_2work_2_x_i_i_2_x_i_i_2_documentation_2_rendering_2_native_pass_inventory.html',1,'']]],
+  ['plugins_1',['Project C++ plugins',['../da/dc8/md__2home_2runner_2work_2_x_i_i_2_x_i_i_2_documentation_2_cpp_projects.html',1,'']]],
+  ['presentation_2',['Editor Startup Presentation',['../dd/d16/md__2home_2runner_2work_2_x_i_i_2_x_i_i_2_documentation_2_editor_startup.html',1,'']]],
+  ['profiling_20inspectors_3',['Render graph and rendering profiling inspectors',['../d0/d4c/md__2home_2runner_2work_2_x_i_i_2_x_i_i_2_documentation_2_inspector_rendering.html',1,'']]],
+  ['project_20c_20plugins_4',['Project C++ plugins',['../da/dc8/md__2home_2runner_2work_2_x_i_i_2_x_i_i_2_documentation_2_cpp_projects.html',1,'']]]
 ];

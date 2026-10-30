@@ -107,6 +107,13 @@ Public Types</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aab50b1ca9916fe245a0b78a509f8ce45" id="r_aab50b1ca9916fe245a0b78a509f8ce45"><td class="memItemLeft" align="right" valign="top"><a id="aab50b1ca9916fe245a0b78a509f8ce45" name="aab50b1ca9916fe245a0b78a509f8ce45"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>StartProcessTask</b> ()</td></tr>
+<tr class="memitem:a4fc95661aff472297fa0168ca48219e5" id="r_a4fc95661aff472297fa0168ca48219e5"><td class="memItemLeft" align="right" valign="top"><a id="a4fc95661aff472297fa0168ca48219e5" name="a4fc95661aff472297fa0168ca48219e5"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsAutomaticProcessingEnabled</b> () const</td></tr>
+<tr class="memitem:ab6af8b4c29b8bb95afc68885ea4f4ccd" id="r_ab6af8b4c29b8bb95afc68885ea4f4ccd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d54/structxii_status.html">xiiStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab6af8b4c29b8bb95afc68885ea4f4ccd">QueueTransformAssets</a> (<a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; const <a class="el" href="../../dc/d1d/classxii_uuid.html">xiiUuid</a> &gt; assets, <a class="el" href="../../d7/d55/structxii_bitflags.html">xiiBitflags</a>&lt; <a class="el" href="../../d8/d36/structxii_transform_flags.html">xiiTransformFlags</a> &gt; flags=<a class="el" href="../../d8/d36/structxii_transform_flags.html#ae22d41ae23344d4d6dedebb04a6ef21ea1e74b95a0f9948f0c2f1242a529d7983">xiiTransformFlags::TriggeredManually</a>)</td></tr>
+<tr class="memitem:a410e3f77dd4b5a05bedd6789d3fadd6c" id="r_a410e3f77dd4b5a05bedd6789d3fadd6c"><td class="memItemLeft" align="right" valign="top"><a id="a410e3f77dd4b5a05bedd6789d3fadd6c" name="a410e3f77dd4b5a05bedd6789d3fadd6c"></a>
+<a class="el" href="../../d0/d54/structxii_status.html">xiiStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><b>QueueTransformAllAssets</b> ()</td></tr>
+<tr class="memitem:acc623512145b3433d414e179a6c9b2b1" id="r_acc623512145b3433d414e179a6c9b2b1"><td class="memItemLeft" align="right" valign="top"><a id="acc623512145b3433d414e179a6c9b2b1" name="acc623512145b3433d414e179a6c9b2b1"></a>
+<a class="el" href="../../dd/df4/structxii_asset_transform_progress.html">xiiAssetTransformProgress</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetTransformProgress</b> () const</td></tr>
 <tr class="memitem:a07766f98a1d6d4a6ec42f1f03cc86c8b" id="r_a07766f98a1d6d4a6ec42f1f03cc86c8b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a07766f98a1d6d4a6ec42f1f03cc86c8b">StopProcessTask</a> (bool bForce, bool bWait=false)</td></tr>
 <tr class="memitem:a514ce84e1708a19ebf78f6d36007c84d" id="r_a514ce84e1708a19ebf78f6d36007c84d"><td class="memItemLeft" align="right" valign="top"><a id="a514ce84e1708a19ebf78f6d36007c84d" name="a514ce84e1708a19ebf78f6d36007c84d"></a>
 <a class="el" href="#a81e6219c01360c0763103efde52d041d">ProcessTaskState</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetProcessTaskState</b> () const</td></tr>
@@ -117,13 +124,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveLogWriter</b> (
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a24a43d26f2def2a34c4b35c8cac22d61" id="r_a24a43d26f2def2a34c4b35c8cac22d61"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a24a43d26f2def2a34c4b35c8cac22d61">PrepareAssetRequest</a> (<a class="el" href="../../dc/d1d/classxii_uuid.html">xiiUuid</a> assetGuid, <a class="el" href="../../d1/dd6/classxii_process_asset_msg.html">xiiProcessAssetMsg</a> &amp;out_request)</td></tr>
-<tr class="memdesc:a24a43d26f2def2a34c4b35c8cac22d61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copyright (c) Theophilus Eriata. All Rights Reserved.  <br /></td></tr>
+<tr class="memitem:ac5f555e8e788ad7cf6240bdacf8f8dbb" id="r_ac5f555e8e788ad7cf6240bdacf8f8dbb"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac5f555e8e788ad7cf6240bdacf8f8dbb">PrepareAssetRequest</a> (<a class="el" href="../../dc/d1d/classxii_uuid.html">xiiUuid</a> assetGuid, <a class="el" href="../../d1/dd6/classxii_process_asset_msg.html">xiiProcessAssetMsg</a> &amp;out_request, <a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sProfile={})</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a3cbb497182826f7b79ab0e1728577f5f" id="r_a3cbb497182826f7b79ab0e1728577f5f"><td class="memItemLeft" align="right" valign="top"><a id="a3cbb497182826f7b79ab0e1728577f5f" name="a3cbb497182826f7b79ab0e1728577f5f"></a>
-<a class="el" href="../../dc/d22/classxii_event.html">xiiEvent</a>&lt; const <a class="el" href="../../db/d7d/structxii_asset_processor_event.html">xiiAssetProcessorEvent</a> &amp; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_Events</b></td></tr>
+<tr class="memitem:aeffc07dd145580b063320ebe6cab43e4" id="r_aeffc07dd145580b063320ebe6cab43e4"><td class="memItemLeft" align="right" valign="top"><a id="aeffc07dd145580b063320ebe6cab43e4" name="aeffc07dd145580b063320ebe6cab43e4"></a>
+<a class="el" href="../../dc/d22/classxii_event.html">xiiEvent</a>&lt; const <a class="el" href="../../db/d7d/structxii_asset_processor_event.html">xiiAssetProcessorEvent</a> &amp;, <a class="el" href="../../dd/d52/classxii_mutex.html">xiiMutex</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_Events</b></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-friends" class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>
@@ -168,8 +174,8 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>xiiAssetCurator</b><
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
-<a id="a24a43d26f2def2a34c4b35c8cac22d61" name="a24a43d26f2def2a34c4b35c8cac22d61"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a24a43d26f2def2a34c4b35c8cac22d61">&#9670;&#160;</a></span>PrepareAssetRequest()</h2>
+<a id="ac5f555e8e788ad7cf6240bdacf8f8dbb" name="ac5f555e8e788ad7cf6240bdacf8f8dbb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5f555e8e788ad7cf6240bdacf8f8dbb">&#9670;&#160;</a></span>PrepareAssetRequest()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -185,7 +191,12 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>xiiAssetCurator</b><
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../d1/dd6/classxii_process_asset_msg.html">xiiProcessAssetMsg</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>out_request</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="../../d1/dd6/classxii_process_asset_msg.html">xiiProcessAssetMsg</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>out_request</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sProfile</em></span><span class="paramdefsep"> = </span><span class="paramdefval">{}</span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -194,9 +205,29 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>xiiAssetCurator</b><
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Copyright (c) Theophilus Eriata. All Rights Reserved. </p>
 <p>Captures a known asset's owner, hashes, active profile and all dependency categories for IPC. The output is unchanged on failure. The processor independently validates the transform state. The captured profile remains associated with the request if the editor later changes profiles. </p>
+
+</div>
+</div>
+<a id="ab6af8b4c29b8bb95afc68885ea4f4ccd" name="ab6af8b4c29b8bb95afc68885ea4f4ccd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6af8b4c29b8bb95afc68885ea4f4ccd">&#9670;&#160;</a></span>QueueTransformAssets()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d0/d54/structxii_status.html">xiiStatus</a> xiiAssetProcessor::QueueTransformAssets </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; const <a class="el" href="../../dc/d1d/classxii_uuid.html">xiiUuid</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>assets</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d7/d55/structxii_bitflags.html">xiiBitflags</a>&lt; <a class="el" href="../../d8/d36/structxii_transform_flags.html">xiiTransformFlags</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>flags</em></span><span class="paramdefsep"> = </span><span class="paramdefval"><a class="el" href="../../d8/d36/structxii_transform_flags.html#ae22d41ae23344d4d6dedebb04a6ef21ea1e74b95a0f9948f0c2f1242a529d7983">xiiTransformFlags::TriggeredManually</a></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>GUI-thread entry points. Save modified inputs before requesting; no widgets or documents are accessed by the process thread. Duplicate requests coalesce until their result arrives. </p>
 
 </div>
 </div>

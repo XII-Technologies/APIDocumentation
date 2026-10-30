@@ -127,6 +127,23 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>GetCameraMatrices</b>
 <tr class="memitem:a41a5c474d02b314865f02fe59a4d4a70" id="r_a41a5c474d02b314865f02fe59a4d4a70"><td class="memItemLeft" align="right" valign="top"><a id="a41a5c474d02b314865f02fe59a4d4a70" name="a41a5c474d02b314865f02fe59a4d4a70"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>InterpolateCameraTo</b> (const xiiVec3 &amp;vPosition, const xiiVec3 &amp;vDirection, float fFovOrDim, const xiiVec3 *pNewUpDirection=nullptr, bool bImmediate=false)</td></tr>
 <tr class="memdesc:a41a5c474d02b314865f02fe59a4d4a70"><td class="mdescLeft">&#160;</td><td class="mdescRight">The view's camera will be interpolated to the given coordinates. <br /></td></tr>
+<tr class="memitem:ad5adc4620e79e37caa8c46163bf0ee7a" id="r_ad5adc4620e79e37caa8c46163bf0ee7a"><td class="memItemLeft" align="right" valign="top"><a id="ad5adc4620e79e37caa8c46163bf0ee7a" name="ad5adc4620e79e37caa8c46163bf0ee7a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetNavigationGizmoEnabled</b> (bool bEnabled)</td></tr>
+<tr class="memdesc:ad5adc4620e79e37caa8c46163bf0ee7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Navigation is available in scene views and orbit-camera asset previews. <br /></td></tr>
+<tr class="memitem:a04e7feabc5b606897708ac29a3bedc14" id="r_a04e7feabc5b606897708ac29a3bedc14"><td class="memItemLeft" align="right" valign="top"><a id="a04e7feabc5b606897708ac29a3bedc14" name="a04e7feabc5b606897708ac29a3bedc14"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsNavigationGizmoEnabled</b> () const</td></tr>
+<tr class="memitem:ab7e1bc66e1246cfe651859ff6dc953ac" id="r_ab7e1bc66e1246cfe651859ff6dc953ac"><td class="memItemLeft" align="right" valign="top"><a id="ab7e1bc66e1246cfe651859ff6dc953ac" name="ab7e1bc66e1246cfe651859ff6dc953ac"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>HasNavigationGizmo</b> () const</td></tr>
+<tr class="memitem:aed3bfd15ac2ff85ba930447dc1c61e39" id="r_aed3bfd15ac2ff85ba930447dc1c61e39"><td class="memItemLeft" align="right" valign="top"><a id="aed3bfd15ac2ff85ba930447dc1c61e39" name="aed3bfd15ac2ff85ba930447dc1c61e39"></a>
+<a class="el" href="../../df/dcd/structxii_viewport_navigation_gizmo.html">xiiViewportNavigationGizmo</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetNavigationGizmoGeometry</b> () const</td></tr>
+<tr class="memitem:ae93a173bdfcefe470f6968546249f5ef" id="r_ae93a173bdfcefe470f6968546249f5ef"><td class="memItemLeft" align="right" valign="top"><a id="ae93a173bdfcefe470f6968546249f5ef" name="ae93a173bdfcefe470f6968546249f5ef"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>InterpolateCameraOrbitTo</b> (const xiiVec3 &amp;vDirection)</td></tr>
+<tr class="memitem:a6cb4bb876125697266d10499e4330869" id="r_a6cb4bb876125697266d10499e4330869"><td class="memItemLeft" align="right" valign="top"><a id="a6cb4bb876125697266d10499e4330869" name="a6cb4bb876125697266d10499e4330869"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>CancelCameraInterpolation</b> ()</td></tr>
+<tr class="memitem:a59e336d1cf499225a3fa701dd73b2507" id="r_a59e336d1cf499225a3fa701dd73b2507"><td class="memItemLeft" align="right" valign="top"><a id="a59e336d1cf499225a3fa701dd73b2507" name="a59e336d1cf499225a3fa701dd73b2507"></a>
+virtual xiiVec3&#160;</td><td class="memItemRight" valign="bottom"><b>GetCameraOrbitPoint</b> () const</td></tr>
+<tr class="memitem:a800f038849e54c6000795039d9b5dba9" id="r_a800f038849e54c6000795039d9b5dba9"><td class="memItemLeft" align="right" valign="top"><a id="a800f038849e54c6000795039d9b5dba9" name="a800f038849e54c6000795039d9b5dba9"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OrbitCamera</b> (const xiiVec2 &amp;vRadians)</td></tr>
 <tr class="memitem:a31a9ec06117c1aafb097dcbaedc54d0d" id="r_a31a9ec06117c1aafb097dcbaedc54d0d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a31a9ec06117c1aafb097dcbaedc54d0d">SetEnablePicking</a> (bool bEnable)</td></tr>
 <tr class="memitem:a7c60090ded6ba5ba5279d64d17f4111b" id="r_a7c60090ded6ba5ba5279d64d17f4111b"><td class="memItemLeft" align="right" valign="top"><a id="a7c60090ded6ba5ba5279d64d17f4111b" name="a7c60090ded6ba5ba5279d64d17f4111b"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetPickTransparent</b> (bool bEnable)</td></tr>
@@ -135,9 +152,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetPickTransparent</b
 <tr class="memitem:a90a8573703a5a81fd722eeda2adcc5ad" id="r_a90a8573703a5a81fd722eeda2adcc5ad"><td class="memItemLeft" align="right" valign="top"><a id="a90a8573703a5a81fd722eeda2adcc5ad" name="a90a8573703a5a81fd722eeda2adcc5ad"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>OpenContextMenu</b> (QPoint globalPos)</td></tr>
 <tr class="memdesc:a90a8573703a5a81fd722eeda2adcc5ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Supposed to open a context menu at the given position. Derived classes must implement OnOpenContextMenu and do the actual work there. <br /></td></tr>
-<tr class="memitem:a0f9dd1daed61244116cc444cee3c5c2c" id="r_a0f9dd1daed61244116cc444cee3c5c2c"><td class="memItemLeft" align="right" valign="top"><a id="a0f9dd1daed61244116cc444cee3c5c2c" name="a0f9dd1daed61244116cc444cee3c5c2c"></a>
-const <a class="el" href="../../d8/da8/structxii_object_picking_result.html">xiiObjectPickingResult</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>PickObject</b> (xiiUInt16 uiScreenPosX, xiiUInt16 uiScreenPosY) const</td></tr>
-<tr class="memdesc:a0f9dd1daed61244116cc444cee3c5c2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts a picking operation for the given pixel position in this view. Returns the most recent picking information in the meantime. <br /></td></tr>
+<tr class="memitem:a4e9b344a2cad9d0609c341979a6bf814" id="r_a4e9b344a2cad9d0609c341979a6bf814"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../d8/da8/structxii_object_picking_result.html">xiiObjectPickingResult</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4e9b344a2cad9d0609c341979a6bf814">PickObject</a> (xiiUInt16 uiScreenPosX, xiiUInt16 uiScreenPosY, bool bWaitForResult=false) const</td></tr>
 <tr class="memitem:a0304281942fe1d8675ae19ce42479ad0" id="r_a0304281942fe1d8675ae19ce42479ad0"><td class="memItemLeft" align="right" valign="top"><a id="a0304281942fe1d8675ae19ce42479ad0" name="a0304281942fe1d8675ae19ce42479ad0"></a>
 <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>PickPlane</b> (xiiUInt16 uiScreenPosX, xiiUInt16 uiScreenPosY, const xiiPlane &amp;plane, xiiVec3 &amp;out_vPosition) const</td></tr>
 <tr class="memdesc:a0304281942fe1d8675ae19ce42479ad0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Similar to PickObject, but computes the intersection with the given plane instead. <br /></td></tr>
@@ -188,6 +203,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>keyReleaseEve
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>mousePressEvent</b> (QMouseEvent *e) override</td></tr>
 <tr class="memitem:ab2c72182f28c12237f0dce5001840ea5" id="r_ab2c72182f28c12237f0dce5001840ea5"><td class="memItemLeft" align="right" valign="top"><a id="ab2c72182f28c12237f0dce5001840ea5" name="ab2c72182f28c12237f0dce5001840ea5"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>mouseReleaseEvent</b> (QMouseEvent *e) override</td></tr>
+<tr class="memitem:ae9f06ead698985769b9ca462f7928699" id="r_ae9f06ead698985769b9ca462f7928699"><td class="memItemLeft" align="right" valign="top"><a id="ae9f06ead698985769b9ca462f7928699" name="ae9f06ead698985769b9ca462f7928699"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>mouseDoubleClickEvent</b> (QMouseEvent *e) override</td></tr>
 <tr class="memitem:a51d1ea89913cf119fb0d30f5661bc6b6" id="r_a51d1ea89913cf119fb0d30f5661bc6b6"><td class="memItemLeft" align="right" valign="top"><a id="a51d1ea89913cf119fb0d30f5661bc6b6" name="a51d1ea89913cf119fb0d30f5661bc6b6"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>mouseMoveEvent</b> (QMouseEvent *e) override</td></tr>
 <tr class="memitem:affc659ed8ed5e6ddd69109b2ecc00071" id="r_affc659ed8ed5e6ddd69109b2ecc00071"><td class="memItemLeft" align="right" valign="top"><a id="affc659ed8ed5e6ddd69109b2ecc00071" name="affc659ed8ed5e6ddd69109b2ecc00071"></a>
@@ -200,6 +217,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>dragEnterEven
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>dragLeaveEvent</b> (QDragLeaveEvent *e) override</td></tr>
 <tr class="memitem:a10e32be18f43b1f2990d96cd8410996a" id="r_a10e32be18f43b1f2990d96cd8410996a"><td class="memItemLeft" align="right" valign="top"><a id="a10e32be18f43b1f2990d96cd8410996a" name="a10e32be18f43b1f2990d96cd8410996a"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>dropEvent</b> (QDropEvent *e) override</td></tr>
+<tr class="memitem:a7fe0721c8d2de6e3c1fb80f35bb38a69" id="r_a7fe0721c8d2de6e3c1fb80f35bb38a69"><td class="memItemLeft" align="right" valign="top"><a id="a7fe0721c8d2de6e3c1fb80f35bb38a69" name="a7fe0721c8d2de6e3c1fb80f35bb38a69"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>InitializeNavigationGizmo</b> ()</td></tr>
 <tr class="memitem:a33f8dce55cc9d7726d02a714ac3fa85e" id="r_a33f8dce55cc9d7726d02a714ac3fa85e"><td class="memItemLeft" align="right" valign="top"><a id="a33f8dce55cc9d7726d02a714ac3fa85e" name="a33f8dce55cc9d7726d02a714ac3fa85e"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>EngineViewProcessEventHandler</b> (const <a class="el" href="../../db/d4c/structxii_editor_engine_process_connection_1_1_event.html">xiiEditorEngineProcessConnection::Event</a> &amp;e)</td></tr>
 <tr class="memitem:a89182a582fc24aaebdbefc8618eac77c" id="r_a89182a582fc24aaebdbefc8618eac77c"><td class="memItemLeft" align="right" valign="top"><a id="a89182a582fc24aaebdbefc8618eac77c" name="a89182a582fc24aaebdbefc8618eac77c"></a>
@@ -223,6 +242,18 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bInDragAndDropOpera
 xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b>m_uiViewID</b></td></tr>
 <tr class="memitem:a84d9d322b0948c8d8c7eb7123ceb2a5e" id="r_a84d9d322b0948c8d8c7eb7123ceb2a5e"><td class="memItemLeft" align="right" valign="top"><a id="a84d9d322b0948c8d8c7eb7123ceb2a5e" name="a84d9d322b0948c8d8c7eb7123ceb2a5e"></a>
 <a class="el" href="../../d0/d97/classxii_qt_engine_document_window.html">xiiQtEngineDocumentWindow</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pDocumentWindow</b> = nullptr</td></tr>
+<tr class="memitem:a13f47cb1ca8c6cfe3685e85b4d713c5f" id="r_a13f47cb1ca8c6cfe3685e85b4d713c5f"><td class="memItemLeft" align="right" valign="top"><a id="a13f47cb1ca8c6cfe3685e85b4d713c5f" name="a13f47cb1ca8c6cfe3685e85b4d713c5f"></a>
+<a class="el" href="../../d3/d3c/classxii_editor_viewport_navigation_gizmo.html">xiiEditorViewportNavigationGizmo</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pNavigationGizmo</b> = nullptr</td></tr>
+<tr class="memitem:ae4233b46d18aeea3c72342e26889ac0f" id="r_ae4233b46d18aeea3c72342e26889ac0f"><td class="memItemLeft" align="right" valign="top"><a id="ae4233b46d18aeea3c72342e26889ac0f" name="ae4233b46d18aeea3c72342e26889ac0f"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bOrbitInterpolation</b> = false</td></tr>
+<tr class="memitem:a0bc1627429afb9e83dbfd002c46f3870" id="r_a0bc1627429afb9e83dbfd002c46f3870"><td class="memItemLeft" align="right" valign="top"><a id="a0bc1627429afb9e83dbfd002c46f3870" name="a0bc1627429afb9e83dbfd002c46f3870"></a>
+xiiVec3&#160;</td><td class="memItemRight" valign="bottom"><b>m_vCameraOrbitPoint</b></td></tr>
+<tr class="memitem:a5991109e7407fe98cc825b9901173e49" id="r_a5991109e7407fe98cc825b9901173e49"><td class="memItemLeft" align="right" valign="top"><a id="a5991109e7407fe98cc825b9901173e49" name="a5991109e7407fe98cc825b9901173e49"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fCameraOrbitDistance</b> = 1.0f</td></tr>
+<tr class="memitem:a51679454416cdbc93021353fe9f4ee36" id="r_a51679454416cdbc93021353fe9f4ee36"><td class="memItemLeft" align="right" valign="top"><a id="a51679454416cdbc93021353fe9f4ee36" name="a51679454416cdbc93021353fe9f4ee36"></a>
+xiiQuat&#160;</td><td class="memItemRight" valign="bottom"><b>m_qCameraStartRotation</b></td></tr>
+<tr class="memitem:a9c5db409e1fb856a593005044f9922ca" id="r_a9c5db409e1fb856a593005044f9922ca"><td class="memItemLeft" align="right" valign="top"><a id="a9c5db409e1fb856a593005044f9922ca" name="a9c5db409e1fb856a593005044f9922ca"></a>
+xiiQuat&#160;</td><td class="memItemRight" valign="bottom"><b>m_qCameraTargetRotation</b></td></tr>
 <tr class="memitem:a1c2b88af858d17c9a5b3680afa9c8824" id="r_a1c2b88af858d17c9a5b3680afa9c8824"><td class="memItemLeft" align="right" valign="top"><a id="a1c2b88af858d17c9a5b3680afa9c8824" name="a1c2b88af858d17c9a5b3680afa9c8824"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fCameraLerp</b></td></tr>
 <tr class="memitem:aa3e12a99292f053011692ba436284f7c" id="r_aa3e12a99292f053011692ba436284f7c"><td class="memItemLeft" align="right" valign="top"><a id="aa3e12a99292f053011692ba436284f7c" name="aa3e12a99292f053011692ba436284f7c"></a>
@@ -249,6 +280,8 @@ QPushButton *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pRestartBu
 QWidget *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pViewportWidget</b> = nullptr</td></tr>
 <tr class="memitem:aa818692ebe6db690f2dd6d36429dfca9" id="r_aa818692ebe6db690f2dd6d36429dfca9"><td class="memItemLeft" align="right" valign="top"><a id="aa818692ebe6db690f2dd6d36429dfca9" name="aa818692ebe6db690f2dd6d36429dfca9"></a>
 <a class="el" href="../../d8/da8/structxii_object_picking_result.html">xiiObjectPickingResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_LastPickingResult</b></td></tr>
+<tr class="memitem:a4d0c043f932b8bdc5d3761b1fc5112be" id="r_a4d0c043f932b8bdc5d3761b1fc5112be"><td class="memItemLeft" align="right" valign="top"><a id="a4d0c043f932b8bdc5d3761b1fc5112be" name="a4d0c043f932b8bdc5d3761b1fc5112be"></a>
+xiiUInt64&#160;</td><td class="memItemRight" valign="bottom"><b>m_uiPickingRequestID</b> = 0</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pro-static-attribs" class="groupheader"><a id="pro-static-attribs" name="pro-static-attribs"></a>
 Static Protected Attributes</h2></td></tr>
@@ -313,6 +346,33 @@ static <a class="el" href="../../d4/d5f/structxii_qt_engine_view_widget_1_1_inte
 <p>Disabled during drag&amp;drop operations, to prevent picking against the dragged object. </p>
 
 <p>Reimplemented in <a class="el" href="../../d1/db1/classxii_qt_scene_view_widget.html#ab953c1f57d6ae647e3f367f612366a9b">xiiQtSceneViewWidget</a>.</p>
+
+</div>
+</div>
+<a id="a4e9b344a2cad9d0609c341979a6bf814" name="a4e9b344a2cad9d0609c341979a6bf814"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e9b344a2cad9d0609c341979a6bf814">&#9670;&#160;</a></span>PickObject()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../d8/da8/structxii_object_picking_result.html">xiiObjectPickingResult</a> &amp; xiiQtEngineViewWidget::PickObject </td>
+          <td>(</td>
+          <td class="paramtype">xiiUInt16</td>          <td class="paramname"><span class="paramname"><em>uiScreenPosX</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">xiiUInt16</td>          <td class="paramname"><span class="paramname"><em>uiScreenPosY</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>bWaitForResult</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>&#160;) const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Starts a picking operation for the given pixel position in this view. Returns the most recent picking information in the meantime. Clicks may request a fresh CPU hit; hover remains asynchronous. The bounded IPC wait never triggers GPU readback. </p>
 
 </div>
 </div>
