@@ -105,6 +105,7 @@ Inheritance diagram for xiiMaterialInstance:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a97c207876794a0a2d85b61d4b73a82fb" id="r_a97c207876794a0a2d85b61d4b73a82fb"><td class="memItemLeft" align="right" valign="top"><a id="a97c207876794a0a2d85b61d4b73a82fb" name="a97c207876794a0a2d85b61d4b73a82fb"></a>
 <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Initialize</b> (<a class="el" href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr</a>&lt; const <a class="el" href="../../d6/d88/classxii_material_schema.html">xiiMaterialSchema</a> &gt; pSchema, const <a class="el" href="../../d2/da2/structxii_material_runtime_state.html">xiiMaterialRuntimeState</a> &amp;runtimeState={})</td></tr>
+<tr class="memitem:a2f75a0570203a3c68f5f0dcce4a5d394" id="r_a2f75a0570203a3c68f5f0dcce4a5d394"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2f75a0570203a3c68f5f0dcce4a5d394">RebindSchema</a> (<a class="el" href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr</a>&lt; const <a class="el" href="../../d6/d88/classxii_material_schema.html">xiiMaterialSchema</a> &gt; pSchema, const <a class="el" href="../../d2/da2/structxii_material_runtime_state.html">xiiMaterialRuntimeState</a> &amp;runtimeState, <a class="el" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray</a>&lt; xiiString &gt; *out_pWarnings=nullptr)</td></tr>
 <tr class="memitem:a675c4ca85511ead2d2841a44be261fcd" id="r_a675c4ca85511ead2d2841a44be261fcd"><td class="memItemLeft" align="right" valign="top"><a id="a675c4ca85511ead2d2841a44be261fcd" name="a675c4ca85511ead2d2841a44be261fcd"></a>
 <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>SetParameter</b> (<a class="el" href="../../d0/db0/structxii_material_parameter_id.html">xiiMaterialParameterId</a> id, const <a class="el" href="../../db/d1a/classxii_variant.html">xiiVariant</a> &amp;value)</td></tr>
 <tr class="memitem:a0219d1fc4341fb354c50de862ee5d6da" id="r_a0219d1fc4341fb354c50de862ee5d6da"><td class="memItemLeft" align="right" valign="top"><a id="a0219d1fc4341fb354c50de862ee5d6da" name="a0219d1fc4341fb354c50de862ee5d6da"></a>
@@ -176,6 +177,33 @@ xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b>GetRefCount</b> 
 
 </div>
 </div>
+<a id="a2f75a0570203a3c68f5f0dcce4a5d394" name="a2f75a0570203a3c68f5f0dcce4a5d394"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f75a0570203a3c68f5f0dcce4a5d394">&#9670;&#160;</a></span>RebindSchema()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a> xiiMaterialInstance::RebindSchema </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr</a>&lt; const <a class="el" href="../../d6/d88/classxii_material_schema.html">xiiMaterialSchema</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>pSchema</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d2/da2/structxii_material_runtime_state.html">xiiMaterialRuntimeState</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>runtimeState</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray</a>&lt; xiiString &gt; *</td>          <td class="paramname"><span class="paramname"><em>out_pWarnings</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Replaces the shader schema atomically, preserving explicitly authored overrides by stable ID and exact type. Removed or incompatible overrides are reported and use the new defaults. Renderer-owned bindless indices are invalidated so resources can be resolved again safely. </p>
+
+</div>
+</div>
 <a id="a3eeb9b2f28b7c298b5707d4a19a917e7" name="a3eeb9b2f28b7c298b5707d4a19a917e7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3eeb9b2f28b7c298b5707d4a19a917e7">&#9670;&#160;</a></span>SetBindlessIndex()</h2>
 
@@ -199,7 +227,7 @@ xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b>GetRefCount</b> 
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Indices are renderer-owned and must remain live through the consuming frame. An invalid sampler index selects the shader's legacy fallback sampler. </p>
+<p>Indices are renderer-owned and must remain live through the consuming frame. An invalid sampler index selects the renderer's default sampler. </p>
 
 </div>
 </div>

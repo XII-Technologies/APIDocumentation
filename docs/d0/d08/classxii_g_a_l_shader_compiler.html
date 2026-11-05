@@ -96,9 +96,46 @@ $(function(){initNavTree('d0/d08/classxii_g_a_l_shader_compiler.html','../../','
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a8e541e9053429466b3726fe2b33128aa" id="r_a8e541e9053429466b3726fe2b33128aa"><td class="memItemLeft" align="right" valign="top"><a id="a8e541e9053429466b3726fe2b33128aa" name="a8e541e9053429466b3726fe2b33128aa"></a>
-<a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CompileShaderPermutationForPlatforms</b> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sFile, const <a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; const <a class="el" href="../../d4/d45/structxii_g_a_l_permutation_variable.html">xiiGALPermutationVariable</a> &gt; &amp;permutationVariables, <a class="el" href="../../d6/d6b/classxii_log_interface.html">xiiLogInterface</a> *pLog, <a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sPlatform=&quot;ALL&quot;, <a class="el" href="../../de/d45/classxii_tokenized_file_cache.html">xiiTokenizedFileCache</a> *pFileCache=nullptr)</td></tr>
+<tr class="memitem:a8e541e9053429466b3726fe2b33128aa" id="r_a8e541e9053429466b3726fe2b33128aa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8e541e9053429466b3726fe2b33128aa">CompileShaderPermutationForPlatforms</a> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sFile, const <a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; const <a class="el" href="../../d4/d45/structxii_g_a_l_permutation_variable.html">xiiGALPermutationVariable</a> &gt; &amp;permutationVariables, <a class="el" href="../../d6/d6b/classxii_log_interface.html">xiiLogInterface</a> *pLog, <a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sPlatform=&quot;ALL&quot;, <a class="el" href="../../de/d45/classxii_tokenized_file_cache.html">xiiTokenizedFileCache</a> *pFileCache=nullptr)</td></tr>
 </table>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a id="a8e541e9053429466b3726fe2b33128aa" name="a8e541e9053429466b3726fe2b33128aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e541e9053429466b3726fe2b33128aa">&#9670;&#160;</a></span>CompileShaderPermutationForPlatforms()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a> xiiGALShaderCompiler::CompileShaderPermutationForPlatforms </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sFile</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; const <a class="el" href="../../d4/d45/structxii_g_a_l_permutation_variable.html">xiiGALPermutationVariable</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>permutationVariables</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d6/d6b/classxii_log_interface.html">xiiLogInterface</a> *</td>          <td class="paramname"><span class="paramname"><em>pLog</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sPlatform</em></span><span class="paramdefsep"> = </span><span class="paramdefval">&quot;ALL&quot;</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../de/d45/classxii_tokenized_file_cache.html">xiiTokenizedFileCache</a> *</td>          <td class="paramname"><span class="paramname"><em>pFileCache</em></span><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>A nonempty [MATERIAL_CONSTANTS] section contains constant-buffer members (HLSL declarations or XII shared-header macros). The compiler declares xiiMaterialConstants once per active stage; reflection retains only used stage bindings. Do not declare that buffer manually in the same shader. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/runner/work/XII/XII/Source/Engine/GraphicsFoundation/ShaderCompiler/<a class="el" href="../../d5/d25/_shader_compiler_8h_source.html">ShaderCompiler.h</a></li>
 <li>/home/runner/work/XII/XII/Source/Engine/GraphicsFoundation/ShaderCompiler/Implementation/<b>ShaderCompiler.cpp</b></li>

@@ -114,93 +114,94 @@ $(function(){initNavTree('dd/d42/_visual_shader_type_registry_8h_source.html','.
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>  <a class="code hl_struct" href="../../db/d02/structxii_reflected_property_descriptor.html">xiiReflectedPropertyDescriptor</a> m_PropertyDesc;</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>  <a class="code hl_class" href="../../df/d71/classxii_color_gamma_u_b.html">xiiColorGammaUB</a>                m_Color             = <a class="code hl_function" href="../../db/d75/classxii_color_scheme.html#aef134e2973f81cd05b4019a62c450db6">xiiColorScheme::DarkUI</a>(xiiColorScheme::Gray);</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>  <span class="keywordtype">bool</span>                           m_bExposeAsProperty = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>  xiiString                      m_sDefaultValue;</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>  <a class="code hl_class" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray&lt;xiiString&gt;</a>     m_sDefinesWhenUsingDefaultValue;</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>  xiiString                      m_sShaderCodeInline;</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>  xiiString                      m_sTooltip;</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>};</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>  <span class="keywordtype">bool</span>                           m_bDynamicNumeric   = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>  xiiString                      m_sDefaultValue;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>  <a class="code hl_class" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray&lt;xiiString&gt;</a>     m_sDefinesWhenUsingDefaultValue;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>  xiiString                      m_sShaderCodeInline;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>  xiiString                      m_sTooltip;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>};</div>
 </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="foldopen" id="foldopen00027" data-start="{" data-end="};">
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="../../d8/d87/structxii_visual_shader_node_type.html">   27</a></span><span class="keyword">struct </span><a class="code hl_struct" href="../../d8/d87/structxii_visual_shader_node_type.html">xiiVisualShaderNodeType</a></div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>{</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>  <span class="keyword">using </span>StorageType = xiiUInt8;</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>  <span class="keyword">enum</span> Enum</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>  {</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    Generic,</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    Main,</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    Texture,</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    Default = Generic</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  };</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>};</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="foldopen" id="foldopen00028" data-start="{" data-end="};">
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="../../d8/d87/structxii_visual_shader_node_type.html">   28</a></span><span class="keyword">struct </span><a class="code hl_struct" href="../../d8/d87/structxii_visual_shader_node_type.html">xiiVisualShaderNodeType</a></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>{</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  <span class="keyword">using </span>StorageType = xiiUInt8;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>  <span class="keyword">enum</span> Enum</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>  {</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    Generic,</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    Main,</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    Texture,</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    Default = Generic</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  };</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>};</div>
 </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
-<div class="foldopen" id="foldopen00041" data-start="{" data-end="};">
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="../../d8/d59/structxii_visual_shader_node_descriptor.html">   41</a></span><span class="keyword">struct </span><a class="code hl_struct" href="../../d8/d59/structxii_visual_shader_node_descriptor.html">xiiVisualShaderNodeDescriptor</a></div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>{</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  <a class="code hl_struct" href="../../de/dfd/structxii_enum.html">xiiEnum&lt;xiiVisualShaderNodeType&gt;</a> m_NodeType;</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="../../d8/d59/structxii_visual_shader_node_descriptor.html#aca7ca6249b536b5bfbbf86d655cdae1b">   44</a></span>  xiiString                        <a class="code hl_variable" href="../../d8/d59/structxii_visual_shader_node_descriptor.html#aca7ca6249b536b5bfbbf86d655cdae1b">m_sCfgFile</a>; </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>  xiiString                        m_sName;</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>  <a class="code hl_class" href="../../d6/d0c/classxii_hashed_string.html">xiiHashedString</a>                  m_sCategory;</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>  xiiString                        m_sCheckPermutations;</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>  <a class="code hl_class" href="../../df/d71/classxii_color_gamma_u_b.html">xiiColorGammaUB</a>                  m_Color = <a class="code hl_function" href="../../db/d75/classxii_color_scheme.html#aef134e2973f81cd05b4019a62c450db6">xiiColorScheme::DarkUI</a>(xiiColorScheme::Gray);</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  xiiString                        m_sShaderCodePixelDefines;</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  xiiString                        m_sShaderCodePixelIncludes;</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  xiiString                        m_sShaderCodePixelSamplers;</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  xiiString                        m_sShaderCodePixelConstants;</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>  xiiString                        m_sShaderCodePixelBody;</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  xiiString                        m_sShaderCodePermutations;</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  xiiString                        m_sShaderCodeMaterialParams;</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  xiiString                        m_sShaderCodeMaterialCB;</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  xiiString                        m_sShaderCodeRenderState;</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  xiiString                        m_sShaderCodeVertexShader;</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  xiiString                        m_sShaderCodeGeometryShader;</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  <a class="code hl_class" href="../../dc/da9/classxii_hybrid_array.html">xiiHybridArray&lt;xiiVisualShaderPinDescriptor, 4&gt;</a>   m_InputPins;</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>  <a class="code hl_class" href="../../dc/da9/classxii_hybrid_array.html">xiiHybridArray&lt;xiiVisualShaderPinDescriptor, 4&gt;</a>   m_OutputPins;</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  <a class="code hl_class" href="../../dc/da9/classxii_hybrid_array.html">xiiHybridArray&lt;xiiReflectedPropertyDescriptor, 4&gt;</a> m_Properties;</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>  <a class="code hl_class" href="../../dc/da9/classxii_hybrid_array.html">xiiHybridArray&lt;xiiInt8, 4&gt;</a>                        m_UniquePropertyValueGroups; <span class="comment">// no property in the same group may share the same value, -1 for disabled</span></div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>};</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="foldopen" id="foldopen00042" data-start="{" data-end="};">
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="../../d8/d59/structxii_visual_shader_node_descriptor.html">   42</a></span><span class="keyword">struct </span><a class="code hl_struct" href="../../d8/d59/structxii_visual_shader_node_descriptor.html">xiiVisualShaderNodeDescriptor</a></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>{</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  <a class="code hl_struct" href="../../de/dfd/structxii_enum.html">xiiEnum&lt;xiiVisualShaderNodeType&gt;</a> m_NodeType;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="../../d8/d59/structxii_visual_shader_node_descriptor.html#aca7ca6249b536b5bfbbf86d655cdae1b">   45</a></span>  xiiString                        <a class="code hl_variable" href="../../d8/d59/structxii_visual_shader_node_descriptor.html#aca7ca6249b536b5bfbbf86d655cdae1b">m_sCfgFile</a>; </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>  xiiString                        m_sName;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>  <a class="code hl_class" href="../../d6/d0c/classxii_hashed_string.html">xiiHashedString</a>                  m_sCategory;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>  xiiString                        m_sCheckPermutations;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  <a class="code hl_class" href="../../df/d71/classxii_color_gamma_u_b.html">xiiColorGammaUB</a>                  m_Color = <a class="code hl_function" href="../../db/d75/classxii_color_scheme.html#aef134e2973f81cd05b4019a62c450db6">xiiColorScheme::DarkUI</a>(xiiColorScheme::Gray);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  xiiString                        m_sShaderCodePixelDefines;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  xiiString                        m_sShaderCodePixelIncludes;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  xiiString                        m_sShaderCodePixelSamplers;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>  xiiString                        m_sShaderCodePixelConstants;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  xiiString                        m_sShaderCodePixelBody;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  xiiString                        m_sShaderCodePermutations;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  xiiString                        m_sShaderCodeMaterialParams;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  xiiString                        m_sShaderCodeMaterialCB;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  xiiString                        m_sShaderCodeRenderState;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  xiiString                        m_sShaderCodeVertexShader;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  xiiString                        m_sShaderCodeGeometryShader;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>  <a class="code hl_class" href="../../dc/da9/classxii_hybrid_array.html">xiiHybridArray&lt;xiiVisualShaderPinDescriptor, 4&gt;</a>   m_InputPins;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  <a class="code hl_class" href="../../dc/da9/classxii_hybrid_array.html">xiiHybridArray&lt;xiiVisualShaderPinDescriptor, 4&gt;</a>   m_OutputPins;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>  <a class="code hl_class" href="../../dc/da9/classxii_hybrid_array.html">xiiHybridArray&lt;xiiReflectedPropertyDescriptor, 4&gt;</a> m_Properties;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  <a class="code hl_class" href="../../dc/da9/classxii_hybrid_array.html">xiiHybridArray&lt;xiiInt8, 4&gt;</a>                        m_UniquePropertyValueGroups; <span class="comment">// no property in the same group may share the same value, -1 for disabled</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>};</div>
 </div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
-<div class="foldopen" id="foldopen00068" data-start="{" data-end="};">
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="../../d1/d24/classxii_visual_shader_type_registry.html">   68</a></span><span class="keyword">class </span>XII_EDITORPLUGINASSETS_DLL xiiVisualShaderTypeRegistry</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>{</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>  XII_DECLARE_SINGLETON(xiiVisualShaderTypeRegistry);</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>  xiiVisualShaderTypeRegistry();</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>  <span class="keyword">const</span> <a class="code hl_struct" href="../../d8/d59/structxii_visual_shader_node_descriptor.html">xiiVisualShaderNodeDescriptor</a>* GetDescriptorForType(<span class="keyword">const</span> <a class="code hl_class" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>* pRtti) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>  <span class="keyword">const</span> <a class="code hl_class" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>* GetNodeBaseType()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_pBaseType; }</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>  <span class="keyword">const</span> <a class="code hl_class" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>* GetPinSamplerType()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_pSamplerPinType; }</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>  <span class="keywordtype">void</span> UpdateNodeData();</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>  <span class="keywordtype">void</span> UpdateNodeData(<a class="code hl_class" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sCfgFileRelative);</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>  XII_MAKE_SUBSYSTEM_STARTUP_FRIEND(EditorPluginAssets, VisualShader);</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>  <span class="keywordtype">void</span>           LoadNodeData();</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>  <span class="keyword">const</span> <a class="code hl_class" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>* GenerateTypeFromDesc(<span class="keyword">const</span> <a class="code hl_struct" href="../../d8/d59/structxii_visual_shader_node_descriptor.html">xiiVisualShaderNodeDescriptor</a>&amp; desc);</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>  <span class="keywordtype">void</span>           LoadConfigFile(<span class="keyword">const</span> <span class="keywordtype">char</span>* szFile);</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>  <span class="keywordtype">void</span> ExtractNodePins(<span class="keyword">const</span> <a class="code hl_class" href="../../d1/d33/classxii_open_ddl_reader_element.html">xiiOpenDdlReaderElement</a>* pNode, <span class="keyword">const</span> <span class="keywordtype">char</span>* szPinType, <a class="code hl_class" href="../../dc/da9/classxii_hybrid_array.html">xiiHybridArray&lt;xiiVisualShaderPinDescriptor, 4&gt;</a>&amp; pinArray, <span class="keywordtype">bool</span> bOutput);</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>  <span class="keywordtype">void</span> ExtractNodeProperties(<span class="keyword">const</span> <a class="code hl_class" href="../../d1/d33/classxii_open_ddl_reader_element.html">xiiOpenDdlReaderElement</a>* pNode, <a class="code hl_struct" href="../../d8/d59/structxii_visual_shader_node_descriptor.html">xiiVisualShaderNodeDescriptor</a>&amp; nd);</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>  <span class="keywordtype">void</span> ExtractNodeConfig(<span class="keyword">const</span> <a class="code hl_class" href="../../d1/d33/classxii_open_ddl_reader_element.html">xiiOpenDdlReaderElement</a>* pNode, <a class="code hl_struct" href="../../d8/d59/structxii_visual_shader_node_descriptor.html">xiiVisualShaderNodeDescriptor</a>&amp; nd);</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>  <a class="code hl_class" href="../../d6/df7/classxii_map.html">xiiMap&lt;const xiiRTTI*, xiiVisualShaderNodeDescriptor&gt;</a> m_NodeDescriptors;</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>  <span class="keyword">const</span> <a class="code hl_class" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>* m_pBaseType;</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>  <span class="keyword">const</span> <a class="code hl_class" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>* m_pSamplerPinType;</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>};</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="foldopen" id="foldopen00069" data-start="{" data-end="};">
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="../../d1/d24/classxii_visual_shader_type_registry.html">   69</a></span><span class="keyword">class </span>XII_EDITORPLUGINASSETS_DLL xiiVisualShaderTypeRegistry</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>{</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>  XII_DECLARE_SINGLETON(xiiVisualShaderTypeRegistry);</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>  xiiVisualShaderTypeRegistry();</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>  <span class="keyword">const</span> <a class="code hl_struct" href="../../d8/d59/structxii_visual_shader_node_descriptor.html">xiiVisualShaderNodeDescriptor</a>* GetDescriptorForType(<span class="keyword">const</span> <a class="code hl_class" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>* pRtti) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>  <span class="keyword">const</span> <a class="code hl_class" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>* GetNodeBaseType()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_pBaseType; }</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>  <span class="keyword">const</span> <a class="code hl_class" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>* GetPinSamplerType()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_pSamplerPinType; }</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>  <span class="keywordtype">void</span> UpdateNodeData();</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>  <span class="keywordtype">void</span> UpdateNodeData(<a class="code hl_class" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sCfgFileRelative);</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>  XII_MAKE_SUBSYSTEM_STARTUP_FRIEND(EditorPluginAssets, VisualShader);</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>  <span class="keywordtype">void</span>           LoadNodeData();</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>  <span class="keyword">const</span> <a class="code hl_class" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>* GenerateTypeFromDesc(<span class="keyword">const</span> <a class="code hl_struct" href="../../d8/d59/structxii_visual_shader_node_descriptor.html">xiiVisualShaderNodeDescriptor</a>&amp; desc);</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>  <span class="keywordtype">void</span>           LoadConfigFile(<span class="keyword">const</span> <span class="keywordtype">char</span>* szFile);</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>  <span class="keywordtype">void</span> ExtractNodePins(<span class="keyword">const</span> <a class="code hl_class" href="../../d1/d33/classxii_open_ddl_reader_element.html">xiiOpenDdlReaderElement</a>* pNode, <span class="keyword">const</span> <span class="keywordtype">char</span>* szPinType, <a class="code hl_class" href="../../dc/da9/classxii_hybrid_array.html">xiiHybridArray&lt;xiiVisualShaderPinDescriptor, 4&gt;</a>&amp; pinArray, <span class="keywordtype">bool</span> bOutput);</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>  <span class="keywordtype">void</span> ExtractNodeProperties(<span class="keyword">const</span> <a class="code hl_class" href="../../d1/d33/classxii_open_ddl_reader_element.html">xiiOpenDdlReaderElement</a>* pNode, <a class="code hl_struct" href="../../d8/d59/structxii_visual_shader_node_descriptor.html">xiiVisualShaderNodeDescriptor</a>&amp; nd);</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>  <span class="keywordtype">void</span> ExtractNodeConfig(<span class="keyword">const</span> <a class="code hl_class" href="../../d1/d33/classxii_open_ddl_reader_element.html">xiiOpenDdlReaderElement</a>* pNode, <a class="code hl_struct" href="../../d8/d59/structxii_visual_shader_node_descriptor.html">xiiVisualShaderNodeDescriptor</a>&amp; nd);</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>  <a class="code hl_class" href="../../d6/df7/classxii_map.html">xiiMap&lt;const xiiRTTI*, xiiVisualShaderNodeDescriptor&gt;</a> m_NodeDescriptors;</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>  <span class="keyword">const</span> <a class="code hl_class" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>* m_pBaseType;</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>  <span class="keyword">const</span> <a class="code hl_class" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>* m_pSamplerPinType;</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>};</div>
 </div>
 <div class="ttc" id="aclassxii_color_gamma_u_b_html"><div class="ttname"><a href="../../df/d71/classxii_color_gamma_u_b.html">xiiColorGammaUB</a></div><div class="ttdef"><b>Definition</b> Color8UNorm.h:86</div></div>
 <div class="ttc" id="aclassxii_color_scheme_html_aef134e2973f81cd05b4019a62c450db6"><div class="ttname"><a href="../../db/d75/classxii_color_scheme.html#aef134e2973f81cd05b4019a62c450db6">xiiColorScheme::DarkUI</a></div><div class="ttdeci">static XII_ALWAYS_INLINE xiiColor DarkUI(Enum schemeColor)</div><div class="ttdoc">Get a scheme color with predefined brightness and saturation to look good with the XII tools dark UI ...</div><div class="ttdef"><b>Definition</b> ColorScheme.h:52</div></div>
@@ -213,9 +214,9 @@ $(function(){initNavTree('dd/d42/_visual_shader_type_registry_8h_source.html','.
 <div class="ttc" id="aclassxii_string_view_html"><div class="ttname"><a href="../../d4/d85/classxii_string_view.html">xiiStringView</a></div><div class="ttdef"><b>Definition</b> StringView.h:36</div></div>
 <div class="ttc" id="astructxii_enum_html"><div class="ttname"><a href="../../de/dfd/structxii_enum.html">xiiEnum</a></div><div class="ttdef"><b>Definition</b> Enum.h:39</div></div>
 <div class="ttc" id="astructxii_reflected_property_descriptor_html"><div class="ttname"><a href="../../db/d02/structxii_reflected_property_descriptor.html">xiiReflectedPropertyDescriptor</a></div><div class="ttdoc">Stores the description of a reflected property in a serializable form, used by xiiReflectedTypeDescri...</div><div class="ttdef"><b>Definition</b> ReflectedType.h:45</div></div>
-<div class="ttc" id="astructxii_visual_shader_node_descriptor_html"><div class="ttname"><a href="../../d8/d59/structxii_visual_shader_node_descriptor.html">xiiVisualShaderNodeDescriptor</a></div><div class="ttdef"><b>Definition</b> VisualShaderTypeRegistry.h:42</div></div>
-<div class="ttc" id="astructxii_visual_shader_node_descriptor_html_aca7ca6249b536b5bfbbf86d655cdae1b"><div class="ttname"><a href="../../d8/d59/structxii_visual_shader_node_descriptor.html#aca7ca6249b536b5bfbbf86d655cdae1b">xiiVisualShaderNodeDescriptor::m_sCfgFile</a></div><div class="ttdeci">xiiString m_sCfgFile</div><div class="ttdoc">from which config file this node type was loaded</div><div class="ttdef"><b>Definition</b> VisualShaderTypeRegistry.h:44</div></div>
-<div class="ttc" id="astructxii_visual_shader_node_type_html"><div class="ttname"><a href="../../d8/d87/structxii_visual_shader_node_type.html">xiiVisualShaderNodeType</a></div><div class="ttdef"><b>Definition</b> VisualShaderTypeRegistry.h:28</div></div>
+<div class="ttc" id="astructxii_visual_shader_node_descriptor_html"><div class="ttname"><a href="../../d8/d59/structxii_visual_shader_node_descriptor.html">xiiVisualShaderNodeDescriptor</a></div><div class="ttdef"><b>Definition</b> VisualShaderTypeRegistry.h:43</div></div>
+<div class="ttc" id="astructxii_visual_shader_node_descriptor_html_aca7ca6249b536b5bfbbf86d655cdae1b"><div class="ttname"><a href="../../d8/d59/structxii_visual_shader_node_descriptor.html#aca7ca6249b536b5bfbbf86d655cdae1b">xiiVisualShaderNodeDescriptor::m_sCfgFile</a></div><div class="ttdeci">xiiString m_sCfgFile</div><div class="ttdoc">from which config file this node type was loaded</div><div class="ttdef"><b>Definition</b> VisualShaderTypeRegistry.h:45</div></div>
+<div class="ttc" id="astructxii_visual_shader_node_type_html"><div class="ttname"><a href="../../d8/d87/structxii_visual_shader_node_type.html">xiiVisualShaderNodeType</a></div><div class="ttdef"><b>Definition</b> VisualShaderTypeRegistry.h:29</div></div>
 <div class="ttc" id="astructxii_visual_shader_pin_descriptor_html"><div class="ttname"><a href="../../d8/d0e/structxii_visual_shader_pin_descriptor.html">xiiVisualShaderPinDescriptor</a></div><div class="ttdef"><b>Definition</b> VisualShaderTypeRegistry.h:15</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

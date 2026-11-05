@@ -1,5 +1,6 @@
 var classxii_material_asset_document =
 [
+    [ "CompileShader", "d6/d64/classxii_material_asset_document.html#a85bdb9fa126551f6c11a71d439a622ac", null ],
     [ "CopySelectedObjects", "d6/d64/classxii_material_asset_document.html#ac148dbc0bf51905c09c31c5b4b4f5f0d", null ],
     [ "GetSupportedMimeTypesForPasting", "d6/d64/classxii_material_asset_document.html#a52ca29c4dae4d43c3b2041f268a211cc", null ],
     [ "InternalCreateThumbnail", "d6/d64/classxii_material_asset_document.html#a567484ee145ed9cee9d0408b5ced9822", null ],
@@ -9,6 +10,6 @@ var classxii_material_asset_document =
     [ "Paste", "d6/d64/classxii_material_asset_document.html#a17c8958738fc5a5a01246281aa001cda", null ],
     [ "RecreateVisualShaderFile", "d6/d64/classxii_material_asset_document.html#abac7e2234898933070ffebedfe0caf03", null ],
     [ "RemoveDisconnectedNodes", "d6/d64/classxii_material_asset_document.html#adccf3c2509f07a65321c861f1321fcf8", null ],
-    [ "TagVisualShaderFileInvalid", "d6/d64/classxii_material_asset_document.html#ac2841d6d5dd19daeae97bb5c1825f715", null ],
+    [ "TagVisualShaderFileInvalid", "d6/d64/classxii_material_asset_document.html#a0e65e40371dc9a67260f51abcbebc272", null ],
     [ "UpdateAssetDocumentInfo", "d6/d64/classxii_material_asset_document.html#a11757b8c3f1ab31b8ab254e83989e333", null ]
 ];

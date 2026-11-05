@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['updatefunction_0',['UpdateFunction',['../d9/dfe/classxii_world_module.html#a37328ef7216b181772ed63453973897c',1,'xiiWorldModule']]]
+  ['storagetype_0',['StorageType',['../d0/dcc/structxii_generic_id.html#a3c1375382b1185e9724cc6ad887e883a',1,'xiiGenericId']]],
+  ['superarray_1',['SuperArray',['../d8/d61/classxii_default_state_provider.html#a1d4fcc3ed23a3acda29b60c94cb07a31',1,'xiiDefaultStateProvider']]]
 ];

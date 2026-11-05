@@ -126,6 +126,7 @@ static <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#16
 <tr class="memitem:a9abfaf036f4391db83674478735c9f32" id="r_a9abfaf036f4391db83674478735c9f32"><td class="memItemLeft" align="right" valign="top"><a id="a9abfaf036f4391db83674478735c9f32" name="a9abfaf036f4391db83674478735c9f32"></a>
 static bool&#160;</td><td class="memItemRight" valign="bottom"><b>ResolveAssetRedirection</b> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sPathOrAssetGuid, <a class="el" href="../../d4/dbb/classxii_string_builder.html">xiiStringBuilder</a> &amp;out_sRedirection)</td></tr>
 <tr class="memdesc:a9abfaf036f4391db83674478735c9f32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true, if any data directory knows how to redirect the given path. Otherwise the original string is returned in out_sRedirection. <br /></td></tr>
+<tr class="memitem:aa05d26f3c6795e730c7132b9b17d810d" id="r_aa05d26f3c6795e730c7132b9b17d810d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d0/d54/structxii_status.html">xiiStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa05d26f3c6795e730c7132b9b17d810d">ResolveAssetIdentifier</a> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sPathOrAssetGuid, <a class="el" href="../../d4/dbb/classxii_string_builder.html">xiiStringBuilder</a> &amp;out_sIdentifier)</td></tr>
 <tr class="memitem:a959bc69e9131fe9383ff9b0367a0d3b0" id="r_a959bc69e9131fe9383ff9b0367a0d3b0"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a959bc69e9131fe9383ff9b0367a0d3b0">MigrateFileLocation</a> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sOldLocation, <a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sNewLocation)</td></tr>
 <tr id="pub-static-methods-0" class="groupHeader"><td colspan="2"><div class="groupHeader">Special Directories</div></td></tr>
 <tr class="memitem:a1d36b6c014638a19bc2f48011f31ae66" id="r_a1d36b6c014638a19bc2f48011f31ae66"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1d36b6c014638a19bc2f48011f31ae66">DetectSdkRootDirectory</a> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sExpectedSubFolder=&quot;Data/Base&quot;)</td></tr>
@@ -525,6 +526,36 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>ReloadAllExter
 
 </div>
 </div>
+<a id="aa05d26f3c6795e730c7132b9b17d810d" name="aa05d26f3c6795e730c7132b9b17d810d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa05d26f3c6795e730c7132b9b17d810d">&#9670;&#160;</a></span>ResolveAssetIdentifier()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d0/d54/structxii_status.html">xiiStatus</a> xiiFileSystem::ResolveAssetIdentifier </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sPathOrAssetGuid</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d4/dbb/classxii_string_builder.html">xiiStringBuilder</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>out_sIdentifier</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Resolves authored asset paths through the mounted asset tables to their persistent GUID. Accepts GUIDs, absolute paths, :Root/paths, data-directory-relative and parent-relative paths. GUID spelling is canonicalized. Unregistered resource IDs are preserved verbatim; ordinary file reads continue to access source files. Ambiguity fails and clears the output. </p>
+
+</div>
+</div>
 <a id="ac8d8c9fc889407738779040260514781" name="ac8d8c9fc889407738779040260514781"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac8d8c9fc889407738779040260514781">&#9670;&#160;</a></span>ResolvePath()</h2>
 
@@ -574,8 +605,8 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>ReloadAllExter
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The function will return XII_FAILURE if it was not able to determine any location where the file could be read from or written to. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000023">Todo</a></b></dt><dd>We might also need the none-redirected path as an output </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000024">Todo</a></b></dt><dd>We might also need the none-redirected path as an output </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000021">Todo</a></b></dt><dd>We might also need the none-redirected path as an output </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../dd/da0/todo.html#_todo000022">Todo</a></b></dt><dd>We might also need the none-redirected path as an output </dd></dl>
 
 </div>
 </div>

@@ -1,6 +1,6 @@
 var classxii_render_graph_timestamp_profiler =
 [
-    [ "xiiRenderGraphTimestampProfiler", "d9/dd1/classxii_render_graph_timestamp_profiler.html#a025b048b8e163086736a025b33255c9a", null ],
+    [ "TimingSample", "df/dda/structxii_render_graph_timestamp_profiler_1_1_timing_sample.html", "df/dda/structxii_render_graph_timestamp_profiler_1_1_timing_sample" ],
     [ "GetFrameDurationMs", "d9/dd1/classxii_render_graph_timestamp_profiler.html#a5458edec0e0341bbfacfb4f8b5c9105e", null ],
     [ "GetGraphDurationMs", "d9/dd1/classxii_render_graph_timestamp_profiler.html#aeab667300d4a4526192f7d8e5c00f17c", null ],
     [ "GetPassDurationMs", "d9/dd1/classxii_render_graph_timestamp_profiler.html#abe9a0d6dc1f4b98f09dd0edb7d7eccf6", null ],

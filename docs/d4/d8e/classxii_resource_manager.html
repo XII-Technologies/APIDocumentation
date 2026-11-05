@@ -174,8 +174,12 @@ static <a class="el" href="../../d9/de1/classxii_resource.html">xiiResource</a> 
 <tr class="memitem:ae5828329503efb6f0bc0601f2cdeef5f" id="r_ae5828329503efb6f0bc0601f2cdeef5f"><td class="memItemLeft" align="right" valign="top"><a id="ae5828329503efb6f0bc0601f2cdeef5f" name="ae5828329503efb6f0bc0601f2cdeef5f"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>EndAcquireResourcePointer</b> (<a class="el" href="../../d9/de1/classxii_resource.html">xiiResource</a> *pResource)</td></tr>
 <tr class="memdesc:ae5828329503efb6f0bc0601f2cdeef5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Same as EndAcquireResource but without the template parameter. See also BeginAcquireResourcePointer. <br /></td></tr>
-<tr class="memitem:a7f28c2067f9ce5083a5df0938511bb7d" id="r_a7f28c2067f9ce5083a5df0938511bb7d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7f28c2067f9ce5083a5df0938511bb7d">ForceNoFallbackAcquisition</a> (xiiUInt32 uiNumFrames=0xFFFFFFFFU)</td></tr>
-<tr class="memitem:a1678e051d42d6cd9dca4de62b7cd70b0" id="r_a1678e051d42d6cd9dca4de62b7cd70b0"><td class="memItemLeft" align="right" valign="top">static xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1678e051d42d6cd9dca4de62b7cd70b0">GetForceNoFallbackAcquisition</a> ()</td></tr>
+<tr class="memitem:a7f28c2067f9ce5083a5df0938511bb7d" id="r_a7f28c2067f9ce5083a5df0938511bb7d"><td class="memItemLeft" align="right" valign="top"><a id="a7f28c2067f9ce5083a5df0938511bb7d" name="a7f28c2067f9ce5083a5df0938511bb7d"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>ForceNoFallbackAcquisition</b> (xiiUInt32 uiNumFrames=0xFFFFFFFFU)</td></tr>
+<tr class="memdesc:a7f28c2067f9ce5083a5df0938511bb7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forces both AllowLoadingFallback modes to block on BeginAcquireResource, preserving NeverFail error handling. <br /></td></tr>
+<tr class="memitem:a1678e051d42d6cd9dca4de62b7cd70b0" id="r_a1678e051d42d6cd9dca4de62b7cd70b0"><td class="memItemLeft" align="right" valign="top"><a id="a1678e051d42d6cd9dca4de62b7cd70b0" name="a1678e051d42d6cd9dca4de62b7cd70b0"></a>
+static xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b>GetForceNoFallbackAcquisition</b> ()</td></tr>
+<tr class="memdesc:a1678e051d42d6cd9dca4de62b7cd70b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">If greater than zero, both AllowLoadingFallback modes block, preserving NeverFail error handling. <br /></td></tr>
 <tr class="memitem:aafb891b9a15fc3c8b2df87241c29439a" id="r_aafb891b9a15fc3c8b2df87241c29439a"><td class="memTemplParams" colspan="2">template&lt;typename ResourceType&gt; </td></tr>
 <tr class="memitem:aafb891b9a15fc3c8b2df87241c29439a template"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../da/d7f/classxii_locked_object.html">xiiLockedObject</a>&lt; <a class="el" href="../../dd/d52/classxii_mutex.html">xiiMutex</a>, <a class="el" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray</a>&lt; <a class="el" href="../../d9/de1/classxii_resource.html">xiiResource</a> * &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aafb891b9a15fc3c8b2df87241c29439a">GetAllResourcesOfType</a> ()</td></tr>
 <tr id="pub-static-methods-4" class="groupHeader"><td colspan="2"><div class="groupHeader">Miscellaneous</div></td></tr>
@@ -540,32 +544,6 @@ template&lt;typename ResourceType&gt; </div>
 
 </div>
 </div>
-<a id="a7f28c2067f9ce5083a5df0938511bb7d" name="a7f28c2067f9ce5083a5df0938511bb7d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7f28c2067f9ce5083a5df0938511bb7d">&#9670;&#160;</a></span>ForceNoFallbackAcquisition()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void xiiResourceManager::ForceNoFallbackAcquisition </td>
-          <td>(</td>
-          <td class="paramtype">xiiUInt32</td>          <td class="paramname"><span class="paramname"><em>uiNumFrames</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0xFFFFFFFFU</span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Forces the resource manager to treat xiiResourceAcquireMode::AllowLoadingFallback as xiiResourceAcquireMode::BlockTillLoaded on BeginAcquireResource. </p>
-
-</div>
-</div>
 <a id="a3a5e923cdc3ab32bb6b9ca0d28eeb446" name="a3a5e923cdc3ab32bb6b9ca0d28eeb446"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3a5e923cdc3ab32bb6b9ca0d28eeb446">&#9670;&#160;</a></span>GenerateUniqueResourceID()</h2>
 
@@ -647,32 +625,6 @@ template&lt;typename ResourceType&gt; </div>
 </div><div class="memdoc">
 <p>Returns a handle to the resource with the given ID. If the resource does not exist, the handle is invalid.</p>
 <p>Use this if a resource needs to be created procedurally (with <a class="el" href="#a79de0ab8b19f34d7b3e3c42d6b15db4f">CreateResource()</a>), but might already have been created. If the returned handle is invalid, then just go through the resource creation step. </p>
-
-</div>
-</div>
-<a id="a1678e051d42d6cd9dca4de62b7cd70b0" name="a1678e051d42d6cd9dca4de62b7cd70b0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1678e051d42d6cd9dca4de62b7cd70b0">&#9670;&#160;</a></span>GetForceNoFallbackAcquisition()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">xiiUInt32 xiiResourceManager::GetForceNoFallbackAcquisition </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>If the returned number is greater 0 the resource manager treats xiiResourceAcquireMode::AllowLoadingFallback as xiiResourceAcquireMode::BlockTillLoaded on BeginAcquireResource. </p>
 
 </div>
 </div>

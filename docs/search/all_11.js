@@ -19,7 +19,8 @@ var searchData=
   ['querystate_16',['QueryState',['../d8/db3/classxii_g_a_l_query.html#a13b9c295483ae4a42123735b261b1cd5',1,'xiiGALQuery']]],
   ['querytypeimage_17',['QueryTypeImage',['../d1/d47/classxii_qt_image_cache.html#a9cd058e760b5b4ee73145af765c7df5b',1,'xiiQtImageCache']]],
   ['queuecheckfilesystem_18',['QueueCheckFileSystem',['../d8/dbd/classxii_asset_curator.html#a9460df52371b73badecb0728e8b1c528',1,'xiiAssetCurator']]],
-  ['queuetransformassets_19',['QueueTransformAssets',['../d7/d75/classxii_asset_processor.html#ab6af8b4c29b8bb95afc68885ea4f4ccd',1,'xiiAssetProcessor']]],
-  ['quicksort_20',['QuickSort',['../da/d89/classxii_sorting.html#a3e6e0255ac3dc4d93eff8b3c18aedf4c',1,'xiiSorting::QuickSort(Container &amp;ref_container, const Comparer &amp;comparer=Comparer())'],['../da/d89/classxii_sorting.html#a457862f69854abf9f9bf931702281109',1,'xiiSorting::QuickSort(xiiArrayPtr&lt; T &gt; &amp;ref_pArray, const Comparer &amp;comparer=Comparer())']]],
-  ['quit_21',['Quit',['../dd/d2b/classxii_application.html#a359a9ca7be863c9823cf5053c0f344d1a0d82790b0612935992bd564a17ce37d6',1,'xiiApplication']]]
+  ['queuetransformassetreferences_19',['QueueTransformAssetReferences',['../d7/d75/classxii_asset_processor.html#a1fc4b6d5d0cbec18e312a7a1be628ccd',1,'xiiAssetProcessor']]],
+  ['queuetransformassets_20',['QueueTransformAssets',['../d7/d75/classxii_asset_processor.html#ab6af8b4c29b8bb95afc68885ea4f4ccd',1,'xiiAssetProcessor']]],
+  ['quicksort_21',['QuickSort',['../da/d89/classxii_sorting.html#a3e6e0255ac3dc4d93eff8b3c18aedf4c',1,'xiiSorting::QuickSort(Container &amp;ref_container, const Comparer &amp;comparer=Comparer())'],['../da/d89/classxii_sorting.html#a457862f69854abf9f9bf931702281109',1,'xiiSorting::QuickSort(xiiArrayPtr&lt; T &gt; &amp;ref_pArray, const Comparer &amp;comparer=Comparer())']]],
+  ['quit_22',['Quit',['../dd/d2b/classxii_application.html#a359a9ca7be863c9823cf5053c0f344d1a0d82790b0612935992bd564a17ce37d6',1,'xiiApplication']]]
 ];

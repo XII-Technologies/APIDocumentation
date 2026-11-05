@@ -160,6 +160,7 @@ static <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#16
 <tr class="memdesc:a1291a933c302af8e0a7b22bf1c3dacb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes the given file. Returns XII_SUCCESS, if the file was deleted or did not exist in the first place. Returns XII_FAILURE. <br /></td></tr>
 <tr class="memitem:a971e01eeeedaba4564f83b48352ab217" id="r_a971e01eeeedaba4564f83b48352ab217"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a971e01eeeedaba4564f83b48352ab217">CreateDirectoryStructure</a> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sDirectory)</td></tr>
 <tr class="memitem:a6b314a136acf1adcadd1427ab1d3881f" id="r_a6b314a136acf1adcadd1427ab1d3881f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6b314a136acf1adcadd1427ab1d3881f">MoveFileOrDirectory</a> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sFrom, <a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sTo)</td></tr>
+<tr class="memitem:a72fab9ea30272cdb10bd38361e22db06" id="r_a72fab9ea30272cdb10bd38361e22db06"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a72fab9ea30272cdb10bd38361e22db06">AtomicReplaceFile</a> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sStagedFile, <a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sDestination)</td></tr>
 <tr class="memitem:a51ad16a700bba5ffa5fbc8a663056128" id="r_a51ad16a700bba5ffa5fbc8a663056128"><td class="memItemLeft" align="right" valign="top"><a id="a51ad16a700bba5ffa5fbc8a663056128" name="a51ad16a700bba5ffa5fbc8a663056128"></a>
 static <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CopyFile</b> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sSource, <a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sDestination)</td></tr>
 <tr class="memdesc:a51ad16a700bba5ffa5fbc8a663056128"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies the source file into the destination file. <br /></td></tr>
@@ -196,6 +197,36 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveEventHan
 <div class="textblock"><p>This is an abstraction for the most important file operations.</p>
 <p>Instances of <a class="el" href="../../da/d95/classxii_o_s_file.html">xiiOSFile</a> can be used for reading and writing files. All paths must be absolute paths, relative paths and current working directories are not supported, since that cannot be guaranteed to work equally on all platforms under all circumstances. A few static functions allow to query the most important data about files, to delete files and create directories. </p>
 </div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a id="a72fab9ea30272cdb10bd38361e22db06" name="a72fab9ea30272cdb10bd38361e22db06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72fab9ea30272cdb10bd38361e22db06">&#9670;&#160;</a></span>AtomicReplaceFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a> xiiOSFile::AtomicReplaceFile </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sStagedFile</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sDestination</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Atomically installs a staged file, replacing an existing destination. Both paths must be on the same filesystem. On failure the destination remains intact. Does not provide power-loss durability. </p>
+
+</div>
+</div>
 <a id="a16f6144f152431979aa8a29a41ec3f7a" name="a16f6144f152431979aa8a29a41ec3f7a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a16f6144f152431979aa8a29a41ec3f7a">&#9670;&#160;</a></span>CopyFolder()</h2>
 

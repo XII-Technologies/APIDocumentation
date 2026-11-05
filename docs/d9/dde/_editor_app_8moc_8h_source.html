@@ -282,11 +282,11 @@ $(function(){initNavTree('d9/dde/_editor_app_8moc_8h_source.html','../../',''); 
 <div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span></div>
 <div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>  xiiStatus MakeRemoteProjectLocal(xiiStringBuilder&amp; inout_sFilePath);</div>
 <div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span> </div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>  <span class="keywordtype">bool</span> ExistsPluginSelectionStateDDL(<span class="keyword">const</span> <span class="keywordtype">char</span>* szProjectDir = <span class="stringliteral">&quot;:project&quot;</span>);</div>
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>  <span class="keywordtype">void</span> WritePluginSelectionStateDDL(<span class="keyword">const</span> <span class="keywordtype">char</span>* szProjectDir = <span class="stringliteral">&quot;:project&quot;</span>);</div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>  <span class="keywordtype">void</span> CreatePluginSelectionDDL(<span class="keyword">const</span> <span class="keywordtype">char</span>* szProjectFile, <span class="keyword">const</span> <span class="keywordtype">char</span>* szTemplate);</div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>  <span class="keywordtype">void</span> LoadPluginBundleDlls(<span class="keyword">const</span> <span class="keywordtype">char</span>* szProjectFile);</div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>  <span class="keywordtype">void</span> DetectAvailablePluginBundles(xiiStringView sSearchDirectory);</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>  <span class="keywordtype">bool</span>      ExistsPluginSelectionStateDDL(<span class="keyword">const</span> <span class="keywordtype">char</span>* szProjectDir = <span class="stringliteral">&quot;:project&quot;</span>);</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>  xiiStatus WritePluginSelectionStateDDL(<span class="keyword">const</span> <span class="keywordtype">char</span>* szProjectDir = <span class="stringliteral">&quot;:project&quot;</span>);</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>  xiiStatus CreatePluginSelectionDDL(<span class="keyword">const</span> <span class="keywordtype">char</span>* szProjectFile, <span class="keyword">const</span> <span class="keywordtype">char</span>* szTemplate);</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>  xiiStatus LoadPluginBundleDlls(<span class="keyword">const</span> <span class="keywordtype">char</span>* szProjectFile);</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>  <span class="keywordtype">void</span>      DetectAvailablePluginBundles(xiiStringView sSearchDirectory);</div>
 <div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span></div>
 <div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>  <span class="keywordtype">void</span> LaunchEditor(<span class="keyword">const</span> <span class="keywordtype">char</span>* szProject, <span class="keywordtype">bool</span> bCreate);</div>
 <div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span></div>
@@ -351,7 +351,7 @@ $(function(){initNavTree('d9/dde/_editor_app_8moc_8h_source.html','../../',''); 
 <div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>  <span class="keywordtype">void</span> SlotVersionCheckCompleted(<span class="keywordtype">bool</span> bNewVersionReleased, <span class="keywordtype">bool</span> bForced);</div>
 <div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span> </div>
 <div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>  <span class="keywordtype">void</span> UpdateGlobalStatusBarMessage();</div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>  <span class="keywordtype">void</span> UpdateRequiredActions();</div>
 <div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span> </div>
 <div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>  <span class="keywordtype">void</span> DocumentManagerRequestHandler(<a class="code hl_struct" href="../../de/d51/structxii_document_manager_1_1_request.html">xiiDocumentManager::Request</a>&amp; r);</div>
 <div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>  <span class="keywordtype">void</span> DocumentManagerEventHandler(<span class="keyword">const</span> <a class="code hl_struct" href="../../da/d7b/structxii_document_manager_1_1_event.html">xiiDocumentManager::Event</a>&amp; r);</div>
@@ -371,84 +371,86 @@ $(function(){initNavTree('d9/dde/_editor_app_8moc_8h_source.html','../../',''); 
 <div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span> </div>
 <div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span>  <span class="keywordtype">void</span> ReadTagRegistry();</div>
 <div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span> </div>
-<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>  <span class="keywordtype">void</span> SetupDataDirectories();</div>
-<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>  <span class="keywordtype">void</span> CreatePanels();</div>
-<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span> </div>
-<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span>  <span class="keywordtype">void</span> SetupAndShowSplashScreen();</div>
-<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>  <span class="keywordtype">void</span> CloseSplashScreen();</div>
-<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span> </div>
-<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span>  <span class="keywordtype">void</span> OpenDemoDocument();</div>
-<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span> </div>
-<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span>  <a class="code hl_struct" href="../../dd/dad/structxii_result.html">xiiResult</a> AddBundlesInOrder(<a class="code hl_class" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray&lt;xiiApplicationPluginConfig::PluginConfig&gt;</a>&amp; order, <span class="keyword">const</span> <a class="code hl_struct" href="../../d4/d35/structxii_plugin_bundle_set.html">xiiPluginBundleSet</a>&amp; bundles, <span class="keyword">const</span> xiiString&amp; start, <span class="keywordtype">bool</span> bEditor, <span class="keywordtype">bool</span> bEditorEngine, <span class="keywordtype">bool</span> bRuntime) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span> </div>
-<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span>  <span class="keywordtype">bool</span> m_bSavePreferencesAfterOpenProject;</div>
-<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>  <span class="keywordtype">bool</span> m_bLoadingProjectInProgress = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>  <span class="keywordtype">bool</span> m_bAnyProjectOpened         = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>  <span class="keywordtype">bool</span> m_bWroteCrashIndicatorFile  = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>  <span class="keywordtype">bool</span> m_bIsRunning                = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>  <span class="keywordtype">bool</span> m_bStartupInProgress        = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>  <span class="keywordtype">bool</span> m_bStartupQuitRequested     = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span> </div>
-<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>  <a class="code hl_struct" href="../../d7/d55/structxii_bitflags.html">xiiBitflags&lt;StartupFlags&gt;</a>  m_StartupFlags;</div>
-<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span>  <a class="code hl_class" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray&lt;xiiString&gt;</a> m_DocumentsToOpen;</div>
-<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span> </div>
-<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>  <a class="code hl_class" href="../../d6/d31/classxii_set.html">xiiSet&lt;xiiString&gt;</a> m_RestartRequiredReasons;</div>
-<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>  <a class="code hl_class" href="../../d6/d31/classxii_set.html">xiiSet&lt;xiiString&gt;</a> m_ReloadProjectRequiredReasons;</div>
-<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span> </div>
-<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>  <a class="code hl_struct" href="../../d4/d35/structxii_plugin_bundle_set.html">xiiPluginBundleSet</a> m_PluginBundles;</div>
+<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>  <a class="code hl_struct" href="../../d0/d54/structxii_status.html">xiiStatus</a> SetupDataDirectories();</div>
+<div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>  <a class="code hl_struct" href="../../d0/d54/structxii_status.html">xiiStatus</a> InitializeProject();</div>
+<div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span>  <span class="keywordtype">void</span>      CreatePanels();</div>
+<div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span> </div>
+<div class="line"><a id="l00311" name="l00311"></a><span class="lineno">  311</span>  <span class="keywordtype">void</span> SetupAndShowSplashScreen();</div>
+<div class="line"><a id="l00312" name="l00312"></a><span class="lineno">  312</span>  <span class="keywordtype">void</span> CloseSplashScreen();</div>
+<div class="line"><a id="l00313" name="l00313"></a><span class="lineno">  313</span> </div>
+<div class="line"><a id="l00314" name="l00314"></a><span class="lineno">  314</span>  <span class="keywordtype">void</span> OpenDemoDocument();</div>
+<div class="line"><a id="l00315" name="l00315"></a><span class="lineno">  315</span> </div>
+<div class="line"><a id="l00316" name="l00316"></a><span class="lineno">  316</span>  <a class="code hl_struct" href="../../dd/dad/structxii_result.html">xiiResult</a> AddBundlesInOrder(<a class="code hl_class" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray&lt;xiiApplicationPluginConfig::PluginConfig&gt;</a>&amp; order, <span class="keyword">const</span> <a class="code hl_struct" href="../../d4/d35/structxii_plugin_bundle_set.html">xiiPluginBundleSet</a>&amp; bundles, <span class="keyword">const</span> xiiString&amp; start, <span class="keywordtype">bool</span> bEditor, <span class="keywordtype">bool</span> bEditorEngine, <span class="keywordtype">bool</span> bRuntime, <a class="code hl_class" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray&lt;xiiString&gt;</a>* pDependencyStack = <span class="keyword">nullptr</span>) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00317" name="l00317"></a><span class="lineno">  317</span> </div>
+<div class="line"><a id="l00318" name="l00318"></a><span class="lineno">  318</span>  <span class="keywordtype">bool</span>      m_bSavePreferencesAfterOpenProject;</div>
+<div class="line"><a id="l00319" name="l00319"></a><span class="lineno">  319</span>  <span class="keywordtype">bool</span>      m_bLoadingProjectInProgress = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00320" name="l00320"></a><span class="lineno">  320</span>  <span class="keywordtype">bool</span>      m_bAnyProjectOpened         = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00321" name="l00321"></a><span class="lineno">  321</span>  xiiUInt64 m_uiPluginSelectionHash     = 0;</div>
+<div class="line"><a id="l00322" name="l00322"></a><span class="lineno">  322</span>  <span class="keywordtype">bool</span>      m_bWroteCrashIndicatorFile  = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00323" name="l00323"></a><span class="lineno">  323</span>  <span class="keywordtype">bool</span>      m_bIsRunning                = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00324" name="l00324"></a><span class="lineno">  324</span>  <span class="keywordtype">bool</span>      m_bStartupInProgress        = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00325" name="l00325"></a><span class="lineno">  325</span>  <span class="keywordtype">bool</span>      m_bStartupQuitRequested     = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00326" name="l00326"></a><span class="lineno">  326</span> </div>
+<div class="line"><a id="l00327" name="l00327"></a><span class="lineno">  327</span>  <a class="code hl_struct" href="../../d7/d55/structxii_bitflags.html">xiiBitflags&lt;StartupFlags&gt;</a>  m_StartupFlags;</div>
+<div class="line"><a id="l00328" name="l00328"></a><span class="lineno">  328</span>  <a class="code hl_class" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray&lt;xiiString&gt;</a> m_DocumentsToOpen;</div>
+<div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span> </div>
+<div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span>  <a class="code hl_class" href="../../d6/d31/classxii_set.html">xiiSet&lt;xiiString&gt;</a> m_RestartRequiredReasons;</div>
+<div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>  <a class="code hl_class" href="../../d6/d31/classxii_set.html">xiiSet&lt;xiiString&gt;</a> m_ReloadProjectRequiredReasons;</div>
 <div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span> </div>
-<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>  <span class="keywordtype">void</span> SaveRecentFiles();</div>
-<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>  <span class="keywordtype">void</span> LoadRecentFiles();</div>
-<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>  <span class="keywordtype">void</span> UpdateRecentProjects();</div>
-<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span> </div>
-<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>  <a class="code hl_class" href="../../dc/d4a/classxii_recent_files_list.html">xiiRecentFilesList</a> m_RecentProjects;</div>
-<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span>  <a class="code hl_class" href="../../dc/d4a/classxii_recent_files_list.html">xiiRecentFilesList</a> m_RecentDocuments;</div>
-<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span> </div>
-<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>  xiiInt32                          m_iArgc          = 0;</div>
-<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span>  QApplication*                     m_pQtApplication = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>  <a class="code hl_class" href="../../df/d2a/classxii_long_op_controller_manager.html">xiiLongOpControllerManager</a>        m_LongOpControllerManager;</div>
-<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>  <a class="code hl_class" href="../../dc/d8e/classxii_editor_engine_process_connection.html">xiiEditorEngineProcessConnection</a>* m_pEngineViewProcess;</div>
-<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>  QTimer*                           m_pTimer = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span> </div>
-<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span>  <a class="code hl_class" href="../../d5/d75/classxii_qt_editor_splash_screen.html">xiiQtEditorSplashScreen</a>* m_pSplashScreen = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span>  QTimer*                  m_pAutoSaveTimer;</div>
-<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span> </div>
-<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span>  <a class="code hl_class" href="../../d3/d7f/classxii_log_writer_1_1_h_t_m_l.html">xiiLogWriter::HTML</a> m_LogHTML;</div>
+<div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span>  <a class="code hl_struct" href="../../d4/d35/structxii_plugin_bundle_set.html">xiiPluginBundleSet</a> m_PluginBundles;</div>
+<div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span> </div>
+<div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span>  <span class="keywordtype">void</span> SaveRecentFiles();</div>
+<div class="line"><a id="l00336" name="l00336"></a><span class="lineno">  336</span>  <span class="keywordtype">void</span> LoadRecentFiles();</div>
+<div class="line"><a id="l00337" name="l00337"></a><span class="lineno">  337</span>  <span class="keywordtype">void</span> UpdateRecentProjects();</div>
+<div class="line"><a id="l00338" name="l00338"></a><span class="lineno">  338</span> </div>
+<div class="line"><a id="l00339" name="l00339"></a><span class="lineno">  339</span>  <a class="code hl_class" href="../../dc/d4a/classxii_recent_files_list.html">xiiRecentFilesList</a> m_RecentProjects;</div>
+<div class="line"><a id="l00340" name="l00340"></a><span class="lineno">  340</span>  <a class="code hl_class" href="../../dc/d4a/classxii_recent_files_list.html">xiiRecentFilesList</a> m_RecentDocuments;</div>
+<div class="line"><a id="l00341" name="l00341"></a><span class="lineno">  341</span> </div>
+<div class="line"><a id="l00342" name="l00342"></a><span class="lineno">  342</span>  xiiInt32                          m_iArgc          = 0;</div>
+<div class="line"><a id="l00343" name="l00343"></a><span class="lineno">  343</span>  QApplication*                     m_pQtApplication = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00344" name="l00344"></a><span class="lineno">  344</span>  <a class="code hl_class" href="../../df/d2a/classxii_long_op_controller_manager.html">xiiLongOpControllerManager</a>        m_LongOpControllerManager;</div>
+<div class="line"><a id="l00345" name="l00345"></a><span class="lineno">  345</span>  <a class="code hl_class" href="../../dc/d8e/classxii_editor_engine_process_connection.html">xiiEditorEngineProcessConnection</a>* m_pEngineViewProcess;</div>
+<div class="line"><a id="l00346" name="l00346"></a><span class="lineno">  346</span>  QTimer*                           m_pTimer = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00347" name="l00347"></a><span class="lineno">  347</span> </div>
+<div class="line"><a id="l00348" name="l00348"></a><span class="lineno">  348</span>  <a class="code hl_class" href="../../d5/d75/classxii_qt_editor_splash_screen.html">xiiQtEditorSplashScreen</a>* m_pSplashScreen = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00349" name="l00349"></a><span class="lineno">  349</span>  QTimer*                  m_pAutoSaveTimer;</div>
 <div class="line"><a id="l00350" name="l00350"></a><span class="lineno">  350</span> </div>
-<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span>  <a class="code hl_struct" href="../../d7/dc1/structxii_time.html">xiiTime</a>                        m_LastPluginModificationCheck;</div>
-<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span>  <a class="code hl_class" href="../../d0/d32/classxii_application_file_system_config.html">xiiApplicationFileSystemConfig</a> m_FileSystemConfig;</div>
-<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span> </div>
-<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span>  <span class="comment">// *** Recent Paths ***</span></div>
-<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span>  xiiString m_sLastDocumentFolder;</div>
-<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span>  xiiString m_sLastProjectFolder;</div>
-<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span> </div>
-<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span>  <span class="comment">// *** Progress Bar ***</span></div>
-<div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span>  <span class="keywordtype">bool</span> IsProgressBarProcessingEvents() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span> </div>
-<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span>  <a class="code hl_class" href="../../dd/d9e/classxii_progress.html">xiiProgress</a>*           m_pProgressbar   = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span>  <a class="code hl_class" href="../../d2/d20/classxii_qt_progressbar.html">xiiQtProgressbar</a>*      m_pQtProgressbar = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span>  xiiQtEditorSystemTray* m_pSystemTray    = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span><span class="preprocessor">#if XII_ENABLED(XII_PLATFORM_WINDOWS_DESKTOP)</span></div>
-<div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span>  xiiWindowsTaskbar*       m_pTaskbar       = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span>  xiiWindowsNotifications* m_pNotifications = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span> </div>
-<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span>  <span class="comment">// *** Localization ***</span></div>
-<div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span>  <a class="code hl_class" href="../../d6/dff/classxii_translator_from_files.html">xiiTranslatorFromFiles</a>* m_pTranslatorFromFiles = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span> </div>
-<div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span>  <span class="comment">// *** Dynamic Enum Strings ***</span></div>
-<div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span>  <a class="code hl_class" href="../../d6/d31/classxii_set.html">xiiSet&lt;xiiString&gt;</a> m_DynamicEnumStringsToClear;</div>
-<div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span>  <span class="keywordtype">void</span>              OnDemandDynamicStringEnumLoad(<a class="code hl_class" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sEnumName, <a class="code hl_class" href="../../d7/d13/classxii_dynamic_string_enum.html">xiiDynamicStringEnum</a>&amp; e);</div>
-<div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span> </div>
-<div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span>  <a class="code hl_class" href="../../d9/d4a/classxii_unique_ptr.html">xiiUniquePtr&lt;xiiQtVersionChecker&gt;</a> m_pVersionChecker;</div>
-<div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span>};</div>
+<div class="line"><a id="l00351" name="l00351"></a><span class="lineno">  351</span>  <a class="code hl_class" href="../../d3/d7f/classxii_log_writer_1_1_h_t_m_l.html">xiiLogWriter::HTML</a> m_LogHTML;</div>
+<div class="line"><a id="l00352" name="l00352"></a><span class="lineno">  352</span> </div>
+<div class="line"><a id="l00353" name="l00353"></a><span class="lineno">  353</span>  <a class="code hl_struct" href="../../d7/dc1/structxii_time.html">xiiTime</a>                        m_LastPluginModificationCheck;</div>
+<div class="line"><a id="l00354" name="l00354"></a><span class="lineno">  354</span>  <a class="code hl_class" href="../../d0/d32/classxii_application_file_system_config.html">xiiApplicationFileSystemConfig</a> m_FileSystemConfig;</div>
+<div class="line"><a id="l00355" name="l00355"></a><span class="lineno">  355</span> </div>
+<div class="line"><a id="l00356" name="l00356"></a><span class="lineno">  356</span>  <span class="comment">// *** Recent Paths ***</span></div>
+<div class="line"><a id="l00357" name="l00357"></a><span class="lineno">  357</span>  xiiString m_sLastDocumentFolder;</div>
+<div class="line"><a id="l00358" name="l00358"></a><span class="lineno">  358</span>  xiiString m_sLastProjectFolder;</div>
+<div class="line"><a id="l00359" name="l00359"></a><span class="lineno">  359</span> </div>
+<div class="line"><a id="l00360" name="l00360"></a><span class="lineno">  360</span>  <span class="comment">// *** Progress Bar ***</span></div>
+<div class="line"><a id="l00361" name="l00361"></a><span class="lineno">  361</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00362" name="l00362"></a><span class="lineno">  362</span>  <span class="keywordtype">bool</span> IsProgressBarProcessingEvents() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00363" name="l00363"></a><span class="lineno">  363</span> </div>
+<div class="line"><a id="l00364" name="l00364"></a><span class="lineno">  364</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00365" name="l00365"></a><span class="lineno">  365</span>  <a class="code hl_class" href="../../dd/d9e/classxii_progress.html">xiiProgress</a>*           m_pProgressbar   = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00366" name="l00366"></a><span class="lineno">  366</span>  <a class="code hl_class" href="../../d2/d20/classxii_qt_progressbar.html">xiiQtProgressbar</a>*      m_pQtProgressbar = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00367" name="l00367"></a><span class="lineno">  367</span>  xiiQtEditorSystemTray* m_pSystemTray    = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00368" name="l00368"></a><span class="lineno">  368</span><span class="preprocessor">#if XII_ENABLED(XII_PLATFORM_WINDOWS_DESKTOP)</span></div>
+<div class="line"><a id="l00369" name="l00369"></a><span class="lineno">  369</span>  xiiWindowsTaskbar*       m_pTaskbar       = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00370" name="l00370"></a><span class="lineno">  370</span>  xiiWindowsNotifications* m_pNotifications = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00371" name="l00371"></a><span class="lineno">  371</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00372" name="l00372"></a><span class="lineno">  372</span> </div>
+<div class="line"><a id="l00373" name="l00373"></a><span class="lineno">  373</span>  <span class="comment">// *** Localization ***</span></div>
+<div class="line"><a id="l00374" name="l00374"></a><span class="lineno">  374</span>  <a class="code hl_class" href="../../d6/dff/classxii_translator_from_files.html">xiiTranslatorFromFiles</a>* m_pTranslatorFromFiles = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00375" name="l00375"></a><span class="lineno">  375</span> </div>
+<div class="line"><a id="l00376" name="l00376"></a><span class="lineno">  376</span>  <span class="comment">// *** Dynamic Enum Strings ***</span></div>
+<div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span>  <a class="code hl_class" href="../../d6/d31/classxii_set.html">xiiSet&lt;xiiString&gt;</a> m_DynamicEnumStringsToClear;</div>
+<div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span>  <span class="keywordtype">void</span>              OnDemandDynamicStringEnumLoad(<a class="code hl_class" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sEnumName, <a class="code hl_class" href="../../d7/d13/classxii_dynamic_string_enum.html">xiiDynamicStringEnum</a>&amp; e);</div>
+<div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span> </div>
+<div class="line"><a id="l00380" name="l00380"></a><span class="lineno">  380</span>  <a class="code hl_class" href="../../d9/d4a/classxii_unique_ptr.html">xiiUniquePtr&lt;xiiQtVersionChecker&gt;</a> m_pVersionChecker;</div>
+<div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span>};</div>
 </div>
-<div class="line"><a id="l00380" name="l00380"></a><span class="lineno">  380</span> </div>
-<div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span>XII_DECLARE_FLAGS_OPERATORS(<a class="code hl_struct" href="../../de/de9/structxii_qt_editor_app_1_1_startup_flags.html">xiiQtEditorApp::StartupFlags</a>);</div>
+<div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span> </div>
+<div class="line"><a id="l00383" name="l00383"></a><span class="lineno">  383</span>XII_DECLARE_FLAGS_OPERATORS(<a class="code hl_struct" href="../../de/de9/structxii_qt_editor_app_1_1_startup_flags.html">xiiQtEditorApp::StartupFlags</a>);</div>
 <div class="ttc" id="aclass_q_list_html"><div class="ttname"><a href="../../db/daa/class_q_list.html">QList</a></div><div class="ttdoc">Copyright (c) Theophilus Eriata. All Rights Reserved.</div><div class="ttdef"><b>Definition</b> EditorApp.moc.h:33</div></div>
-<div class="ttc" id="aclassxii_application_file_system_config_html"><div class="ttname"><a href="../../d0/d32/classxii_application_file_system_config.html">xiiApplicationFileSystemConfig</a></div><div class="ttdoc">Copyright (c) Theophilus Eriata. All Rights Reserved.</div><div class="ttdef"><b>Definition</b> FileSystemConfig.h:10</div></div>
+<div class="ttc" id="aclassxii_application_file_system_config_html"><div class="ttname"><a href="../../d0/d32/classxii_application_file_system_config.html">xiiApplicationFileSystemConfig</a></div><div class="ttdoc">Copyright (c) Theophilus Eriata. All Rights Reserved.</div><div class="ttdef"><b>Definition</b> FileSystemConfig.h:11</div></div>
 <div class="ttc" id="aclassxii_dynamic_array_html"><div class="ttname"><a href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray</a></div><div class="ttdef"><b>Definition</b> DynamicArray.h:84</div></div>
 <div class="ttc" id="aclassxii_dynamic_string_enum_html"><div class="ttname"><a href="../../d7/d13/classxii_dynamic_string_enum.html">xiiDynamicStringEnum</a></div><div class="ttdoc">Copyright (c) Theophilus Eriata. All Rights Reserved.</div><div class="ttdef"><b>Definition</b> DynamicStringEnum.h:17</div></div>
 <div class="ttc" id="aclassxii_editor_engine_process_connection_html"><div class="ttname"><a href="../../dc/d8e/classxii_editor_engine_process_connection.html">xiiEditorEngineProcessConnection</a></div><div class="ttdef"><b>Definition</b> EngineProcessConnection.h:24</div></div>
@@ -481,7 +483,7 @@ $(function(){initNavTree('d9/dde/_editor_app_8moc_8h_source.html','../../',''); 
 <div class="ttc" id="aclassxii_string_view_html"><div class="ttname"><a href="../../d4/d85/classxii_string_view.html">xiiStringView</a></div><div class="ttdef"><b>Definition</b> StringView.h:36</div></div>
 <div class="ttc" id="aclassxii_translator_from_files_html"><div class="ttname"><a href="../../d6/dff/classxii_translator_from_files.html">xiiTranslatorFromFiles</a></div><div class="ttdoc">Loads translations from files. Each translator can have different search paths, but the files to be l...</div><div class="ttdef"><b>Definition</b> TranslationLookup.h:95</div></div>
 <div class="ttc" id="aclassxii_unique_ptr_html"><div class="ttname"><a href="../../d9/d4a/classxii_unique_ptr.html">xiiUniquePtr</a></div><div class="ttdoc">Copyright (c) Theophilus Eriata. All Rights Reserved.</div><div class="ttdef"><b>Definition</b> UniquePtr.h:11</div></div>
-<div class="ttc" id="astructxii_asset_processor_event_html"><div class="ttname"><a href="../../db/d7d/structxii_asset_processor_event.html">xiiAssetProcessorEvent</a></div><div class="ttdef"><b>Definition</b> AssetProcessor.h:55</div></div>
+<div class="ttc" id="astructxii_asset_processor_event_html"><div class="ttname"><a href="../../db/d7d/structxii_asset_processor_event.html">xiiAssetProcessorEvent</a></div><div class="ttdef"><b>Definition</b> AssetProcessor.h:56</div></div>
 <div class="ttc" id="astructxii_bitflags_html"><div class="ttname"><a href="../../d7/d55/structxii_bitflags.html">xiiBitflags</a></div><div class="ttdef"><b>Definition</b> Bitflags.h:84</div></div>
 <div class="ttc" id="astructxii_document_event_html"><div class="ttname"><a href="../../d1/d29/structxii_document_event.html">xiiDocumentEvent</a></div><div class="ttdef"><b>Definition</b> Declarations.h:56</div></div>
 <div class="ttc" id="astructxii_document_manager_1_1_event_html"><div class="ttname"><a href="../../da/d7b/structxii_document_manager_1_1_event.html">xiiDocumentManager::Event</a></div><div class="ttdef"><b>Definition</b> DocumentManager.h:65</div></div>
@@ -504,8 +506,8 @@ $(function(){initNavTree('d9/dde/_editor_app_8moc_8h_source.html','../../',''); 
 <div class="ttc" id="astructxii_result_html"><div class="ttname"><a href="../../dd/dad/structxii_result.html">xiiResult</a></div><div class="ttdef"><b>Definition</b> Types.h:65</div></div>
 <div class="ttc" id="astructxii_status_html"><div class="ttname"><a href="../../d0/d54/structxii_status.html">xiiStatus</a></div><div class="ttdef"><b>Definition</b> Status.h:25</div></div>
 <div class="ttc" id="astructxii_time_html"><div class="ttname"><a href="../../d7/dc1/structxii_time.html">xiiTime</a></div><div class="ttdoc">Copyright (c) Theophilus Eriata. All Rights Reserved.</div><div class="ttdef"><b>Definition</b> Time.h:14</div></div>
-<div class="ttc" id="astructxii_tools_project_event_html"><div class="ttname"><a href="../../d6/d25/structxii_tools_project_event.html">xiiToolsProjectEvent</a></div><div class="ttdef"><b>Definition</b> ToolsProject.h:15</div></div>
-<div class="ttc" id="astructxii_tools_project_request_html"><div class="ttname"><a href="../../d6/da2/structxii_tools_project_request.html">xiiToolsProjectRequest</a></div><div class="ttdef"><b>Definition</b> ToolsProject.h:34</div></div>
+<div class="ttc" id="astructxii_tools_project_event_html"><div class="ttname"><a href="../../d6/d25/structxii_tools_project_event.html">xiiToolsProjectEvent</a></div><div class="ttdef"><b>Definition</b> ToolsProject.h:20</div></div>
+<div class="ttc" id="astructxii_tools_project_request_html"><div class="ttname"><a href="../../d6/da2/structxii_tools_project_request.html">xiiToolsProjectRequest</a></div><div class="ttdef"><b>Definition</b> ToolsProject.h:42</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->

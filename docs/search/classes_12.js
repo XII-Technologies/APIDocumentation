@@ -2,7 +2,7 @@ var searchData=
 [
   ['sample_0',['Sample',['../da/d4c/structxii_temporal_camera_snapshot_1_1_sample.html',1,'xiiTemporalCameraSnapshot']]],
   ['scheduling_1',['Scheduling',['../da/dc9/structxii_render_graph_skills_1_1_scheduling.html',1,'xiiRenderGraphSkills']]],
-  ['scope_2',['Scope',['../d4/dad/structxii_qt_profiling_widget_1_1_scope.html',1,'xiiQtProfilingWidget']]],
+  ['scope_2',['Scope',['../dc/df3/structxii_inspector_profiling_session_1_1_scope.html',1,'xiiInspectorProfilingSession']]],
   ['selectedpoint_3',['SelectedPoint',['../d1/d18/structxii_qt_event_track_widget_1_1_selected_point.html',1,'xiiQtEventTrackWidget']]],
   ['selectionhistory_4',['SelectionHistory',['../da/dc4/structxii_scene_document_1_1_selection_history.html',1,'xiiSceneDocument']]],
   ['settings_5',['Settings',['../d7/d2c/structxii_editor_settings_1_1_settings.html',1,'xiiEditorSettings']]],
@@ -18,8 +18,12 @@ var searchData=
   ['stdstreaminfo_15',['StdStreamInfo',['../d0/d7a/structxii_process_impl_1_1_std_stream_info.html',1,'xiiProcessImpl']]],
   ['storage_16',['Storage',['../dd/dca/classxii_command_history_1_1_storage.html',1,'xiiCommandHistory::Storage'],['../d5/d98/classxii_document_object_manager_1_1_storage.html',1,'xiiDocumentObjectManager::Storage'],['../de/d3a/structxii_graph_1_1_storage.html',1,'xiiGraph::Storage'],['../dd/d42/classxii_object_meta_data_1_1_storage.html',1,'xiiObjectMetaData&lt; KEY, VALUE &gt;::Storage'],['../d7/da6/classxii_selection_manager_1_1_storage.html',1,'xiiSelectionManager::Storage']]],
   ['storageinfo_17',['StorageInfo',['../da/db9/structxii_reflected_type_storage_manager_1_1_reflected_type_storage_mapping_1_1_storage_info.html',1,'xiiReflectedTypeStorageManager::ReflectedTypeStorageMapping']]],
-  ['streamdesc_18',['StreamDesc',['../d9/d0a/structxii_expression_1_1_stream_desc.html',1,'xiiExpression']]],
-  ['stringwrapper_19',['StringWrapper',['../de/da5/structxii_variant_1_1_string_wrapper.html',1,'xiiVariant']]],
-  ['swizzle_20',['Swizzle',['../d6/da0/structxii_expression_a_s_t_1_1_swizzle.html',1,'xiiExpressionAST']]],
-  ['syncpointdata_21',['SyncPointData',['../d0/d85/structxii_g_a_l_cpu_wait_only_fence_vulkan_1_1_sync_point_data.html',1,'xiiGALCpuWaitOnlyFenceVulkan::SyncPointData'],['../d6/d6d/structxii_g_a_l_fence_vulkan_1_1_sync_point_data.html',1,'xiiGALFenceVulkan::SyncPointData']]]
+  ['streamdata_18',['StreamData',['../d3/d10/structxii_profiling_system_1_1_stream_data.html',1,'xiiProfilingSystem']]],
+  ['streamdesc_19',['StreamDesc',['../d9/d0a/structxii_expression_1_1_stream_desc.html',1,'xiiExpression']]],
+  ['streamframe_20',['StreamFrame',['../d4/d40/structxii_profiling_system_1_1_stream_frame.html',1,'xiiProfilingSystem']]],
+  ['streamgpuscope_21',['StreamGpuScope',['../dc/d5f/structxii_profiling_system_1_1_stream_gpu_scope.html',1,'xiiProfilingSystem']]],
+  ['streamscope_22',['StreamScope',['../d5/d01/structxii_profiling_system_1_1_stream_scope.html',1,'xiiProfilingSystem']]],
+  ['stringwrapper_23',['StringWrapper',['../de/da5/structxii_variant_1_1_string_wrapper.html',1,'xiiVariant']]],
+  ['swizzle_24',['Swizzle',['../d6/da0/structxii_expression_a_s_t_1_1_swizzle.html',1,'xiiExpressionAST']]],
+  ['syncpointdata_25',['SyncPointData',['../d0/d85/structxii_g_a_l_cpu_wait_only_fence_vulkan_1_1_sync_point_data.html',1,'xiiGALCpuWaitOnlyFenceVulkan::SyncPointData'],['../d6/d6d/structxii_g_a_l_fence_vulkan_1_1_sync_point_data.html',1,'xiiGALFenceVulkan::SyncPointData']]]
 ];

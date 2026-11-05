@@ -101,17 +101,12 @@ Inheritance diagram for xiiMaterialResource:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-types" class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a631455d7aeb2bdded41e7a18110a70aa" id="r_a631455d7aeb2bdded41e7a18110a70aa"><td class="memItemLeft" align="right" valign="top"><a id="a631455d7aeb2bdded41e7a18110a70aa" name="a631455d7aeb2bdded41e7a18110a70aa"></a>enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a631455d7aeb2bdded41e7a18110a70aa">DefaultMaterialType</a> { <br />
-&#160;&#160;<b>Fullbright</b>
-, <b>FullbrightAlphaTest</b>
-, <b>Lit</b>
-, <b>LitAlphaTest</b>
-, <br />
-&#160;&#160;<b>Sky</b>
-, <b>MissingMaterial</b>
-<br />
+<tr class="memitem:a631455d7aeb2bdded41e7a18110a70aa" id="r_a631455d7aeb2bdded41e7a18110a70aa"><td class="memItemLeft" align="right" valign="top"><a id="a631455d7aeb2bdded41e7a18110a70aa" name="a631455d7aeb2bdded41e7a18110a70aa"></a>enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a631455d7aeb2bdded41e7a18110a70aa">DefaultMaterialType</a> { <b>Missing</b>
+, <b>Loading</b>
+, <b>Highlight</b>
+, <b>Preview</b>
  }</td></tr>
-<tr class="memdesc:a631455d7aeb2bdded41e7a18110a70aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use these enum values together with <a class="el" href="#a158d400c7a003028d4050b9f457b814a" title="Returns the default material file name for the given type (materials in Data/Base/Materials/BaseMater...">GetDefaultMaterialFileName()</a> to get the default file names for these material types. <br /></td></tr>
+<tr class="memdesc:a631455d7aeb2bdded41e7a18110a70aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shared native descriptors used by loading, missing-resource and Editor previews. <br /></td></tr>
 <tr class="inherit_header pub_types_classxii_resource"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_types_classxii_resource')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public Types inherited from <a class="el" href="../../d9/de1/classxii_resource.html">xiiResource</a></td></tr>
 <tr class="memitem:ad3386f288d8a8ab633fba003a6187ed9 inherit pub_types_classxii_resource" id="r_ad3386f288d8a8ab633fba003a6187ed9"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de1/classxii_resource.html#ad3386f288d8a8ab633fba003a6187ed9">DoUpdate</a> : xiiUInt8 { <a class="el" href="../../d9/de1/classxii_resource.html#ad3386f288d8a8ab633fba003a6187ed9a817d39136a23588febde1f65edc02643">OnMainThread</a> = 0U
 , <a class="el" href="../../d9/de1/classxii_resource.html#ad3386f288d8a8ab633fba003a6187ed9aa8748188c286904944ef4d9ee11b8577">OnAnyThread</a>
@@ -224,9 +219,8 @@ template&lt;typename T&gt; </td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a158d400c7a003028d4050b9f457b814a" id="r_a158d400c7a003028d4050b9f457b814a"><td class="memItemLeft" align="right" valign="top"><a id="a158d400c7a003028d4050b9f457b814a" name="a158d400c7a003028d4050b9f457b814a"></a>
-static <a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetDefaultMaterialFileName</b> (<a class="el" href="#a631455d7aeb2bdded41e7a18110a70aa">DefaultMaterialType</a> materialType)</td></tr>
-<tr class="memdesc:a158d400c7a003028d4050b9f457b814a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the default material file name for the given type (materials in Data/Base/Materials/BaseMaterials). <br /></td></tr>
+<tr class="memitem:ae08f7c02b8bf0b15bf58279d20f2b3b7" id="r_ae08f7c02b8bf0b15bf58279d20f2b3b7"><td class="memItemLeft" align="right" valign="top"><a id="ae08f7c02b8bf0b15bf58279d20f2b3b7" name="ae08f7c02b8bf0b15bf58279d20f2b3b7"></a>
+static xiiMaterialResourceHandle&#160;</td><td class="memItemRight" valign="bottom"><b>GetDefaultMaterial</b> (<a class="el" href="#a631455d7aeb2bdded41e7a18110a70aa">DefaultMaterialType</a> type)</td></tr>
 <tr class="inherit_header pub_static_methods_classxii_no_base"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_static_methods_classxii_no_base')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Static Public Member Functions inherited from <a class="el" href="../../d2/d38/classxii_no_base.html">xiiNoBase</a></td></tr>
 <tr class="memitem:a4bde433b55ebd55edf63c57239799bba inherit pub_static_methods_classxii_no_base" id="r_a4bde433b55ebd55edf63c57239799bba"><td class="memItemLeft" align="right" valign="top">
 static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetStaticRTTI</b> ()</td></tr>

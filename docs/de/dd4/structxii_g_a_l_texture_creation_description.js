@@ -8,6 +8,7 @@ var structxii_g_a_l_texture_creation_description =
     [ "m_BindFlags", "de/dd4/structxii_g_a_l_texture_creation_description.html#a44d74d8f8567e5406f6cbb0b0bf28555", null ],
     [ "m_ClearValue", "de/dd4/structxii_g_a_l_texture_creation_description.html#add6a7cedf9f8c3b3ab625d34b29b7989", null ],
     [ "m_CPUAccessFlags", "de/dd4/structxii_g_a_l_texture_creation_description.html#a40e488c943da7938257dfdfa4a212ceb", null ],
+    [ "m_ExternalMemory", "de/dd4/structxii_g_a_l_texture_creation_description.html#a0cd7ff11c1e8391420dc52642e92b316", null ],
     [ "m_Format", "de/dd4/structxii_g_a_l_texture_creation_description.html#a7d1b95d59f0ce457d8a45b5f766d4fda", null ],
     [ "m_MiscFlags", "de/dd4/structxii_g_a_l_texture_creation_description.html#a6292a9d569ddb4ae5433fea34b2fb9bb", null ],
     [ "m_pExistingNativeObject", "de/dd4/structxii_g_a_l_texture_creation_description.html#a5a34c825a8eb9e8cc96aa3a30692f134", null ],

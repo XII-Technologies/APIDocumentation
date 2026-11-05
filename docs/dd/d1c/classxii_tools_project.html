@@ -94,8 +94,23 @@ $(function(){initNavTree('dd/d1c/classxii_tools_project.html','../../','d5/d06/c
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-pub-types" class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a08817d3df898ab2d0eadb866df3c47f6" id="r_a08817d3df898ab2d0eadb866df3c47f6"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a08817d3df898ab2d0eadb866df3c47f6">State</a> : xiiUInt8 { <a class="el" href="#a08817d3df898ab2d0eadb866df3c47f6a9bd99a0beea48f10663fc4a7d7a33140">Opening</a>
+, <a class="el" href="#a08817d3df898ab2d0eadb866df3c47f6ae7d31fc0602fb2ede144d18cdffd816b">Ready</a>
+, <a class="el" href="#a08817d3df898ab2d0eadb866df3c47f6ad7c8c85bf79bbe1b7188497c32c3b0ca">Failed</a>
+, <a class="el" href="#a08817d3df898ab2d0eadb866df3c47f6a5c8de6f894682fdb1786037b2040a26e">Closing</a>
+ }</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:ac5541859233a152ff9f6a4f7ae91ca3a" id="r_ac5541859233a152ff9f6a4f7ae91ca3a"><td class="memItemLeft" align="right" valign="top"><a id="ac5541859233a152ff9f6a4f7ae91ca3a" name="ac5541859233a152ff9f6a4f7ae91ca3a"></a>
+<a class="el" href="#a08817d3df898ab2d0eadb866df3c47f6">State</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetState</b> () const</td></tr>
+<tr class="memitem:a6750174f03a0315e2f83b474e9fb76d8" id="r_a6750174f03a0315e2f83b474e9fb76d8"><td class="memItemLeft" align="right" valign="top"><a id="a6750174f03a0315e2f83b474e9fb76d8" name="a6750174f03a0315e2f83b474e9fb76d8"></a>
+const <a class="el" href="../../de/d9f/classxii_project_manifest.html">xiiProjectManifest</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetManifest</b> () const</td></tr>
+<tr class="memitem:a6584e9d0a3ba173a509cc2b51c69d4e2" id="r_a6584e9d0a3ba173a509cc2b51c69d4e2"><td class="memItemLeft" align="right" valign="top"><a id="a6584e9d0a3ba173a509cc2b51c69d4e2" name="a6584e9d0a3ba173a509cc2b51c69d4e2"></a>
+<a class="el" href="../../d0/d54/structxii_status.html">xiiStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><b>SaveManifest</b> (const <a class="el" href="../../de/d9f/classxii_project_manifest.html">xiiProjectManifest</a> &amp;manifest)</td></tr>
+<tr class="memdesc:a6584e9d0a3ba173a509cc2b51c69d4e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Validates and atomically persists changes before publishing them. Project identity is immutable. <br /></td></tr>
 <tr class="memitem:ad880ef5dc52472e96af54b84c99ea384" id="r_ad880ef5dc52472e96af54b84c99ea384"><td class="memItemLeft" align="right" valign="top"><a id="ad880ef5dc52472e96af54b84c99ea384" name="ad880ef5dc52472e96af54b84c99ea384"></a>
 <a class="el" href="../../d4/dbb/classxii_string_builder.html">xiiStringBuilder</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetPathForDocumentGuid</b> (const <a class="el" href="../../dc/d1d/classxii_uuid.html">xiiUuid</a> &amp;guid)</td></tr>
 <tr class="memdesc:ad880ef5dc52472e96af54b84c99ea384"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resolve document GUID into an absolute path. <br /></td></tr>
@@ -123,6 +138,11 @@ Static Public Member Functions</h2></td></tr>
 static bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsProjectOpen</b> ()</td></tr>
 <tr class="memitem:ac678047dca9b6819da64697efe7396e0" id="r_ac678047dca9b6819da64697efe7396e0"><td class="memItemLeft" align="right" valign="top"><a id="ac678047dca9b6819da64697efe7396e0" name="ac678047dca9b6819da64697efe7396e0"></a>
 static bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsProjectClosing</b> ()</td></tr>
+<tr class="memitem:aeb0aed31ba758621eac54191aa805141" id="r_aeb0aed31ba758621eac54191aa805141"><td class="memItemLeft" align="right" valign="top"><a id="aeb0aed31ba758621eac54191aa805141" name="aeb0aed31ba758621eac54191aa805141"></a>
+static xiiUInt64&#160;</td><td class="memItemRight" valign="bottom"><b>GetProjectGeneration</b> ()</td></tr>
+<tr class="memdesc:aeb0aed31ba758621eac54191aa805141"><td class="mdescLeft">&#160;</td><td class="mdescRight">Monotonic process-local session identity, distinct from the persistent project UUID. <br /></td></tr>
+<tr class="memitem:ae8115b44d3cc9a24e2437e35340292f4" id="r_ae8115b44d3cc9a24e2437e35340292f4"><td class="memItemLeft" align="right" valign="top"><a id="ae8115b44d3cc9a24e2437e35340292f4" name="ae8115b44d3cc9a24e2437e35340292f4"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsProjectGenerationCurrent</b> (xiiUInt64 uiGeneration)</td></tr>
 <tr class="memitem:a541f07c7e88c23a7ffa8b392ef19185c" id="r_a541f07c7e88c23a7ffa8b392ef19185c"><td class="memItemLeft" align="right" valign="top"><a id="a541f07c7e88c23a7ffa8b392ef19185c" name="a541f07c7e88c23a7ffa8b392ef19185c"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>CloseProject</b> ()</td></tr>
 <tr class="memitem:a585b2fbad394dd785518c8a109d3261a" id="r_a585b2fbad394dd785518c8a109d3261a"><td class="memItemLeft" align="right" valign="top"><a id="a585b2fbad394dd785518c8a109d3261a" name="a585b2fbad394dd785518c8a109d3261a"></a>
@@ -153,6 +173,39 @@ static <a class="el" href="../../dc/d22/classxii_event.html">xiiEvent</a>&lt; co
 <tr class="memitem:a801e53074bbb1597c1adb718a76ccce4" id="r_a801e53074bbb1597c1adb718a76ccce4"><td class="memItemLeft" align="right" valign="top"><a id="a801e53074bbb1597c1adb718a76ccce4" name="a801e53074bbb1597c1adb718a76ccce4"></a>
 static <a class="el" href="../../dc/d22/classxii_event.html">xiiEvent</a>&lt; <a class="el" href="../../d6/da2/structxii_tools_project_request.html">xiiToolsProjectRequest</a> &amp; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>s_Requests</b></td></tr>
 </table>
+<a name="doc-enum-members" id="doc-enum-members"></a><h2 id="header-doc-enum-members" class="groupheader">Member Enumeration Documentation</h2>
+<a id="a08817d3df898ab2d0eadb866df3c47f6" name="a08817d3df898ab2d0eadb866df3c47f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08817d3df898ab2d0eadb866df3c47f6">&#9670;&#160;</a></span>State</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="#a08817d3df898ab2d0eadb866df3c47f6">xiiToolsProject::State</a> : xiiUInt8</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel strong">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a08817d3df898ab2d0eadb866df3c47f6a9bd99a0beea48f10663fc4a7d7a33140" name="a08817d3df898ab2d0eadb866df3c47f6a9bd99a0beea48f10663fc4a7d7a33140"></a>Opening&#160;</td><td class="fielddoc"><p>Valid manifest; required tool subsystems are being initialized. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a08817d3df898ab2d0eadb866df3c47f6ae7d31fc0602fb2ede144d18cdffd816b" name="a08817d3df898ab2d0eadb866df3c47f6ae7d31fc0602fb2ede144d18cdffd816b"></a>Ready&#160;</td><td class="fielddoc"><p>Required initialization completed successfully; asset operations may begin. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a08817d3df898ab2d0eadb866df3c47f6ad7c8c85bf79bbe1b7188497c32c3b0ca" name="a08817d3df898ab2d0eadb866df3c47f6ad7c8c85bf79bbe1b7188497c32c3b0ca"></a>Failed&#160;</td><td class="fielddoc"><p>Required initialization failed; followed by closing and cleanup. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a08817d3df898ab2d0eadb866df3c47f6a5c8de6f894682fdb1786037b2040a26e" name="a08817d3df898ab2d0eadb866df3c47f6a5c8de6f894682fdb1786037b2040a26e"></a>Closing&#160;</td><td class="fielddoc"><p>No new work may be admitted; outstanding work is drained before deletion. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
 <a id="a7443ecc4dd8322036dbcc5c3f4718449" name="a7443ecc4dd8322036dbcc5c3f4718449"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7443ecc4dd8322036dbcc5c3f4718449">&#9670;&#160;</a></span>BroadcastConfigChanged()</h2>

@@ -15,8 +15,9 @@ var searchData=
   ['foldertype_12',['FolderType',['../d5/dd5/classxii_data_directory_1_1_folder_type.html',1,'xiiDataDirectory']]],
   ['folderwriter_13',['FolderWriter',['../d0/d0b/classxii_data_directory_1_1_folder_writer.html',1,'xiiDataDirectory']]],
   ['foreachoptions_14',['ForEachOptions',['../d3/d09/structxii_r_t_t_i_1_1_for_each_options.html',1,'xiiRTTI']]],
-  ['fromnativeimpl_15',['FromNativeImpl',['../d1/d80/structxii_min_windows_1_1_from_native_impl.html',1,'xiiMinWindows']]],
-  ['functioncall_16',['FunctionCall',['../db/d29/structxii_expression_a_s_t_1_1_function_call.html',1,'xiiExpressionAST']]],
-  ['functioncontext_17',['FunctionContext',['../dd/dff/structxii_script_world_module_1_1_function_context.html',1,'xiiScriptWorldModule']]],
-  ['functiondesc_18',['FunctionDesc',['../dc/d45/structxii_expression_1_1_function_desc.html',1,'xiiExpression']]]
+  ['frame_15',['Frame',['../dd/df2/structxii_inspector_profiling_session_1_1_frame.html',1,'xiiInspectorProfilingSession']]],
+  ['fromnativeimpl_16',['FromNativeImpl',['../d1/d80/structxii_min_windows_1_1_from_native_impl.html',1,'xiiMinWindows']]],
+  ['functioncall_17',['FunctionCall',['../db/d29/structxii_expression_a_s_t_1_1_function_call.html',1,'xiiExpressionAST']]],
+  ['functioncontext_18',['FunctionContext',['../dd/dff/structxii_script_world_module_1_1_function_context.html',1,'xiiScriptWorldModule']]],
+  ['functiondesc_19',['FunctionDesc',['../dc/d45/structxii_expression_1_1_function_desc.html',1,'xiiExpression']]]
 ];

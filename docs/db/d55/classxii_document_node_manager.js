@@ -9,9 +9,12 @@ var classxii_document_node_manager =
       [ "ConnectNtoN", "db/d55/classxii_document_node_manager.html#a0b2d58014ff84a8403cf2873947e75e2a51eac945b564c56af95604481b31264c", null ]
     ] ],
     [ "CanReachNode", "db/d55/classxii_document_node_manager.html#a20fb9e26a07d3943c350a171f658d4b9", null ],
+    [ "CopyCommentBlocks", "db/d55/classxii_document_node_manager.html#a5793966f1be32efddbaa981067f78abd", null ],
+    [ "GetNodeComment", "db/d55/classxii_document_node_manager.html#ad98cfdff0cb638af3f0732bce6161317", null ],
     [ "GetNodeCreationTemplates", "db/d55/classxii_document_node_manager.html#ab0c1496f69da6fc60d6d89b0f95dd3f8", null ],
     [ "GetPinPropertyObject", "db/d55/classxii_document_node_manager.html#af1bab2ab76b3fe953e73af14c48afb84", null ],
     [ "InternalCanConnectToSelf", "db/d55/classxii_document_node_manager.html#afa3b62ecd4d46d568b6d8b8e5807e22a", null ],
+    [ "SetCommentBlock", "db/d55/classxii_document_node_manager.html#ab0ca324dc527d74cb6aeef95e3d27b55", null ],
     [ "TryRecreatePins", "db/d55/classxii_document_node_manager.html#a22c354ae9cca57ed7c379f7db3d790af", null ],
     [ "WouldConnectionCreateCircle", "db/d55/classxii_document_node_manager.html#a7e24190f3218161ef7db8267152a83d9", null ]
 ];

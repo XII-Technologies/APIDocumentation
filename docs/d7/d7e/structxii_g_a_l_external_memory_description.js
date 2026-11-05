@@ -1,5 +1,8 @@
 var structxii_g_a_l_external_memory_description =
 [
+    [ "CloseHandles", "d7/d7e/structxii_g_a_l_external_memory_description.html#af3f43e713f02d772a51ead476b538a89", null ],
+    [ "DuplicateHandles", "d7/d7e/structxii_g_a_l_external_memory_description.html#aacc9722d977396946140e0d410c47fe8", null ],
+    [ "m_DeviceUUID", "d7/d7e/structxii_g_a_l_external_memory_description.html#af8501ca63bed5c629830770a0fcd745e", null ],
     [ "m_Flags", "d7/d7e/structxii_g_a_l_external_memory_description.html#ad8219283c2eab3307836e14d58c4e478", null ],
     [ "m_Type", "d7/d7e/structxii_g_a_l_external_memory_description.html#a32d3e773062d0d170c9513385b639c9b", null ],
     [ "m_uiMemoryTypeIndex", "d7/d7e/structxii_g_a_l_external_memory_description.html#a7487bb78a64a08692845645b7a6cb1cc", null ],

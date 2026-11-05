@@ -4,5 +4,9 @@ var classxii_profiling_system =
     [ "CPUScope", "db/d89/structxii_profiling_system_1_1_c_p_u_scope.html", null ],
     [ "CPUScopesBufferFlat", "d5/d0e/structxii_profiling_system_1_1_c_p_u_scopes_buffer_flat.html", null ],
     [ "GPUScope", "d6/dbd/structxii_profiling_system_1_1_g_p_u_scope.html", null ],
-    [ "ProfilingData", "df/d05/structxii_profiling_system_1_1_profiling_data.html", "df/d05/structxii_profiling_system_1_1_profiling_data" ]
+    [ "ProfilingData", "df/d05/structxii_profiling_system_1_1_profiling_data.html", "df/d05/structxii_profiling_system_1_1_profiling_data" ],
+    [ "StreamScope", "d5/d01/structxii_profiling_system_1_1_stream_scope.html", null ],
+    [ "StreamFrame", "d4/d40/structxii_profiling_system_1_1_stream_frame.html", null ],
+    [ "StreamGpuScope", "dc/d5f/structxii_profiling_system_1_1_stream_gpu_scope.html", null ],
+    [ "StreamData", "d3/d10/structxii_profiling_system_1_1_stream_data.html", null ]
 ];

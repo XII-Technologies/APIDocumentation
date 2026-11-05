@@ -107,6 +107,10 @@ Classes</h2></td></tr>
 <tr class="memitem:GPUScope" id="r_GPUScope"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dbd/structxii_profiling_system_1_1_g_p_u_scope.html">GPUScope</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper struct to hold GPU profiling data.  <a href="../../d6/dbd/structxii_profiling_system_1_1_g_p_u_scope.html#details">More...</a><br /></td></tr>
 <tr class="memitem:ProfilingData" id="r_ProfilingData"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d05/structxii_profiling_system_1_1_profiling_data.html">ProfilingData</a></td></tr>
+<tr class="memitem:StreamScope" id="r_StreamScope"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d01/structxii_profiling_system_1_1_stream_scope.html">StreamScope</a></td></tr>
+<tr class="memitem:StreamFrame" id="r_StreamFrame"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d40/structxii_profiling_system_1_1_stream_frame.html">StreamFrame</a></td></tr>
+<tr class="memitem:StreamGpuScope" id="r_StreamGpuScope"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d5f/structxii_profiling_system_1_1_stream_gpu_scope.html">StreamGpuScope</a></td></tr>
+<tr class="memitem:StreamData" id="r_StreamData"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d10/structxii_profiling_system_1_1_stream_data.html">StreamData</a></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-types" class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -115,6 +119,10 @@ using&#160;</td><td class="memItemRight" valign="bottom"><b>ScopeTimeoutDelegate
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-static-methods" class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
+<tr class="memitem:ad10c38be81823c6c61f55334019b0731" id="r_ad10c38be81823c6c61f55334019b0731"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad10c38be81823c6c61f55334019b0731">SetStreamingEnabled</a> (bool bEnabled)</td></tr>
+<tr class="memitem:a4b82a22a8370d827e36a6cdd3727e2e4" id="r_a4b82a22a8370d827e36a6cdd3727e2e4"><td class="memItemLeft" align="right" valign="top"><a id="a4b82a22a8370d827e36a6cdd3727e2e4" name="a4b82a22a8370d827e36a6cdd3727e2e4"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>DrainStream</b> (<a class="el" href="../../d3/d10/structxii_profiling_system_1_1_stream_data.html">StreamData</a> &amp;out_data)</td></tr>
+<tr class="memdesc:a4b82a22a8370d827e36a6cdd3727e2e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main-thread only. Drains new samples; never captures or clears the ordinary profiling history. <br /></td></tr>
 <tr class="memitem:a2161a646055348d9ac129f4a0236d04d" id="r_a2161a646055348d9ac129f4a0236d04d"><td class="memItemLeft" align="right" valign="top"><a id="a2161a646055348d9ac129f4a0236d04d" name="a2161a646055348d9ac129f4a0236d04d"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>Clear</b> ()</td></tr>
 <tr class="memitem:a0fec6a40c90127e8ead456620cdf9841" id="r_a0fec6a40c90127e8ead456620cdf9841"><td class="memItemLeft" align="right" valign="top"><a id="a0fec6a40c90127e8ead456620cdf9841" name="a0fec6a40c90127e8ead456620cdf9841"></a>
@@ -148,7 +156,34 @@ xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b>RunThread</b> (<
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Helper functionality of the profiling system. </p>
-</div><hr/>The documentation for this class was generated from the following files:<ul>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a id="ad10c38be81823c6c61f55334019b0731" name="ad10c38be81823c6c61f55334019b0731"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad10c38be81823c6c61f55334019b0731">&#9670;&#160;</a></span>SetStreamingEnabled()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiProfilingSystem::SetStreamingEnabled </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>bEnabled</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Enables a bounded, non-blocking side channel using the existing scope instrumentation. Main-thread only. Disabling discards pending samples and leaves ordinary captures untouched. </p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/runner/work/XII/XII/Source/Engine/Foundation/Profiling/<a class="el" href="../../da/d04/_profiling_8h_source.html">Profiling.h</a></li>
 <li>/home/runner/work/XII/XII/Source/Engine/Foundation/Profiling/Implementation/<b>Profiling.cpp</b></li>
 </ul>

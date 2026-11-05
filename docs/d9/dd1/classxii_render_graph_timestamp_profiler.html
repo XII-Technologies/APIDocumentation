@@ -101,11 +101,14 @@ Inheritance diagram for xiiRenderGraphTimestampProfiler:</div>
 <div class="center"><iframe scrolling="no" loading="lazy" frameborder="0" src="../../da/db9/classxii_render_graph_timestamp_profiler__inherit__graph.svg" width="254" height="115"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 <center><span class="legend">[<a target="top" href="../../graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:TimingSample" id="r_TimingSample"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dda/structxii_render_graph_timestamp_profiler_1_1_timing_sample.html">TimingSample</a></td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a025b048b8e163086736a025b33255c9a" id="r_a025b048b8e163086736a025b33255c9a"><td class="memItemLeft" align="right" valign="top"><a id="a025b048b8e163086736a025b33255c9a" name="a025b048b8e163086736a025b33255c9a"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>xiiRenderGraphTimestampProfiler</b> (<a class="el" href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr</a>&lt; <a class="el" href="../../d5/d19/classxii_g_a_l_device.html">xiiGALDevice</a> &gt; pDevice)</td></tr>
-<tr class="memdesc:a025b048b8e163086736a025b33255c9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copyright (c) Theophilus Eriata. All Rights Reserved. <br /></td></tr>
 <tr class="memitem:a2daf2f16613c93a648a1cf532214fb5e" id="r_a2daf2f16613c93a648a1cf532214fb5e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2daf2f16613c93a648a1cf532214fb5e">OnFrameBegin</a> (xiiUInt64 uiFrameIndex) override</td></tr>
 <tr class="memdesc:a2daf2f16613c93a648a1cf532214fb5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Selects the GPU frame before recording a graph. Several graphs may share one frame.  <br /></td></tr>
 <tr class="memitem:ac07d4f4a58ca0fd04bb13528d43a486b" id="r_ac07d4f4a58ca0fd04bb13528d43a486b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac07d4f4a58ca0fd04bb13528d43a486b">SetGraphInstance</a> (xiiUInt64 uiInstanceId) override</td></tr>
@@ -140,6 +143,8 @@ static constexpr xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b
 <tr class="memdesc:a0876d422dc160d2fd1a8e23793b61f99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of in-flight frames buffered. <br /></td></tr>
 <tr class="memitem:ae51c7ef2544296e702304172be4abee3" id="r_ae51c7ef2544296e702304172be4abee3"><td class="memItemLeft" align="right" valign="top"><a id="ae51c7ef2544296e702304172be4abee3" name="ae51c7ef2544296e702304172be4abee3"></a>
 static constexpr xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b>s_uiMaxTrackedPasses</b> = 128U</td></tr>
+<tr class="memitem:a5a9d70bb68c4a8171db739aae1ca0b0b" id="r_a5a9d70bb68c4a8171db739aae1ca0b0b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../dc/d22/classxii_event.html">xiiEvent</a>&lt; const <a class="el" href="../../df/dda/structxii_render_graph_timestamp_profiler_1_1_timing_sample.html">TimingSample</a> &amp;, <a class="el" href="../../dd/d52/classxii_mutex.html">xiiMutex</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5a9d70bb68c4a8171db739aae1ca0b0b">s_TimingEvents</a></td></tr>
+<tr class="memdesc:a5a9d70bb68c4a8171db739aae1ca0b0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callbacks must not call the profiler, retain GPU references, or wait on a consumer.  <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A concrete render graph profiler that uses GPU Duration queries.</p>
@@ -495,6 +500,32 @@ static constexpr xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b
 <p>Called before recording a graph; isolates instances which share a stable graph name. </p>
 
 <p>Reimplemented from <a class="el" href="../../d5/d9e/classxii_render_graph_profiler.html#ae1c38967b4fc2904d97f1ed6c9a57930">xiiRenderGraphProfiler</a>.</p>
+
+</div>
+</div>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
+<a id="a5a9d70bb68c4a8171db739aae1ca0b0b" name="a5a9d70bb68c4a8171db739aae1ca0b0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a9d70bb68c4a8171db739aae1ca0b0b">&#9670;&#160;</a></span>s_TimingEvents</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dc/d22/classxii_event.html">xiiEvent</a>&lt; const <a class="el" href="../../df/dda/structxii_render_graph_timestamp_profiler_1_1_timing_sample.html">xiiRenderGraphTimestampProfiler::TimingSample</a> &amp;, <a class="el" href="../../dd/d52/classxii_mutex.html">xiiMutex</a> &gt; xiiRenderGraphTimestampProfiler::s_TimingEvents</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Callbacks must not call the profiler, retain GPU references, or wait on a consumer. </p>
+<p>Copyright (c) Theophilus Eriata. All Rights Reserved. </p>
 
 </div>
 </div>

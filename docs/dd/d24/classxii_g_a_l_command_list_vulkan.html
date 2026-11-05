@@ -135,6 +135,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>TransitionOrVerifyTex
 void&#160;</td><td class="memItemRight" valign="bottom"><b>TransitionOrVerifyAccelerationStructureState</b> (<a class="el" href="../../d4/d2d/classxii_g_a_l_resource.html">xiiGALResource</a> *pAccelerationStructure, <a class="el" href="../../de/dfd/structxii_enum.html">xiiEnum</a>&lt; <a class="el" href="../../dc/dfa/structxii_g_a_l_state_transition_mode.html">xiiGALStateTransitionMode</a> &gt; transitionMode, <a class="el" href="../../d7/d55/structxii_bitflags.html">xiiBitflags</a>&lt; <a class="el" href="../../d6/dec/structxii_g_a_l_resource_state_flags.html">xiiGALResourceStateFlags</a> &gt; requiredState, const char *szOperationName)</td></tr>
 <tr class="memitem:a05bf774003f37afe8f244192cf215b56" id="r_a05bf774003f37afe8f244192cf215b56"><td class="memItemLeft" align="right" valign="top"><a id="a05bf774003f37afe8f244192cf215b56" name="a05bf774003f37afe8f244192cf215b56"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>FlushBarriers</b> ()</td></tr>
+<tr class="memitem:a40eed17b0296a8ffd9269470d710ed1c" id="r_a40eed17b0296a8ffd9269470d710ed1c"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a40eed17b0296a8ffd9269470d710ed1c">BlitTexture</a> (<a class="el" href="../../d3/d9a/classxii_g_a_l_texture.html">xiiGALTexture</a> *pSourceTexture, <a class="el" href="../../d3/d9a/classxii_g_a_l_texture.html">xiiGALTexture</a> *pDestinationTexture) override final</td></tr>
 <tr class="memitem:a74fb09968280ce5243884cc866a418c7" id="r_a74fb09968280ce5243884cc866a418c7"><td class="memItemLeft" align="right" valign="top"><a id="a74fb09968280ce5243884cc866a418c7" name="a74fb09968280ce5243884cc866a418c7"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>CopyBufferToTexture</b> (vk::Buffer vkSourceBuffer, xiiUInt64 uiSourceBufferOffset, xiiUInt32 uiSourceBufferRowStrideInTexels, <a class="el" href="../../d7/d2e/classxii_g_a_l_texture_vulkan.html">xiiGALTextureVulkan</a> *pDestinationTextureVulkan, const xiiBoundingBoxU32 &amp;destinationRegion, xiiUInt32 uiDestinationMipLevel, xiiUInt32 uiDestinationArraySlice, bool bVerifyOnly=false)</td></tr>
 <tr class="memitem:a4ac35e81a951e6b6e32b85575bc82f2c" id="r_a4ac35e81a951e6b6e32b85575bc82f2c"><td class="memItemLeft" align="right" valign="top"><a id="a4ac35e81a951e6b6e32b85575bc82f2c" name="a4ac35e81a951e6b6e32b85575bc82f2c"></a>
@@ -585,6 +586,38 @@ xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b>m_uiStencilRef</
 static constexpr xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b>s_uiDrawMeshIndirectCommandStride</b> = sizeof(xiiUInt32) * 3</td></tr>
 </table>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a id="a40eed17b0296a8ffd9269470d710ed1c" name="a40eed17b0296a8ffd9269470d710ed1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40eed17b0296a8ffd9269470d710ed1c">&#9670;&#160;</a></span>BlitTexture()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a> xiiGALCommandListVulkan::BlitTexture </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d3/d9a/classxii_g_a_l_texture.html">xiiGALTexture</a> *</td>          <td class="paramname"><span class="paramname"><em></em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d3/d9a/classxii_g_a_l_texture.html">xiiGALTexture</a> *</td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel final">final</span><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Copies and scales a single-sample 2D color image, converting compatible color formats. Must be recorded outside a render pass on a graphics/transfer list. Returns failure when unsupported. </p>
+
+<p>Reimplemented from <a class="el" href="../../dc/d80/classxii_g_a_l_command_list.html#a6545ec32fe7d1324b8aa5abdc15d0448">xiiGALCommandList</a>.</p>
+
+</div>
+</div>
 <a id="a58d6ecfea978d39075cd10b54465ef5b" name="a58d6ecfea978d39075cd10b54465ef5b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a58d6ecfea978d39075cd10b54465ef5b">&#9670;&#160;</a></span>InitPlatform()</h2>
 

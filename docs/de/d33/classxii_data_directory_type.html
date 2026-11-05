@@ -122,6 +122,8 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:accf67cf83009d29d4385c1a8bdeaf1ed" id="r_accf67cf83009d29d4385c1a8bdeaf1ed"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#accf67cf83009d29d4385c1a8bdeaf1ed">GetFileStats</a> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sFileOrFolder, bool bOneSpecificDataDir, <a class="el" href="../../d6/dd0/structxii_file_stats.html">xiiFileStats</a> &amp;out_Stats)=0</td></tr>
 <tr class="memdesc:accf67cf83009d29d4385c1a8bdeaf1ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Upon success returns the <a class="el" href="../../d6/dd0/structxii_file_stats.html" title="Holds the stats for a file.">xiiFileStats</a> for a file in this data directory.  <br /></td></tr>
 <tr class="memitem:a6bc3b529b723c4e6e4c88140cbef098e" id="r_a6bc3b529b723c4e6e4c88140cbef098e"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6bc3b529b723c4e6e4c88140cbef098e">ResolveAssetRedirection</a> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sPathOrAssetGuid, <a class="el" href="../../d4/dbb/classxii_string_builder.html">xiiStringBuilder</a> &amp;out_sRedirection)</td></tr>
+<tr class="memitem:a8182593da285618d25156570fa4b4a3a" id="r_a8182593da285618d25156570fa4b4a3a"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8182593da285618d25156570fa4b4a3a">ResolveAssetIdentifier</a> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sPath, <a class="el" href="../../d4/dbb/classxii_string_builder.html">xiiStringBuilder</a> &amp;out_sGuid)</td></tr>
+<tr class="memdesc:a8182593da285618d25156570fa4b4a3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Looks up an authored path in this data directory's asset table without redirecting ordinary file reads.  <br /></td></tr>
 <tr class="memitem:a6bd08b2185798c937702e813ee4a8a1a" id="r_a6bd08b2185798c937702e813ee4a8a1a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6bd08b2185798c937702e813ee4a8a1a">OnReaderWriterClose</a> (<a class="el" href="../../d5/d39/classxii_data_directory_reader_writer_base.html">xiiDataDirectoryReaderWriterBase</a> *pClosed)</td></tr>
 <tr class="memitem:a65c551c72e3e70fc0185c784112e7343" id="r_a65c551c72e3e70fc0185c784112e7343"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a65c551c72e3e70fc0185c784112e7343">InternalInitializeDataDirectory</a> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sDirectory)=0</td></tr>
 </table><table class="memberdecls">
@@ -487,6 +489,39 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>xiiDataDirectoryRead
 <p>It should delete itself using the proper allocator. </p>
 
 <p>Implemented in <a class="el" href="../../d1/d7b/classxii_data_directory_1_1_archive_type.html#aa120f06d732487187c09a471e26ffbbd">xiiDataDirectory::ArchiveType</a>, <a class="el" href="../../d9/df6/classxii_data_directory_1_1_fileserve_type.html#a1c1f70ea4f1c052998a54e2408006e57">xiiDataDirectory::FileserveType</a>, and <a class="el" href="../../d5/dd5/classxii_data_directory_1_1_folder_type.html#a31905d56e983dde3768fc5c56ac7cf3a">xiiDataDirectory::FolderType</a>.</p>
+
+</div>
+</div>
+<a id="a8182593da285618d25156570fa4b4a3a" name="a8182593da285618d25156570fa4b4a3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8182593da285618d25156570fa4b4a3a">&#9670;&#160;</a></span>ResolveAssetIdentifier()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool xiiDataDirectoryType::ResolveAssetIdentifier </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sPath</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d4/dbb/classxii_string_builder.html">xiiStringBuilder</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>out_sGuid</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel protected">protected</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Looks up an authored path in this data directory's asset table without redirecting ordinary file reads. </p>
+
+<p>Reimplemented in <a class="el" href="../../d5/dd5/classxii_data_directory_1_1_folder_type.html#aacf94121dee0162fac7d5212ac496bc4">xiiDataDirectory::FolderType</a>.</p>
 
 </div>
 </div>

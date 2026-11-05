@@ -115,6 +115,8 @@ XII_ALWAYS_INLINE <a class="el" href="../../d7/d55/structxii_bitflags.html">xiiB
 <tr class="memitem:a272406a9e930fd4b08d0d5ca128f7d9f" id="r_a272406a9e930fd4b08d0d5ca128f7d9f"><td class="memItemLeft" align="right" valign="top"><a id="a272406a9e930fd4b08d0d5ca128f7d9f" name="a272406a9e930fd4b08d0d5ca128f7d9f"></a>
 XII_ALWAYS_INLINE const <a class="el" href="../../d7/d7e/structxii_g_a_l_external_memory_description.html">xiiGALExternalMemoryDescription</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetExternalMemoryDescription</b> () const</td></tr>
 <tr class="memdesc:a272406a9e930fd4b08d0d5ca128f7d9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the external memory description for this texture. <br /></td></tr>
+<tr class="memitem:afab0177ce097da35188cfb020a0b8595" id="r_afab0177ce097da35188cfb020a0b8595"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afab0177ce097da35188cfb020a0b8595">AcquireExternalMemory</a> (<a class="el" href="../../dc/d80/classxii_g_a_l_command_list.html">xiiGALCommandList</a> *)</td></tr>
+<tr class="memitem:a58cf324582550101550b187849b4eaa8" id="r_a58cf324582550101550b187849b4eaa8"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a58cf324582550101550b187849b4eaa8">ReleaseExternalMemory</a> (<a class="el" href="../../dc/d80/classxii_g_a_l_command_list.html">xiiGALCommandList</a> *)</td></tr>
 <tr class="memitem:a1210f25a7ec3a3a3409f3869abd46c07" id="r_a1210f25a7ec3a3a3409f3869abd46c07"><td class="memItemLeft" align="right" valign="top"><a id="a1210f25a7ec3a3a3409f3869abd46c07" name="a1210f25a7ec3a3a3409f3869abd46c07"></a>
 virtual xiiUInt64&#160;</td><td class="memItemRight" valign="bottom"><b>GetMemoryConsumption</b> () const</td></tr>
 <tr class="memdesc:a1210f25a7ec3a3a3409f3869abd46c07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the calculated memory consumption for texture. <br /></td></tr>
@@ -235,6 +237,34 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Interface that defines methods to manipulate a texture object. </p>
 </div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a id="afab0177ce097da35188cfb020a0b8595" name="afab0177ce097da35188cfb020a0b8595"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afab0177ce097da35188cfb020a0b8595">&#9670;&#160;</a></span>AcquireExternalMemory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a> xiiGALTexture::AcquireExternalMemory </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d80/classxii_g_a_l_command_list.html">xiiGALCommandList</a> *</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Acquire a binary-semaphore shared texture after the external consumer has submitted its release. The command list must be a recording graphics list. Submit it before rendering into this texture. </p>
+
+<p>Reimplemented in <a class="el" href="../../d7/d2e/classxii_g_a_l_texture_vulkan.html#af4081598b67eb6e6149f5339a9fe2edc">xiiGALTextureVulkan</a>.</p>
+
+</div>
+</div>
 <a id="a54e23d9c7fe40caaf6033fe80073bd62" name="a54e23d9c7fe40caaf6033fe80073bd62"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a54e23d9c7fe40caaf6033fe80073bd62">&#9670;&#160;</a></span>CreateView()</h2>
 
@@ -335,6 +365,34 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>
 <p>This returns the sparse texture properties. </p>
 
 <p>Implemented in <a class="el" href="../../d7/db5/classxii_g_a_l_texture_d3_d12.html#a260218d6978104c3e7bc40101640b5c4">xiiGALTextureD3D12</a>, and <a class="el" href="../../d7/d2e/classxii_g_a_l_texture_vulkan.html#a2ff41f4ba7190cbacc3f5575ac25002d">xiiGALTextureVulkan</a>.</p>
+
+</div>
+</div>
+<a id="a58cf324582550101550b187849b4eaa8" name="a58cf324582550101550b187849b4eaa8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58cf324582550101550b187849b4eaa8">&#9670;&#160;</a></span>ReleaseExternalMemory()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a> xiiGALTexture::ReleaseExternalMemory </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d80/classxii_g_a_l_command_list.html">xiiGALCommandList</a> *</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Release the texture to an external API in General layout and signal its binary semaphore. Submit this graphics list after all rendering into the texture has been submitted. </p>
+
+<p>Reimplemented in <a class="el" href="../../d7/d2e/classxii_g_a_l_texture_vulkan.html#a65e7c816926c87e70387da4437281391">xiiGALTextureVulkan</a>.</p>
 
 </div>
 </div>

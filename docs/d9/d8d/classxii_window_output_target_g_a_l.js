@@ -1,5 +1,6 @@
 var classxii_window_output_target_g_a_l =
 [
+    [ "OnSwapChainChanged", "d9/d8d/classxii_window_output_target_g_a_l.html#ae8089b8e808b46b7f2b41ecd8e470b96", null ],
     [ "xiiWindowOutputTargetGAL", "d9/d8d/classxii_window_output_target_g_a_l.html#a51c30edfd4f0e72d0f216330c04f1adc", null ],
     [ "CaptureImage", "d9/d8d/classxii_window_output_target_g_a_l.html#af65d7c242b717b2da19302222e4d5e4d", null ],
     [ "GetSwapChain", "d9/d8d/classxii_window_output_target_g_a_l.html#a355ea7974e6a33a537f634eb84bfe563", null ],

@@ -184,43 +184,44 @@ $(function(){initNavTree('d4/df6/_engine_process_connection_8h_source.html','../
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>  <span class="keywordtype">bool</span>                   m_bProcessShouldBeRunning;</div>
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>  <span class="keywordtype">bool</span>                   m_bProcessCrashed;</div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>  <span class="keywordtype">bool</span>                   m_bClientIsConfigured;</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>  <span class="keywordtype">bool</span>                   m_bHardwareRayTracing     = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>  xiiEventSubscriptionID m_TickEventSubscriptionID = 0;</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>  xiiUInt32              m_uiRedrawCountSent       = 0;</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>  xiiUInt32              m_uiRedrawCountReceived   = 0;</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>  <a class="code hl_class" href="../../d4/ddc/classxii_editor_process_communication_channel.html">xiiEditorProcessCommunicationChannel</a>                     m_IPC;</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>  <a class="code hl_class" href="../../d9/d4a/classxii_unique_ptr.html">xiiUniquePtr&lt;xiiEditorProcessRemoteCommunicationChannel&gt;</a> m_pRemoteProcess;</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>  <a class="code hl_class" href="../../d0/d32/classxii_application_file_system_config.html">xiiApplicationFileSystemConfig</a>                           m_FileSystemConfig;</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>  <a class="code hl_class" href="../../de/d14/classxii_application_plugin_config.html">xiiApplicationPluginConfig</a>                               m_PluginConfig;</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>  <a class="code hl_class" href="../../d8/dc2/classxii_hash_table.html">xiiHashTable&lt;xiiUuid, xiiAssetDocument*&gt;</a>                 m_DocumentByGuid;</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>};</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>  xiiString              m_sInitializationFailure;</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>  <span class="keywordtype">bool</span>                   m_bHardwareRayTracing     = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>  xiiEventSubscriptionID m_TickEventSubscriptionID = 0;</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>  xiiUInt32              m_uiRedrawCountSent       = 0;</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>  xiiUInt32              m_uiRedrawCountReceived   = 0;</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>  <a class="code hl_class" href="../../d4/ddc/classxii_editor_process_communication_channel.html">xiiEditorProcessCommunicationChannel</a>                     m_IPC;</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>  <a class="code hl_class" href="../../d9/d4a/classxii_unique_ptr.html">xiiUniquePtr&lt;xiiEditorProcessRemoteCommunicationChannel&gt;</a> m_pRemoteProcess;</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>  <a class="code hl_class" href="../../d0/d32/classxii_application_file_system_config.html">xiiApplicationFileSystemConfig</a>                           m_FileSystemConfig;</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>  <a class="code hl_class" href="../../de/d14/classxii_application_plugin_config.html">xiiApplicationPluginConfig</a>                               m_PluginConfig;</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>  <a class="code hl_class" href="../../d8/dc2/classxii_hash_table.html">xiiHashTable&lt;xiiUuid, xiiAssetDocument*&gt;</a>                 m_DocumentByGuid;</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>};</div>
 </div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
-<div class="foldopen" id="foldopen00111" data-start="{" data-end="};">
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="../../d3/df5/classxii_editor_engine_connection.html">  111</a></span><span class="keyword">class </span>XII_EDITORFRAMEWORK_DLL xiiEditorEngineConnection</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>{</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>  <span class="keywordtype">bool</span> SendMessage(<a class="code hl_class" href="../../d9/d5f/classxii_editor_engine_document_msg.html">xiiEditorEngineDocumentMsg</a>* pMessage);</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>  <span class="keywordtype">void</span> SendHighlightObjectMessage(<a class="code hl_class" href="../../d3/df2/classxii_view_highlight_msg_to_engine.html">xiiViewHighlightMsgToEngine</a>* pMessage);</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>  <a class="code hl_class" href="../../d8/da9/classxii_document.html">xiiDocument</a>* GetDocument()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_pDocument; }</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>  <span class="keyword">friend</span> <span class="keyword">class </span>xiiEditorEngineProcessConnection;</div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>  xiiEditorEngineConnection(<a class="code hl_class" href="../../d8/da9/classxii_document.html">xiiDocument</a>* pDocument) { m_pDocument = pDocument; }</div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>  ~xiiEditorEngineConnection() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>  <a class="code hl_class" href="../../d8/da9/classxii_document.html">xiiDocument</a>* m_pDocument;</div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>};</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
+<div class="foldopen" id="foldopen00112" data-start="{" data-end="};">
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno"><a class="line" href="../../d3/df5/classxii_editor_engine_connection.html">  112</a></span><span class="keyword">class </span>XII_EDITORFRAMEWORK_DLL xiiEditorEngineConnection</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>{</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>  <span class="keywordtype">bool</span> SendMessage(<a class="code hl_class" href="../../d9/d5f/classxii_editor_engine_document_msg.html">xiiEditorEngineDocumentMsg</a>* pMessage);</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>  <span class="keywordtype">void</span> SendHighlightObjectMessage(<a class="code hl_class" href="../../d3/df2/classxii_view_highlight_msg_to_engine.html">xiiViewHighlightMsgToEngine</a>* pMessage);</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>  <a class="code hl_class" href="../../d8/da9/classxii_document.html">xiiDocument</a>* GetDocument()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_pDocument; }</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>  <span class="keyword">friend</span> <span class="keyword">class </span>xiiEditorEngineProcessConnection;</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>  xiiEditorEngineConnection(<a class="code hl_class" href="../../d8/da9/classxii_document.html">xiiDocument</a>* pDocument) { m_pDocument = pDocument; }</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>  ~xiiEditorEngineConnection() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span> </div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>  <a class="code hl_class" href="../../d8/da9/classxii_document.html">xiiDocument</a>* m_pDocument;</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>};</div>
 </div>
-<div class="ttc" id="aclassxii_application_file_system_config_html"><div class="ttname"><a href="../../d0/d32/classxii_application_file_system_config.html">xiiApplicationFileSystemConfig</a></div><div class="ttdoc">Copyright (c) Theophilus Eriata. All Rights Reserved.</div><div class="ttdef"><b>Definition</b> FileSystemConfig.h:10</div></div>
+<div class="ttc" id="aclassxii_application_file_system_config_html"><div class="ttname"><a href="../../d0/d32/classxii_application_file_system_config.html">xiiApplicationFileSystemConfig</a></div><div class="ttdoc">Copyright (c) Theophilus Eriata. All Rights Reserved.</div><div class="ttdef"><b>Definition</b> FileSystemConfig.h:11</div></div>
 <div class="ttc" id="aclassxii_application_plugin_config_html"><div class="ttname"><a href="../../de/d14/classxii_application_plugin_config.html">xiiApplicationPluginConfig</a></div><div class="ttdoc">Copyright (c) Theophilus Eriata. All Rights Reserved.</div><div class="ttdef"><b>Definition</b> PluginConfig.h:11</div></div>
 <div class="ttc" id="aclassxii_asset_document_html"><div class="ttname"><a href="../../d7/dd5/classxii_asset_document.html">xiiAssetDocument</a></div><div class="ttdef"><b>Definition</b> AssetDocument.h:45</div></div>
 <div class="ttc" id="aclassxii_document_html"><div class="ttname"><a href="../../d8/da9/classxii_document.html">xiiDocument</a></div><div class="ttdoc">Base class for all editable documents in the editor. Handles state, object management,...</div><div class="ttdef"><b>Definition</b> Document.h:60</div></div>
 <div class="ttc" id="aclassxii_document_object_html"><div class="ttname"><a href="../../da/dd8/classxii_document_object.html">xiiDocumentObject</a></div><div class="ttdef"><b>Definition</b> DocumentObjectBase.h:14</div></div>
-<div class="ttc" id="aclassxii_editor_engine_connection_html"><div class="ttname"><a href="../../d3/df5/classxii_editor_engine_connection.html">xiiEditorEngineConnection</a></div><div class="ttdef"><b>Definition</b> EngineProcessConnection.h:112</div></div>
-<div class="ttc" id="aclassxii_editor_engine_document_msg_html"><div class="ttname"><a href="../../d9/d5f/classxii_editor_engine_document_msg.html">xiiEditorEngineDocumentMsg</a></div><div class="ttdoc">Base class for all messages that are tied to some document.</div><div class="ttdef"><b>Definition</b> EngineProcessMessages.h:155</div></div>
+<div class="ttc" id="aclassxii_editor_engine_connection_html"><div class="ttname"><a href="../../d3/df5/classxii_editor_engine_connection.html">xiiEditorEngineConnection</a></div><div class="ttdef"><b>Definition</b> EngineProcessConnection.h:113</div></div>
+<div class="ttc" id="aclassxii_editor_engine_document_msg_html"><div class="ttname"><a href="../../d9/d5f/classxii_editor_engine_document_msg.html">xiiEditorEngineDocumentMsg</a></div><div class="ttdoc">Base class for all messages that are tied to some document.</div><div class="ttdef"><b>Definition</b> EngineProcessMessages.h:158</div></div>
 <div class="ttc" id="aclassxii_editor_engine_process_connection_html_a5fb87948d312eefd8169ecc748c0834a"><div class="ttname"><a href="../../dc/d8e/classxii_editor_engine_process_connection.html#a5fb87948d312eefd8169ecc748c0834a">xiiEditorEngineProcessConnection::SetFileSystemConfig</a></div><div class="ttdeci">void SetFileSystemConfig(const xiiApplicationFileSystemConfig &amp;cfg)</div><div class="ttdef"><b>Definition</b> EngineProcessConnection.h:33</div></div>
 <div class="ttc" id="aclassxii_editor_engine_process_connection_html_a9bc66c53474fadde9b58ba67153824f1"><div class="ttname"><a href="../../dc/d8e/classxii_editor_engine_process_connection.html#a9bc66c53474fadde9b58ba67153824f1">xiiEditorEngineProcessConnection::SetPluginConfig</a></div><div class="ttdeci">void SetPluginConfig(const xiiApplicationPluginConfig &amp;cfg)</div><div class="ttdef"><b>Definition</b> EngineProcessConnection.h:37</div></div>
 <div class="ttc" id="aclassxii_editor_process_communication_channel_html"><div class="ttname"><a href="../../d4/ddc/classxii_editor_process_communication_channel.html">xiiEditorProcessCommunicationChannel</a></div><div class="ttdef"><b>Definition</b> EditorProcessCommunicationChannel.h:16</div></div>
@@ -231,11 +232,11 @@ $(function(){initNavTree('d4/df6/_engine_process_connection_8h_source.html','../
 <div class="ttc" id="aclassxii_qt_engine_document_window_html"><div class="ttname"><a href="../../d0/d97/classxii_qt_engine_document_window.html">xiiQtEngineDocumentWindow</a></div><div class="ttdef"><b>Definition</b> EngineDocumentWindow.moc.h:39</div></div>
 <div class="ttc" id="aclassxii_r_t_t_i_html"><div class="ttname"><a href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a></div><div class="ttdef"><b>Definition</b> RTTI.h:32</div></div>
 <div class="ttc" id="aclassxii_unique_ptr_html"><div class="ttname"><a href="../../d9/d4a/classxii_unique_ptr.html">xiiUniquePtr</a></div><div class="ttdoc">Copyright (c) Theophilus Eriata. All Rights Reserved.</div><div class="ttdef"><b>Definition</b> UniquePtr.h:11</div></div>
-<div class="ttc" id="aclassxii_view_highlight_msg_to_engine_html"><div class="ttname"><a href="../../d3/df2/classxii_view_highlight_msg_to_engine.html">xiiViewHighlightMsgToEngine</a></div><div class="ttdef"><b>Definition</b> EngineProcessMessages.h:413</div></div>
+<div class="ttc" id="aclassxii_view_highlight_msg_to_engine_html"><div class="ttname"><a href="../../d3/df2/classxii_view_highlight_msg_to_engine.html">xiiViewHighlightMsgToEngine</a></div><div class="ttdef"><b>Definition</b> EngineProcessMessages.h:440</div></div>
 <div class="ttc" id="astructxii_document_object_property_event_html"><div class="ttname"><a href="../../d9/d70/structxii_document_object_property_event.html">xiiDocumentObjectPropertyEvent</a></div><div class="ttdoc">Used by xiiDocumentObjectManager::m_PropertyEvents.</div><div class="ttdef"><b>Definition</b> DocumentObjectManager.h:77</div></div>
 <div class="ttc" id="astructxii_document_object_structure_event_html"><div class="ttname"><a href="../../db/d05/structxii_document_object_structure_event.html">xiiDocumentObjectStructureEvent</a></div><div class="ttdoc">Used by xiiDocumentObjectManager::m_StructureEvents.</div><div class="ttdef"><b>Definition</b> DocumentObjectManager.h:47</div></div>
 <div class="ttc" id="astructxii_process_communication_channel_1_1_event_html"><div class="ttname"><a href="../../df/d6a/structxii_process_communication_channel_1_1_event.html">xiiProcessCommunicationChannel::Event</a></div><div class="ttdef"><b>Definition</b> ProcessCommunicationChannel.h:35</div></div>
-<div class="ttc" id="astructxii_qt_ui_services_1_1_tick_event_html"><div class="ttname"><a href="../../d3/d41/structxii_qt_ui_services_1_1_tick_event.html">xiiQtUiServices::TickEvent</a></div><div class="ttdef"><b>Definition</b> UIServices.moc.h:51</div></div>
+<div class="ttc" id="astructxii_qt_ui_services_1_1_tick_event_html"><div class="ttname"><a href="../../d3/d41/structxii_qt_ui_services_1_1_tick_event.html">xiiQtUiServices::TickEvent</a></div><div class="ttdef"><b>Definition</b> UIServices.moc.h:50</div></div>
 <div class="ttc" id="astructxii_result_html"><div class="ttname"><a href="../../dd/dad/structxii_result.html">xiiResult</a></div><div class="ttdef"><b>Definition</b> Types.h:65</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

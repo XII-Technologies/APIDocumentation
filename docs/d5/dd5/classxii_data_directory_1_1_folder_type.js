@@ -10,6 +10,7 @@ var classxii_data_directory_1_1_folder_type =
     [ "OpenFileToWrite", "d5/dd5/classxii_data_directory_1_1_folder_type.html#ad4896e949adb1dc13c8b4c5c32da9255", null ],
     [ "ReloadExternalConfigs", "d5/dd5/classxii_data_directory_1_1_folder_type.html#a3f826695cf922022c93882a01c3bb1a9", null ],
     [ "RemoveDataDirectory", "d5/dd5/classxii_data_directory_1_1_folder_type.html#a31905d56e983dde3768fc5c56ac7cf3a", null ],
+    [ "ResolveAssetIdentifier", "d5/dd5/classxii_data_directory_1_1_folder_type.html#aacf94121dee0162fac7d5212ac496bc4", null ],
     [ "ResolveAssetRedirection", "d5/dd5/classxii_data_directory_1_1_folder_type.html#a3b421965dbe5303bd0e0aeb85830f3f6", null ],
     [ "m_ReaderWriterMutex", "d5/dd5/classxii_data_directory_1_1_folder_type.html#aaa267fe2a56fc8b9f7d6caea1ada35d5", null ]
 ];

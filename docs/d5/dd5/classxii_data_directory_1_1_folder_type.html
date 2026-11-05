@@ -126,6 +126,8 @@ Static Public Attributes</h2></td></tr>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:a94b3f685a139699b3cf9efedeb608880" id="r_a94b3f685a139699b3cf9efedeb608880"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../de/d3d/classxii_data_directory_reader.html">xiiDataDirectoryReader</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a94b3f685a139699b3cf9efedeb608880">OpenFileToRead</a> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sFile, <a class="el" href="../../dc/df4/structxii_file_share_mode.html#a853af051a2b930d18b9d14f78c09e5e1">xiiFileShareMode::Enum</a> FileShareMode, bool bSpecificallyThisDataDir) override</td></tr>
 <tr class="memitem:a3b421965dbe5303bd0e0aeb85830f3f6" id="r_a3b421965dbe5303bd0e0aeb85830f3f6"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3b421965dbe5303bd0e0aeb85830f3f6">ResolveAssetRedirection</a> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sPathOrAssetGuid, <a class="el" href="../../d4/dbb/classxii_string_builder.html">xiiStringBuilder</a> &amp;out_sRedirection) override</td></tr>
+<tr class="memitem:aacf94121dee0162fac7d5212ac496bc4" id="r_aacf94121dee0162fac7d5212ac496bc4"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aacf94121dee0162fac7d5212ac496bc4">ResolveAssetIdentifier</a> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sPath, <a class="el" href="../../d4/dbb/classxii_string_builder.html">xiiStringBuilder</a> &amp;out_sGuid) override</td></tr>
+<tr class="memdesc:aacf94121dee0162fac7d5212ac496bc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Looks up an authored path in this data directory's asset table without redirecting ordinary file reads.  <br /></td></tr>
 <tr class="memitem:ad4896e949adb1dc13c8b4c5c32da9255" id="r_ad4896e949adb1dc13c8b4c5c32da9255"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d3/dd7/classxii_data_directory_writer.html">xiiDataDirectoryWriter</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad4896e949adb1dc13c8b4c5c32da9255">OpenFileToWrite</a> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sFile, <a class="el" href="../../dc/df4/structxii_file_share_mode.html#a853af051a2b930d18b9d14f78c09e5e1">xiiFileShareMode::Enum</a> FileShareMode) override</td></tr>
 <tr class="memitem:a31905d56e983dde3768fc5c56ac7cf3a" id="r_a31905d56e983dde3768fc5c56ac7cf3a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a31905d56e983dde3768fc5c56ac7cf3a">RemoveDataDirectory</a> () override</td></tr>
 <tr class="memitem:af642d692fe4b6b80117ac1c53358af67" id="r_af642d692fe4b6b80117ac1c53358af67"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af642d692fe4b6b80117ac1c53358af67">DeleteFile</a> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sFile) override</td></tr>
@@ -508,6 +510,39 @@ xiiString128&#160;</td><td class="memItemRight" valign="bottom"><b>m_sDataDirect
 
 </div>
 </div>
+<a id="aacf94121dee0162fac7d5212ac496bc4" name="aacf94121dee0162fac7d5212ac496bc4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aacf94121dee0162fac7d5212ac496bc4">&#9670;&#160;</a></span>ResolveAssetIdentifier()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool xiiDataDirectory::FolderType::ResolveAssetIdentifier </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sPath</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d4/dbb/classxii_string_builder.html">xiiStringBuilder</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>out_sGuid</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel protected">protected</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Looks up an authored path in this data directory's asset table without redirecting ordinary file reads. </p>
+
+<p>Reimplemented from <a class="el" href="../../de/d33/classxii_data_directory_type.html#a8182593da285618d25156570fa4b4a3a">xiiDataDirectoryType</a>.</p>
+
+</div>
+</div>
 <a id="a3b421965dbe5303bd0e0aeb85830f3f6" name="a3b421965dbe5303bd0e0aeb85830f3f6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3b421965dbe5303bd0e0aeb85830f3f6">&#9670;&#160;</a></span>ResolveAssetRedirection()</h2>
 
@@ -561,7 +596,7 @@ xiiString128&#160;</td><td class="memItemRight" valign="bottom"><b>m_sDataDirect
 </table>
 </div><div class="memdoc">
 <p>A 'redirection file' is an optional file located inside a data directory that lists which file access is redirected to which other file lookup. Each redirection is one line in the file (terminated by a <br  />
-). Each line consists of the 'key' string, a semicolon and a 'value' string. No unnecessary whitespace is allowed. When a file that matches 'key' is accessed through a mounted data directory, the file access will be replaced by 'value' (plus s_sRedirectionPrefix) 'key' may be anything (e.g. a GUID string), 'value' should be a valid relative path into the SAME data directory. The redirection file can be used to implement an asset lookup, where assets are identified by GUIDs and need to be mapped to the actual asset file. </p>
+). Each line consists of the 'key' string, a semicolon and a 'value' string. No unnecessary whitespace is allowed. When a file that matches 'key' is accessed through a mounted data directory, the file access will be replaced by 'value' (plus s_sRedirectionPrefix) 'key' may be anything (e.g. a GUID string), 'value' should be a valid relative path into the SAME data directory. The redirection file can be used to implement an asset lookup, where assets are identified by GUIDs and need to be mapped to the actual asset file. A path key with a GUID value records authored asset identity. It is consumed by ResolveAssetIdentifier only; it never redirects ordinary source-file reads. </p>
 
 </div>
 </div>

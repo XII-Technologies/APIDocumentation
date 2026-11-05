@@ -9,6 +9,7 @@ var searchData=
   ['querysettings_6',['QuerySettings',['../d1/d39/classxii_editor_settings.html#a8669755488f2194bbd5725628296de0b',1,'xiiEditorSettings']]],
   ['querytypeimage_7',['QueryTypeImage',['../d1/d47/classxii_qt_image_cache.html#a9cd058e760b5b4ee73145af765c7df5b',1,'xiiQtImageCache']]],
   ['queuecheckfilesystem_8',['QueueCheckFileSystem',['../d8/dbd/classxii_asset_curator.html#a9460df52371b73badecb0728e8b1c528',1,'xiiAssetCurator']]],
-  ['queuetransformassets_9',['QueueTransformAssets',['../d7/d75/classxii_asset_processor.html#ab6af8b4c29b8bb95afc68885ea4f4ccd',1,'xiiAssetProcessor']]],
-  ['quicksort_10',['QuickSort',['../da/d89/classxii_sorting.html#a3e6e0255ac3dc4d93eff8b3c18aedf4c',1,'xiiSorting::QuickSort(Container &amp;ref_container, const Comparer &amp;comparer=Comparer())'],['../da/d89/classxii_sorting.html#a457862f69854abf9f9bf931702281109',1,'xiiSorting::QuickSort(xiiArrayPtr&lt; T &gt; &amp;ref_pArray, const Comparer &amp;comparer=Comparer())']]]
+  ['queuetransformassetreferences_9',['QueueTransformAssetReferences',['../d7/d75/classxii_asset_processor.html#a1fc4b6d5d0cbec18e312a7a1be628ccd',1,'xiiAssetProcessor']]],
+  ['queuetransformassets_10',['QueueTransformAssets',['../d7/d75/classxii_asset_processor.html#ab6af8b4c29b8bb95afc68885ea4f4ccd',1,'xiiAssetProcessor']]],
+  ['quicksort_11',['QuickSort',['../da/d89/classxii_sorting.html#a3e6e0255ac3dc4d93eff8b3c18aedf4c',1,'xiiSorting::QuickSort(Container &amp;ref_container, const Comparer &amp;comparer=Comparer())'],['../da/d89/classxii_sorting.html#a457862f69854abf9f9bf931702281109',1,'xiiSorting::QuickSort(xiiArrayPtr&lt; T &gt; &amp;ref_pArray, const Comparer &amp;comparer=Comparer())']]]
 ];

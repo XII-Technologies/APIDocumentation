@@ -106,6 +106,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a8d740f652dc04a82da6457dedf272b29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copyright (c) Theophilus Eriata. All Rights Reserved. <br /></td></tr>
 <tr class="memitem:a22c04e3d1a13df3a9f28bb3f05d6bc90" id="r_a22c04e3d1a13df3a9f28bb3f05d6bc90"><td class="memItemLeft" align="right" valign="top"><a id="a22c04e3d1a13df3a9f28bb3f05d6bc90" name="a22c04e3d1a13df3a9f28bb3f05d6bc90"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>PositionThumbnailCamera</b> ()</td></tr>
+<tr class="memitem:a8de951fa588cbf27c958e4c2975ad2cc" id="r_a8de951fa588cbf27c958e4c2975ad2cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8de951fa588cbf27c958e4c2975ad2cc">Redraw</a> (bool bRenderEditorGizmos) override</td></tr>
 <tr class="inherit_header pub_methods_classxii_engine_process_view_context"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classxii_engine_process_view_context')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public Member Functions inherited from <a class="el" href="../../de/d97/classxii_engine_process_view_context.html">xiiEngineProcessViewContext</a></td></tr>
 <tr class="memitem:a685a378ce72600da4f0d36ae03b09ea1 inherit pub_methods_classxii_engine_process_view_context" id="r_a685a378ce72600da4f0d36ae03b09ea1"><td class="memItemLeft" align="right" valign="top">
 &#160;</td><td class="memItemRight" valign="bottom"><b>xiiEngineProcessViewContext</b> (<a class="el" href="../../db/df8/classxii_engine_process_document_context.html">xiiEngineProcessDocumentContext</a> *pContext)</td></tr>
@@ -117,12 +118,11 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetViewID</b> (xiiUIn
 <tr class="memitem:a0b06044a0d4a8e87c13921605f25ddf3 inherit pub_methods_classxii_engine_process_view_context" id="r_a0b06044a0d4a8e87c13921605f25ddf3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d97/classxii_engine_process_view_context.html#a0b06044a0d4a8e87c13921605f25ddf3">HandleViewMessage</a> (const <a class="el" href="../../dc/dfe/classxii_editor_engine_view_msg.html">xiiEditorEngineViewMsg</a> *pMsg)</td></tr>
 <tr class="memitem:a842a84c715e890cc2e8d3de3bbc1c009 inherit pub_methods_classxii_engine_process_view_context" id="r_a842a84c715e890cc2e8d3de3bbc1c009"><td class="memItemLeft" align="right" valign="top">
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetupRenderTarget</b> (<a class="el" href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr</a>&lt; <a class="el" href="../../d5/d07/classxii_g_a_l_swap_chain.html">xiiGALSwapChain</a> &gt; pSwapChain, <a class="el" href="../../da/d75/classxii_g_a_l_texture_view.html">xiiGALTextureView</a> *pRenderTargetView, xiiUInt16 uiWidth, xiiUInt16 uiHeight)</td></tr>
-<tr class="memitem:a3b8dbc0420e304041a123a354a0b3b3c inherit pub_methods_classxii_engine_process_view_context" id="r_a3b8dbc0420e304041a123a354a0b3b3c"><td class="memItemLeft" align="right" valign="top">
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>Redraw</b> (bool bRenderEditorGizmos)</td></tr>
 <tr class="memitem:a8dd88252b4c44ec2dbc22902fbcf4668 inherit pub_methods_classxii_engine_process_view_context" id="r_a8dd88252b4c44ec2dbc22902fbcf4668"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d97/classxii_engine_process_view_context.html#a8dd88252b4c44ec2dbc22902fbcf4668">SuspendRendering</a> ()</td></tr>
 <tr class="memdesc:a8dd88252b4c44ec2dbc22902fbcf4668 inherit pub_methods_classxii_engine_process_view_context"><td class="mdescLeft">&#160;</td><td class="mdescRight">Consumes this frame's redraw request without discarding camera or pipeline state.  <br /></td></tr>
-<tr class="memitem:a40b2991f63f7236cf372d224d23d8867 inherit pub_methods_classxii_engine_process_view_context" id="r_a40b2991f63f7236cf372d224d23d8867"><td class="memItemLeft" align="right" valign="top">
-<a class="el" href="../../dd/dcb/classxii_registered_window_handle.html">xiiRegisteredWindowHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetWindowHandle</b> () const</td></tr>
+<tr class="memitem:acd13306b13e07d10cf865bb517401b31 inherit pub_methods_classxii_engine_process_view_context" id="r_acd13306b13e07d10cf865bb517401b31"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>PresentFrame</b> ()</td></tr>
+<tr class="memdesc:acd13306b13e07d10cf865bb517401b31 inherit pub_methods_classxii_engine_process_view_context"><td class="mdescLeft">&#160;</td><td class="mdescRight">Publishes a rendered offscreen frame; called after world render submissions. <br /></td></tr>
 <tr class="memitem:af018ee7b33580f4e5c91a14d9f3d0281 inherit pub_methods_classxii_engine_process_view_context" id="r_af018ee7b33580f4e5c91a14d9f3d0281"><td class="memItemLeft" align="right" valign="top">
 <a class="el" href="../../d5/db8/classxii_view_handle.html">xiiViewHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetViewHandle</b> () const</td></tr>
 <tr class="memitem:a9a8198f294c2e425c08b2e3034ec158f inherit pub_methods_classxii_engine_process_view_context" id="r_a9a8198f294c2e425c08b2e3034ec158f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d97/classxii_engine_process_view_context.html#a9a8198f294c2e425c08b2e3034ec158f">SetRenderPipelineProfile</a> (const <a class="el" href="../../d6/db6/classxii_platform_profile.html">xiiPlatformProfile</a> *profile)</td></tr>
@@ -145,10 +145,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateRenderPipeline<
 <tr class="memitem:abdf5f8ec7fc668daa42183037afe221c inherit pro_methods_classxii_engine_process_view_context" id="r_abdf5f8ec7fc668daa42183037afe221c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d97/classxii_engine_process_view_context.html#abdf5f8ec7fc668daa42183037afe221c">PickGizmoAtPixel</a> (xiiUInt32 x, xiiUInt32 y, <a class="el" href="../../df/dd5/classxii_view_picking_result_msg_to_editor.html">xiiViewPickingResultMsgToEditor</a> &amp;out_result) const</td></tr>
 <tr class="memitem:aaa170c82acae619efe3d9a2fd119f394 inherit pro_methods_classxii_engine_process_view_context" id="r_aaa170c82acae619efe3d9a2fd119f394"><td class="memItemLeft" align="right" valign="top">
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SendViewMessage</b> (<a class="el" href="../../dc/dfe/classxii_editor_engine_view_msg.html">xiiEditorEngineViewMsg</a> *pViewMsg)</td></tr>
-<tr class="memitem:a5ac6d4531ee01377ca873bb2d5b4b6c0 inherit pro_methods_classxii_engine_process_view_context" id="r_a5ac6d4531ee01377ca873bb2d5b4b6c0"><td class="memItemLeft" align="right" valign="top">
-void&#160;</td><td class="memItemRight" valign="bottom"><b>HandleWindowUpdate</b> (xiiWindowHandle hWnd, xiiUInt16 uiWidth, xiiUInt16 uiHeight)</td></tr>
-<tr class="memitem:ab884444ffcc966dc1677f8c549e33464 inherit pro_methods_classxii_engine_process_view_context" id="r_ab884444ffcc966dc1677f8c549e33464"><td class="memItemLeft" align="right" valign="top">
-void&#160;</td><td class="memItemRight" valign="bottom"><b>OnSwapChainChanged</b> (<a class="el" href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr</a>&lt; <a class="el" href="../../d5/d07/classxii_g_a_l_swap_chain.html">xiiGALSwapChain</a> &gt; pSwapChain, xiiSizeU32 size)</td></tr>
+<tr class="memitem:a95ae70111f3ef07fb525e9da5cbb013c inherit pro_methods_classxii_engine_process_view_context" id="r_a95ae70111f3ef07fb525e9da5cbb013c"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateRenderTarget</b> (xiiUInt16 uiWidth, xiiUInt16 uiHeight, bool bShared)</td></tr>
 <tr class="memitem:a20751dd22a3ad05f5cb850170d24d5ba inherit pro_methods_classxii_engine_process_view_context" id="r_a20751dd22a3ad05f5cb850170d24d5ba"><td class="memItemLeft" align="right" valign="top">
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetCamera</b> (const <a class="el" href="../../d6/d27/classxii_view_redraw_msg_to_engine.html">xiiViewRedrawMsgToEngine</a> *pMsg)</td></tr>
 </table><table class="memberdecls">
@@ -163,8 +161,6 @@ Protected Attributes</h2></td></tr>
 <a class="el" href="../../d5/db8/classxii_view_handle.html">xiiViewHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_hView</b></td></tr>
 <tr class="memitem:a9575c813304f5a9b659eaf70de551bfb inherit pro_attribs_classxii_engine_process_view_context" id="r_a9575c813304f5a9b659eaf70de551bfb"><td class="memItemLeft" align="right" valign="top">
 xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b>m_uiViewID</b></td></tr>
-<tr class="memitem:a140f74aaba5a616c3bf362c825574642 inherit pro_attribs_classxii_engine_process_view_context" id="r_a140f74aaba5a616c3bf362c825574642"><td class="memItemLeft" align="right" valign="top">
-<a class="el" href="../../dd/dcb/classxii_registered_window_handle.html">xiiRegisteredWindowHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_hEditorWindow</b></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-inherited" class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -200,6 +196,33 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>FocusCameraOnO
 <p>Create the actual view. </p>
 
 <p>Implements <a class="el" href="../../de/d97/classxii_engine_process_view_context.html#ae419e11d9606ab1a5f79d3049ef891d3">xiiEngineProcessViewContext</a>.</p>
+
+</div>
+</div>
+<a id="a8de951fa588cbf27c958e4c2975ad2cc" name="a8de951fa588cbf27c958e4c2975ad2cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8de951fa588cbf27c958e4c2975ad2cc">&#9670;&#160;</a></span>Redraw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiMaterialViewContext::Redraw </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>bRenderEditorGizmos</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="../../de/d97/classxii_engine_process_view_context.html">xiiEngineProcessViewContext</a>.</p>
 
 </div>
 </div>

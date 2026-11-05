@@ -110,10 +110,32 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>MainThreadTick</b> ()
 <tr class="memitem:a91354fd027c5eb0d2f259bd8279fecaa" id="r_a91354fd027c5eb0d2f259bd8279fecaa"><td class="memItemLeft" align="right" valign="top"><a id="a91354fd027c5eb0d2f259bd8279fecaa" name="a91354fd027c5eb0d2f259bd8279fecaa"></a>
 <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>WriteAssetTables</b> (const <a class="el" href="../../d6/db6/classxii_platform_profile.html">xiiPlatformProfile</a> *pAssetProfile, bool bForce)</td></tr>
 <tr class="memdesc:a91354fd027c5eb0d2f259bd8279fecaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes the asset table for each data dir for the given asset profile. <br /></td></tr>
+<tr class="memitem:adf2e2d84ec51cf03656498eef8a82de7" id="r_adf2e2d84ec51cf03656498eef8a82de7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adf2e2d84ec51cf03656498eef8a82de7">InvalidateTables</a> ()</td></tr>
+<tr class="memitem:a470b8b0d84ad1db1da797926df4df918" id="r_a470b8b0d84ad1db1da797926df4df918"><td class="memItemLeft" align="right" valign="top"><a id="a470b8b0d84ad1db1da797926df4df918" name="a470b8b0d84ad1db1da797926df4df918"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ClearAssetTables</b> ()</td></tr>
+<tr class="memdesc:a470b8b0d84ad1db1da797926df4df918"><td class="mdescLeft">&#160;</td><td class="mdescRight">Discards tables borrowing profile pointers before profiles are replaced or destroyed. <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Keeps track of all asset tables and their state as well as reloading modified resources. </p>
 </div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a id="adf2e2d84ec51cf03656498eef8a82de7" name="adf2e2d84ec51cf03656498eef8a82de7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf2e2d84ec51cf03656498eef8a82de7">&#9670;&#160;</a></span>InvalidateTables()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiAssetTableWriter::InvalidateTables </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Invalidates cached entries as soon as curator identities, paths or outputs change. Must be called under the curator mutex, before deferred UI events are delivered. </p>
+
+</div>
+</div>
 <a id="a99a14823e7df5676bb2a0194ec0421d4" name="a99a14823e7df5676bb2a0194ec0421d4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a99a14823e7df5676bb2a0194ec0421d4">&#9670;&#160;</a></span>NeedsReloadResource()</h2>
 

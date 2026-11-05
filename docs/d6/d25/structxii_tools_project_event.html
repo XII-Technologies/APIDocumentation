@@ -98,13 +98,16 @@ $(function(){initNavTree('d6/d25/structxii_tools_project_event.html','../../','d
 Public Types</h2></td></tr>
 <tr class="memitem:a6f64ba13c1d8539f01b72dd4de758297" id="r_a6f64ba13c1d8539f01b72dd4de758297"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6f64ba13c1d8539f01b72dd4de758297">Type</a> { <br />
 &#160;&#160;<b>ProjectCreated</b>
+, <a class="el" href="#a6f64ba13c1d8539f01b72dd4de758297ae33fea4a6cd62a193eeceb77d26e88d4">ProjectOpening</a>
+, <b>ProjectOpenFailed</b>
 , <b>ProjectOpened</b>
-, <b>ProjectFirstSetup</b>
-, <b>ProjectSaveState</b>
 , <br />
-&#160;&#160;<b>ProjectClosing</b>
+&#160;&#160;<b>ProjectFirstSetup</b>
+, <b>ProjectSaveState</b>
+, <b>ProjectClosing</b>
 , <b>ProjectClosed</b>
-, <a class="el" href="#a6f64ba13c1d8539f01b72dd4de758297aec604c03f58ca260def1ad2fc84ae5ef">ProjectConfigChanged</a>
+, <br />
+&#160;&#160;<a class="el" href="#a6f64ba13c1d8539f01b72dd4de758297aec604c03f58ca260def1ad2fc84ae5ef">ProjectConfigChanged</a>
 , <a class="el" href="#a6f64ba13c1d8539f01b72dd4de758297a317a44053c6b90a1486598ff40f9dfa8">SaveAll</a>
 <br />
  }</td></tr>
@@ -115,6 +118,9 @@ Public Attributes</h2></td></tr>
 <a class="el" href="../../dd/d1c/classxii_tools_project.html">xiiToolsProject</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pProject</b></td></tr>
 <tr class="memitem:ad4b4872a572a7c00781bdac1bac1eaae" id="r_ad4b4872a572a7c00781bdac1bac1eaae"><td class="memItemLeft" align="right" valign="top"><a id="ad4b4872a572a7c00781bdac1bac1eaae" name="ad4b4872a572a7c00781bdac1bac1eaae"></a>
 <a class="el" href="#a6f64ba13c1d8539f01b72dd4de758297">Type</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_Type</b></td></tr>
+<tr class="memitem:aa81bfa557d22e515e9d9e416dd30d852" id="r_aa81bfa557d22e515e9d9e416dd30d852"><td class="memItemLeft" align="right" valign="top"><a id="aa81bfa557d22e515e9d9e416dd30d852" name="aa81bfa557d22e515e9d9e416dd30d852"></a>
+<a class="el" href="../../d0/d54/structxii_status.html">xiiStatus</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pInitializationStatus</b> = nullptr</td></tr>
+<tr class="memdesc:aa81bfa557d22e515e9d9e416dd30d852"><td class="mdescLeft">&#160;</td><td class="mdescRight">Borrowed only during ProjectOpening / ProjectOpenFailed; never retain. <br /></td></tr>
 </table>
 <a name="doc-enum-members" id="doc-enum-members"></a><h2 id="header-doc-enum-members" class="groupheader">Member Enumeration Documentation</h2>
 <a id="a6f64ba13c1d8539f01b72dd4de758297" name="a6f64ba13c1d8539f01b72dd4de758297"></a>
@@ -137,7 +143,9 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a6f64ba13c1d8539f01b72dd4de758297aec604c03f58ca260def1ad2fc84ae5ef" name="a6f64ba13c1d8539f01b72dd4de758297aec604c03f58ca260def1ad2fc84ae5ef"></a>ProjectConfigChanged&#160;</td><td class="fielddoc"><p>Sent when global project configuration data was changed and thus certain menus would need to update their content (or just deselect any item, forcing the user to reselect and thus update state) </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a6f64ba13c1d8539f01b72dd4de758297ae33fea4a6cd62a193eeceb77d26e88d4" name="a6f64ba13c1d8539f01b72dd4de758297ae33fea4a6cd62a193eeceb77d26e88d4"></a>ProjectOpening&#160;</td><td class="fielddoc"><p>Manifest loaded; listeners initialize required subsystems and report failure through m_pInitializationStatus. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6f64ba13c1d8539f01b72dd4de758297aec604c03f58ca260def1ad2fc84ae5ef" name="a6f64ba13c1d8539f01b72dd4de758297aec604c03f58ca260def1ad2fc84ae5ef"></a>ProjectConfigChanged&#160;</td><td class="fielddoc"><p>Sent when global project configuration data was changed and thus certain menus would need to update their content (or just deselect any item, forcing the user to reselect and thus update state) </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a6f64ba13c1d8539f01b72dd4de758297a317a44053c6b90a1486598ff40f9dfa8" name="a6f64ba13c1d8539f01b72dd4de758297a317a44053c6b90a1486598ff40f9dfa8"></a>SaveAll&#160;</td><td class="fielddoc"><p>When sent, this shall save all outstanding modifications. </p>
 </td></tr>

@@ -12,6 +12,7 @@ var classxii_data_directory_type =
     [ "OpenFileToWrite", "de/d33/classxii_data_directory_type.html#a93fad0272237e4277b0c3403f5c282aa", null ],
     [ "ReloadExternalConfigs", "de/d33/classxii_data_directory_type.html#a188b02feb34f82ee3fda2d685f640f6b", null ],
     [ "RemoveDataDirectory", "de/d33/classxii_data_directory_type.html#ae00b69a7586651b18fe3a975f539c3a3", null ],
+    [ "ResolveAssetIdentifier", "de/d33/classxii_data_directory_type.html#a8182593da285618d25156570fa4b4a3a", null ],
     [ "ResolveAssetRedirection", "de/d33/classxii_data_directory_type.html#a6bc3b529b723c4e6e4c88140cbef098e", null ],
     [ "m_sDataDirectoryPath", "de/d33/classxii_data_directory_type.html#aa2e35e87ebc68dea17046ebf50c5f935", null ]
 ];

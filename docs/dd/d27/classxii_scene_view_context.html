@@ -120,8 +120,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetInvisibleLayerTags
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetViewID</b> (xiiUInt32 uiId)</td></tr>
 <tr class="memitem:a3a915d6fcb23333f2e49c413d1a02101 inherit pub_methods_classxii_engine_process_view_context" id="r_a3a915d6fcb23333f2e49c413d1a02101"><td class="memItemLeft" align="right" valign="top">
 <a class="el" href="../../db/df8/classxii_engine_process_document_context.html">xiiEngineProcessDocumentContext</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetDocumentContext</b> () const</td></tr>
-<tr class="memitem:a40b2991f63f7236cf372d224d23d8867 inherit pub_methods_classxii_engine_process_view_context" id="r_a40b2991f63f7236cf372d224d23d8867"><td class="memItemLeft" align="right" valign="top">
-<a class="el" href="../../dd/dcb/classxii_registered_window_handle.html">xiiRegisteredWindowHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetWindowHandle</b> () const</td></tr>
+<tr class="memitem:acd13306b13e07d10cf865bb517401b31 inherit pub_methods_classxii_engine_process_view_context" id="r_acd13306b13e07d10cf865bb517401b31"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>PresentFrame</b> ()</td></tr>
+<tr class="memdesc:acd13306b13e07d10cf865bb517401b31 inherit pub_methods_classxii_engine_process_view_context"><td class="mdescLeft">&#160;</td><td class="mdescRight">Publishes a rendered offscreen frame; called after world render submissions. <br /></td></tr>
 <tr class="memitem:af018ee7b33580f4e5c91a14d9f3d0281 inherit pub_methods_classxii_engine_process_view_context" id="r_af018ee7b33580f4e5c91a14d9f3d0281"><td class="memItemLeft" align="right" valign="top">
 <a class="el" href="../../d5/db8/classxii_view_handle.html">xiiViewHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetViewHandle</b> () const</td></tr>
 <tr class="memitem:a9a8198f294c2e425c08b2e3034ec158f inherit pub_methods_classxii_engine_process_view_context" id="r_a9a8198f294c2e425c08b2e3034ec158f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d97/classxii_engine_process_view_context.html#a9a8198f294c2e425c08b2e3034ec158f">SetRenderPipelineProfile</a> (const <a class="el" href="../../d6/db6/classxii_platform_profile.html">xiiPlatformProfile</a> *profile)</td></tr>
@@ -150,10 +151,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateRenderPipeline<
 <tr class="memitem:abdf5f8ec7fc668daa42183037afe221c inherit pro_methods_classxii_engine_process_view_context" id="r_abdf5f8ec7fc668daa42183037afe221c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d97/classxii_engine_process_view_context.html#abdf5f8ec7fc668daa42183037afe221c">PickGizmoAtPixel</a> (xiiUInt32 x, xiiUInt32 y, <a class="el" href="../../df/dd5/classxii_view_picking_result_msg_to_editor.html">xiiViewPickingResultMsgToEditor</a> &amp;out_result) const</td></tr>
 <tr class="memitem:aaa170c82acae619efe3d9a2fd119f394 inherit pro_methods_classxii_engine_process_view_context" id="r_aaa170c82acae619efe3d9a2fd119f394"><td class="memItemLeft" align="right" valign="top">
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SendViewMessage</b> (<a class="el" href="../../dc/dfe/classxii_editor_engine_view_msg.html">xiiEditorEngineViewMsg</a> *pViewMsg)</td></tr>
-<tr class="memitem:a5ac6d4531ee01377ca873bb2d5b4b6c0 inherit pro_methods_classxii_engine_process_view_context" id="r_a5ac6d4531ee01377ca873bb2d5b4b6c0"><td class="memItemLeft" align="right" valign="top">
-void&#160;</td><td class="memItemRight" valign="bottom"><b>HandleWindowUpdate</b> (xiiWindowHandle hWnd, xiiUInt16 uiWidth, xiiUInt16 uiHeight)</td></tr>
-<tr class="memitem:ab884444ffcc966dc1677f8c549e33464 inherit pro_methods_classxii_engine_process_view_context" id="r_ab884444ffcc966dc1677f8c549e33464"><td class="memItemLeft" align="right" valign="top">
-void&#160;</td><td class="memItemRight" valign="bottom"><b>OnSwapChainChanged</b> (<a class="el" href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr</a>&lt; <a class="el" href="../../d5/d07/classxii_g_a_l_swap_chain.html">xiiGALSwapChain</a> &gt; pSwapChain, xiiSizeU32 size)</td></tr>
+<tr class="memitem:a95ae70111f3ef07fb525e9da5cbb013c inherit pro_methods_classxii_engine_process_view_context" id="r_a95ae70111f3ef07fb525e9da5cbb013c"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateRenderTarget</b> (xiiUInt16 uiWidth, xiiUInt16 uiHeight, bool bShared)</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-inherited" class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -168,8 +167,6 @@ static bool&#160;</td><td class="memItemRight" valign="bottom"><b>FocusCameraOnO
 <a class="el" href="../../d5/db8/classxii_view_handle.html">xiiViewHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_hView</b></td></tr>
 <tr class="memitem:a9575c813304f5a9b659eaf70de551bfb inherit pro_attribs_classxii_engine_process_view_context" id="r_a9575c813304f5a9b659eaf70de551bfb"><td class="memItemLeft" align="right" valign="top">
 xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b>m_uiViewID</b></td></tr>
-<tr class="memitem:a140f74aaba5a616c3bf362c825574642 inherit pro_attribs_classxii_engine_process_view_context" id="r_a140f74aaba5a616c3bf362c825574642"><td class="memItemLeft" align="right" valign="top">
-<a class="el" href="../../dd/dcb/classxii_registered_window_handle.html">xiiRegisteredWindowHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_hEditorWindow</b></td></tr>
 </table>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
 <a id="ab16988651273510e99566a9c260ff306" name="ab16988651273510e99566a9c260ff306"></a>

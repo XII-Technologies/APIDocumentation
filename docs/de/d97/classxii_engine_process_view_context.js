@@ -5,6 +5,7 @@ var classxii_engine_process_view_context =
     [ "DrawGrid", "de/d97/classxii_engine_process_view_context.html#afb896398b735fef597b1f9b82e912954", null ],
     [ "GetView", "de/d97/classxii_engine_process_view_context.html#a281831a78b4b183cfb4c073d711ae2ef", null ],
     [ "PickGizmoAtPixel", "de/d97/classxii_engine_process_view_context.html#abdf5f8ec7fc668daa42183037afe221c", null ],
+    [ "PresentFrame", "de/d97/classxii_engine_process_view_context.html#acd13306b13e07d10cf865bb517401b31", null ],
     [ "SetRenderPipelineProfile", "de/d97/classxii_engine_process_view_context.html#a9a8198f294c2e425c08b2e3034ec158f", null ],
     [ "SuspendRendering", "de/d97/classxii_engine_process_view_context.html#a8dd88252b4c44ec2dbc22902fbcf4668", null ]
 ];

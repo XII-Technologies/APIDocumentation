@@ -10,6 +10,7 @@ var classxii_g_a_l_command_list =
     [ "BeginDebugGroup", "dc/d80/classxii_g_a_l_command_list.html#a745cbd304821bd8fc62996d9dcd5678d", null ],
     [ "BeginQuery", "dc/d80/classxii_g_a_l_command_list.html#ab7a2dec531671f3c862df3a8668c949e", null ],
     [ "BeginRenderPass", "dc/d80/classxii_g_a_l_command_list.html#a39d229a291c085dc7847f46182da31e0", null ],
+    [ "BlitTexture", "dc/d80/classxii_g_a_l_command_list.html#a6545ec32fe7d1324b8aa5abdc15d0448", null ],
     [ "BuildBLAS", "dc/d80/classxii_g_a_l_command_list.html#a9f3ae4a336d4290b3b7f74e0eebbd5a3", null ],
     [ "BuildTLAS", "dc/d80/classxii_g_a_l_command_list.html#a97542aa92281954e8f5edf6052f461b2", null ],
     [ "ClearDepthStencilView", "dc/d80/classxii_g_a_l_command_list.html#a6e85c426309a4ea7b4919b3437f293f6", null ],

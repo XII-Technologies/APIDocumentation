@@ -108,6 +108,7 @@ Inheritance diagram for xiiWindowOutputTargetGAL:</div>
 Public Types</h2></td></tr>
 <tr class="memitem:ae8089b8e808b46b7f2b41ecd8e470b96" id="r_ae8089b8e808b46b7f2b41ecd8e470b96"><td class="memItemLeft" align="right" valign="top"><a id="ae8089b8e808b46b7f2b41ecd8e470b96" name="ae8089b8e808b46b7f2b41ecd8e470b96"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>OnSwapChainChanged</b> = <a class="el" href="../../dc/d84/structxii_delegate.html">xiiDelegate</a>&lt;void(<a class="el" href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr</a>&lt;<a class="el" href="../../d5/d07/classxii_g_a_l_swap_chain.html">xiiGALSwapChain</a>&gt; pSwapChain, xiiSizeU32 vSize)&gt;</td></tr>
+<tr class="memdesc:ae8089b8e808b46b7f2b41ecd8e470b96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reports the allocated swapchain extent, which may differ from the requested window size. <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -115,7 +116,7 @@ Public Member Functions</h2></td></tr>
 XII_ALWAYS_INLINE const <a class="el" href="../../d5/d07/classxii_g_a_l_swap_chain.html">xiiGALSwapChain</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetSwapChain</b> () const</td></tr>
 <tr class="memdesc:a355ea7974e6a33a537f634eb84bfe563"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current swapchain. This can be used by the application to access the back buffer texture for rendering, e.g. by using it as a render target. <br /></td></tr>
 <tr class="memitem:a51c30edfd4f0e72d0f216330c04f1adc" id="r_a51c30edfd4f0e72d0f216330c04f1adc"><td class="memItemLeft" align="right" valign="top"><a id="a51c30edfd4f0e72d0f216330c04f1adc" name="a51c30edfd4f0e72d0f216330c04f1adc"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>xiiWindowOutputTargetGAL</b> (const <a class="el" href="../../d7/dc7/structxii_g_a_l_swap_chain_creation_description.html">xiiGALSwapChainCreationDescription</a> &amp;description, OnSwapChainChanged onSwapChainChanged={})</td></tr>
+&#160;</td><td class="memItemRight" valign="bottom"><b>xiiWindowOutputTargetGAL</b> (const <a class="el" href="../../d7/dc7/structxii_g_a_l_swap_chain_creation_description.html">xiiGALSwapChainCreationDescription</a> &amp;description, <a class="el" href="#ae8089b8e808b46b7f2b41ecd8e470b96">OnSwapChainChanged</a> onSwapChainChanged={})</td></tr>
 <tr class="memdesc:a51c30edfd4f0e72d0f216330c04f1adc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copyright (c) Theophilus Eriata. All Rights Reserved. <br /></td></tr>
 <tr class="memitem:a20e4daffd8ce77ce6a7640b2047c05d0" id="r_a20e4daffd8ce77ce6a7640b2047c05d0"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a20e4daffd8ce77ce6a7640b2047c05d0">GetVSyncEnabled</a> () const override</td></tr>
 <tr class="memdesc:a20e4daffd8ce77ce6a7640b2047c05d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether VSync is enabled for this output target.  <br /></td></tr>
@@ -134,7 +135,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>RequestScreenshot</b>
 <tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a9ef2c10082fb8de2bb293a69bcf2ac50" id="r_a9ef2c10082fb8de2bb293a69bcf2ac50"><td class="memItemLeft" align="right" valign="top"><a id="a9ef2c10082fb8de2bb293a69bcf2ac50" name="a9ef2c10082fb8de2bb293a69bcf2ac50"></a>
-OnSwapChainChanged&#160;</td><td class="memItemRight" valign="bottom"><b>m_OnSwapChainChanged</b></td></tr>
+<a class="el" href="#ae8089b8e808b46b7f2b41ecd8e470b96">OnSwapChainChanged</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_OnSwapChainChanged</b></td></tr>
 <tr class="memdesc:a9ef2c10082fb8de2bb293a69bcf2ac50"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is called whenever the swapchain is created or resized. The application can use this to react to changes in the swapchain, e.g. by updating any references to it in <a class="el" href="../../dd/df1/classxii_view.html">xiiView</a>. <br /></td></tr>
 <tr class="memitem:a125daee4876f6815fc189851255c8543" id="r_a125daee4876f6815fc189851255c8543"><td class="memItemLeft" align="right" valign="top"><a id="a125daee4876f6815fc189851255c8543" name="a125daee4876f6815fc189851255c8543"></a>
 <a class="el" href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr</a>&lt; <a class="el" href="../../d5/d07/classxii_g_a_l_swap_chain.html">xiiGALSwapChain</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_pSwapChain</b></td></tr>
