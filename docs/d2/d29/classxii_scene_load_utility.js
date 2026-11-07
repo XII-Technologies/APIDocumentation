@@ -1,8 +1,13 @@
 var classxii_scene_load_utility =
 [
+    [ "LoadingPhase", "d2/d29/classxii_scene_load_utility.html#a5f4b33b3c27d92cfeee07807dbb56c90", [
+      [ "Reading", "d2/d29/classxii_scene_load_utility.html#a5f4b33b3c27d92cfeee07807dbb56c90a26fccddf2f94b1685b184267996e10f8", null ],
+      [ "Instantiating", "d2/d29/classxii_scene_load_utility.html#a5f4b33b3c27d92cfeee07807dbb56c90a0d1dd5c93dd100829da84cb8844a1e1d", null ]
+    ] ],
     [ "LoadingState", "d2/d29/classxii_scene_load_utility.html#a1767a7cea4cae164dadf14e250863d67", [
       [ "FinishedAndRetrieved", "d2/d29/classxii_scene_load_utility.html#a1767a7cea4cae164dadf14e250863d67a114614c6b69d9aeda72c88002dc26dce", null ]
     ] ],
+    [ "Cancel", "d2/d29/classxii_scene_load_utility.html#a1a10603e3c00e60fd9b32f415bea889c", null ],
     [ "GetLoadingFailureReason", "d2/d29/classxii_scene_load_utility.html#afebd11cb4750eca3499c3aea71e8da17", null ],
     [ "GetLoadingProgress", "d2/d29/classxii_scene_load_utility.html#a3b7bb425d7aacc589f71d1c7467f5534", null ],
     [ "GetLoadingState", "d2/d29/classxii_scene_load_utility.html#a8a4f2e1dab430a2204974f983b10c65c", null ],

@@ -4,5 +4,6 @@ var structxii_ray_tracing_resources_1_1_build_handles =
     [ "m_hMaterialData", "d1/d13/structxii_ray_tracing_resources_1_1_build_handles.html#adfe67292fe717a4babf3ac4edad5c032", null ],
     [ "m_hSceneDependency", "d1/d13/structxii_ray_tracing_resources_1_1_build_handles.html#aec712b5cfc71334accfa26c7120ce8f2", null ],
     [ "m_pTopLevelAS", "d1/d13/structxii_ray_tracing_resources_1_1_build_handles.html#a057258873f2a9f2b7c912eb9771c87eb", null ],
-    [ "m_Result", "d1/d13/structxii_ray_tracing_resources_1_1_build_handles.html#a198599912431177165e94ca1e1a574e3", null ]
+    [ "m_Result", "d1/d13/structxii_ray_tracing_resources_1_1_build_handles.html#a198599912431177165e94ca1e1a574e3", null ],
+    [ "m_uiEmissivePrimitiveCount", "d1/d13/structxii_ray_tracing_resources_1_1_build_handles.html#a116b4e721129ceb1c076d843b7c850bf", null ]
 ];

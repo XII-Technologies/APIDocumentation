@@ -4,6 +4,7 @@ var classxii_fallback_game_state =
     [ "ConfigureMainCamera", "d0/dc7/classxii_fallback_game_state.html#a0c808937035834ae958eef56bf7fc046", null ],
     [ "IsFallbackGameState", "d0/dc7/classxii_fallback_game_state.html#a8443299fc5104c6d002b429c0e35b7a6", null ],
     [ "OnActivation", "d0/dc7/classxii_fallback_game_state.html#a10bb5124d3d8b463dd7729a9fda17225", null ],
+    [ "OnBackgroundSceneLoadingCanceled", "d0/dc7/classxii_fallback_game_state.html#a313f4c5ee614d8e237c48bae83a07999", null ],
     [ "OnBackgroundSceneLoadingFailed", "d0/dc7/classxii_fallback_game_state.html#afdf1019ceeeed37a7a994bff2a2c4757", null ],
     [ "OnBackgroundSceneLoadingFinished", "d0/dc7/classxii_fallback_game_state.html#ae213eb42042fca6486cda1ae506d7fd7", null ],
     [ "ProcessInput", "d0/dc7/classxii_fallback_game_state.html#a14c86722352ae5e9924af178bb43ecb7", null ],

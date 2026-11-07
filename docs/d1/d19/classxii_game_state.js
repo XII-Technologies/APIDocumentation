@@ -22,6 +22,7 @@ var classxii_game_state =
     [ "OnBackgroundSceneLoadingCanceled", "d1/d19/classxii_game_state.html#aedc6ad3bb0eb850d5fcf72047e468470", null ],
     [ "OnBackgroundSceneLoadingFailed", "d1/d19/classxii_game_state.html#ac27b142c9e511a367f31508185f08335", null ],
     [ "OnBackgroundSceneLoadingFinished", "d1/d19/classxii_game_state.html#a4cb24091e12451b79f387c2a82b34e22", null ],
+    [ "OnBeforeSceneActivation", "d1/d19/classxii_game_state.html#afa64cafaf7837e2bf4766319adff63c5", null ],
     [ "OnChangedMainWorld", "d1/d19/classxii_game_state.html#a3df1da13d7a2198a6e443079f4b82fa5", null ],
     [ "OnDeactivation", "d1/d19/classxii_game_state.html#a43c949ae7d5447924a3a4838193c60e6", null ],
     [ "OnWindowEvent", "d1/d19/classxii_game_state.html#aee8e458bf976b335ecae7611e394c83a", null ],
@@ -31,6 +32,7 @@ var classxii_game_state =
     [ "SpawnPlayer", "d1/d19/classxii_game_state.html#a24bec37786852825c0ec04dcd6fb2783", null ],
     [ "StartBackgroundSceneLoading", "d1/d19/classxii_game_state.html#a5c42a645feac6a576045fcf295cb817e", null ],
     [ "SwitchToLoadingScreen", "d1/d19/classxii_game_state.html#ae106c19597806f80ba07823cf464c8b0", null ],
+    [ "TransitionToScene", "d1/d19/classxii_game_state.html#aed5aac054659d95511556701180c2c2d", null ],
     [ "UpdateBackgroundSceneLoading", "d1/d19/classxii_game_state.html#ac34835c529189c990c4e194d53ab8e09", null ],
     [ "WasQuitRequested", "d1/d19/classxii_game_state.html#ae58f1c53d581f3a5929f176c3ef4279c", null ]
 ];

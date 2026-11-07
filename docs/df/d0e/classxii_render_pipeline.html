@@ -117,6 +117,7 @@ Public Member Functions</h2></td></tr>
 <a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; const <a class="el" href="../../de/d5f/structxii_render_pipeline_1_1_interface.html">Interface</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetInterface</b> () const</td></tr>
 <tr class="memitem:a6738295de5757da15a3e919a63143594" id="r_a6738295de5757da15a3e919a63143594"><td class="memItemLeft" align="right" valign="top"><a id="a6738295de5757da15a3e919a63143594" name="a6738295de5757da15a3e919a63143594"></a>
 xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b>FindInterface</b> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> name, bool input) const</td></tr>
+<tr class="memitem:affbcb60b1efe306c313da3804bf355b4" id="r_affbcb60b1efe306c313da3804bf355b4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#affbcb60b1efe306c313da3804bf355b4">DoesInterfaceOutputDependOnInput</a> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> output, <a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> input) const</td></tr>
 <tr class="memitem:a54b04cf2d8c1c9a0f430ccf2be57ac00" id="r_a54b04cf2d8c1c9a0f430ccf2be57ac00"><td class="memItemLeft" align="right" valign="top"><a id="a54b04cf2d8c1c9a0f430ccf2be57ac00" name="a54b04cf2d8c1c9a0f430ccf2be57ac00"></a>
 const <a class="el" href="../../d6/d19/classxii_graph.html">xiiGraph</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetTopology</b> () const</td></tr>
 <tr class="memitem:a555063f67b3b1d62fca4ccf37499b409" id="r_a555063f67b3b1d62fca4ccf37499b409"><td class="memItemLeft" align="right" valign="top"><a id="a555063f67b3b1d62fca4ccf37499b409" name="a555063f67b3b1d62fca4ccf37499b409"></a>
@@ -180,7 +181,30 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>xiiRenderPipelineIns
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Immutable, shared compilation. Core graph owns structural dependencies; execution uses a flat order. No pass instance, view pointer, GPU object, frame binding or temporal history is shared here. </p>
-</div><hr/>The documentation for this class was generated from the following files:<ul>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a id="affbcb60b1efe306c313da3804bf355b4" name="affbcb60b1efe306c313da3804bf355b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#affbcb60b1efe306c313da3804bf355b4">&#9670;&#160;</a></span>DoesInterfaceOutputDependOnInput()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool xiiRenderPipeline::DoesInterfaceOutputDependOnInput </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>output</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>input</em></span>&#160;) const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Conservative leaf-pass dependency after expansion. Independent subgraph outputs can feed other nodes without depending on the subgraph's unrelated image inputs. Unknown pins fail closed. </p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/runner/work/XII/XII/Source/Engine/GraphicsCore/Pipeline/<a class="el" href="../../d8/d07/_render_pipeline_resource_8h_source.html">RenderPipelineResource.h</a></li>
 <li>/home/runner/work/XII/XII/Source/Engine/GraphicsCore/Pipeline/Implementation/<b>RenderPipelineCompiler.cpp</b></li>
 <li>/home/runner/work/XII/XII/Source/Engine/GraphicsCore/Pipeline/Implementation/<b>RenderPipelineMemory.cpp</b></li>

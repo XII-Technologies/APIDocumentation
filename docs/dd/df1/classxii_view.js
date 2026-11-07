@@ -25,6 +25,7 @@ var classxii_view =
     [ "SetRenderScale", "dd/df1/classxii_view.html#a9d9cbf2885dcab4378e74bb1428d5424", null ],
     [ "SetRenderTargetView", "dd/df1/classxii_view.html#a1959d832928f8f65c271ce61e91fcd36", null ],
     [ "SetSensorProfile", "dd/df1/classxii_view.html#a95bde0e227b8e39bbafe2c5ade629ff3", null ],
+    [ "SetShowFrameStats", "dd/df1/classxii_view.html#aa94e2426ae749c89d4da2ab782081c1d", null ],
     [ "m_ExcludeTags", "dd/df1/classxii_view.html#a2b9e3402b4df3de1853bdc656f570176", null ],
     [ "m_IncludeTags", "dd/df1/classxii_view.html#a2e1c8705d16cc160c3b7bf510a0b9f9b", null ]
 ];

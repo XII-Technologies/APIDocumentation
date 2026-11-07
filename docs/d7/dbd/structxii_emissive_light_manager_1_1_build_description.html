@@ -102,6 +102,13 @@ Public Attributes</h2></td></tr>
 <a class="el" href="../../d8/d6a/structxii_geometry_residency_manager_1_1_upload_handles.html">xiiGeometryResidencyManager::UploadHandles</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_Geometry</b></td></tr>
 <tr class="memitem:a2d981286cdd8e143a881e8f4f1b9305e" id="r_a2d981286cdd8e143a881e8f4f1b9305e"><td class="memItemLeft" align="right" valign="top"><a id="a2d981286cdd8e143a881e8f4f1b9305e" name="a2d981286cdd8e143a881e8f4f1b9305e"></a>
 <a class="el" href="../../da/d9d/structxii_material_gpu_storage_1_1_upload_handles.html">xiiMaterialGpuStorage::UploadHandles</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_Materials</b></td></tr>
+<tr class="memitem:a2a22acac96cbc9a86d9f0ff90b54b546" id="r_a2a22acac96cbc9a86d9f0ff90b54b546"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/d0f/classxii_render_graph_buffer_handle.html">xiiRenderGraphBufferHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2a22acac96cbc9a86d9f0ff90b54b546">m_hRayGeometry</a></td></tr>
+<tr class="memitem:ac0990b1bf7b2b536388b208b76dfb08e" id="r_ac0990b1bf7b2b536388b208b76dfb08e"><td class="memItemLeft" align="right" valign="top"><a id="ac0990b1bf7b2b536388b208b76dfb08e" name="ac0990b1bf7b2b536388b208b76dfb08e"></a>
+<a class="el" href="../../df/d0f/classxii_render_graph_buffer_handle.html">xiiRenderGraphBufferHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_hRayMaterials</b></td></tr>
+<tr class="memitem:aa326e15e5e220666af2cd5fb66b3ab61" id="r_aa326e15e5e220666af2cd5fb66b3ab61"><td class="memItemLeft" align="right" valign="top"><a id="aa326e15e5e220666af2cd5fb66b3ab61" name="aa326e15e5e220666af2cd5fb66b3ab61"></a>
+<a class="el" href="../../df/d0f/classxii_render_graph_buffer_handle.html">xiiRenderGraphBufferHandle</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_hRaySceneDependency</b></td></tr>
+<tr class="memitem:a88de801c202f0c456e87f7b5298ec8ab" id="r_a88de801c202f0c456e87f7b5298ec8ab"><td class="memItemLeft" align="right" valign="top"><a id="a88de801c202f0c456e87f7b5298ec8ab" name="a88de801c202f0c456e87f7b5298ec8ab"></a>
+xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b>m_uiRayEmissivePrimitiveCount</b> = 0U</td></tr>
 <tr class="memitem:abf554b2c7d7579b14dfa38907a02b379" id="r_abf554b2c7d7579b14dfa38907a02b379"><td class="memItemLeft" align="right" valign="top"><a id="abf554b2c7d7579b14dfa38907a02b379" name="abf554b2c7d7579b14dfa38907a02b379"></a>
 xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b>m_uiInstanceCount</b> = 0U</td></tr>
 <tr class="memitem:a50d454a9cff0558f1928c52a36a3c978" id="r_a50d454a9cff0558f1928c52a36a3c978"><td class="memItemLeft" align="right" valign="top"><a id="a50d454a9cff0558f1928c52a36a3c978" name="a50d454a9cff0558f1928c52a36a3c978"></a>
@@ -109,6 +116,22 @@ xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b>m_uiVertexStride
 <tr class="memitem:a5a193a52130ed478435e6541b05767e0" id="r_a5a193a52130ed478435e6541b05767e0"><td class="memItemLeft" align="right" valign="top"><a id="a5a193a52130ed478435e6541b05767e0" name="a5a193a52130ed478435e6541b05767e0"></a>
 xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b>m_uiTexCoordOffset</b> = 0U</td></tr>
 </table>
+<a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
+<a id="a2a22acac96cbc9a86d9f0ff90b54b546" name="a2a22acac96cbc9a86d9f0ff90b54b546"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a22acac96cbc9a86d9f0ff90b54b546">&#9670;&#160;</a></span>m_hRayGeometry</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../df/d0f/classxii_render_graph_buffer_handle.html">xiiRenderGraphBufferHandle</a> xiiEmissiveLightManager::BuildDescription::m_hRayGeometry</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Optional canonical ray-scene input. Supply all three versions from the same BuildHandles, its active instance and emissive primitive counts, and no legacy meshlet inputs. Dispatch depends on the TLAS build token to retain and synchronize bindless deformed vertex buffers. Native slots are PrimitiveRange.y + BLAS-local primitive; degenerate slots have zero power. Native RadianceAndLuminance is the untextured material factor, used only as a proposal. Native Metadata is (stable object ID, TLAS instance index, BLAS-local primitive, material slot). Capacity overflow is reported in the header; complete-domain consumers must fall back. </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>/home/runner/work/XII/XII/Source/Engine/GraphicsCore/Lighting/<a class="el" href="../../d8/dfd/_emissive_light_manager_8h_source.html">EmissiveLightManager.h</a></li>
 </ul>

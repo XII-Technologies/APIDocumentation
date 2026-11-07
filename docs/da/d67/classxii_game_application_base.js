@@ -15,6 +15,7 @@ var classxii_game_application_base =
     [ "GetAbsFrameCaptureOutputPath", "da/d67/classxii_game_application_base.html#a42c40c2fc67c4aabe2bf42754d81c846", null ],
     [ "GetActiveGameState", "da/d67/classxii_game_application_base.html#aded269a49443d9aaa1f52066ffaf0407", null ],
     [ "GetBaseDataDirectoryPath", "da/d67/classxii_game_application_base.html#ab060d40e04f67ee1d74a608f5b282100", null ],
+    [ "GetFrameLimit", "da/d67/classxii_game_application_base.html#ae3f2a86939d2bd4f825b527e17898ea3", null ],
     [ "GetPlatformProfile", "da/d67/classxii_game_application_base.html#ad604cf8b8849d52fcf2faeb6699bed72", null ],
     [ "GetProjectDataDirectoryPath", "da/d67/classxii_game_application_base.html#aa171be9a1908f057249cee5ac214f45d", null ],
     [ "Run", "da/d67/classxii_game_application_base.html#ae380efb2d22f6c0faf520024e6f8356a", null ],

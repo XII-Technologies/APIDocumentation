@@ -96,6 +96,72 @@ $(function(){initNavTree('d3/dc7/_sky_light_component_8h_source.html','../../','
 <div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;GraphicsCore/GraphicsCoreDLL.h&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;GraphicsCore/Components/Render/RenderComponent.h&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;GraphicsCore/Pipeline/RenderData.h&gt;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;GraphicsCore/Textures/TextureCubeResource.h&gt;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">struct </span><a class="code hl_struct" href="../../d3/d47/structxii_msg_extract_render_data.html">xiiMsgExtractRenderData</a>;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">using </span>xiiSkyLightComponentManager = <a class="code hl_class" href="../../d4/d5d/classxii_component_manager.html">xiiComponentManager&lt;class xiiSkyLightComponent, xiiBlockStorageType::Compact&gt;</a>;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span></div>
+<div class="foldopen" id="foldopen00014" data-start="{" data-end="};">
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="../../d1/d78/classxii_sky_light_render_data.html">   14</a></span><span class="keyword">class </span>XII_GRAPHICSCORE_DLL <a class="code hl_class" href="../../d1/d78/classxii_sky_light_render_data.html">xiiSkyLightRenderData</a> final : <span class="keyword">public</span> xiiRenderData</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>{</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>  XII_ADD_DYNAMIC_REFLECTION(<a class="code hl_class" href="../../d1/d78/classxii_sky_light_render_data.html">xiiSkyLightRenderData</a>, xiiRenderData);</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>  xiiTextureCubeResourceHandle m_hEnvironmentMap;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>  <span class="keywordtype">float</span>                        m_fIntensity  = 1.0f;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>  <span class="keywordtype">float</span>                        m_fSaturation = 1.0f;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>  xiiInt32                     m_iPriority   = 0;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>};</div>
+</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span></div>
+<div class="foldopen" id="foldopen00028" data-start="{" data-end="};">
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="../../d3/dc3/classxii_sky_light_component.html">   28</a></span><span class="keyword">class </span>XII_GRAPHICSCORE_DLL xiiSkyLightComponent final : <span class="keyword">public</span> xiiRenderComponent</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>{</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  XII_DECLARE_COMPONENT_TYPE(xiiSkyLightComponent, xiiRenderComponent, xiiSkyLightComponentManager);</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>  xiiSkyLightComponent();</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>  ~xiiSkyLightComponent();</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  <a class="code hl_struct" href="../../d7/d55/structxii_bitflags.html">xiiBitflags&lt;xiiRenderExtractionCategory&gt;</a> GetRenderExtractionCategories()<span class="keyword"> const override </span>{ <span class="keywordflow">return</span> xiiRenderExtractionCategory::Lights; }</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  <span class="keywordtype">void</span>                                     <a class="code hl_function" href="../../d3/dc3/classxii_sky_light_component.html#a80ad61f5b8504e66d6a067eb8f38d463">SerializeComponent</a>(<a class="code hl_class" href="../../de/d8c/classxii_world_writer.html">xiiWorldWriter</a>&amp; inout_stream) <span class="keyword">const override</span>;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  <span class="keywordtype">void</span>                                     <a class="code hl_function" href="../../d3/dc3/classxii_sky_light_component.html#ad0f1cc2f9cd6220d3b47bd8c8c9c8133">DeserializeComponent</a>(<a class="code hl_class" href="../../df/df8/classxii_world_reader.html">xiiWorldReader</a>&amp; inout_stream) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  <a class="code hl_struct" href="../../dd/dad/structxii_result.html">xiiResult</a>                                <a class="code hl_function" href="../../d3/dc3/classxii_sky_light_component.html#ab05e8ceab7ae75756b4370dc0c9ffc05">GetLocalBounds</a>(xiiBoundingBoxSphere&amp; out_bounds, <span class="keywordtype">bool</span>&amp; out_bAlwaysVisible, <a class="code hl_struct" href="../../dc/dc8/structxii_msg_update_local_bounds.html">xiiMsgUpdateLocalBounds</a>&amp; ref_msg) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  <span class="keywordtype">void</span>                                SetEnvironmentMap(<span class="keyword">const</span> xiiTextureCubeResourceHandle&amp; hEnvironmentMap);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>  <span class="keyword">const</span> xiiTextureCubeResourceHandle&amp; GetEnvironmentMap()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_hEnvironmentMap; }</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  <span class="keywordtype">void</span>                                SetIntensity(<span class="keywordtype">float</span> fIntensity);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  <span class="keywordtype">float</span>                               GetIntensity()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_fIntensity; }</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>  <span class="keywordtype">void</span>                                SetSaturation(<span class="keywordtype">float</span> fSaturation);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>  <span class="keywordtype">float</span>                               GetSaturation()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_fSaturation; }</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>  <span class="keywordtype">void</span>                                SetPriority(xiiInt32 iPriority);</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>  xiiInt32                            GetPriority()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_iPriority; }</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  <span class="keywordtype">void</span> OnMsgExtractRenderData(<a class="code hl_struct" href="../../d3/d47/structxii_msg_extract_render_data.html">xiiMsgExtractRenderData</a>&amp; ref_msg) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  xiiTextureCubeResourceHandle m_hEnvironmentMap;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  <span class="keywordtype">float</span>                        m_fIntensity  = 1.0f;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  <span class="keywordtype">float</span>                        m_fSaturation = 1.0f;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  xiiInt32                     m_iPriority   = 0;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>};</div>
+</div>
+<div class="ttc" id="aclassxii_component_manager_html"><div class="ttname"><a href="../../d4/d5d/classxii_component_manager.html">xiiComponentManager</a></div><div class="ttdef"><b>Definition</b> ComponentManager.h:90</div></div>
+<div class="ttc" id="aclassxii_sky_light_component_html_a80ad61f5b8504e66d6a067eb8f38d463"><div class="ttname"><a href="../../d3/dc3/classxii_sky_light_component.html#a80ad61f5b8504e66d6a067eb8f38d463">xiiSkyLightComponent::SerializeComponent</a></div><div class="ttdeci">void SerializeComponent(xiiWorldWriter &amp;inout_stream) const override</div><div class="ttdoc">Override this to save the current state of the component to the given stream.</div><div class="ttdef"><b>Definition</b> SkyLightComponent.cpp:32</div></div>
+<div class="ttc" id="aclassxii_sky_light_component_html_ab05e8ceab7ae75756b4370dc0c9ffc05"><div class="ttname"><a href="../../d3/dc3/classxii_sky_light_component.html#ab05e8ceab7ae75756b4370dc0c9ffc05">xiiSkyLightComponent::GetLocalBounds</a></div><div class="ttdeci">xiiResult GetLocalBounds(xiiBoundingBoxSphere &amp;out_bounds, bool &amp;out_bAlwaysVisible, xiiMsgUpdateLocalBounds &amp;ref_msg) override</div><div class="ttdef"><b>Definition</b> SkyLightComponent.cpp:52</div></div>
+<div class="ttc" id="aclassxii_sky_light_component_html_ad0f1cc2f9cd6220d3b47bd8c8c9c8133"><div class="ttname"><a href="../../d3/dc3/classxii_sky_light_component.html#ad0f1cc2f9cd6220d3b47bd8c8c9c8133">xiiSkyLightComponent::DeserializeComponent</a></div><div class="ttdeci">void DeserializeComponent(xiiWorldReader &amp;inout_stream) override</div><div class="ttdef"><b>Definition</b> SkyLightComponent.cpp:42</div></div>
+<div class="ttc" id="aclassxii_sky_light_render_data_html"><div class="ttname"><a href="../../d1/d78/classxii_sky_light_render_data.html">xiiSkyLightRenderData</a></div><div class="ttdoc">Immutable source and settings for a world-wide image-based light. Only the owner&#39;s rotation affects s...</div><div class="ttdef"><b>Definition</b> SkyLightComponent.h:15</div></div>
+<div class="ttc" id="aclassxii_world_reader_html"><div class="ttname"><a href="../../df/df8/classxii_world_reader.html">xiiWorldReader</a></div><div class="ttdef"><b>Definition</b> WorldReader.h:49</div></div>
+<div class="ttc" id="aclassxii_world_writer_html"><div class="ttname"><a href="../../de/d8c/classxii_world_writer.html">xiiWorldWriter</a></div><div class="ttdoc">Copyright (c) Theophilus Eriata. All Rights Reserved.</div><div class="ttdef"><b>Definition</b> WorldWriter.h:15</div></div>
+<div class="ttc" id="astructxii_bitflags_html"><div class="ttname"><a href="../../d7/d55/structxii_bitflags.html">xiiBitflags</a></div><div class="ttdef"><b>Definition</b> Bitflags.h:84</div></div>
+<div class="ttc" id="astructxii_msg_extract_render_data_html"><div class="ttname"><a href="../../d3/d47/structxii_msg_extract_render_data.html">xiiMsgExtractRenderData</a></div><div class="ttdoc">Sent to components or component managers to request them to extract their render data into the given ...</div><div class="ttdef"><b>Definition</b> MsgExtractRenderData.h:16</div></div>
+<div class="ttc" id="astructxii_msg_update_local_bounds_html"><div class="ttname"><a href="../../dc/dc8/structxii_msg_update_local_bounds.html">xiiMsgUpdateLocalBounds</a></div><div class="ttdoc">Copyright (c) Theophilus Eriata. All Rights Reserved.</div><div class="ttdef"><b>Definition</b> UpdateLocalBoundsMessage.h:11</div></div>
+<div class="ttc" id="astructxii_result_html"><div class="ttname"><a href="../../dd/dad/structxii_result.html">xiiResult</a></div><div class="ttdef"><b>Definition</b> Types.h:65</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 </div><!-- container -->

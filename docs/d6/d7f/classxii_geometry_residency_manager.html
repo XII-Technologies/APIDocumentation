@@ -121,8 +121,7 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>UnregisterGeom
 <tr class="memitem:a94d189770c1625b86e680fc9b31841a2" id="r_a94d189770c1625b86e680fc9b31841a2"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a94d189770c1625b86e680fc9b31841a2">RequestResidency</a> (<a class="el" href="../../d8/d0f/classxii_geometry_handle.html">xiiGeometryHandle</a> handle, xiiUInt32 uiMinimumLod, xiiUInt64 uiFrameIndex, xiiUInt32 uiVisibilityPriority=0U)</td></tr>
 <tr class="memitem:a32483c0d3a5f7217a4c72d07e08f45c7" id="r_a32483c0d3a5f7217a4c72d07e08f45c7"><td class="memItemLeft" align="right" valign="top"><a id="a32483c0d3a5f7217a4c72d07e08f45c7" name="a32483c0d3a5f7217a4c72d07e08f45c7"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>Touch</b> (<a class="el" href="../../d8/d0f/classxii_geometry_handle.html">xiiGeometryHandle</a> handle, xiiUInt64 uiFrameIndex)</td></tr>
-<tr class="memitem:a9e2662bf2abab29ba19f3529cff2ddae" id="r_a9e2662bf2abab29ba19f3529cff2ddae"><td class="memItemLeft" align="right" valign="top"><a id="a9e2662bf2abab29ba19f3529cff2ddae" name="a9e2662bf2abab29ba19f3529cff2ddae"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>ProcessStreaming</b> (xiiUInt64 uiFrameIndex, xiiUInt64 uiCompletedFrame, xiiUInt64 uiUploadBudgetBytes)</td></tr>
+<tr class="memitem:a9e2662bf2abab29ba19f3529cff2ddae" id="r_a9e2662bf2abab29ba19f3529cff2ddae"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9e2662bf2abab29ba19f3529cff2ddae">ProcessStreaming</a> (xiiUInt64 uiFrameIndex, xiiUInt64 uiCompletedFrame, xiiUInt64 uiUploadBudgetBytes)</td></tr>
 <tr class="memitem:a83e16c0b1b1e05e3a18544bcc8d33032" id="r_a83e16c0b1b1e05e3a18544bcc8d33032"><td class="memItemLeft" align="right" valign="top"><a id="a83e16c0b1b1e05e3a18544bcc8d33032" name="a83e16c0b1b1e05e3a18544bcc8d33032"></a>
 static bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsValid</b> (<a class="el" href="../../d8/d0f/classxii_geometry_handle.html">xiiGeometryHandle</a> handle)</td></tr>
 <tr class="memitem:a5dc83b0268511b3131dceec9747a3dbf" id="r_a5dc83b0268511b3131dceec9747a3dbf"><td class="memItemLeft" align="right" valign="top"><a id="a5dc83b0268511b3131dceec9747a3dbf" name="a5dc83b0268511b3131dceec9747a3dbf"></a>
@@ -234,7 +233,42 @@ static <a class="el" href="../../d8/d6a/structxii_geometry_residency_manager_1_1
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Counts meshlets overlapping a primitive range in each authored LOD, including unloaded LODs. A zero primitive count selects the entire LOD, matching GPU visibility. The output must have s_uiMaxLods entries and is cleared on failure. Reads source metadata in O(total meshlets); cache the result until the geometry handle or primitive range changes. Rejects reloaded source buffers belonging to a different revision. Call on the render thread. </p>
+<p>Counts meshlets overlapping a primitive range in each authored LOD, including unloaded LODs. A zero primitive count selects the entire LOD, matching GPU visibility. The output must have s_uiMaxLods entries and is cleared on failure. Builds a revision-owned interval index once, then counts exact overlaps in O(LODs * log(meshlets)). Rejects reloaded source buffers belonging to a different revision. Call on the render thread. </p>
+
+</div>
+</div>
+<a id="a9e2662bf2abab29ba19f3529cff2ddae" name="a9e2662bf2abab29ba19f3529cff2ddae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e2662bf2abab29ba19f3529cff2ddae">&#9670;&#160;</a></span>ProcessStreaming()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiGeometryResidencyManager::ProcessStreaming </td>
+          <td>(</td>
+          <td class="paramtype">xiiUInt64</td>          <td class="paramname"><span class="paramname"><em>uiFrameIndex</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">xiiUInt64</td>          <td class="paramname"><span class="paramname"><em>uiCompletedFrame</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">xiiUInt64</td>          <td class="paramname"><span class="paramname"><em>uiUploadBudgetBytes</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The first invocation in a device frame establishes its shared allowance. Further calls consume the remainder, including newly discovered geometry. One indivisible record may exceed an unused positive allowance. Zero pauses admission for the entire frame. </p>
 
 </div>
 </div>

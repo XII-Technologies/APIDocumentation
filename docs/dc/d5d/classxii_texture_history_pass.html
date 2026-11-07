@@ -106,6 +106,7 @@ Inheritance diagram for xiiTextureHistoryPass:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a8edea14fa776dd06f9a7e2ea16e9b26a" id="r_a8edea14fa776dd06f9a7e2ea16e9b26a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8edea14fa776dd06f9a7e2ea16e9b26a">GetPins</a> (<a class="el" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray</a>&lt; <a class="el" href="../../dc/d17/structxii_render_pipeline_pin.html">xiiRenderPipelinePin</a> &gt; &amp;pins) const override</td></tr>
 <tr class="memitem:afd47149220f24eda0926188de8559bcd" id="r_afd47149220f24eda0926188de8559bcd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afd47149220f24eda0926188de8559bcd">Build</a> (<a class="el" href="../../dc/d2f/structxii_render_pipeline_pass_context.html">xiiRenderPipelinePassContext</a> &amp;context) override</td></tr>
 <tr class="memitem:ab2b3aa6458072e8e92e2a1dd619a8d31" id="r_ab2b3aa6458072e8e92e2a1dd619a8d31"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab2b3aa6458072e8e92e2a1dd619a8d31">BuildTemporalHistory</a> (<a class="el" href="../../dc/d2f/structxii_render_pipeline_pass_context.html">xiiRenderPipelinePassContext</a> &amp;context) override</td></tr>
 <tr class="memitem:a67fccedde7e58fc8ddf9ffcd6e69a8a6" id="r_a67fccedde7e58fc8ddf9ffcd6e69a8a6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a67fccedde7e58fc8ddf9ffcd6e69a8a6">InvalidateTemporalHistory</a> () override</td></tr>
@@ -114,7 +115,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a163c6733ab2b9a16b0b2137e56905d5e inherit pub_methods_classxii_render_pipeline_pass" id="r_a163c6733ab2b9a16b0b2137e56905d5e"><td class="memItemLeft" align="right" valign="top">
 virtual <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Configure</b> (const xiiVariantDictionary &amp;properties)</td></tr>
 <tr class="memitem:a1231f8e795f70c84678fd5763d815a32 inherit pub_methods_classxii_render_pipeline_pass" id="r_a1231f8e795f70c84678fd5763d815a32"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d44/classxii_render_pipeline_pass.html#a1231f8e795f70c84678fd5763d815a32">GetProperties</a> (xiiVariantDictionary &amp;out_properties) const</td></tr>
-<tr class="memitem:a45832e843435e31cc4a7c3e3a0fdae2b inherit pub_methods_classxii_render_pipeline_pass" id="r_a45832e843435e31cc4a7c3e3a0fdae2b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d44/classxii_render_pipeline_pass.html#a45832e843435e31cc4a7c3e3a0fdae2b">GetPins</a> (<a class="el" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray</a>&lt; <a class="el" href="../../dc/d17/structxii_render_pipeline_pin.html">xiiRenderPipelinePin</a> &gt; &amp;out_pins) const</td></tr>
 <tr class="memitem:a70ff4699ffe7e3da1d2573139fba05a7 inherit pub_methods_classxii_render_pipeline_pass" id="r_a70ff4699ffe7e3da1d2573139fba05a7"><td class="memItemLeft" align="right" valign="top">
 <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>InitializePinBindings</b> (<a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; const <a class="el" href="../../dc/d17/structxii_render_pipeline_pin.html">xiiRenderPipelinePin</a> &gt; pins) const</td></tr>
 <tr class="memitem:a1c515831ca559f160bc2ab35d57a2dc8 inherit pub_methods_classxii_render_pipeline_pass" id="r_a1c515831ca559f160bc2ab35d57a2dc8"><td class="memItemLeft" align="right" valign="top">
@@ -148,6 +148,8 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a7086660716336bbf64ab6db096017bd4" id="r_a7086660716336bbf64ab6db096017bd4"><td class="memItemLeft" align="right" valign="top"><a id="a7086660716336bbf64ab6db096017bd4" name="a7086660716336bbf64ab6db096017bd4"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bAsyncCopy</b> = true</td></tr>
 <tr class="memdesc:a7086660716336bbf64ab6db096017bd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Large copies may use the transfer queue. Disable for small copies that would fragment graphics work. <br /></td></tr>
+<tr class="memitem:a0b963d11dbf948ea53d1ced99274d086" id="r_a0b963d11dbf948ea53d1ced99274d086"><td class="memItemLeft" align="right" valign="top"><a id="a0b963d11dbf948ea53d1ced99274d086" name="a0b963d11dbf948ea53d1ced99274d086"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bAllowAbsentTexture</b> = false</td></tr>
 <tr class="inherit_header pub_attribs_classxii_render_pipeline_pass"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_attribs_classxii_render_pipeline_pass')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public Attributes inherited from <a class="el" href="../../d5/d44/classxii_render_pipeline_pass.html">xiiRenderPipelinePass</a></td></tr>
 <tr class="memitem:a8dfd2ea11b4fe29d0d4f85be01b868a0 inherit pub_attribs_classxii_render_pipeline_pass" id="r_a8dfd2ea11b4fe29d0d4f85be01b868a0"><td class="memItemLeft" align="right" valign="top">
 xiiVariantDictionary&#160;</td><td class="memItemRight" valign="bottom"><b>m_ParameterOverrides</b></td></tr>
@@ -218,6 +220,34 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>
 <p>Publish only previous-frame temporal outputs, without reading current-frame inputs. Optional history may be absent on the first frame. Promote it only after successful execution, and discard it in InvalidateTemporalHistory after a failed frame or camera cut. </p>
 
 <p>Reimplemented from <a class="el" href="../../d5/d44/classxii_render_pipeline_pass.html#a5a053630866d039388375f369cc208ba">xiiRenderPipelinePass</a>.</p>
+
+</div>
+</div>
+<a id="a8edea14fa776dd06f9a7e2ea16e9b26a" name="a8edea14fa776dd06f9a7e2ea16e9b26a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8edea14fa776dd06f9a7e2ea16e9b26a">&#9670;&#160;</a></span>GetPins()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiTextureHistoryPass::GetPins </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray</a>&lt; <a class="el" href="../../dc/d17/structxii_render_pipeline_pin.html">xiiRenderPipelinePin</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>out_pins</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Static pins are discovered from typed XII_MEMBER_PROPERTY members. Only authoring interfaces whose topology comes from another definition are dynamic. </p>
+
+<p>Reimplemented from <a class="el" href="../../d5/d44/classxii_render_pipeline_pass.html#a45832e843435e31cc4a7c3e3a0fdae2b">xiiRenderPipelinePass</a>.</p>
 
 </div>
 </div>

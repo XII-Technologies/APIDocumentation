@@ -109,6 +109,7 @@ XII_ALWAYS_INLINE xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><
 <a class="el" href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr</a>&lt; <a class="el" href="../../d3/d9a/classxii_g_a_l_texture.html">xiiGALTexture</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetGALTexture</b> () const</td></tr>
 <tr class="memitem:aa476238d42eac5df01d3ca4bf20ec4f0" id="r_aa476238d42eac5df01d3ca4bf20ec4f0"><td class="memItemLeft" align="right" valign="top"><a id="aa476238d42eac5df01d3ca4bf20ec4f0" name="aa476238d42eac5df01d3ca4bf20ec4f0"></a>
 <a class="el" href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr</a>&lt; <a class="el" href="../../d3/d97/classxii_g_a_l_sampler.html">xiiGALSampler</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>GetGALSampler</b> () const</td></tr>
+<tr class="memitem:ab85be61b3eceec845ed09283ed23ff40" id="r_ab85be61b3eceec845ed09283ed23ff40"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d54/structxii_status.html">xiiStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab85be61b3eceec845ed09283ed23ff40">GetEnvironmentMap</a> (<a class="el" href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr</a>&lt; const <a class="el" href="../../d9/d81/classxii_environment_map.html">xiiEnvironmentMap</a> &gt; &amp;out_map)</td></tr>
 <tr class="inherit_header pub_methods_classxii_resource"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classxii_resource')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public Member Functions inherited from <a class="el" href="../../d9/de1/classxii_resource.html">xiiResource</a></td></tr>
 <tr class="memitem:ac2788e000bbbe158d9ed3d0fcdeac244 inherit pub_methods_classxii_resource" id="r_ac2788e000bbbe158d9ed3d0fcdeac244"><td class="memItemLeft" align="right" valign="top">XII_ALWAYS_INLINE <a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de1/classxii_resource.html#ac2788e000bbbe158d9ed3d0fcdeac244">GetResourceID</a> () const</td></tr>
 <tr class="memitem:a83651b5a5739fb66e659867042fefce3 inherit pub_methods_classxii_resource" id="r_a83651b5a5739fb66e659867042fefce3"><td class="memItemLeft" align="right" valign="top">
@@ -175,6 +176,7 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~xiiResource</b> (
 <tr class="memitem:a0ddd24fde67475e2cd60081d6ba6020c inherit pro_methods_classxii_resource" id="r_a0ddd24fde67475e2cd60081d6ba6020c"><td class="memItemLeft" align="right" valign="top">
 <a class="el" href="../../da/da5/structxii_resource_1_1_memory_usage.html">MemoryUsage</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>ModifyMemoryUsage</b> ()</td></tr>
 <tr class="memdesc:a0ddd24fde67475e2cd60081d6ba6020c inherit pro_methods_classxii_resource"><td class="mdescLeft">&#160;</td><td class="mdescRight">Non-const version for resources that want to write this variable directly. <br /></td></tr>
+<tr class="memitem:a30f9ce86dd202a9118e9cb8374273c54 inherit pro_methods_classxii_resource" id="r_a30f9ce86dd202a9118e9cb8374273c54"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de1/classxii_resource.html#a30f9ce86dd202a9118e9cb8374273c54">RefreshMemoryUsage</a> ()</td></tr>
 <tr class="memitem:a35962e4b0448f41a840ad47405f386bf inherit pro_methods_classxii_resource" id="r_a35962e4b0448f41a840ad47405f386bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de1/classxii_resource.html#a35962e4b0448f41a840ad47405f386bf">SetIsReloadable</a> (bool bIsReloadable)</td></tr>
 <tr class="memitem:a07d5954f763eed4f411251733cc12ce5 inherit pro_methods_classxii_resource" id="r_a07d5954f763eed4f411251733cc12ce5"><td class="memItemLeft" align="right" valign="top">
 void&#160;</td><td class="memItemRight" valign="bottom"><b>SetHasLoadingFallback</b> (bool bHasLoadingFallback)</td></tr>
@@ -186,14 +188,18 @@ Protected Attributes</h2></td></tr>
 xiiUInt8&#160;</td><td class="memItemRight" valign="bottom"><b>m_uiLoadedTextures</b></td></tr>
 <tr class="memitem:a2efa26adee6b3f84bf85761df912b0c1" id="r_a2efa26adee6b3f84bf85761df912b0c1"><td class="memItemLeft" align="right" valign="top"><a id="a2efa26adee6b3f84bf85761df912b0c1" name="a2efa26adee6b3f84bf85761df912b0c1"></a>
 <a class="el" href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr</a>&lt; <a class="el" href="../../d3/d9a/classxii_g_a_l_texture.html">xiiGALTexture</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_pGALTexture</b> [2]</td></tr>
-<tr class="memitem:a8d78879d5da1e8bfb1c2ebb03a93878c" id="r_a8d78879d5da1e8bfb1c2ebb03a93878c"><td class="memItemLeft" align="right" valign="top"><a id="a8d78879d5da1e8bfb1c2ebb03a93878c" name="a8d78879d5da1e8bfb1c2ebb03a93878c"></a>
-xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b>m_uiMemoryGPU</b> [2]</td></tr>
+<tr class="memitem:aa968b355c1deb6f2cd541c93979cda56" id="r_aa968b355c1deb6f2cd541c93979cda56"><td class="memItemLeft" align="right" valign="top"><a id="aa968b355c1deb6f2cd541c93979cda56" name="aa968b355c1deb6f2cd541c93979cda56"></a>
+xiiUInt64&#160;</td><td class="memItemRight" valign="bottom"><b>m_uiMemoryGPU</b> [2]</td></tr>
 <tr class="memitem:ac23b5589d22ca1cd32217069f5446edb" id="r_ac23b5589d22ca1cd32217069f5446edb"><td class="memItemLeft" align="right" valign="top"><a id="ac23b5589d22ca1cd32217069f5446edb" name="ac23b5589d22ca1cd32217069f5446edb"></a>
 <a class="el" href="../../de/dfd/structxii_enum.html">xiiEnum</a>&lt; <a class="el" href="../../de/d10/structxii_g_a_l_resource_format.html">xiiGALResourceFormat</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_Format</b></td></tr>
 <tr class="memitem:a5516af4a2d4ba95669374ab13a7db499" id="r_a5516af4a2d4ba95669374ab13a7db499"><td class="memItemLeft" align="right" valign="top"><a id="a5516af4a2d4ba95669374ab13a7db499" name="a5516af4a2d4ba95669374ab13a7db499"></a>
 xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b>m_uiWidthAndHeight</b></td></tr>
 <tr class="memitem:a036dd360f786ac6b88e82b8ecceadd31" id="r_a036dd360f786ac6b88e82b8ecceadd31"><td class="memItemLeft" align="right" valign="top"><a id="a036dd360f786ac6b88e82b8ecceadd31" name="a036dd360f786ac6b88e82b8ecceadd31"></a>
 <a class="el" href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr</a>&lt; <a class="el" href="../../d3/d97/classxii_g_a_l_sampler.html">xiiGALSampler</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_pSampler</b></td></tr>
+<tr class="memitem:aad98b593bf64c29dcd635c6e8def1892" id="r_aad98b593bf64c29dcd635c6e8def1892"><td class="memItemLeft" align="right" valign="top"><a id="aad98b593bf64c29dcd635c6e8def1892" name="aad98b593bf64c29dcd635c6e8def1892"></a>
+<a class="el" href="../../dd/d52/classxii_mutex.html">xiiMutex</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_EnvironmentMutex</b></td></tr>
+<tr class="memitem:aeed69078455e44379de94a28e8dc44f6" id="r_aeed69078455e44379de94a28e8dc44f6"><td class="memItemLeft" align="right" valign="top"><a id="aeed69078455e44379de94a28e8dc44f6" name="aeed69078455e44379de94a28e8dc44f6"></a>
+<a class="el" href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr</a>&lt; const <a class="el" href="../../d9/d81/classxii_environment_map.html">xiiEnvironmentMap</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_EnvironmentMaps</b> [2]</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-inherited" class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -214,6 +220,24 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>
  }</td></tr>
 </table>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a id="ab85be61b3eceec845ed09283ed23ff40" name="ab85be61b3eceec845ed09283ed23ff40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab85be61b3eceec845ed09283ed23ff40">&#9670;&#160;</a></span>GetEnvironmentMap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d0/d54/structxii_status.html">xiiStatus</a> xiiTextureCubeResource::GetEnvironmentMap </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr</a>&lt; const <a class="el" href="../../d9/d81/classxii_environment_map.html">xiiEnvironmentMap</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>out_map</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Lazily submits convolution for the current resident source. Reloaded quality levels receive distinct immutable results; retained consumers own older images. First acquisition requires the thread owning an active <a class="el" href="../../d3/d61/classxii_render_graph_frame.html">xiiRenderGraphFrame</a>. </p>
+
+</div>
+</div>
 <a id="a03d6fefd293c0ac01e9d454761651fa6" name="a03d6fefd293c0ac01e9d454761651fa6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a03d6fefd293c0ac01e9d454761651fa6">&#9670;&#160;</a></span>UnloadData()</h2>
 

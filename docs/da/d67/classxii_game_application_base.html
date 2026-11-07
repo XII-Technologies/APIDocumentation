@@ -176,7 +176,6 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>Deinit_Shutdo
 Basics</h2></td></tr>
 <tr class="memitem:a195a7dc43f415c5d6d7bad1026d18592" id="r_a195a7dc43f415c5d6d7bad1026d18592"><td class="memItemLeft" align="right" valign="top"><a id="a195a7dc43f415c5d6d7bad1026d18592" name="a195a7dc43f415c5d6d7bad1026d18592"></a>
 static <a class="el" href="../../da/d67/classxii_game_application_base.html">xiiGameApplicationBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>s_pGameApplicationBaseInstance</b> = nullptr</td></tr>
-<tr class="memdesc:a195a7dc43f415c5d6d7bad1026d18592"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copyright (c) Theophilus Eriata. All Rights Reserved. <br /></td></tr>
 <tr class="memitem:a171b65798464d7a139e6d8884553487a" id="r_a171b65798464d7a139e6d8884553487a"><td class="memItemLeft" align="right" valign="top"><a id="a171b65798464d7a139e6d8884553487a" name="a171b65798464d7a139e6d8884553487a"></a>
 static <a class="el" href="../../da/d67/classxii_game_application_base.html">xiiGameApplicationBase</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetGameApplicationBaseInstance</b> ()</td></tr>
 <tr class="memdesc:a171b65798464d7a139e6d8884553487a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the <a class="el" href="../../da/d67/classxii_game_application_base.html" title="The xiiGameApplicationBase class is the base class for all game applications. It provides common func...">xiiGameApplicationBase</a> singleton. <br /></td></tr>
@@ -290,6 +289,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>Init_SetupGra
 Application Execution</h2></td></tr>
 <tr class="memitem:afc674ea5e2236045812a7a39fdf799ac" id="r_afc674ea5e2236045812a7a39fdf799ac"><td class="memItemLeft" align="right" valign="top"><a id="afc674ea5e2236045812a7a39fdf799ac" name="afc674ea5e2236045812a7a39fdf799ac"></a>
 <a class="el" href="../../d7/dc1/structxii_time.html">xiiTime</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_FrameTime</b></td></tr>
+<tr class="memitem:a5f938e1b770dd95b0df6ea30c564b2bb" id="r_a5f938e1b770dd95b0df6ea30c564b2bb"><td class="memItemLeft" align="right" valign="top"><a id="a5f938e1b770dd95b0df6ea30c564b2bb" name="a5f938e1b770dd95b0df6ea30c564b2bb"></a>
+<a class="el" href="../../d7/dc1/structxii_time.html">xiiTime</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_LastFrameTime</b></td></tr>
 <tr class="memitem:aaa091ae3e8f8c5b5ad8e9cc78f55c0e7" id="r_aaa091ae3e8f8c5b5ad8e9cc78f55c0e7"><td class="memItemLeft" align="right" valign="top"><a id="aaa091ae3e8f8c5b5ad8e9cc78f55c0e7" name="aaa091ae3e8f8c5b5ad8e9cc78f55c0e7"></a>
 xiiCopyOnBroadcastEvent&lt; const <a class="el" href="../../d7/de3/structxii_game_application_execution_event.html">xiiGameApplicationExecutionEvent</a> &amp; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_ExecutionEvents</b></td></tr>
 <tr class="memitem:ae380efb2d22f6c0faf520024e6f8356a" id="r_ae380efb2d22f6c0faf520024e6f8356a"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dd/d2b/classxii_application.html#a359a9ca7be863c9823cf5053c0f344d1">xiiApplication::Execution</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae380efb2d22f6c0faf520024e6f8356a">Run</a> () override</td></tr>
@@ -297,6 +298,8 @@ xiiCopyOnBroadcastEvent&lt; const <a class="el" href="../../d7/de3/structxii_gam
 void&#160;</td><td class="memItemRight" valign="bottom"><b>RunOneFrame</b> ()</td></tr>
 <tr class="memitem:af0d7212356930e5961bbdbe6c03af346" id="r_af0d7212356930e5961bbdbe6c03af346"><td class="memItemLeft" align="right" valign="top"><a id="af0d7212356930e5961bbdbe6c03af346" name="af0d7212356930e5961bbdbe6c03af346"></a>
 <a class="el" href="../../d7/dc1/structxii_time.html">xiiTime</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetFrameTime</b> () const</td></tr>
+<tr class="memitem:ae3f2a86939d2bd4f825b527e17898ea3" id="r_ae3f2a86939d2bd4f825b527e17898ea3"><td class="memItemLeft" align="right" valign="top">virtual xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae3f2a86939d2bd4f825b527e17898ea3">GetFrameLimit</a> () const</td></tr>
+<tr class="memdesc:ae3f2a86939d2bd4f825b527e17898ea3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Application-wide pacing. Overrides may impose a lower background cap without changing saved CVars.  <br /></td></tr>
 <tr class="memitem:aa0930fc621d100ebc091c9300b54594c" id="r_aa0930fc621d100ebc091c9300b54594c"><td class="memItemLeft" align="right" valign="top"><a id="aa0930fc621d100ebc091c9300b54594c" name="aa0930fc621d100ebc091c9300b54594c"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>Run_InputUpdate</b> ()</td></tr>
 <tr class="memitem:a790084f097c41b6ff150d0d6392778e6" id="r_a790084f097c41b6ff150d0d6392778e6"><td class="memItemLeft" align="right" valign="top"><a id="a790084f097c41b6ff150d0d6392778e6" name="a790084f097c41b6ff150d0d6392778e6"></a>
@@ -415,7 +418,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bWasQuitRequested</
 
 <p>Reimplemented from <a class="el" href="../../dd/d2b/classxii_application.html#a5d424fee5b31f4a58bb0cf255317b0a1">xiiApplication</a>.</p>
 
-<p>Reimplemented in <a class="el" href="../../d6/d7b/classxii_engine_process_game_application.html#a8c3697d9e55f46cc8959054500fed196">xiiEngineProcessGameApplication</a>, <a class="el" href="../../d7/d9e/classxii_player_application.html#a6d1e1bf4745189e6aad7160783b3f02a">xiiPlayerApplication</a>, and <a class="el" href="../../d1/df8/classxii_shader_compiler_application.html#a3d2ece92d2460063bcfc7570cace585c">xiiShaderCompilerApplication</a>.</p>
+<p>Reimplemented in <a class="el" href="../../d6/d7b/classxii_engine_process_game_application.html#a8c3697d9e55f46cc8959054500fed196">xiiEngineProcessGameApplication</a>, <a class="el" href="../../d1/ded/classxii_game_application.html#a020a31b7af40008f3b1ecb5149c63106">xiiGameApplication</a>, <a class="el" href="../../d7/d9e/classxii_player_application.html#a6d1e1bf4745189e6aad7160783b3f02a">xiiPlayerApplication</a>, and <a class="el" href="../../d1/df8/classxii_shader_compiler_application.html#a3d2ece92d2460063bcfc7570cace585c">xiiShaderCompilerApplication</a>.</p>
 
 </div>
 </div>
@@ -446,7 +449,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bWasQuitRequested</
 
 <p>Reimplemented from <a class="el" href="../../dd/d2b/classxii_application.html#a5de078f92df4d64f9c2b106f670351e0">xiiApplication</a>.</p>
 
-<p>Reimplemented in <a class="el" href="../../d6/d7b/classxii_engine_process_game_application.html#a4303d84a5403b5e4fa4b1831819cc692">xiiEngineProcessGameApplication</a>.</p>
+<p>Reimplemented in <a class="el" href="../../d6/d7b/classxii_engine_process_game_application.html#a4303d84a5403b5e4fa4b1831819cc692">xiiEngineProcessGameApplication</a>, <a class="el" href="../../d1/ded/classxii_game_application.html#ae9e5b8edfea66a131ffb45579826e24d">xiiGameApplication</a>, and <a class="el" href="../../d7/d9e/classxii_player_application.html#a3d337ca1587ed2bcc908380df57d34da">xiiPlayerApplication</a>.</p>
 
 </div>
 </div>
@@ -509,7 +512,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bWasQuitRequested</
 
 <p>Reimplemented from <a class="el" href="../../dd/d2b/classxii_application.html#a4a0a0e5813ce9281ec711a60241f7c0f">xiiApplication</a>.</p>
 
-<p>Reimplemented in <a class="el" href="../../d6/d7b/classxii_engine_process_game_application.html#a32e4a8b8ad60b62d132b9c1ab5960bd9">xiiEngineProcessGameApplication</a>.</p>
+<p>Reimplemented in <a class="el" href="../../d6/d7b/classxii_engine_process_game_application.html#a32e4a8b8ad60b62d132b9c1ab5960bd9">xiiEngineProcessGameApplication</a>, <a class="el" href="../../d1/ded/classxii_game_application.html#a363a541bcbdcf806931acc3227b17879">xiiGameApplication</a>, and <a class="el" href="../../d7/d9e/classxii_player_application.html#a81a6094a93ad0582db295d309551bda5">xiiPlayerApplication</a>.</p>
 
 </div>
 </div>
@@ -634,6 +637,35 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bWasQuitRequested</
 
 </div>
 </div>
+<a id="ae3f2a86939d2bd4f825b527e17898ea3" name="ae3f2a86939d2bd4f825b527e17898ea3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3f2a86939d2bd4f825b527e17898ea3">&#9670;&#160;</a></span>GetFrameLimit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">xiiUInt32 xiiGameApplicationBase::GetFrameLimit </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel protected">protected</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Application-wide pacing. Overrides may impose a lower background cap without changing saved CVars. </p>
+
+<p>Reimplemented in <a class="el" href="../../d1/ded/classxii_game_application.html#ab11513dd471aef768c5142edb95cc03b">xiiGameApplication</a>.</p>
+
+</div>
+</div>
 <a id="aa171be9a1908f057249cee5ac214f45d" name="aa171be9a1908f057249cee5ac214f45d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa171be9a1908f057249cee5ac214f45d">&#9670;&#160;</a></span>GetProjectDataDirectoryPath()</h2>
 
@@ -715,7 +747,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bWasQuitRequested</
 
 <p>Implements <a class="el" href="../../dd/d2b/classxii_application.html#add6d74803256b335b6765297248775f6">xiiApplication</a>.</p>
 
-<p>Reimplemented in <a class="el" href="../../d6/d7b/classxii_engine_process_game_application.html#ae265cb05e909230621890520f8a9e7f3">xiiEngineProcessGameApplication</a>, and <a class="el" href="../../d1/df8/classxii_shader_compiler_application.html#aa7c639599102ce6b9a42ef50fb537696">xiiShaderCompilerApplication</a>.</p>
+<p>Reimplemented in <a class="el" href="../../d6/d7b/classxii_engine_process_game_application.html#ae265cb05e909230621890520f8a9e7f3">xiiEngineProcessGameApplication</a>, <a class="el" href="../../d1/ded/classxii_game_application.html#a2b66670368f586301099ca73a68ca3d4">xiiGameApplication</a>, <a class="el" href="../../d7/d9e/classxii_player_application.html#a0f24baaaf7d1aa0d1f5c6c0807989e67">xiiPlayerApplication</a>, and <a class="el" href="../../d1/df8/classxii_shader_compiler_application.html#aa7c639599102ce6b9a42ef50fb537696">xiiShaderCompilerApplication</a>.</p>
 
 </div>
 </div>

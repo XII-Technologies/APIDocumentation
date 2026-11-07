@@ -105,8 +105,6 @@ Inheritance diagram for xiiReflectionCaptureRenderData:</div>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a7a64554995eab0375f0f263471ffa43c" id="r_a7a64554995eab0375f0f263471ffa43c"><td class="memItemLeft" align="right" valign="top"><a id="a7a64554995eab0375f0f263471ffa43c" name="a7a64554995eab0375f0f263471ffa43c"></a>
 xiiTextureCubeResourceHandle&#160;</td><td class="memItemRight" valign="bottom"><b>m_hReflectionMap</b></td></tr>
-<tr class="memitem:afa6c67e33bb00d19d4256fb4f633102c" id="r_afa6c67e33bb00d19d4256fb4f633102c"><td class="memItemLeft" align="right" valign="top"><a id="afa6c67e33bb00d19d4256fb4f633102c" name="afa6c67e33bb00d19d4256fb4f633102c"></a>
-xiiTransform&#160;</td><td class="memItemRight" valign="bottom"><b>m_GlobalTransform</b> = <a class="el" href="../../d5/d13/classxii_transform_template.html#a40abb6aee6122fe6c5d20ae72caa2b47">xiiTransform::MakeIdentity</a>()</td></tr>
 <tr class="memitem:a4b9eb011b722152a54a77c9bd514ad0c" id="r_a4b9eb011b722152a54a77c9bd514ad0c"><td class="memItemLeft" align="right" valign="top"><a id="a4b9eb011b722152a54a77c9bd514ad0c" name="a4b9eb011b722152a54a77c9bd514ad0c"></a>
 xiiVec3&#160;</td><td class="memItemRight" valign="bottom"><b>m_vHalfExtents</b> = xiiVec3(5.0f)</td></tr>
 <tr class="memitem:ae6a3da83b39499b3ba00bd08d402e80a" id="r_ae6a3da83b39499b3ba00bd08d402e80a"><td class="memItemLeft" align="right" valign="top"><a id="ae6a3da83b39499b3ba00bd08d402e80a" name="ae6a3da83b39499b3ba00bd08d402e80a"></a>
@@ -152,7 +150,7 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Immutable render packet extracted from an authored reflection capture.</p>
-<p>The cubemap is expected to contain a full GGX pre-filter mip chain. Keeping filtering in the asset pipeline avoids repeating expensive convolution for static probes every frame while still allowing dynamic captures to replace the handle when their asynchronous convolution completes. </p>
+<p>The cubemap supplies source radiance, with ordinary color mips when available. Its resident texture resource initializes shared GGX radiance and Lambert irradiance once. Replacing or reloading the source produces independent immutable lighting images; extracted consumers retain their original images. </p>
 </div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>/home/runner/work/XII/XII/Source/Engine/GraphicsCore/Components/Lights/<a class="el" href="../../d6/dfa/_reflection_capture_component_8h_source.html">ReflectionCaptureComponent.h</a></li>
 </ul>

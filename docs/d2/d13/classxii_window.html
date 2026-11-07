@@ -130,6 +130,12 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsInitialized</b> () 
 <tr class="memitem:a9720a6a7c785f782ba9d7cd0c8bd61c5" id="r_a9720a6a7c785f782ba9d7cd0c8bd61c5"><td class="memItemLeft" align="right" valign="top"><a id="a9720a6a7c785f782ba9d7cd0c8bd61c5" name="a9720a6a7c785f782ba9d7cd0c8bd61c5"></a>
 <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Destroy</b> ()</td></tr>
 <tr class="memdesc:a9720a6a7c785f782ba9d7cd0c8bd61c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroys the window. <br /></td></tr>
+<tr class="memitem:a680d544438d418f6ede19d7e4e9b8146" id="r_a680d544438d418f6ede19d7e4e9b8146"><td class="memItemLeft" align="right" valign="top"><a id="a680d544438d418f6ede19d7e4e9b8146" name="a680d544438d418f6ede19d7e4e9b8146"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>HasFocus</b> () const</td></tr>
+<tr class="memitem:a79ff0252c07ad8769f4697909d213c5a" id="r_a79ff0252c07ad8769f4697909d213c5a"><td class="memItemLeft" align="right" valign="top"><a id="a79ff0252c07ad8769f4697909d213c5a" name="a79ff0252c07ad8769f4697909d213c5a"></a>
+<a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>SetTitle</b> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sTitle)</td></tr>
+<tr class="memdesc:a79ff0252c07ad8769f4697909d213c5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the native title without recreating the window or its output target. <br /></td></tr>
+<tr class="memitem:a2fc8b9a8755b3617fcd4afc499ab68bc" id="r_a2fc8b9a8755b3617fcd4afc499ab68bc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2fc8b9a8755b3617fcd4afc499ab68bc">ApplyWindowSettings</a> (const <a class="el" href="../../d1/dc4/structxii_window_creation_description.html">xiiWindowCreationDescription</a> &amp;description)</td></tr>
 <tr class="memitem:a76e1b136feeb2c818ffa108aa02d0190" id="r_a76e1b136feeb2c818ffa108aa02d0190"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a76e1b136feeb2c818ffa108aa02d0190">Resize</a> (const xiiSizeU32 &amp;newWindowSize)</td></tr>
 <tr class="memitem:ab7628f8ff7dd616739ae632a6eef9609" id="r_ab7628f8ff7dd616739ae632a6eef9609"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab7628f8ff7dd616739ae632a6eef9609">OnResize</a> (const xiiSizeU32 &amp;newWindowSize)</td></tr>
 <tr class="memitem:a3ed21a39434b6f65e6622cc05729b8a5" id="r_a3ed21a39434b6f65e6622cc05729b8a5"><td class="memItemLeft" align="right" valign="top"><a id="a3ed21a39434b6f65e6622cc05729b8a5" name="a3ed21a39434b6f65e6622cc05729b8a5"></a>
@@ -239,6 +245,24 @@ Static Protected Attributes</h2></td></tr>
 <p>Adds a reference to the window. The window will not be destroyed until all references are removed. </p>
 
 <p>Implements <a class="el" href="../../de/dd5/classxii_window_base.html#ad27c0f9fbe11f319e2b00d908634b7a9">xiiWindowBase</a>.</p>
+
+</div>
+</div>
+<a id="a2fc8b9a8755b3617fcd4afc499ab68bc" name="a2fc8b9a8755b3617fcd4afc499ab68bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fc8b9a8755b3617fcd4afc499ab68bc">&#9670;&#160;</a></span>ApplyWindowSettings()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a> xiiWindow::ApplyWindowSettings </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d1/dc4/structxii_window_creation_description.html">xiiWindowCreationDescription</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>description</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Applies display mode/monitor/size to the existing native window on its owning thread. A failure may leave a partial native change; callers offering a preview must restore the previous description. Output targets follow the resulting resize events; the native handle remains valid. </p>
 
 </div>
 </div>

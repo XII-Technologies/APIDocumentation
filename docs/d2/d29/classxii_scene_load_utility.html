@@ -108,7 +108,13 @@ Public Types</h2></td></tr>
 , <a class="el" href="#a1767a7cea4cae164dadf14e250863d67a114614c6b69d9aeda72c88002dc26dce">FinishedAndRetrieved</a>
 , <br />
 &#160;&#160;<b>Failed</b>
+, <b>Cancelled</b>
 <br />
+ }</td></tr>
+<tr class="memitem:a5f4b33b3c27d92cfeee07807dbb56c90" id="r_a5f4b33b3c27d92cfeee07807dbb56c90"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5f4b33b3c27d92cfeee07807dbb56c90">LoadingPhase</a> { <b>Preloading</b>
+, <a class="el" href="#a5f4b33b3c27d92cfeee07807dbb56c90a26fccddf2f94b1685b184267996e10f8">Reading</a>
+, <a class="el" href="#a5f4b33b3c27d92cfeee07807dbb56c90a0d1dd5c93dd100829da84cb8844a1e1d">Instantiating</a>
+, <b>Ready</b>
  }</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
@@ -119,6 +125,13 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3b7bb425d7aacc589f71d1c7467f5534" id="r_a3b7bb425d7aacc589f71d1c7467f5534"><td class="memItemLeft" align="right" valign="top"><a id="a3b7bb425d7aacc589f71d1c7467f5534" name="a3b7bb425d7aacc589f71d1c7467f5534"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><b>GetLoadingProgress</b> () const</td></tr>
 <tr class="memdesc:a3b7bb425d7aacc589f71d1c7467f5534"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a loading progress value in 0 to 1 range. <br /></td></tr>
+<tr class="memitem:a4f75371b3a71f71cf94b2ee2a1486f87" id="r_a4f75371b3a71f71cf94b2ee2a1486f87"><td class="memItemLeft" align="right" valign="top"><a id="a4f75371b3a71f71cf94b2ee2a1486f87" name="a4f75371b3a71f71cf94b2ee2a1486f87"></a>
+<a class="el" href="#a5f4b33b3c27d92cfeee07807dbb56c90">LoadingPhase</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetLoadingPhase</b> () const</td></tr>
+<tr class="memitem:ab24ff6c312df7cfa607330560c283d28" id="r_ab24ff6c312df7cfa607330560c283d28"><td class="memItemLeft" align="right" valign="top"><a id="ab24ff6c312df7cfa607330560c283d28" name="ab24ff6c312df7cfa607330560c283d28"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>HasMeasuredProgress</b> () const</td></tr>
+<tr class="memitem:a1a10603e3c00e60fd9b32f415bea889c" id="r_a1a10603e3c00e60fd9b32f415bea889c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1a10603e3c00e60fd9b32f415bea889c">Cancel</a> ()</td></tr>
+<tr class="memitem:a7cfc1aa2536723195420e0a4cfe1d339" id="r_a7cfc1aa2536723195420e0a4cfe1d339"><td class="memItemLeft" align="right" valign="top"><a id="a7cfc1aa2536723195420e0a4cfe1d339" name="a7cfc1aa2536723195420e0a4cfe1d339"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsReadTaskFinished</b> () const</td></tr>
 <tr class="memitem:afebd11cb4750eca3499c3aea71e8da17" id="r_afebd11cb4750eca3499c3aea71e8da17"><td class="memItemLeft" align="right" valign="top"><a id="afebd11cb4750eca3499c3aea71e8da17" name="afebd11cb4750eca3499c3aea71e8da17"></a>
 <a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetLoadingFailureReason</b> () const</td></tr>
 <tr class="memdesc:afebd11cb4750eca3499c3aea71e8da17"><td class="mdescLeft">&#160;</td><td class="mdescRight">In case loading failed, this returns what went wrong. <br /></td></tr>
@@ -128,6 +141,8 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>GetLoadingProgress</
 <tr class="memitem:a1fe87c36ee9cd954cb55484efa87c24f" id="r_a1fe87c36ee9cd954cb55484efa87c24f"><td class="memItemLeft" align="right" valign="top"><a id="a1fe87c36ee9cd954cb55484efa87c24f" name="a1fe87c36ee9cd954cb55484efa87c24f"></a>
 <a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetRequestedScene</b> () const</td></tr>
 <tr class="memdesc:a1fe87c36ee9cd954cb55484efa87c24f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the path to the scene file as it was originally requested. <br /></td></tr>
+<tr class="memitem:a47faca989a9fdb44f9c30ef75814f1b8" id="r_a47faca989a9fdb44f9c30ef75814f1b8"><td class="memItemLeft" align="right" valign="top"><a id="a47faca989a9fdb44f9c30ef75814f1b8" name="a47faca989a9fdb44f9c30ef75814f1b8"></a>
+<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetRequestedPreloadCollection</b> () const</td></tr>
 <tr class="memitem:a6e7c5112cd8fcce89fc7b514f97984e8" id="r_a6e7c5112cd8fcce89fc7b514f97984e8"><td class="memItemLeft" align="right" valign="top"><a id="a6e7c5112cd8fcce89fc7b514f97984e8" name="a6e7c5112cd8fcce89fc7b514f97984e8"></a>
 <a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a>&#160;</td><td class="memItemRight" valign="bottom"><b>GetRedirectedScene</b> () const</td></tr>
 <tr class="memdesc:a6e7c5112cd8fcce89fc7b514f97984e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the path to the scene file after it was redirected. <br /></td></tr>
@@ -135,6 +150,34 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>GetLoadingProgress</
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class allows to load a scene in the background and switch to it, once loading has finished. </p>
 </div><a name="doc-enum-members" id="doc-enum-members"></a><h2 id="header-doc-enum-members" class="groupheader">Member Enumeration Documentation</h2>
+<a id="a5f4b33b3c27d92cfeee07807dbb56c90" name="a5f4b33b3c27d92cfeee07807dbb56c90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f4b33b3c27d92cfeee07807dbb56c90">&#9670;&#160;</a></span>LoadingPhase</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="#a5f4b33b3c27d92cfeee07807dbb56c90">xiiSceneLoadUtility::LoadingPhase</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel strong">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a5f4b33b3c27d92cfeee07807dbb56c90a26fccddf2f94b1685b184267996e10f8" name="a5f4b33b3c27d92cfeee07807dbb56c90a26fccddf2f94b1685b184267996e10f8"></a>Reading&#160;</td><td class="fielddoc"><p>File IO and object graph deserialization; no measurable completion fraction. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a5f4b33b3c27d92cfeee07807dbb56c90a0d1dd5c93dd100829da84cb8844a1e1d" name="a5f4b33b3c27d92cfeee07807dbb56c90a0d1dd5c93dd100829da84cb8844a1e1d"></a>Instantiating&#160;</td><td class="fielddoc"><p>Time-sliced world mutation on the caller's thread. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 <a id="a1767a7cea4cae164dadf14e250863d67" name="a1767a7cea4cae164dadf14e250863d67"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1767a7cea4cae164dadf14e250863d67">&#9670;&#160;</a></span>LoadingState</h2>
 
@@ -162,6 +205,24 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>GetLoadingProgress</
 </div>
 </div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a id="a1a10603e3c00e60fd9b32f415bea889c" name="a1a10603e3c00e60fd9b32f415bea889c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a10603e3c00e60fd9b32f415bea889c">&#9670;&#160;</a></span>Cancel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiSceneLoadUtility::Cancel </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Cancels without waiting for disk IO. The task owns its input and result and never calls back into this utility. Call on the same thread as <a class="el" href="#a51c90234db24586c448a6acec297cca3">TickSceneLoading()</a>, before unloading plugins or shutting down the task system. </p>
+
+</div>
+</div>
 <a id="a87f31e5d9eb27351237b8fadea04d4c8" name="a87f31e5d9eb27351237b8fadea04d4c8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a87f31e5d9eb27351237b8fadea04d4c8">&#9670;&#160;</a></span>RetrieveLoadedScene()</h2>
 

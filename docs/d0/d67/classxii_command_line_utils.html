@@ -481,6 +481,7 @@ static <a class="el" href="../../d0/d67/classxii_command_line_utils.html">xiiCom
 </table>
 </div><div class="memdoc">
 <p>Splits a string into the classic argc/argv string.</p>
+<p>Appends whitespace-separated arguments to out_args, retaining quoted spaces and empty quoted arguments. Rebuilds out_argsV to borrow all out_args strings. Mutating out_args invalidates these pointers. Quotes group text; shell expansion and platform-specific escape sequences are not interpreted.</p>
 <p>Useful for platforms where command line args come in as a single string. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">addExecutableDir</td><td>Adds executable path as first parameter (just as it would normally be in 'int main(argc, argv)'). </td></tr>

@@ -12,7 +12,7 @@ var searchData=
   ['call_9',['Call',['../de/d74/classxii_console_function_base.html#ad9e533df0fc019712b5ea4e1277628a2',1,'xiiConsoleFunctionBase::Call()'],['../d4/d78/classxii_console_function_3_01_r_07_x_i_i___l_i_s_t_07_p_00_01_a_r_g___c_o_u_n_t_08_08_4.html#a959ec5d71eee5ae6252af955507af72c',1,'xiiConsoleFunction&lt; R(XII_LIST(P, ARG_COUNT))&gt;::Call()']]],
   ['canallocate_10',['CanAllocate',['../d9/d89/structxii_r_t_t_i_allocator.html#a743c5e9e6cc050eba2a8d15918fb3d57',1,'xiiRTTIAllocator::CanAllocate()'],['../d0/dd9/structxii_r_t_t_i_no_allocator.html#a357ccf8a3c2bbd17f751aad0d152c049',1,'xiiRTTINoAllocator::CanAllocate()']]],
   ['canappend_11',['CanAppend',['../d1/de4/classxii_static_ring_buffer.html#a0c8e105c1c0dd592740806668deacb89',1,'xiiStaticRingBuffer']]],
-  ['cancel_12',['Cancel',['../d0/dd5/classxii_world_reader_1_1_instantiation_context_base.html#a496c7ca21edfc2a7874cf6a78f103af6',1,'xiiWorldReader::InstantiationContextBase']]],
+  ['cancel_12',['Cancel',['../d0/dd5/classxii_world_reader_1_1_instantiation_context_base.html#a496c7ca21edfc2a7874cf6a78f103af6',1,'xiiWorldReader::InstantiationContextBase::Cancel()'],['../d2/d29/classxii_scene_load_utility.html#a1a10603e3c00e60fd9b32f415bea889c',1,'xiiSceneLoadUtility::Cancel()']]],
   ['cancelandremoveallopsfordocument_13',['CancelAndRemoveAllOpsForDocument',['../df/d2a/classxii_long_op_controller_manager.html#aa5ec33b43b7f72fcc187ee7570622ac3',1,'xiiLongOpControllerManager']]],
   ['cancelbackgroundsceneloading_14',['CancelBackgroundSceneLoading',['../d1/d19/classxii_game_state.html#a825f99f15cce3fabdc361dd61fdb36f2',1,'xiiGameState']]],
   ['cancelcomponentinitbatch_15',['CancelComponentInitBatch',['../d6/d89/classxii_world.html#a677a636069595346b20d131569124b84',1,'xiiWorld']]],
