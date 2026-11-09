@@ -12,7 +12,7 @@ var searchData=
   ['rendering_20pass_20rebuild_9',['Native rendering pass rebuild',['../d7/dfa/md__2home_2runner_2work_2_x_i_i_2_x_i_i_2_documentation_2_rendering_2_native_pass_inventory.html',1,'']]],
   ['report_10',['GitHub infrastructure modernization report',['../de/d80/md__2home_2runner_2work_2_x_i_i_2_x_i_i_2_documentation_2_infrastructure_audit.html',1,'']]],
   ['repository_20infrastructure_11',['Repository infrastructure',['../d6/d1d/md__2home_2runner_2work_2_x_i_i_2_x_i_i_2_documentation_2_infrastructure.html',1,'']]],
-  ['residency_20and_20large_20scene_20synchronization_12',['Geometry residency and large-scene synchronization',['../d2/d16/md__2home_2runner_2work_2_x_i_i_2_x_i_i_2_documentation_2_rendering_2_geometry_residency_performance.html',1,'']]],
+  ['residency_20performance_12',['GPU residency performance',['../d9/d9a/md__2home_2runner_2work_2_x_i_i_2_x_i_i_2_documentation_2_rendering_2_gpu_residency_performance.html',1,'']]],
   ['resolution_13',['Asset identification and resolution',['../d2/de3/md__2home_2runner_2work_2_x_i_i_2_x_i_i_2_documentation_2_assets_2_asset_identification.html',1,'']]],
   ['runtime_20cvars_14',['Reflected settings and runtime CVars',['../d3/da2/md__2home_2runner_2work_2_x_i_i_2_x_i_i_2_documentation_2_settings.html',1,'']]]
 ];

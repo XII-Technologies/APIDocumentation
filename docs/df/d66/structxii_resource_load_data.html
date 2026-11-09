@@ -104,6 +104,13 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a624007d09d6382ee2c4a1f9553de1e33" id="r_a624007d09d6382ee2c4a1f9553de1e33"><td class="memItemLeft" align="right" valign="top"><a id="a624007d09d6382ee2c4a1f9553de1e33" name="a624007d09d6382ee2c4a1f9553de1e33"></a>
 xiiString&#160;</td><td class="memItemRight" valign="bottom"><b>m_sResourceDescription</b></td></tr>
 <tr class="memdesc:a624007d09d6382ee2c4a1f9553de1e33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Additional (optional) description that can help during debugging (e.g. the final file path). <br /></td></tr>
+<tr class="memitem:a78dffa18dbea75b9b0e081f9fe35e6cc" id="r_a78dffa18dbea75b9b0e081f9fe35e6cc"><td class="memItemLeft" align="right" valign="top">xiiString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a78dffa18dbea75b9b0e081f9fe35e6cc">m_sSourceFile</a></td></tr>
+<tr class="memitem:a39c5ae8a742624a267fb8088044698bc" id="r_a39c5ae8a742624a267fb8088044698bc"><td class="memItemLeft" align="right" valign="top"><a id="a39c5ae8a742624a267fb8088044698bc" name="a39c5ae8a742624a267fb8088044698bc"></a>
+xiiUInt64&#160;</td><td class="memItemRight" valign="bottom"><b>m_uiSourceOffset</b> = 0U</td></tr>
+<tr class="memitem:a6659134cfc3672a85f79ca3e41e97e41" id="r_a6659134cfc3672a85f79ca3e41e97e41"><td class="memItemLeft" align="right" valign="top"><a id="a6659134cfc3672a85f79ca3e41e97e41" name="a6659134cfc3672a85f79ca3e41e97e41"></a>
+xiiUInt64&#160;</td><td class="memItemRight" valign="bottom"><b>m_uiSourceHash</b> = 0U</td></tr>
+<tr class="memitem:a4973e8a815c5d5199eb6fbc8d5838225" id="r_a4973e8a815c5d5199eb6fbc8d5838225"><td class="memItemLeft" align="right" valign="top"><a id="a4973e8a815c5d5199eb6fbc8d5838225" name="a4973e8a815c5d5199eb6fbc8d5838225"></a>
+xiiUInt16&#160;</td><td class="memItemRight" valign="bottom"><b>m_uiSourceVersion</b> = 0U</td></tr>
 <tr class="memitem:a19ac6e3a95299f8ab4616106884b6188" id="r_a19ac6e3a95299f8ab4616106884b6188"><td class="memItemLeft" align="right" valign="top"><a id="a19ac6e3a95299f8ab4616106884b6188" name="a19ac6e3a95299f8ab4616106884b6188"></a>
 <a class="el" href="../../d5/da2/classxii_timestamp.html">xiiTimestamp</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_LoadedFileModificationDate</b></td></tr>
 <tr class="memdesc:a19ac6e3a95299f8ab4616106884b6188"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to keep track when the loaded file was modified last and thus when reloading of the resource might be necessary. <br /></td></tr>
@@ -117,7 +124,23 @@ void *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pCustomLoaderData
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Copyright (c) Theophilus Eriata. All Rights Reserved. </p>
 <p>Data returned by <a class="el" href="../../da/d81/classxii_resource_type_loader.html">xiiResourceTypeLoader</a> implementations. </p>
-</div><hr/>The documentation for this struct was generated from the following file:<ul>
+</div><a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Member Data Documentation</h2>
+<a id="a78dffa18dbea75b9b0e081f9fe35e6cc" name="a78dffa18dbea75b9b0e081f9fe35e6cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78dffa18dbea75b9b0e081f9fe35e6cc">&#9670;&#160;</a></span>m_sSourceFile</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">xiiString xiiResourceLoadData::m_sSourceFile</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Optional immutable file identity and byte offset of the provided descriptor stream. Resources can retain this information for asynchronous payload reads after the loader closes. </p>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
 <li>/home/runner/work/XII/XII/Source/Engine/Core/ResourceManager/<a class="el" href="../../d1/dd3/_resource_type_loader_8h_source.html">ResourceTypeLoader.h</a></li>
 </ul>
 </div><!-- contents -->

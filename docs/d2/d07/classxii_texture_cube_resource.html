@@ -124,7 +124,6 @@ XII_ALWAYS_INLINE xiiResourceState&#160;</td><td class="memItemRight" valign="bo
 <tr class="memitem:a98f74b39dddc996719866808b5df830e inherit pub_methods_classxii_resource" id="r_a98f74b39dddc996719866808b5df830e"><td class="memItemLeft" align="right" valign="top">XII_ALWAYS_INLINE xiiUInt8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de1/classxii_resource.html#a98f74b39dddc996719866808b5df830e">GetNumQualityLevelsDiscardable</a> () const</td></tr>
 <tr class="memitem:a46add6b80fb582c5082619b1f6b607bf inherit pub_methods_classxii_resource" id="r_a46add6b80fb582c5082619b1f6b607bf"><td class="memItemLeft" align="right" valign="top">
 XII_ALWAYS_INLINE xiiUInt8&#160;</td><td class="memItemRight" valign="bottom"><b>GetNumQualityLevelsLoadable</b> () const</td></tr>
-<tr class="memdesc:a46add6b80fb582c5082619b1f6b607bf inherit pub_methods_classxii_resource"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns how many quality levels the resource may additionally load. <br /></td></tr>
 <tr class="memitem:aa422848fa88c0cb003525fc814cd873e inherit pub_methods_classxii_resource" id="r_aa422848fa88c0cb003525fc814cd873e"><td class="memItemLeft" align="right" valign="top">
 float&#160;</td><td class="memItemRight" valign="bottom"><b>GetLoadingPriority</b> (<a class="el" href="../../d7/dc1/structxii_time.html">xiiTime</a> now) const</td></tr>
 <tr class="memdesc:aa422848fa88c0cb003525fc814cd873e inherit pub_methods_classxii_resource"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the priority that is used by the resource manager to determine which resource to load next. <br /></td></tr>
@@ -184,22 +183,18 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>SetHasLoadingFallback
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pro-attribs" class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:a56bd69ef514fd94bca6041fc20786eea" id="r_a56bd69ef514fd94bca6041fc20786eea"><td class="memItemLeft" align="right" valign="top"><a id="a56bd69ef514fd94bca6041fc20786eea" name="a56bd69ef514fd94bca6041fc20786eea"></a>
-xiiUInt8&#160;</td><td class="memItemRight" valign="bottom"><b>m_uiLoadedTextures</b></td></tr>
-<tr class="memitem:a2efa26adee6b3f84bf85761df912b0c1" id="r_a2efa26adee6b3f84bf85761df912b0c1"><td class="memItemLeft" align="right" valign="top"><a id="a2efa26adee6b3f84bf85761df912b0c1" name="a2efa26adee6b3f84bf85761df912b0c1"></a>
-<a class="el" href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr</a>&lt; <a class="el" href="../../d3/d9a/classxii_g_a_l_texture.html">xiiGALTexture</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_pGALTexture</b> [2]</td></tr>
-<tr class="memitem:aa968b355c1deb6f2cd541c93979cda56" id="r_aa968b355c1deb6f2cd541c93979cda56"><td class="memItemLeft" align="right" valign="top"><a id="aa968b355c1deb6f2cd541c93979cda56" name="aa968b355c1deb6f2cd541c93979cda56"></a>
-xiiUInt64&#160;</td><td class="memItemRight" valign="bottom"><b>m_uiMemoryGPU</b> [2]</td></tr>
+<tr class="memitem:ae0feb275f6b6cbe85ddf3182d84649f2" id="r_ae0feb275f6b6cbe85ddf3182d84649f2"><td class="memItemLeft" align="right" valign="top"><a id="ae0feb275f6b6cbe85ddf3182d84649f2" name="ae0feb275f6b6cbe85ddf3182d84649f2"></a>
+<a class="el" href="../../dd/d52/classxii_mutex.html">xiiMutex</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_TextureMutex</b></td></tr>
+<tr class="memitem:a28c2f4b9cbd093062f397f79fed46fa2" id="r_a28c2f4b9cbd093062f397f79fed46fa2"><td class="memItemLeft" align="right" valign="top"><a id="a28c2f4b9cbd093062f397f79fed46fa2" name="a28c2f4b9cbd093062f397f79fed46fa2"></a>
+<a class="el" href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr</a>&lt; <a class="el" href="../../d3/d9a/classxii_g_a_l_texture.html">xiiGALTexture</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_pGALTexture</b></td></tr>
 <tr class="memitem:ac23b5589d22ca1cd32217069f5446edb" id="r_ac23b5589d22ca1cd32217069f5446edb"><td class="memItemLeft" align="right" valign="top"><a id="ac23b5589d22ca1cd32217069f5446edb" name="ac23b5589d22ca1cd32217069f5446edb"></a>
 <a class="el" href="../../de/dfd/structxii_enum.html">xiiEnum</a>&lt; <a class="el" href="../../de/d10/structxii_g_a_l_resource_format.html">xiiGALResourceFormat</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_Format</b></td></tr>
 <tr class="memitem:a5516af4a2d4ba95669374ab13a7db499" id="r_a5516af4a2d4ba95669374ab13a7db499"><td class="memItemLeft" align="right" valign="top"><a id="a5516af4a2d4ba95669374ab13a7db499" name="a5516af4a2d4ba95669374ab13a7db499"></a>
 xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b>m_uiWidthAndHeight</b></td></tr>
 <tr class="memitem:a036dd360f786ac6b88e82b8ecceadd31" id="r_a036dd360f786ac6b88e82b8ecceadd31"><td class="memItemLeft" align="right" valign="top"><a id="a036dd360f786ac6b88e82b8ecceadd31" name="a036dd360f786ac6b88e82b8ecceadd31"></a>
 <a class="el" href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr</a>&lt; <a class="el" href="../../d3/d97/classxii_g_a_l_sampler.html">xiiGALSampler</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_pSampler</b></td></tr>
-<tr class="memitem:aad98b593bf64c29dcd635c6e8def1892" id="r_aad98b593bf64c29dcd635c6e8def1892"><td class="memItemLeft" align="right" valign="top"><a id="aad98b593bf64c29dcd635c6e8def1892" name="aad98b593bf64c29dcd635c6e8def1892"></a>
-<a class="el" href="../../dd/d52/classxii_mutex.html">xiiMutex</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_EnvironmentMutex</b></td></tr>
-<tr class="memitem:aeed69078455e44379de94a28e8dc44f6" id="r_aeed69078455e44379de94a28e8dc44f6"><td class="memItemLeft" align="right" valign="top"><a id="aeed69078455e44379de94a28e8dc44f6" name="aeed69078455e44379de94a28e8dc44f6"></a>
-<a class="el" href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr</a>&lt; const <a class="el" href="../../d9/d81/classxii_environment_map.html">xiiEnvironmentMap</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_EnvironmentMaps</b> [2]</td></tr>
+<tr class="memitem:aae1705034c75e61bdb80d0648d563171" id="r_aae1705034c75e61bdb80d0648d563171"><td class="memItemLeft" align="right" valign="top"><a id="aae1705034c75e61bdb80d0648d563171" name="aae1705034c75e61bdb80d0648d563171"></a>
+<a class="el" href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr</a>&lt; const <a class="el" href="../../d9/d81/classxii_environment_map.html">xiiEnvironmentMap</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_pEnvironmentMap</b></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-inherited" class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -208,6 +203,8 @@ Additional Inherited Members</h2></td></tr>
 , <a class="el" href="../../d9/de1/classxii_resource.html#ad3386f288d8a8ab633fba003a6187ed9aa8748188c286904944ef4d9ee11b8577">OnAnyThread</a>
  }</td></tr>
 <tr class="memdesc:ad3386f288d8a8ab633fba003a6187ed9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies the thread type on which update operations should be performed.  <a href="../../d9/de1/classxii_resource.html#ad3386f288d8a8ab633fba003a6187ed9">More...</a><br /></td></tr>
+<tr class="inherit_header pub_static_methods_classxii_resource"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_static_methods_classxii_resource')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Static Public Member Functions inherited from <a class="el" href="../../d9/de1/classxii_resource.html">xiiResource</a></td></tr>
+<tr class="memitem:ab791c18ba19dc0e5ab82beb45df015aa inherit pub_static_methods_classxii_resource" id="r_ab791c18ba19dc0e5ab82beb45df015aa"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="../../df/d66/structxii_resource_load_data.html">xiiResourceLoadData</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/de1/classxii_resource.html#ab791c18ba19dc0e5ab82beb45df015aa">GetCurrentlyUpdatingLoadData</a> ()</td></tr>
 <tr class="inherit_header pub_static_methods_classxii_no_base"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_static_methods_classxii_no_base')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Static Public Member Functions inherited from <a class="el" href="../../d2/d38/classxii_no_base.html">xiiNoBase</a></td></tr>
 <tr class="memitem:a4bde433b55ebd55edf63c57239799bba inherit pub_static_methods_classxii_no_base" id="r_a4bde433b55ebd55edf63c57239799bba"><td class="memItemLeft" align="right" valign="top">
 static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetStaticRTTI</b> ()</td></tr>

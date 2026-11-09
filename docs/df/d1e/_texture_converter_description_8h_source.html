@@ -143,48 +143,45 @@ $(function(){initNavTree('df/d1e/_texture_converter_description_8h_source.html',
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>  <a class="code hl_struct" href="../../de/dfd/structxii_enum.html">xiiEnum&lt;xiiTextureConverterOutputType&gt;</a>     m_OutputType;</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>  <a class="code hl_struct" href="../../de/dfd/structxii_enum.html">xiiEnum&lt;xiiTextureConverterTargetPlatform&gt;</a> m_TargetPlatform;</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>  <span class="comment">// low resolution output</span></div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  xiiUInt32 m_uiLowResMipmaps = 0;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>  <span class="comment">// thumbnail output</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  xiiUInt32 m_uiThumbnailOutputResolution = 0;</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  <span class="comment">// thumbnail output</span></div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  xiiUInt32 m_uiThumbnailOutputResolution = 0;</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  <span class="comment">// Format / Compression</span></div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  <a class="code hl_struct" href="../../de/dfd/structxii_enum.html">xiiEnum&lt;xiiTextureConverterUsage&gt;</a>           m_Usage;</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  <a class="code hl_struct" href="../../de/dfd/structxii_enum.html">xiiEnum&lt;xiiTextureConverterCompressionMode&gt;</a> m_CompressionMode;</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  <span class="comment">// resolution clamp and downscale</span></div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  xiiUInt32 m_uiMinResolution  = 16;</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  xiiUInt32 m_uiMaxResolution  = 1024 * 8;</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  xiiUInt32 m_uiDownscaleSteps = 0;</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  <span class="comment">// Mipmaps / filtering</span></div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>  <a class="code hl_struct" href="../../de/dfd/structxii_enum.html">xiiEnum&lt;xiiTextureConverterMipmapMode&gt;</a> m_MipmapMode;</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="../../d7/dc2/classxii_texture_converter_description.html#a30a13e09613bb0571011ee6cbf59304f">   65</a></span>  <a class="code hl_struct" href="../../d6/dbe/structxii_g_a_l_sampler_creation_description.html">xiiGALSamplerCreationDescription</a>       <a class="code hl_variable" href="../../d7/dc2/classxii_texture_converter_description.html#a30a13e09613bb0571011ee6cbf59304f">m_SamplerDescription</a>; </div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>  <span class="keywordtype">bool</span>                                   m_bPreserveMipmapCoverage = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>  <span class="keywordtype">float</span>                                  m_fMipmapAlphaThreshold   = 0.5f;</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>  <span class="comment">// Misc options</span></div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>  xiiUInt8 m_uiDilateColor     = 0;</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>  <span class="keywordtype">bool</span>     m_bFlipHorizontal   = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>  <span class="keywordtype">bool</span>     m_bPremultiplyAlpha = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>  <span class="keywordtype">float</span>    m_fHdrExposureBias  = 0.0f;</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>  <span class="keywordtype">float</span>    m_fMaxValue         = 64000.f;</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>  <span class="comment">// XII specific</span></div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>  xiiUInt64 m_uiAssetHash    = 0;</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>  xiiUInt16 m_uiAssetVersion = 0;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  <span class="comment">// Format / Compression</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  <a class="code hl_struct" href="../../de/dfd/structxii_enum.html">xiiEnum&lt;xiiTextureConverterUsage&gt;</a>           m_Usage;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>  <a class="code hl_struct" href="../../de/dfd/structxii_enum.html">xiiEnum&lt;xiiTextureConverterCompressionMode&gt;</a> m_CompressionMode;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  <span class="comment">// resolution clamp and downscale</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  xiiUInt32 m_uiMinResolution  = 16;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  xiiUInt32 m_uiMaxResolution  = 1024 * 8;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  xiiUInt32 m_uiDownscaleSteps = 0;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  <span class="comment">// Mipmaps / filtering</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  <a class="code hl_struct" href="../../de/dfd/structxii_enum.html">xiiEnum&lt;xiiTextureConverterMipmapMode&gt;</a> m_MipmapMode;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="../../d7/dc2/classxii_texture_converter_description.html#a30a13e09613bb0571011ee6cbf59304f">   62</a></span>  <a class="code hl_struct" href="../../d6/dbe/structxii_g_a_l_sampler_creation_description.html">xiiGALSamplerCreationDescription</a>       <a class="code hl_variable" href="../../d7/dc2/classxii_texture_converter_description.html#a30a13e09613bb0571011ee6cbf59304f">m_SamplerDescription</a>; </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  <span class="keywordtype">bool</span>                                   m_bPreserveMipmapCoverage = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>  <span class="keywordtype">float</span>                                  m_fMipmapAlphaThreshold   = 0.5f;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>  <span class="comment">// Misc options</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>  xiiUInt8 m_uiDilateColor     = 0;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>  <span class="keywordtype">bool</span>     m_bFlipHorizontal   = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>  <span class="keywordtype">bool</span>     m_bPremultiplyAlpha = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>  <span class="keywordtype">float</span>    m_fHdrExposureBias  = 0.0f;</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>  <span class="keywordtype">float</span>    m_fMaxValue         = 64000.f;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>  <span class="comment">// XII specific</span></div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>  xiiUInt64 m_uiAssetHash    = 0;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>  xiiUInt16 m_uiAssetVersion = 0;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>  <span class="comment">// Texture Atlas</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>  xiiString m_sTextureAtlasDescFile;</div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>  <span class="comment">// Texture Atlas</span></div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>  xiiString m_sTextureAtlasDescFile;</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>  <span class="comment">// Bump map filter</span></div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>  <a class="code hl_struct" href="../../de/dfd/structxii_enum.html">xiiEnum&lt;xiiTextureConverterBumpMapFilter&gt;</a> m_BumpMapFilter;</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>};</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>  <span class="comment">// Bump map filter</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>  <a class="code hl_struct" href="../../de/dfd/structxii_enum.html">xiiEnum&lt;xiiTextureConverterBumpMapFilter&gt;</a> m_BumpMapFilter;</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>};</div>
 </div>
 <div class="ttc" id="aclassxii_dynamic_array_html"><div class="ttname"><a href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray</a></div><div class="ttdef"><b>Definition</b> DynamicArray.h:84</div></div>
 <div class="ttc" id="aclassxii_hybrid_array_html"><div class="ttname"><a href="../../dc/da9/classxii_hybrid_array.html">xiiHybridArray</a></div><div class="ttdoc">Copyright (c) Theophilus Eriata. All Rights Reserved.</div><div class="ttdef"><b>Definition</b> HybridArray.h:14</div></div>
-<div class="ttc" id="aclassxii_texture_converter_description_html_a30a13e09613bb0571011ee6cbf59304f"><div class="ttname"><a href="../../d7/dc2/classxii_texture_converter_description.html#a30a13e09613bb0571011ee6cbf59304f">xiiTextureConverterDescription::m_SamplerDescription</a></div><div class="ttdeci">xiiGALSamplerCreationDescription m_SamplerDescription</div><div class="ttdoc">Persistent runtime sampling and mipmap border settings.</div><div class="ttdef"><b>Definition</b> TextureConverterDescription.h:65</div></div>
+<div class="ttc" id="aclassxii_texture_converter_description_html_a30a13e09613bb0571011ee6cbf59304f"><div class="ttname"><a href="../../d7/dc2/classxii_texture_converter_description.html#a30a13e09613bb0571011ee6cbf59304f">xiiTextureConverterDescription::m_SamplerDescription</a></div><div class="ttdeci">xiiGALSamplerCreationDescription m_SamplerDescription</div><div class="ttdoc">Persistent runtime sampling and mipmap border settings.</div><div class="ttdef"><b>Definition</b> TextureConverterDescription.h:62</div></div>
 <div class="ttc" id="astructxii_enum_html"><div class="ttname"><a href="../../de/dfd/structxii_enum.html">xiiEnum</a></div><div class="ttdef"><b>Definition</b> Enum.h:39</div></div>
 <div class="ttc" id="astructxii_g_a_l_sampler_creation_description_html"><div class="ttname"><a href="../../d6/dbe/structxii_g_a_l_sampler_creation_description.html">xiiGALSamplerCreationDescription</a></div><div class="ttdef"><b>Definition</b> Sampler.h:45</div></div>
 <div class="ttc" id="astructxii_texture_converter_channel_mapping_html"><div class="ttname"><a href="../../dd/dcb/structxii_texture_converter_channel_mapping.html">xiiTextureConverterChannelMapping</a></div><div class="ttdoc">Copyright (c) Theophilus Eriata. All Rights Reserved.</div><div class="ttdef"><b>Definition</b> TextureConverterDescription.h:15</div></div>

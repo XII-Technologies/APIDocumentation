@@ -107,10 +107,9 @@ Inheritance diagram for xiiTextureAssetDocumentManager:</div>
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a388f671808afed11386d6c8d7decc8c5" id="r_a388f671808afed11386d6c8d7decc8c5"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d4/da4/classxii_asset_document_manager.html#a9a375f71a155ef917885c91836cca2e8">OutputReliability</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a388f671808afed11386d6c8d7decc8c5">GetAssetTypeOutputReliability</a> () const override</td></tr>
+<tr class="memitem:a9e8b100d7fb1fcdd361c30568f3194e6" id="r_a9e8b100d7fb1fcdd361c30568f3194e6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/d54/structxii_status.html">xiiStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9e8b100d7fb1fcdd361c30568f3194e6">ReadAssetDocumentInfo</a> (<a class="el" href="../../d9/d4a/classxii_unique_ptr.html">xiiUniquePtr</a>&lt; <a class="el" href="../../da/d03/classxii_asset_document_info.html">xiiAssetDocumentInfo</a> &gt; &amp;out_pInfo, <a class="el" href="../../d4/d5e/classxii_stream_reader.html">xiiStreamReader</a> &amp;inout_stream) const override</td></tr>
+<tr class="memdesc:a9e8b100d7fb1fcdd361c30568f3194e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opens the asset file and reads the "Header" into the given <a class="el" href="../../da/d03/classxii_asset_document_info.html" title="Copyright (c) Theophilus Eriata. All Rights Reserved.">xiiAssetDocumentInfo</a>.  <br /></td></tr>
 <tr class="inherit_header pub_methods_classxii_asset_document_manager"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classxii_asset_document_manager')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public Member Functions inherited from <a class="el" href="../../d4/da4/classxii_asset_document_manager.html">xiiAssetDocumentManager</a></td></tr>
-<tr class="memitem:a3c1c0dcbcb416c5c0339031e7cf29630 inherit pub_methods_classxii_asset_document_manager" id="r_a3c1c0dcbcb416c5c0339031e7cf29630"><td class="memItemLeft" align="right" valign="top">
-virtual <a class="el" href="../../d0/d54/structxii_status.html">xiiStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ReadAssetDocumentInfo</b> (<a class="el" href="../../d9/d4a/classxii_unique_ptr.html">xiiUniquePtr</a>&lt; <a class="el" href="../../da/d03/classxii_asset_document_info.html">xiiAssetDocumentInfo</a> &gt; &amp;out_pInfo, <a class="el" href="../../d4/d5e/classxii_stream_reader.html">xiiStreamReader</a> &amp;inout_stream) const</td></tr>
-<tr class="memdesc:a3c1c0dcbcb416c5c0339031e7cf29630 inherit pub_methods_classxii_asset_document_manager"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opens the asset file and reads the "Header" into the given <a class="el" href="../../da/d03/classxii_asset_document_info.html" title="Copyright (c) Theophilus Eriata. All Rights Reserved.">xiiAssetDocumentInfo</a>. <br /></td></tr>
 <tr class="memitem:a52b60c0a18fd209f2e427761a2e02d24 inherit pub_methods_classxii_asset_document_manager" id="r_a52b60c0a18fd209f2e427761a2e02d24"><td class="memItemLeft" align="right" valign="top">
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>FillOutSubAssetList</b> (const <a class="el" href="../../da/d03/classxii_asset_document_info.html">xiiAssetDocumentInfo</a> &amp;assetInfo, <a class="el" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray</a>&lt; <a class="el" href="../../dd/d4c/structxii_sub_asset_data.html">xiiSubAssetData</a> &gt; &amp;out_subAssets) const</td></tr>
 <tr class="memitem:ab842f96c1c585e6a16cab7ca4f0f4831 inherit pub_methods_classxii_asset_document_manager" id="r_ab842f96c1c585e6a16cab7ca4f0f4831"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d0/d54/structxii_status.html">xiiStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da4/classxii_asset_document_manager.html#ab842f96c1c585e6a16cab7ca4f0f4831">GetAdditionalOutputs</a> (<a class="el" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray</a>&lt; xiiString &gt; &amp;ref_files)</td></tr>
@@ -131,6 +130,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>AddEntriesToA
 <tr class="memitem:abd2091527ba707bb6299d46f80de03b0 inherit pub_methods_classxii_asset_document_manager" id="r_abd2091527ba707bb6299d46f80de03b0"><td class="memItemLeft" align="right" valign="top">
 xiiString&#160;</td><td class="memItemRight" valign="bottom"><b>GetAbsoluteOutputFileName</b> (const <a class="el" href="../../de/d67/structxii_asset_document_type_descriptor.html">xiiAssetDocumentTypeDescriptor</a> *pTypeDesc, <a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sDocumentPath, <a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sOutputTag, const <a class="el" href="../../d6/db6/classxii_platform_profile.html">xiiPlatformProfile</a> *pAssetProfile=nullptr) const</td></tr>
 <tr class="memdesc:abd2091527ba707bb6299d46f80de03b0 inherit pub_methods_classxii_asset_document_manager"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls GetRelativeOutputFileName and prepends [DataDir]/AssetCache/ . <br /></td></tr>
+<tr class="memitem:a6f1d142e93080d7d0b68ea4476bbefbc inherit pub_methods_classxii_asset_document_manager" id="r_a6f1d142e93080d7d0b68ea4476bbefbc"><td class="memItemLeft" align="right" valign="top">virtual xiiString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da4/classxii_asset_document_manager.html#a6f1d142e93080d7d0b68ea4476bbefbc">GetRelativeOutputFileName</a> (const <a class="el" href="../../de/d67/structxii_asset_document_type_descriptor.html">xiiAssetDocumentTypeDescriptor</a> *pTypeDesc, <a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sDataDirectory, <a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sDocumentPath, <a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sOutputTag, const <a class="el" href="../../d6/db6/classxii_platform_profile.html">xiiPlatformProfile</a> *pAssetProfile=nullptr) const</td></tr>
+<tr class="memdesc:a6f1d142e93080d7d0b68ea4476bbefbc inherit pub_methods_classxii_asset_document_manager"><td class="mdescLeft">&#160;</td><td class="mdescRight">Relative to 'AssetCache' folder.  <br /></td></tr>
 <tr class="memitem:a5a869e169803be8d056cd2cad0da8de3 inherit pub_methods_classxii_asset_document_manager" id="r_a5a869e169803be8d056cd2cad0da8de3"><td class="memItemLeft" align="right" valign="top">
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsOutputUpToDate</b> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sDocumentPath, const <a class="el" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray</a>&lt; xiiString &gt; &amp;outputs, xiiUInt64 uiHash, const <a class="el" href="../../de/d67/structxii_asset_document_type_descriptor.html">xiiAssetDocumentTypeDescriptor</a> *pTypeDescriptor, const <a class="el" href="../../d6/db6/classxii_platform_profile.html">xiiPlatformProfile</a> *pAssetProfile=nullptr)</td></tr>
 <tr class="memitem:ac32202e7f5348ffa3dff075dbb52b063 inherit pub_methods_classxii_asset_document_manager" id="r_ac32202e7f5348ffa3dff075dbb52b063"><td class="memItemLeft" align="right" valign="top">
@@ -168,8 +169,6 @@ template&lt;typename T&gt; </td></tr>
 <tr class="heading"><td colspan="2"><h2 id="header-pri-methods" class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:a0e84c5c633238812556c87927513befa" id="r_a0e84c5c633238812556c87927513befa"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d0/d54/structxii_status.html">xiiStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0e84c5c633238812556c87927513befa">InternalCreateDocument</a> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sDocumentTypeName, <a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sPath, bool bCreateNewDocument, <a class="el" href="../../d8/da9/classxii_document.html">xiiDocument</a> *&amp;out_pDocument, const <a class="el" href="../../da/dd8/classxii_document_object.html">xiiDocumentObject</a> *pOpenContext) override</td></tr>
-<tr class="memitem:ae22e962b1bec97bbb66acff9ccfbf4e2" id="r_ae22e962b1bec97bbb66acff9ccfbf4e2"><td class="memItemLeft" align="right" valign="top">virtual xiiString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae22e962b1bec97bbb66acff9ccfbf4e2">GetRelativeOutputFileName</a> (const <a class="el" href="../../de/d67/structxii_asset_document_type_descriptor.html">xiiAssetDocumentTypeDescriptor</a> *pTypeDescriptor, <a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sDataDirectory, <a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sDocumentPath, <a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sOutputTag, const <a class="el" href="../../d6/db6/classxii_platform_profile.html">xiiPlatformProfile</a> *pAssetProfile) const override</td></tr>
-<tr class="memdesc:ae22e962b1bec97bbb66acff9ccfbf4e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Relative to 'AssetCache' folder.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-inherited" class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -302,54 +301,6 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>GenerateOutput
 
 </div>
 </div>
-<a id="ae22e962b1bec97bbb66acff9ccfbf4e2" name="ae22e962b1bec97bbb66acff9ccfbf4e2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae22e962b1bec97bbb66acff9ccfbf4e2">&#9670;&#160;</a></span>GetRelativeOutputFileName()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">xiiString xiiTextureAssetDocumentManager::GetRelativeOutputFileName </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../de/d67/structxii_asset_document_type_descriptor.html">xiiAssetDocumentTypeDescriptor</a> *</td>          <td class="paramname"><span class="paramname"><em>pTypeDesc</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sDataDirectory</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sDocumentPath</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a></td>          <td class="paramname"><span class="paramname"><em>sOutputTag</em></span>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="../../d6/db6/classxii_platform_profile.html">xiiPlatformProfile</a> *</td>          <td class="paramname"><span class="paramname"><em>pAssetProfile</em></span>&#160;) const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel private">private</span><span class="mlabel virtual">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Relative to 'AssetCache' folder. </p>
-
-<p>Reimplemented from <a class="el" href="../../d4/da4/classxii_asset_document_manager.html#a6f1d142e93080d7d0b68ea4476bbefbc">xiiAssetDocumentManager</a>.</p>
-
-</div>
-</div>
 <a id="a0e84c5c633238812556c87927513befa" name="a0e84c5c633238812556c87927513befa"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0e84c5c633238812556c87927513befa">&#9670;&#160;</a></span>InternalCreateDocument()</h2>
 
@@ -421,6 +372,39 @@ static void&#160;</td><td class="memItemRight" valign="bottom"><b>GenerateOutput
 </div><div class="memdoc">
 
 <p>Implements <a class="el" href="../../d8/d34/classxii_document_manager.html">xiiDocumentManager</a>.</p>
+
+</div>
+</div>
+<a id="a9e8b100d7fb1fcdd361c30568f3194e6" name="a9e8b100d7fb1fcdd361c30568f3194e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e8b100d7fb1fcdd361c30568f3194e6">&#9670;&#160;</a></span>ReadAssetDocumentInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d0/d54/structxii_status.html">xiiStatus</a> xiiTextureAssetDocumentManager::ReadAssetDocumentInfo </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d9/d4a/classxii_unique_ptr.html">xiiUniquePtr</a>&lt; <a class="el" href="../../da/d03/classxii_asset_document_info.html">xiiAssetDocumentInfo</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>out_pInfo</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d4/d5e/classxii_stream_reader.html">xiiStreamReader</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>inout_stream</em></span>&#160;) const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Opens the asset file and reads the "Header" into the given <a class="el" href="../../da/d03/classxii_asset_document_info.html" title="Copyright (c) Theophilus Eriata. All Rights Reserved.">xiiAssetDocumentInfo</a>. </p>
+
+<p>Reimplemented from <a class="el" href="../../d4/da4/classxii_asset_document_manager.html#a3c1c0dcbcb416c5c0339031e7cf29630">xiiAssetDocumentManager</a>.</p>
 
 </div>
 </div>

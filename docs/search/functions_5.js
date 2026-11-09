@@ -97,7 +97,7 @@ var searchData=
   ['forcenofallbackacquisition_94',['ForceNoFallbackAcquisition',['../d4/d8e/classxii_resource_manager.html#a7f28c2067f9ce5083a5df0938511bb7d',1,'xiiResourceManager']]],
   ['fraction_95',['Fraction',['../d1/d37/namespacexii_math.html#aa61976adbc40a0c6c6c08a5471bfaa27',1,'xiiMath::Fraction(Type f)'],['../d1/d37/namespacexii_math.html#a7561d38d2b6c372843eb7b1dcc30e75f',1,'xiiMath::Fraction(Type f)']]],
   ['freeallunusedresources_96',['FreeAllUnusedResources',['../d4/d8e/classxii_resource_manager.html#ada9af157d057ea30227461abac2c7dd3',1,'xiiResourceManager']]],
-  ['freeunusedresources_97',['FreeUnusedResources',['../d4/d8e/classxii_resource_manager.html#a208fef8fa6b340d120d03e78beda58ed',1,'xiiResourceManager']]],
+  ['freeunusedresources_97',['FreeUnusedResources',['../d4/d8e/classxii_resource_manager.html#a2f78d68069def2c8b76acad54bd72736',1,'xiiResourceManager']]],
   ['fromdxgiformat_98',['FromDxgiFormat',['../d3/d68/classxii_image_format_mappings.html#ad2817538004abc6b5cefb998c3a491f9',1,'xiiImageFormatMappings']]],
   ['fromfourcc_99',['FromFourCc',['../d3/d68/classxii_image_format_mappings.html#a44daef1812827378095d95709374cb78',1,'xiiImageFormatMappings']]],
   ['fromnative_100',['FromNative',['../df/d32/namespacexii_min_windows.html#af3312c4dcf709e3214ebbecabf1d05a9',1,'xiiMinWindows']]]

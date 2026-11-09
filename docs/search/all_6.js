@@ -163,7 +163,7 @@ var searchData=
   ['frame_160',['Frame',['../dd/df2/structxii_inspector_profiling_session_1_1_frame.html',1,'xiiInspectorProfilingSession']]],
   ['freeallunusedresources_161',['FreeAllUnusedResources',['../d4/d8e/classxii_resource_manager.html#ada9af157d057ea30227461abac2c7dd3',1,'xiiResourceManager']]],
   ['freelist_162',['FreeList',['../d8/d63/structxii_block_storage_type.html#a1e391ebdbc9ab40af1e94d0ddd8cb792a62954bdfc140131984a34d42dcded40c',1,'xiiBlockStorageType']]],
-  ['freeunusedresources_163',['FreeUnusedResources',['../d4/d8e/classxii_resource_manager.html#a208fef8fa6b340d120d03e78beda58ed',1,'xiiResourceManager']]],
+  ['freeunusedresources_163',['FreeUnusedResources',['../d4/d8e/classxii_resource_manager.html#a2f78d68069def2c8b76acad54bd72736',1,'xiiResourceManager']]],
   ['frequentchanges_164',['FrequentChanges',['../d9/dfa/structxii_spatial_data_1_1_flags.html#af5862f12e465dfd0c2a8341763eb45b2a3f7e6e565d34314f4b1ea9d293068dd3',1,'xiiSpatialData::Flags']]],
   ['fromcurrent_165',['FromCurrent',['../da/dc9/structxii_file_seek_mode.html#aa238d26443e31d26362e3c7d14b701b5a056218c90cc9020039b76c740312b5f7',1,'xiiFileSeekMode']]],
   ['fromdxgiformat_166',['FromDxgiFormat',['../d3/d68/classxii_image_format_mappings.html#ad2817538004abc6b5cefb998c3a491f9',1,'xiiImageFormatMappings']]],

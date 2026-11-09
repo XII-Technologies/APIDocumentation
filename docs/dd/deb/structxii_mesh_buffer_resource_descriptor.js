@@ -1,10 +1,10 @@
 var structxii_mesh_buffer_resource_descriptor =
 [
     [ "xiiMeshBufferResourceDescriptor", "dd/deb/structxii_mesh_buffer_resource_descriptor.html#aabf7d5e36c2efef68368a9ca915a7a10", null ],
-    [ "AddCommonStreams", "dd/deb/structxii_mesh_buffer_resource_descriptor.html#a72596199f225b14507f9dec15bd3aec7", null ],
+    [ "AddCommonStreams", "dd/deb/structxii_mesh_buffer_resource_descriptor.html#a24e300ce233605d0236e4ea4dca8ec6a", null ],
     [ "AddStream", "dd/deb/structxii_mesh_buffer_resource_descriptor.html#a60af1a51f49eecf7ea6a23fa05b4746e", null ],
     [ "AllocateStreams", "dd/deb/structxii_mesh_buffer_resource_descriptor.html#a7f8763a041fddb48d1f7918821888dda", null ],
-    [ "AllocateStreamsFromGeometry", "dd/deb/structxii_mesh_buffer_resource_descriptor.html#a2eecd13632084e352a36ba3afbd9a77c", null ],
+    [ "AllocateStreamsFromGeometry", "dd/deb/structxii_mesh_buffer_resource_descriptor.html#a2b7acfa99c14561632e88d0ff3e462aa", null ],
     [ "BuildMeshlets", "dd/deb/structxii_mesh_buffer_resource_descriptor.html#aafd44bb212c0c286cdad88055cbe1535", null ],
     [ "BuildMeshlets", "dd/deb/structxii_mesh_buffer_resource_descriptor.html#a654e2739e7d0f5f4f41a04e43a711aaa", null ],
     [ "Clear", "dd/deb/structxii_mesh_buffer_resource_descriptor.html#a4036f8a210edb67f36fc6857d8971059", null ],

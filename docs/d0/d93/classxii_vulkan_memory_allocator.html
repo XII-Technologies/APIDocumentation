@@ -98,7 +98,7 @@ $(function(){initNavTree('d0/d93/classxii_vulkan_memory_allocator.html','../../'
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a0fd3e4e96439f5d68c93ba2728379333" id="r_a0fd3e4e96439f5d68c93ba2728379333"><td class="memItemLeft" align="right" valign="top">vk::Result&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0fd3e4e96439f5d68c93ba2728379333">Initialize</a> (<a class="el" href="../../d3/d6b/classxii_g_a_l_device_vulkan.html">xiiGALDeviceVulkan</a> *pDeviceVulkan, xiiUInt32 uiPreferredBlockSize=0U)</td></tr>
+<tr class="memitem:a5a5f9d11749f19cd129363b563027204" id="r_a5a5f9d11749f19cd129363b563027204"><td class="memItemLeft" align="right" valign="top">vk::Result&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5a5f9d11749f19cd129363b563027204">Initialize</a> (<a class="el" href="../../d3/d6b/classxii_g_a_l_device_vulkan.html">xiiGALDeviceVulkan</a> *pDeviceVulkan, bool bNativeBudget, xiiUInt32 uiPreferredBlockSize=0U)</td></tr>
 <tr class="memitem:a0b886d712185357ce6991fffee9493ab" id="r_a0b886d712185357ce6991fffee9493ab"><td class="memItemLeft" align="right" valign="top"><a id="a0b886d712185357ce6991fffee9493ab" name="a0b886d712185357ce6991fffee9493ab"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>DeInitialize</b> ()</td></tr>
 <tr class="memdesc:a0b886d712185357ce6991fffee9493ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cleans up internal resources. <br /></td></tr>
@@ -108,12 +108,21 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>DeInitialize</b> ()</
 <tr class="memitem:af5139f9d9bfd3dbec33b6c383f5eba19" id="r_af5139f9d9bfd3dbec33b6c383f5eba19"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af5139f9d9bfd3dbec33b6c383f5eba19">DestroyImage</a> (vk::Image &amp;vkImage, xiiVulkanAllocation &amp;allocation) const</td></tr>
 <tr class="memitem:ab90834dfef5259c82a2adb3c06deb5ed" id="r_ab90834dfef5259c82a2adb3c06deb5ed"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d1/d86/structxii_vulkan_allocation_info.html">xiiVulkanAllocationInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab90834dfef5259c82a2adb3c06deb5ed">GetAllocationInfo</a> (xiiVulkanAllocation allocation) const</td></tr>
 <tr class="memitem:ab36f09075db732a465257fd380bd7728" id="r_ab36f09075db732a465257fd380bd7728"><td class="memItemLeft" align="right" valign="top">vk::MemoryPropertyFlags&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab36f09075db732a465257fd380bd7728">GetMemoryPropertyFlags</a> (xiiVulkanAllocation allocation) const</td></tr>
-<tr class="memitem:a9e769198256614d3c843f47a8627fe80" id="r_a9e769198256614d3c843f47a8627fe80"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9e769198256614d3c843f47a8627fe80">SetAllocationUserData</a> (xiiVulkanAllocation allocation, const char *pUserData) const</td></tr>
+<tr class="memitem:ac785826c20c61798cc4f60bde02dad0b" id="r_ac785826c20c61798cc4f60bde02dad0b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac785826c20c61798cc4f60bde02dad0b">SetAllocationDebugName</a> (xiiVulkanAllocation allocation, const char *szName) const</td></tr>
 <tr class="memitem:a211a2293fb04731047d139f51654e65c" id="r_a211a2293fb04731047d139f51654e65c"><td class="memItemLeft" align="right" valign="top">vk::Result&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a211a2293fb04731047d139f51654e65c">MapMemory</a> (xiiVulkanAllocation allocation, void **pData) const</td></tr>
 <tr class="memitem:aac8f5bead2565c5db9a3a9586ffd65da" id="r_aac8f5bead2565c5db9a3a9586ffd65da"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aac8f5bead2565c5db9a3a9586ffd65da">UnmapMemory</a> (xiiVulkanAllocation allocation) const</td></tr>
 <tr class="memitem:ae7402577114942ab3e3d311ed44c109a" id="r_ae7402577114942ab3e3d311ed44c109a"><td class="memItemLeft" align="right" valign="top">vk::Result&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae7402577114942ab3e3d311ed44c109a">FlushAllocation</a> (xiiVulkanAllocation allocation, vk::DeviceSize offset=0U, vk::DeviceSize size=vk::WholeSize) const</td></tr>
 <tr class="memitem:a692d6a68bf9dc0f29b9f8b1eacc0b5ae" id="r_a692d6a68bf9dc0f29b9f8b1eacc0b5ae"><td class="memItemLeft" align="right" valign="top">vk::Result&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a692d6a68bf9dc0f29b9f8b1eacc0b5ae">InvalidateAllocation</a> (xiiVulkanAllocation allocation, vk::DeviceSize offset=0U, vk::DeviceSize size=vk::WholeSize) const</td></tr>
-<tr class="memitem:ad8ed22baed605311b3c5b7225893b6b8" id="r_ad8ed22baed605311b3c5b7225893b6b8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d66/structxii_vulkan_memory_statistics.html">xiiVulkanMemoryStatistics</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad8ed22baed605311b3c5b7225893b6b8">GetStatistics</a> () const</td></tr>
+<tr class="memitem:a64ae56f393ffd931fa8ac5bcf4ff796d" id="r_a64ae56f393ffd931fa8ac5bcf4ff796d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a64ae56f393ffd931fa8ac5bcf4ff796d">GetMemoryHeapStatistics</a> (<a class="el" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray</a>&lt; <a class="el" href="../../d3/d2f/structxii_g_a_l_memory_heap_statistics.html">xiiGALMemoryHeapStatistics</a> &gt; &amp;out_heaps) const</td></tr>
+<tr class="memitem:ae9f7e70294cf12df99cc70ab7b019eb5" id="r_ae9f7e70294cf12df99cc70ab7b019eb5"><td class="memItemLeft" align="right" valign="top"><a id="ae9f7e70294cf12df99cc70ab7b019eb5" name="ae9f7e70294cf12df99cc70ab7b019eb5"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetMemoryCategoryStatistics</b> (xiiGALMemoryCategory::Enum category, <a class="el" href="../../dc/d72/structxii_g_a_l_memory_category_statistics.html">xiiGALMemoryCategoryStatistics</a> &amp;out_statistics) const</td></tr>
+<tr class="memitem:a693fcbc6932b46a636692ce32720872a" id="r_a693fcbc6932b46a636692ce32720872a"><td class="memItemLeft" align="right" valign="top"><a id="a693fcbc6932b46a636692ce32720872a" name="a693fcbc6932b46a636692ce32720872a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>MarkAllocationRetiring</b> (xiiVulkanAllocation allocation) const</td></tr>
+<tr class="memitem:ac78c29881c409697fed32e42528b880d" id="r_ac78c29881c409697fed32e42528b880d"><td class="memItemLeft" align="right" valign="top"><a id="ac78c29881c409697fed32e42528b880d" name="ac78c29881c409697fed32e42528b880d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DumpAllocations</b> () const</td></tr>
+<tr class="memitem:ad0c838450d573f5847a9bfce71831062" id="r_ad0c838450d573f5847a9bfce71831062"><td class="memItemLeft" align="right" valign="top"><a id="ad0c838450d573f5847a9bfce71831062" name="ad0c838450d573f5847a9bfce71831062"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>BeginFrame</b> (xiiUInt32 uiFrameIndex)</td></tr>
+<tr class="memdesc:ad0c838450d573f5847a9bfce71831062"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the allocator's cached native budget at the frame boundary. <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Vulkan memory allocator wrapper.</p>
@@ -332,6 +341,25 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>DeInitialize</b> ()</
 
 </div>
 </div>
+<a id="a64ae56f393ffd931fa8ac5bcf4ff796d" name="a64ae56f393ffd931fa8ac5bcf4ff796d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64ae56f393ffd931fa8ac5bcf4ff796d">&#9670;&#160;</a></span>GetMemoryHeapStatistics()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiVulkanMemoryAllocator::GetMemoryHeapStatistics </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray</a>&lt; <a class="el" href="../../d3/d2f/structxii_g_a_l_memory_heap_statistics.html">xiiGALMemoryHeapStatistics</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>out_heaps</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns current memory usage statistics.</p>
+<dl class="section return"><dt>Returns</dt><dd>Struct containing block and allocation counts and sizes. </dd></dl>
+
+</div>
+</div>
 <a id="ab36f09075db732a465257fd380bd7728" name="ab36f09075db732a465257fd380bd7728"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab36f09075db732a465257fd380bd7728">&#9670;&#160;</a></span>GetMemoryPropertyFlags()</h2>
 
@@ -357,27 +385,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>DeInitialize</b> ()</
 
 </div>
 </div>
-<a id="ad8ed22baed605311b3c5b7225893b6b8" name="ad8ed22baed605311b3c5b7225893b6b8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad8ed22baed605311b3c5b7225893b6b8">&#9670;&#160;</a></span>GetStatistics()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="../../d7/d66/structxii_vulkan_memory_statistics.html">xiiVulkanMemoryStatistics</a> xiiVulkanMemoryAllocator::GetStatistics </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Returns current memory usage statistics.</p>
-<dl class="section return"><dt>Returns</dt><dd>Struct containing block and allocation counts and sizes. </dd></dl>
-
-</div>
-</div>
-<a id="a0fd3e4e96439f5d68c93ba2728379333" name="a0fd3e4e96439f5d68c93ba2728379333"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0fd3e4e96439f5d68c93ba2728379333">&#9670;&#160;</a></span>Initialize()</h2>
+<a id="a5a5f9d11749f19cd129363b563027204" name="a5a5f9d11749f19cd129363b563027204"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a5f9d11749f19cd129363b563027204">&#9670;&#160;</a></span>Initialize()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -386,6 +395,11 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>DeInitialize</b> ()</
           <td class="memname">vk::Result xiiVulkanMemoryAllocator::Initialize </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="../../d3/d6b/classxii_g_a_l_device_vulkan.html">xiiGALDeviceVulkan</a> *</td>          <td class="paramname"><span class="paramname"><em>pDeviceVulkan</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>bNativeBudget</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -471,29 +485,29 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>DeInitialize</b> ()</
 
 </div>
 </div>
-<a id="a9e769198256614d3c843f47a8627fe80" name="a9e769198256614d3c843f47a8627fe80"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9e769198256614d3c843f47a8627fe80">&#9670;&#160;</a></span>SetAllocationUserData()</h2>
+<a id="ac785826c20c61798cc4f60bde02dad0b" name="ac785826c20c61798cc4f60bde02dad0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac785826c20c61798cc4f60bde02dad0b">&#9670;&#160;</a></span>SetAllocationDebugName()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void xiiVulkanMemoryAllocator::SetAllocationUserData </td>
+          <td class="memname">void xiiVulkanMemoryAllocator::SetAllocationDebugName </td>
           <td>(</td>
           <td class="paramtype">xiiVulkanAllocation</td>          <td class="paramname"><span class="paramname"><em>allocation</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>pUserData</em></span>&#160;) const</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>szName</em></span>&#160;) const</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Sets user-defined metadata for a memory allocation.</p>
+<p>Copies a debug name so it remains valid throughout native retirement.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">allocation</td><td>- Allocation handle.</td></tr>
-    <tr><td class="paramname">pUserData</td><td>Pointer to user data string. </td></tr>
+    <tr><td class="paramname">szName</td><td>- Debug name. </td></tr>
   </table>
   </dd>
 </dl>

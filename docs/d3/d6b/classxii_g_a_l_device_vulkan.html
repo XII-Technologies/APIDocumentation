@@ -115,6 +115,12 @@ Public Types</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a2327e899144e6350e5051bac833e5a4b" id="r_a2327e899144e6350e5051bac833e5a4b"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d1/dd2/classxii_g_a_l_command_queue.html">xiiGALCommandQueue</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2327e899144e6350e5051bac833e5a4b">GetCommandQueue</a> (<a class="el" href="../../d7/d55/structxii_bitflags.html">xiiBitflags</a>&lt; <a class="el" href="../../d2/d0b/structxii_g_a_l_command_queue_flags.html">xiiGALCommandQueueFlags</a> &gt; queueFlags) const override final</td></tr>
+<tr class="memitem:ae7d1e99b698d62fefb20cd52757d5131" id="r_ae7d1e99b698d62fefb20cd52757d5131"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae7d1e99b698d62fefb20cd52757d5131">GetMemoryHeapStatistics</a> (<a class="el" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray</a>&lt; <a class="el" href="../../d3/d2f/structxii_g_a_l_memory_heap_statistics.html">xiiGALMemoryHeapStatistics</a> &gt; &amp;out_heaps) const override final</td></tr>
+<tr class="memdesc:ae7d1e99b698d62fefb20cd52757d5131"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns current allocator and budget statistics. Backends without reporting return an empty array.  <br /></td></tr>
+<tr class="memitem:a632b8ee309928d79dd2358613937077c" id="r_a632b8ee309928d79dd2358613937077c"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a632b8ee309928d79dd2358613937077c">IsStreamingMemoryPressured</a> () const override final</td></tr>
+<tr class="memdesc:a632b8ee309928d79dd2358613937077c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the backend is applying memory pressure controls to optional streaming work.  <br /></td></tr>
+<tr class="memitem:a63023e20b291f2a4c1145f7b060cf77d" id="r_a63023e20b291f2a4c1145f7b060cf77d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a63023e20b291f2a4c1145f7b060cf77d">GetMemoryCategoryStatistics</a> (xiiGALMemoryCategory::Enum category, <a class="el" href="../../dc/d72/structxii_g_a_l_memory_category_statistics.html">xiiGALMemoryCategoryStatistics</a> &amp;out_statistics) const override final</td></tr>
+<tr class="memdesc:a63023e20b291f2a4c1145f7b060cf77d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns false when allocation attribution is unavailable. Native retiring memory remains charged.  <br /></td></tr>
 <tr class="memitem:a0d3d99d93a68130c78a35d8d4d761a85" id="r_a0d3d99d93a68130c78a35d8d4d761a85"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0d3d99d93a68130c78a35d8d4d761a85">SetDebugNamePlatform</a> (<a class="el" href="../../d4/d85/classxii_string_view.html">xiiStringView</a> sName) const override final</td></tr>
 <tr class="memitem:a7e5d3fff5d7c4145de3af56fc242b738" id="r_a7e5d3fff5d7c4145de3af56fc242b738"><td class="memTemplParams" colspan="2"><a id="a7e5d3fff5d7c4145de3af56fc242b738" name="a7e5d3fff5d7c4145de3af56fc242b738"></a>
 template&lt;typename ObjectHandle, typename = typename std::enable_if&lt;std::is_object&lt;ObjectHandle&gt;::value&gt;::type&gt; </td></tr>
@@ -288,6 +294,10 @@ xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b>GetRefCount</b> 
 Friends</h2></td></tr>
 <tr class="memitem:aefc9ff75d6833fd2f05be48e16436db6" id="r_aefc9ff75d6833fd2f05be48e16436db6"><td class="memItemLeft" align="right" valign="top"><a id="aefc9ff75d6833fd2f05be48e16436db6" name="aefc9ff75d6833fd2f05be48e16436db6"></a>
 class&#160;</td><td class="memItemRight" valign="bottom"><b>xiiMemoryUtils</b></td></tr>
+<tr class="memitem:ae0eb90f5a69d838751abcab1a057de2d" id="r_ae0eb90f5a69d838751abcab1a057de2d"><td class="memItemLeft" align="right" valign="top"><a id="ae0eb90f5a69d838751abcab1a057de2d" name="ae0eb90f5a69d838751abcab1a057de2d"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>xiiGALBufferVulkan</b></td></tr>
+<tr class="memitem:a43b78778603813da63e20912dd42ee4b" id="r_a43b78778603813da63e20912dd42ee4b"><td class="memItemLeft" align="right" valign="top"><a id="a43b78778603813da63e20912dd42ee4b" name="a43b78778603813da63e20912dd42ee4b"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>xiiGALTextureVulkan</b></td></tr>
 <tr class="memitem:ae936c442317e979b8e1acc669ddf1a96" id="r_ae936c442317e979b8e1acc669ddf1a96"><td class="memItemLeft" align="right" valign="top"><a id="ae936c442317e979b8e1acc669ddf1a96" name="ae936c442317e979b8e1acc669ddf1a96"></a>
 <a class="el" href="../../de/d3c/structxii_internal_1_1_new_instance.html">xiiInternal::NewInstance</a>&lt; <a class="el" href="../../d5/d19/classxii_g_a_l_device.html">xiiGALDevice</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>CreateVulkanDevice</b> (<a class="el" href="../../df/dbd/classxii_allocator.html">xiiAllocator</a> *pAllocator, const <a class="el" href="../../d6/dd5/structxii_g_a_l_device_creation_description.html">xiiGALDeviceCreationDescription</a> &amp;description)</td></tr>
 </table><table class="memberdecls">
@@ -396,6 +406,97 @@ xiiProxyAllocator&#160;</td><td class="memItemRight" valign="bottom"><b>m_Alloca
 <dl class="section note"><dt>Note</dt><dd>The default graphics queue is guaranteed to exist, for a successful device initialization. </dd></dl>
 
 <p>Implements <a class="el" href="../../d5/d19/classxii_g_a_l_device.html#abf53c569c6323282d80cc2e84c5abfcd">xiiGALDevice</a>.</p>
+
+</div>
+</div>
+<a id="a63023e20b291f2a4c1145f7b060cf77d" name="a63023e20b291f2a4c1145f7b060cf77d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63023e20b291f2a4c1145f7b060cf77d">&#9670;&#160;</a></span>GetMemoryCategoryStatistics()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool xiiGALDeviceVulkan::GetMemoryCategoryStatistics </td>
+          <td>(</td>
+          <td class="paramtype">xiiGALMemoryCategory::Enum</td>          <td class="paramname"><span class="paramname"><em>category</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dc/d72/structxii_g_a_l_memory_category_statistics.html">xiiGALMemoryCategoryStatistics</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>out_statistics</em></span>&#160;) const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel nodiscard">nodiscard</span><span class="mlabel final">final</span><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns false when allocation attribution is unavailable. Native retiring memory remains charged. </p>
+
+<p>Reimplemented from <a class="el" href="../../d5/d19/classxii_g_a_l_device.html#ae54461004e9049975da910ced3fce96e">xiiGALDevice</a>.</p>
+
+</div>
+</div>
+<a id="ae7d1e99b698d62fefb20cd52757d5131" name="ae7d1e99b698d62fefb20cd52757d5131"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7d1e99b698d62fefb20cd52757d5131">&#9670;&#160;</a></span>GetMemoryHeapStatistics()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void xiiGALDeviceVulkan::GetMemoryHeapStatistics </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray</a>&lt; <a class="el" href="../../d3/d2f/structxii_g_a_l_memory_heap_statistics.html">xiiGALMemoryHeapStatistics</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>out_heaps</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel final">final</span><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns current allocator and budget statistics. Backends without reporting return an empty array. </p>
+
+<p>Reimplemented from <a class="el" href="../../d5/d19/classxii_g_a_l_device.html#a6c625cc8d7ef16ebb563a69d835f3dbd">xiiGALDevice</a>.</p>
+
+</div>
+</div>
+<a id="a632b8ee309928d79dd2358613937077c" name="a632b8ee309928d79dd2358613937077c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a632b8ee309928d79dd2358613937077c">&#9670;&#160;</a></span>IsStreamingMemoryPressured()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool xiiGALDeviceVulkan::IsStreamingMemoryPressured </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel nodiscard">nodiscard</span><span class="mlabel final">final</span><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Whether the backend is applying memory pressure controls to optional streaming work. </p>
+
+<p>Reimplemented from <a class="el" href="../../d5/d19/classxii_g_a_l_device.html#abe3cb6ebe4e6ed5eaab5ab994ce676af">xiiGALDevice</a>.</p>
 
 </div>
 </div>

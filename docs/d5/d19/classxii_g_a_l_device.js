@@ -29,8 +29,11 @@ var classxii_g_a_l_device =
     [ "GetGraphicsDeviceAdapterProperties", "d5/d19/classxii_g_a_l_device.html#a6173a3623f59067122c40fb8f2d6e849", null ],
     [ "GetGraphicsDeviceType", "d5/d19/classxii_g_a_l_device.html#a31b5126af59befd982a5eb0e45fcfa92", null ],
     [ "GetLimits", "d5/d19/classxii_g_a_l_device.html#a78fa7a53759c84870bce2e4fc35b6fa6", null ],
+    [ "GetMemoryCategoryStatistics", "d5/d19/classxii_g_a_l_device.html#ae54461004e9049975da910ced3fce96e", null ],
+    [ "GetMemoryHeapStatistics", "d5/d19/classxii_g_a_l_device.html#a6c625cc8d7ef16ebb563a69d835f3dbd", null ],
     [ "GetMutex", "d5/d19/classxii_g_a_l_device.html#ae21a645986b141b2fe32552ba300dcb2", null ],
     [ "Initialize", "d5/d19/classxii_g_a_l_device.html#a64fd727410fb0d83a90f5b7999feaf7b", null ],
+    [ "IsStreamingMemoryPressured", "d5/d19/classxii_g_a_l_device.html#abe3cb6ebe4e6ed5eaab5ab994ce676af", null ],
     [ "PostInitialize", "d5/d19/classxii_g_a_l_device.html#a06e939d7dddfe73aa00bba50e7ad57a3", null ],
     [ "VerifyMultithreadedAccess", "d5/d19/classxii_g_a_l_device.html#a0b64b32dc6869a2fa1b63265aaa19fd8", null ],
     [ "WaitIdle", "d5/d19/classxii_g_a_l_device.html#a828245f48cdb5625f11a2d04993621a3", null ]

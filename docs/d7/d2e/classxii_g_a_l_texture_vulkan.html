@@ -101,6 +101,8 @@ Inheritance diagram for xiiGALTextureVulkan:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:ad568d81db7f90cd39502e6feb37f79b8" id="r_ad568d81db7f90cd39502e6feb37f79b8"><td class="memItemLeft" align="right" valign="top">virtual xiiUInt64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad568d81db7f90cd39502e6feb37f79b8">GetMemoryConsumption</a> () const override final</td></tr>
+<tr class="memdesc:ad568d81db7f90cd39502e6feb37f79b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the calculated memory consumption for texture.  <br /></td></tr>
 <tr class="memitem:a2ff41f4ba7190cbacc3f5575ac25002d" id="r_a2ff41f4ba7190cbacc3f5575ac25002d"><td class="memItemLeft" align="right" valign="top">virtual XII_ALWAYS_INLINE const <a class="el" href="../../d8/d52/structxii_g_a_l_sparse_texture_properties.html">xiiGALSparseTextureProperties</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2ff41f4ba7190cbacc3f5575ac25002d">GetSparseProperties</a> () const override final</td></tr>
 <tr class="memdesc:a2ff41f4ba7190cbacc3f5575ac25002d"><td class="mdescLeft">&#160;</td><td class="mdescRight">This returns the sparse texture properties.  <br /></td></tr>
 <tr class="memitem:a4c022efc2b9cca860dd08902856632b0" id="r_a4c022efc2b9cca860dd08902856632b0"><td class="memItemLeft" align="right" valign="top"><a id="a4c022efc2b9cca860dd08902856632b0" name="a4c022efc2b9cca860dd08902856632b0"></a>
@@ -129,9 +131,6 @@ XII_ALWAYS_INLINE <a class="el" href="../../d7/d55/structxii_bitflags.html">xiiB
 <tr class="memitem:a272406a9e930fd4b08d0d5ca128f7d9f inherit pub_methods_classxii_g_a_l_texture" id="r_a272406a9e930fd4b08d0d5ca128f7d9f"><td class="memItemLeft" align="right" valign="top">
 XII_ALWAYS_INLINE const <a class="el" href="../../d7/d7e/structxii_g_a_l_external_memory_description.html">xiiGALExternalMemoryDescription</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetExternalMemoryDescription</b> () const</td></tr>
 <tr class="memdesc:a272406a9e930fd4b08d0d5ca128f7d9f inherit pub_methods_classxii_g_a_l_texture"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the external memory description for this texture. <br /></td></tr>
-<tr class="memitem:a1210f25a7ec3a3a3409f3869abd46c07 inherit pub_methods_classxii_g_a_l_texture" id="r_a1210f25a7ec3a3a3409f3869abd46c07"><td class="memItemLeft" align="right" valign="top">
-virtual xiiUInt64&#160;</td><td class="memItemRight" valign="bottom"><b>GetMemoryConsumption</b> () const</td></tr>
-<tr class="memdesc:a1210f25a7ec3a3a3409f3869abd46c07 inherit pub_methods_classxii_g_a_l_texture"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the calculated memory consumption for texture. <br /></td></tr>
 <tr class="memitem:a37b7851caaed8cb80b6034a3808ce645 inherit pub_methods_classxii_g_a_l_texture" id="r_a37b7851caaed8cb80b6034a3808ce645"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr</a>&lt; <a class="el" href="../../da/d75/classxii_g_a_l_texture_view.html">xiiGALTextureView</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d9a/classxii_g_a_l_texture.html#a37b7851caaed8cb80b6034a3808ce645">GetDefaultView</a> (<a class="el" href="../../de/dfd/structxii_enum.html">xiiEnum</a>&lt; <a class="el" href="../../db/d60/structxii_g_a_l_texture_view_type.html">xiiGALTextureViewType</a> &gt; viewType)</td></tr>
 <tr class="memitem:a54e23d9c7fe40caaf6033fe80073bd62 inherit pub_methods_classxii_g_a_l_texture" id="r_a54e23d9c7fe40caaf6033fe80073bd62"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d9b/classxii_shared_ptr.html">xiiSharedPtr</a>&lt; <a class="el" href="../../da/d75/classxii_g_a_l_texture_view.html">xiiGALTextureView</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d9a/classxii_g_a_l_texture.html#a54e23d9c7fe40caaf6033fe80073bd62">CreateView</a> (<a class="el" href="../../d8/de2/structxii_g_a_l_texture_view_creation_description.html">xiiGALTextureViewCreationDescription</a> &amp;description)</td></tr>
 <tr class="inherit_header pub_methods_classxii_g_a_l_resource"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classxii_g_a_l_resource')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public Member Functions inherited from <a class="el" href="../../d4/d2d/classxii_g_a_l_resource.html">xiiGALResource</a></td></tr>
@@ -298,6 +297,35 @@ static const <a class="el" href="../../db/d89/classxii_r_t_t_i.html">xiiRTTI</a>
 </div><div class="memdoc">
 
 <p>Implements <a class="el" href="../../d3/d9a/classxii_g_a_l_texture.html">xiiGALTexture</a>.</p>
+
+</div>
+</div>
+<a id="ad568d81db7f90cd39502e6feb37f79b8" name="ad568d81db7f90cd39502e6feb37f79b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad568d81db7f90cd39502e6feb37f79b8">&#9670;&#160;</a></span>GetMemoryConsumption()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">xiiUInt64 xiiGALTextureVulkan::GetMemoryConsumption </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel nodiscard">nodiscard</span><span class="mlabel final">final</span><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the calculated memory consumption for texture. </p>
+
+<p>Reimplemented from <a class="el" href="../../d3/d9a/classxii_g_a_l_texture.html#a1210f25a7ec3a3a3409f3869abd46c07">xiiGALTexture</a>.</p>
 
 </div>
 </div>

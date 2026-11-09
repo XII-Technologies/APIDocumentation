@@ -23,5 +23,6 @@ var classxii_id_table_base =
     [ "Remove", "d3/df7/classxii_id_table_base.html#a22aed313a651afb42af61a461397b04d", null ],
     [ "Reserve", "d3/df7/classxii_id_table_base.html#a64ad1a2d9725ea2135599ece26dbe8fc", null ],
     [ "TryGetValue", "d3/df7/classxii_id_table_base.html#aa1a09c6eed7767f470cfaf9479e1c911", null ],
-    [ "TryGetValue", "d3/df7/classxii_id_table_base.html#af73fa53c42dbba64094d007da57c8cdb", null ]
+    [ "TryGetValue", "d3/df7/classxii_id_table_base.html#af73fa53c42dbba64094d007da57c8cdb", null ],
+    [ "TryInsert", "d3/df7/classxii_id_table_base.html#ae61281cb66abeb5c83f4f40b0c1df44a", null ]
 ];

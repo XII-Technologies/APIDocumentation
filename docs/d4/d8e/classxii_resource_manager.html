@@ -94,7 +94,7 @@ $(function(){initNavTree('d4/d8e/classxii_resource_manager.html','../../','d4/d8
 </div><!--header-->
 <div class="contents">
 
-<p>The central class for managing all types derived from <a class="el" href="../../d9/de1/classxii_resource.html" title="Copyright (c) Theophilus Eriata. All Rights Reserved.">xiiResource</a>.  
+<p>The central class for managing all types derived from <a class="el" href="../../d9/de1/classxii_resource.html">xiiResource</a>.  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="../../d1/d46/_resource_manager_8h_source.html">ResourceManager.h</a>&gt;</code></p>
@@ -251,7 +251,7 @@ template&lt;typename RESOURCE_TYPE&gt; </td></tr>
 <tr class="memitem:a296635aea33986f1e3f8a356fbd367ca template"><td class="memItemLeft" align="right" valign="top">static const <a class="el" href="../../d6/d16/classxii_typed_resource_handle.html">xiiTypedResourceHandle</a>&lt; RESOURCE_TYPE &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a296635aea33986f1e3f8a356fbd367ca">GetResourceTypeMissingFallback</a> ()</td></tr>
 <tr class="memitem:a5b493278fd85c39997d03a73540de1be" id="r_a5b493278fd85c39997d03a73540de1be"><td class="memItemLeft" align="right" valign="top"><a id="a5b493278fd85c39997d03a73540de1be" name="a5b493278fd85c39997d03a73540de1be"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>AddResourceCleanupCallback</b> (ResourceCleanupCB cb)</td></tr>
-<tr class="memdesc:a5b493278fd85c39997d03a73540de1be"><td class="mdescLeft">&#160;</td><td class="mdescRight">[internal] Used by <a class="el" href="../../d9/de1/classxii_resource.html" title="Copyright (c) Theophilus Eriata. All Rights Reserved.">xiiResource</a> to register a cleanup function to be called at resource manager shutdown. <br /></td></tr>
+<tr class="memdesc:a5b493278fd85c39997d03a73540de1be"><td class="mdescLeft">&#160;</td><td class="mdescRight">[internal] Used by <a class="el" href="../../d9/de1/classxii_resource.html">xiiResource</a> to register a cleanup function to be called at resource manager shutdown. <br /></td></tr>
 <tr class="memitem:a5865cc9077de6c89e1e303a147fdb4ff" id="r_a5865cc9077de6c89e1e303a147fdb4ff"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5865cc9077de6c89e1e303a147fdb4ff">ClearResourceCleanupCallback</a> (ResourceCleanupCB cb)</td></tr>
 <tr class="memitem:aad855877ba8758d6cf466b1d598c9677" id="r_aad855877ba8758d6cf466b1d598c9677"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aad855877ba8758d6cf466b1d598c9677">ExecuteAllResourceCleanupCallbacks</a> ()</td></tr>
 </table><table class="memberdecls">
@@ -260,12 +260,10 @@ Unloading resources</h2></td></tr>
 <tr class="memitem:ada9af157d057ea30227461abac2c7dd3" id="r_ada9af157d057ea30227461abac2c7dd3"><td class="memItemLeft" align="right" valign="top"><a id="ada9af157d057ea30227461abac2c7dd3" name="ada9af157d057ea30227461abac2c7dd3"></a>
 static xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b>FreeAllUnusedResources</b> ()</td></tr>
 <tr class="memdesc:ada9af157d057ea30227461abac2c7dd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deallocates all resources whose refcount has reached 0. Returns the number of deleted resources. <br /></td></tr>
-<tr class="memitem:a208fef8fa6b340d120d03e78beda58ed" id="r_a208fef8fa6b340d120d03e78beda58ed"><td class="memItemLeft" align="right" valign="top"><a id="a208fef8fa6b340d120d03e78beda58ed" name="a208fef8fa6b340d120d03e78beda58ed"></a>
-static xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><b>FreeUnusedResources</b> (<a class="el" href="../../d7/dc1/structxii_time.html">xiiTime</a> timeout, <a class="el" href="../../d7/dc1/structxii_time.html">xiiTime</a> lastAcquireThreshold)</td></tr>
-<tr class="memdesc:a208fef8fa6b340d120d03e78beda58ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deallocates resources whose refcount has reached 0. Returns the number of deleted resources. <br /></td></tr>
+<tr class="memitem:a2f78d68069def2c8b76acad54bd72736" id="r_a2f78d68069def2c8b76acad54bd72736"><td class="memItemLeft" align="right" valign="top">static xiiUInt32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2f78d68069def2c8b76acad54bd72736">FreeUnusedResources</a> (<a class="el" href="../../d7/dc1/structxii_time.html">xiiTime</a> timeout, <a class="el" href="../../d7/dc1/structxii_time.html">xiiTime</a> lastAcquireThreshold, xiiUInt64 uiMinimumGpuBytes=0U)</td></tr>
 <tr class="memitem:a211b99cf30b7c625fcf12a084a8ffb07" id="r_a211b99cf30b7c625fcf12a084a8ffb07"><td class="memItemLeft" align="right" valign="top"><a id="a211b99cf30b7c625fcf12a084a8ffb07" name="a211b99cf30b7c625fcf12a084a8ffb07"></a>
 static void&#160;</td><td class="memItemRight" valign="bottom"><b>SetAutoFreeUnused</b> (<a class="el" href="../../d7/dc1/structxii_time.html">xiiTime</a> timeout, <a class="el" href="../../d7/dc1/structxii_time.html">xiiTime</a> lastAcquireThreshold)</td></tr>
-<tr class="memdesc:a211b99cf30b7c625fcf12a084a8ffb07"><td class="mdescLeft">&#160;</td><td class="mdescRight">If timeout is not zero, <a class="el" href="#a208fef8fa6b340d120d03e78beda58ed" title="Deallocates resources whose refcount has reached 0. Returns the number of deleted resources.">FreeUnusedResources()</a> is called once every frame with the given parameters. <br /></td></tr>
+<tr class="memdesc:a211b99cf30b7c625fcf12a084a8ffb07"><td class="mdescLeft">&#160;</td><td class="mdescRight">If timeout is not zero, <a class="el" href="#a2f78d68069def2c8b76acad54bd72736">FreeUnusedResources()</a> is called once every frame with the given parameters. <br /></td></tr>
 <tr class="memitem:a9a75ce771f1e6f73c286a1b33b4b99c3" id="r_a9a75ce771f1e6f73c286a1b33b4b99c3"><td class="memTemplParams" colspan="2"><a id="a9a75ce771f1e6f73c286a1b33b4b99c3" name="a9a75ce771f1e6f73c286a1b33b4b99c3"></a>
 template&lt;typename ResourceType&gt; </td></tr>
 <tr class="memitem:a9a75ce771f1e6f73c286a1b33b4b99c3 template"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><b>SetIncrementalUnloadForResourceType</b> (bool bActive)</td></tr>
@@ -286,7 +284,7 @@ template&lt;typename RESOURCE_TYPE&gt; </td></tr>
 <tr class="memdesc:a4aa2a8f20ed839331587d7a439acb592"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies which resource to use as a loading fallback for the given type, while a resource is not yet loaded. <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The central class for managing all types derived from <a class="el" href="../../d9/de1/classxii_resource.html" title="Copyright (c) Theophilus Eriata. All Rights Reserved.">xiiResource</a>. </p>
+<div class="textblock"><p>The central class for managing all types derived from <a class="el" href="../../d9/de1/classxii_resource.html">xiiResource</a>. </p>
 </div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
 <a id="a5479934b8fc637ff4067fdd2d24bc2e0" name="a5479934b8fc637ff4067fdd2d24bc2e0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5479934b8fc637ff4067fdd2d24bc2e0">&#9670;&#160;</a></span>BeginAcquireResource()</h2>
@@ -541,6 +539,41 @@ template&lt;typename ResourceType&gt; </div>
 </table>
 </div><div class="memdoc">
 <p>Returns the resource type that was registered to handle the given asset type for loading. nullptr if no resource type was registered for this asset type. </p>
+
+</div>
+</div>
+<a id="a2f78d68069def2c8b76acad54bd72736" name="a2f78d68069def2c8b76acad54bd72736"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f78d68069def2c8b76acad54bd72736">&#9670;&#160;</a></span>FreeUnusedResources()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">xiiUInt32 xiiResourceManager::FreeUnusedResources </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d7/dc1/structxii_time.html">xiiTime</a></td>          <td class="paramname"><span class="paramname"><em>timeout</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d7/dc1/structxii_time.html">xiiTime</a></td>          <td class="paramname"><span class="paramname"><em>lastAcquireThreshold</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">xiiUInt64</td>          <td class="paramname"><span class="paramname"><em>uiMinimumGpuBytes</em></span><span class="paramdefsep"> = </span><span class="paramdefval">0U</span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel static">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Deallocates resources whose refcount has reached 0. Returns the number of deleted resources. If uiMinimumGpuBytes is positive, only resources with at least that much reported GPU memory are considered. </p>
 
 </div>
 </div>

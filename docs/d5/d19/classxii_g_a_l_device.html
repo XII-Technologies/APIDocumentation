@@ -94,9 +94,6 @@ $(function(){initNavTree('d5/d19/classxii_g_a_l_device.html','../../','de/d60/cl
 </div><!--header-->
 <div class="contents">
 
-<p>Copyright (c) Theophilus Eriata. All Rights Reserved.  
- <a href="#details">More...</a></p>
-
 <p><code>#include &lt;<a class="el" href="../../d7/d8b/_device_8h_source.html">Device.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for xiiGALDevice:</div>
@@ -124,6 +121,12 @@ const <a class="el" href="../../d6/dd5/structxii_g_a_l_device_creation_descripti
 <tr class="memitem:a6173a3623f59067122c40fb8f2d6e849" id="r_a6173a3623f59067122c40fb8f2d6e849"><td class="memItemLeft" align="right" valign="top"><a id="a6173a3623f59067122c40fb8f2d6e849" name="a6173a3623f59067122c40fb8f2d6e849"></a>
 const <a class="el" href="../../dd/d07/structxii_g_a_l_graphics_device_adapter_description.html">xiiGALGraphicsDeviceAdapterDescription</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetGraphicsDeviceAdapterProperties</b> () const</td></tr>
 <tr class="memdesc:a6173a3623f59067122c40fb8f2d6e849"><td class="mdescLeft">&#160;</td><td class="mdescRight">This retrieves the device properties. See xiiGraphicsDeviceAdapterDescription. <br /></td></tr>
+<tr class="memitem:a6c625cc8d7ef16ebb563a69d835f3dbd" id="r_a6c625cc8d7ef16ebb563a69d835f3dbd"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6c625cc8d7ef16ebb563a69d835f3dbd">GetMemoryHeapStatistics</a> (<a class="el" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray</a>&lt; <a class="el" href="../../d3/d2f/structxii_g_a_l_memory_heap_statistics.html">xiiGALMemoryHeapStatistics</a> &gt; &amp;out_heaps) const</td></tr>
+<tr class="memdesc:a6c625cc8d7ef16ebb563a69d835f3dbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns current allocator and budget statistics. Backends without reporting return an empty array.  <br /></td></tr>
+<tr class="memitem:ae54461004e9049975da910ced3fce96e" id="r_ae54461004e9049975da910ced3fce96e"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae54461004e9049975da910ced3fce96e">GetMemoryCategoryStatistics</a> (xiiGALMemoryCategory::Enum category, <a class="el" href="../../dc/d72/structxii_g_a_l_memory_category_statistics.html">xiiGALMemoryCategoryStatistics</a> &amp;out_statistics) const</td></tr>
+<tr class="memdesc:ae54461004e9049975da910ced3fce96e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns false when allocation attribution is unavailable. Native retiring memory remains charged.  <br /></td></tr>
+<tr class="memitem:abe3cb6ebe4e6ed5eaab5ab994ce676af" id="r_abe3cb6ebe4e6ed5eaab5ab994ce676af"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abe3cb6ebe4e6ed5eaab5ab994ce676af">IsStreamingMemoryPressured</a> () const</td></tr>
+<tr class="memdesc:abe3cb6ebe4e6ed5eaab5ab994ce676af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the backend is applying memory pressure controls to optional streaming work.  <br /></td></tr>
 <tr class="memitem:ac356d7a5b9dda8b2c2ad5e86916a752f" id="r_ac356d7a5b9dda8b2c2ad5e86916a752f"><td class="memItemLeft" align="right" valign="top"><a id="ac356d7a5b9dda8b2c2ad5e86916a752f" name="ac356d7a5b9dda8b2c2ad5e86916a752f"></a>
 const <a class="el" href="../../d6/d8f/structxii_g_a_l_device_features.html">xiiGALDeviceFeatures</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetFeatures</b> () const</td></tr>
 <tr class="memdesc:ac356d7a5b9dda8b2c2ad5e86916a752f"><td class="mdescLeft">&#160;</td><td class="mdescRight">This retrieves the device feature states. See <a class="el" href="../../d6/d8f/structxii_g_a_l_device_features.html" title="This describes the device features.">xiiGALDeviceFeatures</a>. <br /></td></tr>
@@ -251,8 +254,7 @@ xiiProxyAllocator&#160;</td><td class="memItemRight" valign="bottom"><b>m_Alloca
 <a class="el" href="../../dd/d07/structxii_g_a_l_graphics_device_adapter_description.html">xiiGALGraphicsDeviceAdapterDescription</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_AdapterDescription</b></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Copyright (c) Theophilus Eriata. All Rights Reserved. </p>
-<p>The <a class="el" href="../../d5/d19/classxii_g_a_l_device.html" title="Copyright (c) Theophilus Eriata. All Rights Reserved.">xiiGALDevice</a> class is the primary interface for interactions with rendering APIs. It contains a set of (non-virtual) functions to set state, create resources etc. which rely on API specific implementations provided by protected virtual functions. Redundant state changes are prevented at the platform independent level in the non-virtual functions. </p>
+<div class="textblock"><p>The <a class="el" href="../../d5/d19/classxii_g_a_l_device.html">xiiGALDevice</a> class is the primary interface for interactions with rendering APIs. It contains a set of (non-virtual) functions to set state, create resources etc. which rely on API specific implementations provided by protected virtual functions. Redundant state changes are prevented at the platform independent level in the non-virtual functions. </p>
 </div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
 <a id="adf635226cbcce4c8ecf11979bb4b77bb" name="adf635226cbcce4c8ecf11979bb4b77bb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adf635226cbcce4c8ecf11979bb4b77bb">&#9670;&#160;</a></span>CreateBlendState()</h2>
@@ -1008,6 +1010,97 @@ Stride of a formatted buffer will be computed automatically from the format if t
 <dl class="section note"><dt>Note</dt><dd>The default graphics queue is guaranteed to exist, for a successful device initialization. </dd></dl>
 
 <p>Implemented in <a class="el" href="../../d8/d77/classxii_g_a_l_device_d3_d12.html#ae5a47a14f2bd5d4a03bc41b0492f488c">xiiGALDeviceD3D12</a>, and <a class="el" href="../../d3/d6b/classxii_g_a_l_device_vulkan.html#a2327e899144e6350e5051bac833e5a4b">xiiGALDeviceVulkan</a>.</p>
+
+</div>
+</div>
+<a id="ae54461004e9049975da910ced3fce96e" name="ae54461004e9049975da910ced3fce96e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae54461004e9049975da910ced3fce96e">&#9670;&#160;</a></span>GetMemoryCategoryStatistics()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool xiiGALDevice::GetMemoryCategoryStatistics </td>
+          <td>(</td>
+          <td class="paramtype">xiiGALMemoryCategory::Enum</td>          <td class="paramname"><span class="paramname"><em>category</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dc/d72/structxii_g_a_l_memory_category_statistics.html">xiiGALMemoryCategoryStatistics</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>out_statistics</em></span>&#160;) const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel nodiscard">nodiscard</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns false when allocation attribution is unavailable. Native retiring memory remains charged. </p>
+
+<p>Reimplemented in <a class="el" href="../../d3/d6b/classxii_g_a_l_device_vulkan.html#a63023e20b291f2a4c1145f7b060cf77d">xiiGALDeviceVulkan</a>.</p>
+
+</div>
+</div>
+<a id="a6c625cc8d7ef16ebb563a69d835f3dbd" name="a6c625cc8d7ef16ebb563a69d835f3dbd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c625cc8d7ef16ebb563a69d835f3dbd">&#9670;&#160;</a></span>GetMemoryHeapStatistics()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void xiiGALDevice::GetMemoryHeapStatistics </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray</a>&lt; <a class="el" href="../../d3/d2f/structxii_g_a_l_memory_heap_statistics.html">xiiGALMemoryHeapStatistics</a> &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>out_heaps</em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns current allocator and budget statistics. Backends without reporting return an empty array. </p>
+
+<p>Reimplemented in <a class="el" href="../../d3/d6b/classxii_g_a_l_device_vulkan.html#ae7d1e99b698d62fefb20cd52757d5131">xiiGALDeviceVulkan</a>.</p>
+
+</div>
+</div>
+<a id="abe3cb6ebe4e6ed5eaab5ab994ce676af" name="abe3cb6ebe4e6ed5eaab5ab994ce676af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe3cb6ebe4e6ed5eaab5ab994ce676af">&#9670;&#160;</a></span>IsStreamingMemoryPressured()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool xiiGALDevice::IsStreamingMemoryPressured </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel nodiscard">nodiscard</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Whether the backend is applying memory pressure controls to optional streaming work. </p>
+
+<p>Reimplemented in <a class="el" href="../../d3/d6b/classxii_g_a_l_device_vulkan.html#a632b8ee309928d79dd2358613937077c">xiiGALDeviceVulkan</a>.</p>
 
 </div>
 </div>

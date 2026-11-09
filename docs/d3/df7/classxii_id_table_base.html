@@ -138,6 +138,9 @@ IdType&#160;</td><td class="memItemRight" valign="bottom"><b>Insert</b> (const V
 <tr class="memitem:a9632d2103b1eed15f11f86bfd9678ac2" id="r_a9632d2103b1eed15f11f86bfd9678ac2"><td class="memItemLeft" align="right" valign="top"><a id="a9632d2103b1eed15f11f86bfd9678ac2" name="a9632d2103b1eed15f11f86bfd9678ac2"></a>
 IdType&#160;</td><td class="memItemRight" valign="bottom"><b>Insert</b> (ValueType &amp;&amp;value)</td></tr>
 <tr class="memdesc:a9632d2103b1eed15f11f86bfd9678ac2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inserts the temporary value into the table and returns the corresponding id. <br /></td></tr>
+<tr class="memitem:ae61281cb66abeb5c83f4f40b0c1df44a" id="r_ae61281cb66abeb5c83f4f40b0c1df44a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae61281cb66abeb5c83f4f40b0c1df44a">TryInsert</a> (const ValueType &amp;value, IndexType uiIndexLimit, IdType &amp;out_id)</td></tr>
+<tr class="memitem:a722d8f7ff2e4aaef6076ba2363b4d96f" id="r_a722d8f7ff2e4aaef6076ba2363b4d96f"><td class="memItemLeft" align="right" valign="top"><a id="a722d8f7ff2e4aaef6076ba2363b4d96f" name="a722d8f7ff2e4aaef6076ba2363b4d96f"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>TryInsert</b> (ValueType &amp;&amp;value, IndexType uiIndexLimit, IdType &amp;out_id)</td></tr>
 <tr class="memitem:a22aed313a651afb42af61a461397b04d" id="r_a22aed313a651afb42af61a461397b04d"><td class="memItemLeft" align="right" valign="top"><a id="a22aed313a651afb42af61a461397b04d" name="a22aed313a651afb42af61a461397b04d"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>Remove</b> (const IdType id, ValueType *out_pOldValue=nullptr)</td></tr>
 <tr class="memdesc:a22aed313a651afb42af61a461397b04d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes the entry with the given id. Returns if an entry was removed and optionally writes out the old value to out_oldValue. <br /></td></tr>
@@ -197,7 +200,37 @@ class xiiIdTableBase&lt; IdType, ValueType &gt;</div><p>Copyright (c) Theophilus
 <p>An id contains an index into the table and a generation counter to detect if a table entry was re-used. All insertion/erasure/lookup functions take O(1) time if the table does not need to be expanded. Lookup is nearly as fast as a simple array lookup. The table stores a free-list in its free elements to ensure fast insertion/erasure.</p>
 <dl class="section note"><dt>Note</dt><dd>Valid IDs will never be all zero (index + generation).</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d0/dcc/structxii_generic_id.html">xiiGenericId</a> </dd></dl>
-</div><hr/>The documentation for this class was generated from the following files:<ul>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
+<a id="ae61281cb66abeb5c83f4f40b0c1df44a" name="ae61281cb66abeb5c83f4f40b0c1df44a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae61281cb66abeb5c83f4f40b0c1df44a">&#9670;&#160;</a></span>TryInsert()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename IdType, typename ValueType&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../d3/df7/classxii_id_table_base.html">xiiIdTableBase</a>&lt; IdType, ValueType &gt;::TryInsert </td>
+          <td>(</td>
+          <td class="paramtype">const ValueType &amp;</td>          <td class="paramname"><span class="paramname"><em>value</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IndexType</td>          <td class="paramname"><span class="paramname"><em>uiIndexLimit</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IdType &amp;</td>          <td class="paramname"><span class="paramname"><em>out_id</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Inserts into an index below uiIndexLimit, for IDs addressing fixed-capacity storage. <a class="el" href="#a64ad1a2d9725ea2135599ece26dbe8fc" title="Expands the table so it can at least store the given capacity.">Reserve()</a> may allocate additional entries and does not impose an index limit. Returns false and invalidates out_id when no eligible index is available. </p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>/home/runner/work/XII/XII/Source/Engine/Foundation/Containers/<a class="el" href="../../d4/d96/_id_table_8h_source.html">IdTable.h</a></li>
 <li>/home/runner/work/XII/XII/Source/Engine/Foundation/Containers/Implementation/<a class="el" href="../../d5/d5f/_id_table__inl_8h_source.html">IdTable_inl.h</a></li>
 </ul>

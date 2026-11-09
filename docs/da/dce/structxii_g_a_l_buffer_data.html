@@ -119,6 +119,12 @@ xiiUInt64&#160;</td><td class="memItemRight" valign="bottom"><b>m_uiDataSize</b>
 <tr class="memitem:a4b7045543f71ab1cacf09397ba7d22c0" id="r_a4b7045543f71ab1cacf09397ba7d22c0"><td class="memItemLeft" align="right" valign="top"><a id="a4b7045543f71ab1cacf09397ba7d22c0" name="a4b7045543f71ab1cacf09397ba7d22c0"></a>
 <a class="el" href="../../dc/d80/classxii_g_a_l_command_list.html">xiiGALCommandList</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pCommandList</b></td></tr>
 <tr class="memdesc:a4b7045543f71ab1cacf09397ba7d22c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optional command list used to upload data; if null, a new one is created; if reused elsewhere, synchronization (e.g., fence) is required. <br /></td></tr>
+<tr class="memitem:abeeea7f76b9fca451fb39425317904e7" id="r_abeeea7f76b9fca451fb39425317904e7"><td class="memItemLeft" align="right" valign="top"><a id="abeeea7f76b9fca451fb39425317904e7" name="abeeea7f76b9fca451fb39425317904e7"></a>
+xiiUInt64&#160;</td><td class="memItemRight" valign="bottom"><b>m_uiMaxStreamingAllocationBytes</b> = <a class="el" href="../../d1/d37/namespacexii_math.html#a6bbce1588f70c91d6cad87e82a0238c1">xiiMath::MaxValue</a>&lt;xiiUInt64&gt;()</td></tr>
+<tr class="memdesc:abeeea7f76b9fca451fb39425317904e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remaining cache allowance, checked against native requirements before optional allocation. <br /></td></tr>
+<tr class="memitem:a6708732be8a811ad281e726c716fcda7" id="r_a6708732be8a811ad281e726c716fcda7"><td class="memItemLeft" align="right" valign="top"><a id="a6708732be8a811ad281e726c716fcda7" name="a6708732be8a811ad281e726c716fcda7"></a>
+bool *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pStreamingDeferred</b> = nullptr</td></tr>
+<tr class="memdesc:a6708732be8a811ad281e726c716fcda7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opts a streaming buffer into optional native admission. Set on budget deferral, cleared on entry. <br /></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This describes the buffer initial data. </p>

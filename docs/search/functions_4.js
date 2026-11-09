@@ -47,7 +47,7 @@ var searchData=
   ['ensurecreated_44',['EnsureCreated',['../d7/d83/classxii_scene_preview_lighting.html#aada815ee8344824d3e5ca2667d80c97f',1,'xiiScenePreviewLighting']]],
   ['ensuredocumentisclosed_45',['EnsureDocumentIsClosed',['../d8/d34/classxii_document_manager.html#a6989e5de95d03925b5c273e2dc609287',1,'xiiDocumentManager']]],
   ['ensuredocumentisclosedinallmanagers_46',['EnsureDocumentIsClosedInAllManagers',['../d8/d34/classxii_document_manager.html#a041a2bbecb8f814f36c2fea5012ea754',1,'xiiDocumentManager']]],
-  ['ensureinitialized_47',['EnsureInitialized',['../db/d60/classxii_component.html#ad447ceab55bc400ab373ca31e2684190',1,'xiiComponent::EnsureInitialized()'],['../d6/d7f/classxii_geometry_residency_manager.html#aa010839eb59fa5bab7c28ca9c0cf60d1',1,'xiiGeometryResidencyManager::EnsureInitialized()']]],
+  ['ensureinitialized_47',['EnsureInitialized',['../db/d60/classxii_component.html#ad447ceab55bc400ab373ca31e2684190',1,'xiiComponent::EnsureInitialized()'],['../d4/dfe/classxii_gpu_residency_manager.html#a19a4afb5432741d6879545b6fdc01215',1,'xiiGpuResidencyManager::EnsureInitialized()']]],
   ['ensuresettingsobject_48',['EnsureSettingsObject',['../d8/d51/classxii_render_pipeline_asset_document.html#a564f4df41988c48db4cb763cc448b173',1,'xiiRenderPipelineAssetDocument']]],
   ['ensuresimulationstarted_49',['EnsureSimulationStarted',['../db/d60/classxii_component.html#a64fe5d352205439e419dd66139f8bc7b',1,'xiiComponent']]],
   ['ensurevisible_50',['EnsureVisible',['../d8/da9/classxii_document.html#aeae908dd2f8fc7bc66b3517d934f66d0',1,'xiiDocument']]],

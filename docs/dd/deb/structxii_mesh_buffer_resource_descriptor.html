@@ -141,11 +141,11 @@ const xiiBoundingBoxSphere &amp;&#160;</td><td class="memItemRight" valign="bott
 void&#160;</td><td class="memItemRight" valign="bottom"><b>Clear</b> ()</td></tr>
 <tr class="memdesc:a4036f8a210edb67f36fc6857d8971059"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears all data from this descriptor, resetting it to an empty state. <br /></td></tr>
 <tr class="memitem:a60af1a51f49eecf7ea6a23fa05b4746e" id="r_a60af1a51f49eecf7ea6a23fa05b4746e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a60af1a51f49eecf7ea6a23fa05b4746e">AddStream</a> (<a class="el" href="../../de/dfd/structxii_enum.html">xiiEnum</a>&lt; <a class="el" href="../../d8/dd7/structxii_mesh_vertex_semantic.html">xiiMeshVertexSemantic</a> &gt; semantic, <a class="el" href="../../de/dfd/structxii_enum.html">xiiEnum</a>&lt; <a class="el" href="../../d2/d0d/structxii_mesh_vertex_stream_format.html">xiiMeshVertexStreamFormat</a> &gt; format, xiiUInt16 uiOffset, xiiUInt16 uiStride)</td></tr>
-<tr class="memitem:a72596199f225b14507f9dec15bd3aec7" id="r_a72596199f225b14507f9dec15bd3aec7"><td class="memItemLeft" align="right" valign="top"><a id="a72596199f225b14507f9dec15bd3aec7" name="a72596199f225b14507f9dec15bd3aec7"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>AddCommonStreams</b> ()</td></tr>
-<tr class="memdesc:a72596199f225b14507f9dec15bd3aec7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a set of common vertex streams (position, normal, tangent, texcoord0, texcoord1, color0, bone indices, bone weights) to this mesh buffer resource descriptor with standard formats and offsets for use with the provided geometry. <br /></td></tr>
+<tr class="memitem:a24e300ce233605d0236e4ea4dca8ec6a" id="r_a24e300ce233605d0236e4ea4dca8ec6a"><td class="memItemLeft" align="right" valign="top"><a id="a24e300ce233605d0236e4ea4dca8ec6a" name="a24e300ce233605d0236e4ea4dca8ec6a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AddCommonStreams</b> (bool bIncludeSkinning=true)</td></tr>
+<tr class="memdesc:a24e300ce233605d0236e4ea4dca8ec6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Declares the packed vertex layout. Static imports can omit bone streams without changing the packed record stride. <br /></td></tr>
 <tr class="memitem:a7f8763a041fddb48d1f7918821888dda" id="r_a7f8763a041fddb48d1f7918821888dda"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7f8763a041fddb48d1f7918821888dda">AllocateStreams</a> (xiiUInt32 uiVertexCount, xiiUInt32 uiPrimitiveCount, bool bUse32BitIndices=true)</td></tr>
-<tr class="memitem:a2eecd13632084e352a36ba3afbd9a77c" id="r_a2eecd13632084e352a36ba3afbd9a77c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2eecd13632084e352a36ba3afbd9a77c">AllocateStreamsFromGeometry</a> (const <a class="el" href="../../d9/dbc/classxii_geometry.html">xiiGeometry</a> &amp;geometry, <a class="el" href="../../de/dfd/structxii_enum.html">xiiEnum</a>&lt; <a class="el" href="../../db/d19/structxii_g_a_l_primitive_topology.html">xiiGALPrimitiveTopology</a> &gt; topology, bool bBuildMeshlets=true)</td></tr>
+<tr class="memitem:a2b7acfa99c14561632e88d0ff3e462aa" id="r_a2b7acfa99c14561632e88d0ff3e462aa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2b7acfa99c14561632e88d0ff3e462aa">AllocateStreamsFromGeometry</a> (const <a class="el" href="../../d9/dbc/classxii_geometry.html">xiiGeometry</a> &amp;geometry, <a class="el" href="../../de/dfd/structxii_enum.html">xiiEnum</a>&lt; <a class="el" href="../../db/d19/structxii_g_a_l_primitive_topology.html">xiiGALPrimitiveTopology</a> &gt; topology, bool bBuildMeshlets=true, bool bIncludeSkinning=false)</td></tr>
 <tr class="memitem:acf9a540d99edad46ff5181336de5bea8" id="r_acf9a540d99edad46ff5181336de5bea8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acf9a540d99edad46ff5181336de5bea8">SetVertexData</a> (<a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; const xiiUInt8 &gt; pData, xiiUInt32 uiVertexCount, xiiUInt32 uiVertexStride)</td></tr>
 <tr class="memitem:a6ac04230ea4443bd486011b989c674c2" id="r_a6ac04230ea4443bd486011b989c674c2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6ac04230ea4443bd486011b989c674c2">SetIndexData</a> (<a class="el" href="../../d0/d60/classxii_array_ptr.html">xiiArrayPtr</a>&lt; const xiiUInt8 &gt; pData, xiiUInt32 uiIndexCount, <a class="el" href="../../de/dfd/structxii_enum.html">xiiEnum</a>&lt; <a class="el" href="../../da/d8b/structxii_g_a_l_value_type.html">xiiGALValueType</a> &gt; indexType)</td></tr>
 <tr class="memitem:a654e2739e7d0f5f4f41a04e43a711aaa" id="r_a654e2739e7d0f5f4f41a04e43a711aaa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a654e2739e7d0f5f4f41a04e43a711aaa">BuildMeshlets</a> (xiiUInt32 uiMaxVertices=64U, xiiUInt32 uiMaxPrimitives=124U)</td></tr>
@@ -156,8 +156,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>ComputeBounds</b> ()<
 <tr class="memitem:aacfdedced469e526a2a8fd3838e2f194" id="r_aacfdedced469e526a2a8fd3838e2f194"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aacfdedced469e526a2a8fd3838e2f194">SetBounds</a> (const xiiBoundingBoxSphere &amp;bounds)</td></tr>
 <tr class="memitem:a3032010c1705f144eb5fe6a37039b343" id="r_a3032010c1705f144eb5fe6a37039b343"><td class="memItemLeft" align="right" valign="top"><a id="a3032010c1705f144eb5fe6a37039b343" name="a3032010c1705f144eb5fe6a37039b343"></a>
 <a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Serialize</b> (<a class="el" href="../../d0/d18/classxii_stream_writer.html">xiiStreamWriter</a> &amp;inout_stream) const</td></tr>
-<tr class="memitem:ad149c5ce1f644921fb6bf9f925110f6a" id="r_ad149c5ce1f644921fb6bf9f925110f6a"><td class="memItemLeft" align="right" valign="top"><a id="ad149c5ce1f644921fb6bf9f925110f6a" name="ad149c5ce1f644921fb6bf9f925110f6a"></a>
-<a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Deserialize</b> (<a class="el" href="../../d4/d5e/classxii_stream_reader.html">xiiStreamReader</a> &amp;inout_stream)</td></tr>
+<tr class="memitem:ad28d16f8e5b9bbb6c5f6e4e1f951a892" id="r_ad28d16f8e5b9bbb6c5f6e4e1f951a892"><td class="memItemLeft" align="right" valign="top"><a id="ad28d16f8e5b9bbb6c5f6e4e1f951a892" name="ad28d16f8e5b9bbb6c5f6e4e1f951a892"></a>
+<a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Deserialize</b> (<a class="el" href="../../d4/d5e/classxii_stream_reader.html">xiiStreamReader</a> &amp;inout_stream, const <a class="el" href="../../df/d66/structxii_resource_load_data.html">xiiResourceLoadData</a> *pSource=nullptr)</td></tr>
+<tr class="memitem:ab3ca5f3aca04c94c2975eeb09e2aa2bc" id="r_ab3ca5f3aca04c94c2975eeb09e2aa2bc"><td class="memItemLeft" align="right" valign="top"><a id="ab3ca5f3aca04c94c2975eeb09e2aa2bc" name="ab3ca5f3aca04c94c2975eeb09e2aa2bc"></a>
+<a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>BuildGeometryPages</b> ()</td></tr>
+<tr class="memitem:ad397e6187209246687fa46805a8f32a0" id="r_ad397e6187209246687fa46805a8f32a0"><td class="memItemLeft" align="right" valign="top"><a id="ad397e6187209246687fa46805a8f32a0" name="ad397e6187209246687fa46805a8f32a0"></a>
+<a class="el" href="../../dd/dad/structxii_result.html">xiiResult</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ReadGeometryPage</b> (xiiUInt32 page, <a class="el" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray</a>&lt; xiiUInt8 &gt; &amp;out_data) const</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -167,6 +171,22 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:ac4253f0a78d491a51e4d2723c981b6f5" id="r_ac4253f0a78d491a51e4d2723c981b6f5"><td class="memItemLeft" align="right" valign="top"><a id="ac4253f0a78d491a51e4d2723c981b6f5" name="ac4253f0a78d491a51e4d2723c981b6f5"></a>
 <a class="el" href="../../de/dfd/structxii_enum.html">xiiEnum</a>&lt; <a class="el" href="../../da/d8b/structxii_g_a_l_value_type.html">xiiGALValueType</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_IndexType</b> = <a class="el" href="../../da/d8b/structxii_g_a_l_value_type.html#ad3bab4214e06888cc9c6cdb1f95c4355acd1853235f722c66720a09a5cd238c9b">xiiGALValueType::UInt32</a></td></tr>
 <tr class="memdesc:ac4253f0a78d491a51e4d2723c981b6f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The data format of the index data for this mesh, used to identify how the index data is organized and interpreted by the renderer (e.g., 16-bit unsigned integer or 32-bit unsigned integer) and to calculate the expected index data size based on the index count and index stride for this descriptor. <br /></td></tr>
+<tr class="memitem:a682e3e7a8283f6344e43636dafd0f986" id="r_a682e3e7a8283f6344e43636dafd0f986"><td class="memItemLeft" align="right" valign="top"><a id="a682e3e7a8283f6344e43636dafd0f986" name="a682e3e7a8283f6344e43636dafd0f986"></a>
+xiiString&#160;</td><td class="memItemRight" valign="bottom"><b>m_sGeometryPageFile</b></td></tr>
+<tr class="memitem:a2fd68c54ff5519516c1fc174e684d96e" id="r_a2fd68c54ff5519516c1fc174e684d96e"><td class="memItemLeft" align="right" valign="top"><a id="a2fd68c54ff5519516c1fc174e684d96e" name="a2fd68c54ff5519516c1fc174e684d96e"></a>
+xiiUInt64&#160;</td><td class="memItemRight" valign="bottom"><b>m_uiGeometryFileOffset</b> = 0U</td></tr>
+<tr class="memitem:a9a616a834be3b619a6ea976e95ce3eb8" id="r_a9a616a834be3b619a6ea976e95ce3eb8"><td class="memItemLeft" align="right" valign="top"><a id="a9a616a834be3b619a6ea976e95ce3eb8" name="a9a616a834be3b619a6ea976e95ce3eb8"></a>
+xiiUInt64&#160;</td><td class="memItemRight" valign="bottom"><b>m_uiGeometryFileHash</b> = 0U</td></tr>
+<tr class="memitem:ab4b31baec97077c73deabab27a62bdcb" id="r_ab4b31baec97077c73deabab27a62bdcb"><td class="memItemLeft" align="right" valign="top"><a id="ab4b31baec97077c73deabab27a62bdcb" name="ab4b31baec97077c73deabab27a62bdcb"></a>
+xiiUInt64&#160;</td><td class="memItemRight" valign="bottom"><b>m_uiPageDataBytes</b> = 0U</td></tr>
+<tr class="memitem:aa8169f63f1f18900b825fc0b5b2fd086" id="r_aa8169f63f1f18900b825fc0b5b2fd086"><td class="memItemLeft" align="right" valign="top"><a id="aa8169f63f1f18900b825fc0b5b2fd086" name="aa8169f63f1f18900b825fc0b5b2fd086"></a>
+xiiUInt16&#160;</td><td class="memItemRight" valign="bottom"><b>m_uiGeometryFileVersion</b> = 0U</td></tr>
+<tr class="memitem:a0c3c4ffa6e5262023b00eb31a2a7d0fb" id="r_a0c3c4ffa6e5262023b00eb31a2a7d0fb"><td class="memItemLeft" align="right" valign="top"><a id="a0c3c4ffa6e5262023b00eb31a2a7d0fb" name="a0c3c4ffa6e5262023b00eb31a2a7d0fb"></a>
+<a class="el" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray</a>&lt; <a class="el" href="../../d1/d93/structxii_geometry_page.html">xiiGeometryPage</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_GeometryPages</b></td></tr>
+<tr class="memitem:a4c874d30555367725dea9381ad01f26e" id="r_a4c874d30555367725dea9381ad01f26e"><td class="memItemLeft" align="right" valign="top"><a id="a4c874d30555367725dea9381ad01f26e" name="a4c874d30555367725dea9381ad01f26e"></a>
+<a class="el" href="../../dc/da4/classxii_dynamic_array.html">xiiDynamicArray</a>&lt; xiiUInt8 &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_GeometryPageData</b></td></tr>
+<tr class="memitem:adb4140fd1935cbb8ee272ff15ecf9bb0" id="r_adb4140fd1935cbb8ee272ff15ecf9bb0"><td class="memItemLeft" align="right" valign="top"><a id="adb4140fd1935cbb8ee272ff15ecf9bb0" name="adb4140fd1935cbb8ee272ff15ecf9bb0"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bStreamableGeometry</b> = true</td></tr>
 <tr class="memitem:a0f85c1d76f9d0181d1ab3e4b07326bae" id="r_a0f85c1d76f9d0181d1ab3e4b07326bae"><td class="memItemLeft" align="right" valign="top"><a id="a0f85c1d76f9d0181d1ab3e4b07326bae" name="a0f85c1d76f9d0181d1ab3e4b07326bae"></a>
 <a class="el" href="../../de/dfd/structxii_enum.html">xiiEnum</a>&lt; <a class="el" href="../../d9/d9e/structxii_g_a_l_resource_usage.html">xiiGALResourceUsage</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_ResourceUsage</b> = <a class="el" href="../../d9/d9e/structxii_g_a_l_resource_usage.html#aa3f7d7b5b5d7b94f2e8f6b55eb5fa7dca6e4b1377bb0bd053c657f1c1b62fe4e2">xiiGALResourceUsage::Immutable</a></td></tr>
 <tr class="memdesc:a0f85c1d76f9d0181d1ab3e4b07326bae"><td class="mdescLeft">&#160;</td><td class="mdescRight">The resource usage pattern for this mesh buffer resource, used to identify how the vertex and index data will be used and updated during rendering (e.g., immutable, dynamic, staging, etc.) and to optimize the memory allocation and access patterns for the GPU based on the expected usage of this mesh. <br /></td></tr>
@@ -283,8 +303,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bAllowCpuFallback</
 
 </div>
 </div>
-<a id="a2eecd13632084e352a36ba3afbd9a77c" name="a2eecd13632084e352a36ba3afbd9a77c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2eecd13632084e352a36ba3afbd9a77c">&#9670;&#160;</a></span>AllocateStreamsFromGeometry()</h2>
+<a id="a2b7acfa99c14561632e88d0ff3e462aa" name="a2b7acfa99c14561632e88d0ff3e462aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b7acfa99c14561632e88d0ff3e462aa">&#9670;&#160;</a></span>AllocateStreamsFromGeometry()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -302,7 +322,12 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bAllowCpuFallback</
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>bBuildMeshlets</em></span><span class="paramdefsep"> = </span><span class="paramdefval">true</span>&#160;)</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>bBuildMeshlets</em></span><span class="paramdefsep"> = </span><span class="paramdefval">true</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>bIncludeSkinning</em></span><span class="paramdefsep"> = </span><span class="paramdefval">false</span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -470,6 +495,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bAllowCpuFallback</
 </div>
 <hr/>The documentation for this struct was generated from the following files:<ul>
 <li>/home/runner/work/XII/XII/Source/Engine/GraphicsCore/Meshes/<a class="el" href="../../d3/d90/_mesh_buffer_resource_8h_source.html">MeshBufferResource.h</a></li>
+<li>/home/runner/work/XII/XII/Source/Engine/GraphicsCore/Meshes/Implementation/<b>GeometryPageBuilder.cpp</b></li>
 <li>/home/runner/work/XII/XII/Source/Engine/GraphicsCore/Meshes/Implementation/<b>MeshBufferResource.cpp</b></li>
 <li>/home/runner/work/XII/XII/Source/Engine/GraphicsCore/Meshes/Implementation/<b>MeshletBuilder.cpp</b></li>
 </ul>

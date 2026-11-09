@@ -13,7 +13,7 @@ var searchData=
   ['decodeutf8toutf32_10',['DecodeUtf8ToUtf32',['../de/d05/classxii_unicode_utils.html#af3e6abac1978259e554b797bd6415295',1,'xiiUnicodeUtils']]],
   ['decodewchartoutf32_11',['DecodeWCharToUtf32',['../de/d05/classxii_unicode_utils.html#a7f2ceb3c3cf013b0e6fcb03b554101f6',1,'xiiUnicodeUtils']]],
   ['decomposeviewmatrix_12',['DecomposeViewMatrix',['../d9/d9a/namespacexii_graphics_utils.html#ae5c8b116b02b2d5895f27b1ab8d84a00',1,'xiiGraphicsUtils']]],
-  ['decompress_13',['Decompress',['../d8/d62/namespacexii_compression_utils.html#aaee93df921e7aac07426405b7f76fd14',1,'xiiCompressionUtils']]],
+  ['decompress_13',['Decompress',['../d8/d62/namespacexii_compression_utils.html#aaee93df921e7aac07426405b7f76fd14',1,'xiiCompressionUtils::Decompress(xiiArrayPtr&lt; const xiiUInt8 &gt; compressedData, xiiCompressionMethod method, xiiDynamicArray&lt; xiiUInt8 &gt; &amp;out_data)'],['../d8/d62/namespacexii_compression_utils.html#ac47136ca35d531f318c5fd0776098243',1,'xiiCompressionUtils::Decompress(xiiArrayPtr&lt; const xiiUInt8 &gt; compressedData, xiiCompressionMethod method, xiiUInt32 uiMaxOutputBytes, xiiDynamicArray&lt; xiiUInt8 &gt; &amp;out_data)']]],
   ['decompressblocks_14',['DecompressBlocks',['../d0/dbc/classxii_image_conversion_step_decompress_blocks.html#ac8e727e8435f4c2b76f94495abd624da',1,'xiiImageConversionStepDecompressBlocks']]],
   ['decrement_15',['Decrement',['../db/d8e/classxii_atomic_integer.html#afbbd20b217ecdeb21ffe3589e826291b',1,'xiiAtomicInteger::Decrement()'],['../d9/d66/structxii_atomic_utils.html#a965fbb2461e446fc6a379ef8053d7a76',1,'xiiAtomicUtils::Decrement()']]],
   ['decremententryvalue_16',['DecrementEntryValue',['../d7/d47/classxii_blackboard.html#abb5b8915d1206072aef43c2ede3a45bc',1,'xiiBlackboard']]],
